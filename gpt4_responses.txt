@@ -1,0 +1,189 @@
+###Vinheta 1. 
+### 1. Fatores de risco cardiovascular presentes
+
+| Fator de Risco           | Presente? | Observações                                         |
+|--------------------------|-----------|-----------------------------------------------------|
+| Idade                    | Não       | Mulher de 40 anos (baixo risco pela idade)          |
+| Sexo masculino           | Não       | Mulher                                              |
+| Pressão arterial elevada | Não       | 124/75 mmHg, MAPA média 113/73 mmHg                 |
+| Dislipidemia             | Não       | Colesterol total 190, LDL 105 mg/dL, HDL 67 mg/dL   |
+| Diabetes                 | Não       | Glicémia em jejum 82 mg/dL                          |
+| Tabagismo                | Sim       | Fumadora                                            |
+| Obesidade                | Não       | IMC 23.8                                            |
+| História familiar de DAC | Não referido |                                                    |
+| Sedentarismo             | Não       | Pratica exercício físico moderado/alto 3x/semana    |
+| Doença renal             | Não       | Creatinina normal                                   |
+| Menopausa precoce        | Não       | Não referido                                        |
+
+**Fatores presentes:** Tabagismo
+
+---
+
+### 2. Risco de eventos cardiovasculares a 10 anos (SCORE2, Países de risco moderado, ESC 2021)
+
+#### a) Categoria de risco do doente
+- Risco BAIXO
+
+#### b) Valor de risco absoluto (percentagem)
+- Mulher, 40 anos, Países risco moderado (ex: Portugal), fumadora, pressão arterial <120-140, colesterol total ~190 mg/dL
+- Tabela SCORE2 ESC 2021 (países moderado risco):  
+  - Mulher, 40 anos, FUMADORA, colesterol total ~190 mg/dl, PA sistólica ~125 mmHg → **Risco absoluto ≈ 1%**
+
+| Categoria de risco | Risco absoluto (%) |
+|--------------------|-------------------|
+| Baixo              | <2,5%             |
+| Moderado           | 2,5%–<5%          |
+| Elevado            | 5%–<10%           |
+| Muito Elevado      | ≥10%               |
+
+| Categoria de risco | Valor calculado (%) |
+|--------------------|--------------------|
+| Baixo              | ~1%                |
+
+---
+
+### 3. Explicação da avaliação
+
+O risco cardiovascular desta doente é baixo. Tem apenas um fator de risco major (tabagismo), sendo que todos os outros parâmetros (pressão arterial, perfil lipídico, glicemia, IMC) se encontram dentro da normalidade. Está motivada para alterar o estilo de vida (cessação tabágica e prática de exercício), o que pode contribuir ainda mais para a redução do risco cardiovascular. Segundo o SCORE2, a associação de um único fator isolado (tabagismo) numa mulher de 40 anos raramente ultrapassa o limiar de 2.5% a 10 anos.
+
+---
+
+### 4. Grau de confiança
+
+**Muito alta**
+
+---
+
+### 5. Objetivos terapêuticos e recomendações
+
+| Fator de Risco           | Objetivo/Tratamento                                |
+|--------------------------|----------------------------------------------------|
+| Tabagismo                | Cessação Tabágica completa                         |
+| Pressão arterial         | Manter <140/90 mmHg (<130/80 ideal)                |
+| Colesterol LDL           | <116 mg/dL (para baixo risco)                      |
+| Atividade física         | ≥ 150 min/semana de intensidade moderada           |
+| Peso/IMC                 | Manter IMC <25 kg/m²                               |
+| Glicemia                 | Manter glicémia em jejum <100 mg/dL                |
+| Dieta                    | Mediterrânica/DASH, pouco sal, pouca gordura saturada|
+| Stress/postura psicológica| Promoção de estilos de vida saudável               |
+
+---
+
+### 6. JSON file
+
+```json
+{
+  "Risco": {
+    "Categoria": "Baixo",
+    "Risco absoluto": "1%"
+  },
+  "Fatores de risco": {
+    "Tabagismo": "Sim",
+    "Colesterol LDL": "105 mg/dL",
+    "Pressão arterial": "124/75 mmHg",
+    "Glicemia": "82 mg/dL",
+    "IMC": "23.8"
+  },
+  "confiança": "Muito alta"
+}
+```
+
+---
+
+**Sumário:**  
+A doente apresenta um risco cardiovascular baixo, essencialmente devido ao tabagismo. Não tem outros fatores major, e os restantes parâmetros estão controlados. É recomendada a cessação tabágica, manutenção da atividade física, dieta saudável e vigilância regular do risco cardiovascular.
+
+###Vinheta 2. 
+### 1. Fatores de risco cardiovascular presentes
+
+| Fator de Risco            | Valor/Presença                         |
+|---------------------------|----------------------------------------|
+| Idade                     | 41 anos                                |
+| Sexo                      | Masculino                              |
+| Tabagismo                 | Sim (5 cigarros/dia, 5 UMA)            |
+| Hipertensão arterial      | Sim (155/107 mmHg, resposta hipertensiva ao esforço) |
+| Dislipidemia total        | Colesterol total 241 mg/dL              |
+| LDL colesterol elevado    | 188 mg/dL                              |
+| HDL colesterol baixo      | 33 mg/dL                               |
+| Antecedentes familiares   | HTA e diabetes na mãe                  |
+| Diabetes                  | Não (HbA1c 5.8%, Glicemia 96 mg/dL)    |
+| Obesidade/Sobrepeso       | Não (IMC 23)                           |
+| História Cardiovascular   | Não                                     |
+| Sedentarismo              | Não (exercício habitual nos últimos 2 meses) |
+
+---
+
+### 2. Avaliação de risco cardiovascular (SCORE2, Países de risco moderado, 2021 ESC)
+
+> **Idade:** 41 anos  
+> **Sexo:** Masculino  
+> **Tabagismo:** Sim  
+> **PA Sistolica:** 155 mmHg  
+> **Colesterol total:** 241 mg/dL (~6.2 mmol/L)  
+> **Colesterol HDL:** 33 mg/dL (~0.85 mmol/L)  
+
+Utilizando a tabela SCORE2 para países de risco moderado (ESC 2021):  
+No grupo de homens, idade 40 anos (mais próximo), fumador, PA elevada (>140 mmHg), colesterol total >6 mmol/L, HDL baixo, o risco absoluto a 10 anos situa-se aproximadamente entre 2% e 5%.  
+Referencial: homens 40 anos, fumadores com valores semelhantes chegam a 2-4% de risco absoluto.
+
+**a) Categoria de risco cardiovascular:**  
+- **Moderado**  
+  (Baixo <2%, Moderado ≥2% e <5%, Elevado ≥5% e <10%, Muito elevado ≥10%)
+
+**b) Valor de risco absoluto a 10 anos:**  
+- **Aproximadamente 3%**
+
+| Categoria de risco | Risco absoluto (%) |
+|--------------------|-------------------|
+| Moderado           |       ~3%         |
+
+---
+
+### 3. Explicação da avaliação
+
+O doente apresenta múltiplos fatores de risco cardiovascular, nomeadamente hipertensão arterial (155/107 mmHg confirmada e resposta hipertensiva ao esforço), dislipidemia com LDL muito elevado (188 mg/dL) e HDL baixo (33 mg/dL), além de um hábito tabágico persistente, fatores estes que se potenciam entre si no aumento do risco cardiovascular. O risco está moderadamente condicionado pela jovem idade e ausência de antecedentes pessoais de diabetes, obesidade ou doença cardiovascular estabelecida. No entanto, a acumulação dos restantes fatores coloca-o numa categoria de **risco moderado**, situando-se o seu risco absoluto a 10 anos em cerca de 3%, segundo o SCORE2 para países de risco moderado (ESC 2021).
+
+---
+
+### 4. Grau de confiança na classificação de risco
+
+**Alta**
+
+---
+
+### 5. Objetivos terapêuticos e recomendações (ESC 2021)
+
+| Fator de risco           | Objetivo terapêutico / Recomendação                                                                                                     |
+|--------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
+| Hipertensão arterial     | PA < 140/90 mmHg (idealmente <130/80 mmHg se tolerado)                                                                                  |
+| LDL colesterol           | Redução de pelo menos 50% e alvo <100 mg/dL (<2.6 mmol/L); considerar farmacoterapia (estatinas)                                        |
+| HDL colesterol baixo     | Promover exercício e cessação tabágica; objetivos ainda não estabelecidos, melhoria global do perfil lipídico                            |
+| Tabagismo                | Cessação completa do consumo de tabaco                                                                                                  |
+| Atividade física         | Manter e reforçar a prática regular de exercício físico (>150 min/semana intensidade moderada)                                          |
+| Peso/IMC                 | Manutenção do peso e IMC dentro dos valores normais                                                                                    |
+| Risco global             | Aconselhamento sobre alimentação saudável, redução do consumo de sal, redução de stress, monitorização regular dos fatores de risco      |
+
+---
+
+### 6. JSON file
+
+```json
+{
+  "Risco": {
+    "Categoria": "Moderado",
+    "Risco absoluto": "3%"
+  },
+  "Fatores de risco": {
+    "Idade": "41",
+    "Sexo": "Masculino",
+    "Tabagismo": "Sim",
+    "Hipertensão arterial": "Sim",
+    "Colesterol total": "241 mg/dL",
+    "LDL": "188 mg/dL",
+    "HDL": "33 mg/dL",
+    "Antecedentes familiares": "HTA e diabetes na mãe"
+  },
+  "confiança": "Alta"
+}
+```
+

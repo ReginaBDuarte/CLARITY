@@ -1,0 +1,174 @@
+###Vinheta 1. 
+## Análise do Risco Cardiovascular
+
+Com base na vinheta clínica fornecida, segue a análise do risco cardiovascular da paciente:
+
+**1. Fatores de Risco Cardiovascular:**
+
+| Fator de Risco       | Presente? |
+| --------------------- | -------- |
+| Tabagismo             | Sim      |
+| Hipertensão Arterial | Sim     |
+| Dislipidemia          | Não     |
+| Histórico Familiar    | Não reportado |
+| Obesidade             | Não      |
+| Sedentarismo         | Não      |
+| Diabetes Mellitus     | Não      |
+| Idade               | Sim      |
+| Rigidez Arterial      | Sim     |
+
+**2. Cálculo do Risco Cardiovascular a 10 Anos (SCORE2-Moderate Risk):**
+
+Para calcular o risco cardiovascular, utilizaremos o sistema SCORE2 para países de risco moderado, conforme as diretrizes da ESC 2021.
+
+*   **Idade:** 40 anos
+*   **Sexo:** Feminino
+*   **Tabagismo:** Fumadora
+*   **Colesterol Total:** 190 mg/dL (4.91 mmol/L)
+*   **Pressão Arterial Sistólica:** 124 mmHg
+
+Com base nestes dados, e utilizando as tabelas de risco SCORE2 para países de risco moderado, estimamos o risco cardiovascular a 10 anos:
+
+| Categoria de Risco | Risco Absoluto a 10 anos |
+| ------------------ | ------------------------ |
+| Baixo            | <2.5%                   |
+
+**Nota:** O cálculo exato do risco requer o uso das tabelas SCORE2 específicas e a interpolação dos valores. No entanto, com base nos dados fornecidos, e considerando que a paciente é fumadora e tem hipertensão arterial, o risco estimado é baixo.
+
+**3. Explicação da Avaliação:**
+
+A paciente apresenta alguns fatores de risco cardiovascular importantes:
+
+*   **Tabagismo:** É um dos principais fatores de risco modificáveis e contribui significativamente para o aumento do risco cardiovascular. O facto de ter agendada consulta de cessação tabágica é um ponto positivo.
+*   **Hipertensão Arterial:** A pressão arterial média de 24 horas de 113/73 mmHg no MAPA indica hipertensão arterial controlada.
+*   **Rigidez Arterial:** A velocidade da onda de pulso de 9.8 m/s sugere rigidez arterial aumentada, o que está associado a um maior risco cardiovascular.
+*   **Idade:** A idade é um fator de risco não modificável. Embora a paciente tenha 40 anos, a idade contribui para o risco geral.
+
+Outros fatores como os níveis de colesterol (total, HDL e LDL) e triglicerídeos estão dentro dos limites normais. A prática de exercício físico regular é um fator protetor.
+
+**4. Grau de Confiança da Categoria de Risco:**
+
+Intermédia
+
+**5. Objetivos Terapêuticos e Recomendações:**
+
+| Fator de Risco    | Objetivos de Tratamento                                                                                                                                                              |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Tabagismo         | Abstinência total do tabaco. Acompanhamento na consulta de cessação tabágica.                                                                                                       |
+| Hipertensão       | Manter a pressão arterial <130/80 mmHg. Considerar monitorização ambulatorial da pressão arterial (MAPA) para avaliar o controlo da pressão arterial ao longo do tempo.                                  |
+| Estilo de Vida     | Manter a prática de exercício físico regular (pelo menos 150 minutos por semana de atividade moderada ou 75 minutos de atividade vigorosa). Dieta saudável rica em frutas, vegetais e fibras. |
+| Risco Global     | Avaliar a necessidade de tratamento farmacológico com base no risco global e nas guidelines da ESC.                                                                                      |
+
+**6. JSON File:**
+
+```json
+{
+  "Risco": {
+    "Categoria": "Baixo",
+    "Risco absoluto": "<2.5%"
+  },
+  "Fatores de risco": {
+    "Tabagismo": "Sim",
+    "Hipertensão Arterial": "Sim",
+    "Rigidez Arterial": "Sim",
+    "Idade": "40 anos"
+  },
+  "confiança": "Intermédia"
+}
+```
+
+**Disclaimer:** Esta análise é baseada nas informações fornecidas e não substitui uma avaliação médica completa. É fundamental que a paciente seja acompanhada por um médico cardiologista para uma avaliação individualizada e um plano de tratamento adequado.
+
+
+###Vinheta 2. 
+## Análise de Risco Cardiovascular
+
+Com base na vinheta clínica fornecida, segue a análise do risco cardiovascular do paciente:
+
+### 1. Fatores de Risco Cardiovascular Presentes
+
+| Fator de Risco           | Presente? |
+| ------------------------- | -------- |
+| Idade (≥40 anos)          | Sim      |
+| Sexo Masculino          | Sim      |
+| Tabagismo                 | Sim      |
+| História Familiar de DCV precoce | Sim (mãe com HAS e DM)      |
+| Hipertensão Arterial      | Sim      |
+| Colesterol Total Elevado  | Sim      |
+| Colesterol HDL Baixo      | Sim      |
+| Colesterol LDL Elevado  | Sim      |
+| Glicemia em Jejum Alterada| Não (mas HbA1c elevada)     |
+| IMC                      | Não (Normal)      |
+
+### 2. Cálculo do Risco Cardiovascular a 10 Anos (SCORE2)
+
+Considerando que Portugal é um país de risco moderado, utilizaremos a tabela SCORE2 para países de risco moderado para calcular o risco cardiovascular a 10 anos. O SCORE2 avalia o risco de eventos cardiovasculares fatais e não fatais (enfarte do miocárdio, AVC, etc.).
+
+Para calcular o risco, precisamos dos seguintes dados:
+
+*   Idade: 41 anos
+*   Sexo: Masculino
+*   Tabagismo: Sim
+*   Colesterol Total: 241 mg/dL (6.24 mmol/L)
+*   Pressão Arterial Sistólica: 155 mmHg
+
+Com base nestes dados e utilizando a tabela SCORE2 de risco moderado, o risco cardiovascular estimado é:
+
+| Categoria de Risco | Risco Absoluto (SCORE2) |
+| ------------------ | ----------------------- |
+| Elevado            | 5-7.5%                  |
+
+**Nota:** O cálculo exato do risco SCORE2 requer a utilização das tabelas específicas ou calculadoras online, que não podem ser diretamente implementadas aqui. O valor apresentado é uma estimativa baseada nos dados fornecidos.
+
+### 3. Explicação da Avaliação
+
+O paciente apresenta um risco cardiovascular elevado devido à presença de múltiplos fatores de risco:
+
+*   **Hipertensão Arterial:** A pressão arterial elevada (155/107 mmHg) é um dos principais fatores de risco, aumentando significativamente o risco de eventos cardiovasculares.
+*   **Tabagismo:** Mesmo com baixo consumo, o tabagismo é um fator de risco importante, contribuindo para o desenvolvimento de aterosclerose e aumentando o risco de trombose.
+*   **História Familiar:** A história de hipertensão e diabetes na mãe aumenta a predisposição genética para doenças cardiovasculares.
+*   **Colesterol Desfavorável:** Colesterol total e LDL elevados, juntamente com o HDL baixo, contribuem para a formação de placas de ateroma nas artérias.
+*   **HbA1c:** Apesar da glicemia normal, o valor de HbA1c 5.8% indica pré-diabetes, um fator de risco adicional.
+*   **Resposta Hipertensiva ao Exercício:** A resposta hipertensiva ao esforço é também um fator de risco cardiovascular independente.
+
+A combinação destes fatores coloca o paciente numa categoria de risco elevado, necessitando de intervenção para reduzir o risco de eventos cardiovasculares futuros.
+
+### 4. Grau de Confiança
+
+O grau de confiança na categoria de risco identificada para este doente é **Intermédia**.
+
+### 5. Objetivos Terapêuticos e Recomendações
+
+| Fator de Risco        | Objetivos de Tratamento                                                                                                                                                                                                                                     |
+| ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Hipertensão Arterial   | PA < 130/80 mmHg (após avaliação e confirmação em várias medições). Considerar terapêutica farmacológica, se necessário, após modificações no estilo de vida.                                                                                                                                                                                    |
+| Tabagismo             | Cessação completa do tabagismo. Aconselhamento, apoio psicológico e, se necessário, terapêutica farmacológica (e.g., substituição de nicotina, bupropiona, vareniclina).                                                                                      |
+| Dislipidemia           | Colesterol LDL < 100 mg/dL (2.6 mmol/L). Iniciar terapêutica com estatina de intensidade moderada a alta, dependendo da resposta e tolerância. Considerar ezetimiba ou inibidores de PCSK9 se não atingir os objetivos com estatina.                                                                                                              |
+| Pré-diabetes (HbA1c) | Modificações no estilo de vida: dieta saudável, exercício físico regular, perda de peso (se necessário). Monitorizar a glicemia e HbA1c regularmente. Considerar metformina se a progressão para diabetes for iminente.                                                                                                        |
+| Estilo de Vida        | Dieta equilibrada rica em frutas, vegetais, grãos integrais e peixe. Redução do consumo de sal, gorduras saturadas e processados. Prática regular de exercício físico (pelo menos 150 minutos por semana de atividade moderada ou 75 minutos de atividade intensa). Manutenção de peso saudável. Redução do consumo de álcool. |
+
+### 6. JSON File
+
+```json
+{
+  "Risco": {
+    "Categoria": "Elevado",
+    "Risco absoluto": "5-7.5%"
+  },
+  "Fatores de risco": {
+    "Idade": "41",
+    "Tabagismo": "Sim",
+    "Hipertensão Arterial": "Sim (155/107 mmHg)",
+    "História Familiar de DCV precoce": "Sim (mãe com HAS e DM)",
+    "Colesterol Total Elevado": "241 mg/dL",
+    "Colesterol HDL Baixo": "33 mg/dL",
+    "Colesterol LDL Elevado": "188 mg/dL",
+    "HbA1c": "5.8%"
+  },
+  "confiança": "Intermédia"
+}
+```
+
+**Disclaimer:** Esta análise é baseada nas informações fornecidas e nas diretrizes da Sociedade Europeia de Cardiologia. Recomenda-se uma avaliação completa e individualizada do paciente para determinar o plano de tratamento mais adequado.
+
+
