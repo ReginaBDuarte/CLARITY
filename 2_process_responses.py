@@ -17,5 +17,6 @@ df_gimini['Modelo'] = 'Gemini-2.0-flash'
 
 df = pd.concat([df_gpt, df_gimini], ignore_index=True)
 df.to_csv('model_responses.csv', index=False, encoding='utf-8', sep=';')
+df.to_excel('model_responses.xlsx', index=False)
 
 
