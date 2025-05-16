@@ -3,6 +3,8 @@ from openai import OpenAI
 from google import genai
 from google.genai import types
 import json
+import re
+import pandas as pd
 
 
 #define clients
@@ -106,5 +108,50 @@ def get_gemini_response(vinheta):
     
     return(response.text)
 
-def parse_json(json_string):
-    pass
+def parse_responses(response_text, json_name):
+    # Load your .txt file content
+    with open(response_text, 'r', encoding='utf-8') as f:
+        content = f.read()
+
+    # Pattern to match each Vinheta section
+    sections = re.split(r'###Vinheta (\d+)\.', content)
+
+    # Dictionary to store extracted JSONs
+    vinheta_jsons = {}
+    
+    # Iterate through the split content, skipping the first (before the first Vinheta)
+    for i in range(1, len(sections), 2):
+        vinheta_number = sections[i].strip()
+        vinheta_content = sections[i + 1]
+
+        # Look for the JSON block after '**6. JSON File:**'
+        match = re.search(r'```json(.*?)```', vinheta_content, re.DOTALL)
+        if match:
+            json_block = match.group(1).strip()
+            try:
+                parsed_json = json.loads(json_block)
+                vinheta_jsons[f"Vinheta {vinheta_number}"] = parsed_json
+            except json.JSONDecodeError as e:
+                print(f"Error parsing JSON in Vinheta {vinheta_number}: {e}")
+
+    # Output result to a file or use it
+    with open(json_name, 'w', encoding='utf-8') as f:
+        json.dump(vinheta_jsons, f, ensure_ascii=False, indent=2)
+    return vinheta_jsons
+
+def parse_json(json_file):
+    # Build list of rows
+    rows = []
+    for vinheta_id, data in json_file.items():
+        row = {
+            "id": vinheta_id,  # or vinheta_id.replace("Vinheta ", "") if you want just the number
+            "categoria_de_risco": data["Risco"].get("Categoria", None),
+            "risco_absoluto": data["Risco"].get("Risco absoluto", None),
+            "fatores_de_risco": data.get("Fatores de risco", {}),
+            "confianca": data.get("confiança", None)
+        }
+        rows.append(row)
+
+    # Create DataFrame
+    df = pd.DataFrame(rows)
+    return df

@@ -49,7 +49,7 @@ print(response.text)
 
 
 
-a
+
 ###########OPENAI###############
 
 from openai import OpenAI

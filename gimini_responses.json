@@ -1,0 +1,32 @@
+{
+  "Vinheta 1": {
+    "Risco": {
+      "Categoria": "Baixo",
+      "Risco absoluto": "<2.5%"
+    },
+    "Fatores de risco": {
+      "Tabagismo": "Sim",
+      "Hipertensão Arterial": "Sim",
+      "Rigidez Arterial": "Sim",
+      "Idade": "40 anos"
+    },
+    "confiança": "Intermédia"
+  },
+  "Vinheta 2": {
+    "Risco": {
+      "Categoria": "Elevado",
+      "Risco absoluto": "5-7.5%"
+    },
+    "Fatores de risco": {
+      "Idade": "41",
+      "Tabagismo": "Sim",
+      "Hipertensão Arterial": "Sim (155/107 mmHg)",
+      "História Familiar de DCV precoce": "Sim (mãe com HAS e DM)",
+      "Colesterol Total Elevado": "241 mg/dL",
+      "Colesterol HDL Baixo": "33 mg/dL",
+      "Colesterol LDL Elevado": "188 mg/dL",
+      "HbA1c": "5.8%"
+    },
+    "confiança": "Intermédia"
+  }
+}
