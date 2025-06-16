@@ -8,7 +8,7 @@ VINHETA2:
 Mulher de 40 anos. Vem à consulta porque tem interesse em melhorar o seu estilo de vida. Começou a praticar exercício físico (moderada / alta intensidade) 3 vezes por semana. É fumadora mas tem consulta de cessação tabágica agendada para dentro de 1 semana. Nega queixas cardiovasculares (durante o exercício ou em repouso). 
 À observação: peso 65Kg (IMC 23.8); pressão arterial 124-75mmHg, frequência cardíaca 76bpm. 
 Analiticamente, apresenta uma creatinina 0.7mg/dL, glicémia em jejum 82mg/dL, triglicerideos 90mg/dL, colesterol total 190mg/dL, colesterol HDL 67mg/dL, colesterol LDL 105mg/dL.
-Realizou exames complementares de diagnóstico, nomeadamente electrocardiograma (ritmo sinusal com alterações inespecíficas da repolarização ventricular), MAPA (pressão arterial média 24h de 113/73mmHg) e rigidez anterial (velocidade da onda de pulso de 9.8m/s).
+Realizou exames complementares de diagnóstico, nomeadamente electrocardiograma (ritmo sinusal com alterações inespecíficas da repolarização ventricular), MAPA (pressão arterial média 24h de 113/73mmHg) e rigidez anterial (velocidade da onda de pulso de 6.8m/s).
  
 VINHETA3:
 Sexo feminino, 58 anos. Regressou à consulta 8 anos depois para uma avaliação geral do seu estado de saúde. Sem comorbilidades de relevo. Está assintomática e faz caminhadas diárias de cerca de 30 minutos. Não fumadora.
@@ -28,6 +28,7 @@ Encontra-se medicada com pantoprazol 20mg, bisoprolol 2.5mg e apixabano 5mg 12/1
 À observação: peso 59Kg (IMC 20.5); pressão arterial 107-58mmHg, frequência cardíaca 61bpm. Auscultação cardíaca regular e sem sopros. 
 Analiticamente, destaca-se: hemoglobina 12,1g/dL, creatinina 0.6mg/dL, glicémia em jejum 74mg/dL, triglicerideos 124mg/dL, colesterol total 214mg/dL, colesterol HDL 67mg/dL, colesterol LDL 122mg/dL, TSH 3.67mIU/L, fT4 1ng/dL.
 Realizou um electrocardiograma (ritmo sinusal, bloqueio auriculo-ventricular de 1º grau, alterações inespecíficas da repolarização ventricular), um ecocardiograma (dilatação ligera da aurícula esquerda, insuficiência mitral ligeira) e um Holter (ritmo sinusal durante todo o registo, extrassistolia suprventricular pouco frequente). 
+
  
 VINHETA6:
 Sexo feminino, 41 anos, professora de português do ensino secundário. Vem à consulta por episódio de lipotímia, que ocorreu após um jantar com amigos. Foi precedida de pródromos (visão turva, palidez, sudorese) e recuperou em cerca de 5-10 minutos. Sem traumatismo cranio-encefálico, sem movimentos tónico-clónicos, sem incontinência de esfíncteres. 
@@ -41,7 +42,7 @@ Sem dor torácica, síncope, palpitações ou cansaço. Quando interrogado, refe
 Sem antecedentes cardiovasculares pessoais ou familiares. Nega tabagismo. Consumo ocasional de bebidas alcoólicas. Não faz qualquer medicação. Refere que o seu posto de trabalho envolve alguma actividade física, mas não faz activamente desporto. 
 Exame objectivo: peso 94Kg (IMC 28.2); pressão arterial 161/102mmHg, frequência cardíaca 81bpm. 
 Analiticamente, apresenta uma creatinina 1.4mg/dL, glicémia em jejum 104mg/dL, HbA1c 6.2%, triglicerideos 197mg/dL, colesterol total 231mg/dL, colesterol HDL 43mg/dL, colesterol LDL 149mg/dL, lipoproteína (a) 29mg/dL, ácido úrico 7.5mg/dL.
-Realizou um electrocardiograma e um ecocardiograma, sem alterações valorizáveis. MAPA confirmou HTA (média 24h 138-86mmHg) com perfil não-Dipper. Rigidez arterial com VOP 11.3m/s.
+Realizou um electrocardiograma e um ecocardiograma, sem alterações valorizáveis. MAPA confirmou HTA (média 24h 138-86mmHg) com perfil não-Dipper. Rigidez arterial com VOP 9.3m/s.
  
 VINHETA8:
 Sexo feminino, 57 anos. Recentemente reformada (assistente social). Consulta para avaliação cardiovascular – quer saber se é seguro inscrever-se na hidroginástica e começar a praticar exercício agora que tem tempo.
@@ -55,7 +56,7 @@ VINHETA9:
 Homem 52 anos, pescador. Recorre à consulta por dor torácica atípica (tipo facada, pode chegar a durar várias horas, sem relação com o esforço). Sem outros sintomas, nomeadamente palpitações, síncope ou cansaço. 
 Sem antecedentes cardiovasculares pessoais ou familiares. Fumador activo desde os 16 anos (50 UMA). O trabalho é exigente do ponto de vista físico, mas não faz outro tipo de actividade física. Consumo ocasional de bebidas alcoólicas. Não faz qualquer medicação. 
 Exame objectivo: peso 78Kg (IMC 23); pressão arterial 130-89mmHg, frequência cardíaca 81bpm. Análises: Hb 15.8/dL, creatinina 1.1mg/dL, glicémia em jejum 95mg/dL, HbA1c 5.9%, triglicerideos 98mg/dL, colesterol total 224mg/dL, colesterol HDL 37mg/dL, colesterol LDL 167mg/dL, lipoproteína (a) 38mg/dL, ácido úrico 5.5mg/dL.
-Exames complementares de diagnóstico: electrocardiograma e ecocardiograma sem alterações valorizáveis; MAPA com média 24h normal (128-79mmHg) embora com HTA diurna (média 138-86mmHg). AngioTC cardíaca com score de cálcio de 23 (P50-75) com doença aterosclerótica não obstrutiva na descendente anterior proximal e coronária direita média e distal. 
+Exames complementares de diagnóstico: electrocardiograma e ecocardiograma sem alterações valorizáveis; MAPA com média 24h normal (128-79mmHg) embora com HTA diurna (média 138-86mmHg). AngioTC cardíaca com score de cálcio de 23 (P50-75) com com placas não obstrutivas (<50%) na descendente anterior proximal e coronária direita média e distal. 
  
 VINHETA10:
 Mulher de 67 anos. Vem à consulta por queixas de cansaço para pequenos-médios esforços (lida da casa), sem ortopneia, dispneia paroxística nocturna ou edemas dos membros inferiores. Sem síncope ou dor torácica.
@@ -107,7 +108,7 @@ Estilo de vida sedentário.
 Medicação habitual: sinvastatina 20mg, escitalopram 10mg.
 Ao exame objectivo: peso 73Kg (IMC 22.5); pressão arterial 149-98mmHg, frequência cardíaca 76bpm. Auscultação cardíaca e pulmonar sem alterações.
 Analiticamente, apresenta uma creatinina 0.87mg/dL, glicemia em jejum 94mg/dL, HbA1c 5.8%, triglicerideos 98mg/dL, colesterol total 197mg/dL, colesterol HDL 32mg/dL, colesterol LDL 148mg/dL, lipoproteína (a) 39mg/dL, ApoB 107mg/dL, ácido úrico 5.8mg/dL, NT pro BNP 33pg/mL.
-Exames complementares de diagnóstico: electrocardiograma com ritmo sinusal 75/min, alterações inespecíficas da repolarização ventricular; ecocardiograma sem alterações significativas; MAPA confirmou presença de hipertensão arterial (média 24h 129-88mmHg – perfil tensional Dipper). AngioTC coronária com score de cálcio de 47 (P50-75) com doença aterosclerótica não obstrutiva (<50%) nos 3 vasos sem envolvimento do tronco comum.  
+Exames complementares de diagnóstico: electrocardiograma com ritmo sinusal 75/min, alterações inespecíficas da repolarização ventricular; ecocardiograma sem alterações significativas; MAPA confirmou presença de hipertensão arterial (média 24h 129-88mmHg – perfil tensional Dipper). AngioTC coronária com score de cálcio de 47 (P50-75) com placas não obstrutivas (<50%) nos 3 vasos sem envolvimento do tronco comum.  
  
 VINHETA16:
 Mulher 64 anos. Encaminhada da consulta de anestesia (pré-operatório cirurgia à tiróide – carcinoma papilar da tiróide) por sopro cardíaco não avaliado. 
@@ -139,7 +140,7 @@ Antecedentes pessoais: tabagismo (17 UMAs), artrite reumatóide (com diagnóstic
 Medicação habitual: metotrexato 20mg/semana, ácido fólico 5mg, tramadol+paracetamol 37.5+325mg, naproxeno SOS (3xsemana), sertralina 50mg. Neste momento sem corticoterapia.  
 Ao exame objectivo: peso 51Kg (IMC 19.5); pressão arterial 132-84mmHg, frequência cardíaca 88bpm. Auscultação cardíaca e pulmonar sem alterações. Sem edemas dos membros inferiores.
 Analiticamente, apresenta uma Hb 11.8g/dL, creatinina 0.87mg/dL, glicemia em jejum 83mg/dL, triglicerideos 128mg/dL, colesterol total 211mg/dL, colesterol HDL 52mg/dL, colesterol LDL 133mg/dL, NT proBNP 75pg/mL, ANA 1/160, PCR-us 4.5mg/L.
-Exames complementares de diagnóstico: electrocardiograma em ritmo sinusal 79bpm, alterações inespecíficas da repolarização ventricular. Ecocardiograma sem alterações. Prova de esforço não sugestiva de isquémia. AngioTC coronário com score de cálcio de  77 (percentil 75-90), com doença aterosclerótica não obstrutiva envolvendo o tronco comum (<25%), descendente anterior proximal (25-49%), descendente anterior média (<25%) e coronária direita média (25-49%). 
+Exames complementares de diagnóstico: electrocardiograma em ritmo sinusal 79bpm, alterações inespecíficas da repolarização ventricular. Ecocardiograma sem alterações. Prova de esforço não sugestiva de isquémia. AngioTC coronário com score de cálcio de  77 (percentil 75-90), com placas envolvendo o tronco comum (<25%), descendente anterior proximal (25-49%), descendente anterior média (<25%) e coronária direita média (25-49%). 
  
 VINHETA20:
 Homem 61 anos, comerciante. Recorre à consulta por palpitações (3 episódios no último mês, sensação de taquicardia mantida com batimentos irregulares – SmartWatch fez tira de ritmo com QRS irregulares a 140bpm, que me parece fibrilhação auricular). Nesses episódios, sensação de aperto precordial. Refere roncopatia e “sobressaltos” à noite que deixam a esposa preocupada. 
@@ -174,7 +175,6 @@ Ao exame objectivo: peso 76Kg (IMC 26); pressão arterial 124-74mmHg, frequênci
 Nas análises: Hb 13.2g/dL, creatinina 0.94mg/dL (TFG 70mL/min/1.73 m2), glicemia em jejum 138mg/dL, HbA1c 7.8%, triglicerideos 166mg/dL, colesterol total 176mg/dL, colesterol HDL 43mg/dL, colesterol LDL 100mg/dL, NT proBNP 79pg/mL, microalbuminúria <30mg/g.
 Exames complementares de diagnóstico: electrocardiograma em ritmo sinusal 81bpm, alterações inespecíficas da repolarização ventricular. Ecocardiograma com remodeling concêntrico do ventrículo esquerdo, dilatação ligeira da aurícula esquerda, fracção de ejecção 59% e E/e’ 9. Ecocardiograma de esforço com normalização das pressões de enchimento com o esforço e sem alterações da contractilidade segmentar sugestivas de isquémia.
 
- 
 VINHETA24: 
 Homem de 59 anos, trabalhador fabril. Seguimento semestral em consulta de cardiologia para otimização do risco cardiovascular. Assintomático do ponto de vista cardiovascular. Dorme mal (trabalha por turnos e tem dificuldade em descansar de manhã) – nessas alturas mais cansado. 
 Antecedentes pessoais: diabetes tipo 2 (diagnóstico há 5 anos), hipertensão arterial, excesso de peso, dislipidemia, ex-tabagismo (20 UMAs, parou há 5 anos).
@@ -191,7 +191,7 @@ Medicação habitual: pantoprazol 20mg, ácido acetlsalicílico 100mg, nebivolol
 Ao exame objectivo: peso 84Kg (IMC 28.8); pressão arterial 138-75mmHg, frequência cardíaca 89bpm. Sem achados de relevo.
 Nás análises: Hb 13.2g/dL, creatinina 1.08mg/dL (TFG 57mL/min/1.73 m2), glicemia em jejum 128mg/dL, HbA1c 6.9%, triglicerideos 173mg/dL, colesterol total 165mg/dL, colesterol HDL 51mg/dL, colesterol LDL 79mg/dL, NT proBNP 66pg/mL, microalbuminúria 103mg/g.
 Exames complementares de diagnóstico: electrocardiograma em ritmo sinusal 81bpm, alterações inespecíficas da repolarização ventricular. Ecocardiograma com remodeling concêntrico do ventrículo esquerdo, dilatação ligeira da aurícula esquerda, fracção de ejecção 59% e E/e’ 9. Prova de esforço com baixa capacidade funcional, sem atingir 85% da FCMP. 
- 
+
 VINHETA26: 
 Homem 36 anos, informático. Consulta de seguimento para otimização do risco cardiovascular (suspeita de hipercolesterolémia familiar). Sem sintomas. Estilo de vida maioritariamente sedentário.  Não fuma. Bebe socialmente ao fim-de-semana. Dorme cerca de 6h por dia (dificuldade em adormecer cedo).
 Antecedentes familiares: mãe com enfarte agudo do miocárdio aos 47 anos (enfarte inferior); tia materna com morte súbita aos 51 anos; avó materna faleceu com insuficiência cardíaca aos 67 anos. 
@@ -205,7 +205,7 @@ Antecedentes pessoais: tabagismo (10 UMAs), ansiedade.
 Medicação habitual: sertralina 25mg, lorazepam 1mg.
 Ao exame objectivo: peso 53Kg (IMC 20.1); pressão arterial 124-75mmHg, frequência cardíaca 69bpm. Auscultação cardíaca sem alterações.
 Análises: Hb 13.2g/dL, creatinina 0.58mg/dL, glicemia em jejum 78mg/dL, HbA1c 5.6%, triglicerideos 87mg/dL, colesterol total 199mg/dL, colesterol HDL 54mg/dL, colesterol LDL 87mg/dL, NT proBNP <75pg/mL.
-Exames complementares de diagnóstico: electrocardiograma e ecocardiograma sem alterações significativas. AngioTC coronária com score de cálcio 86 (P50-75) com oclusão da coronária direita média, com placas não obstrutivas (<50%) na circunflexa proximal e descendente anterior média. 
+Exames complementares de diagnóstico: electrocardiograma e ecocardiograma sem alterações significativas. AngioTC coronária com score de cálcio 186 (> P75) com oclusão da coronária direita média e com placas não obstrutivas (<50%) na circunflexa proximal e descendente anterior média. 
  
 VINHETA28: 
 Homem 51 anos, engenheiro químico em fábrica de plásticos. Consulta de vigilância cardiovascular (cardiopatia isquémica). Sem dor torácica ou outros sintomas cardiovasculares. 

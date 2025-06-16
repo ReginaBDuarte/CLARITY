@@ -1,35 +1,75 @@
 import os
-from utils import parse_vinhetas, get_gpt4_response, get_gemini_response, parse_json
+from utils import parse_vinhetas, get_gpt4_response, get_gemini_response, parse_json, parse_prompt
 from openai import OpenAI
 
 
-vinhetas_clinicas = parse_vinhetas('vinhetas.txt')
+vinhetas_clinicas_en = parse_vinhetas('vinhetas_2_en.txt')
+vinhetas_clinicas_pt = parse_vinhetas('vinhetas_2_pt.txt')
 
-gpt4_responses = []
-gimini_responses = []
+system_prompt_en, user_prompt_en = parse_prompt('prompt_2_en.txt', separator='[Vignette]')
+system_prompt_pt, user_prompt_pt = parse_prompt('prompt_2_pt.txt', separator='[Vinheta]')
 
 
-for idx, vinheta in enumerate(vinhetas_clinicas, start=1):
+
+#print(f"Total vinhetas to process: {len(vinhetas_clinicas_en)} (EN) and {len(vinhetas_clinicas_pt)} (PT)")
+#print(f"System prompt (EN): {system_prompt_en}")
+#print(f"System prompt (PT): {system_prompt_pt}")
+#print(f"User prompt (EN): {user_prompt_en}")
+#print(f"User prompt (PT): {user_prompt_pt}")
+#print("vinhetas_clinicas_en:", vinhetas_clinicas_en[:2])  # Display first two for sanity check
+# vinhetas_clinicas_pt: Display first two for sanity check
+#print("vinhetas_clinicas_pt:", vinhetas_clinicas_pt[:2])  # Display first two for sanity check
+
+
+
+#gpt4_responses = []
+gimini_responses_pt = []
+gimini_responses_en = []
+
+
+#for pt
+for idx, vinheta in enumerate(vinhetas_clinicas_pt, start=1):
     print(f"Processing vinheta: {idx}")
-    response = get_gpt4_response(vinheta)
-    response_gimini = get_gemini_response(vinheta)
+    #response = get_gpt4_response(vinheta)
+    response_gimini = get_gemini_response(vinheta, 
+                                          system_prompt=system_prompt_pt,
+                                          user_prompt=user_prompt_pt,
+                                          )
     # Store the responses
-    gpt4_responses.append(response)
-    gimini_responses.append(response_gimini)
+    #gpt4_responses.append(response)
+    gimini_responses_pt.append(response_gimini)
+
+#for en
+for idx, vinheta in enumerate(vinhetas_clinicas_en, start=1):
+    print(f"Processing vinheta: {idx}")
+    #response = get_gpt4_response(vinheta)
+    response_gimini = get_gemini_response(vinheta, 
+                                          system_prompt=system_prompt_en,
+                                          user_prompt=user_prompt_en,
+                                          )
+    # Store the responses
+    #gpt4_responses.append(response)
+    gimini_responses_en.append(response_gimini)
 
 
 # Output file name
-gpt4_filename = "gpt4_responses.txt"
-gimini_filename = "gimini_responses.txt"
+#gpt4_filename = "gpt4_responses.txt"
+gimini_filename_pt = "gimini_responses_pt.txt"
+gimini_filename_en = "gimini_responses_en.txt"
 
 # Write to file
-with open(gpt4_filename, "w", encoding="utf-8") as f:
-    for idx, text in enumerate(gpt4_responses, start=1):
+#with open(gpt4_filename, "w", encoding="utf-8") as f:
+ #   for idx, text in enumerate(gpt4_responses, start=1):
+  #      f.write(f"###Vinheta {idx}. \n{text}\n\n")
+
+with open(gimini_filename_pt, "w", encoding="utf-8") as f:
+    for idx, text in enumerate(gimini_responses_pt, start=1):
         f.write(f"###Vinheta {idx}. \n{text}\n\n")
 
-with open(gimini_filename, "w", encoding="utf-8") as f:
-    for idx, text in enumerate(gimini_responses, start=1):
+with open(gimini_filename_en, "w", encoding="utf-8") as f:
+    for idx, text in enumerate(gimini_responses_en, start=1):
         f.write(f"###Vinheta {idx}. \n{text}\n\n")
+
 
 
 

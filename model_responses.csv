@@ -1,5 +1,0 @@
-id;categoria_de_risco;risco_absoluto;fatores_de_risco;confianca;Modelo
-Vinheta 1;Baixo;1%;{'Tabagismo': 'Sim', 'Colesterol LDL': '105 mg/dL', 'Pressão arterial': '124/75 mmHg', 'Glicemia': '82 mg/dL', 'IMC': '23.8'};Muito alta;GPT-4.1
-Vinheta 2;Moderado;3%;{'Idade': '41', 'Sexo': 'Masculino', 'Tabagismo': 'Sim', 'Hipertensão arterial': 'Sim', 'Colesterol total': '241 mg/dL', 'LDL': '188 mg/dL', 'HDL': '33 mg/dL', 'Antecedentes familiares': 'HTA e diabetes na mãe'};Alta;GPT-4.1
-Vinheta 1;Baixo;<2.5%;{'Tabagismo': 'Sim', 'Hipertensão Arterial': 'Sim', 'Rigidez Arterial': 'Sim', 'Idade': '40 anos'};Intermédia;Gemini-2.0-flash
-Vinheta 2;Elevado;5-7.5%;{'Idade': '41', 'Tabagismo': 'Sim', 'Hipertensão Arterial': 'Sim (155/107 mmHg)', 'História Familiar de DCV precoce': 'Sim (mãe com HAS e DM)', 'Colesterol Total Elevado': '241 mg/dL', 'Colesterol HDL Baixo': '33 mg/dL', 'Colesterol LDL Elevado': '188 mg/dL', 'HbA1c': '5.8%'};Intermédia;Gemini-2.0-flash
