@@ -1,0 +1,3290 @@
+###Vinheta 1. 
+| Risk Factor             | Values             |
+| ----------------------- | ------------------ |
+| Age                     | 44 years           |
+| Gender                  | Male               |
+| Smoking                 | Non-smoker         |
+| Systolic Blood Pressure | 114 mmHg           |
+| Total Cholesterol       | 183 mg/dL          |
+| HDL-Cholesterol         | 55 mg/dL           |
+| non-HDL Cholesterol     | 128 mg/dL          |
+
+| SCORE2 Applicable | Exception (if not applicable) | SCORE2 (%) | Risk Category | Confidence Level |
+| ----------------- | ------------------------------- | ---------- | ------------- | ---------------- |
+| Yes               | N/A                             | 1,0%       | Low           | High             |
+
+The patient is a 44-year-old male with no personal or family history of cardiovascular disease, who doesn't smoke and has a favorable lipid profile and blood pressure. His calculated SCORE2 risk is 1,0%, placing him in the low-risk category for cardiovascular events in the next 10 years. The absence of major risk factors and the normal findings on ECG, echocardiogram, and Holter monitoring contribute to this classification. The palpitations, while requiring investigation, did not reveal a significant arrhythmia.
+
+| Risk Factors              | Values          |
+| ------------------------- | --------------- |
+| Age                       | 44 years        |
+| Gender                    | Male            |
+| Smoking                   | Non-smoker      |
+| Arterial Hypertension     | No              |
+| Systolic Blood Pressure   | 114 mmHg        |
+| Diastolic Blood Pressure  | 72 mmHg         |
+| Dyslipidemia              | No              |
+| Total Cholesterol         | 183 mg/dL       |
+| HDL-Cholesterol         | 55 mg/dL        |
+| Triglycerides             | 88 mg/dL        |
+| LDL-Cholesterol         | 110 mg/dL       |
+| non-HDL Cholesterol     | 128 mg/dL       |
+| Diabetes Mellitus         | No              |
+
+| Risk Modifiers                                           | Values      |
+| -------------------------------------------------------- | ----------- |
+| Elevated Coronary Calcium Score                          | unknown     |
+| Calcium Score = 0                                        | unknown     |
+| Carotid Plaques                                          | unknown     |
+| Obesity                                                  | No          |
+| Pre-Diabetes                                             | No          |
+| Family History of atherosclerotic cardiovascular disease (ASCVD) | No          |
+| Elevated Lp(a)                                           | unknown     |
+| Increased Arterial Stiffness                             | unknown     |
+| Elevated High-sensitivity CRP                            | unknown     |
+| Chronic Inflammatory Disease                           | No      |
+| HIV Infection                                            | No     |
+| Migraine with Aura                                       | No     |
+| Sleep Disorder                                           | No    |
+| Non-Alcoholic Fatty Liver Disease                        | No        |
+| Erectile Dysfunction                                     | unknown     |
+| Premature Menopause                                      | No          |
+| Past history of Pregnancy Complications (Preeclampsia, Hypertension, or Diabetes) | No |
+| Chronic Obstructive Pulmonary Disease (COPD)            | No         |
+| Cancer                                                   | No       |
+| Other (specify)                                          | No          |
+
+```json
+{
+"Risk":{
+"Category": "Low",
+"SCORE2": "1,0%",
+"Confidence Level": "High"
+},
+"Risk Factors":{
+"Age": "44 years",
+"Gender": "Male",
+"Smoking": "Non-smoker",
+"Arterial Hypertension": "No",
+"Systolic Blood Pressure": "114 mmHg",
+"Diastolic Blood Pressure": "72 mmHg",
+"Dyslipidemia": "No",
+"Total Cholesterol": "183 mg/dL",
+"HDL-Cholesterol": "55 mg/dL",
+"Triglycerides": "88 mg/dL",
+"LDL-Cholesterol": "110 mg/dL",
+"non-HDL Cholesterol": "128 mg/dL",
+"Diabetes Mellitus": "No"
+},
+"Risk Modifiers": {
+"Elevated Coronary Calcium Score": "unknown",
+"Calcium Score = 0": "unknown",
+"Carotid Plaques": "unknown",
+"Obesity": "No",
+"Pre-Diabetes": "No",
+"Family History of atherosclerotic cardiovascular disease (ASCVD)": "No",
+"Elevated Lp(a)": "unknown",
+"Increased Arterial Stiffness": "unknown",
+"Elevated High-sensitivity CRP": "unknown",
+"Chronic Inflammatory Disease": "No",
+"HIV Infection": "No",
+"Migraine with Aura": "No",
+"Sleep Disorder": "No",
+"Non-Alcoholic Fatty Liver Disease": "No",
+"Erectile Dysfunction": "unknown",
+"Premature Menopause": "No",
+"Past history of Pregnancy Complications (Preeclampsia, Hypertension, or Diabetes)": "No",
+"Chronic Obstructive Pulmonary Disease (COPD)": "No",
+"Cancer": "No",
+"Other (specify)": "No"
+}
+}
+```
+
+###Vinheta 2. 
+```markdown
+## 1. Structured extraction of risk factors:
+
+| Risk Factor              | Values             |
+|--------------------------|--------------------|
+| Age                      | 40 years           |
+| Gender                   | Female             |
+| Smoking                  | Smoker             |
+| Systolic Blood Pressure  | 124 mmHg           |
+| Total Cholesterol        | 190 mg/dL          |
+| HDL-Cholesterol          | 67 mg/dL           |
+| non-HDL Cholesterol      | 123 mg/dL          |
+
+## 2. Risk stratification according to the 2021 ESC Guidelines on cardiovascular disease prevention in clinical practice
+
+| SCORE2 Applicable | Exception (if not applicable) | SCORE2 (%) | Risk Category | Confidence Level |
+|-------------------|-----------------------------|------------|---------------|------------------|
+| Yes               | N/A                         | 1,3%       | Low           | High             |
+
+## 3. Brief Clinical Explanation
+
+This 40-year-old female has a low 10-year cardiovascular risk according to SCORE2 (1,3%). Her smoking status is the most significant modifiable risk factor and should be addressed promptly with the scheduled smoking cessation appointment. While her blood pressure is within the normal range, her total and non-HDL cholesterol levels are slightly elevated and should be monitored. The presence of non-specific ventricular repolarization changes on the ECG warrants consideration; however, in the absence of cardiac symptoms, it does not significantly impact her immediate risk stratification. Increased arterial stiffness is present (PWV = 6.8 m/s). Overall, lifestyle modifications, particularly smoking cessation, are crucial for long-term cardiovascular health.
+
+## 4. Structured extraction of risk factors:
+
+| Risk Factor           | Values          |
+|-----------------------|-----------------|
+| Age                   | 40              |
+| Gender                | Female          |
+| Smoking               | Smoker          |
+| Arterial Hypertension | No              |
+| Systolic Blood Pressure | 124             |
+| Diastolic Blood Pressure| 75              |
+| Dyslipidemia          | No              |
+| Total Cholesterol     | 190             |
+| HDL-Cholesterol       | 67              |
+| Triglycerides         | 90              |
+| LDL-Cholesterol       | 105             |
+| non-HDL Cholesterol | 123             |
+| Diabetes Mellitus     | No              |
+
+| Risk Modifiers                                                        | Values                               |
+|-----------------------------------------------------------------------|--------------------------------------|
+| Elevated Coronary Calcium Score                                       | unknown                              |
+| Calcium Score = 0                                                    | unknown                              |
+| Carotid Plaques                                                        | unknown                              |
+| Obesity                                                                 | No                                   |
+| Pre-Diabetes                                                             | No                                   |
+| Family History of atherosclerotic cardiovascular disease (ASCVD)         | unknown                              |
+| Elevated Lp(a)                                                          | unknown                              |
+| Increased Arterial Stiffness                                           | Yes                                  |
+| Elevated High-sensitivity CRP                                         | unknown                              |
+| Chronic Inflammatory Disease                                            | unknown                              |
+| HIV Infection                                                          | unknown                              |
+| Migraine with Aura                                                     | unknown                              |
+| Sleep Disorder                                                        | unknown                              |
+| Non-Alcoholic Fatty Liver Disease                                       | unknown                              |
+| Erectile Dysfunction                                                   | N/A                                |
+| Premature Menopause                                                    | No                                   |
+| Past history of Pregnancy Complications (Preeclampsia, Hypertension, or Diabetes) | unknown                              |
+| Chronic Obstructive Pulmonary Disease (COPD)                            | unknown                              |
+| Cancer                                                                  | unknown                              |
+| Other (specify)                                                        | Nonspecific ventricular repolarization changes on ECG|
+
+## 6. Json File Creation
+
+```json
+{
+  "Risk": {
+    "Category": "Low",
+    "SCORE2": "1,3%",
+    "Confidence Level": "High"
+  },
+  "Risk Factors": {
+    "Age": "40",
+    "Gender": "Female",
+    "Smoking": "Smoker",
+    "Arterial Hypertension": "No",
+    "Systolic Blood Pressure": "124",
+    "Diastolic Blood Pressure": "75",
+    "Dyslipidemia": "No",
+    "Total Cholesterol": "190",
+    "HDL-Cholesterol": "67",
+    "Triglycerides": "90",
+    "LDL-Cholesterol": "105",
+    "non-HDL Cholesterol": "123",
+    "Diabetes Mellitus": "No"
+  },
+  "Risk Modifiers": {
+    "Elevated Coronary Calcium Score": "unknown",
+    "Calcium Score = 0": "unknown",
+    "Carotid Plaques": "unknown",
+    "Obesity": "No",
+    "Pre-Diabetes": "No",
+    "Family History of atherosclerotic cardiovascular disease (ASCVD)": "unknown",
+    "Elevated Lp(a)": "unknown",
+    "Increased Arterial Stiffness": "Yes",
+    "Elevated High-sensitivity CRP": "unknown",
+    "Chronic Inflammatory Disease": "unknown",
+    "HIV Infection": "unknown",
+    "Migraine with Aura": "unknown",
+    "Sleep Disorder": "unknown",
+    "Non-Alcoholic Fatty Liver Disease": "unknown",
+    "Erectile Dysfunction": "N/A",
+    "Premature Menopause": "No",
+    "Past history of Pregnancy Complications (Preeclampsia, Hypertension, or Diabetes)": "unknown",
+    "Chronic Obstructive Pulmonary Disease (COPD)": "unknown",
+    "Cancer": "unknown",
+    "Other (specify)": "Nonspecific ventricular repolarization changes on ECG"
+  }
+}
+```
+
+
+###Vinheta 3. 
+| Risk Factor              | Values            |
+|--------------------------|-------------------|
+| Age                      | 58 years          |
+| Gender                   | Female            |
+| Smoking                  | Non-smoker        |
+| Systolic Blood Pressure  | 122 mmHg          |
+| Total Cholesterol        | 164 mg/dL         |
+| HDL-Cholesterol          | 47 mg/dL          |
+| non-HDL Cholesterol      | 117 mg/dL         |
+
+| SCORE2 Applicable | Exception (if not applicable) | SCORE2 (%) | Risk Category | Confidence Level |
+|-------------------|--------------------------------|------------|---------------|------------------|
+| Yes               |                                | 1,4%       | Low           | High             |
+
+Brief Clinical Explanation:
+This 58-year-old female is classified as low risk according to SCORE2. Her risk factors are well-controlled with a blood pressure of 122/77 mmHg, total cholesterol of 164 mg/dL, HDL of 47 mg/dL and being a non-smoker. Although her BMI is 29.9, which classifies her as overweight, the other risk factors and a calcium score of zero contribute to the low-risk stratification. She also engages in regular physical activity.
+
+| Risk Factor             | Values             |
+|-------------------------|--------------------|
+| Age                     | 58                 |
+| Gender                  | Female             |
+| Smoking                 | Non-smoker         |
+| Arterial Hypertension   | No                 |
+| Systolic Blood Pressure | 122                |
+| Diastolic Blood Pressure| 77                 |
+| Dyslipidemia            | No                 |
+| Total Cholesterol       | 164                |
+| HDL-Cholesterol         | 47                 |
+| Triglycerides           | 62                 |
+| LDL-Cholesterol         | 105                |
+| non-HDL Cholesterol     | 117                |
+| Diabetes Mellitus       | No                 |
+
+| Risk Modifiers                                                              | Values             |
+|-----------------------------------------------------------------------------|--------------------|
+| Elevated Coronary Calcium Score                                             | Calcium Score = 0  |
+| Obesity                                                                      | Yes              |
+| Family History of atherosclerotic cardiovascular disease (ASCVD)              | unknown            |
+| Elevated Lp(a)                                                              | unknown            |
+| Increased Arterial Stiffness                                                | unknown            |
+| Elevated High-sensitivity CRP                                               | unknown            |
+| Chronic Inflammatory Disease                                                  | unknown            |
+| HIV Infection                                                               | unknown            |
+| Migraine with Aura                                                            | unknown            |
+| Sleep Disorder                                                              | unknown            |
+| Non-Alcoholic Fatty Liver Disease                                           | unknown            |
+| Erectile Dysfunction                                                         | unknown            |
+| Premature Menopause                                                           | unknown            |
+| Past history of Pregnancy Complications (Preeclampsia, Hypertension, or Diabetes) | unknown            |
+| Chronic Obstructive Pulmonary Disease (COPD)                                  | unknown            |
+| Cancer                                                                       | unknown            |
+| Other (specify)                                                              | unknown            |
+
+```json
+{
+"Risk": {
+"Category": "Low",
+"SCORE2": "1,4%",
+"Confidence Level": "High"
+},
+"Risk Factors": {
+"Age": "58",
+"Gender": "Female",
+"Smoking": "Non-smoker",
+"Arterial Hypertension": "No",
+"Systolic Blood Pressure": "122",
+"Diastolic Blood Pressure": "77",
+"Dyslipidemia": "No",
+"Total Cholesterol": "164",
+"HDL-Cholesterol": "47",
+"Triglycerides": "62",
+"LDL-Cholesterol": "105",
+"non-HDL Cholesterol": "117",
+"Diabetes Mellitus": "No"
+},
+"Risk Modifiers": {
+"Elevated Coronary Calcium Score": "Calcium Score = 0",
+"Obesity": "Yes",
+"Family History of atherosclerotic cardiovascular disease (ASCVD)": "unknown",
+"Elevated Lp(a)": "unknown",
+"Increased Arterial Stiffness": "unknown",
+"Elevated High-sensitivity CRP": "unknown",
+"Chronic Inflammatory Disease": "unknown",
+"HIV Infection": "unknown",
+"Migraine with Aura": "unknown",
+"Sleep Disorder": "unknown",
+"Non-Alcoholic Fatty Liver Disease": "unknown",
+"Erectile Dysfunction": "unknown",
+"Premature Menopause": "unknown",
+"Past history of Pregnancy Complications (Preeclampsia, Hypertension, or Diabetes)": "unknown",
+"Chronic Obstructive Pulmonary Disease (COPD)": "unknown",
+"Cancer": "unknown",
+"Other (specify)": "unknown"
+}
+}
+```
+
+###Vinheta 4. 
+```markdown
+| Risk Factor             | Values         |
+|--------------------------|----------------|
+| Age                      | 54 years       |
+| Gender                   | Male           |
+| Smoking                  | Non-smoker     |
+| Systolic Blood Pressure | 118 mmHg       |
+| Total Cholesterol        | 183 mg/dL      |
+| HDL-Cholesterol          | 55 mg/dL       |
+| non-HDL Cholesterol    | 128 mg/dL      |
+
+| SCORE2 Applicable | Exception (if not applicable) | SCORE2 (%) | Risk Category | Confidence Level |
+|--------------------|------------------------------|-------------|----------------|-------------------|
+| Yes                | N/A                          | 1,0%       | Low           | High              |
+
+3. Brief Clinical Explanation
+
+This 54-year-old male presents with a low 10-year cardiovascular risk based on the SCORE2 model for moderate-risk countries. His risk factors include male gender, age of 54, non-smoking status, systolic blood pressure of 118 mmHg, total cholesterol of 183 mg/dL, and HDL cholesterol of 55 mg/dL. Although his LDL cholesterol is 110 mg/dL and non-HDL cholesterol is 128 mg/dL, these levels are not significantly elevated. His family history of cardiovascular disease is a risk modifier but does not significantly impact his SCORE2 risk classification. He has a sedentary lifestyle, which could be addressed to further reduce his risk.
+
+| Risk Factor               | Values         |
+|---------------------------|----------------|
+| Age                       | 54 years       |
+| Gender                    | Male           |
+| Smoking                   | Non-smoker     |
+| Arterial Hypertension     | No             |
+| Systolic Blood Pressure  | 118 mmHg       |
+| Diastolic Blood Pressure | 60 mmHg        |
+| Dyslipidemia              | No             |
+| Total Cholesterol         | 183 mg/dL      |
+| HDL-Cholesterol           | 55 mg/dL       |
+| Triglycerides             | 88 mg/dL       |
+| LDL-Cholesterol           | 110 mg/dL      |
+| non-HDL Cholesterol     | 128 mg/dL      |
+| Diabetes Mellitus         | No             |
+
+| Risk Modifiers                                                      | Values       |
+|----------------------------------------------------------------------|--------------|
+| Elevated Coronary Calcium Score                                       | unknown      |
+| Calcium Score = 0                                                     | unknown      |
+| Carotid Plaques                                                      | unknown      |
+| Obesity                                                              | No           |
+| Pre-Diabetes                                                         | No           |
+| Family History of atherosclerotic cardiovascular disease (ASCVD) | Yes           |
+| Elevated Lp(a)                                                         | unknown      |
+| Increased Arterial Stiffness                                          | unknown      |
+| Elevated High-sensitivity CRP                                        | unknown      |
+| Chronic Inflammatory Disease                                           | No           |
+| HIV Infection                                                        | No           |
+| Migraine with Aura                                                     | No           |
+| Sleep Disorder                                                       | No           |
+| Non-Alcoholic Fatty Liver Disease                                      | No           |
+| Erectile Dysfunction                                                 | unknown      |
+| Premature Menopause                                                    | N/A          |
+| Past history of Pregnancy Complications (Preeclampsia, Hypertension, or Diabetes) | N/A          |
+| Chronic Obstructive Pulmonary Disease (COPD)                            | No           |
+| Cancer                                                                 | No           |
+| Other (specify)                                                       | Sedentary lifestyle |
+```
+
+```json
+{
+"Risk": {
+"Category": "Low",
+"SCORE2": "1,0%",
+"Confidence Level": "High"
+},
+"Risk Factors": {
+"Age": "54 years",
+"Gender": "Male",
+"Smoking": "Non-smoker",
+"Arterial Hypertension": "No",
+"Systolic Blood Pressure": "118 mmHg",
+"Diastolic Blood Pressure": "60 mmHg",
+"Dyslipidemia": "No",
+"Total Cholesterol": "183 mg/dL",
+"HDL-Cholesterol": "55 mg/dL",
+"Triglycerides": "88 mg/dL",
+"LDL-Cholesterol": "110 mg/dL",
+"non-HDL Cholesterol": "128 mg/dL",
+"Diabetes Mellitus": "No"
+},
+"Risk Modifiers": {
+"Elevated Coronary Calcium Score": "unknown",
+"Calcium Score = 0": "unknown",
+"Carotid Plaques": "unknown",
+"Obesity": "No",
+"Pre-Diabetes": "No",
+"Family History of atherosclerotic cardiovascular disease (ASCVD)": "Yes",
+"Elevated Lp(a)": "unknown",
+"Increased Arterial Stiffness": "unknown",
+"Elevated High-sensitivity CRP": "unknown",
+"Chronic Inflammatory Disease": "No",
+"HIV Infection": "No",
+"Migraine with Aura": "No",
+"Sleep Disorder": "No",
+"Non-Alcoholic Fatty Liver Disease": "No",
+"Erectile Dysfunction": "unknown",
+"Premature Menopause": "N/A",
+"Past history of Pregnancy Complications (Preeclampsia, Hypertension, or Diabetes)": "N/A",
+"Chronic Obstructive Pulmonary Disease (COPD)": "No",
+"Cancer": "No",
+"Other (specify)": "Sedentary lifestyle"
+}
+}
+```
+
+###Vinheta 5. 
+## 1. Structured extraction of risk factors:
+
+| Risk Factor             | Values             |
+| ----------------------- | ------------------ |
+| Age                     | 63 years           |
+| Gender                  | Female             |
+| Smoking                 | Non-smoker         |
+| Systolic Blood Pressure | 107 mmHg           |
+| Total Cholesterol       | 214 mg/dL          |
+| HDL-Cholesterol         | 67 mg/dL           |
+| non-HDL Cholesterol     | 147 mg/dL |
+
+## 2. Risk stratification according to the 2021 ESC Guidelines
+
+| SCORE2 Applicable | Exception (if not applicable) | SCORE2 (%) | Risk Category | Confidence Level |
+| ----------------- | ----------------------------- | ---------- | ------------- | ---------------- |
+| Yes               | N/A                           | 2,3        | Moderate      | High             |
+
+## 3. Brief Clinical Explanation
+
+This 63-year-old woman is classified as having moderate cardiovascular risk according to the SCORE2 calculator for moderate-risk countries. Her risk is driven primarily by her age and total cholesterol levels. She is a non-smoker and has well-controlled blood pressure, which are favorable factors. Her LDL cholesterol is slightly above desirable levels. No major risk modifiers are apparent from the clinical vignette.
+
+## 4. Structured extraction of risk factors:
+
+| Risk Factor           | Values       |
+| --------------------- | ------------ |
+| Age                   | 63 years     |
+| Gender                | Female       |
+| Smoking               | Non-smoker   |
+| Arterial Hypertension | No           |
+| Systolic Blood Pressure | 107 mmHg     |
+| Diastolic Blood Pressure | 58 mmHg |
+| Dyslipidemia          | Yes          |
+| Total Cholesterol     | 214 mg/dL    |
+| HDL-Cholesterol       | 67 mg/dL     |
+| Triglycerides         | 124 mg/dL    |
+| LDL-Cholesterol       | 122 mg/dL    |
+| non-HDL Cholesterol | 147 mg/dL    |
+| Diabetes Mellitus     | No           |
+
+| Risk Modifiers                                                                           | Values                                   |
+| ---------------------------------------------------------------------------------------- | ---------------------------------------- |
+| Elevated Coronary Calcium Score                                                          | unknown                                  |
+| Calcium Score = 0                                                                         | unknown                                  |
+| Carotid Plaques                                                                         | unknown                                  |
+| Obesity                                                                                 | No                                       |
+| Pre-Diabetes                                                                            | No                                       |
+| Family History of atherosclerotic cardiovascular disease (ASCVD)                          | unknown                                  |
+| Elevated Lp(a)                                                                          | unknown                                  |
+| Increased Arterial Stiffness                                                              | unknown                                  |
+| Elevated High-sensitivity CRP                                                              | unknown                                  |
+| Chronic Inflammatory Disease                                                              | unknown                                  |
+| HIV Infection                                                                           | No                                       |
+| Migraine with Aura                                                                        | No                                       |
+| Sleep Disorder                                                                          | No                                       |
+| Non-Alcoholic Fatty Liver Disease                                                        | unknown                                  |
+| Erectile Dysfunction                                                                    | N/A                                      |
+| Premature Menopause                                                                     | No                                       |
+| Past history of Pregnancy Complications (Preeclampsia, Hypertension, or Diabetes)       | unknown                                  |
+| Chronic Obstructive Pulmonary Disease (COPD)                                             | No                                       |
+| Cancer                                                                                  | No                                       |
+| Other (specify)                                                                         | Hypothyroidism; Mild mitral regurgitation; Mild left atrial enlargement |
+
+## 6. Json File Creation
+```json
+{
+  "Risk": {
+    "Category": "Moderate",
+    "SCORE2": "2,3",
+    "Confidence Level": "High"
+  },
+  "Risk Factors": {
+    "Age": "63 years",
+    "Gender": "Female",
+    "Smoking": "Non-smoker",
+    "Arterial Hypertension": "No",
+    "Systolic Blood Pressure": "107 mmHg",
+    "Diastolic Blood Pressure": "58 mmHg",
+    "Dyslipidemia": "Yes",
+    "Total Cholesterol": "214 mg/dL",
+    "HDL-Cholesterol": "67 mg/dL",
+    "Triglycerides": "124 mg/dL",
+    "LDL-Cholesterol": "122 mg/dL",
+    "non-HDL Cholesterol": "147 mg/dL",
+    "Diabetes Mellitus": "No"
+  },
+  "Risk Modifiers": {
+    "Elevated Coronary Calcium Score": "unknown",
+    "Calcium Score = 0": "unknown",
+    "Carotid Plaques": "unknown",
+    "Obesity": "No",
+    "Pre-Diabetes": "No",
+    "Family History of atherosclerotic cardiovascular disease (ASCVD)": "unknown",
+    "Elevated Lp(a)": "unknown",
+    "Increased Arterial Stiffness": "unknown",
+    "Elevated High-sensitivity CRP": "unknown",
+    "Chronic Inflammatory Disease": "unknown",
+    "HIV Infection": "No",
+    "Migraine with Aura": "No",
+    "Sleep Disorder": "No",
+    "Non-Alcoholic Fatty Liver Disease": "unknown",
+    "Erectile Dysfunction": "N/A",
+    "Premature Menopause": "No",
+    "Past history of Pregnancy Complications (Preeclampsia, Hypertension, or Diabetes)": "unknown",
+    "Chronic Obstructive Pulmonary Disease (COPD)": "No",
+    "Cancer": "No",
+    "Other": "Hypothyroidism; Mild mitral regurgitation; Mild left atrial enlargement"
+  }
+}
+```
+
+
+###Vinheta 6. 
+```markdown
+## 1. Structured extraction of risk factors:
+
+| Risk Factor             | Values          |
+| ----------------------- | --------------- |
+| Age                     | 41              |
+| Gender                  | Female          |
+| Smoking                 | Smoker          |
+| Systolic Blood Pressure | 146 mmHg        |
+| Total Cholesterol       | 270 mg/dL       |
+| HDL-Cholesterol         | 53 mg/dL        |
+| non-HDL Cholesterol     | 217 mg/dL       |
+
+## 2. Risk stratification according to the 2021 ESC Guidelines
+
+| SCORE2 Applicable | Exception (if not applicable) | SCORE2 (%) | Risk Category | Confidence Level |
+| ----------------- | ----------------------------- | ---------- | ------------- | ---------------- |
+| Yes               | N/A                           | 2,2%        | Low           | High             |
+
+## 3. Brief Clinical Explanation
+
+The patient is a 41-year-old female smoker with a history of hypertension (although currently off medication), elevated total and LDL cholesterol. Although her SCORE2 is low based on age and risk factors included in the model, active smoking and uncontrolled blood pressure are contributing factors that warrant intervention. Pre-diabetes also increases her risk. Lifestyle modifications and potentially pharmacological treatment for hyperlipidemia and hypertension should be considered. A more comprehensive evaluation should be done to rule out secondary causes of hypertension, especially given the relatively young age of the patient.
+
+## 4. Structured extraction of risk factors:
+
+| Risk Factor             | Values          |
+| ----------------------- | --------------- |
+| Age                     | 41              |
+| Gender                  | Female          |
+| Smoking                 | Smoker          |
+| Arterial Hypertension   | Yes             |
+| Systolic Blood Pressure | 146 mmHg        |
+| Diastolic Blood Pressure | 85 mmHg         |
+| Dyslipidemia            | Yes             |
+| Total Cholesterol       | 270 mg/dL       |
+| HDL-Cholesterol         | 53 mg/dL        |
+| Triglycerides           | 142 mg/dL       |
+| LDL-Cholesterol         | 189 mg/dL       |
+| non-HDL Cholesterol     | 217 mg/dL       |
+| Diabetes Mellitus       | No             |
+
+| Risk Modifiers                                                                  | Values       |
+| ------------------------------------------------------------------------------- | ------------ |
+| Elevated Coronary Calcium Score                                                 | unknown      |
+| Calcium Score = 0                                                               | unknown      |
+| Carotid Plaques                                                                 | unknown      |
+| Obesity                                                                         | Yes          |
+| Pre-Diabetes                                                                    | Yes          |
+| Family History of atherosclerotic cardiovascular disease (ASCVD)                | unknown      |
+| Elevated Lp(a)                                                                  | unknown      |
+| Increased Arterial Stiffness                                                    | unknown      |
+| Elevated High-sensitivity CRP                                                     | unknown      |
+| Chronic Inflammatory Disease                                                    | unknown      |
+| HIV Infection                                                                   | unknown      |
+| Migraine with Aura                                                              | unknown      |
+| Sleep Disorder                                                                  | unknown      |
+| Non-Alcoholic Fatty Liver Disease                                               | unknown      |
+| Erectile Dysfunction                                                            | No           |
+| Premature Menopause                                                             | No           |
+| Past history of Pregnancy Complications (Preeclampsia, Hypertension, or Diabetes) | unknown      |
+| Chronic Obstructive Pulmonary Disease (COPD)                                    | No           |
+| Cancer                                                                          | No           |
+| Other (specify)                                                                 | unknown      |
+
+## 6. Json File Creation
+```json
+{
+"Risk": {
+"Category": "Low",
+"SCORE2": "2,2%",
+"Confidence Level": "High"
+},
+"Risk Factors": {
+"Age": "41",
+"Gender": "Female",
+"Smoking": "Smoker",
+"Arterial Hypertension": "Yes",
+"Systolic Blood Pressure": "146 mmHg",
+"Diastolic Blood Pressure": "85 mmHg",
+"Dyslipidemia": "Yes",
+"Total Cholesterol": "270 mg/dL",
+"HDL-Cholesterol": "53 mg/dL",
+"Triglycerides": "142 mg/dL",
+"LDL-Cholesterol": "189 mg/dL",
+"non-HDL Cholesterol": "217 mg/dL",
+"Diabetes Mellitus": "No"
+},
+"Risk Modifiers": {
+"Elevated Coronary Calcium Score": "unknown",
+"Calcium Score = 0": "unknown",
+"Carotid Plaques": "unknown",
+"Obesity": "Yes",
+"Pre-Diabetes": "Yes",
+"Family History of atherosclerotic cardiovascular disease (ASCVD)": "unknown",
+"Elevated Lp(a)": "unknown",
+"Increased Arterial Stiffness": "unknown",
+"Elevated High-sensitivity CRP": "unknown",
+"Chronic Inflammatory Disease": "unknown",
+"HIV Infection": "unknown",
+"Migraine with Aura": "unknown",
+"Sleep Disorder": "unknown",
+"Non-Alcoholic Fatty Liver Disease": "unknown",
+"Erectile Dysfunction": "No",
+"Premature Menopause": "No",
+"Past history of Pregnancy Complications (Preeclampsia, Hypertension, or Diabetes)": "unknown",
+"Chronic Obstructive Pulmonary Disease (COPD)": "No",
+"Cancer": "No",
+"Other (specify)": "unknown"
+}
+}
+```
+
+
+###Vinheta 7. 
+```markdown
+## 1. Structured extraction of risk factors:
+
+| Risk Factor              | Values             |
+|--------------------------|--------------------|
+| Age                      | 48 years           |
+| Gender                   | Male               |
+| Smoking                  | Non-smoker         |
+| Systolic Blood Pressure  | 138 mmHg           |
+| Total Cholesterol        | 231 mg/dL          |
+| HDL-Cholesterol          | 43 mg/dL           |
+| non-HDL Cholesterol      | 188 mg/dL         |
+
+## 2. Risk stratification according to the 2021 ESC Guidelines on cardiovascular disease prevention in clinical practice
+
+| SCORE2 Applicable | Exception (if not applicable) | SCORE2 (%) | Risk Category | Confidence Level |
+|-------------------|-------------------------------|------------|---------------|------------------|
+| Yes               |                               | 2,2%       | Moderate      | High             |
+
+## 3. Brief Clinical Explanation
+
+This 48-year-old male is classified as having moderate cardiovascular risk according to the SCORE2 model. His risk is primarily driven by elevated blood pressure (confirmed by ambulatory monitoring), elevated total and non-HDL cholesterol levels and borderline high glucose. While he denies smoking and has no reported family history of CVD, his uncontrolled hypertension and dyslipidemia contribute to an increased risk of cardiovascular events. His elevated creatinine may suggest early kidney damage, which is a risk modifier. Lifestyle interventions and/or pharmacological treatment should be initiated to control blood pressure and lipid levels and prevent further risk escalation.
+
+## 4. Structured extraction of risk factors:
+
+| Risk Factor             | Values               |
+|-------------------------|----------------------|
+| Age                     | 48                   |
+| Gender                  | Male                 |
+| Smoking                 | Non-smoker           |
+| Arterial Hypertension   | Yes                  |
+| Systolic Blood Pressure | 138                  |
+| Diastolic Blood Pressure| 86                   |
+| Dyslipidemia            | Yes                  |
+| Total Cholesterol       | 231                  |
+| HDL-Cholesterol         | 43                   |
+| Triglycerides           | 197                  |
+| LDL-Cholesterol         | 149                  |
+| non-HDL Cholesterol     | 188                  |
+| Diabetes Mellitus       | Yes                  |
+
+| Risk Modifiers                            | Values               |
+|-------------------------------------------|----------------------|
+| Elevated Coronary Calcium Score           | unknown              |
+| Calcium Score = 0                         | unknown              |
+| Carotid Plaques                           | unknown              |
+| Obesity                                   | Yes                  |
+| Pre-Diabetes                              | Yes                  |
+| Family History of atherosclerotic cardiovascular disease (ASCVD) | No           |
+| Elevated Lp(a)                            | No                  |
+| Increased Arterial Stiffness              | Yes                  |
+| Elevated High-sensitivity CRP             | unknown              |
+| Chronic Inflammatory Disease              | No                   |
+| HIV Infection                             | No                   |
+| Migraine with Aura                        | No                   |
+| Sleep Disorder                            | Yes                  |
+| Non-Alcoholic Fatty Liver Disease         | unknown              |
+| Erectile Dysfunction                       | unknown              |
+| Premature Menopause                       | No                   |
+| Past history of Pregnancy Complications (Preeclampsia, Hypertension, or Diabetes) | No    |
+| Chronic Obstructive Pulmonary Disease (COPD)| No                  |
+| Cancer                                    | No                   |
+| Other (specify)                           | unknown              |
+
+```
+
+```json
+{
+  "Risk": {
+    "Category": "Moderate",
+    "SCORE2": "2,2%",
+    "Confidence Level": "High"
+  },
+  "Risk Factors": {
+    "Age": "48",
+    "Gender": "Male",
+    "Smoking": "Non-smoker",
+    "Arterial Hypertension": "Yes",
+    "Systolic Blood Pressure": "138",
+    "Diastolic Blood Pressure": "86",
+    "Dyslipidemia": "Yes",
+    "Total Cholesterol": "231",
+    "HDL-Cholesterol": "43",
+    "Triglycerides": "197",
+    "LDL-Cholesterol": "149",
+    "non-HDL Cholesterol": "188",
+    "Diabetes Mellitus": "Yes"
+  },
+  "Risk Modifiers": {
+    "Elevated Coronary Calcium Score": "unknown",
+    "Calcium Score = 0": "unknown",
+    "Carotid Plaques": "unknown",
+    "Obesity": "Yes",
+    "Pre-Diabetes": "Yes",
+    "Family History of atherosclerotic cardiovascular disease (ASCVD)": "No",
+    "Elevated Lp(a)": "No",
+    "Increased Arterial Stiffness": "Yes",
+    "Elevated High-sensitivity CRP": "unknown",
+    "Chronic Inflammatory Disease": "No",
+    "HIV Infection": "No",
+    "Migraine with Aura": "No",
+    "Sleep Disorder": "Yes",
+    "Non-Alcoholic Fatty Liver Disease": "unknown",
+    "Erectile Dysfunction": "unknown",
+    "Premature Menopause": "No",
+    "Past history of Pregnancy Complications (Preeclampsia, Hypertension, or Diabetes)": "No",
+    "Chronic Obstructive Pulmonary Disease (COPD)": "No",
+    "Cancer": "No",
+    "Other (specify)": "unknown"
+  }
+}
+```
+
+###Vinheta 8. 
+## 1. Structured extraction of risk factors:
+
+| Risk Factor             | Values           |
+| ----------------------- | ---------------- |
+| Age                     | 57 years         |
+| Gender                  | Female           |
+| Smoking                 | Smoker           |
+| Systolic Blood Pressure | 120 mmHg         |
+| Total Cholesterol       | 197 mg/dL        |
+| HDL-Cholesterol         | 57 mg/dL         |
+| non-HDL Cholesterol     | 140 mg/dL |
+
+## 2. Risk stratification according to the 2021 ESC Guidelines on cardiovascular disease prevention in clinical practice
+
+| SCORE2 Applicable | Exception (if not applicable) | SCORE2 (%) | Risk Category | Confidence Level |
+| ------------------- | ------------------------------ | ----------- | ------------- | ---------------- |
+| Yes                 | N/A                            | 2,1%      | Low           | High             |
+
+## 3. Brief Clinical Explanation
+
+This 57-year-old female presents with a low SCORE2 risk (2,1%) for cardiovascular events over the next 10 years, based on her age, gender, smoking status, systolic blood pressure, total cholesterol, and HDL-cholesterol. Her blood pressure is well-controlled, and her lipid profile is reasonably good, although LDL-C is slightly elevated. However, she is a current smoker. Smoking cessation is an important goal. While her current risk is low, addressing modifiable risk factors is crucial for long-term cardiovascular health as she ages. Starting an exercise program like water aerobics is reasonable, and her exercise stress test was reassuring.
+
+## 4. Structured extraction of risk factors:
+
+| Risk Factor            | Values        |
+| ---------------------- | ------------- |
+| Age                    | 57 years      |
+| Gender                 | Female        |
+| Smoking                | Smoker        |
+| Arterial Hypertension  | No            |
+| Systolic Blood Pressure| 120 mmHg      |
+| Diastolic Blood Pressure | 63 mmHg      |
+| Dyslipidemia           | Yes           |
+| Total Cholesterol      | 197 mg/dL     |
+| HDL-Cholesterol        | 57 mg/dL      |
+| Triglycerides          | 124 mg/dL     |
+| LDL-Cholesterol        | 119 mg/dL     |
+| non-HDL Cholesterol    | 140 mg/dL     |
+| Diabetes Mellitus      | No            |
+
+| Risk Modifiers                                                                                                     | Values |
+| ---------------------------------------------------------------------------------------------------------------- | ------ |
+| Elevated Coronary Calcium Score                                                                                  | unknown    |
+| Calcium Score = 0                                                                                                  | unknown    |
+| Carotid Plaques                                                                                                  | unknown    |
+| Obesity                                                                                                          | No     |
+| Pre-Diabetes                                                                                                       | No     |
+| Family History of atherosclerotic cardiovascular disease (ASCVD)                                                | unknown    |
+| Elevated Lp(a)                                                                                                    | unknown    |
+| Increased Arterial Stiffness                                                                                       | unknown    |
+| Elevated High-sensitivity CRP                                                                                      | unknown    |
+| Chronic Inflammatory Disease                                                                                     | unknown    |
+| HIV Infection                                                                                                    | No     |
+| Migraine with Aura                                                                                                 | unknown    |
+| Sleep Disorder                                                                                                   | unknown    |
+| Non-Alcoholic Fatty Liver Disease                                                                                | unknown    |
+| Erectile Dysfunction                                                                                             | No     |
+| Premature Menopause                                                                                              | No     |
+| Past history of Pregnancy Complications (Preeclampsia, Hypertension, or Diabetes)                               | No     |
+| Chronic Obstructive Pulmonary Disease (COPD)                                                                     | No     |
+| Cancer                                                                                                           | No     |
+| Other (specify)                                                                                                  | unknown    |
+
+## 6. Json File Creation
+
+```json
+{
+  "Risk": {
+    "Category": "Low",
+    "SCORE2": "2,1%",
+    "Confidence Level": "High"
+  },
+  "Risk Factors": {
+    "Age": "57 years",
+    "Gender": "Female",
+    "Smoking": "Smoker",
+    "Arterial Hypertension": "No",
+    "Systolic Blood Pressure": "120 mmHg",
+    "Diastolic Blood Pressure": "63 mmHg",
+    "Dyslipidemia": "Yes",
+    "Total Cholesterol": "197 mg/dL",
+    "HDL-Cholesterol": "57 mg/dL",
+    "Triglycerides": "124 mg/dL",
+    "LDL-Cholesterol": "119 mg/dL",
+    "non-HDL Cholesterol": "140 mg/dL",
+    "Diabetes Mellitus": "No"
+  },
+  "Risk Modifiers": {
+    "Elevated Coronary Calcium Score": "unknown",
+    "Calcium Score = 0": "unknown",
+    "Carotid Plaques": "unknown",
+    "Obesity": "No",
+    "Pre-Diabetes": "No",
+    "Family History of atherosclerotic cardiovascular disease (ASCVD)": "unknown",
+    "Elevated Lp(a)": "unknown",
+    "Increased Arterial Stiffness": "unknown",
+    "Elevated High-sensitivity CRP": "unknown",
+    "Chronic Inflammatory Disease": "unknown",
+    "HIV Infection": "No",
+    "Migraine with Aura": "unknown",
+    "Sleep Disorder": "unknown",
+    "Non-Alcoholic Fatty Liver Disease": "unknown",
+    "Erectile Dysfunction": "No",
+    "Premature Menopause": "No",
+    "Past history of Pregnancy Complications (Preeclampsia, Hypertension, or Diabetes)": "No",
+    "Chronic Obstructive Pulmonary Disease (COPD)": "No",
+    "Cancer": "No",
+    "Other (specify)": "unknown"
+  }
+}
+```
+
+
+###Vinheta 9. 
+```markdown
+## 1. Structured extraction of risk factors:
+
+| Risk Factor              | Values             |
+|--------------------------|--------------------|
+| Age                      | 52 years           |
+| Gender                   | Male               |
+| Smoking                  | Smoker             |
+| Systolic Blood Pressure  | 138 mmHg           |
+| Total Cholesterol        | 224 mg/dL          |
+| HDL-Cholesterol        | 37 mg/dL           |
+| non-HDL Cholesterol      | 187 mg/dL          |
+
+## 2. Risk stratification according to the 2021 ESC Guidelines
+
+| SCORE2 Applicable | Exception (if not applicable) | SCORE2 (%) | Risk Category | Confidence Level |
+|-------------------|---------------------------------|------------|-----------------|--------------------|
+| Yes               | N/A                             | 4,0%       | Moderate        | High               |
+
+## 3. Brief Clinical Explanation
+
+This 52-year-old male fisherman is classified as having a moderate risk of cardiovascular disease according to the SCORE2 model for moderate-risk countries. His risk is primarily driven by his smoking history (50 pack-years), elevated daytime systolic blood pressure (138 mmHg), and elevated total and LDL cholesterol levels (224 mg/dL and 167 mg/dL, respectively). While his BMI is within the normal range, his lack of regular physical activity is also a contributing factor. The presence of a coronary artery calcium score of 23, representing non-obstructive plaques, further contributes to the moderate risk assessment, acting as a risk modifier.
+
+## 4. Structured extraction of risk factors:
+
+| Risk Factor           | Values         |
+|-----------------------|----------------|
+| Age                   | 52 years       |
+| Gender                | Male           |
+| Smoking               | Smoker         |
+| Arterial Hypertension | Yes            |
+| Systolic Blood Pressure | 138 mmHg       |
+| Diastolic Blood Pressure| 86 mmHg        |
+| Dyslipidemia          | Yes            |
+| Total Cholesterol     | 224 mg/dL      |
+| HDL-Cholesterol     | 37 mg/dL       |
+| Triglycerides         | 98 mg/dL       |
+| LDL-Cholesterol       | 167 mg/dL      |
+| non-HDL Cholesterol   | 187 mg/dL      |
+| Diabetes Mellitus     | No             |
+
+| Risk Modifiers                       | Values                            |
+|--------------------------------------|-----------------------------------|
+| Elevated Coronary Calcium Score      | Elevated Coronary Calcium Score   |
+| Calcium Score = 0                   | N/A                               |
+| Carotid Plaques                      | unknown                           |
+| Obesity                              | No                                |
+| Pre-Diabetes                         | Yes                               |
+| Family History of atherosclerotic cardiovascular disease (ASCVD) | No                               |
+| Elevated Lp(a)                       | No                              |
+| Increased Arterial Stiffness         | unknown                           |
+| Elevated High-sensitivity CRP        | unknown                           |
+| Chronic Inflammatory Disease         | No                                |
+| HIV Infection                        | No                                |
+| Migraine with Aura                   | No                                |
+| Sleep Disorder                       | No                                |
+| Non-Alcoholic Fatty Liver Disease    | unknown                           |
+| Erectile Dysfunction                | unknown                           |
+| Premature Menopause                  | N/A                               |
+| Past history of Pregnancy Complications (Preeclampsia, Hypertension, or Diabetes) | N/A                               |
+| Chronic Obstructive Pulmonary Disease (COPD) | No                               |
+| Cancer                               | No                                |
+| Other (specify)                      | None                              |
+
+## 6. Json File Creation
+```json
+{
+    "Risk": {
+        "Category": "Moderate",
+        "SCORE2": "4,0%",
+        "Confidence Level": "High"
+    },
+    "Risk Factors": {
+        "Age": "52 years",
+        "Gender": "Male",
+        "Smoking": "Smoker",
+        "Arterial Hypertension": "Yes",
+        "Systolic Blood Pressure": "138 mmHg",
+        "Diastolic Blood Pressure": "86 mmHg",
+        "Dyslipidemia": "Yes",
+        "Total Cholesterol": "224 mg/dL",
+        "HDL-Cholesterol": "37 mg/dL",
+        "Triglycerides": "98 mg/dL",
+        "LDL-Cholesterol": "167 mg/dL",
+        "non-HDL Cholesterol": "187 mg/dL",
+        "Diabetes Mellitus": "No"
+    },
+    "Risk Modifiers": {
+        "Elevated Coronary Calcium Score": "Elevated Coronary Calcium Score",
+        "Pre-Diabetes": "Yes",
+        "Family History of atherosclerotic cardiovascular disease (ASCVD)": "No",
+         "Elevated Lp(a)": "No"
+
+    }
+}
+```
+
+
+###Vinheta 10. 
+```markdown
+## 1. Structured extraction of risk factors:
+
+| Risk Factor              | Values             |
+| ------------------------ | ------------------ |
+| Age                      | 67 years          |
+| Gender                   | Female             |
+| Smoking                  | Non-smoker         |
+| Systolic Blood Pressure  | 131 mmHg           |
+| Total Cholesterol        | 137 mg/dL          |
+| HDL-Cholesterol        | 58 mg/dL           |
+| non-HDL Cholesterol      | 79 mg/dL           |
+
+## 2. Risk stratification according to the 2021 ESC Guidelines
+
+| SCORE2 Applicable | Exception (if not applicable) | SCORE2 (%) | Risk Category | Confidence Level |
+| ----------------- | ----------------------------- | ---------- | ------------- | ---------------- |
+| Yes               | N/A                           | 2,0 %       | Moderate      | High             |
+
+## 3. Brief Clinical Explanation
+
+The patient is a 67-year-old woman with hypertension, dyslipidemia, and hypothyroidism. Her SCORE2 risk is 2,0%, placing her in the moderate-risk category. Although her blood pressure and cholesterol levels are reasonably controlled with medication, her age contributes significantly to the overall risk. Her NT-proBNP is elevated and she has moderate aortic stenosis. The ECG findings are also concerning and suggest ischemia. The aortic stenosis may explain her fatigue. All this should prompt further cardiovascular evaluation and optimization of her treatment.
+
+## 4. Structured extraction of risk factors:
+
+| Risk Factor              | Values             |
+| ------------------------ | ------------------ |
+| Age                      | 67 years           |
+| Gender                   | Female             |
+| Smoking                  | Non-smoker         |
+| Arterial Hypertension    | Yes                |
+| Systolic Blood Pressure  | 131 mmHg           |
+| Diastolic Blood Pressure | 63 mmHg            |
+| Dyslipidemia             | Yes                |
+| Total Cholesterol        | 137 mg/dL          |
+| HDL-Cholesterol        | 58 mg/dL           |
+| Triglycerides            | 85 mg/dL           |
+| LDL-Cholesterol        | 62 mg/dL           |
+| non-HDL Cholesterol      | 79 mg/dL          |
+| Diabetes Mellitus        | No                 |
+
+| Risk Modifiers                                                                              | Values             |
+| -------------------------------------------------------------------------------------------- | ------------------ |
+| Elevated Coronary Calcium Score                                                           | unknown            |
+| Calcium Score = 0                                                                         | unknown            |
+| Carotid Plaques                                                                           | unknown            |
+| Obesity                                                                                   | No                |
+| Pre-Diabetes                                                                              | Yes               |
+| Family History of atherosclerotic cardiovascular disease (ASCVD)                          | unknown            |
+| Elevated Lp(a)                                                                            | unknown            |
+| Increased Arterial Stiffness                                                              | unknown            |
+| Elevated High-sensitivity CRP                                                              | unknown            |
+| Chronic Inflammatory Disease                                                              | unknown            |
+| HIV Infection                                                                             | No               |
+| Migraine with Aura                                                                          | unknown            |
+| Sleep Disorder                                                                             | unknown            |
+| Non-Alcoholic Fatty Liver Disease                                                           | unknown            |
+| Erectile Dysfunction                                                                      | N/A               |
+| Premature Menopause                                                                         | N/A               |
+| Past history of Pregnancy Complications (Preeclampsia, Hypertension, or Diabetes)         | N/A               |
+| Chronic Obstructive Pulmonary Disease (COPD)                                                | No              |
+| Cancer                                                                                      | No               |
+| Other (specify)                                                                             | Moderate aortic stenosis; Sinus bradycardia; Concentric left ventricular remodeling; Moderate left atrial enlargement; Repolarization abnormalities suggestive of strain or possible ischemia; Elevated NT-proBNP|
+
+## 6. Json File Creation
+
+```json
+{
+    "Risk": {
+        "Category": "Moderate",
+        "SCORE2": "2,0 %",
+        "Confidence Level": "High"
+    },
+    "Risk Factors": {
+        "Age": "67 years",
+        "Gender": "Female",
+        "Smoking": "Non-smoker",
+        "Arterial Hypertension": "Yes",
+        "Systolic Blood Pressure": "131 mmHg",
+        "Diastolic Blood Pressure": "63 mmHg",
+        "Dyslipidemia": "Yes",
+        "Total Cholesterol": "137 mg/dL",
+        "HDL-Cholesterol": "58 mg/dL",
+        "Triglycerides": "85 mg/dL",
+        "LDL-Cholesterol": "62 mg/dL",
+        "non-HDL Cholesterol": "79 mg/dL",
+        "Diabetes Mellitus": "No"
+    },
+    "Risk Modifiers": {
+        "Elevated Coronary Calcium Score": "unknown",
+        "Calcium Score = 0": "unknown",
+        "Carotid Plaques": "unknown",
+        "Obesity": "No",
+        "Pre-Diabetes": "Yes",
+        "Family History of atherosclerotic cardiovascular disease (ASCVD)": "unknown",
+        "Elevated Lp(a)": "unknown",
+        "Increased Arterial Stiffness": "unknown",
+        "Elevated High-sensitivity CRP": "unknown",
+        "Chronic Inflammatory Disease": "unknown",
+        "HIV Infection": "No",
+        "Migraine with Aura": "unknown",
+        "Sleep Disorder": "unknown",
+        "Non-Alcoholic Fatty Liver Disease": "unknown",
+        "Erectile Dysfunction": "N/A",
+        "Premature Menopause": "N/A",
+        "Past history of Pregnancy Complications (Preeclampsia, Hypertension, or Diabetes)": "N/A",
+        "Chronic Obstructive Pulmonary Disease (COPD)": "No",
+        "Cancer": "No",
+        "Other": "Moderate aortic stenosis; Sinus bradycardia; Concentric left ventricular remodeling; Moderate left atrial enlargement; Repolarization abnormalities suggestive of strain or possible ischemia; Elevated NT-proBNP"
+    }
+}
+```
+
+
+###Vinheta 11. 
+```markdown
+## 1. Structured extraction of risk factors:
+
+| Risk Factor              | Values          |
+| ------------------------ | --------------- |
+| Age                      | 62 years        |
+| Gender                   | Male            |
+| Smoking                  | Former Smoker   |
+| Systolic Blood Pressure  | 129 mmHg        |
+| Total Cholesterol        | 187 mg/dL       |
+| HDL-Cholesterol          | 51 mg/dL        |
+| non-HDL Cholesterol      | 136 mg/dL       |
+
+## 2. Risk stratification according to the 2021 ESC Guidelines
+
+| SCORE2 Applicable | Exception (if not applicable) | SCORE2 (%) | Risk Category | Confidence Level |
+| ----------------- | ----------------------------- | ---------- | ------------- | ---------------- |
+| Yes               | N/A                           | 4,1 %       | Moderate      | High             |
+
+## 3. Brief Clinical Explanation
+
+This 62-year-old male presents with a moderate risk for cardiovascular disease according to the SCORE2 calculator for moderate-risk countries. His age and former smoking history contribute to the risk. While his blood pressure is reasonably controlled and his lipid profile is overall acceptable, the SCORE2 risk is influenced by his total cholesterol and systolic blood pressure values. His HbA1c of 6.2% indicates pre-diabetes which can also be considered a risk modifier. Further risk refinement could be achieved by assessing for additional risk modifiers such as coronary artery calcium scoring. His recent syncope requires further investigation to rule out cardiac causes, which might impact risk reclassification.
+
+## 4. Structured extraction of risk factors:
+
+| Risk Factor           | Values           |
+| --------------------- | ---------------- |
+| Age                   | 62 years         |
+| Gender                | Male             |
+| Smoking               | Former Smoker    |
+| Arterial Hypertension | Yes              |
+| Systolic Blood Pressure | 129 mmHg        |
+| Diastolic Blood Pressure | 66 mmHg         |
+| Dyslipidemia          | Yes              |
+| Total Cholesterol     | 187 mg/dL        |
+| HDL-Cholesterol       | 51 mg/dL         |
+| Triglycerides         | 134 mg/dL        |
+| LDL-Cholesterol       | 109 mg/dL        |
+| non-HDL Cholesterol   | 136 mg/dL        |
+| Diabetes Mellitus     | No               |
+
+| Risk Modifiers                                | Values           |
+| --------------------------------------------- | ---------------- |
+| Elevated Coronary Calcium Score                | unknown          |
+| Calcium Score = 0                              | unknown          |
+| Carotid Plaques                               | unknown          |
+| Obesity                                       | Yes              |
+| Pre-Diabetes                                  | Yes               |
+| Family History of atherosclerotic cardiovascular disease (ASCVD) | unknown          |
+| Elevated Lp(a)                                | unknown          |
+| Increased Arterial Stiffness                  | unknown          |
+| Elevated High-sensitivity CRP                 | unknown          |
+| Chronic Inflammatory Disease                  | No              |
+| HIV Infection                                 | No               |
+| Migraine with Aura                            | No               |
+| Sleep Disorder                                | No              |
+| Non-Alcoholic Fatty Liver Disease             | No               |
+| Erectile Dysfunction                         | unknown          |
+| Premature Menopause                           | No               |
+| Past history of Pregnancy Complications (Preeclampsia, Hypertension, or Diabetes) | No               |
+| Chronic Obstructive Pulmonary Disease (COPD)  | No               |
+| Cancer                                        | Yes              |
+| Other (specify)                               | Benign prostatic hyperplasia; Status post colon cancer |
+
+```json
+{
+    "Risk": {
+        "Category": "Moderate",
+        "SCORE2": "4,1 %",
+        "Confidence Level": "High"
+    },
+    "Risk Factors": {
+        "Age": "62 years",
+        "Gender": "Male",
+        "Smoking": "Former Smoker",
+        "Arterial Hypertension": "Yes",
+        "Systolic Blood Pressure": "129 mmHg",
+        "Diastolic Blood Pressure": "66 mmHg",
+        "Dyslipidemia": "Yes",
+        "Total Cholesterol": "187 mg/dL",
+        "HDL-Cholesterol": "51 mg/dL",
+        "Triglycerides": "134 mg/dL",
+        "LDL-Cholesterol": "109 mg/dL",
+        "non-HDL Cholesterol": "136 mg/dL",
+        "Diabetes Mellitus": "No"
+    },
+    "Risk Modifiers": {
+        "Elevated Coronary Calcium Score": "unknown",
+        "Calcium Score = 0": "unknown",
+        "Carotid Plaques": "unknown",
+        "Obesity": "Yes",
+        "Pre-Diabetes": "Yes",
+        "Family History of atherosclerotic cardiovascular disease (ASCVD)": "unknown",
+        "Elevated Lp(a)": "unknown",
+        "Increased Arterial Stiffness": "unknown",
+        "Elevated High-sensitivity CRP": "unknown",
+        "Chronic Inflammatory Disease": "No",
+        "HIV Infection": "No",
+        "Migraine with Aura": "No",
+        "Sleep Disorder": "No",
+        "Non-Alcoholic Fatty Liver Disease": "No",
+        "Erectile Dysfunction": "unknown",
+        "Premature Menopause": "No",
+        "Past history of Pregnancy Complications (Preeclampsia, Hypertension, or Diabetes)": "No",
+        "Chronic Obstructive Pulmonary Disease (COPD)": "No",
+        "Cancer": "Yes",
+        "Other": "Benign prostatic hyperplasia; Status post colon cancer"
+    }
+}
+```
+
+###Vinheta 12. 
+| Risk Factor              | Values          |
+| ------------------------ | --------------- |
+| Age                      | 47 years        |
+| Gender                   | Female          |
+| Smoking                  | Smoker          |
+| Systolic Blood Pressure  | 189 mmHg        |
+| Total Cholesterol        | 263 mg/dL       |
+| HDL-Cholesterol          | 54 mg/dL        |
+| non-HDL Cholesterol      | 209 mg/dL       |
+
+| SCORE2 Applicable | Exception (if not applicable) | SCORE2 (%) | Risk Category | Confidence Level |
+| ----------------- | ----------------------------- | ----------- | ------------- | ---------------- |
+| Yes               |                               | 5,6%        | Moderate      | High             |
+
+Based on the SCORE2 risk calculator for moderate-risk countries, a 47-year-old female smoker with a systolic blood pressure of 189 mmHg and total cholesterol of 263 mg/dL has a 10-year cardiovascular risk of 5,6%. This places her in the moderate-risk category. Her risk is elevated due to smoking and uncontrolled hypertension. Family history of premature coronary artery disease is a risk modifier. Although LDL is elevated, SCORE2 uses total cholesterol.
+
+| Risk Factor           | Values        |
+| --------------------- | ------------- |
+| Age                   | 47 years      |
+| Gender                | Female        |
+| Smoking               | Smoker        |
+| Arterial Hypertension | Yes           |
+| Systolic Blood Pressure | 189 mmHg      |
+| Diastolic Blood Pressure| 103 mmHg      |
+| Dyslipidemia          | Yes           |
+| Total Cholesterol     | 263 mg/dL     |
+| HDL-Cholesterol       | 54 mg/dL      |
+| Triglycerides         | 125 mg/dL     |
+| LDL-Cholesterol       | 184 mg/dL     |
+| non-HDL Cholesterol | 209 mg/dL     |
+| Diabetes Mellitus     | No            |
+
+| Risk Modifiers                                              | Values                                                                            |
+| ----------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| Elevated Coronary Calcium Score                             | unknown                                                                           |
+| Calcium Score = 0                                           | unknown                                                                           |
+| Carotid Plaques                                             | unknown                                                                           |
+| Obesity                                                     | No                                                                                |
+| Pre-Diabetes                                                | Yes                                                                             |
+| Family History of atherosclerotic cardiovascular disease (ASCVD) | Yes                                                                                 |
+| Elevated Lp(a)                                               | unknown                                                                           |
+| Increased Arterial Stiffness                                | unknown                                                                           |
+| Elevated High-sensitivity CRP                               | unknown                                                                           |
+| Chronic Inflammatory Disease                                | Chronic Obstructive Pulmonary Disease (COPD)                                       |
+| HIV Infection                                               | No                                                                                |
+| Migraine with Aura                                          | No                                                                                |
+| Sleep Disorder                                              | No                                                                                |
+| Non-Alcoholic Fatty Liver Disease                           | No                                                                                |
+| Erectile Dysfunction                                       | No                                                                                |
+| Premature Menopause                                         | No                                                                                |
+| Past history of Pregnancy Complications (Preeclampsia, Hypertension, or Diabetes) | No                                                                                |
+| Chronic Obstructive Pulmonary Disease (COPD)                                              | Yes                                                                                |
+| Cancer                                                      | No                                                                                |
+| Other (specify)                                             | unknown                                                                           |
+
+```json
+{
+"Risk":{
+    "Category": "Moderate",
+    "SCORE2": "5,6%",
+    "Confidence Level": "High"
+},
+"Risk Factors":{
+    "Age": "47 years",
+    "Gender": "Female",
+    "Smoking": "Smoker",
+    "Arterial Hypertension": "Yes",
+    "Systolic Blood Pressure": "189 mmHg",
+    "Diastolic Blood Pressure": "103 mmHg",
+    "Dyslipidemia": "Yes",
+    "Total Cholesterol": "263 mg/dL",
+    "HDL-Cholesterol": "54 mg/dL",
+    "Triglycerides": "125 mg/dL",
+    "LDL-Cholesterol": "184 mg/dL",
+    "non-HDL Cholesterol": "209 mg/dL",
+    "Diabetes Mellitus": "No"
+},
+"Risk Modifiers": {
+    "Elevated Coronary Calcium Score": "unknown",
+    "Calcium Score = 0": "unknown",
+    "Carotid Plaques": "unknown",
+    "Obesity": "No",
+    "Pre-Diabetes": "Yes",
+    "Family History of atherosclerotic cardiovascular disease (ASCVD)": "Yes",
+    "Elevated Lp(a)": "unknown",
+    "Increased Arterial Stiffness": "unknown",
+    "Elevated High-sensitivity CRP": "unknown",
+    "Chronic Inflammatory Disease": "Chronic Obstructive Pulmonary Disease (COPD)",
+    "HIV Infection": "No",
+    "Migraine with Aura": "No",
+    "Sleep Disorder": "No",
+    "Non-Alcoholic Fatty Liver Disease": "No",
+    "Erectile Dysfunction": "No",
+    "Premature Menopause": "No",
+    "Past history of Pregnancy Complications (Preeclampsia, Hypertension, or Diabetes)": "No",
+    "Chronic Obstructive Pulmonary Disease (COPD)": "Yes",
+    "Cancer": "No",
+    "Other (specify)": "unknown"
+}
+}
+```
+
+###Vinheta 13. 
+## 1. Structured extraction of risk factors:
+
+| Risk Factor | Values |
+|---|---|
+| Age | 41 |
+| Gender | Male |
+| Smoking | Smoker |
+| Systolic Blood Pressure | 155 mmHg |
+| Total Cholesterol | 241 mg/dL |
+| HDL-Cholesterol | 33 mg/dL |
+| non-HDL Cholesterol | 208 mg/dL |
+
+## 2. Risk stratification according to the 2021 ESC Guidelines
+
+| SCORE2 Applicable | Exception (if not applicable) | SCORE2 (%) | Risk Category | Confidence Level |
+|---|---|---|---|---|
+| Yes |  | 2,2% | Moderate | High |
+
+## 3. Brief Clinical Explanation
+
+This 41-year-old male presents with several cardiovascular risk factors, including active smoking, elevated systolic blood pressure (155/107 mmHg), and dyslipidemia (total cholesterol 241 mg/dL, HDL cholesterol 33 mg/dL, LDL cholesterol 188 mg/dL, non-HDL cholesterol 208 mg/dL). His calculated SCORE2 risk is 2,2%, placing him in the moderate-risk category. While his fasting glucose and HbA1c are slightly elevated, they do not currently meet the criteria for diabetes. Family history of hypertension and diabetes in his mother also contributes to his overall risk profile. The presence of nonspecific ST-T wave abnormalities in the electrocardiogram warrant further investigation and consideration in long-term management.
+
+## 4. Structured extraction of risk factors:
+
+| Risk Factors | Values |
+|---|---|
+| Age | 41 |
+| Gender | Male |
+| Smoking | Smoker |
+| Arterial Hypertension | Yes |
+| Systolic Blood Pressure | 155 mmHg |
+| Diastolic Blood Pressure | 107 mmHg |
+| Dyslipidemia | Yes |
+| Total Cholesterol | 241 mg/dL |
+| HDL-Cholesterol | 33 mg/dL |
+| Triglycerides | 98 mg/dL |
+| LDL-Cholesterol | 188 mg/dL |
+| non-HDL Cholesterol | 208 mg/dL |
+| Diabetes Mellitus | No |
+
+| Risk Modifiers | Values |
+|---|---|
+| Elevated Coronary Calcium Score | unknown |
+| Calcium Score = 0 | unknown |
+| Carotid Plaques | unknown |
+| Obesity | No |
+| Pre-Diabetes | Yes |
+| Family History of atherosclerotic cardiovascular disease (ASCVD) | Yes |
+| Elevated Lp(a) | unknown |
+| Increased Arterial Stiffness | unknown |
+| Elevated High-sensitivity CRP | unknown |
+| Chronic Inflammatory Disease | No |
+| HIV Infection | No |
+| Migraine with Aura | No |
+| Sleep Disorder | No |
+| Non-Alcoholic Fatty Liver Disease | No |
+| Erectile Dysfunction | No |
+| Premature Menopause | No |
+| Past history of Pregnancy Complications (Preeclampsia, Hypertension, or Diabetes) | No |
+| Chronic Obstructive Pulmonary Disease (COPD) | No |
+| Cancer | No |
+| Other (specify) | unknown |
+
+## 6. Json File Creation
+
+```json
+{
+  "Risk": {
+    "Category": "Moderate",
+    "SCORE2": "2,2%",
+    "Confidence Level": "High"
+  },
+  "Risk Factors": {
+    "Age": "41",
+    "Gender": "Male",
+    "Smoking": "Smoker",
+    "Arterial Hypertension": "Yes",
+    "Systolic Blood Pressure": "155 mmHg",
+    "Diastolic Blood Pressure": "107 mmHg",
+    "Dyslipidemia": "Yes",
+    "Total Cholesterol": "241 mg/dL",
+    "HDL-Cholesterol": "33 mg/dL",
+    "Triglycerides": "98 mg/dL",
+    "LDL-Cholesterol": "188 mg/dL",
+    "non-HDL Cholesterol": "208 mg/dL",
+    "Diabetes Mellitus": "No"
+  },
+  "Risk Modifiers": {
+    "Elevated Coronary Calcium Score": "unknown",
+    "Calcium Score = 0": "unknown",
+    "Carotid Plaques": "unknown",
+    "Obesity": "No",
+    "Pre-Diabetes": "Yes",
+    "Family History of atherosclerotic cardiovascular disease (ASCVD)": "Yes",
+    "Elevated Lp(a)": "unknown",
+    "Increased Arterial Stiffness": "unknown",
+    "Elevated High-sensitivity CRP": "unknown",
+    "Chronic Inflammatory Disease": "No",
+    "HIV Infection": "No",
+    "Migraine with Aura": "No",
+    "Sleep Disorder": "No",
+    "Non-Alcoholic Fatty Liver Disease": "No",
+    "Erectile Dysfunction": "No",
+    "Premature Menopause": "No",
+    "Past history of Pregnancy Complications (Preeclampsia, Hypertension, or Diabetes)": "No",
+    "Chronic Obstructive Pulmonary Disease (COPD)": "No",
+    "Cancer": "No",
+    "Other (specify)": "unknown"
+  }
+}
+```
+
+
+###Vinheta 14. 
+## 1. Structured extraction of risk factors:
+
+| Risk Factor             | Values          |
+|--------------------------|-----------------|
+| Age                      | 56              |
+| Gender                   | Female          |
+| Smoking                  | Smoker          |
+| Systolic Blood Pressure  | 163             |
+| Total Cholesterol        | 224             |
+| HDL-Cholesterol          | 45              |
+| non-HDL Cholesterol      | 179             |
+
+## 2. Risk stratification according to the 2021 ESC Guidelines
+
+| SCORE2 Applicable | Exception (if not applicable) | SCORE2 (%) | Risk Category | Confidence Level |
+|-------------------|-------------------------------|------------|---------------|------------------|
+| Yes               | N/A                           | 5,5%       | High          | High             |
+
+## 3. Brief Clinical Explanation
+
+This patient is classified as high risk according to the 2021 ESC guidelines. Her risk is primarily driven by her age, smoking history, and uncontrolled hypertension. Elevated total and non-HDL cholesterol levels also contribute to the elevated risk. The presence of obesity and pre-diabetes (based on fasting glucose and HbA1c) further modify her overall cardiovascular risk profile. Although the patient reports statin intolerance, alternative lipid-lowering strategies should be considered to address the elevated cholesterol levels.
+
+## 4. Structured extraction of risk factors:
+
+| Risk Factor           | Values      |
+|-----------------------|-------------|
+| Age                    | 56          |
+| Gender                 | Female      |
+| Smoking               | Smoker      |
+| Arterial Hypertension | Yes         |
+| Systolic Blood Pressure| 163         |
+| Diastolic Blood Pressure | 91         |
+| Dyslipidemia          | Yes         |
+| Total Cholesterol      | 224         |
+| HDL-Cholesterol        | 45          |
+| Triglycerides          | 196         |
+| LDL-Cholesterol        | 140         |
+| non-HDL Cholesterol  | 179         |
+| Diabetes Mellitus     | No         |
+
+| Risk Modifiers                                                       | Values                      |
+|-----------------------------------------------------------------------|-----------------------------|
+| Obesity                                                               | Yes                       |
+| Pre-Diabetes                                                             | Yes                       |
+| Elevated Coronary Calcium Score                                        | unknown                         |
+| Calcium Score = 0                                                       | unknown                         |
+| Carotid Plaques                                                         | unknown                         |
+| Family History of atherosclerotic cardiovascular disease (ASCVD)         | unknown                      |
+| Elevated Lp(a)                                                          | unknown                         |
+| Increased Arterial Stiffness                                            | unknown                         |
+| Elevated High-sensitivity CRP                                             | unknown                         |
+| Chronic Inflammatory Disease                                            | Degenerative osteoarticular disease of the knees and spine |
+| HIV Infection                                                           | No                       |
+| Migraine with Aura                                                      | No                        |
+| Sleep Disorder                                                          | No                        |
+| Non-Alcoholic Fatty Liver Disease                                       | unknown                         |
+| Erectile Dysfunction                                                   | Not applicable                  |
+| Premature Menopause                                                     | No                        |
+| Past history of Pregnancy Complications (Preeclampsia, Hypertension, or Diabetes) | unknown                         |
+| Chronic Obstructive Pulmonary Disease (COPD)                            | No                        |
+| Cancer                                                                  | No                        |
+| Other (specify)                                                         | Depressive disorder             |
+
+## 6. Json File Creation
+```json
+{
+"Risk": {
+"Category": "High",
+"SCORE2": "5,5%",
+"Confidence Level": "High"
+},
+"Risk Factors": {
+"Age": "56",
+"Gender": "Female",
+"Smoking": "Smoker",
+"Arterial Hypertension": "Yes",
+"Systolic Blood Pressure": "163",
+"Diastolic Blood Pressure": "91",
+"Dyslipidemia": "Yes",
+"Total Cholesterol": "224",
+"HDL-Cholesterol": "45",
+"Triglycerides": "196",
+"LDL-Cholesterol": "140",
+"non-HDL Cholesterol": "179",
+"Diabetes Mellitus": "No"
+},
+"Risk Modifiers": {
+"Obesity": "Yes",
+"Pre-Diabetes": "Yes",
+"Elevated Coronary Calcium Score": "unknown",
+"Calcium Score = 0": "unknown",
+"Carotid Plaques": "unknown",
+"Family History of atherosclerotic cardiovascular disease (ASCVD)": "unknown",
+"Elevated Lp(a)": "unknown",
+"Increased Arterial Stiffness": "unknown",
+"Elevated High-sensitivity CRP": "unknown",
+"Chronic Inflammatory Disease": "Degenerative osteoarticular disease of the knees and spine",
+"HIV Infection": "No",
+"Migraine with Aura": "No",
+"Sleep Disorder": "No",
+"Non-Alcoholic Fatty Liver Disease": "unknown",
+"Erectile Dysfunction": "Not applicable",
+"Premature Menopause": "No",
+"Past history of Pregnancy Complications (Preeclampsia, Hypertension, or Diabetes)": "unknown",
+"Chronic Obstructive Pulmonary Disease (COPD)": "No",
+"Cancer": "No",
+"Other": "Depressive disorder"
+}
+}
+```
+
+
+###Vinheta 15. 
+```markdown
+## 1. Structured extraction of risk factors:
+
+| Risk Factor               | Values           |
+| ------------------------- | ---------------- |
+| Age                       | 51 years         |
+| Gender                    | Male             |
+| Smoking                   | Smoker           |
+| Systolic Blood Pressure   | 149 mmHg         |
+| Total Cholesterol         | 197 mg/dL        |
+| HDL-Cholesterol           | 32 mg/dL         |
+| non-HDL Cholesterol       | 165 mg/dL        |
+
+## 2. Risk stratification according to the 2021 ESC Guidelines on cardiovascular disease prevention in clinical practice
+
+| SCORE2 Applicable | Exception (if not applicable) | SCORE2 (%) | Risk Category | Confidence Level |
+| ----------------- | ----------------------------- | ---------- | ------------- | ---------------- |
+| Yes               | N/A                           | 5,2        | High          | High             |
+
+## 3. Brief Clinical Explanation
+
+This 51-year-old male is classified as high risk according to the ESC 2021 guidelines. Key contributing factors include active smoking and uncontrolled hypertension despite medication. His dyslipidemia, characterized by elevated LDL and low HDL, also plays a role. The presence of a coronary artery calcium score of 47, indicating non-obstructive coronary artery disease, further elevates his risk. Family history of premature coronary artery disease and parental history of diabetes and hypertension are additional considerations. Lifestyle factors, such as a sedentary existence, contribute negatively.
+
+## 4. Structured extraction of risk factors:
+
+| Risk Factor             | Values         |
+| ----------------------- | -------------- |
+| Age                     | 51 years       |
+| Gender                  | Male           |
+| Smoking                 | Smoker         |
+| Arterial Hypertension   | Yes            |
+| Systolic Blood Pressure | 149 mmHg       |
+| Diastolic Blood Pressure | 98 mmHg        |
+| Dyslipidemia            | Yes            |
+| Total Cholesterol       | 197 mg/dL      |
+| HDL-Cholesterol         | 32 mg/dL       |
+| Triglycerides           | 98 mg/dL       |
+| LDL-Cholesterol         | 148 mg/dL      |
+| non-HDL Cholesterol   | 165 mg/dL      |
+| Diabetes Mellitus       | No             |
+
+| Risk Modifiers                                                                    | Values                                                      |
+| --------------------------------------------------------------------------------- | ----------------------------------------------------------- |
+| Elevated Coronary Calcium Score                                                   | Elevated Coronary Calcium Score                             |
+| Calcium Score = 0                                                                  |                                                             |
+| Carotid Plaques                                                                   |                                                             |
+| Obesity                                                                           |                                                             |
+| Pre-Diabetes                                                                      | Pre-Diabetes                                                |
+| Family History of atherosclerotic cardiovascular disease (ASCVD)                 | Family History of atherosclerotic cardiovascular disease (ASCVD) |
+| Elevated Lp(a)                                                                    |                                                             |
+| Increased Arterial Stiffness                                                        |                                                             |
+| Elevated High-sensitivity CRP                                                       |                                                             |
+| Chronic Inflammatory Disease                                                      |                                                             |
+| HIV Infection                                                                     |                                                             |
+| Migraine with Aura                                                                |                                                             |
+| Sleep Disorder                                                                    |                                                             |
+| Non-Alcoholic Fatty Liver Disease                                                   |                                                             |
+| Erectile Dysfunction                                                               |                                                             |
+| Premature Menopause                                                               |                                                             |
+| Past history of Pregnancy Complications (Preeclampsia, Hypertension, or Diabetes) |                                                             |
+| Chronic Obstructive Pulmonary Disease (COPD)                                      |                                                             |
+| Cancer                                                                            |                                                             |
+| Other (specify)                                                                   |                                                             |
+
+```json
+{
+"Risk": {
+        "Category": "High",
+        "SCORE2": "5,2",
+        "Confidence Level": "High"
+    },
+ "Risk Factors": {
+        "Age": "51 years",
+        "Gender": "Male",
+        "Smoking": "Smoker",
+        "Arterial Hypertension": "Yes",
+        "Systolic Blood Pressure": "149 mmHg",
+        "Diastolic Blood Pressure": "98 mmHg",
+        "Dyslipidemia": "Yes",
+        "Total Cholesterol": "197 mg/dL",
+        "HDL-Cholesterol": "32 mg/dL",
+        "Triglycerides": "98 mg/dL",
+        "LDL-Cholesterol": "148 mg/dL",
+        "non-HDL Cholesterol": "165 mg/dL",
+        "Diabetes Mellitus": "No"
+    },
+ "Risk Modifiers": {
+        "Elevated Coronary Calcium Score": "Elevated Coronary Calcium Score",
+        "Pre-Diabetes": "Pre-Diabetes",
+        "Family History of atherosclerotic cardiovascular disease (ASCVD)": "Family History of atherosclerotic cardiovascular disease (ASCVD)"
+    }
+}
+```
+
+###Vinheta 16. 
+## 1. Structured extraction of risk factors:
+
+| Risk Factor             | Values             |
+|--------------------------|--------------------|
+| Age                      | 64                 |
+| Gender                   | Female             |
+| Smoking                  | Smoker             |
+| Systolic Blood Pressure | 143                |
+| Total Cholesterol        | 169                |
+| HDL-Cholesterol          | 48                 |
+| non-HDL Cholesterol      | 121                |
+
+## 2. Risk stratification according to the 2021 ESC Guidelines on cardiovascular disease prevention in clinical practice
+
+| SCORE2 Applicable | Exception (if not applicable) | SCORE2 (%) | Risk Category | Confidence Level |
+|-------------------|------------------------------|------------|---------------|-------------------|
+| Yes              | N/A                           | 5,6         | High          | Moderate          |
+
+## 3. Brief Clinical Explanation
+
+This 64-year-old female undergoing preoperative evaluation presents with several cardiovascular risk factors. Her active smoking habit (40 pack-years) and elevated systolic blood pressure (143 mmHg) contribute significantly to her risk. While her cholesterol levels are within acceptable ranges, the SCORE2 calculation places her in the high-risk category due to the combined effect of her age, smoking status, and blood pressure. The echocardiogram reveals concentric remodeling of the left ventricle and moderate left atrial dilation, which may reflect underlying hypertensive heart disease. Although HbA1c is slightly elevated, she does not have a diagnosis of diabetes.
+
+## 4. Structured extraction of risk factors:
+
+| Risk Factors           | Values             |
+|------------------------|--------------------|
+| Age                    | 64                 |
+| Gender                 | Female             |
+| Smoking                | Smoker             |
+| Arterial Hypertension  | Yes                |
+| Systolic Blood Pressure| 143                |
+| Diastolic Blood Pressure | 84               |
+| Dyslipidemia           | No                 |
+| Total Cholesterol      | 169                |
+| HDL-Cholesterol        | 48                 |
+| Triglycerides          | 107                |
+| LDL-Cholesterol        | 100                |
+| non-HDL Cholesterol    | 121               |
+| Diabetes Mellitus      | No                 |
+
+| Risk Modifiers                                                            | Values            |
+|---------------------------------------------------------------------------|-------------------|
+| Elevated Coronary Calcium Score                                           | unknown           |
+| Calcium Score = 0                                                        | unknown           |
+| Carotid Plaques                                                             | unknown           |
+| Obesity                                                                   | No                |
+| Pre-Diabetes                                                              | Yes               |
+| Family History of atherosclerotic cardiovascular disease (ASCVD)          | unknown           |
+| Elevated Lp(a)                                                             | unknown           |
+| Increased Arterial Stiffness                                               | unknown           |
+| Elevated High-sensitivity CRP                                             | unknown           |
+| Chronic Inflammatory Disease                                               | No                |
+| HIV Infection                                                              | No                |
+| Migraine with Aura                                                          | No                |
+| Sleep Disorder                                                              | No                |
+| Non-Alcoholic Fatty Liver Disease                                          | No                |
+| Erectile Dysfunction                                                      | N/A               |
+| Premature Menopause                                                        | No                |
+| Past history of Pregnancy Complications (Preeclampsia, Hypertension, or Diabetes) | unknown           |
+| Chronic Obstructive Pulmonary Disease (COPD)                               | No                |
+| Cancer                                                                    | Yes               |
+| Other (specify)                                                             | Concentric remodeling of the left ventricle; moderate left atrial dilation; tricuspid aortic valve with calcified cusps without functional compromise. |
+
+## 6. Json File Creation
+
+```json
+{
+  "Risk": {
+    "Category": "High",
+    "SCORE2": "5,6",
+    "Confidence Level": "Moderate"
+  },
+  "Risk Factors": {
+    "Age": "64",
+    "Gender": "Female",
+    "Smoking": "Smoker",
+    "Arterial Hypertension": "Yes",
+    "Systolic Blood Pressure": "143",
+    "Diastolic Blood Pressure": "84",
+    "Dyslipidemia": "No",
+    "Total Cholesterol": "169",
+    "HDL-Cholesterol": "48",
+    "Triglycerides": "107",
+    "LDL-Cholesterol": "100",
+    "non-HDL Cholesterol": "121",
+    "Diabetes Mellitus": "No"
+  },
+  "Risk Modifiers": {
+    "Elevated Coronary Calcium Score": "unknown",
+    "Calcium Score = 0": "unknown",
+    "Carotid Plaques": "unknown",
+    "Obesity": "No",
+    "Pre-Diabetes": "Yes",
+    "Family History of atherosclerotic cardiovascular disease (ASCVD)": "unknown",
+    "Elevated Lp(a)": "unknown",
+    "Increased Arterial Stiffness": "unknown",
+    "Elevated High-sensitivity CRP": "unknown",
+    "Chronic Inflammatory Disease": "No",
+    "HIV Infection": "No",
+    "Migraine with Aura": "No",
+    "Sleep Disorder": "No",
+    "Non-Alcoholic Fatty Liver Disease": "No",
+    "Erectile Dysfunction": "N/A",
+    "Premature Menopause": "No",
+    "Past history of Pregnancy Complications (Preeclampsia, Hypertension, or Diabetes)": "unknown",
+    "Chronic Obstructive Pulmonary Disease (COPD)": "No",
+    "Cancer": "Yes",
+    "Other": "Concentric remodeling of the left ventricle; moderate left atrial dilation; tricuspid aortic valve with calcified cusps without functional compromise."
+  }
+}
+```
+
+
+###Vinheta 17. 
+```markdown
+## 1. Structured extraction of risk factors:
+
+| Risk Factor              | Values             |
+|--------------------------|--------------------|
+| Age                      | 65 years           |
+| Gender                   | Male               |
+| Smoking                  | Former Smoker      |
+| Systolic Blood Pressure  | 147 mmHg           |
+| Total Cholesterol        | 129 mg/dL          |
+| HDL-Cholesterol          | 33 mg/dL           |
+| non-HDL Cholesterol      | 96 mg/dL          |
+
+## 2. Risk stratification according to the 2021 ESC Guidelines on cardiovascular disease prevention in clinical practice
+
+| SCORE2 Applicable | Exception (if not applicable) | SCORE2 (%) | Risk Category | Confidence Level |
+|-------------------|-------------------------------|------------|---------------|------------------|
+| Yes               | N/A                           | 4,5%       | Moderate      | High             |
+
+## 3. Brief Clinical Explanation
+
+This 65-year-old male is classified as having moderate cardiovascular risk according to SCORE2. Key contributing factors include his age, former smoker status, and elevated systolic blood pressure. Although his total and LDL cholesterol are within desirable ranges, his HDL is low and triglycerides are elevated. He also has pre-diabetes, as confirmed by elevated fasting glucose and HbA1c. Finally, obstructive sleep apnea is present, known to increase CV risk.
+
+## 4. Structured extraction of risk factors:
+
+| Risk Factor              | Values             |
+|--------------------------|--------------------|
+| Age                      | 65 years           |
+| Gender                   | Male               |
+| Smoking                  | Former Smoker      |
+| Arterial Hypertension    | Yes                |
+| Systolic Blood Pressure  | 147 mmHg           |
+| Diastolic Blood Pressure | 68 mmHg           |
+| Dyslipidemia             | Yes                |
+| Total Cholesterol        | 129 mg/dL          |
+| HDL-Cholesterol          | 33 mg/dL           |
+| Triglycerides            | 237 mg/dL          |
+| LDL-Cholesterol          | 49 mg/dL           |
+| non-HDL Cholesterol      | 96 mg/dL          |
+| Diabetes Mellitus        | No                 |
+
+| Risk Modifiers                                   | Values                                  |
+|---------------------------------------------------|-----------------------------------------|
+| Elevated Coronary Calcium Score                  | unknown                                 |
+| Calcium Score = 0                                | unknown                                 |
+| Carotid Plaques                                  | unknown                                 |
+| Obesity                                           | Yes                                     |
+| Pre-Diabetes                                      | Yes                                     |
+| Family History of atherosclerotic cardiovascular disease (ASCVD) | unknown                                 |
+| Elevated Lp(a)                                    | No                                   |
+| Increased Arterial Stiffness                     | unknown                                 |
+| Elevated High-sensitivity CRP                    | unknown                                 |
+| Chronic Inflammatory Disease                      | unknown                                 |
+| HIV Infection                                     | No                                     |
+| Migraine with Aura                                | No                                     |
+| Sleep Disorder                                    | Obstructive Sleep Apnea                   |
+| Non-Alcoholic Fatty Liver Disease                | unknown                                 |
+| Erectile Dysfunction                             | unknown                                 |
+| Premature Menopause                              | No                                     |
+| Past history of Pregnancy Complications (Preeclampsia, Hypertension, or Diabetes) | No                                     |
+| Chronic Obstructive Pulmonary Disease (COPD)     | No                                     |
+| Cancer                                            | No                                     |
+| Other (specify)                                   | Lumbar spine disease                   |
+
+## 6. Json File Creation
+
+```json
+{
+    "Risk": {
+        "Category": "Moderate",
+        "SCORE2": "4,5%",
+        "Confidence Level": "High"
+    },
+    "Risk Factors": {
+        "Age": "65 years",
+        "Gender": "Male",
+        "Smoking": "Former Smoker",
+        "Arterial Hypertension": "Yes",
+        "Systolic Blood Pressure": "147 mmHg",
+        "Diastolic Blood Pressure": "68 mmHg",
+        "Dyslipidemia": "Yes",
+        "Total Cholesterol": "129 mg/dL",
+        "HDL-Cholesterol": "33 mg/dL",
+        "Triglycerides": "237 mg/dL",
+        "LDL-Cholesterol": "49 mg/dL",
+        "non-HDL Cholesterol": "96 mg/dL",
+        "Diabetes Mellitus": "No"
+    },
+    "Risk Modifiers": {
+        "Elevated Coronary Calcium Score": "unknown",
+        "Calcium Score = 0": "unknown",
+        "Carotid Plaques": "unknown",
+        "Obesity": "Yes",
+        "Pre-Diabetes": "Yes",
+        "Family History of atherosclerotic cardiovascular disease (ASCVD)": "unknown",
+        "Elevated Lp(a)": "No",
+        "Increased Arterial Stiffness": "unknown",
+        "Elevated High-sensitivity CRP": "unknown",
+        "Chronic Inflammatory Disease": "unknown",
+        "HIV Infection": "No",
+        "Migraine with Aura": "No",
+        "Sleep Disorder": "Obstructive Sleep Apnea",
+        "Non-Alcoholic Fatty Liver Disease": "unknown",
+        "Erectile Dysfunction": "unknown",
+        "Premature Menopause": "No",
+        "Past history of Pregnancy Complications (Preeclampsia, Hypertension, or Diabetes)": "No",
+        "Chronic Obstructive Pulmonary Disease (COPD)": "No",
+        "Cancer": "No",
+        "Other (specify)": "Lumbar spine disease"
+    }
+}
+```
+
+
+###Vinheta 18. 
+```markdown
+## 1. Structured extraction of risk factors:
+
+| Risk Factor             | Values          |
+| ----------------------- | --------------- |
+| Age                     | 44 years        |
+| Gender                  | Male            |
+| Smoking                 | Non-smoker      |
+| Systolic Blood Pressure | 130 mmHg        |
+| Total Cholesterol       | 229 mg/dL       |
+| HDL-Cholesterol         | 37 mg/dL        |
+| non-HDL Cholesterol     | 192 mg/dL       |
+
+## 2. Risk stratification according to the 2021 ESC Guidelines on cardiovascular disease prevention in clinical practice
+
+| SCORE2 Applicable | Exception (if not applicable) | SCORE2 (%) | Risk Category | Confidence Level |
+| ----------------- | ----------------------------- | ---------- | ------------- | ---------------- |
+| Yes               |                               | 1,5%       | Moderate      | High             |
+
+## 3. Brief Clinical Explanation
+
+This 44-year-old male presents with hypertension despite regular physical activity. The elevated LDL-cholesterol, total cholesterol, non-HDL cholesterol, lipoprotein(a), and ApoB levels contribute to his cardiovascular risk. Although he is a non-smoker, his family history of early myocardial infarction in his mother is a significant risk modifier. His average blood pressure measured by 24-hour ABPM is 130/86 mmHg, which is above the optimal level. Based on these factors and using the SCORE2 calculator for moderate-risk countries, his 10-year cardiovascular risk is classified as moderate.
+
+## 4. Structured extraction of risk factors:
+
+| Risk Factor             | Values          |
+| ----------------------- | --------------- |
+| Age                     | 44 years        |
+| Gender                  | Male            |
+| Smoking                 | Non-smoker      |
+| Arterial Hypertension   | Yes             |
+| Systolic Blood Pressure | 130 mmHg        |
+| Diastolic Blood Pressure| 86 mmHg |
+| Dyslipidemia            | Yes             |
+| Total Cholesterol       | 229 mg/dL       |
+| HDL-Cholesterol         | 37 mg/dL        |
+| Triglycerides           | 137 mg/dL       |
+| LDL-Cholesterol         | 165 mg/dL       |
+| non-HDL Cholesterol     | 192 mg/dL       |
+| Diabetes Mellitus       | No              |
+
+| Risk Modifiers                                      | Values                                                                                                |
+| --------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| Elevated Coronary Calcium Score                     | unknown                                                                                               |
+| Calcium Score = 0                                   | unknown                                                                                               |
+| Carotid Plaques                                     | unknown                                                                                               |
+| Obesity                                             | No                                                                                                    |
+| Pre-Diabetes                                        | No                                                                                                    |
+| Family History of atherosclerotic cardiovascular disease (ASCVD) | Yes                                                                                                    |
+| Elevated Lp(a)                                      | Yes (92 mg/dL)                                                                                             |
+| Increased Arterial Stiffness                        | unknown                                                                                               |
+| Elevated High-sensitivity CRP                       | unknown                                                                                               |
+| Chronic Inflammatory Disease                        | No                                                                                                    |
+| HIV Infection                                       | No                                                                                                    |
+| Migraine with Aura                                  | No                                                                                                    |
+| Sleep Disorder                                      | No                                                                                                    |
+| Non-Alcoholic Fatty Liver Disease                   | No                                                                                                    |
+| Erectile Dysfunction                               | unknown                                                                                               |
+| Premature Menopause                                 | No                                                                                                     |
+| Past history of Pregnancy Complications (Preeclampsia, Hypertension, or Diabetes) | No                                                                                                     |
+| Chronic Obstructive Pulmonary Disease (COPD)        | No                                                                                                    |
+| Cancer                                              | No                                                                                                    |
+| Other (specify)                                     | unknown                                                                                               |
+
+## 6. Json File Creation
+
+```json
+{
+  "Risk": {
+    "Category": "Moderate",
+    "SCORE2": "1,5%",
+    "Confidence Level": "High"
+  },
+  "Risk Factors": {
+    "Age": "44 years",
+    "Gender": "Male",
+    "Smoking": "Non-smoker",
+    "Arterial Hypertension": "Yes",
+    "Systolic Blood Pressure": "130 mmHg",
+    "Diastolic Blood Pressure": "86 mmHg",
+    "Dyslipidemia": "Yes",
+    "Total Cholesterol": "229 mg/dL",
+    "HDL-Cholesterol": "37 mg/dL",
+    "Triglycerides": "137 mg/dL",
+    "LDL-Cholesterol": "165 mg/dL",
+    "non-HDL Cholesterol": "192 mg/dL",
+    "Diabetes Mellitus": "No"
+  },
+  "Risk Modifiers": {
+    "Elevated Coronary Calcium Score": "unknown",
+    "Calcium Score = 0": "unknown",
+    "Carotid Plaques": "unknown",
+    "Obesity": "No",
+    "Pre-Diabetes": "No",
+    "Family History of atherosclerotic cardiovascular disease (ASCVD)": "Yes",
+    "Elevated Lp(a)": "Yes (92 mg/dL)",
+    "Increased Arterial Stiffness": "unknown",
+    "Elevated High-sensitivity CRP": "unknown",
+    "Chronic Inflammatory Disease": "No",
+    "HIV Infection": "No",
+    "Migraine with Aura": "No",
+    "Sleep Disorder": "No",
+    "Non-Alcoholic Fatty Liver Disease": "No",
+    "Erectile Dysfunction": "unknown",
+    "Premature Menopause": "No",
+    "Past history of Pregnancy Complications (Preeclampsia, Hypertension, or Diabetes)": "No",
+    "Chronic Obstructive Pulmonary Disease (COPD)": "No",
+    "Cancer": "No",
+    "Other (specify)": "unknown"
+  }
+}
+```
+
+
+###Vinheta 19. 
+```markdown
+## 1. Structured extraction of risk factors:
+
+| Risk Factor             | Values            |
+|--------------------------|-------------------|
+| Age                      | 54 years          |
+| Gender                   | Female            |
+| Smoking                  | Smoker            |
+| Systolic Blood Pressure  | 132 mmHg          |
+| Total Cholesterol        | 211 mg/dL         |
+| HDL-Cholesterol          | 52 mg/dL          |
+| non-HDL Cholesterol      | 159 mg/dL         |
+
+## 2. Risk stratification according to the 2021 ESC Guidelines on cardiovascular disease prevention in clinical practice
+
+| SCORE2 Applicable | Exception (if not applicable) | SCORE2 (%) | Risk Category | Confidence Level |
+|--------------------|------------------------------|------------|---------------|-------------------|
+| Yes                | N/A                           | 2,3%       | Moderate      | High             |
+
+## 3. Brief Clinical Explanation
+
+The patient is a 54-year-old female smoker with a blood pressure of 132/84 mmHg, total cholesterol of 211 mg/dL, and HDL of 52 mg/dL. Her SCORE2 risk is 2.3%, placing her in the moderate-risk category. Smoking is a significant contributor to her risk. Additionally, the presence of rheumatoid arthritis and an elevated hs-CRP (4.5 mg/L) are risk modifiers that can potentially increase her overall cardiovascular risk. The coronary artery calcium score of 77 indicates the presence of subclinical atherosclerosis, also influencing risk stratification.
+
+## 4. Structured extraction of risk factors:
+
+| Risk Factor              | Values          |
+|---------------------------|-----------------|
+| Age                       | 54              |
+| Gender                    | Female          |
+| Smoking                   | Smoker          |
+| Arterial Hypertension     | No              |
+| Systolic Blood Pressure   | 132             |
+| Diastolic Blood Pressure  | 84              |
+| Dyslipidemia              | Yes             |
+| Total Cholesterol         | 211             |
+| HDL-Cholesterol           | 52              |
+| Triglycerides             | 128             |
+| LDL-Cholesterol           | 133             |
+| non-HDL Cholesterol       | 159             |
+| Diabetes Mellitus         | No              |
+
+| Risk Modifiers                       | Values                                |
+|---------------------------------------|---------------------------------------|
+| Elevated Coronary Calcium Score      | Elevated Coronary Calcium Score      |
+| Calcium Score = 0                    |                                       |
+| Carotid Plaques                        |                                       |
+| Obesity                              |                                       |
+| Pre-Diabetes                         |                                       |
+| Family History of atherosclerotic cardiovascular disease (ASCVD) |                                       |
+| Elevated Lp(a)                       |                                       |
+| Increased Arterial Stiffness         |                                       |
+| Elevated High-sensitivity CRP        | Elevated High-sensitivity CRP         |
+| Chronic Inflammatory Disease         | Chronic Inflammatory Disease        |
+| HIV Infection                          |                                       |
+| Migraine with Aura                     |                                       |
+| Sleep Disorder                         |                                       |
+| Non-Alcoholic Fatty Liver Disease    |                                       |
+| Erectile Dysfunction                  |                                       |
+| Premature Menopause                    |                                       |
+| Past history of Pregnancy Complications (Preeclampsia, Hypertension, or Diabetes) |                                       |
+| Chronic Obstructive Pulmonary Disease (COPD) |                                       |
+| Cancer                                 |                                       |
+| Other (specify)                        |                                       |
+
+## 6. Json File Creation
+
+```json
+{
+  "Risk": {
+    "Category": "Moderate",
+    "SCORE2": "2,3%",
+    "Confidence Level": "High"
+  },
+  "Risk Factors": {
+    "Age": "54",
+    "Gender": "Female",
+    "Smoking": "Smoker",
+    "Arterial Hypertension": "No",
+    "Systolic Blood Pressure": "132",
+    "Diastolic Blood Pressure": "84",
+    "Dyslipidemia": "Yes",
+    "Total Cholesterol": "211",
+    "HDL-Cholesterol": "52",
+    "Triglycerides": "128",
+    "LDL-Cholesterol": "133",
+    "non-HDL Cholesterol": "159",
+    "Diabetes Mellitus": "No"
+  },
+  "Risk Modifiers": {
+    "Elevated Coronary Calcium Score": "Elevated Coronary Calcium Score",
+    "Elevated High-sensitivity CRP": "Elevated High-sensitivity CRP",
+    "Chronic Inflammatory Disease": "Chronic Inflammatory Disease"
+  }
+}
+```
+
+
+###Vinheta 20. 
+```markdown
+## 1. Structured extraction of risk factors:
+
+| Risk Factor              | Values          |
+| ------------------------ | --------------- |
+| Age                      | 61 years       |
+| Gender                   | Male            |
+| Smoking                  | Non-smoker      |
+| Systolic Blood Pressure  | 151 mmHg        |
+| Total Cholesterol        | 217 mg/dL       |
+| HDL-Cholesterol          | 48 mg/dL        |
+| non-HDL Cholesterol      | 169 mg/dL       |
+
+## 2. Risk stratification according to the 2021 ESC Guidelines
+
+| SCORE2 Applicable | Exception (if not applicable) | SCORE2 (%) | Risk Category | Confidence Level |
+| ----------------- | ----------------------------- | ---------- | ------------- | ---------------- |
+| Yes               | N/A                           | 5,3 %      | High          | High             |
+
+## 3. Brief Clinical Explanation
+
+This 61-year-old male is classified as high risk according to the ESC 2021 guidelines. This classification is primarily driven by his age and uncontrolled hypertension (151/94 mmHg), resulting in a SCORE2 risk of 5,3%. His elevated non-HDL cholesterol (169 mg/dL) also contributes. Additional risk modifiers include obesity, pre-diabetes, elevated coronary calcium score (178), and obstructive sleep apnea, further emphasizing the need for comprehensive cardiovascular risk management. Atrial fibrillation has also been diagnosed, which carries a separate risk for thromboembolism.
+
+## 4. Structured extraction of risk factors:
+
+| Risk Factor             | Values          |
+| ----------------------- | --------------- |
+| Age                     | 61 years       |
+| Gender                  | Male            |
+| Smoking                 | Non-smoker      |
+| Arterial Hypertension   | Yes             |
+| Systolic Blood Pressure | 151 mmHg        |
+| Diastolic Blood Pressure| 94 mmHg         |
+| Dyslipidemia            | Yes             |
+| Total Cholesterol       | 217 mg/dL       |
+| HDL-Cholesterol         | 48 mg/dL        |
+| Triglycerides           | 256 mg/dL       |
+| LDL-Cholesterol         | 118 mg/dL       |
+| non-HDL Cholesterol     | 169 mg/dL       |
+| Diabetes Mellitus       | Yes             |
+
+| Risk Modifiers                                   | Values                                                                 |
+| ------------------------------------------------ | ---------------------------------------------------------------------- |
+| Elevated Coronary Calcium Score                  | Elevated Coronary Calcium Score                                        |
+| Calcium Score = 0                                | unknown                                                                 |
+| Carotid Plaques                                  | unknown                                                                 |
+| Obesity                                          | Obesity                                                                 |
+| Pre-Diabetes                                     | Pre-Diabetes                                                            |
+| Family History of atherosclerotic cardiovascular disease (ASCVD) | unknown                                                                 |
+| Elevated Lp(a)                                   | unknown                                                                 |
+| Increased Arterial Stiffness                     | unknown                                                                 |
+| Elevated High-sensitivity CRP                    | unknown                                                                 |
+| Chronic Inflammatory Disease                     | unknown                                                                 |
+| HIV Infection                                    | unknown                                                                 |
+| Migraine with Aura                               | unknown                                                                 |
+| Sleep Disorder                                   | Sleep Disorder                                                           |
+| Non-Alcoholic Fatty Liver Disease                | unknown                                                                 |
+| Erectile Dysfunction                            | unknown                                                                 |
+| Premature Menopause                              | unknown                                                                 |
+| Past history of Pregnancy Complications (Preeclampsia, Hypertension, or Diabetes) | unknown                                                                 |
+| Chronic Obstructive Pulmonary Disease (COPD)     | unknown                                                                 |
+| Cancer                                           | unknown                                                                 |
+| Other (specify)                                  | unknown                                                                 |
+
+## 6. Json File Creation
+
+```json
+{
+"Risk": {
+"Category": "High",
+"SCORE2": "5.3 %",
+"Confidence Level": "High"
+},
+"Risk Factors": {
+"Age": "61 years",
+"Gender": "Male",
+"Smoking": "Non-smoker",
+"Arterial Hypertension": "Yes",
+"Systolic Blood Pressure": "151 mmHg",
+"Diastolic Blood Pressure": "94 mmHg",
+"Dyslipidemia": "Yes",
+"Total Cholesterol": "217 mg/dL",
+"HDL-Cholesterol": "48 mg/dL",
+"Triglycerides": "256 mg/dL",
+"LDL-Cholesterol": "118 mg/dL",
+"non-HDL Cholesterol": "169 mg/dL",
+"Diabetes Mellitus": "Yes"
+},
+"Risk Modifiers": {
+"Elevated Coronary Calcium Score": "Elevated Coronary Calcium Score",
+"Obesity": "Obesity",
+"Pre-Diabetes": "Pre-Diabetes",
+"Sleep Disorder": "Sleep Disorder"
+}
+}
+```
+
+
+###Vinheta 21. 
+## 1. Structured extraction of risk factors:
+
+| Risk Factor             | Values            |
+| ----------------------- | ----------------- |
+| Age                     | 51 years          |
+| Gender                  | Female            |
+| Smoking                 | Non-smoker        |
+| Systolic Blood Pressure | 127 mmHg          |
+| Total Cholesterol       | 162 mg/dL         |
+| HDL-Cholesterol         | 38 mg/dL          |
+| non-HDL Cholesterol     | 124 mg/dL         |
+
+## 2. Risk stratification according to the 2021 ESC Guidelines on cardiovascular disease prevention in clinical practice
+
+| SCORE2 Applicable | Exception (if not applicable) | SCORE2 (%) | Risk Category | Confidence Level |
+| ----------------- | ----------------------------- | ---------- | ------------- | ---------------- |
+| No                | Chronic Kidney Disease        | N/A        | High          | Moderate         |
+
+## 3. Brief Clinical Explanation
+
+This 51-year-old female with autosomal dominant polycystic kidney disease is classified as high risk due to her chronic kidney disease (eGFR 42 mL/min/1.73 m2). Although she has a healthy lifestyle with regular exercise and no smoking, and her blood pressure is reasonably controlled, the presence of CKD significantly elevates her cardiovascular risk profile according to the 2021 ESC Guidelines. The SCORE2 calculator is not applicable in this case.
+
+## 4. Structured extraction of risk factors:
+
+| Risk Factor             | Values            |
+| ----------------------- | ----------------- |
+| Age                     | 51                |
+| Gender                  | Female            |
+| Smoking                 | Non-smoker        |
+| Arterial Hypertension   | Yes               |
+| Systolic Blood Pressure | 127               |
+| Diastolic Blood Pressure| 79                |
+| Dyslipidemia            | Yes               |
+| Total Cholesterol       | 162               |
+| HDL-Cholesterol         | 38                |
+| Triglycerides           | 199               |
+| LDL-Cholesterol         | 84                |
+| non-HDL Cholesterol     | 124               |
+| Diabetes Mellitus       | No                |
+
+| Risk Modifiers                                                                                                        | Values                                  |
+| ------------------------------------------------------------------------------------------------------------------- | --------------------------------------- |
+| Elevated Coronary Calcium Score                                                                                     | unknown                                 |
+| Calcium Score = 0                                                                                                   | unknown                                 |
+| Carotid Plaques                                                                                                     | unknown                                 |
+| Obesity                                                                                                             | No                                      |
+| Pre-Diabetes                                                                                                          | No                                      |
+| Family History of atherosclerotic cardiovascular disease (ASCVD)                                                     | unknown                                 |
+| Elevated Lp(a)                                                                                                      | unknown                                 |
+| Increased Arterial Stiffness                                                                                        | unknown                                 |
+| Elevated High-sensitivity CRP                                                                                       | unknown                                 |
+| Chronic Inflammatory Disease                                                                                          | Polycystic Kidney Disease              |
+| HIV Infection                                                                                                       | No                                      |
+| Migraine with Aura                                                                                                  | No                                      |
+| Sleep Disorder                                                                                                      | No                                      |
+| Non-Alcoholic Fatty Liver Disease                                                                                   | unknown                                 |
+| Erectile Dysfunction                                                                                                 | N/A                                    |
+| Premature Menopause                                                                                                 | No                                      |
+| Past history of Pregnancy Complications (Preeclampsia, Hypertension, or Diabetes)                                   | unknown                                 |
+| Chronic Obstructive Pulmonary Disease (COPD)                                                                        | No                                      |
+| Cancer                                                                                                              | No                                      |
+| Other (specify)                                                                                                     | unknown                                 |
+
+## 6. Json File Creation
+
+```json
+{
+  "Risk": {
+    "Category": "High",
+    "SCORE2": "N/A",
+    "Confidence Level": "Moderate"
+  },
+  "Risk Factors": {
+    "Age": "51",
+    "Gender": "Female",
+    "Smoking": "Non-smoker",
+    "Arterial Hypertension": "Yes",
+    "Systolic Blood Pressure": "127",
+    "Diastolic Blood Pressure": "79",
+    "Dyslipidemia": "Yes",
+    "Total Cholesterol": "162",
+    "HDL-Cholesterol": "38",
+    "Triglycerides": "199",
+    "LDL-Cholesterol": "84",
+    "non-HDL Cholesterol": "124",
+    "Diabetes Mellitus": "No"
+  },
+  "Risk Modifiers": {
+    "Elevated Coronary Calcium Score": "unknown",
+    "Calcium Score = 0": "unknown",
+    "Carotid Plaques": "unknown",
+    "Obesity": "No",
+    "Pre-Diabetes": "No",
+    "Family History of atherosclerotic cardiovascular disease (ASCVD)": "unknown",
+    "Elevated Lp(a)": "unknown",
+    "Increased Arterial Stiffness": "unknown",
+    "Elevated High-sensitivity CRP": "unknown",
+    "Chronic Inflammatory Disease": "Polycystic Kidney Disease",
+    "HIV Infection": "No",
+    "Migraine with Aura": "No",
+    "Sleep Disorder": "No",
+    "Non-Alcoholic Fatty Liver Disease": "unknown",
+    "Erectile Dysfunction": "N/A",
+    "Premature Menopause": "No",
+    "Past history of Pregnancy Complications (Preeclampsia, Hypertension, or Diabetes)": "unknown",
+    "Chronic Obstructive Pulmonary Disease (COPD)": "No",
+    "Cancer": "No",
+    "Other (specify)": "unknown"
+  }
+}
+```
+
+
+###Vinheta 22. 
+1. Structured extraction of risk factors:
+
+| Risk Factor               | Values            |
+| ------------------------- | ----------------- |
+| Age                       | 61 years           |
+| Gender                    | Male              |
+| Smoking                   | Non-smoker        |
+| Systolic Blood Pressure   | 131 mmHg          |
+| Total Cholesterol         | 136 mg/dL         |
+| HDL-Cholesterol         | 38 mg/dL          |
+| non-HDL Cholesterol       | 98 mg/dL          |
+
+2. Risk stratification according to the 2021 ESC Guidelines on cardiovascular disease prevention in clinical practice
+
+| SCORE2 Applicable | Exception (if not applicable) | SCORE2 (%) | Risk Category | Confidence Level |
+| ----------------- | ----------------------------- | ---------- | ------------- | ---------------- |
+| No               | Chronic Kidney Disease        | N/A        | High          | High             |
+
+3. Brief Clinical Explanation
+
+The patient is classified as high risk due to the presence of chronic kidney disease (CKD). Although his blood pressure is reasonably controlled, and his lipid profile is within target range due to statin therapy, CKD is a major risk modifier that elevates his overall cardiovascular risk. Other factors such as hypertension and dyslipidemia contribute to his risk profile, albeit well managed with current medications. The patient's age also plays a role in the risk assessment.
+
+4. Structured extraction of risk factors:
+
+| Risk Factor             | Values          |
+| ----------------------- | --------------- |
+| Age                     | 61 years         |
+| Gender                  | Male            |
+| Smoking                 | Non-smoker       |
+| Arterial Hypertension   | Yes             |
+| Systolic Blood Pressure | 131 mmHg        |
+| Diastolic Blood Pressure| 78 mmHg         |
+| Dyslipidemia            | Yes             |
+| Total Cholesterol       | 136 mg/dL       |
+| HDL-Cholesterol       | 38 mg/dL        |
+| Triglycerides           | 164 mg/dL       |
+| LDL-Cholesterol         | 65 mg/dL         |
+| non-HDL Cholesterol     | 98 mg/dL        |
+| Diabetes Mellitus       | No              |
+
+| Risk Modifiers                                           | Values                            |
+| -------------------------------------------------------- | --------------------------------- |
+| Elevated Coronary Calcium Score                          | unknown                           |
+| Calcium Score = 0                                        | unknown                           |
+| Carotid Plaques                                          | unknown                           |
+| Obesity                                                  | No                              |
+| Pre-Diabetes                                             | No                               |
+| Family History of atherosclerotic cardiovascular disease (ASCVD) | unknown                           |
+| Elevated Lp(a)                                           | unknown                           |
+| Increased Arterial Stiffness                             | unknown                           |
+| Elevated High-sensitivity CRP                            | unknown                           |
+| Chronic Inflammatory Disease                             | unknown                           |
+| HIV Infection                                            | No                               |
+| Migraine with Aura                                       | No                               |
+| Sleep Disorder                                           | No                               |
+| Non-Alcoholic Fatty Liver Disease                        | unknown                           |
+| Erectile Dysfunction                                      | unknown                           |
+| Premature Menopause                                      | No                               |
+| Past history of Pregnancy Complications (Preeclampsia, Hypertension, or Diabetes) | No                               |
+| Chronic Obstructive Pulmonary Disease (COPD)             | No                               |
+| Cancer                                                   | No                               |
+| Other (specify)                                          | Chronic Kidney Disease            |
+
+5. General Formatting
+As requested.
+
+6. Json File Creation
+```json
+{
+"Risk": {
+"Category": "High",
+"SCORE2": "N/A",
+"Confidence Level": "High"
+},
+"Risk Factors": {
+"Age": "61 years",
+"Gender": "Male",
+"Smoking": "Non-smoker",
+"Arterial Hypertension": "Yes",
+"Systolic Blood Pressure": "131 mmHg",
+"Diastolic Blood Pressure": "78 mmHg",
+"Dyslipidemia": "Yes",
+"Total Cholesterol": "136 mg/dL",
+"HDL-Cholesterol": "38 mg/dL",
+"Triglycerides": "164 mg/dL",
+"LDL-Cholesterol": "65 mg/dL",
+"non-HDL Cholesterol": "98 mg/dL",
+"Diabetes Mellitus": "No"
+},
+"Risk Modifiers": {
+"Elevated Coronary Calcium Score": "unknown",
+"Calcium Score = 0": "unknown",
+"Carotid Plaques": "unknown",
+"Obesity": "No",
+"Pre-Diabetes": "No",
+"Family History of atherosclerotic cardiovascular disease (ASCVD)": "unknown",
+"Elevated Lp(a)": "unknown",
+"Increased Arterial Stiffness": "unknown",
+"Elevated High-sensitivity CRP": "unknown",
+"Chronic Inflammatory Disease": "unknown",
+"HIV Infection": "No",
+"Migraine with Aura": "No",
+"Sleep Disorder": "No",
+"Non-Alcoholic Fatty Liver Disease": "unknown",
+"Erectile Dysfunction": "unknown",
+"Premature Menopause": "No",
+"Past history of Pregnancy Complications (Preeclampsia, Hypertension, or Diabetes)": "No",
+"Chronic Obstructive Pulmonary Disease (COPD)": "No",
+"Cancer": "No",
+"Other": "Chronic Kidney Disease"
+}
+}
+```
+
+
+###Vinheta 23. 
+```markdown
+## 1. Structured extraction of risk factors:
+
+| Risk Factor                 | Values             |
+| --------------------------- | ------------------ |
+| Age                         | 59 years           |
+| Gender                      | Female             |
+| Smoking                     | Non-smoker         |
+| Systolic Blood Pressure     | 124 mmHg           |
+| Total Cholesterol           | 176 mg/dL          |
+| HDL-Cholesterol           | 43 mg/dL           |
+| non-HDL Cholesterol         | 133 mg/dL          |
+
+## 2. Risk stratification according to the 2021 ESC Guidelines:
+
+| SCORE2 Applicable | Exception (if not applicable) | SCORE2 (%) | Risk Category | Confidence Level |
+| ----------------- | ----------------------------- | ---------- | ------------- | ---------------- |
+| Yes               | N/A                           | 4,1 %     | High          | High             |
+
+## 3. Brief Clinical Explanation
+
+This 59-year-old woman with type 2 diabetes, dyslipidemia, and overweight is classified as high risk according to the 2021 ESC guidelines. The presence of diabetes mellitus, a major risk factor, significantly elevates her cardiovascular risk. Despite being a non-smoker with controlled blood pressure, her age and the coexistence of dyslipidemia contribute to the overall risk. Her HbA1c is above target suggesting suboptimal glycemic control. Although she engages in regular physical activity, further optimization of her risk factors, including lifestyle modifications and potential intensification of lipid-lowering therapy, should be considered.
+
+## 4. Structured extraction of risk factors:
+
+| Risk Factor             | Values         |
+| ----------------------- | -------------- |
+| Age                     | 59 years       |
+| Gender                  | Female         |
+| Smoking                 | Non-smoker     |
+| Arterial Hypertension   | No             |
+| Systolic Blood Pressure | 124 mmHg       |
+| Diastolic Blood Pressure| 74 mmHg       |
+| Dyslipidemia            | Yes            |
+| Total Cholesterol       | 176 mg/dL      |
+| HDL-Cholesterol         | 43 mg/dL       |
+| Triglycerides           | 166 mg/dL      |
+| LDL-Cholesterol         | 100 mg/dL      |
+| non-HDL Cholesterol     | 133 mg/dL      |
+| Diabetes Mellitus       | Yes            |
+
+| Risk Modifiers                                               | Values                                                                                                                               |
+| ------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------ |
+| Elevated Coronary Calcium Score                              | unknown                                                                                                                              |
+| Calcium Score = 0                                            | unknown                                                                                                                              |
+| Carotid Plaques                                              | unknown                                                                                                                              |
+| Obesity                                                      | Yes                                                                                                                                  |
+| Pre-Diabetes                                                 | No                                                                                                                                   |
+| Family History of atherosclerotic cardiovascular disease (ASCVD) | unknown                                                                                                                              |
+| Elevated Lp(a)                                               | unknown                                                                                                                              |
+| Increased Arterial Stiffness                                 | unknown                                                                                                                              |
+| Elevated High-sensitivity CRP                                | unknown                                                                                                                              |
+| Chronic Inflammatory Disease                                 | Degenerative osteoarticular disease of the knees and spine                                                                                      |
+| HIV Infection                                                | No                                                                                                                                   |
+| Migraine with Aura                                           | No                                                                                                                                   |
+| Sleep Disorder                                               | No                                                                                                                                   |
+| Non-Alcoholic Fatty Liver Disease                            | unknown                                                                                                                              |
+| Erectile Dysfunction                                         | No                                                                                                                                   |
+| Premature Menopause                                          | No                                                                                                                                   |
+| Past history of Pregnancy Complications (Preeclampsia, Hypertension, or Diabetes) | No                                                                                                                                   |
+| Chronic Obstructive Pulmonary Disease (COPD)                 | No                                                                                                                                   |
+| Cancer                                                       | No                                                                                                                                   |
+| Other (specify)                                              | None                                                                                                                                  |
+
+## 6. Json File Creation
+```json
+{
+  "Risk": {
+    "Category": "High",
+    "SCORE2": "4,1 %",
+    "Confidence Level": "High"
+  },
+  "Risk Factors": {
+    "Age": "59 years",
+    "Gender": "Female",
+    "Smoking": "Non-smoker",
+    "Arterial Hypertension": "No",
+    "Systolic Blood Pressure": "124 mmHg",
+    "Diastolic Blood Pressure": "74 mmHg",
+    "Dyslipidemia": "Yes",
+    "Total Cholesterol": "176 mg/dL",
+    "HDL-Cholesterol": "43 mg/dL",
+    "Triglycerides": "166 mg/dL",
+    "LDL-Cholesterol": "100 mg/dL",
+    "non-HDL Cholesterol": "133 mg/dL",
+    "Diabetes Mellitus": "Yes"
+  },
+  "Risk Modifiers": {
+    "Elevated Coronary Calcium Score": "unknown",
+    "Calcium Score = 0": "unknown",
+    "Carotid Plaques": "unknown",
+    "Obesity": "Yes",
+    "Pre-Diabetes": "No",
+    "Family History of atherosclerotic cardiovascular disease (ASCVD)": "unknown",
+    "Elevated Lp(a)": "unknown",
+    "Increased Arterial Stiffness": "unknown",
+    "Elevated High-sensitivity CRP": "unknown",
+    "Chronic Inflammatory Disease": "Degenerative osteoarticular disease of the knees and spine",
+    "HIV Infection": "No",
+    "Migraine with Aura": "No",
+    "Sleep Disorder": "No",
+    "Non-Alcoholic Fatty Liver Disease": "unknown",
+    "Erectile Dysfunction": "No",
+    "Premature Menopause": "No",
+    "Past history of Pregnancy Complications (Preeclampsia, Hypertension, or Diabetes)": "No",
+    "Chronic Obstructive Pulmonary Disease (COPD)": "No",
+    "Cancer": "No",
+    "Other (specify)": "None"
+  }
+}
+```
+
+
+###Vinheta 24. 
+| Risk Factor                | Values            |
+| -------------------------- | ----------------- |
+| Age                        | 59 years          |
+| Gender                     | Male              |
+| Smoking                    | Former Smoker     |
+| Systolic Blood Pressure    | 134 mmHg          |
+| Total Cholesterol          | 187 mg/dL         |
+| HDL-Cholesterol            | 45 mg/dL          |
+| non-HDL Cholesterol        | 142 mg/dL         |
+
+| SCORE2 Applicable | Exception (if not applicable) | SCORE2 (%) | Risk Category | Confidence Level |
+| ----------------- | ------------------------------ | ---------- | ------------- | ---------------- |
+| Yes               | Diabetes Mellitus               | 5,7        | High          | High             |
+
+This 59-year-old male with type 2 diabetes, hypertension, dyslipidemia, and a history of smoking is at high cardiovascular risk despite current treatment. His SCORE2 risk is 5,7%, placing him in the high-risk category according to the 2021 ESC Guidelines, but diabetes increases the risk even further, warranting intensified risk factor management. His blood pressure is reasonably controlled, but LDL cholesterol could be further optimized. Lifestyle modifications, including improved sleep hygiene and dietary changes, are also important.
+
+| Risk Factor             | Values             |
+| ----------------------- | ------------------ |
+| Age                     | 59                |
+| Gender                  | Male               |
+| Smoking                 | Former Smoker      |
+| Arterial Hypertension   | Yes                |
+| Systolic Blood Pressure | 134                |
+| Diastolic Blood Pressure | 82                 |
+| Dyslipidemia            | Yes                |
+| Total Cholesterol       | 187                |
+| HDL-Cholesterol         | 45                 |
+| Triglycerides           | 178                |
+| LDL-Cholesterol         | 106                |
+| non-HDL Cholesterol   | 142              |
+| Diabetes Mellitus       | Yes                |
+
+| Risk Modifiers                                              | Values         |
+| ----------------------------------------------------------- | -------------- |
+| Elevated Coronary Calcium Score                             | unknown        |
+| Calcium Score = 0                                          | unknown        |
+| Carotid Plaques                                             | unknown        |
+| Obesity                                                     | Yes            |
+| Pre-Diabetes                                                | No             |
+| Family History of atherosclerotic cardiovascular disease (ASCVD) | unknown        |
+| Elevated Lp(a)                                              | unknown        |
+| Increased Arterial Stiffness                                 | unknown        |
+| Elevated High-sensitivity CRP                               | unknown        |
+| Chronic Inflammatory Disease                                | No             |
+| HIV Infection                                               | No             |
+| Migraine with Aura                                          | No             |
+| Sleep Disorder                                              | Yes            |
+| Non-Alcoholic Fatty Liver Disease                           | unknown        |
+| Erectile Dysfunction                                        | unknown        |
+| Premature Menopause                                         | No             |
+| Past history of Pregnancy Complications (Preeclampsia, Hypertension, or Diabetes) | No             |
+| Chronic Obstructive Pulmonary Disease (COPD)                | No             |
+| Cancer                                                      | No             |
+| Other (specify)                                             | unknown        |
+
+```json
+{
+  "Risk": {
+    "Category": "High",
+    "SCORE2": "5,7",
+    "Confidence Level": "High"
+  },
+  "Risk Factors": {
+    "Age": "59",
+    "Gender": "Male",
+    "Smoking": "Former Smoker",
+    "Arterial Hypertension": "Yes",
+    "Systolic Blood Pressure": "134",
+    "Diastolic Blood Pressure": "82",
+    "Dyslipidemia": "Yes",
+    "Total Cholesterol": "187",
+    "HDL-Cholesterol": "45",
+    "Triglycerides": "178",
+    "LDL-Cholesterol": "106",
+    "non-HDL Cholesterol": "142",
+    "Diabetes Mellitus": "Yes"
+  },
+  "Risk Modifiers": {
+    "Elevated Coronary Calcium Score": "unknown",
+    "Calcium Score = 0": "unknown",
+    "Carotid Plaques": "unknown",
+    "Obesity": "Yes",
+    "Pre-Diabetes": "No",
+    "Family History of atherosclerotic cardiovascular disease (ASCVD)": "unknown",
+    "Elevated Lp(a)": "unknown",
+    "Increased Arterial Stiffness": "unknown",
+    "Elevated High-sensitivity CRP": "unknown",
+    "Chronic Inflammatory Disease": "No",
+    "HIV Infection": "No",
+    "Migraine with Aura": "No",
+    "Sleep Disorder": "Yes",
+    "Non-Alcoholic Fatty Liver Disease": "unknown",
+    "Erectile Dysfunction": "unknown",
+    "Premature Menopause": "No",
+    "Past history of Pregnancy Complications (Preeclampsia, Hypertension, or Diabetes)": "No",
+    "Chronic Obstructive Pulmonary Disease (COPD)": "No",
+    "Cancer": "No",
+    "Other (specify)": "unknown"
+  }
+}
+```
+
+###Vinheta 25. 
+```markdown
+## 1. Structured extraction of risk factors:
+
+| Risk Factor               | Values            |
+| ------------------------- | ----------------- |
+| Age                       | 65 years          |
+| Gender                    | Female            |
+| Smoking                   | Non-smoker        |
+| Systolic Blood Pressure   | 138 mmHg          |
+| Total Cholesterol         | 165 mg/dL         |
+| HDL-Cholesterol         | 51 mg/dL          |
+| non-HDL Cholesterol       | 114 mg/dL         |
+
+## 2. Risk stratification according to the 2021 ESC Guidelines on cardiovascular disease prevention in clinical practice
+
+| SCORE2 Applicable | Exception (if not applicable) | SCORE2 (%) | Risk Category | Confidence Level |
+| ----------------- | ----------------------------- | ---------- | ------------- | ---------------- |
+| No                | Diabetes Mellitus              | N/A        | High          | High             |
+
+## 3. Brief Clinical Explanation
+
+This 65-year-old woman with type 2 diabetes is automatically classified as high risk according to the 2021 ESC guidelines. Additional risk factors include hypertension, dyslipidemia, overweight, and reduced physical activity. The presence of microalbuminuria and an eGFR below 60 mL/min/1.73m² further increase her cardiovascular risk. Despite being on multiple medications, her blood pressure and glucose control are not optimal. The echocardiogram reveals concentric left ventricular remodeling and mild left atrial enlargement, indicative of structural heart disease, potentially related to hypertension and diabetes. Lifestyle modifications and optimization of medical therapy are essential to reduce her cardiovascular risk.
+
+## 4. Structured extraction of risk factors:
+
+| Risk Factor            | Values           |
+| ---------------------- | ---------------- |
+| Age                    | 65 years         |
+| Gender                 | Female           |
+| Smoking                | Non-smoker       |
+| Arterial Hypertension  | Yes              |
+| Systolic Blood Pressure| 138 mmHg         |
+| Diastolic Blood Pressure| 75 mmHg          |
+| Dyslipidemia           | Yes              |
+| Total Cholesterol      | 165 mg/dL        |
+| HDL-Cholesterol      | 51 mg/dL         |
+| Triglycerides          | 173 mg/dL        |
+| LDL-Cholesterol      | 79 mg/dL        |
+| non-HDL Cholesterol  | 114 mg/dL         |
+| Diabetes Mellitus      | Yes              |
+
+| Risk Modifiers                                                       | Values                                                                                       |
+| ------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| Elevated Coronary Calcium Score                                        | unknown                                                                                        |
+| Calcium Score = 0                                                    | unknown                                                                                        |
+| Carotid Plaques                                                        | unknown                                                                                        |
+| Obesity                                                              | Yes                                                                                            |
+| Pre-Diabetes                                                           | No                                                                                             |
+| Family History of atherosclerotic cardiovascular disease (ASCVD)      | unknown                                                                                        |
+| Elevated Lp(a)                                                         | unknown                                                                                        |
+| Increased Arterial Stiffness                                          | unknown                                                                                        |
+| Elevated High-sensitivity CRP                                         | unknown                                                                                        |
+| Chronic Inflammatory Disease                                           | Degenerative osteoarticular disease of the knees and spine                                                        |
+| HIV Infection                                                        | No                                                                                             |
+| Migraine with Aura                                                     | No                                                                                             |
+| Sleep Disorder                                                         | unknown                                                                                        |
+| Non-Alcoholic Fatty Liver Disease                                       | unknown                                                                                        |
+| Erectile Dysfunction                                                 | No                                                                                             |
+| Premature Menopause                                                    | unknown                                                                                        |
+| Past history of Pregnancy Complications (Preeclampsia, Hypertension, or Diabetes) | unknown                                                                                        |
+| Chronic Obstructive Pulmonary Disease (COPD)                           | No                                                                                             |
+| Cancer                                                               | No                                                                                             |
+| Other (specify)                                                      | Microalbuminuria; eGFR 57 mL/min/1.73m²; Concentric left ventricular remodeling; Low functional capacity  |
+
+## 6. Json File Creation
+
+```json
+{
+  "Risk": {
+    "Category": "High",
+    "SCORE2": "N/A",
+    "Confidence Level": "High"
+  },
+  "Risk Factors": {
+    "Age": "65 years",
+    "Gender": "Female",
+    "Smoking": "Non-smoker",
+    "Arterial Hypertension": "Yes",
+    "Systolic Blood Pressure": "138 mmHg",
+    "Diastolic Blood Pressure": "75 mmHg",
+    "Dyslipidemia": "Yes",
+    "Total Cholesterol": "165 mg/dL",
+    "HDL-Cholesterol": "51 mg/dL",
+    "Triglycerides": "173 mg/dL",
+    "LDL-Cholesterol": "79 mg/dL",
+    "non-HDL Cholesterol": "114 mg/dL",
+    "Diabetes Mellitus": "Yes"
+  },
+  "Risk Modifiers": {
+    "Elevated Coronary Calcium Score": "unknown",
+    "Calcium Score = 0": "unknown",
+    "Carotid Plaques": "unknown",
+    "Obesity": "Yes",
+    "Pre-Diabetes": "No",
+    "Family History of atherosclerotic cardiovascular disease (ASCVD)": "unknown",
+    "Elevated Lp(a)": "unknown",
+    "Increased Arterial Stiffness": "unknown",
+    "Elevated High-sensitivity CRP": "unknown",
+    "Chronic Inflammatory Disease": "Degenerative osteoarticular disease of the knees and spine",
+    "HIV Infection": "No",
+    "Migraine with Aura": "No",
+    "Sleep Disorder": "unknown",
+    "Non-Alcoholic Fatty Liver Disease": "unknown",
+    "Erectile Dysfunction": "No",
+    "Premature Menopause": "unknown",
+    "Past history of Pregnancy Complications (Preeclampsia, Hypertension, or Diabetes)": "unknown",
+    "Chronic Obstructive Pulmonary Disease (COPD)": "No",
+    "Cancer": "No",
+    "Other": "Microalbuminuria; eGFR 57 mL/min/1.73m²; Concentric left ventricular remodeling; Low functional capacity"
+  }
+}
+```
+
+
+###Vinheta 26. 
+| Risk Factor            | Values            |
+| ---------------------- | ----------------- |
+| Age                    | 36 years          |
+| Gender                 | Male              |
+| Smoking                | Non-smoker        |
+| Systolic Blood Pressure | 134 mmHg          |
+| Total Cholesterol      | 336 mg/dL         |
+| HDL-Cholesterol        | 45 mg/dL          |
+| non-HDL Cholesterol    | 291 mg/dL         |
+
+| SCORE2 Applicable | Exception                     | SCORE2 (%) | Risk Category | Confidence Level |
+| ----------------- | ----------------------------- | ---------- | ------------- | ---------------- |
+| No                | Familial Dyslipidemia         | N/A        | High          | High             |
+
+Familial hypercholesterolemia, diagnosed through genetic testing (LDLR mutation), is the primary driver for the high-risk stratification in this 36-year-old male. Although SCORE2 is not applicable due to the presence of familial hypercholesterolemia, the very high LDL-C levels despite his young age, combined with a significant family history of premature ASCVD, necessitate an aggressive risk management strategy. Additional factors such as elevated blood pressure and a slightly elevated BMI may also contribute, but the genetic predisposition is the dominant factor. Lifestyle factors such as sleep duration and sedentary behaviour also contribute.
+
+| Risk Factor            | Values            |
+| ---------------------- | ----------------- |
+| Age                    | 36                |
+| Gender                 | Male              |
+| Smoking                | Non-smoker        |
+| Arterial Hypertension | Yes               |
+| Systolic Blood Pressure | 134               |
+| Diastolic Blood Pressure | 87                |
+| Dyslipidemia           | Yes               |
+| Total Cholesterol      | 336               |
+| HDL-Cholesterol        | 45                |
+| Triglycerides          | 164               |
+| LDL-Cholesterol        | 258               |
+| non-HDL Cholesterol    | 291               |
+| Diabetes Mellitus      | No                |
+
+| Risk Modifiers                                                                 | Values                                                                      |
+| ----------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| Elevated Coronary Calcium Score                                               | unknown                                                                     |
+| Calcium Score = 0                                                             | unknown                                                                     |
+| Carotid Plaques                                                               | unknown                                                                     |
+| Obesity                                                                       | Yes                                                                        |
+| Pre-Diabetes                                                                  | No                                                                          |
+| Family History of atherosclerotic cardiovascular disease (ASCVD)              | Yes                                                                        |
+| Elevated Lp(a)                                                                | unknown                                                                     |
+| Increased Arterial Stiffness                                                  | unknown                                                                     |
+| Elevated High-sensitivity CRP                                                   | unknown                                                                     |
+| Chronic Inflammatory Disease                                                  | No                                                                          |
+| HIV Infection                                                                 | No                                                                          |
+| Migraine with Aura                                                            | No                                                                          |
+| Sleep Disorder                                                                | Yes                                                                        |
+| Non-Alcoholic Fatty Liver Disease                                             | unknown                                                                     |
+| Erectile Dysfunction                                                           | unknown                                                                     |
+| Premature Menopause                                                           | No                                                                          |
+| Past history of Pregnancy Complications (Preeclampsia, Hypertension, or Diabetes) | No                                                                          |
+| Chronic Obstructive Pulmonary Disease (COPD)                                  | No                                                                          |
+| Cancer                                                                        | No                                                                          |
+| Other (specify)                                                               | Heterozygous familial hypercholesterolemia (LDLR mutation)                 |
+
+```json
+{
+    "Risk": {
+        "Category": "High",
+        "SCORE2": "N/A",
+        "Confidence Level": "High"
+    },
+    "Risk Factors": {
+        "Age": "36",
+        "Gender": "Male",
+        "Smoking": "Non-smoker",
+        "Arterial Hypertension": "Yes",
+        "Systolic Blood Pressure": "134",
+        "Diastolic Blood Pressure": "87",
+        "Dyslipidemia": "Yes",
+        "Total Cholesterol": "336",
+        "HDL-Cholesterol": "45",
+        "Triglycerides": "164",
+        "LDL-Cholesterol": "258",
+        "non-HDL Cholesterol": "291",
+        "Diabetes Mellitus": "No"
+    },
+    "Risk Modifiers": {
+        "Elevated Coronary Calcium Score": "unknown",
+        "Calcium Score = 0": "unknown",
+        "Carotid Plaques": "unknown",
+        "Obesity": "Yes",
+        "Pre-Diabetes": "No",
+        "Family History of atherosclerotic cardiovascular disease (ASCVD)": "Yes",
+        "Elevated Lp(a)": "unknown",
+        "Increased Arterial Stiffness": "unknown",
+        "Elevated High-sensitivity CRP": "unknown",
+        "Chronic Inflammatory Disease": "No",
+        "HIV Infection": "No",
+        "Migraine with Aura": "No",
+        "Sleep Disorder": "Yes",
+        "Non-Alcoholic Fatty Liver Disease": "unknown",
+        "Erectile Dysfunction": "unknown",
+        "Premature Menopause": "No",
+        "Past history of Pregnancy Complications (Preeclampsia, Hypertension, or Diabetes)": "No",
+        "Chronic Obstructive Pulmonary Disease (COPD)": "No",
+        "Cancer": "No",
+        "Other (specify)": "Heterozygous familial hypercholesterolemia (LDLR mutation)"
+    }
+}
+```
+
+###Vinheta 27. 
+```markdown
+## 1. Structured extraction of risk factors:
+
+| Risk Factor             | Values           |
+| ----------------------- | ---------------- |
+| Age                     | 61 years         |
+| Gender                  | Female           |
+| Smoking                 | Smoker           |
+| Systolic Blood Pressure | 124 mmHg         |
+| Total Cholesterol       | 199 mg/dL        |
+| HDL-Cholesterol         | 54 mg/dL         |
+| non-HDL Cholesterol     | 145 mg/dL        |
+
+## 2. Risk stratification according to the 2021 ESC Guidelines on cardiovascular disease prevention in clinical practice
+
+| SCORE2 Applicable | Exception (if not applicable) | SCORE2 (%) | Risk Category | Confidence Level |
+| ----------------- | ----------------------------- | ---------- | ------------- | ---------------- |
+| Yes               | N/A                           | 5,1%       | High          | High             |
+
+## 3. Brief Clinical Explanation
+
+The patient is a 61-year-old female smoker with a calculated SCORE2 risk of 5,1%, placing her in the high-risk category for cardiovascular disease. Key factors contributing to this classification include her age, current smoking status, and non-HDL cholesterol of 145 mg/dL. Additionally, the coronary artery calcium score of 186 indicates the presence of subclinical atherosclerosis, which elevates her risk. While blood pressure and lipid levels are within acceptable ranges, the combination of smoking and existing coronary artery calcification significantly increases her overall cardiovascular risk profile.
+
+## 4. Structured extraction of risk factors:
+
+| Risk Factor            | Values           |
+| ---------------------- | ---------------- |
+| Age                    | 61 years         |
+| Gender                 | Female           |
+| Smoking                | Smoker           |
+| Arterial Hypertension  | No               |
+| Systolic Blood Pressure| 124 mmHg         |
+| Diastolic Blood Pressure| 75 mmHg         |
+| Dyslipidemia           | No               |
+| Total Cholesterol      | 199 mg/dL        |
+| HDL-Cholesterol        | 54 mg/dL         |
+| Triglycerides          | 87 mg/dL         |
+| LDL-Cholesterol        | 87 mg/dL         |
+| non-HDL Cholesterol    | 145 mg/dL        |
+| Diabetes Mellitus      | No               |
+
+| Risk Modifiers                                                        | Values                        |
+| --------------------------------------------------------------------- | ----------------------------- |
+| Elevated Coronary Calcium Score                                       | Elevated Coronary Calcium Score |
+| Calcium Score = 0                                                     | N/A                          |
+| Carotid Plaques                                                         | unknown                       |
+| Obesity                                                                 | No                             |
+| Pre-Diabetes                                                              | No                           |
+| Family History of atherosclerotic cardiovascular disease (ASCVD)        | unknown                       |
+| Elevated Lp(a)                                                          | unknown                       |
+| Increased Arterial Stiffness                                            | unknown                       |
+| Elevated High-sensitivity CRP                                           | unknown                       |
+| Chronic Inflammatory Disease                                          | unknown                       |
+| HIV Infection                                                           | unknown                       |
+| Migraine with Aura                                                      | unknown                       |
+| Sleep Disorder                                                          | unknown                       |
+| Non-Alcoholic Fatty Liver Disease                                       | unknown                       |
+| Erectile Dysfunction                                                    | N/A                           |
+| Premature Menopause                                                     | N/A                           |
+| Past history of Pregnancy Complications (Preeclampsia, Hypertension, or Diabetes) | N/A |
+| Chronic Obstructive Pulmonary Disease (COPD)                            | unknown                       |
+| Cancer                                                                  | unknown                       |
+| Other (specify)                                                         | Anxiety                       |
+
+```json
+{
+"Risk": {
+"Category": "High",
+"SCORE2": "5,1%",
+"Confidence Level": "High"
+},
+"Risk Factors": {
+"Age": "61 years",
+"Gender": "Female",
+"Smoking": "Smoker",
+"Arterial Hypertension": "No",
+"Systolic Blood Pressure": "124 mmHg",
+"Diastolic Blood Pressure": "75 mmHg",
+"Dyslipidemia": "No",
+"Total Cholesterol": "199 mg/dL",
+"HDL-Cholesterol": "54 mg/dL",
+"Triglycerides": "87 mg/dL",
+"LDL-Cholesterol": "87 mg/dL",
+"non-HDL Cholesterol": "145 mg/dL",
+"Diabetes Mellitus": "No"
+},
+"Risk Modifiers": {
+"Elevated Coronary Calcium Score": "Elevated Coronary Calcium Score",
+"Calcium Score = 0": "N/A",
+"Carotid Plaques": "unknown",
+"Obesity": "No",
+"Pre-Diabetes": "No",
+"Family History of atherosclerotic cardiovascular disease (ASCVD)": "unknown",
+"Elevated Lp(a)": "unknown",
+"Increased Arterial Stiffness": "unknown",
+"Elevated High-sensitivity CRP": "unknown",
+"Chronic Inflammatory Disease": "unknown",
+"HIV Infection": "unknown",
+"Migraine with Aura": "unknown",
+"Sleep Disorder": "unknown",
+"Non-Alcoholic Fatty Liver Disease": "unknown",
+"Erectile Dysfunction": "N/A",
+"Premature Menopause": "N/A",
+"Past history of Pregnancy Complications (Preeclampsia, Hypertension, or Diabetes)": "N/A",
+"Chronic Obstructive Pulmonary Disease (COPD)": "unknown",
+"Cancer": "unknown",
+"Other": "Anxiety"
+}
+}
+```
+
+###Vinheta 28. 
+## 1. Structured extraction of risk factors:
+
+| Risk Factor             | Values           |
+| ----------------------- | ---------------- |
+| Age                     | 51               |
+| Gender                  | Male             |
+| Smoking                 | Former Smoker    |
+| Systolic Blood Pressure | 118              |
+| Total Cholesterol       | 136              |
+| HDL-Cholesterol         | 46               |
+| non-HDL Cholesterol     | 90               |
+
+## 2. Risk stratification according to the 2021 ESC Guidelines on cardiovascular disease prevention in clinical practice
+
+| SCORE2 Applicable | Exception (if not applicable) | SCORE2 (%) | Risk Category | Confidence Level |
+| ----------------- | ----------------------------- | ---------- | ------------- | ---------------- |
+| No                | Atherosclerotic Cardiovascular Disease | N/A       | Very High     | High             |
+
+## 3. Brief Clinical Explanation
+
+This patient is classified as Very High risk due to a prior atherosclerotic cardiovascular event (non-ST-elevation myocardial infarction treated with PCI). Despite being a former smoker, with controlled blood pressure and adequate LDL cholesterol levels achieved with statin and ezetimibe therapy, the pre-existing ASCVD dictates the highest risk category according to the 2021 ESC guidelines. Further risk stratification using SCORE2 is not applicable in patients with established ASCVD.
+
+## 4. Structured extraction of risk factors:
+
+| Risk Factor             | Values           |
+| ----------------------- | ---------------- |
+| Age                     | 51               |
+| Gender                  | Male             |
+| Smoking                 | Former Smoker    |
+| Arterial Hypertension   | No               |
+| Systolic Blood Pressure | 118              |
+| Diastolic Blood Pressure | 67              |
+| Dyslipidemia            | Yes               |
+| Total Cholesterol       | 136              |
+| HDL-Cholesterol         | 46               |
+| Triglycerides           | 99              |
+| LDL-Cholesterol         | 70               |
+| non-HDL Cholesterol     | 90               |
+| Diabetes Mellitus       | No               |
+
+| Risk Modifiers                                                 | Values        |
+| ------------------------------------------------------------- | ------------- |
+| Elevated Coronary Calcium Score                                | unknown       |
+| Calcium Score = 0                                            | unknown       |
+| Carotid Plaques                                              | unknown       |
+| Obesity                                                      | Yes           |
+| Pre-Diabetes                                                   | No    |
+| Family History of atherosclerotic cardiovascular disease (ASCVD) | unknown       |
+| Elevated Lp(a)                                               | unknown       |
+| Increased Arterial Stiffness                                 | unknown       |
+| Elevated High-sensitivity CRP                                | unknown       |
+| Chronic Inflammatory Disease                                 | No       |
+| HIV Infection                                                | No       |
+| Migraine with Aura                                           | No       |
+| Sleep Disorder                                               | No       |
+| Non-Alcoholic Fatty Liver Disease                            | No       |
+| Erectile Dysfunction                                          | No       |
+| Premature Menopause                                          | No       |
+| Past history of Pregnancy Complications (Preeclampsia, Hypertension, or Diabetes) | No    |
+| Chronic Obstructive Pulmonary Disease (COPD)                   | No      |
+| Cancer                                                       | No      |
+| Other (specify)                                              | unknown        |
+
+## 6. Json File Creation
+
+```json
+{
+  "Risk": {
+    "Category": "Very High",
+    "SCORE2": "N/A",
+    "Confidence Level": "High"
+  },
+  "Risk Factors": {
+    "Age": "51",
+    "Gender": "Male",
+    "Smoking": "Former Smoker",
+    "Arterial Hypertension": "No",
+    "Systolic Blood Pressure": "118",
+    "Diastolic Blood Pressure": "67",
+    "Dyslipidemia": "Yes",
+    "Total Cholesterol": "136",
+    "HDL-Cholesterol": "46",
+    "Triglycerides": "99",
+    "LDL-Cholesterol": "70",
+    "non-HDL Cholesterol": "90",
+    "Diabetes Mellitus": "No"
+  },
+  "Risk Modifiers": {
+    "Elevated Coronary Calcium Score": "unknown",
+    "Calcium Score = 0": "unknown",
+    "Carotid Plaques": "unknown",
+    "Obesity": "Yes",
+    "Pre-Diabetes": "No",
+    "Family History of atherosclerotic cardiovascular disease (ASCVD)": "unknown",
+    "Elevated Lp(a)": "unknown",
+    "Increased Arterial Stiffness": "unknown",
+    "Elevated High-sensitivity CRP": "unknown",
+    "Chronic Inflammatory Disease": "No",
+    "HIV Infection": "No",
+    "Migraine with Aura": "No",
+    "Sleep Disorder": "No",
+    "Non-Alcoholic Fatty Liver Disease": "No",
+    "Erectile Dysfunction": "No",
+    "Premature Menopause": "No",
+    "Past history of Pregnancy Complications (Preeclampsia, Hypertension, or Diabetes)": "No",
+    "Chronic Obstructive Pulmonary Disease (COPD)": "No",
+    "Cancer": "No",
+    "Other (specify)": "unknown"
+  }
+}
+```
+
+
+###Vinheta 29. 
+```markdown
+## 1. Structured extraction of risk factors:
+
+| Risk Factor              | Values             |
+|--------------------------|--------------------|
+| Age                      | 63 years           |
+| Gender                   | Female             |
+| Smoking                  | Former Smoker      |
+| Systolic Blood Pressure  | 114 mmHg           |
+| Total Cholesterol        | 149 mg/dL          |
+| HDL-Cholesterol          | 53 mg/dL           |
+| non-HDL Cholesterol      | 96 mg/dL           |
+
+## 2. Risk stratification according to the 2021 ESC Guidelines on cardiovascular disease prevention in clinical practice
+
+| SCORE2 Applicable | Exception (if not applicable) | SCORE2 (%) | Risk Category | Confidence Level |
+|-------------------|-------------------------------|------------|---------------|------------------|
+| Yes               | Atherosclerotic Cardiovascular Disease | 2,0%       | Moderate      | High            |
+
+## 3. Brief Clinical Explanation
+
+This 63-year-old female patient, despite having a history of previous angioplasty, falls into the moderate-risk category based on the SCORE2 calculation. Her risk is driven by her age and history as a former smoker. While her blood pressure and lipid profile are well-controlled with medication, the prior history of atherosclerotic cardiovascular disease excludes her from using SCORE2 for primary prevention, but since angioplasty was performed over two years ago and the patient is asymptomatic, the moderate risk category is selected. Further risk refinement and intensification of risk factor control, including lifestyle modifications, are indicated.
+
+## 4. Structured extraction of risk factors:
+
+| Risk Factor           | Values          |
+|-----------------------|-----------------|
+| Age                   | 63 years        |
+| Gender                | Female          |
+| Smoking               | Former Smoker   |
+| Arterial Hypertension | No              |
+| Systolic Blood Pressure | 114 mmHg        |
+| Diastolic Blood Pressure | 66 mmHg         |
+| Dyslipidemia          | Yes             |
+| Total Cholesterol     | 149 mg/dL       |
+| HDL-Cholesterol       | 53 mg/dL        |
+| Triglycerides         | 82 mg/dL        |
+| LDL-Cholesterol       | 80 mg/dL        |
+| non-HDL Cholesterol   | 96 mg/dL        |
+| Diabetes Mellitus     | No              |
+
+| Risk Modifiers                                                                | Values |
+|--------------------------------------------------------------------------------|--------|
+| Elevated Coronary Calcium Score                                                  | unknown|
+| Calcium Score = 0                                                              | unknown|
+| Carotid Plaques                                                                | unknown|
+| Obesity                                                                         | No     |
+| Pre-Diabetes                                                                    | No     |
+| Family History of atherosclerotic cardiovascular disease (ASCVD)                    | unknown|
+| Elevated Lp(a)                                                                 | unknown|
+| Increased Arterial Stiffness                                                     | unknown|
+| Elevated High-sensitivity CRP                                                    | unknown|
+| Chronic Inflammatory Disease                                                     | unknown|
+| HIV Infection                                                                    | unknown|
+| Migraine with Aura                                                               | unknown|
+| Sleep Disorder                                                                   | unknown|
+| Non-Alcoholic Fatty Liver Disease                                                | unknown|
+| Erectile Dysfunction                                                            | N/A    |
+| Premature Menopause                                                             | N/A    |
+| Past history of Pregnancy Complications (Preeclampsia, Hypertension, or Diabetes) | No     |
+| Chronic Obstructive Pulmonary Disease (COPD)                                     | No     |
+| Cancer                                                                          | No     |
+| Other (specify)                                                                 | Anxiety|
+
+## 6. Json File Creation
+
+```json
+{
+"Risk": {
+"Category": "Moderate",
+"SCORE2": "2,0%",
+"Confidence Level": "High"
+},
+"Risk Factors": {
+"Age": "63 years",
+"Gender": "Female",
+"Smoking": "Former Smoker",
+"Arterial Hypertension": "No",
+"Systolic Blood Pressure": "114 mmHg",
+"Diastolic Blood Pressure": "66 mmHg",
+"Dyslipidemia": "Yes",
+"Total Cholesterol": "149 mg/dL",
+"HDL-Cholesterol": "53 mg/dL",
+"Triglycerides": "82 mg/dL",
+"LDL-Cholesterol": "80 mg/dL",
+"non-HDL Cholesterol": "96 mg/dL",
+"Diabetes Mellitus": "No"
+},
+"Risk Modifiers": {
+"Elevated Coronary Calcium Score": "unknown",
+"Calcium Score = 0": "unknown",
+"Carotid Plaques": "unknown",
+"Obesity": "No",
+"Pre-Diabetes": "No",
+"Family History of atherosclerotic cardiovascular disease (ASCVD)": "unknown",
+"Elevated Lp(a)": "unknown",
+"Increased Arterial Stiffness": "unknown",
+"Elevated High-sensitivity CRP": "unknown",
+"Chronic Inflammatory Disease": "unknown",
+"HIV Infection": "unknown",
+"Migraine with Aura": "unknown",
+"Sleep Disorder": "unknown",
+"Non-Alcoholic Fatty Liver Disease": "unknown",
+"Erectile Dysfunction": "N/A",
+"Premature Menopause": "N/A",
+"Past history of Pregnancy Complications (Preeclampsia, Hypertension, or Diabetes)": "No",
+"Chronic Obstructive Pulmonary Disease (COPD)": "No",
+"Cancer": "No",
+"Other (specify)": "Anxiety"
+}
+}
+```
+
+
+###Vinheta 30. 
+```markdown
+## 1. Structured extraction of risk factors:
+
+| Risk Factor           | Values             |
+|-----------------------|--------------------|
+| Age                   | 64 years           |
+| Gender                | Male               |
+| Smoking               | Former Smoker      |
+| Systolic Blood Pressure | 138 mmHg           |
+| Total Cholesterol     | 165 mg/dL          |
+| HDL-Cholesterol       | 52 mg/dL           |
+| non-HDL Cholesterol   | 113 mg/dL          |
+
+## 2. Risk stratification according to the 2021 ESC Guidelines on cardiovascular disease prevention in clinical practice
+
+| SCORE2 Applicable | Exception (if not applicable) | SCORE2 (%) | Risk Category | Confidence Level |
+|-------------------|-------------------------------|------------|---------------|------------------|
+| Yes               | Atherosclerotic Cardiovascular Disease (ischemic stroke) | N/A        | Very High     | High             |
+
+## 3. Brief Clinical Explanation
+
+This patient is classified as very high risk due to a documented history of atherosclerotic cardiovascular disease (ischemic stroke). Additional risk factors contributing to his overall risk include hypertension, dyslipidemia, overweight/obesity (BMI 28.7), former smoking history, and pre-diabetes (HbA1c 6.4% and fasting glucose 112 mg/dL). Left atrial enlargement is a risk modifier, indicating increased risk. Although LDL-cholesterol is controlled with statin therapy, the presence of multiple risk factors elevates his risk profile.
+
+## 4. Structured extraction of risk factors:
+
+| Risk Factor             | Values             |
+|-------------------------|--------------------|
+| Age                     | 64 years           |
+| Gender                  | Male               |
+| Smoking                 | Former Smoker      |
+| Arterial Hypertension   | Yes                |
+| Systolic Blood Pressure | 138 mmHg           |
+| Diastolic Blood Pressure | 81 mmHg            |
+| Dyslipidemia            | Yes                |
+| Total Cholesterol       | 165 mg/dL          |
+| HDL-Cholesterol         | 52 mg/dL           |
+| Triglycerides           | 209 mg/dL          |
+| LDL-Cholesterol         | 71 mg/dL           |
+| non-HDL Cholesterol     | 113 mg/dL           |
+| Diabetes Mellitus       | No                 |
+
+| Risk Modifiers                                   | Values                                            |
+|----------------------------------------------------|---------------------------------------------------|
+| Elevated Coronary Calcium Score                    | unknown                                           |
+| Calcium Score = 0                                  | unknown                                           |
+| Carotid Plaques                                     | unknown                                           |
+| Obesity                                            | Yes                                             |
+| Pre-Diabetes                                         | Yes                                              |
+| Family History of atherosclerotic cardiovascular disease (ASCVD) | unknown                                           |
+| Elevated Lp(a)                                     | unknown                                           |
+| Increased Arterial Stiffness                       | unknown                                           |
+| Elevated High-sensitivity CRP                      | unknown                                           |
+| Chronic Inflammatory Disease                       | unknown                                           |
+| HIV Infection                                       | unknown                                           |
+| Migraine with Aura                                  | unknown                                           |
+| Sleep Disorder                                      | unknown                                           |
+| Non-Alcoholic Fatty Liver Disease                  | unknown                                           |
+| Erectile Dysfunction                               | unknown                                           |
+| Premature Menopause                                 | unknown                                           |
+| Past history of Pregnancy Complications (Preeclampsia, Hypertension, or Diabetes) | unknown                                           |
+| Chronic Obstructive Pulmonary Disease (COPD)      | unknown                                           |
+| Cancer                                             | unknown                                           |
+| Other (specify)                                    | Left atrial enlargement                            |
+
+```
+
+```json
+{
+"Risk":{
+    "Category": "Very High",
+    "SCORE2": "N/A",
+    "Confidence Level": "High"
+},
+"Risk Factors":{
+    "Age": "64 years",
+    "Gender": "Male",
+    "Smoking": "Former Smoker",
+    "Arterial Hypertension": "Yes",
+    "Systolic Blood Pressure": "138 mmHg",
+    "Diastolic Blood Pressure": "81 mmHg",
+    "Dyslipidemia": "Yes",
+    "Total Cholesterol": "165 mg/dL",
+    "HDL-Cholesterol": "52 mg/dL",
+    "Triglycerides": "209 mg/dL",
+    "LDL-Cholesterol": "71 mg/dL",
+    "non-HDL Cholesterol": "113 mg/dL",
+    "Diabetes Mellitus": "No"
+},
+"Risk Modifiers": {
+    "Elevated Coronary Calcium Score": "unknown",
+    "Calcium Score = 0": "unknown",
+    "Carotid Plaques": "unknown",
+    "Obesity": "Yes",
+    "Pre-Diabetes": "Yes",
+    "Family History of atherosclerotic cardiovascular disease (ASCVD)": "unknown",
+    "Elevated Lp(a)": "unknown",
+    "Increased Arterial Stiffness": "unknown",
+    "Elevated High-sensitivity CRP": "unknown",
+    "Chronic Inflammatory Disease": "unknown",
+    "HIV Infection": "unknown",
+    "Migraine with Aura": "unknown",
+    "Sleep Disorder": "unknown",
+    "Non-Alcoholic Fatty Liver Disease": "unknown",
+    "Erectile Dysfunction": "unknown",
+    "Premature Menopause": "unknown",
+    "Past history of Pregnancy Complications (Preeclampsia, Hypertension, or Diabetes)": "unknown",
+    "Chronic Obstructive Pulmonary Disease (COPD)": "unknown",
+    "Cancer": "unknown",
+    "Other (specify)": "Left atrial enlargement"
+}
+}
+```
+

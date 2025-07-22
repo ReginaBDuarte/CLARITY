@@ -1,13 +1,17 @@
 import os
-from utils import parse_vinhetas, get_gpt4_response, get_gemini_response, parse_json, parse_prompt
+from utils import parse_vinhetas, parse_vinhetas_csv, get_gpt4_response, get_gemini_response, parse_json, parse_prompt
 from openai import OpenAI
 
+# paerse vinhetas txt (comment if not needed)
+#vinhetas_clinicas_en = parse_vinhetas('vinhetas_2_en.txt')
+#vinhetas_clinicas_pt = parse_vinhetas('vinhetas_2_pt.txt')
 
-vinhetas_clinicas_en = parse_vinhetas('vinhetas_2_en.txt')
-vinhetas_clinicas_pt = parse_vinhetas('vinhetas_2_pt.txt')
+#parse vinhetas csd
+vinhetas_clinicas_en = parse_vinhetas_csv('VinhetasFinaisPT_EN.V1.0.xlsx', language='EN')
+vinhetas_clinicas_pt = parse_vinhetas_csv('VinhetasFinaisPT_EN.V1.0.xlsx', language='PT')
 
-system_prompt_en, user_prompt_en = parse_prompt('prompt_2_en.txt', separator='[Vignette]')
-system_prompt_pt, user_prompt_pt = parse_prompt('prompt_2_pt.txt', separator='[Vinheta]')
+system_prompt_en, user_prompt_en = parse_prompt('prompt_4_en.txt', separator='[Vignette]')
+system_prompt_pt, user_prompt_pt = parse_prompt('prompt_4_pt.txt', separator='[Vinheta]')
 
 
 
@@ -19,7 +23,6 @@ system_prompt_pt, user_prompt_pt = parse_prompt('prompt_2_pt.txt', separator='[V
 #print("vinhetas_clinicas_en:", vinhetas_clinicas_en[:2])  # Display first two for sanity check
 # vinhetas_clinicas_pt: Display first two for sanity check
 #print("vinhetas_clinicas_pt:", vinhetas_clinicas_pt[:2])  # Display first two for sanity check
-
 
 
 #gpt4_responses = []
@@ -54,8 +57,8 @@ for idx, vinheta in enumerate(vinhetas_clinicas_en, start=1):
 
 # Output file name
 #gpt4_filename = "gpt4_responses.txt"
-gimini_filename_pt = "gimini_responses_pt.txt"
-gimini_filename_en = "gimini_responses_en.txt"
+gimini_filename_pt = "gimini_responses_pt_4.txt"
+gimini_filename_en = "gimini_responses_en_4.txt"
 
 # Write to file
 #with open(gpt4_filename, "w", encoding="utf-8") as f:

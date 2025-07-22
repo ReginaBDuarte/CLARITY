@@ -1,0 +1,671 @@
+{
+  "Vinheta 1": {
+    "Risk": {
+      "Category": "Low",
+      "SCORE2": "1,2",
+      "Confidence Level": "High"
+    },
+    "Risk Factors": {
+      "Age": "44",
+      "Gender": "Male",
+      "Smoking": "Non-smoker",
+      "Systolic Blood Pressure": "114",
+      "non-HDL Cholesterol": "128",
+      "Sedentary lifestyle": "Yes"
+    }
+  },
+  "Vinheta 2": {
+    "Risk": {
+      "Category": "Low",
+      "SCORE2": "1,0",
+      "Confidence Level": "High"
+    },
+    "Risk Factors": {
+      "Age": "40",
+      "Gender": "Female",
+      "Smoking": "Smoker",
+      "Systolic Blood Pressure": "124",
+      "non-HDL Cholesterol": "123"
+    }
+  },
+  "Vinheta 3": {
+    "Risk": {
+      "Category": "Low",
+      "SCORE2": "1,0",
+      "Confidence Level": "High"
+    },
+    "Risk Factors": {
+      "Age": "58",
+      "Gender": "Female",
+      "Smoking": "Non-smoker",
+      "Systolic Blood Pressure": "122",
+      "non-HDL Cholesterol": "117",
+      "Arterial Hypertension": "No",
+      "Dyslipidemia": "No",
+      "Sedentary lifestyle": "No",
+      "Inadequate diet": "No",
+      "Inadequate sleep": "No",
+      "Excessive alcohol consumption": "No",
+      "Diabetes Mellitus": "No",
+      "Chronic Kidney Disease": "No",
+      "Cardiovascular Disease": "No",
+      "Elevated Coronary Calcium Score": "Calcium Score = 0",
+      "Obesity": "Yes"
+    }
+  },
+  "Vinheta 4": {
+    "Risk": {
+      "Category": "Low",
+      "SCORE2": "1,0",
+      "Confidence Level": "High"
+    },
+    "Risk Factors": {
+      "Age": "54",
+      "Gender": "Male",
+      "Smoking": "Non-smoker",
+      "Systolic Blood Pressure": "118",
+      "non-HDL Cholesterol": "128",
+      "Sedentary lifestyle": "Yes",
+      "Family History of CVD": "Yes"
+    }
+  },
+  "Vinheta 5": {
+    "Risk": {
+      "Category": "Low",
+      "SCORE2": "1,1",
+      "Confidence Level": "High"
+    },
+    "Risk Factors": {
+      "Age": "63",
+      "Gender": "Female",
+      "Smoking": "Non-smoker",
+      "Systolic Blood Pressure": "107",
+      "non-HDL Cholesterol": "147",
+      "Arterial Hypertension": "No",
+      "Diastolic Blood Pressure": "58",
+      "Dyslipidemia": "Yes",
+      "Total Cholesterol": "214",
+      "HDL Cholesterol": "67",
+      "Triglycerides": "124",
+      "LDL Cholesterol": "122",
+      "Sedentary lifestyle": "unknown",
+      "Inadequate diet": "unknown",
+      "Inadequate sleep": "No",
+      "Excessive alcohol consumption": "No",
+      "Diabetes Mellitus": "No",
+      "Chronic Kidney Disease": "No",
+      "Cardiovascular Disease": "Yes",
+      "Classification of cardiovascular disease (more than one can be selected)": "Atrial Fibrillation",
+      "Risk Modifiers": "unknown"
+    }
+  },
+  "Vinheta 6": {
+    "Risk": {
+      "Category": "Moderate",
+      "SCORE2": "2,8",
+      "Confidence Level": "Moderate"
+    },
+    "Risk Factors": {
+      "Age": "41",
+      "Gender": "Female",
+      "Smoking": "Smoker",
+      "Arterial Hypertension": "Yes",
+      "Systolic Blood Pressure": "146",
+      "Diastolic Blood Pressure": "85",
+      "Dyslipidemia": "Yes",
+      "Total Cholesterol": "270",
+      "HDL Cholesterol": "53",
+      "Triglycerides": "142",
+      "LDL Cholesterol": "189",
+      "non-HDL Cholesterol": "217",
+      "Sedentary lifestyle": "Yes",
+      "Inadequate diet": "Yes",
+      "Obesity": "Yes",
+      "Pre-Diabetes": "Yes",
+      "Family History of CVD": "unknown"
+    }
+  },
+  "Vinheta 7": {
+    "Risk": {
+      "Category": "Moderate",
+      "SCORE2": "2,6",
+      "Confidence Level": "Moderate"
+    },
+    "Risk Factors": {
+      "Age": "48",
+      "Gender": "Male",
+      "Smoking": "Non-smoker",
+      "Systolic Blood Pressure": "138",
+      "non-HDL Cholesterol": "188,06",
+      "Arterial Hypertension": "Yes",
+      "Dyslipidemia": "Yes",
+      "Sedentary lifestyle": "Yes",
+      "Inadequate diet": "Yes",
+      "Inadequate sleep": "Yes",
+      "Diabetes Mellitus": "Yes",
+      "Obesity": "Yes",
+      "Pre-Diabetes": "Yes",
+      "Elevated Lp(a)": "Yes",
+      "Increased Arterial Stiffness": "Yes",
+      "Sleep Disorder": "Yes",
+      "Elevated uric acid": "7,5"
+    }
+  },
+  "Vinheta 8": {
+    "Risk": {
+      "Category": "Moderate",
+      "SCORE2": "1,6",
+      "Confidence Level": "High"
+    },
+    "Risk Factors": {
+      "Age": "57 years",
+      "Gender": "Female",
+      "Smoking": "Smoker",
+      "Systolic Blood Pressure": "120 mmHg",
+      "non-HDL Cholesterol": "140 mg/dL",
+      "Dyslipidemia": "Yes"
+    }
+  },
+  "Vinheta 9": {
+    "Risk": {
+      "Category": "Moderate",
+      "SCORE2": "2,9%",
+      "Confidence Level": "High"
+    },
+    "Risk Factors": {
+      "Age": "52",
+      "Gender": "Male",
+      "Smoking": "Smoker",
+      "Arterial Hypertension": "Yes",
+      "Systolic Blood Pressure": "138",
+      "Diastolic Blood Pressure": "86",
+      "Dyslipidemia": "Yes",
+      "Total Cholesterol": "224",
+      "HDL Cholesterol": "37",
+      "Triglycerides": "98",
+      "LDL Cholesterol": "167",
+      "non-HDL Cholesterol": "187",
+      "Sedentary lifestyle": "Yes",
+      "Pre-Diabetes": "Yes",
+      "Elevated Coronary Calcium Score": "Elevated Coronary Calcium Score",
+      "Elevated Lp(a)": "Elevated Lp(a)"
+    }
+  },
+  "Vinheta 10": {
+    "Risk": {
+      "Category": "Moderate",
+      "SCORE2": "2,3",
+      "Confidence Level": "High"
+    },
+    "Risk Factors": {
+      "Age": "67",
+      "Gender": "Female",
+      "Smoking": "Non-smoker",
+      "Systolic Blood Pressure": "131",
+      "non-HDL Cholesterol": "79",
+      "Arterial Hypertension": "Yes",
+      "Dyslipidemia": "Yes",
+      "Total Cholesterol": "137",
+      "HDL Cholesterol": "58",
+      "Triglycerides": "85",
+      "LDL Cholesterol": "62",
+      "Diabetes Mellitus": "No",
+      "Chronic Kidney Disease": "No",
+      "Cardiovascular Disease": "Yes",
+      "Family History of CVD": "unknown"
+    }
+  },
+  "Vinheta 11": {
+    "Risk": {
+      "Category": "Moderate",
+      "SCORE2": "2,6",
+      "Confidence Level": "High"
+    },
+    "Risk Factors": {
+      "Age": "62",
+      "Gender": "Male",
+      "Smoking": "Former Smoker",
+      "Systolic Blood Pressure": "129",
+      "non-HDL Cholesterol": "136",
+      "Arterial Hypertension": "Yes",
+      "Dyslipidemia": "Yes",
+      "Total Cholesterol": "187",
+      "HDL Cholesterol": "51",
+      "Triglycerides": "134",
+      "LDL Cholesterol": "109",
+      "Pre-Diabetes": "Yes",
+      "Cancer": "Yes"
+    }
+  },
+  "Vinheta 12": {
+    "Risk": {
+      "Category": "High",
+      "SCORE2": "5,6%",
+      "Confidence Level": "High"
+    },
+    "Risk Factors": {
+      "Age": "47",
+      "Gender": "Female",
+      "Smoking": "Smoker",
+      "Arterial Hypertension": "Yes",
+      "Systolic Blood Pressure": "189",
+      "Diastolic Blood Pressure": "103",
+      "Dyslipidemia": "Yes",
+      "Total Cholesterol": "263",
+      "HDL Cholesterol": "54",
+      "Triglycerides": "125",
+      "LDL Cholesterol": "184",
+      "non-HDL Cholesterol": "209",
+      "Sedentary lifestyle": "unknown",
+      "Inadequate diet": "unknown",
+      "Inadequate sleep": "unknown",
+      "Excessive alcohol consumption": "unknown",
+      "Diabetes Mellitus": "No",
+      "Chronic Kidney Disease": "No",
+      "Cardiovascular Disease": "No",
+      "Family History of CVD": "Yes",
+      "Chronic Obstructive Pulmonary Disease (COPD)": "Yes"
+    }
+  },
+  "Vinheta 13": {
+    "Risk": {
+      "Category": "Moderate",
+      "SCORE2": "4,2",
+      "Confidence Level": "High"
+    },
+    "Risk Factors": {
+      "Age": "41",
+      "Gender": "Male",
+      "Smoking": "Smoker",
+      "Systolic Blood Pressure": "155",
+      "non-HDL Cholesterol": "208",
+      "Arterial Hypertension": "Yes",
+      "Dyslipidemia": "Yes",
+      "Sedentary lifestyle": "Yes",
+      "Family History of CVD": "Yes",
+      "Pre-Diabetes": "Yes"
+    }
+  },
+  "Vinheta 14": {
+    "Risk": {
+      "Category": "High",
+      "SCORE2": "5,0",
+      "Confidence Level": "High"
+    },
+    "Risk Factors": {
+      "Age": "56",
+      "Gender": "Female",
+      "Smoking": "Smoker",
+      "Systolic Blood Pressure": "163",
+      "non-HDL Cholesterol": "179",
+      "Arterial Hypertension": "Yes",
+      "Dyslipidemia": "Yes",
+      "Diabetes Mellitus": "Yes",
+      "Chronic Kidney Disease": "Mild",
+      "Cardiovascular Disease": "Yes",
+      "Obesity": "Yes",
+      "Psychosocial Stress": "Yes",
+      "Sedentary Lifestyle": "Yes",
+      "Inadequate Diet": "Yes"
+    }
+  },
+  "Vinheta 15": {
+    "Risk": {
+      "Category": "High",
+      "SCORE2": "4,7",
+      "Confidence Level": "High"
+    },
+    "Risk Factors": {
+      "Age": "51",
+      "Gender": "Male",
+      "Smoking": "Smoker",
+      "Systolic Blood Pressure": "149",
+      "non-HDL Cholesterol": "165",
+      "Sedentary lifestyle": "Yes",
+      "Arterial Hypertension": "Yes",
+      "Dyslipidemia": "Yes",
+      "Elevated Coronary Calcium Score": "Yes",
+      "Family History of CVD": "Yes",
+      "Pre-Diabetes": "Yes",
+      "Psychosocial Stress": "Yes",
+      "Inadequate sleep": "Yes",
+      "Documented and unequivocal atherosclerotic disease by imaging (Cardiac CT Angiography)": "Yes"
+    }
+  },
+  "Vinheta 16": {
+    "Risk": {
+      "Category": "High",
+      "SCORE2": "5.2",
+      "Confidence Level": "High"
+    },
+    "Risk Factors": {
+      "Age": "64",
+      "Gender": "Female",
+      "Smoking": "Smoker",
+      "Systolic Blood Pressure": "143",
+      "non-HDL Cholesterol": "121",
+      "Arterial Hypertension": "Yes",
+      "Pre-Diabetes": "Yes",
+      "Aortic valve calcification on echo": "Yes",
+      "Cancer": "Yes"
+    }
+  },
+  "Vinheta 17": {
+    "Risk": {
+      "Category": "Moderate",
+      "SCORE2": "2,7%",
+      "Confidence Level": "High"
+    },
+    "Risk Factors": {
+      "Age": "65",
+      "Gender": "Male",
+      "Smoking": "Former Smoker",
+      "Systolic Blood Pressure": "147",
+      "non-HDL Cholesterol": "96",
+      "Arterial Hypertension": "Yes",
+      "Dyslipidemia": "Yes",
+      "Sedentary lifestyle": "Yes",
+      "Excessive alcohol consumption": "Yes",
+      "Diabetes Mellitus": "Yes",
+      "Obesity": "Yes",
+      "Pre-Diabetes": "Yes",
+      "Sleep Disorder": "Yes",
+      "Other (specify)": "Hyperuricemia, lumbar spine disease, right adrenal nodule"
+    }
+  },
+  "Vinheta 18": {
+    "Risk": {
+      "Category": "Moderate",
+      "SCORE2": "2,3",
+      "Confidence Level": "High"
+    },
+    "Risk Factors": {
+      "Age": "44",
+      "Gender": "Male",
+      "Smoking": "Non-smoker",
+      "Systolic Blood Pressure": "130",
+      "non-HDL Cholesterol": "192",
+      "Arterial Hypertension": "Yes",
+      "Dyslipidemia": "Yes",
+      "Family History of CVD": "Yes",
+      "Elevated Lp(a)": "Yes"
+    }
+  },
+  "Vinheta 19": {
+    "Risk": {
+      "Category": "Moderate",
+      "SCORE2": "2,8",
+      "Confidence Level": "High"
+    },
+    "Risk Factors": {
+      "Age": "54",
+      "Gender": "Female",
+      "Smoking": "Smoker",
+      "Systolic Blood Pressure": "132",
+      "non-HDL Cholesterol": "159",
+      "Elevated Coronary Calcium Score": "Yes",
+      "Chronic Inflammatory Disease": "Yes",
+      "Psychosocial Stress": "Yes"
+    }
+  },
+  "Vinheta 20": {
+    "Risk": {
+      "Category": "High",
+      "SCORE2": "5,3",
+      "Confidence Level": "Moderate"
+    },
+    "Risk Factors": {
+      "Age": "61",
+      "Gender": "Male",
+      "Smoking": "Non-smoker",
+      "Systolic Blood Pressure": "151",
+      "non-HDL Cholesterol": "169",
+      "Arterial Hypertension": "Yes",
+      "Dyslipidemia": "Yes",
+      "Diabetes Mellitus": "Yes",
+      "Elevated Coronary Calcium Score": "Yes",
+      "Obesity": "Yes",
+      "Pre-Diabetes": "Yes",
+      "Sleep Disorder": "Yes",
+      "Inadequate sleep": "Yes"
+    }
+  },
+  "Vinheta 21": {
+    "Risk": {
+      "Category": "High",
+      "SCORE2": "N/A",
+      "Confidence Level": "Moderate"
+    },
+    "Risk Factors": {
+      "Age": "51",
+      "Gender": "Female",
+      "Smoking": "Non-smoker",
+      "Systolic Blood Pressure": "127",
+      "non-HDL Cholesterol": "124",
+      "Arterial Hypertension": "Yes",
+      "Dyslipidemia": "Yes",
+      "Total Cholesterol": "162",
+      "HDL Cholesterol": "38",
+      "Triglycerides": "199",
+      "LDL Cholesterol": "84",
+      "Sedentary lifestyle": "No",
+      "Diabetes Mellitus": "No",
+      "Chronic Kidney Disease": "Moderate",
+      "Cardiovascular Disease": "No",
+      "Family History of CVD": "unknown",
+      "Other": "Polycystic Kidney Disease"
+    }
+  },
+  "Vinheta 22": {
+    "Risk": {
+      "Category": "High",
+      "SCORE2": "N/A",
+      "Confidence Level": "High"
+    },
+    "Risk Factors": {
+      "Age": "61",
+      "Gender": "Male",
+      "Smoking": "Non-smoker",
+      "Systolic Blood Pressure": "131",
+      "non-HDL Cholesterol": "98",
+      "Arterial Hypertension": "Yes",
+      "Dyslipidemia": "Yes",
+      "Chronic Kidney Disease": "Moderate",
+      "Psychosocial Stress": "Yes",
+      "Bicuspid aortic valve with moderate regurgitation": "Yes",
+      "Microalbuminuria": "Yes"
+    }
+  },
+  "Vinheta 23": {
+    "Risk": {
+      "Category": "High",
+      "SCORE2": "5,2%",
+      "Confidence Level": "High"
+    },
+    "Risk Factors": {
+      "Age": "59",
+      "Gender": "Female",
+      "Smoking": "Non-smoker",
+      "Systolic Blood Pressure": "124",
+      "non-HDL Cholesterol": "133",
+      "Diabetes Mellitus": "Yes",
+      "Dyslipidemia": "Yes",
+      "Obesity": "Yes",
+      "Inadequate diet": "Yes"
+    }
+  },
+  "Vinheta 24": {
+    "Risk": {
+      "Category": "High",
+      "SCORE2": "5,3%",
+      "Confidence Level": "Moderate"
+    },
+    "Risk Factors": {
+      "Age": "59",
+      "Gender": "Male",
+      "Smoking": "Former Smoker",
+      "Systolic Blood Pressure": "134",
+      "non-HDL Cholesterol": "142",
+      "Arterial Hypertension": "Yes",
+      "Dyslipidemia": "Yes",
+      "Total Cholesterol": "187",
+      "HDL Cholesterol": "45",
+      "Triglycerides": "178",
+      "LDL Cholesterol": "106",
+      "Inadequate sleep": "Yes",
+      "Diabetes Mellitus": "Yes",
+      "Obesity": "Yes",
+      "Sleep Disorder": "Yes"
+    }
+  },
+  "Vinheta 25": {
+    "Risk": {
+      "Category": "High",
+      "SCORE2": "4,4%",
+      "Confidence Level": "High"
+    },
+    "Risk Factors": {
+      "Age": "65",
+      "Gender": "Female",
+      "Smoking": "Non-smoker",
+      "Arterial Hypertension": "Yes",
+      "Systolic Blood Pressure": "138",
+      "Diastolic Blood Pressure": "75",
+      "Dyslipidemia": "Yes",
+      "Total Cholesterol": "165",
+      "HDL Cholesterol": "51",
+      "Triglycerides": "173",
+      "LDL Cholesterol": "79",
+      "non-HDL Cholesterol": "114",
+      "Sedentary lifestyle": "Yes",
+      "Inadequate diet": "Yes",
+      "Inadequate sleep": "unknown",
+      "Excessive alcohol consumption": "No",
+      "Diabetes Mellitus": "Yes",
+      "Chronic Kidney Disease": "Mild",
+      "Cardiovascular Disease": "No",
+      "Obesity": "Yes",
+      "Family History of CVD": "unknown",
+      "Psychosocial Stress": "unknown"
+    }
+  },
+  "Vinheta 26": {
+    "Risk": {
+      "Category": "Very-High",
+      "SCORE2": "N/A",
+      "Confidence Level": "Very-High"
+    },
+    "Risk Factors": {
+      "Age": "36",
+      "Gender": "Male",
+      "Smoking": "Non-smoker",
+      "Systolic Blood Pressure": "134",
+      "Diastolic Blood Pressure": "87",
+      "Total Cholesterol": "336",
+      "HDL Cholesterol": "45",
+      "Triglycerides": "164",
+      "LDL Cholesterol": "258",
+      "non-HDL Cholesterol": "291",
+      "Sedentary lifestyle": "Yes",
+      "Inadequate sleep": "Yes",
+      "Family History of CVD": "Yes",
+      "Obesity": "Yes",
+      "Sleep Disorder": "Yes"
+    }
+  },
+  "Vinheta 27": {
+    "Risk": {
+      "Category": "Moderate",
+      "SCORE2": "2,8",
+      "Confidence Level": "High"
+    },
+    "Risk Factors": {
+      "Age": "61",
+      "Gender": "Female",
+      "Smoking": "Smoker",
+      "Systolic Blood Pressure": "124",
+      "non-HDL Cholesterol": "145",
+      "Arterial Hypertension": "No",
+      "Total Cholesterol": "199",
+      "HDL Cholesterol": "54",
+      "Triglycerides": "87",
+      "LDL Cholesterol": "87",
+      "Elevated Coronary Calcium Score": "Yes",
+      "Psychosocial Stress": "Yes"
+    }
+  },
+  "Vinheta 28": {
+    "Risk": {
+      "Category": "Very-High",
+      "SCORE2": "N/A",
+      "Confidence Level": "High"
+    },
+    "Risk Factors": {
+      "Age": "51",
+      "Gender": "Male",
+      "Smoking": "Former Smoker",
+      "Systolic Blood Pressure": "118",
+      "non-HDL Cholesterol": "90",
+      "Sedentary lifestyle": "Yes",
+      "Cardiovascular Disease": "Yes"
+    }
+  },
+  "Vinheta 29": {
+    "Risk": {
+      "Category": "High",
+      "SCORE2": "2.3",
+      "Confidence Level": "High"
+    },
+    "Risk Factors": {
+      "Age": "63",
+      "Gender": "Female",
+      "Smoking": "Former Smoker",
+      "Systolic Blood Pressure": "114",
+      "non-HDL Cholesterol": "96",
+      "Sedentary lifestyle": "No",
+      "Diabetes Mellitus": "No",
+      "Chronic Kidney Disease": "No",
+      "Cardiovascular Disease": "Yes"
+    }
+  },
+  "Vinheta 30": {
+    "Risk": {
+      "Category": "Very-High",
+      "SCORE2": "N/A",
+      "Confidence Level": "Very-High"
+    },
+    "Risk Factors": {
+      "Age": "64",
+      "Gender": "Male",
+      "Smoking": "Former Smoker",
+      "Arterial Hypertension": "Yes",
+      "Systolic Blood Pressure": "138",
+      "Diastolic Blood Pressure": "81",
+      "Dyslipidemia": "Yes",
+      "Total Cholesterol": "165",
+      "HDL Cholesterol": "52",
+      "Triglycerides": "209",
+      "LDL Cholesterol": "71",
+      "non-HDL Cholesterol": "113",
+      "Sedentary lifestyle": "Yes",
+      "Inadequate diet": "unknown",
+      "Inadequate sleep": "unknown",
+      "Excessive alcohol consumption": "Moderate",
+      "Diabetes Mellitus": "Pre-Diabetes",
+      "Chronic Kidney Disease": "No",
+      "Cardiovascular Disease": "Yes",
+      "Classification of cardiovascular disease": "Stroke or Transient Ischemic Attack (TIA)",
+      "Obesity": "Yes",
+      "Psychosocial Stress": "unknown",
+      "Family History of CVD": "unknown",
+      "Elevated Lp(a)": "unknown",
+      "Increased Arterial Stiffness": "unknown",
+      "Decreased Ankle-Brachial Index": "unknown",
+      "Elevated High-sensitivity CRP": "unknown",
+      "Chronic Obstructive Pulmonary Disease (COPD)": "unknown",
+      "Sleep Disorder": "unknown",
+      "Carotid Plaques": "unknown",
+      "Other": "Left atrial enlargement"
+    }
+  }
+}

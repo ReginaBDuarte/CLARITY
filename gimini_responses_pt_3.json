@@ -1,0 +1,610 @@
+{
+  "Vinheta 1": {
+    "Risco": {
+      "Categoria": "Baixo",
+      "SCORE2": "1%",
+      "confiança": "Alta"
+    },
+    "Fatores de risco": {
+      "Idade": "44",
+      "Género": "Masculino",
+      "Tabagismo": "Não fumador",
+      "Pressão Arterial Sistólica": "114",
+      "Colesterol não HDL": "128",
+      "Sedentarismo": "Sim"
+    }
+  },
+  "Vinheta 2": {
+    "Risco": {
+      "Categoria": "Baixo",
+      "SCORE2": "1,1",
+      "confiança": "Alta"
+    },
+    "Fatores de risco": {
+      "Idade": "40",
+      "Género": "Feminino",
+      "Tabagismo": "Fumador",
+      "Pressão Arterial Sistólica": "124",
+      "Colesterol não HDL": "123",
+      "Hipertensão Arterial": "Não",
+      "Dislipidemia": "Não",
+      "Diabetes Mellitus": "Não",
+      "Doença Renal Crónica": "Não",
+      "Doença cardiovascular estabelecida": "Não",
+      "Sedentarismo": "Não",
+      "Rigidez Arterial aumentada": "Sim"
+    }
+  },
+  "Vinheta 3": {
+    "Risco": {
+      "Categoria": "Baixo",
+      "SCORE2": "1%",
+      "confiança": "Alta"
+    },
+    "Fatores de risco": {
+      "Idade": "58",
+      "Género": "Feminino",
+      "Tabagismo": "Não fumador",
+      "Pressão Arterial Sistólica": "122",
+      "Pressão Arterial Diastólica": "77",
+      "Colesterol Total": "164",
+      "Colesterol HDL": "47",
+      "Triglicéridos": "62",
+      "Colesterol LDL": "105",
+      "Colesterol não HDL": "117",
+      "Obesidade": "Sim",
+      "Score de Cálcio = 0": "Sim",
+      "Sedentarismo": "Não"
+    }
+  },
+  "Vinheta 4": {
+    "Risco": {
+      "Categoria": "Intermédio",
+      "SCORE2": "2,2",
+      "confiança": "Alta"
+    },
+    "Fatores de risco": {
+      "Idade": "54",
+      "Género": "Masculino",
+      "Tabagismo": "Não fumador",
+      "Pressão Arterial Sistólica": "118",
+      "Pressão Arterial Diastólica": "60",
+      "Colesterol Total": "183",
+      "Colesterol HDL": "55",
+      "Triglicéridos": "88",
+      "Colesterol LDL": "110",
+      "Colesterol não HDL": "128",
+      "Sedentarismo": "Sim",
+      "História Familiar de DCV": "Sim"
+    }
+  },
+  "Vinheta 5": {
+    "Risco": {
+      "Categoria": "Intermédio",
+      "SCORE2": "2%",
+      "confiança": "Alta"
+    },
+    "Fatores de risco": {
+      "Idade": "63",
+      "Género": "Feminino",
+      "Tabagismo": "Não fumador",
+      "Pressão Arterial Sistólica": "107",
+      "Colesterol não HDL": "147",
+      "Colesterol LDL": "122"
+    }
+  },
+  "Vinheta 6": {
+    "Risco": {
+      "Categoria": "Intermédio",
+      "SCORE2": "2,4%",
+      "confiança": "Alta"
+    },
+    "Fatores de risco": {
+      "Idade": "41",
+      "Género": "Feminino",
+      "Tabagismo": "Fumador",
+      "Pressão Arterial Sistólica": "146",
+      "Colesterol não HDL": "217",
+      "Hipertensão Arterial": "Sim",
+      "Sedentarismo": "Sim",
+      "Diabetes Mellitus": "Sim",
+      "Pre-Diabetes": "Sim",
+      "Obesidade": "Sim",
+      "Stress Psicossocial": "desconhecido"
+    }
+  },
+  "Vinheta 7": {
+    "Risco": {
+      "Categoria": "Alto",
+      "SCORE2": "5%",
+      "confiança": "Alta"
+    },
+    "Fatores de risco": {
+      "Idade": "48",
+      "Género": "Masculino",
+      "Tabagismo": "Não fumador",
+      "Pressão Arterial Sistólica": "161",
+      "Colesterol não HDL": "188",
+      "Hipertensão Arterial": "Sim",
+      "Dislipidemia": "Sim",
+      "Diabetes Mellitus": "Sim",
+      "Obesidade": "Sim",
+      "Lp (a) aumentada": "Sim",
+      "Rigidez Arterial aumentada": "Sim",
+      "Perturbação do sono": "Sim",
+      "Pre-Diabetes": "Sim",
+      "História Familiar de DCV": "Não"
+    }
+  },
+  "Vinheta 8": {
+    "Risco": {
+      "Categoria": "Intermédio",
+      "SCORE2": "2",
+      "confiança": "Alta"
+    },
+    "Fatores de risco": {
+      "Idade": "57",
+      "Género": "Feminino",
+      "Tabagismo": "Fumador",
+      "Pressão Arterial Sistólica": "120",
+      "Colesterol não HDL": "140"
+    }
+  },
+  "Vinheta 9": {
+    "Risco": {
+      "Categoria": "Intermédio",
+      "SCORE2": "2.4%",
+      "confiança": "Alta"
+    },
+    "Fatores de risco": {
+      "Idade": "52",
+      "Género": "Masculino",
+      "Tabagismo": "Fumador",
+      "Hipertensão Arterial": "Sim",
+      "Pressão Arterial Sistólica": "138",
+      "Pressão Arterial Diastólica": "86",
+      "Dislipidemia": "Sim",
+      "Colesterol Total": "224",
+      "Colesterol HDL": "37",
+      "Triglicéridos": "98",
+      "Colesterol LDL": "167",
+      "Colesterol não HDL": "187",
+      "Sedentarismo": "Sim",
+      "Diabetes Mellitus": "Não",
+      "Doença Renal Crónica": "Não",
+      "Doença cardiovascular estabelecida": "Não",
+      "Pre-Diabetes": "Sim",
+      "Score de Cálcio elevado": "Sim",
+      "Lp (a) aumentada": "Sim"
+    }
+  },
+  "Vinheta 10": {
+    "Risco": {
+      "Categoria": "Intermédio",
+      "SCORE2": "2",
+      "confiança": "Alta"
+    },
+    "Fatores de risco": {
+      "Idade": "67",
+      "Género": "Feminino",
+      "Tabagismo": "Não fumador",
+      "Pressão Arterial Sistólica": "131",
+      "Colesterol não HDL": "79",
+      "Hipertensão Arterial": "Sim",
+      "Dislipidemia": "Sim",
+      "Colesterol Total": "137",
+      "Colesterol HDL": "58",
+      "Triglicéridos": "85",
+      "Colesterol LDL": "62",
+      "Estenose Aórtica": "Moderada",
+      "NT-proBNP": "985"
+    }
+  },
+  "Vinheta 11": {
+    "Risco": {
+      "Categoria": "Alto",
+      "SCORE2": "3%",
+      "confiança": "Alta"
+    },
+    "Fatores de risco": {
+      "Idade": "62",
+      "Género": "Masculino",
+      "Tabagismo": "Ex-Fumador",
+      "Pressão Arterial Sistólica": "129",
+      "Colesterol não HDL": "136",
+      "Hipertensão Arterial": "Sim",
+      "Dislipidemia": "Sim",
+      "Pre-Diabetes": "Sim",
+      "Obesidade": "Sim"
+    }
+  },
+  "Vinheta 12": {
+    "Risco": {
+      "Categoria": "Alto",
+      "SCORE2": "5%",
+      "confiança": "Alta"
+    },
+    "Fatores de risco": {
+      "Idade": "47",
+      "Género": "Feminino",
+      "Tabagismo": "Fumador",
+      "Pressão Arterial Sistólica": "189",
+      "Colesterol não HDL": "209"
+    }
+  },
+  "Vinheta 13": {
+    "Risco": {
+      "Categoria": "Alto",
+      "SCORE2": "5",
+      "confiança": "Alta"
+    },
+    "Fatores de risco": {
+      "Idade": "41",
+      "Género": "Masculino",
+      "Tabagismo": "Fumador",
+      "Pressão Arterial Sistólica": "155",
+      "Colesterol não HDL": "208,0"
+    }
+  },
+  "Vinheta 14": {
+    "Risco": {
+      "Categoria": "Alto",
+      "SCORE2": "5%",
+      "confiança": "Alta"
+    },
+    "Fatores de risco": {
+      "Idade": "56",
+      "Género": "Feminino",
+      "Tabagismo": "Fumador",
+      "Pressão Arterial Sistólica": "163",
+      "Colesterol não HDL": "179",
+      "Hipertensão Arterial": "Sim",
+      "Dislipidemia": "Sim",
+      "Diabetes Mellitus": "Sim",
+      "Obesidade": "Sim",
+      "Pre-Diabetes": "Sim",
+      "Stress Psicossocial": "Sim"
+    }
+  },
+  "Vinheta 15": {
+    "Risco": {
+      "Categoria": "Alto",
+      "SCORE2": "5",
+      "confiança": "Alta"
+    },
+    "Fatores de risco": {
+      "Idade": "51",
+      "Género": "Masculino",
+      "Tabagismo": "Fumador",
+      "Pressão Arterial Sistólica": "149",
+      "Colesterol não HDL": "165",
+      "Hipertensão Arterial": "Sim",
+      "Dislipidemia": "Sim",
+      "Sedentarismo": "Sim",
+      "Sono inadequado": "Sim",
+      "Score de Cálcio elevado": "Sim",
+      "História Familiar de DCV": "Sim",
+      "Lp (a) aumentada": "Sim",
+      "Stress Psicossocial": "Sim",
+      "Pre-Diabetes": "Sim"
+    }
+  },
+  "Vinheta 16": {
+    "Risco": {
+      "Categoria": "Alto",
+      "SCORE2": "5",
+      "confiança": "Alta"
+    },
+    "Fatores de risco": {
+      "Idade": "64",
+      "Género": "Feminino",
+      "Tabagismo": "Fumador",
+      "Pressão Arterial Sistólica": "143",
+      "Colesterol não HDL": "121"
+    }
+  },
+  "Vinheta 17": {
+    "Risco": {
+      "Categoria": "Alto",
+      "SCORE2": "5%",
+      "confiança": "Alta"
+    },
+    "Fatores de risco": {
+      "Idade": "65",
+      "Género": "Masculino",
+      "Tabagismo": "Ex-Fumador",
+      "Pressão Arterial Sistólica": "147",
+      "Colesterol não HDL": "96",
+      "Hipertensão Arterial": "Sim",
+      "Dislipidemia": "Sim",
+      "Sedentarismo": "Sim",
+      "Consumo excessivo de álcool": "Sim",
+      "Diabetes Mellitus": "Sim",
+      "Obesidade": "Sim",
+      "Pre-Diabetes": "Sim",
+      "Lp (a) aumentada": "Sim",
+      "Perturbação do sono": "Sim"
+    }
+  },
+  "Vinheta 18": {
+    "Risco": {
+      "Categoria": "Intermédio",
+      "SCORE2": "2.0%",
+      "confiança": "Alta"
+    },
+    "Fatores de risco": {
+      "Idade": "44",
+      "Género": "Masculino",
+      "Tabagismo": "Não fumador",
+      "Hipertensão Arterial": "Sim",
+      "Pressão Arterial Sistólica": "145",
+      "Pressão Arterial Diastólica": "94",
+      "Dislipidemia": "Sim",
+      "Colesterol Total": "229",
+      "Colesterol HDL": "37",
+      "Triglicéridos": "137",
+      "Colesterol LDL": "165",
+      "Colesterol não HDL": "192",
+      "Sedentarismo": "Não",
+      "Dieta inadequada": "desconhecido",
+      "Sono inadequado": "desconhecido",
+      "Consumo excessivo de álcool": "Não",
+      "Diabetes Mellitus": "Não",
+      "Doença Renal Crónica": "Não",
+      "Doença cardiovascular estabelecida": "Não",
+      "História Familiar de DCV": "Sim",
+      "Lp (a) aumentada": "Sim"
+    }
+  },
+  "Vinheta 19": {
+    "Risco": {
+      "Categoria": "Intermédio",
+      "SCORE2": "2,9%",
+      "confiança": "Alta"
+    },
+    "Fatores de risco": {
+      "Idade": "54",
+      "Género": "Feminino",
+      "Tabagismo": "Fumador",
+      "Pressão Arterial Sistólica": "132",
+      "Colesterol não HDL": "159",
+      "Colesterol LDL": "133",
+      "Colesterol HDL": "52",
+      "Trigliceridos": "128",
+      "PCR alta sensibilidade elevada": "4.5",
+      "Score de Cálcio elevado": "Sim",
+      "Doença Inflamatória Crónica": "Sim"
+    }
+  },
+  "Vinheta 20": {
+    "Risco": {
+      "Categoria": "Alto",
+      "SCORE2": "5%",
+      "confiança": "Alta"
+    },
+    "Fatores de risco": {
+      "Idade": "61",
+      "Género": "Masculino",
+      "Tabagismo": "Não fumador",
+      "Pressão Arterial Sistólica": "151",
+      "Colesterol não HDL": "169",
+      "Hipertensão Arterial": "Sim",
+      "Dislipidemia": "Sim",
+      "Diabetes Mellitus": "Sim",
+      "Obesidade": "Sim",
+      "Pre-Diabetes": "Sim",
+      "Perturbação do sono": "Sim",
+      "Score de Cálcio elevado": "Sim",
+      "Sedentarismo": "desconhecido",
+      "Dieta inadequada": "desconhecido",
+      "Consumo excessivo de álcool": "Não"
+    }
+  },
+  "Vinheta 21": {
+    "Risco": {
+      "Categoria": "Muito-Alto",
+      "SCORE2": "N/A",
+      "confiança": "Alta"
+    },
+    "Fatores de risco": {
+      "Idade": "51",
+      "Género": "Feminino",
+      "Tabagismo": "Não fumador",
+      "Pressão Arterial Sistólica": "127",
+      "Colesterol não HDL": "124"
+    }
+  },
+  "Vinheta 22": {
+    "Risco": {
+      "Categoria": "Muito-Alto",
+      "SCORE2": "Não aplicável",
+      "confiança": "Alta"
+    },
+    "Fatores de risco": {
+      "Idade": "61",
+      "Género": "Masculino",
+      "Tabagismo": "Ex-Fumador",
+      "Hipertensão Arterial": "Sim",
+      "Pressão Arterial Sistólica": "131",
+      "Pressão Arterial Diastólica": "78",
+      "Dislipidemia": "Sim",
+      "Colesterol Total": "136",
+      "Colesterol HDL": "38",
+      "Triglicéridos": "164",
+      "Colesterol LDL": "65",
+      "Colesterol não HDL": "98",
+      "Sedentarismo": "Não",
+      "Dieta inadequada": "desconhecido",
+      "Sono inadequado": "Não",
+      "Consumo excessivo de álcool": "desconhecido",
+      "Diabetes Mellitus": "Não",
+      "Doença Renal Crónica": "Moderada",
+      "Doença cardiovascular estabelecida": "Não",
+      "Stress Psicossocial": "Sim",
+      "História Familiar de DCV": "desconhecido"
+    }
+  },
+  "Vinheta 23": {
+    "Risco": {
+      "Categoria": "Muito Alto",
+      "SCORE2": "desconhecido",
+      "confiança": "Alta"
+    },
+    "Fatores de risco": {
+      "Idade": "59",
+      "Género": "Feminino",
+      "Tabagismo": "Não fumador",
+      "Pressão Arterial Sistólica": "124",
+      "Colesterol não HDL": "133",
+      "Diabetes Mellitus": "Sim",
+      "Dislipidemia": "Sim",
+      "Obesidade": "Sim"
+    }
+  },
+  "Vinheta 24": {
+    "Risco": {
+      "Categoria": "Muito-Alto",
+      "SCORE2": "N/A",
+      "confiança": "Alta"
+    },
+    "Fatores de risco": {
+      "Idade": "59",
+      "Género": "Masculino",
+      "Tabagismo": "Ex-Fumador",
+      "Pressão Arterial Sistólica": "134",
+      "Pressão Arterial Diastólica": "82",
+      "Colesterol não HDL": "142",
+      "Diabetes Mellitus": "Sim",
+      "Hipertensão Arterial": "Sim",
+      "Dislipidemia": "Sim",
+      "Obesidade": "Sim",
+      "Sono inadequado": "Sim"
+    }
+  },
+  "Vinheta 25": {
+    "Risco": {
+      "Categoria": "Alto",
+      "SCORE2": "5",
+      "confiança": "Alta"
+    },
+    "Fatores de risco": {
+      "Idade": "65",
+      "Género": "Feminino",
+      "Tabagismo": "Não fumador",
+      "Pressão Arterial Sistólica": "138",
+      "Colesterol não HDL": "114",
+      "Hipertensão Arterial": "Sim",
+      "Dislipidemia": "Sim",
+      "Sedentarismo": "Sim",
+      "Diabetes Mellitus": "Sim",
+      "Doença Renal Crónica": "Moderada",
+      "Obesidade": "Sim",
+      "Microalbuminúria": "103 mg/g"
+    }
+  },
+  "Vinheta 26": {
+    "Risco": {
+      "Categoria": "Muito-Alto",
+      "SCORE2": "Não aplicável",
+      "confiança": "Alta"
+    },
+    "Fatores de risco": {
+      "Idade": "36",
+      "Género": "Masculino",
+      "Tabagismo": "Não fumador",
+      "Pressão Arterial Sistólica": "134",
+      "Colesterol não HDL": "291",
+      "Hipercolesterolémia Familiar": "Sim",
+      "História Familiar de DCV": "Sim",
+      "Sedentarismo": "Sim",
+      "Sono inadequado": "Sim"
+    }
+  },
+  "Vinheta 27": {
+    "Risco": {
+      "Categoria": "Muito Alto",
+      "SCORE2": "N/A",
+      "confiança": "Alta"
+    },
+    "Fatores de risco": {
+      "Idade": "61",
+      "Género": "Feminino",
+      "Tabagismo": "Ex-Fumador",
+      "Pressão Arterial Sistólica": "124",
+      "Pressão Arterial Diastólica": "75",
+      "Colesterol Total": "199",
+      "Colesterol HDL": "54",
+      "Triglicéridos": "87",
+      "Colesterol LDL": "87",
+      "Colesterol não HDL": "145",
+      "Sedentarismo": "desconhecido",
+      "Dieta inadequada": "desconhecido",
+      "Sono inadequado": "desconhecido",
+      "Consumo excessivo de álcool": "Não",
+      "Diabetes Mellitus": "Não",
+      "Doença Renal Crónica": "Não",
+      "Doença cardiovascular estabelecida": "Sim",
+      "Score de Cálcio elevado": "Sim",
+      "Stress Psicossocial": "Sim"
+    }
+  },
+  "Vinheta 28": {
+    "Risco": {
+      "Categoria": "Muito-Alto",
+      "SCORE2": "Não aplicável",
+      "confiança": "Alta"
+    },
+    "Fatores de risco": {
+      "Idade": 51,
+      "Género": "Masculino",
+      "Tabagismo": "Ex-Fumador",
+      "Pressão Arterial Sistólica": 118,
+      "Pressão Arterial Diastólica": 67,
+      "Colesterol Total": 136,
+      "Colesterol HDL": 46,
+      "Triglicéridos": 99,
+      "Colesterol LDL": 70,
+      "Colesterol não HDL": 90,
+      "Sedentarismo": "Sim",
+      "Diabetes Mellitus": "Não",
+      "Doença Renal Crónica": "Não",
+      "Doença cardiovascular estabelecida": "Sim"
+    }
+  },
+  "Vinheta 29": {
+    "Risco": {
+      "Categoria": "Muito-Alto",
+      "SCORE2": "desconhecido",
+      "confiança": "Alta"
+    },
+    "Fatores de risco": {
+      "Idade": "63",
+      "Género": "Feminino",
+      "Tabagismo": "Ex-Fumador",
+      "Pressão Arterial Sistólica": "114",
+      "Colesterol não HDL": "96"
+    }
+  },
+  "Vinheta 30": {
+    "Risco": {
+      "Categoria": "Muito Alto",
+      "SCORE2": "N/A",
+      "confiança": "Alta"
+    },
+    "Fatores de risco": {
+      "Idade": "64",
+      "Género": "Masculino",
+      "Tabagismo": "Ex-Fumador",
+      "Pressão Arterial Sistólica": "138",
+      "Colesterol não HDL": "113",
+      "Hipertensão Arterial": "Sim",
+      "Dislipidemia": "Sim",
+      "Sedentarismo": "Sim",
+      "Diabetes Mellitus": "Sim",
+      "Obesidade": "Sim",
+      "Pre-Diabetes": "Sim",
+      "Doença cardiovascular estabelecida": "Sim",
+      "Classificação da doença cardiovascular": "Acidente Vascular Cerebral (AVC) ou Acidente Isquémico Transitório (AIT)"
+    }
+  }
+}
