@@ -10,8 +10,8 @@ from openai import OpenAI
 vinhetas_clinicas_en = parse_vinhetas_csv('VinhetasFinaisPT_EN.V1.0.xlsx', language='EN')
 vinhetas_clinicas_pt = parse_vinhetas_csv('VinhetasFinaisPT_EN.V1.0.xlsx', language='PT')
 
-system_prompt_en, user_prompt_en = parse_prompt('prompt_4_en.txt', separator='[Vignette]')
-system_prompt_pt, user_prompt_pt = parse_prompt('prompt_4_pt.txt', separator='[Vinheta]')
+system_prompt_en, user_prompt_en = parse_prompt('prompt_5_en.txt', separator='[Vignette]')
+system_prompt_pt, user_prompt_pt = parse_prompt('prompt_5_pt.txt', separator='[Vinheta]')
 
 
 
@@ -57,8 +57,8 @@ for idx, vinheta in enumerate(vinhetas_clinicas_en, start=1):
 
 # Output file name
 #gpt4_filename = "gpt4_responses.txt"
-gimini_filename_pt = "gimini_responses_pt_4.txt"
-gimini_filename_en = "gimini_responses_en_4.txt"
+gimini_filename_pt = "gimini_responses_pt_5.txt"
+gimini_filename_en = "gimini_responses_en_5.txt"
 
 # Write to file
 #with open(gpt4_filename, "w", encoding="utf-8") as f:

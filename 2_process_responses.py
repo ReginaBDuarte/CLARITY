@@ -4,8 +4,8 @@ import os
 from utils import parse_responses, parse_json
 
 #responses_processed_gpt4 = parse_responses('gpt4_responses.txt', 'gpt4_responses.json')
-responses_processed_gimini_en = parse_responses('gimini_responses_en_4.txt', 'gimini_responses_en_4.json')
-responses_processed_gimini_pt = parse_responses('gimini_responses_pt_4.txt', 'gimini_responses_pt_4.json')
+responses_processed_gimini_en = parse_responses('gimini_responses_en_5.txt', 'gimini_responses_en_5.json')
+responses_processed_gimini_pt = parse_responses('gimini_responses_pt_5.txt', 'gimini_responses_pt_5.json')
 
 
 # Create DataFrame
@@ -30,7 +30,9 @@ df_en['Language'] = 'en'
 df = pd.concat([df_pt, df_en], ignore_index=True)
 
 
-df.to_csv('model_responses_4.csv', index=False, encoding='utf-8', sep=';')
-df.to_excel('model_responses_4.xlsx', index=False)
+df.to_csv('model_responses_5.csv', index=False, encoding='utf-8', sep=';')
+
+#in notebook 3
+#df.to_excel('model_responses_5.xlsx', index=False)
 
 

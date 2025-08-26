@@ -145,10 +145,12 @@ def parse_json(json_file, language='pt'):
 
             row = {
                 "id": vinheta_id,  # or vinheta_id.replace("Vinheta ", "") if you want just the number
+                "score_2_aplica": data['Risco'].get("SCORE2 Aplicável", None),
+                "score2_motivonaoaplica": data['Risco'].get("Exceção", None),
+                "score_2_absoluto_calculado": data["Risco"].get("SCORE2", None),
                 "categoria_de_risco": data["Risco"].get("Categoria", None),
-                "risco_absoluto": data["Risco"].get("SCORE2", None),
-                "fatores_de_risco": data.get("Fatores de risco", {}),
                 "confianca": data["Risco"].get("confiança", None),
+                "fatores_de_risco": data.get("Fatores de risco", {}),
                 'modificadores_de_risco': data.get("Modificadores de risco", {})
             }
             rows.append(row)
@@ -156,10 +158,12 @@ def parse_json(json_file, language='pt'):
         for vinheta_id, data in json_file.items():
             row = {
                 "id": vinheta_id,  # or vinheta_id.replace("Vinheta ", "") if you want just the number
+                "score_2_aplica": data['Risk'].get("SCORE2 Applicable", None),
+                "score2_motivonaoaplica": data['Risk'].get("Exception", None),
+                "score_2_absoluto_calculado": data["Risk"].get("SCORE2", None),
                 "categoria_de_risco": data["Risk"].get("Category", None),
-                "risco_absoluto": data["Risk"].get("SCORE2", None),
+                "confianca": data["Risk"].get("Confidence Level", None),
                 "fatores_de_risco": data.get("Risk Factors", {}),
-                "confianca": data['Risk'].get("Confidence Level", None),
                 "modificadores_de_risco": data.get("Risk Modifiers", {})
             }
             rows.append(row)
