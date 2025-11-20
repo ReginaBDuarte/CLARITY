@@ -1,0 +1,1960 @@
+###Vinheta 1. 
+1) Extração estruturada dos fatores de risco
+
+| Fator de Risco | Valor | Unidade |
+|---|---|---|
+| Idade | 44 | anos |
+| Género | Masculino | — |
+| Tabagismo | Não fumador | — |
+| Pressão Arterial Sistólica | 114 | mmHg |
+| Colesterol Total | 183 | mg/dL |
+| Colesterol HDL | 55 | mg/dL |
+| Colesterol não HDL (se necessário calcular) | 128 | mg/dL |
+
+
+2) Estratificação de risco segundo ESC 2021 (país de risco moderado)
+
+| SCORE2 Aplicável | Exceção (se não  aplicável) | SCORE2 (%) | Categoria Risco | Grau de Confiança |
+|---|---|---|---|---|
+| Sim | — | 1,0 | Baixo-a-Moderado (40–49 anos: <2,5%) | Alta |
+
+
+3) Breve explicação clínica
+
+Risco baixo-a-moderado, dominado por idade jovem, ausência de tabagismo, pressão arterial normal e perfil lipídico global favorável (HDL 55 mg/dL; LDL 110 mg/dL). Não há exceções (sem diabetes, DRC, dislipidemia familiar ou doença aterosclerótica). O sedentarismo é um alvo importante para redução de risco residual. As palpitações correspondem a extrassístoles ventriculares isoladas, sem doença estrutural cardíaca, com bom prognóstico. Recomenda-se otimização do estilo de vida: atividade física aeróbica regular, dieta mediterrânica, sono adequado e manutenção de IMC normal, com reavaliação periódica do risco e do perfil lipídico.
+
+
+4) Extracção estruturada dos fatores de risco e modificadores
+
+| Categoria | Variável | Valor |
+|---|---|---|
+| Fatores de Risco | Idade | 44 anos |
+| Fatores de Risco | Género | Masculino |
+| Fatores de Risco | Tabagismo | Não fumador |
+| Fatores de Risco | Hipertensão Arterial | Não |
+| Fatores de Risco | Pressão Arterial Sistólica | 114 mmHg |
+| Fatores de Risco | Pressão Arterial Diastólica | 72 mmHg |
+| Fatores de Risco | Dislipidemia | desconhecido |
+| Fatores de Risco | Colesterol Total | 183 mg/dL |
+| Fatores de Risco | Colesterol HDL | 55 mg/dL |
+| Fatores de Risco | Triglicéridos | 88 mg/dL |
+| Fatores de Risco | Colesterol LDL | 110 mg/dL |
+| Fatores de Risco | Colesterol não HDL (se necessário calcular) | 128 mg/dL |
+| Fatores de Risco | Diabetes Mellitus | Não |
+| Modificadores de Risco | Score de Cálcio elevado | desconhecido |
+| Modificadores de Risco | Score de Cálcio = 0 | desconhecido |
+| Modificadores de Risco | Placas Carótidas | desconhecido |
+| Modificadores de Risco | Obesidade | Não |
+| Modificadores de Risco | Pre-Diabetes | Não |
+| Modificadores de Risco | História Familiar de doença cardiovascular aterosclerótica | Não |
+| Modificadores de Risco | Lp (a) aumentada | desconhecido |
+| Modificadores de Risco | Rigidez Arterial aumentada | desconhecido |
+| Modificadores de Risco | PCR alta sensibilidade elevada | desconhecido |
+| Modificadores de Risco | Doença Inflamatória Crónica | desconhecido |
+| Modificadores de Risco | Infecção HIV | desconhecido |
+| Modificadores de Risco | Sindrome Apneia Obstrutiva do Sono | desconhecido |
+| Modificadores de Risco | Esteatose Hepática Não Alcoólica | desconhecido |
+| Modificadores de Risco | Disfunção erétil | desconhecido |
+| Modificadores de Risco | Menopausa precoce | desconhecido |
+| Modificadores de Risco | Antecedentes de Gravidez com complicações (Pre-eclampsia, Hipertensão arterial ou diabetes) | desconhecido |
+| Modificadores de Risco | Doença pulmonar obstrutiva crónica (DPOC) | desconhecido |
+| Modificadores de Risco | Cancro | desconhecido |
+| Modificadores de Risco | Outro (especificar) | Sedentarismo |
+
+
+6) json file
+
+json_file ={
+"Risco":{"SCORE2 Aplicável":"Sim","Exceção":"Nenhuma","Categoria":"Baixo-a-Moderado","SCORE2":"1,0%","confiança":"Alta"},
+"Fatores de risco":{"Idade":"44 anos","Género":"Masculino","Tabagismo":"Não fumador","Hipertensão Arterial":"Não","Pressão Arterial Sistólica":"114 mmHg","Pressão Arterial Diastólica":"72 mmHg","Dislipidemia":"desconhecido","Colesterol Total":"183 mg/dL","Colesterol HDL":"55 mg/dL","Triglicéridos":"88 mg/dL","Colesterol LDL":"110 mg/dL","Colesterol não HDL (se necessário calcular)":"128 mg/dL","Diabetes Mellitus":"Não"},
+"Modificadores de r isco":{"Score de Cálcio elevado":"desconhecido","Score de Cálcio = 0":"desconhecido","Placas Carótidas":"desconhecido","Obesidade":"Não","Pre-Diabetes":"Não","História Familiar de doença cardiovascular aterosclerótica":"Não","Lp (a) aumentada":"desconhecido","Rigidez Arterial aumentada":"desconhecido","PCR alta sensibilidade elevada":"desconhecido","Doença Inflamatória Crónica":"desconhecido","Infecção HIV":"desconhecido","Sindrome Apneia Obstrutiva do Sono":"desconhecido","Esteatose Hepática Não Alcoólica":"desconhecido","Disfunção erétil":"desconhecido","Menopausa precoce":"desconhecido","Antecedentes de Gravidez com complicações (Pre-eclampsia, Hipertensão arterial ou diabetes)":"desconhecido","Doença pulmonar obstrutiva crónica (DPOC)":"desconhecido","Cancro":"desconhecido","Outro (especificar)":"Sedentarismo"}
+}
+
+###Vinheta 2. 
+1) Extração estruturada dos fatores de risco
+
+| Fator de Risco | Valor | Unidade |
+|---|---:|:---|
+| Idade | 40 | anos |
+| Género | Feminino |  |
+| Tabagismo | Fumador |  |
+| Pressão Arterial Sistólica | 124 | mmHg |
+| Colesterol Total | 190 | mg/dL |
+| Colesterol HDL | 67 | mg/dL |
+| Colesterol não HDL (se necessário calcular) | 123 | mg/dL |
+
+
+2) Estratificação de risco segundo ESC 2021
+
+| SCORE2 Aplicável | Exceção (se não aplicável) | SCORE2 (%) | Categoria Risco | Grau de Confiança |
+|---|---|---:|---|---|
+| Sim | — | 1,0 | Baixo-a-Moderado | Intermédia |
+
+
+3) Breve explicação clínica
+
+Mulher de 40 anos, sem queixas e sem doença cardiovascular conhecida, com PA controlada (MAPA média 113/73 mmHg; consultório 124/75 mmHg), perfil lipídico favorável (LDL 105 mg/dL; HDL 67 mg/dL; não-HDL 123 mg/dL), glicemia normal e função renal normal. O principal determinante do risco é o tabagismo ativo. Modificadores avaliados não sugerem risco acrescido: rigidez arterial não aumentada (VOP 6,8 m/s). ECG com alterações inespecíficas da repolarização sem impacto direto no SCORE2. Globalmente, o risco SCORE2 a 10 anos é baixo‑a‑moderado para a idade. Intervenções prioritárias: cessação tabágica (consulta já agendada) e manutenção de exercício regular e estilo de vida saudável.
+
+
+4) Extração estruturada dos fatores de risco e modificadores
+
+Tabela – Fatores de Risco
+| Fator de Risco | Valores |
+|---|---|
+| Idade | 40 anos |
+| Género | Feminino |
+| Tabagismo | Fumador |
+| Hipertensão Arterial | Não |
+| Pressão Arterial Sistólica | 124 mmHg |
+| Pressão Arterial Diastólica | 75 mmHg |
+| Dislipidemia | desconhecido |
+| Colesterol Total | 190 mg/dL |
+| Colesterol HDL | 67 mg/dL |
+| Triglicéridos | 90 mg/dL |
+| Colesterol LDL | 105 mg/dL |
+| Colesterol não HDL (se necessário calcular) | 123 mg/dL |
+| Diabetes Mellitus | Não |
+
+Tabela – Modificadores de Risco
+| Modificadores de Risco | Valores |
+|---|---|
+| Pode selecionar mais do que um | desconhecido |
+
+
+6) json file
+
+json_file ={
+"Risco": {"SCORE2 Aplicável": "Sim", "Exceção": "—", "Categoria": "Baixo-a-Moderado", "SCORE2": "1,0", "confiança": "Intermédia"},
+"Fatores de risco": {
+  "Idade": "40 anos",
+  "Género": "Feminino",
+  "Tabagismo": "Fumador",
+  "Hipertensão Arterial": "Não",
+  "Pressão Arterial Sistólica": "124 mmHg",
+  "Pressão Arterial Diastólica": "75 mmHg",
+  "Dislipidemia": "desconhecido",
+  "Colesterol Total": "190 mg/dL",
+  "Colesterol HDL": "67 mg/dL",
+  "Triglicéridos": "90 mg/dL",
+  "Colesterol LDL": "105 mg/dL",
+  "Colesterol não HDL": "123 mg/dL",
+  "Diabetes Mellitus": "Não"
+},
+"Modificadores de risco": {
+  "Selecionados": "desconhecido"
+}
+}
+
+###Vinheta 3. 
+1) Extração estruturada dos fatores de risco
+
+| Fator de Risco | Valor | Unidade |
+|---|---:|:---|
+| Idade | 58 | anos |
+| Género | Feminino | — |
+| Tabagismo | Não fumador | — |
+| Pressão Arterial Sistólica | 122 | mmHg |
+| Colesterol Total | 164 | mg/dL |
+| Colesterol HDL | 47 | mg/dL |
+| Colesterol não HDL (se necessário calcular) | 117 | mg/dL |
+
+
+2) Estratificação de risco segundo ESC 2021 (país de risco moderado)
+
+| SCORE2 Aplicável | Exceção (se não aplicável) | SCORE2 (%) | Categoria Risco | Grau de Confiança |
+|---|---|---:|---|---|
+| Sim | — | 2,5 | Baixo-a-Moderado (50–69 anos: <5%) | Intermédia |
+
+
+3) Breve explicação clínica
+
+Mulher de 58 anos, não fumadora, PA ótima (122/77 mmHg) e perfil lipídico globalmente favorável (CT 164 mg/dL, HDL 47 mg/dL, LDL 105 mg/dL, TG 62 mg/dL). SCORE2 de 2,5% coloca-a em risco baixo‑a‑moderado para 10 anos. O score de cálcio = 0 sugere baixo risco aterosclerótico atual e pode reforçar a manutenção de prevenção não farmacológica. O principal elemento a otimizar é o peso (IMC 29,9), que aumenta o risco cardiometabólico a longo prazo. Manter atividade física regular e hábitos de vida saudáveis; considerar reavaliação periódica do risco e do LDL conforme metas individuais e preferências.
+
+
+4) Extração estruturada dos fatores de risco e modificadores
+
+| Categoria | Variável | Valor |
+|---|---|---|
+| Fatores de Risco | Idade | 58 anos |
+| Fatores de Risco | Género | Feminino |
+| Fatores de Risco | Tabagismo | Não fumador |
+| Fatores de Risco | Hipertensão Arterial | Não |
+| Fatores de Risco | Pressão Arterial Sistólica | 122 mmHg |
+| Fatores de Risco | Pressão Arterial Diastólica | 77 mmHg |
+| Fatores de Risco | Dislipidemia | desconhecido |
+| Fatores de Risco | Colesterol Total | 164 mg/dL |
+| Fatores de Risco | Colesterol HDL | 47 mg/dL |
+| Fatores de Risco | Triglicéridos | 62 mg/dL |
+| Fatores de Risco | Colesterol LDL | 105 mg/dL |
+| Fatores de Risco | Colesterol não HDL (se necessário calcular) | 117 mg/dL |
+| Fatores de Risco | Diabetes Mellitus | desconhecido |
+| Modificadores de Risco | Modificadores de Risco | Score de Cálcio = 0; Outro (especificar): Excesso de peso (IMC 29,9) |
+
+
+6) json file
+
+json_file ={
+"Risco":{"SCORE2 Aplicável":"Sim","Exceção":"—","Categoria":"Baixo-a-Moderado","SCORE2":"2,5","confiança":"Intermédia"},
+"Fatores de risco":{"Idade":"58 anos","Género":"Feminino","Tabagismo":"Não fumador","Hipertensão Arterial":"Não","Pressão Arterial Sistólica":"122 mmHg","Pressão Arterial Diastólica":"77 mmHg","Dislipidemia":"desconhecido","Colesterol Total":"164 mg/dL","Colesterol HDL":"47 mg/dL","Triglicéridos":"62 mg/dL","Colesterol LDL":"105 mg/dL","Colesterol não HDL (se necessário calcular)":"117 mg/dL","Diabetes Mellitus":"desconhecido"},
+"Modificadores de risco":{"Score de Cálcio = 0":"Sim","Outro (especificar)":"Excesso de peso (IMC 29,9)"}
+}
+
+###Vinheta 4. 
+1. Extração estruturada dos fatores de risco
+
+| Fator de Risco | Valor | Unidade |
+|---|---:|:---|
+| Idade | 54 | anos |
+| Género | Masculino | — |
+| Tabagismo | Não fumador | — |
+| Pressão Arterial Sistólica | 118 | mmHg |
+| Colesterol Total | 183 | mg/dL |
+| Colesterol HDL | 55 | mg/dL |
+| Colesterol não HDL (se necessário calcular) | 128 | mg/dL |
+
+
+2. Estratificação de risco segundo recomendações ESC 2021
+
+| SCORE2 Aplicável | Exceção (se não  aplicável) | SCORE2 (%) | Categoria Risco | Grau de Confiança |
+|---|---|---:|---|---|
+| Sim | — | 3,0 | Baixo-a-Moderado | Alta |
+
+
+3. Breve explicação clínica
+
+Risco a 10 anos baixo-a-moderado (SCORE2 3,0%) num homem de 54 anos, não fumador, com PA sistólica normal (118 mmHg) e perfil lipídico globalmente favorável (LDL 110 mg/dL; não-HDL 128 mg/dL). A ausência de diabetes, doença renal crónica e ASCVD conhecida reduz o risco. O principal modificador presente é a história familiar de doença cardiovascular aterosclerótica, embora não prematura. Sedentarismo é um alvo importante para intervenção de estilo de vida. Recomenda-se otimização de hábitos (atividade física, dieta mediterrânica, controlo ponderal) e reavaliação periódica do risco e do LDL, podendo ponderar metas de LDL <100 mg/dL conforme prevenção primária.
+
+
+4. Extracção estruturada dos fatores de risco
+
+| Categoria | Valores |
+|---|---|
+| Fatores de Risco | Idade: 54 anos; Género: Masculino; Tabagismo: Não fumador; Hipertensão Arterial: Não; Pressão Arterial Sistólica: 118 mmHg; Pressão Arterial Diastólica: 60 mmHg; Dislipidemia: Não; Colesterol Total: 183 mg/dL; Colesterol HDL: 55 mg/dL; Triglicéridos: 88 mg/dL; Colesterol LDL: 110 mg/dL; Colesterol não HDL (se necessário calcular): 128 mg/dL; Diabetes Mellitus: Não |
+| Modificadores de Risco | História Familiar de doença cardiovascular aterosclerótica |
+
+
+6. Criação de um json file
+
+```json
+json_file = {
+  "Risco": {
+    "SCORE2 Aplicável": "Sim",
+    "Exceção": "—",
+    "Categoria": "Baixo-a-Moderado",
+    "SCORE2": "3,0",
+    "confiança": "Alta"
+  },
+  "Fatores de risco": {
+    "Idade": "54 anos",
+    "Género": "Masculino",
+    "Tabagismo": "Não fumador",
+    "Hipertensão Arterial": "Não",
+    "Pressão Arterial Sistólica": "118 mmHg",
+    "Pressão Arterial Diastólica": "60 mmHg",
+    "Dislipidemia": "Não",
+    "Colesterol Total": "183 mg/dL",
+    "Colesterol HDL": "55 mg/dL",
+    "Triglicéridos": "88 mg/dL",
+    "Colesterol LDL": "110 mg/dL",
+    "Colesterol não HDL (se necessário calcular)": "128 mg/dL",
+    "Diabetes Mellitus": "Não"
+  },
+  "Modificadores de risco": {
+    "História Familiar de doença cardiovascular aterosclerótica": "Sim"
+  }
+}
+```
+
+###Vinheta 5. 
+1) Extração estruturada dos fatores de risco
+
+| Fator de Risco | Valor | Unidade |
+|---|---:|---|
+| Idade | 63 | anos |
+| Género | Feminino |  |
+| Tabagismo | Não fumador |  |
+| Pressão Arterial Sistólica | 107 | mmHg |
+| Colesterol Total | 214 | mg/dL |
+| Colesterol HDL | 67 | mg/dL |
+| Colesterol não HDL (se necessário calcular) | 147 | mg/dL |
+
+
+2) Estratificação de risco segundo recomendações ESC 2021
+
+| SCORE2 Aplicável | Exceção (se não aplicável) | SCORE2 (%) | Categoria Risco | Grau de Confiança |
+|---|---|---:|---|---|
+| Sim | — | desconhecido | Baixo-a-Moderado | Alta |
+
+
+3) Breve explicação clínica
+
+Risco global baixo-a-moderado para 10 anos, dada a pressão arterial sistólica muito baixa (107 mmHg), ausência de tabagismo e perfil lipídico apenas ligeiramente alterado (LDL 122 mg/dL; não-HDL 147 mg/dL). A idade (63 anos) aumenta o risco basal, mas não existem exceções ao SCORE2 (sem diabetes, DRC, DFH ou doença aterosclerótica estabelecida). A fibrilhação auricular prévia não é uma doença aterosclerótica e não altera a classificação SCORE2. Manter controlo de fatores modificáveis e vigilância lipídica.
+
+
+4) Extração estruturada dos fatores de risco e modificadores
+
+| Categoria | Variável | Valor |
+|---|---|---|
+| Fatores de Risco | Idade | 63 anos |
+| Fatores de Risco | Género | Feminino |
+| Fatores de Risco | Tabagismo | Não fumador |
+| Fatores de Risco | Hipertensão Arterial | Não |
+| Fatores de Risco | Pressão Arterial Sistólica | 107 mmHg |
+| Fatores de Risco | Pressão Arterial Diastólica | 58 mmHg |
+| Fatores de Risco | Dislipidemia | desconhecido |
+| Fatores de Risco | Colesterol Total | 214 mg/dL |
+| Fatores de Risco | Colesterol HDL | 67 mg/dL |
+| Fatores de Risco | Triglicéridos | 124 mg/dL |
+| Fatores de Risco | Colesterol LDL | 122 mg/dL |
+| Fatores de Risco | Colesterol não HDL (se necessário calcular) | 147 mg/dL |
+| Fatores de Risco | Diabetes Mellitus | Não |
+| Modificadores de Risco | Score de Cálcio elevado | desconhecido |
+| Modificadores de Risco | Score de Cálcio = 0 | desconhecido |
+| Modificadores de Risco | Placas Carótidas | desconhecido |
+| Modificadores de Risco | Obesidade | Não |
+| Modificadores de Risco | Pre-Diabetes | Não |
+| Modificadores de Risco | História Familiar de doença cardiovascular aterosclerótica | desconhecido |
+| Modificadores de Risco | Lp (a) aumentada | desconhecido |
+| Modificadores de Risco | Rigidez Arterial aumentada | desconhecido |
+| Modificadores de Risco | PCR alta sensibilidade elevada | desconhecido |
+| Modificadores de Risco | Doença Inflamatória Crónica | desconhecido |
+| Modificadores de Risco | Infecção HIV | desconhecido |
+| Modificadores de Risco | Sindrome Apneia Obstrutiva do Sono | desconhecido |
+| Modificadores de Risco | Esteatose Hepática Não Alcoólica | desconhecido |
+| Modificadores de Risco | Disfunção erétil | desconhecido |
+| Modificadores de Risco | Menopausa precoce | desconhecido |
+| Modificadores de Risco | Antecedentes de Gravidez com complicações (Pre-eclampsia, Hipertensão arterial ou diabetes) | desconhecido |
+| Modificadores de Risco | Doença pulmonar obstrutiva crónica (DPOC) | desconhecido |
+| Modificadores de Risco | Cancro | desconhecido |
+| Modificadores de Risco | Outro (especificar) | Fibrilhação auricular paroxística |
+
+
+6) json file
+
+json_file ={
+"Risco":{"SCORE2 Aplicável":"Sim","Exceção":"—","Categoria":"Baixo-a-Moderado","SCORE2":"desconhecido","confiança":"Alta"},
+"Fatores de risco":{"Idade":"63 anos","Género":"Feminino","Tabagismo":"Não fumador","Hipertensão Arterial":"Não","Pressão Arterial Sistólica":"107 mmHg","Pressão Arterial Diastólica":"58 mmHg","Dislipidemia":"desconhecido","Colesterol Total":"214 mg/dL","Colesterol HDL":"67 mg/dL","Triglicéridos":"124 mg/dL","Colesterol LDL":"122 mg/dL","Colesterol não HDL (se necessário calcular)":"147 mg/dL","Diabetes Mellitus":"Não"},
+"Modificadores de Risco":{"Score de Cálcio elevado":"desconhecido","Score de Cálcio = 0":"desconhecido","Placas Carótidas":"desconhecido","Obesidade":"Não","Pre-Diabetes":"Não","História Familiar de doença cardiovascular aterosclerótica":"desconhecido","Lp (a) aumentada":"desconhecido","Rigidez Arterial aumentada":"desconhecido","PCR alta sensibilidade elevada":"desconhecido","Doença Inflamatória Crónica":"desconhecido","Infecção HIV":"desconhecido","Sindrome Apneia Obstrutiva do Sono":"desconhecido","Esteatose Hepática Não Alcoólica":"desconhecido","Disfunção erétil":"desconhecido","Menopausa precoce":"desconhecido","Antecedentes de Gravidez com complicações (Pre-eclampsia, Hipertensão arterial ou diabetes)":"desconhecido","Doença pulmonar obstrutiva crónica (DPOC)":"desconhecido","Cancro":"desconhecido","Outro (especificar)":"Fibrilhação auricular paroxística"}
+}
+
+###Vinheta 6. 
+1. Extração estruturada dos fatores de risco
+
+| Fator de Risco | Valor | Unidade |
+|---|---:|---|
+| Idade | 41 | anos |
+| Género | Feminino | - |
+| Tabagismo | Fumador | - |
+| Pressão Arterial Sistólica | 146 | mmHg |
+| Colesterol Total | 270 | mg/dL |
+| Colesterol HDL | 53 | mg/dL |
+| Colesterol não HDL (se necessário calcular) | 217 | mg/dL |
+
+
+2. Estratificação de risco segundo recomendações da sociedade europeia de cardiologia 2021 (2021 ESC Guidelines on cardiovascular disease prevention in clinical practice)
+
+| SCORE2 Aplicável | Exceção (se não  aplicável) | SCORE2 (%) | Categoria Risco | Grau de Confiança |
+|---|---|---:|---|---|
+| Sim | — | 1,8 | Baixo-a-Moderado | Intermédia |
+
+
+3. Breve explicação clínica
+
+Mulher de 41 anos, fumadora ativa, com HTA não controlada (PAS 146 mmHg) e dislipidemia significativa (LDL 189 mg/dL; colesterol total 270 mg/dL). O SCORE2 a 10 anos é baixo-a-moderado pela idade jovem, mas o risco vitalício é aumentado. Prediabetes (HbA1c 6,3%) e sedentarismo com excesso de peso (IMC 25,7) reforçam o risco futuro. Achados de remodelação concêntrica do VE e ligeira dilatação da AE sugerem dano de órgão-alvo da HTA, funcionando como modificadores que reforçam a necessidade de intervenção intensiva: cessação tabágica, retomar/otimizar terapêutica anti-hipertensora e iniciar tratamento hipolipemiante, além de mudanças no estilo de vida.
+
+
+4. Extracção estruturada dos fatores de risco
+
+|  | Valores |
+|---|---|
+| Fatores de Risco |  |
+| Idade | 41 anos |
+| Género | Feminino |
+| Tabagismo | Fumador |
+| Hipertensão Arterial | Sim |
+| Pressão Arterial Sistólica | 146 mmHg |
+| Pressão Arterial Diastólica | 85 mmHg |
+| Dislipidemia | Sim |
+| Colesterol Total | 270 mg/dL |
+| Colesterol HDL | 53 mg/dL |
+| Triglicéridos | 142 mg/dL |
+| Colesterol LDL | 189 mg/dL |
+| Colesterol não HDL (se necessário calcular) | 217 mg/dL |
+| Diabetes Mellitus | Não |
+| Modificadores de Risco |  |
+| Pode selecionar mais do que um | Pre-Diabetes; Outro (especificar) |
+| Outro (especificar) | Remodelação concêntrica do ventrículo esquerdo; Dilatação ligeira da aurícula esquerda; Alterações inespecíficas da repolarização ventricular |
+
+
+6. Criação de um json file
+json_file ={
+"Risco":{"SCORE2 Aplicável":"Sim","Exceção":"—","Categoria":"Baixo-a-Moderado","SCORE2":"1,8","confiança":"Intermédia"},
+"Fatores de risco":{"Idade":"41","Género":"Feminino","Tabagismo":"Fumador","Hipertensão Arterial":"Sim","Pressão Arterial Sistólica":"146","Pressão Arterial Diastólica":"85","Dislipidemia":"Sim","Colesterol Total":"270","Colesterol HDL":"53","Triglicéridos":"142","Colesterol LDL":"189","Colesterol não HDL":"217","Diabetes Mellitus":"Não"},
+"Modificadores de r isco":{"Pre-Diabetes":"Sim","Outro (especificar)":"Remodelação concêntrica do ventrículo esquerdo; Dilatação ligeira da aurícula esquerda; Alterações inespecíficas da repolarização ventricular"}
+}
+
+###Vinheta 7. 
+1) Extração estruturada dos fatores de risco
+
+| Fator de Risco | Valor | Unidade |
+|---|---:|:---|
+| Idade | 48 | anos |
+| Género | Masculino | — |
+| Tabagismo | Não fumador | — |
+| Pressão Arterial Sistólica | 161 | mmHg |
+| Colesterol Total | 231 | mg/dL |
+| Colesterol HDL | 43 | mg/dL |
+| Colesterol não HDL (se necessário calcular) | 188 | mg/dL |
+
+
+2) Estratificação de risco segundo ESC 2021 (país de risco moderado)
+
+| SCORE2 Aplicável | Exceção (se não  aplicável) | SCORE2 (%) | Categoria Risco | Grau de Confiança |
+|---|---|---:|---|---|
+| Sim | — | 3,0 | Alto | Intermédia |
+
+
+3) Breve explicação clínica
+
+Homem de 48 anos, não fumador, com HTA em consultório (161/102 mmHg) confirmada por MAPA e dislipidemia (LDL 149 mg/dL, HDL 43 mg/dL, triglicéridos 197 mg/dL). O SCORE2 (país de risco moderado) resulta em 3,0%, enquadrando-o em risco Alto para a idade (40–49 anos). Contribuem sobretudo a pressão arterial sistólica elevada e o perfil lipídico desfavorável (colesterol total alto e HDL baixo). Fatores adicionais relevantes: excesso ponderal (IMC 28,2), pré-diabetes (HbA1c 6,2%) e padrão não-dipper no MAPA; sintomas sugestivos de SAOS, que podem agravar o risco e dificultar o controlo tensional. ECG e ecocardiograma sem lesão-alvo conhecida.
+
+
+4) Extracção estruturada dos fatores de risco
+
+| Categoria | Valores |
+|---|---|
+| Fatores de Risco | Idade: 48 anos; Género: Masculino; Tabagismo: Não fumador; Hipertensão Arterial: Sim; Pressão Arterial Sistólica: 161 mmHg; Pressão Arterial Diastólica: 102 mmHg; Dislipidemia: Sim; Colesterol Total: 231 mg/dL; Colesterol HDL: 43 mg/dL; Triglicéridos: 197 mg/dL; Colesterol LDL: 149 mg/dL; Colesterol não HDL (se necessário calcular): 188 mg/dL; Diabetes Mellitus: Não |
+| Modificadores de Risco | Pre-Diabetes; Outro (especificar): Padrão não-dipper no MAPA; Outro (especificar): Roncopatia e sonolência diurna (sugestivo de Sindrome Apneia Obstrutiva do Sono) |
+
+
+6) Criação de um json file
+
+json_file ={
+"Risco":{"SCORE2 Aplicável":"Sim","Exceção":"—","Categoria":"Alto","SCORE2":"3,0","confiança":"Intermédia"},
+"Fatores de risco":{"Idade":"48","Género":"Masculino","Tabagismo":"Não fumador","Hipertensão Arterial":"Sim","Pressão Arterial Sistólica":"161","Pressão Arterial Diastólica":"102","Dislipidemia":"Sim","Colesterol Total":"231","Colesterol HDL":"43","Triglicéridos":"197","Colesterol LDL":"149","Colesterol não HDL (se necessário calcular)":"188","Diabetes Mellitus":"Não"},
+"Modificadores de risco":{"Pre-Diabetes":"Sim","Outro (especificar)":"Padrão não-dipper no MAPA; Roncopatia e sonolência diurna (sugestivo de SAOS)"}
+}
+
+###Vinheta 8. 
+1. Extração estruturada dos fatores de risco
+
+| Fator de Risco | Valor | Unidade |
+|---|---:|---|
+| Idade | 57 | anos |
+| Género | Feminino |  |
+| Tabagismo | Fumador |  |
+| Pressão Arterial Sistólica | 120 | mmHg |
+| Colesterol Total | 197 | mg/dL |
+| Colesterol HDL | 57 | mg/dL |
+| Colesterol não HDL (se necessário calcular) | 140 | mg/dL |
+
+
+2. Estratificação de risco segundo recomendações da sociedade europeia de cardiologia 2021 (2021 ESC Guidelines on cardiovascular disease prevention in clinical practice)
+
+| SCORE2 Aplicável | Exceção (se não  aplicável) | SCORE2 (%) | Categoria Risco | Grau de Confiança |
+|---|---|---:|---|---|
+| Sim | — | 3,0 | Baixo-a-Moderado | Alta |
+
+
+3. Breve explicação clínica
+
+Mulher de 57 anos, fumadora ativa, PA sistólica normal (120 mmHg), lípidos moderadamente elevados (LDL 119 mg/dL; não-HDL 140 mg/dL), sem diabetes e com IMC normal. O principal determinante do risco é o tabagismo; a PA controlada e HDL 57 mg/dL atenuam o risco. ECG, ecocardiograma e prova de esforço sem isquemia sugerem baixo risco imediato para exercício; a hidroginástica é apropriada, com progressão gradual. Recomenda-se fortemente cessação tabágica e otimização do tratamento da dislipidemia (avaliar necessidade de estatina em prevenção primária conforme risco e LDL), além de dieta e exercício regulares.
+
+
+4. Extracção estruturada dos fatores de risco
+
+| Categoria | Variável | Valor | Unidade |
+|---|---|---|---|
+| Fatores de Risco | Idade | 57 | anos |
+| Fatores de Risco | Género | Feminino |  |
+| Fatores de Risco | Tabagismo | Fumador |  |
+| Fatores de Risco | Hipertensão Arterial | Não |  |
+| Fatores de Risco | Pressão Arterial Sistólica | 120 | mmHg |
+| Fatores de Risco | Pressão Arterial Diastólica | 63 | mmHg |
+| Fatores de Risco | Dislipidemia | Sim |  |
+| Fatores de Risco | Colesterol Total | 197 | mg/dL |
+| Fatores de Risco | Colesterol HDL | 57 | mg/dL |
+| Fatores de Risco | Triglicéridos | 124 | mg/dL |
+| Fatores de Risco | Colesterol LDL | 119 | mg/dL |
+| Fatores de Risco | Colesterol não HDL (se necessário calcular) | 140 | mg/dL |
+| Fatores de Risco | Diabetes Mellitus | Não |  |
+| Modificadores de Risco | Pode selecionar mais do que um | desconhecido |  |
+
+
+6. Criação de um json file
+
+json_file ={
+"Risco":{ "SCORE2 Aplicável":"Sim", "Exceção":"", "Categoria":"Baixo-a-Moderado", "SCORE2":"3,0", "confiança":"Alta" },
+"Fatores de risco":{"Idade":"57 anos","Género":"Feminino","Tabagismo":"Fumador","Hipertensão Arterial":"Não","Pressão Arterial Sistólica":"120 mmHg","Pressão Arterial Diastólica":"63 mmHg","Dislipidemia":"Sim","Colesterol Total":"197 mg/dL","Colesterol HDL":"57 mg/dL","Triglicéridos":"124 mg/dL","Colesterol LDL":"119 mg/dL","Colesterol não HDL (se necessário calcular)":"140 mg/dL","Diabetes Mellitus":"Não"},
+"Modificadores de risco" : {"Pode selecionar mais do que um":"desconhecido"}
+}
+
+###Vinheta 9. 
+1) Extração estruturada dos fatores de risco
+
+| Variável | Valor | Unidade |
+|---|---|---|
+| Idade | 52 | anos |
+| Género | Masculino |  |
+| Tabagismo | Fumador |  |
+| Pressão Arterial Sistólica | 130 | mmHg |
+| Colesterol Total | 224 | mg/dL |
+| Colesterol HDL | 37 | mg/dL |
+| Colesterol não HDL (se necessário calcular) | 187 | mg/dL |
+
+
+2) Estratificação de risco segundo recomendações ESC 2021 (país de risco moderado)
+
+| SCORE2 Aplicável | Exceção (se não aplicável) | SCORE2 (%) | Categoria Risco | Grau de Confiança |
+|---|---|---|---|---|
+| Não | Doença Cardiovascular Aterosclerótica (placas coronárias não obstrutivas em CCTA; score de cálcio 23, P50–75) | desconhecido | Muito-Alto | Alta |
+
+
+3) Breve explicação clínica
+
+SCORE2 não é aplicável porque há doença cardiovascular aterosclerótica documentada em angioTC (placas coronárias, ainda que <50%). O doente é classificado como muito-alto risco por ASCVD. Os principais fatores que contribuíram: tabagismo intenso (50 UMA), LDL elevado (167 mg/dL) e HDL baixo (37 mg/dL). MAPA com hipertensão diurna (138/86 mmHg) indica hipertensão, apesar da média 24h normal. O score de cálcio 23 (P50–75) reforça a presença de aterosclerose subclínica. IMC é normal e não há diabetes (HbA1c 5,9% sugere pré-diabetes).
+
+
+4) Extracção estruturada dos fatores de risco
+
+| Categoria | Variável | Valor |
+|---|---|---|
+| Fatores de Risco | Idade | 52 anos |
+| Fatores de Risco | Género | Masculino |
+| Fatores de Risco | Tabagismo | Fumador |
+| Fatores de Risco | Hipertensão Arterial | Sim |
+| Fatores de Risco | Pressão Arterial Sistólica | 130 mmHg |
+| Fatores de Risco | Pressão Arterial Diastólica | 89 mmHg |
+| Fatores de Risco | Dislipidemia | Sim |
+| Fatores de Risco | Colesterol Total | 224 mg/dL |
+| Fatores de Risco | Colesterol HDL | 37 mg/dL |
+| Fatores de Risco | Triglicéridos | 98 mg/dL |
+| Fatores de Risco | Colesterol LDL | 167 mg/dL |
+| Fatores de Risco | Colesterol não HDL (se necessário calcular) | 187 mg/dL |
+| Fatores de Risco | Diabetes Mellitus | Não |
+| Modificadores de Risco | Pode selecionar mais do que um | Score de Cálcio elevado; Pre-Diabetes; Outro (especificar): Placas coronárias não obstrutivas (<50%) em CCTA |
+
+
+6) json file
+
+json_file ={
+"Risco":{"SCORE2 Aplicável":"Não","Exceção":"Doença Cardiovascular Aterosclerótica (placas coronárias não obstrutivas em CCTA; score de cálcio 23, P50–75)","Categoria":"Muito-Alto","SCORE2":"desconhecido","confiança":"Alta"},
+"Fatores de risco":{"Idade":"52 anos","Género":"Masculino","Tabagismo":"Fumador","Pressão Arterial Sistólica":"130 mmHg","Colesterol Total":"224 mg/dL","Colesterol HDL":"37 mg/dL","Colesterol não HDL (se necessário calcular)":"187 mg/dL"},
+"Modificadores de risco":{"Score de Cálcio elevado":"Sim (CAC 23; P50–75)","Pre-Diabetes":"Sim (HbA1c 5,9%)","Outro (especificar)":"Placas coronárias não obstrutivas (<50%) em CCTA"}
+}
+
+###Vinheta 10. 
+1. Extração estruturada dos fatores de risco
+
+| Fator de Risco | Valor | Unidade |
+|---|---:|---|
+| Idade | 67 | anos |
+| Género | Feminino |  |
+| Tabagismo | desconhecido |  |
+| Pressão Arterial Sistólica | 131 | mmHg |
+| Colesterol Total | 137 | mg/dL |
+| Colesterol HDL | 58 | mg/dL |
+| Colesterol não HDL (se necessário calcular) | 79 | mg/dL |
+
+
+2. Estratificação de risco segundo recomendações da sociedade europeia de cardiologia 2021 (2021 ESC Guidelines on cardiovascular disease prevention in clinical practice)
+
+| SCORE2 Aplicável | Exceção (se não  aplicável) | SCORE2 (%) | Categoria Risco | Grau de Confiança |
+|---|---|---|---|---|
+| Sim | — | desconhecido (tabagismo não reportado) | desconhecido | Baixa |
+
+
+3. Breve explicação clínica
+
+SCORE2 é aplicável (idade 67 anos, sem ASCVD, sem diabetes, sem DRC conhecida). O cálculo requer tabagismo, que não está disponível, impedindo a estimativa. Em mulher de 67 anos com PAS 131 mmHg e perfil lipídico favorável (LDL 62 mg/dL, não-HDL 79 mg/dL), o risco varia substancialmente consoante o tabagismo. A HTA e a dislipidemia são fatores presentes, mas bem controlados. Marcadores como remodelação do VE, aurícula esquerda dilatada, NT-proBNP elevado e estenose aórtica moderada não integram SCORE2 e sugerem avaliação cardíaca estruturada independente do risco aterosclerótico. É crucial clarificar tabagismo para estratificação precisa.
+
+4. Extracção estruturada dos fatores de risco
+
+| Categoria | Variável | Valor | Unidade |
+|---|---|---:|---|
+| Fatores de Risco | Idade | 67 | anos |
+| Fatores de Risco | Género | Feminino |  |
+| Fatores de Risco | Tabagismo | desconhecido |  |
+| Fatores de Risco | Hipertensão Arterial | Sim |  |
+| Fatores de Risco | Pressão Arterial Sistólica | 131 | mmHg |
+| Fatores de Risco | Pressão Arterial Diastólica | 63 | mmHg |
+| Fatores de Risco | Dislipidemia | Sim |  |
+| Fatores de Risco | Colesterol Total | 137 | mg/dL |
+| Fatores de Risco | Colesterol HDL | 58 | mg/dL |
+| Fatores de Risco | Triglicéridos | 85 | mg/dL |
+| Fatores de Risco | Colesterol LDL | 62 | mg/dL |
+| Fatores de Risco | Colesterol não HDL (se necessário calcular) | 79 | mg/dL |
+| Fatores de Risco | Diabetes Mellitus | Não |  |
+| Modificadores de Risco | Pode selecionar mais do que um | Pre-Diabetes |  |
+
+
+6. Criação de um json file
+
+json_file ={
+"Risco": {"SCORE2 Aplicável": "Sim", "Exceção": "Nenhuma", "Categoria": "desconhecido", "SCORE2": "desconhecido (tabagismo não reportado)", "confiança": "Baixa"},
+"Fatores de risco": {"Idade": "67 anos", "Género": "Feminino", "Tabagismo": "desconhecido", "Hipertensão Arterial": "Sim", "Pressão Arterial Sistólica": "131 mmHg", "Pressão Arterial Diastólica": "63 mmHg", "Dislipidemia": "Sim", "Colesterol Total": "137 mg/dL", "Colesterol HDL": "58 mg/dL", "Triglicéridos": "85 mg/dL", "Colesterol LDL": "62 mg/dL", "Colesterol não HDL (se necessário calcular)": "79 mg/dL", "Diabetes Mellitus": "Não"},
+"Modificadores de risco": {"Pode selecionar mais do que um": "Pre-Diabetes"}
+}
+
+###Vinheta 11. 
+1) Extração estruturada dos fatores de risco
+
+| Fator de Risco | Valor | Unidade |
+|---|---:|:---|
+| Idade | 62 | anos |
+| Género | Masculino | — |
+| Tabagismo | Ex-Fumador | — |
+| Pressão Arterial Sistólica | 129 | mmHg |
+| Colesterol Total | 187 | mg/dL |
+| Colesterol HDL | 51 | mg/dL |
+| Colesterol não HDL (se necessário calcular) | 136 | mg/dL |
+
+
+2) Estratificação de risco segundo ESC 2021 (país de risco moderado)
+
+| SCORE2 Aplicável | Exceção (se não aplicável) | SCORE2 (%) | Categoria Risco | Grau de Confiança |
+|---|---|---:|---|---|
+| Sim | — | 6,4 | Baixo-a-Moderado | Intermédia |
+
+
+3) Breve explicação clínica
+
+Homem de 62 anos, ex-fumador, com hipertensão e dislipidemia tratadas, PA sistólica controlada (129 mmHg), colesterol total 187 mg/dL e HDL 51 mg/dL. Estes fatores, aliados à idade e sexo masculino, determinam um SCORE2 de 6,4%, o que o coloca em risco baixo-a-moderado (limiar para alto risco nos 50–69 anos é ≥7,5%). A HbA1c de 6,2% sugere pré-diabetes (modificador de risco), reforçando a necessidade de otimização de estilo de vida e eventual intensificação de tratamento lipídico (LDL 109 mg/dL). O status pós-cancro do cólon é outro modificador de risco. As alterações de condução e remodelamento cardíaco não entram no SCORE2, mas justificam avaliação cardiológica continuada.
+
+
+4) Extracção estruturada dos fatores de risco e modificadores
+
+| Categoria | Variável | Valor |
+|---|---|---|
+| Fatores de Risco | Idade | 62 anos |
+| Fatores de Risco | Género | Masculino |
+| Fatores de Risco | Tabagismo | Ex-Fumador |
+| Fatores de Risco | Hipertensão Arterial | Sim |
+| Fatores de Risco | Pressão Arterial Sistólica | 129 mmHg |
+| Fatores de Risco | Pressão Arterial Diastólica | 66 mmHg |
+| Fatores de Risco | Dislipidemia | Sim |
+| Fatores de Risco | Colesterol Total | 187 mg/dL |
+| Fatores de Risco | Colesterol HDL | 51 mg/dL |
+| Fatores de Risco | Triglicéridos | 134 mg/dL |
+| Fatores de Risco | Colesterol LDL | 109 mg/dL |
+| Fatores de Risco | Colesterol não HDL (se necessário calcular) | 136 mg/dL |
+| Fatores de Risco | Diabetes Mellitus | Não |
+| Modificadores de Risco | Pode selecionar mais do que um | Pre-Diabetes; Cancro |
+
+
+6) json file
+
+json_file ={
+"Risco":{"SCORE2 Aplicável":"Sim","Exceção":"—","Categoria":"Baixo-a-Moderado","SCORE2":"6,4","confiança":"Intermédia"},
+"Fatores de risco":{"Idade":"62 anos","Género":"Masculino","Tabagismo":"Ex-Fumador","Hipertensão Arterial":"Sim","Pressão Arterial Sistólica":"129 mmHg","Pressão Arterial Diastólica":"66 mmHg","Dislipidemia":"Sim","Colesterol Total":"187 mg/dL","Colesterol HDL":"51 mg/dL","Triglicéridos":"134 mg/dL","Colesterol LDL":"109 mg/dL","Colesterol não HDL":"136 mg/dL","Diabetes Mellitus":"Não"},
+"Modificadores de risco":{"Pre-Diabetes":"Sim","Cancro":"Neoplasia do cólon tratada há 8 anos"}
+}
+
+###Vinheta 12. 
+1. Extração estruturada dos fatores de risco
+
+| Fator de Risco | Valor | Unidade |
+|---|---:|---|
+| Idade | 47 | anos |
+| Género | Feminino |  |
+| Tabagismo | Fumador |  |
+| Pressão Arterial Sistólica | 147 | mmHg |
+| Colesterol Total | 263 | mg/dL |
+| Colesterol HDL | 54 | mg/dL |
+| Colesterol não HDL (se necessário calcular) | 209 | mg/dL |
+
+
+2. Estratificação de risco segundo recomendações da sociedade europeia de cardiologia 2021 (2021 ESC Guidelines on cardiovascular disease prevention in clinical practice)
+
+| SCORE2 Aplicável | Exceção (se não  aplicável) | SCORE2 (%) | Categoria Risco | Grau de Confiança |
+|---|---|---:|---|---|
+| Sim | — | 4,8% | Alto | Intermédia |
+
+
+3. Breve explicação clínica
+
+Mulher de 47 anos, fumadora ativa (52 UMAs), com HTA confirmada em MAPA (147/87 mmHg) e dislipidemia marcada (LDL 184 mg/dL; não-HDL 209 mg/dL). Estes fatores (tabagismo, HTA e colesterol elevado) são os principais determinantes do SCORE2 elevado para a idade, classificando-a em risco Alto (limiar para 40–49 anos ≥2,5%). A presença de DPOC e pré-diabetes (HbA1c 5,8%) atuam como modificadores de risco adicionais. Divergência entre PA de consultório (189/103 mmHg) e MAPA justifica confiança intermédia; o controlo tensional poderá reduzir substancialmente o risco estimado.
+
+
+4. Extracção estruturada dos fatores de risco
+
+| Fatores de Risco | Valor |
+|---|---|
+| Idade | 47 anos |
+| Género | Feminino |
+| Tabagismo | Fumador |
+| Hipertensão Arterial | Sim |
+| Pressão Arterial Sistólica | 147 mmHg |
+| Pressão Arterial Diastólica | 87 mmHg |
+| Dislipidemia | Sim |
+| Colesterol Total | 263 mg/dL |
+| Colesterol HDL | 54 mg/dL |
+| Triglicéridos | 125 mg/dL |
+| Colesterol LDL | 184 mg/dL |
+| Colesterol não HDL (se necessário calcular) | 209 mg/dL |
+| Diabetes Mellitus | Não |
+
+| Modificadores de Risco | Valor |
+|---|---|
+| Pode selecionar mais do que um | Pre-Diabetes; Doença pulmonar obstrutiva crónica (DPOC) |
+
+
+6. Criação de um json file
+
+json_file ={
+"Risco": {"SCORE2 Aplicável": "Sim", "Exceção": "—", "Categoria": "Alto", "SCORE2": "4,8%", "confiança": "Intermédia"},
+"Fatores de risco": {"Idade": "47", "Género": "Feminino", "Tabagismo": "Fumador", "Hipertensão Arterial": "Sim", "Pressão Arterial Sistólica": "147", "Pressão Arterial Diastólica": "87", "Dislipidemia": "Sim", "Colesterol Total": "263", "Colesterol HDL": "54", "Triglicéridos": "125", "Colesterol LDL": "184", "Colesterol não HDL (se necessário calcular)": "209", "Diabetes Mellitus": "Não"},
+"Modificadores de risco": {"Pode selecionar mais do que um": "Pre-Diabetes; Doença pulmonar obstrutiva crónica (DPOC)"}
+}
+
+###Vinheta 13. 
+1. Extração estruturada dos fatores de risco
+
+| Variável                               | Valor | Unidade |
+|----------------------------------------|-------|---------|
+| Idade                                  | 41    | anos    |
+| Género                                 | Masculino | —       |
+| Tabagismo                              | Fumador | —       |
+| Pressão Arterial Sistólica             | 155   | mmHg    |
+| Colesterol Total                       | 241   | mg/dL   |
+| Colesterol HDL                         | 33    | mg/dL   |
+| Colesterol não HDL (se necessário calcular) | 208   | mg/dL   |
+
+
+2. Estratificação de risco segundo ESC 2021 (país de risco moderado)
+
+| SCORE2 Aplicável | Exceção (se não  aplicável) | SCORE2 (%) | Categoria Risco | Grau de Confiança |
+|------------------|------------------------------|------------|-----------------|-------------------|
+| Sim              | —                            | 3,0        | Alto            | Intermédia        |
+
+
+3. Breve explicação clínica
+
+Homem de 41 anos, fumador, com hipertensão (PA 155/107 mmHg) e dislipidemia marcada (LDL 188 mg/dL, HDL 33 mg/dL, colesterol total 241 mg/dL). Estes fatores, sobretudo a HTA não controlada, o tabagismo e o HDL muito baixo, elevaram o SCORE2 para a faixa de risco Alto para a idade (≥2,5% e <7,5% entre 40–49 anos). Há ainda pré-diabetes (HbA1c 5,8%) e resposta hipertensiva ao esforço, reforçando a necessidade de intervenção intensiva no estilo de vida e provável terapêutica farmacológica para HTA e LDL, além de cessação tabágica. ECG com alterações inespecíficas e ecocardiograma normal não alteram a estratificação de risco aterosclerótico.
+
+
+4. Extracção estruturada dos fatores de risco
+
+| Categoria            | Variável                                         | Valor                                  |
+|----------------------|--------------------------------------------------|----------------------------------------|
+| Fatores de Risco     | Idade                                           | 41 anos                                |
+| Fatores de Risco     | Género                                          | Masculino                              |
+| Fatores de Risco     | Tabagismo                                       | Fumador                                |
+| Fatores de Risco     | Hipertensão Arterial                            | Sim                                    |
+| Fatores de Risco     | Pressão Arterial Sistólica                      | 155 mmHg                               |
+| Fatores de Risco     | Pressão Arterial Diastólica                     | 107 mmHg                               |
+| Fatores de Risco     | Dislipidemia                                    | Sim                                    |
+| Fatores de Risco     | Colesterol Total                                | 241 mg/dL                              |
+| Fatores de Risco     | Colesterol HDL                                  | 33 mg/dL                               |
+| Fatores de Risco     | Triglicéridos                                   | 98 mg/dL                               |
+| Fatores de Risco     | Colesterol LDL                                  | 188 mg/dL                              |
+| Fatores de Risco     | Colesterol não HDL (se necessário calcular)     | 208 mg/dL                              |
+| Fatores de Risco     | Diabetes Mellitus                               | Não                                    |
+| Modificadores de Risco | Score de Cálcio elevado                       | desconhecido                           |
+| Modificadores de Risco | Score de Cálcio = 0                           | desconhecido                           |
+| Modificadores de Risco | Placas Carótidas                              | desconhecido                           |
+| Modificadores de Risco | Obesidade                                     | Não                                    |
+| Modificadores de Risco | Pre-Diabetes                                  | Sim (HbA1c 5,8%)                       |
+| Modificadores de Risco | História Familiar de doença cardiovascular aterosclerótica | desconhecido               |
+| Modificadores de Risco | Lp (a) aumentada                              | desconhecido                           |
+| Modificadores de Risco | Rigidez Arterial aumentada                    | desconhecido                           |
+| Modificadores de Risco | PCR alta sensibilidade elevada                | desconhecido                           |
+| Modificadores de Risco | Doença Inflamatória Crónica                   | desconhecido                           |
+| Modificadores de Risco | Infecção HIV                                  | desconhecido                           |
+| Modificadores de Risco | Sindrome Apneia Obstrutiva do Sono            | desconhecido                           |
+| Modificadores de Risco | Esteatose Hepática Não Alcoólica              | desconhecido                           |
+| Modificadores de Risco | Disfunção erétil                              | desconhecido                           |
+| Modificadores de Risco | Menopausa precoce                             | desconhecido                           |
+| Modificadores de Risco | Antecedentes de Gravidez com complicações (Pre-eclampsia, Hipertensão arterial ou diabetes) | desconhecido |
+| Modificadores de Risco | Doença pulmonar obstrutiva crónica (DPOC)     | desconhecido                           |
+| Modificadores de Risco | Cancro                                        | Não                                    |
+| Modificadores de Risco | Outro (especificar)                           | Resposta hipertensiva ao esforço; Alterações inespecíficas da repolarização ventricular no ECG |
+
+
+6. Criação de um json file
+json_file ={
+"Risco":{'SCORE2 Aplicável': 'Sim', 'Exceção': '—','Categoria': 'Alto', 'SCORE2': '3,0', 'confiança': 'Intermédia' },
+"Fatores de risco":{'Idade':'41 anos','Género':'Masculino','Tabagismo':'Fumador','Hipertensão Arterial':'Sim','Pressão Arterial Sistólica':'155 mmHg','Pressão Arterial Diastólica':'107 mmHg','Dislipidemia':'Sim','Colesterol Total':'241 mg/dL','Colesterol HDL':'33 mg/dL','Triglicéridos':'98 mg/dL','Colesterol LDL':'188 mg/dL','Colesterol não HDL (se necessário calcular)':'208 mg/dL','Diabetes Mellitus':'Não'},
+"Modificadores de risco" : {'Score de Cálcio elevado':'desconhecido','Score de Cálcio = 0':'desconhecido','Placas Carótidas':'desconhecido','Obesidade':'Não','Pre-Diabetes':'Sim (HbA1c 5,8%)','História Familiar de doença cardiovascular aterosclerótica':'desconhecido','Lp (a) aumentada':'desconhecido','Rigidez Arterial aumentada':'desconhecido','PCR alta sensibilidade elevada':'desconhecido','Doença Inflamatória Crónica':'desconhecido','Infecção HIV':'desconhecido','Sindrome Apneia Obstrutiva do Sono':'desconhecido','Esteatose Hepática Não Alcoólica':'desconhecido','Disfunção erétil':'desconhecido','Menopausa precoce':'desconhecido','Antecedentes de Gravidez com complicações (Pre-eclampsia, Hipertensão arterial ou diabetes)':'desconhecido','Doença pulmonar obstrutiva crónica (DPOC)':'desconhecido','Cancro':'Não','Outro (especificar)':'Resposta hipertensiva ao esforço; Alterações inespecíficas da repolarização ventricular no ECG'}
+}
+
+###Vinheta 14. 
+1. Extração estruturada dos fatores de risco
+
+| Fator de Risco | Valor | Unidade |
+|---|---:|---|
+| Idade | 56 | anos |
+| Género | Feminino | — |
+| Tabagismo | Fumador | — |
+| Pressão Arterial Sistólica | 163 | mmHg |
+| Colesterol Total | 224 | mg/dL |
+| Colesterol HDL | 45 | mg/dL |
+| Colesterol não HDL (se necessário calcular) | 179 | mg/dL |
+
+
+2. Estratificação de risco segundo recomendações ESC 2021
+
+| SCORE2 Aplicável | Exceção (se não  aplicável) | SCORE2 (%) | Categoria Risco | Grau de Confiança |
+|---|---|---:|---|---|
+| Sim | — | 12,0 | Muito-Alto | Intermédia |
+
+
+3. Breve explicação clínica
+
+Risco muito-alto aos 10 anos, impulsionado por: hipertensão não controlada (PAS 163 mmHg), tabagismo ativo, dislipidemia com LDL 140 mg/dL e colesterol não-HDL 179 mg/dL, e obesidade (IMC 31,3 kg/m2). Prediabetes (HbA1c 6,3%; glicemia 113 mg/dL) e provável IC com fração de ejeção preservada refletem carga cardiovascular adicional, embora não entrem no SCORE2. A adesão terapêutica é duvidosa e refere intolerância a estatinas, fatores que dificultam o controlo de risco. Prioridades: cessação tabágica, otimização da terapêutica anti-hipertensora, controlo lipídico (alternativas às estatinas se necessário) e perda ponderal.
+
+
+4. Extracção estruturada dos fatores de risco
+
+| Variável | Valor |
+|---|---|
+| Idade | 56 anos |
+| Género | Feminino |
+| Tabagismo | Fumador |
+| Hipertensão Arterial | Sim |
+| Pressão Arterial Sistólica | 163 mmHg |
+| Pressão Arterial Diastólica | 91 mmHg |
+| Dislipidemia | Sim |
+| Colesterol Total | 224 mg/dL |
+| Colesterol HDL | 45 mg/dL |
+| Triglicéridos | 196 mg/dL |
+| Colesterol LDL | 140 mg/dL |
+| Colesterol não HDL (se necessário calcular) | 179 mg/dL |
+| Diabetes Mellitus | Não |
+| Modificadores de Risco | Obesidade; Pre-Diabetes |
+
+
+6. Criação de um json file
+
+json_file ={
+"Risco":{"SCORE2 Aplicável":"Sim","Exceção":"—","Categoria":"Muito-Alto","SCORE2":"12,0","confiança":"Intermédia"},
+"Fatores de risco":{"Idade":"56 anos","Género":"Feminino","Tabagismo":"Fumador","Hipertensão Arterial":"Sim","Pressão Arterial Sistólica":"163 mmHg","Pressão Arterial Diastólica":"91 mmHg","Dislipidemia":"Sim","Colesterol Total":"224 mg/dL","Colesterol HDL":"45 mg/dL","Triglicéridos":"196 mg/dL","Colesterol LDL":"140 mg/dL","Colesterol não HDL":"179 mg/dL","Diabetes Mellitus":"Não"},
+"Modificadores de risco":{"Obesidade":"IMC 31,3 kg/m2","Pre-Diabetes":"HbA1c 6,3%; Glicemia 113 mg/dL"}
+}
+
+###Vinheta 15. 
+1) Extração estruturada dos fatores de risco
+
+| Fator de Risco | Valor | Unidade |
+|---|---:|---|
+| Idade | 51 | anos |
+| Género | Masculino | — |
+| Tabagismo | Fumador | — |
+| Pressão Arterial Sistólica | 149 | mmHg |
+| Colesterol Total | 197 | mg/dL |
+| Colesterol HDL | 32 | mg/dL |
+| Colesterol não HDL (se necessário calcular) | 165 | mg/dL |
+
+
+2) Estratificação de risco segundo ESC 2021 (país de risco moderado)
+
+| SCORE2 Aplicável | Exceção (se não aplicável) | SCORE2 (%) | Categoria Risco | Grau de Confiança |
+|---|---|---:|---|---|
+| Sim | — | 5,8 | Alto | Intermédia |
+
+
+3) Breve explicação clínica
+
+Homem de 51 anos, fumador, com hipertensão arterial confirmada por MAPA e dislipidemia com LDL e colesterol não-HDL elevados (LDL 148 mg/dL; não-HDL 165 mg/dL) e HDL baixo. Apresenta ainda sedentarismo e pré-diabetes (HbA1c 5,8%). A AngioTC mostra aterosclerose coronária subclínica (CAC 47; placas não obstrutivas em 3 vasos), o que reforça o risco. Estes fatores (tabagismo, HTA, dislipidemia aterogénica e CAC >0) foram determinantes para a classificação “Alto” pelo SCORE2.
+
+
+4) Extração estruturada dos fatores de risco e modificadores
+
+| Categoria | Variável | Valor |
+|---|---|---|
+| Fatores de Risco | Idade | 51 anos |
+|  | Género | Masculino |
+|  | Tabagismo | Fumador |
+|  | Hipertensão Arterial | Sim |
+|  | Pressão Arterial Sistólica | 149 mmHg |
+|  | Pressão Arterial Diastólica | 98 mmHg |
+|  | Dislipidemia | Sim |
+|  | Colesterol Total | 197 mg/dL |
+|  | Colesterol HDL | 32 mg/dL |
+|  | Triglicéridos | 98 mg/dL |
+|  | Colesterol LDL | 148 mg/dL |
+|  | Colesterol não HDL (se necessário calcular) | 165 mg/dL |
+|  | Diabetes Mellitus | Não |
+| Modificadores de Risco | Pode selecionar mais do que um | Score de Cálcio elevado; Pré-Diabetes; História Familiar de doença cardiovascular aterosclerótica; Outro (especificar) |
+|  | Score de Cálcio elevado | CAC 47 (P50–75) |
+|  | Pré-Diabetes | HbA1c 5,8% |
+|  | História Familiar de doença cardiovascular aterosclerótica | Pai com CABG aos 71 anos |
+|  | Outro (especificar) | Placas coronárias não obstrutivas (<50%) em 3 vasos na AngioTC |
+
+
+5) 
+
+
+6) json file
+
+json_file ={
+"Risco":{ "SCORE2 Aplicável":"Sim", "Exceção":"—", "Categoria":"Alto", "SCORE2":"5,8%", "confiança":"Intermédia" },
+"Fatores de risco":{"Idade":"51 anos","Género":"Masculino","Tabagismo":"Fumador","Hipertensão Arterial":"Sim","Pressão Arterial Sistólica":"149 mmHg","Pressão Arterial Diastólica":"98 mmHg","Dislipidemia":"Sim","Colesterol Total":"197 mg/dL","Colesterol HDL":"32 mg/dL","Triglicéridos":"98 mg/dL","Colesterol LDL":"148 mg/dL","Colesterol não HDL (se necessário calcular)":"165 mg/dL","Diabetes Mellitus":"Não"},
+"Modificadores de riso" : {"Score de Cálcio elevado":"CAC 47 (P50–75)","Pré-Diabetes":"HbA1c 5,8%","História Familiar de doença cardiovascular aterosclerótica":"Pai com CABG aos 71 anos","Outro (especificar)":"Placas coronárias não obstrutivas (<50%) em 3 vasos na AngioTC"}
+}
+
+###Vinheta 16. 
+1. Extração estruturada dos fatores de risco
+
+| Variável                                   | Valor | Unidade |
+|--------------------------------------------|-------|---------|
+| Idade                                      | 64    | anos    |
+| Género                                     | Feminino | —     |
+| Tabagismo                                  | Fumador | —      |
+| Pressão Arterial Sistólica                 | 143   | mmHg    |
+| Colesterol Total                           | 169   | mg/dL   |
+| Colesterol HDL                             | 48    | mg/dL   |
+| Colesterol não HDL (se necessário calcular)| 121   | mg/dL   |
+
+
+2. Estratificação de risco segundo ESC 2021 (país de risco moderado)
+
+| SCORE2 Aplicável | Exceção (se não  aplicável) | SCORE2 (%) | Categoria Risco | Grau de Confiança |
+|------------------|------------------------------|------------|-----------------|-------------------|
+| Sim              | —                            | 8,0        | Alto            | Intermédia        |
+
+
+3. Breve explicação clínica
+
+Risco determinado por idade (64 anos), tabagismo ativo e pressão arterial sistólica elevada (143 mmHg). Perfil lipídico globalmente moderado (LDL 100 mg/dL; HDL 48 mg/dL), mas o tabagismo e a PAS elevam substancialmente o SCORE2. HbA1c 5,9% indica pré-diabetes (modificador de risco). Remodelação concêntrica do ventrículo esquerdo e dilatação da aurícula esquerda sugerem lesão de órgão-alvo associada à pressão arterial, reforçando a necessidade de controlo tensional e cessação tabágica. NT-proBNP 288 pg/mL é limítrofe para a idade e pode justificar vigilância, embora não entre no SCORE2.
+
+
+4. Extracção estruturada dos fatores de risco
+
+| Categoria              | Variável                                   | Valor        | Unidade |
+|------------------------|--------------------------------------------|--------------|---------|
+| Fatores de Risco       | Idade                                      | 64           | anos    |
+| Fatores de Risco       | Género                                     | Feminino     | —       |
+| Fatores de Risco       | Tabagismo                                  | Fumador      | —       |
+| Fatores de Risco       | Hipertensão Arterial                       | desconhecido | —       |
+| Fatores de Risco       | Pressão Arterial Sistólica                 | 143          | mmHg    |
+| Fatores de Risco       | Pressão Arterial Diastólica                | 84           | mmHg    |
+| Fatores de Risco       | Dislipidemia                               | desconhecido | —       |
+| Fatores de Risco       | Colesterol Total                           | 169          | mg/dL   |
+| Fatores de Risco       | Colesterol HDL                             | 48           | mg/dL   |
+| Fatores de Risco       | Triglicéridos                              | 107          | mg/dL   |
+| Fatores de Risco       | Colesterol LDL                             | 100          | mg/dL   |
+| Fatores de Risco       | Colesterol não HDL (se necessário calcular)| 121          | mg/dL   |
+| Fatores de Risco       | Diabetes Mellitus                          | Não          | —       |
+| Modificadores de Risco | Pode selecionar mais do que um             | Pre-Diabetes; Cancro; Outro (especificar: Remodelação concêntrica do ventrículo esquerdo; Dilatação moderada da aurícula esquerda; NT-proBNP 288 pg/mL) | — |
+
+
+6. Criação de um json file
+
+```json
+{
+  "Risco": {
+    "SCORE2 Aplicável": "Sim",
+    "Exceção": "—",
+    "Categoria": "Alto",
+    "SCORE2": "8,0",
+    "confiança": "Intermédia"
+  },
+  "Fatores de risco": {
+    "Idade": "64 anos",
+    "Género": "Feminino",
+    "Tabagismo": "Fumador",
+    "Pressão Arterial Sistólica": "143 mmHg",
+    "Pressão Arterial Diastólica": "84 mmHg",
+    "Colesterol Total": "169 mg/dL",
+    "Colesterol HDL": "48 mg/dL",
+    "Colesterol LDL": "100 mg/dL",
+    "Colesterol não HDL": "121 mg/dL",
+    "Triglicéridos": "107 mg/dL",
+    "Hipertensão Arterial": "desconhecido",
+    "Dislipidemia": "desconhecido",
+    "Diabetes Mellitus": "Não"
+  },
+  "Modificadores de Risco": {
+    "Pre-Diabetes": "Sim (HbA1c 5,9%)",
+    "Cancro": "Carcinoma papilar da tiroide",
+    "Outro": "Remodelação concêntrica do VE; Dilatação moderada da AE; NT-proBNP 288 pg/mL"
+  }
+}
+```
+
+###Vinheta 17. 
+1. Extração estruturada dos fatores de risco
+
+| Variável | Valor | Unidade |
+|---|---:|---|
+| Idade | 65 | anos |
+| Género | Masculino |  |
+| Tabagismo | Ex-Fumador |  |
+| Pressão Arterial Sistólica | 147 | mmHg |
+| Colesterol Total | 129 | mg/dL |
+| Colesterol HDL | 33 | mg/dL |
+| Colesterol não HDL (se necessário calcular) | 96 | mg/dL |
+
+2. Estratificação de risco segundo ESC 2021 (país de risco moderado)
+
+| SCORE2 Aplicável | Exceção (se não  aplicável) | SCORE2 (%) | Categoria Risco | Grau de Confiança |
+|---|---|---:|---|---|
+| Sim | — | 9,0 | Alto | Intermédia |
+
+3. Breve explicação clínica
+
+O risco é determinado sobretudo por idade (65 anos), sexo masculino e pressão arterial sistólica em consulta (147 mmHg). O ex-tabagismo aumenta menos o risco do que tabagismo ativo. O perfil lipídico mostra LDL muito baixo (49 mg/dL) e colesterol total baixo, o que atenua o risco, mas o HDL muito baixo (33 mg/dL) e triglicéridos elevados (237 mg/dL) são desfavoráveis. A presença de pré-diabetes e SAOS (sob CPAP) funcionam como modificadores de risco. A MAPA com valores médios baixos sob terapêutica explica a hipotensão sintomática matinal; o controlo tensional deve ser ajustado para evitar sintomas, mantendo alvos apropriados.
+
+4. Extracção estruturada dos fatores de risco
+
+| Categoria | Variável | Valor | Unidade |
+|---|---|---|---|
+| Fatores de Risco | Idade | 65 | anos |
+| Fatores de Risco | Género | Masculino |  |
+| Fatores de Risco | Tabagismo | Ex-Fumador |  |
+| Fatores de Risco | Hipertensão Arterial | Sim |  |
+| Fatores de Risco | Pressão Arterial Sistólica | 147 | mmHg |
+| Fatores de Risco | Pressão Arterial Diastólica | 68 | mmHg |
+| Fatores de Risco | Dislipidemia | Sim |  |
+| Fatores de Risco | Colesterol Total | 129 | mg/dL |
+| Fatores de Risco | Colesterol HDL | 33 | mg/dL |
+| Fatores de Risco | Triglicéridos | 237 | mg/dL |
+| Fatores de Risco | Colesterol LDL | 49 | mg/dL |
+| Fatores de Risco | Colesterol não HDL (se necessário calcular) | 96 | mg/dL |
+| Fatores de Risco | Diabetes Mellitus | Não |  |
+| Modificadores de Risco | Pode selecionar mais do que um | Pre-Diabetes; Sindrome Apneia Obstrutiva do Sono; Outro (especificar): Excesso de peso (IMC 28); Outro (especificar): Hipertrigliceridemia (237 mg/dL) |  |
+
+6. json file
+
+json_file = {
+  "Risco": {
+    "SCORE2 Aplicável": "Sim",
+    "Exceção": "—",
+    "Categoria": "Alto",
+    "SCORE2": "9,0",
+    "confiança": "Intermédia"
+  },
+  "Fatores de risco": {
+    "Idade": "65 anos",
+    "Género": "Masculino",
+    "Tabagismo": "Ex-Fumador",
+    "Hipertensão Arterial": "Sim",
+    "Pressão Arterial Sistólica": "147 mmHg",
+    "Pressão Arterial Diastólica": "68 mmHg",
+    "Dislipidemia": "Sim",
+    "Colesterol Total": "129 mg/dL",
+    "Colesterol HDL": "33 mg/dL",
+    "Triglicéridos": "237 mg/dL",
+    "Colesterol LDL": "49 mg/dL",
+    "Colesterol não HDL (se necessário calcular)": "96 mg/dL",
+    "Diabetes Mellitus": "Não"
+  },
+  "Modificadores de Risco": {
+    "Pode selecionar mais do que um": "Pre-Diabetes; Sindrome Apneia Obstrutiva do Sono; Outro (especificar): Excesso de peso (IMC 28); Outro (especificar): Hipertrigliceridemia (237 mg/dL)"
+  }
+}
+
+###Vinheta 18. 
+1) Extração estruturada dos fatores de risco
+
+| Fator de Risco | Valor | Unidade |
+|---|---:|:---|
+| Idade | 44 | anos |
+| Género | Masculino |  |
+| Tabagismo | Não fumador |  |
+| Pressão Arterial Sistólica | 145 | mmHg |
+| Colesterol Total | 229 | mg/dL |
+| Colesterol HDL | 37 | mg/dL |
+| Colesterol não HDL (se necessário calcular) | 192 | mg/dL |
+
+
+2) Estratificação de risco segundo ESC 2021
+
+| SCORE2 Aplicável | Exceção (se não  aplicável) | SCORE2 (%) | Categoria Risco | Grau de Confiança |
+|---|---|---:|---|---|
+| Sim | — | 3,0 | Alto | Intermédia |
+
+
+3) Breve explicação clínica
+
+SCORE2 aplicável (44 anos, sem doença aterosclerótica, DM, DRC ou HF). O risco é impulsionado por: sexo masculino, pressão arterial sistólica de consultório elevada (145 mmHg; apesar de MAPA 24h 130/86 mmHg), dislipidemia com LDL 165 mg/dL e HDL baixo (37 mg/dL), e Lp(a) muito aumentada (92 mg/dL). História familiar de enfarte (mãe aos 61 anos) e ApoB elevado (172 mg/dL) reforçam o risco. A ausência de tabagismo e IMC normal atenuam parcialmente o risco. O resultado coloca-o em risco “Alto” para a faixa etária <50 anos (limiar ≥2,5%). 
+
+
+4) Extracção estruturada dos fatores de risco
+
+| Variável | Valor |
+|---|---|
+| Fatores de Risco |  |
+| Idade | 44 anos |
+| Género | Masculino |
+| Tabagismo | Não fumador |
+| Hipertensão Arterial | Sim |
+| Pressão Arterial Sistólica | 145 mmHg |
+| Pressão Arterial Diastólica | 94 mmHg |
+| Dislipidemia | Sim |
+| Colesterol Total | 229 mg/dL |
+| Colesterol HDL | 37 mg/dL |
+| Triglicéridos | 137 mg/dL |
+| Colesterol LDL | 165 mg/dL |
+| Colesterol não HDL (se necessário calcular) | 192 mg/dL |
+| Diabetes Mellitus | Não |
+| Modificadores de Risco | História Familiar de doença cardiovascular aterosclerótica; Lp (a) aumentada; Outro (especificar): ApoB elevado (172 mg/dL) |
+
+
+6) Criação de um json file
+
+json_file ={
+"Risco":{"SCORE2 Aplicável":"Sim","Exceção":"—","Categoria":"Alto","SCORE2":"3,0%","confiança":"Intermédia"},
+"Fatores de risco":{"Idade":"44 anos","Género":"Masculino","Tabagismo":"Não fumador","Hipertensão Arterial":"Sim","Pressão Arterial Sistólica":"145 mmHg","Pressão Arterial Diastólica":"94 mmHg","Dislipidemia":"Sim","Colesterol Total":"229 mg/dL","Colesterol HDL":"37 mg/dL","Triglicéridos":"137 mg/dL","Colesterol LDL":"165 mg/dL","Colesterol não HDL (se necessário calcular)":"192 mg/dL","Diabetes Mellitus":"Não"},
+"Modificadores de risco":{"História Familiar de doença cardiovascular aterosclerótica":"Sim","Lp (a) aumentada":"Sim","Outro (especificar)":"ApoB elevado (172 mg/dL)"}
+}
+
+###Vinheta 19. 
+1) Extração estruturada dos fatores de risco
+
+| Variável                         | Valor | Unidade |
+|----------------------------------|-------|---------|
+| Idade                            | 54    | anos    |
+| Género                           | Feminino | —     |
+| Tabagismo                        | Fumador | —     |
+| Pressão Arterial Sistólica       | 132   | mmHg    |
+| Colesterol Total                 | 211   | mg/dL   |
+| Colesterol HDL                   | 52    | mg/dL   |
+| Colesterol não HDL (se necessário calcular) | 159 | mg/dL |
+
+2) Estratificação de risco segundo ESC 2021 (país de risco moderado)
+
+| SCORE2 Aplicável | Exceção (se não aplicável) | SCORE2 (%) | Categoria Risco     | Grau de Confiança |
+|------------------|-----------------------------|------------|---------------------|-------------------|
+| Sim              | nenhuma                     | 4,0        | Baixo-a-Moderado    | Intermédia        |
+
+3) Breve explicação clínica
+
+Risco de 10 anos baixo-a-moderado pelo SCORE2, condicionado sobretudo por: tabagismo ativo, colesterol LDL 133 mg/dL (colesterol não-HDL 159 mg/dL) e PAS 132 mmHg. Importantes modificadores de risco presentes: doença inflamatória crónica (artrite reumatóide) e PCR-us 4,5 mg/L, ambos associados a risco acrescido; além disso, o CAC 77 (percentil 75–90) e placas coronárias não obstrutivas (incluindo tronco comum) sugerem aterosclerose subclínica e podem reclassificar o risco para cima. Prioridades: cessação tabágica, otimização lipídica (estatinas), e controlo rigoroso de fatores de risco, com seguimento estreito.
+
+4) Extração estruturada dos fatores de risco e modificadores
+
+| Variável                                   | Valor                                                                                                             | Unidade |
+|--------------------------------------------|-------------------------------------------------------------------------------------------------------------------|---------|
+| Idade                                      | 54                                                                                                                | anos    |
+| Género                                     | Feminino                                                                                                          | —       |
+| Tabagismo                                  | Fumador                                                                                                           | —       |
+| Hipertensão Arterial                       | Não                                                                                                               | —       |
+| Pressão Arterial Sistólica                 | 132                                                                                                               | mmHg    |
+| Pressão Arterial Diastólica                | 84                                                                                                                | mmHg    |
+| Dislipidemia                               | Sim                                                                                                               | —       |
+| Colesterol Total                           | 211                                                                                                               | mg/dL   |
+| Colesterol HDL                             | 52                                                                                                                | mg/dL   |
+| Triglicéridos                              | 128                                                                                                               | mg/dL   |
+| Colesterol LDL                             | 133                                                                                                               | mg/dL   |
+| Colesterol não HDL (se necessário calcular)| 159                                                                                                               | mg/dL   |
+| Diabetes Mellitus                          | Não                                                                                                               | —       |
+| Modificadores de Risco                     | Score de Cálcio elevado; PCR alta sensibilidade elevada; Doença Inflamatória Crónica; Outro (especificar)        | —       |
+| Pode selecionar mais do que um             | Score de Cálcio elevado; PCR alta sensibilidade elevada; Doença Inflamatória Crónica; Outro (especificar)         | —       |
+| Outro (especificar)                        | Placas coronárias não obstrutivas (tronco comum <25%; DA proximal 25-49%; DA média <25%; CD média 25-49%); CAC 77 (percentil 75-90) | —       |
+
+6) json file
+
+```json
+json_file = {
+  "Risco": {
+    "SCORE2 Aplicável": "Sim",
+    "Exceção": "nenhuma",
+    "Categoria": "Baixo-a-Moderado",
+    "SCORE2": "4,0",
+    "confiança": "Intermédia"
+  },
+  "Fatores de risco": {
+    "Idade": "54 anos",
+    "Género": "Feminino",
+    "Tabagismo": "Fumador",
+    "Hipertensão Arterial": "Não",
+    "Pressão Arterial Sistólica": "132 mmHg",
+    "Pressão Arterial Diastólica": "84 mmHg",
+    "Dislipidemia": "Sim",
+    "Colesterol Total": "211 mg/dL",
+    "Colesterol HDL": "52 mg/dL",
+    "Triglicéridos": "128 mg/dL",
+    "Colesterol LDL": "133 mg/dL",
+    "Colesterol não HDL": "159 mg/dL",
+    "Diabetes Mellitus": "Não"
+  },
+  "Modificadores de risco": {
+    "Score de Cálcio elevado": "Sim (CAC 77; percentil 75-90)",
+    "PCR alta sensibilidade elevada": "Sim (4,5 mg/L)",
+    "Doença Inflamatória Crónica": "Artrite reumatóide",
+    "Outro (especificar)": "Placas coronárias não obstrutivas (tronco comum <25%; DA proximal 25-49%; DA média <25%; CD média 25-49%)"
+  }
+}
+```
+
+###Vinheta 20. 
+1) Extração estruturada dos fatores de risco
+
+| Fator de Risco | Valor | Unidade |
+|---|---:|---|
+| Idade | 61 | anos |
+| Género | Masculino |  |
+| Tabagismo | desconhecido |  |
+| Pressão Arterial Sistólica | 151 | mmHg |
+| Colesterol Total | 217 | mg/dL |
+| Colesterol HDL | 48 | mg/dL |
+| Colesterol não HDL (se necessário calcular) | 169 | mg/dL |
+
+
+2) Estratificação de risco segundo ESC 2021
+
+| SCORE2 Aplicável | Exceção (se não  aplicável) | SCORE2 (%) | Categoria Risco | Grau de Confiança |
+|---|---|---|---|---|
+| Sim | nenhuma | desconhecido | desconhecido | Baixa |
+
+
+3) Breve explicação clínica
+
+Risco não quantificável por SCORE2 devido a tabagismo desconhecido. Ainda assim, múltiplos fatores aumentam substancialmente o risco: idade 61 anos (masculino), pressão arterial elevada (151/94 mmHg) com remodelamento concêntrico do VE e dilatação da AE, dislipidemia aterogénica (LDL 118 mg/dL, não-HDL 169 mg/dL, triglicéridos 256 mg/dL), obesidade (IMC 33,7; perímetro 108 cm), pré-diabetes (HbA1c 6,3%; glicemia 113 mg/dL) e SAOS grave. O score de cálcio coronário 178 (p75–90) indica aterosclerose subclínica e reforça a necessidade de prevenção intensiva. Confirmar estatuto tabágico para cálculo do SCORE2 e tomada de decisão mais precisa. 
+
+
+4) Extração estruturada dos fatores de risco e modificadores
+
+| Categoria | Variável | Valor |
+|---|---|---|
+| Fatores de Risco | Idade | 61 anos |
+| Fatores de Risco | Género | Masculino |
+| Fatores de Risco | Tabagismo | desconhecido |
+| Fatores de Risco | Hipertensão Arterial | desconhecido |
+| Fatores de Risco | Pressão Arterial Sistólica | 151 mmHg |
+| Fatores de Risco | Pressão Arterial Diastólica | 94 mmHg |
+| Fatores de Risco | Dislipidemia | desconhecido |
+| Fatores de Risco | Colesterol Total | 217 mg/dL |
+| Fatores de Risco | Colesterol HDL | 48 mg/dL |
+| Fatores de Risco | Triglicéridos | 256 mg/dL |
+| Fatores de Risco | Colesterol LDL | 118 mg/dL |
+| Fatores de Risco | Colesterol não HDL (se necessário calcular) | 169 mg/dL |
+| Fatores de Risco | Diabetes Mellitus | Não |
+| Modificadores de Risco | Pode selecionar mais do que um | Score de Cálcio elevado; Obesidade; Pre-Diabetes; Sindrome Apneia Obstrutiva do Sono; Outro (especificar) |
+| Modificadores de Risco | Outro (especificar) | Remodeling concêntrico do VE; Dilatação moderada da AE; Fibrilhação auricular paroxística (2 minutos) |
+
+
+6) json file
+
+```json
+{
+  "Risco": {
+    "SCORE2 Aplicável": "Sim",
+    "Exceção": "nenhuma",
+    "Categoria": "desconhecido",
+    "SCORE2": "desconhecido",
+    "confiança": "Baixa"
+  },
+  "Fatores de risco": {
+    "Idade": "61 anos",
+    "Género": "Masculino",
+    "Tabagismo": "desconhecido",
+    "Hipertensão Arterial": "desconhecido",
+    "Pressão Arterial Sistólica": "151 mmHg",
+    "Pressão Arterial Diastólica": "94 mmHg",
+    "Dislipidemia": "desconhecido",
+    "Colesterol Total": "217 mg/dL",
+    "Colesterol HDL": "48 mg/dL",
+    "Triglicéridos": "256 mg/dL",
+    "Colesterol LDL": "118 mg/dL",
+    "Colesterol não HDL (se necessário calcular)": "169 mg/dL",
+    "Diabetes Mellitus": "Não"
+  },
+  "Modificadores de risco": {
+    "Score de Cálcio elevado": "Sim (CAC 178; percentil 75-90)",
+    "Obesidade": "Sim (IMC 33,7; perímetro abdominal 108 cm)",
+    "Pre-Diabetes": "Sim (HbA1c 6,3%; glicemia 113 mg/dL)",
+    "Sindrome Apneia Obstrutiva do Sono": "Sim (grave)",
+    "Outro (especificar)": "Remodeling concêntrico do VE; Dilatação moderada da AE; Fibrilhação auricular paroxística (2 minutos)"
+  }
+}
+```
+
+###Vinheta 21. 
+1. Extração estruturada dos fatores de risco
+| Variável | Valor | Unidade |
+|---|---|---|
+| Idade | 51 | anos |
+| Género | Feminino |  |
+| Tabagismo | Não fumador |  |
+| Pressão Arterial Sistólica | 127 | mmHg |
+| Colesterol Total | 162 | mg/dL |
+| Colesterol HDL | 38 | mg/dL |
+| Colesterol não HDL (se necessário calcular) | 124 | mg/dL |
+
+2. Estratificação de risco segundo recomendações ESC 2021
+| SCORE2 Aplicável | Exceção (se não  aplicável) | SCORE2 (%) | Categoria Risco | Grau de Confiança |
+|---|---|---|---|---|
+| Não | Doença Renal Crónica | não aplicável | Alto | Muito-Alta |
+
+3. Breve explicação clínica
+A doente tem doença renal crónica (TFG 42 mL/min/1,73 m2), que pelas ESC 2021 a classifica diretamente como alto risco cardiovascular, independentemente do SCORE2. Fatores favoráveis: não fumadora, pressão arterial controlada e LDL 84 mg/dL sob estatina. Fatores a otimizar: HDL baixo (38 mg/dL) e triglicéridos elevados (199 mg/dL). Mantém estilo de vida ativo apesar de profissão sedentária. Vigiar e tratar agressivamente fatores de risco, com objetivos lipídicos e tensional mais estritos por ser alto risco.
+
+4. Extracção estruturada dos fatores de risco
+| Categoria | Variável | Valor |
+|---|---|---|
+| Fatores de Risco | Idade | 51 anos |
+| Fatores de Risco | Género | Feminino |
+| Fatores de Risco | Tabagismo | Não fumador |
+| Fatores de Risco | Hipertensão Arterial | desconhecido |
+| Fatores de Risco | Pressão Arterial Sistólica | 127 mmHg |
+| Fatores de Risco | Pressão Arterial Diastólica | 79 mmHg |
+| Fatores de Risco | Dislipidemia | Sim |
+| Fatores de Risco | Colesterol Total | 162 mg/dL |
+| Fatores de Risco | Colesterol HDL | 38 mg/dL |
+| Fatores de Risco | Triglicéridos | 199 mg/dL |
+| Fatores de Risco | Colesterol LDL | 84 mg/dL |
+| Fatores de Risco | Colesterol não HDL (se necessário calcular) | 124 mg/dL |
+| Fatores de Risco | Diabetes Mellitus | Não |
+| Modificadores de Risco | Pode selecionar mais do que um | Outro (especificar): Doença Renal Crónica (TFG 42 mL/min/1,73 m2) |
+
+5. 
+
+6. json file
+```json
+json_file ={
+  "Risco":{
+    "SCORE2 Aplicável": "Não",
+    "Exceção": "Doença Renal Crónica",
+    "Categoria": "Alto",
+    "SCORE2": "não aplicável",
+    "confiança": "Muito-Alta"
+  },
+  "Fatores de risco":{
+    "Idade":"51 anos",
+    "Género":"Feminino",
+    "Tabagismo":"Não fumador",
+    "Hipertensão Arterial":"desconhecido",
+    "Pressão Arterial Sistólica":"127 mmHg",
+    "Pressão Arterial Diastólica":"79 mmHg",
+    "Dislipidemia":"Sim",
+    "Colesterol Total":"162 mg/dL",
+    "Colesterol HDL":"38 mg/dL",
+    "Triglicéridos":"199 mg/dL",
+    "Colesterol LDL":"84 mg/dL",
+    "Colesterol não HDL":"124 mg/dL",
+    "Diabetes Mellitus":"Não"
+  },
+  "Modificadores de risco" : {
+    "Pode selecionar mais do que um": "Outro (especificar): Doença Renal Crónica (TFG 42 mL/min/1,73 m2)"
+  }
+}
+```
+
+###Vinheta 22. 
+1. Extração estruturada dos fatores de risco
+
+| Variável | Valor | Unidade |
+|---|---:|---|
+| Idade | 61 | anos |
+| Género | Masculino | — |
+| Tabagismo | desconhecido | — |
+| Pressão Arterial Sistólica | 131 | mmHg |
+| Colesterol Total | 136 | mg/dL |
+| Colesterol HDL | 38 | mg/dL |
+| Colesterol não HDL (se necessário calcular) | 98 | mg/dL |
+
+2. Estratificação de risco segundo recomendações da sociedade europeia de cardiologia 2021
+
+| SCORE2 Aplicável | Exceção (se não aplicável) | SCORE2 (%) | Categoria Risco | Grau de Confiança |
+|---|---|---|---|---|
+| Não | Doença Renal Crónica | não aplicável | Alto | Alta |
+
+3. Breve explicação clínica
+
+SCORE2 não é aplicável porque o doente tem doença renal crónica. Com TFG 42 mL/min/1,73 m2 (estádio G3b) e albuminúria 100 mg/g, é classificado como risco Alto pelas recomendações ESC 2021. Fatores favoráveis: pressão arterial controlada (131/78 mmHg), LDL 65 mg/dL em estatina, NT-proBNP baixo, prova de esforço não isquémica, atividade física regular. Tabagismo é desconhecido; confirmar é relevante. Manter otimização de HTA e dislipidemia e nefroproteção (IECA + SGLT2) é prioritário.
+
+4. Extracção estruturada dos fatores de risco
+
+| Categoria | Variável | Valor | Unidade |
+|---|---|---|---|
+| Fatores de Risco | Idade | 61 | anos |
+| Fatores de Risco | Género | Masculino | — |
+| Fatores de Risco | Tabagismo | desconhecido | — |
+| Fatores de Risco | Hipertensão Arterial | Sim | — |
+| Fatores de Risco | Pressão Arterial Sistólica | 131 | mmHg |
+| Fatores de Risco | Pressão Arterial Diastólica | 78 | mmHg |
+| Fatores de Risco | Dislipidemia | Sim | — |
+| Fatores de Risco | Colesterol Total | 136 | mg/dL |
+| Fatores de Risco | Colesterol HDL | 38 | mg/dL |
+| Fatores de Risco | Triglicéridos | 164 | mg/dL |
+| Fatores de Risco | Colesterol LDL | 65 | mg/dL |
+| Fatores de Risco | Colesterol não HDL (se necessário calcular) | 98 | mg/dL |
+| Fatores de Risco | Diabetes Mellitus | Não | — |
+| Modificadores de Risco | Valores | Outro (especificar): Doença Renal Crónica (TFG 42 mL/min/1,73 m2; microalbuminúria 100 mg/g) | — |
+
+6. Criação de um json file
+
+json_file = {
+  "Risco": {
+    "SCORE2 Aplicável": "Não",
+    "Exceção": "Doença Renal Crónica",
+    "Categoria": "Alto",
+    "SCORE2": "não aplicável",
+    "confiança": "Alta"
+  },
+  "Fatores de risco": {
+    "Idade": "61 anos",
+    "Género": "Masculino",
+    "Tabagismo": "desconhecido",
+    "Hipertensão Arterial": "Sim",
+    "Pressão Arterial Sistólica": "131 mmHg",
+    "Pressão Arterial Diastólica": "78 mmHg",
+    "Dislipidemia": "Sim",
+    "Colesterol Total": "136 mg/dL",
+    "Colesterol HDL": "38 mg/dL",
+    "Triglicéridos": "164 mg/dL",
+    "Colesterol LDL": "65 mg/dL",
+    "Colesterol não HDL (se necessário calcular)": "98 mg/dL",
+    "Diabetes Mellitus": "Não"
+  },
+  "Modificadores de risco": {
+    "Valores": "Outro (especificar): Doença Renal Crónica (TFG 42 mL/min/1,73 m2; microalbuminúria 100 mg/g)"
+  }
+}
+
+###Vinheta 23. 
+1. Extração estruturada dos fatores de risco
+
+| Variável                         | Valor | Unidade |
+|----------------------------------|-------|---------|
+| Idade                            | 59    | anos    |
+| Género                           | Feminino | —       |
+| Tabagismo                        | desconhecido | —       |
+| Pressão Arterial Sistólica       | 124   | mmHg    |
+| Colesterol Total                 | 176   | mg/dL   |
+| Colesterol HDL                   | 43    | mg/dL   |
+| Colesterol não HDL (se necessário calcular) | 133   | mg/dL   |
+
+
+2. Estratificação de risco segundo recomendações da sociedade europeia de cardiologia 2021 (2021 ESC Guidelines on cardiovascular disease prevention in clinical practice)
+
+| SCORE2 Aplicável | Exceção (se não  aplicável) | SCORE2 (%) | Categoria Risco | Grau de Confiança |
+|------------------|------------------------------|------------|------------------|-------------------|
+| Não              | Diabetes Mellitus            | não aplicável | Alto             | Alta              |
+
+
+3. Breve explicação clínica
+
+SCORE2 não se aplica por existir diabetes. Pela ESC 2021, a doente com diabetes tipo 2 há 5 anos, sem lesão de órgão-alvo e com pelo menos um fator de risco adicional (dislipidemia) é classificada como risco Alto. A pressão arterial está bem controlada e o tabagismo é desconhecido. O LDL-C é 100 mg/dL (colesterol não-HDL 133 mg/dL), acima das metas recomendadas para risco Alto, contribuindo para o risco residual. IMC 26 sugere excesso de peso, o que reforça a necessidade de intervenção no estilo de vida. Não há evidência de DAC/AVC/arteriopatia ou DRC; microalbuminúria ausente e TFG 70 mL/min/1,73 m². Ecocardiograma sem disfunção sistólica e teste de esforço sem isquemia.
+
+
+4. Extração estruturada dos fatores de risco
+
+| Categoria              | Variável                          | Valor         | Unidade |
+|-----------------------|-----------------------------------|---------------|---------|
+| Fatores de Risco      | Idade                             | 59            | anos    |
+| Fatores de Risco      | Género                            | Feminino      | —       |
+| Fatores de Risco      | Tabagismo                         | desconhecido  | —       |
+| Fatores de Risco      | Hipertensão Arterial              | Não           | —       |
+| Fatores de Risco      | Pressão Arterial Sistólica        | 124           | mmHg    |
+| Fatores de Risco      | Pressão Arterial Diastólica       | 74            | mmHg    |
+| Fatores de Risco      | Dislipidemia                      | Sim           | —       |
+| Fatores de Risco      | Colesterol Total                  | 176           | mg/dL   |
+| Fatores de Risco      | Colesterol HDL                    | 43            | mg/dL   |
+| Fatores de Risco      | Triglicéridos                     | 166           | mg/dL   |
+| Fatores de Risco      | Colesterol LDL                    | 100           | mg/dL   |
+| Fatores de Risco      | Colesterol não HDL (se necessário calcular) | 133           | mg/dL   |
+| Fatores de Risco      | Diabetes Mellitus                 | Sim           | —       |
+| Modificadores de Risco| Pode selecionar mais do que um    | desconhecido  | —       |
+
+
+6. Criação de um json file
+json_file ={
+"Risco":{"SCORE2 Aplicável":"Não","Exceção":"Diabetes Mellitus","Categoria":"Alto","SCORE2":"não aplicável","confiança":"Alta"},
+"Fatores de risco":{"Idade":"59 anos","Género":"Feminino","Tabagismo":"desconhecido","Hipertensão Arterial":"Não","Pressão Arterial Sistólica":"124 mmHg","Pressão Arterial Diastólica":"74 mmHg","Dislipidemia":"Sim","Colesterol Total":"176 mg/dL","Colesterol HDL":"43 mg/dL","Triglicéridos":"166 mg/dL","Colesterol LDL":"100 mg/dL","Colesterol não HDL":"133 mg/dL","Diabetes Mellitus":"Sim"},
+"Modificadores de risco":{"Pode selecionar mais do que um":"desconhecido"}
+}
+
+###Vinheta 24. 
+1) Extração estruturada dos fatores de risco (SCORE2)
+
+| Fator de Risco | Valor | Unidade |
+|---|---|---|
+| Idade | 59 | anos |
+| Género | Masculino | — |
+| Tabagismo | Ex-Fumador | — |
+| Pressão Arterial Sistólica | 134 | mmHg |
+| Colesterol Total | 187 | mg/dL |
+| Colesterol HDL | 45 | mg/dL |
+| Colesterol não HDL (se necessário calcular) | 142 | mg/dL |
+
+
+2) Estratificação de risco segundo ESC 2021 (país de risco moderado)
+
+| SCORE2 Aplicável | Exceção (se não  aplicável) | SCORE2 (%) | Categoria Risco | Grau de Confiança |
+|---|---|---|---|---|
+| Não | Diabetes Mellitus | não aplicável | Alto | Alta |
+
+
+3) Breve explicação clínica
+
+SCORE2 não aplicável devido a diabetes. Pela ESC 2021, o doente com DM2 sem lesão de órgão-alvo, duração <10 anos e com fatores adicionais (hipertensão, dislipidemia, excesso de peso; ex-tabagismo) é classificado como risco Alto. A pressão arterial está razoavelmente controlada (134/82 mmHg). Lipídico: LDL 106 mg/dL e não-HDL 142 mg/dL permanecem acima das metas para risco Alto (LDL <70 mg/dL). Triglicéridos 178 mg/dL elevam risco residual. Função renal preservada (TFG 75) e microalbuminúria negativa sugerem ausência de nefropatia. ECG/eco sem isquemia; IM ligeira sem impacto em risco aterosclerótico. Prioridade: otimizar LDL, reforçar estilo de vida e cessação sustentada do tabaco, sono/turnos.
+
+
+4) Extração estruturada dos fatores de risco e modificadores
+
+| Categoria | Variável | Valor |
+|---|---|---|
+| Fatores de Risco | Idade | 59 anos |
+| Fatores de Risco | Género | Masculino |
+| Fatores de Risco | Tabagismo | Ex-Fumador |
+| Fatores de Risco | Hipertensão Arterial | Sim |
+| Fatores de Risco | Pressão Arterial Sistólica | 134 mmHg |
+| Fatores de Risco | Pressão Arterial Diastólica | 82 mmHg |
+| Fatores de Risco | Dislipidemia | Sim |
+| Fatores de Risco | Colesterol Total | 187 mg/dL |
+| Fatores de Risco | Colesterol HDL | 45 mg/dL |
+| Fatores de Risco | Triglicéridos | 178 mg/dL |
+| Fatores de Risco | Colesterol LDL | 106 mg/dL |
+| Fatores de Risco | Colesterol não HDL (se necessário calcular) | 142 mg/dL |
+| Fatores de Risco | Diabetes Mellitus | Sim |
+| Modificadores de Risco | Pode selecionar mais do que um | Outro (especificar): Excesso de peso (IMC 29,8 kg/m2); Trabalho por turnos/Sono não reparador |
+| Modificadores de Risco | Score de Cálcio elevado | desconhecido |
+| Modificadores de Risco | Score de Cálcio = 0 | desconhecido |
+| Modificadores de Risco | Placas Carótidas | desconhecido |
+| Modificadores de Risco | Obesidade | Não |
+| Modificadores de Risco | Pre-Diabetes | Não |
+| Modificadores de Risco | História Familiar de doença cardiovascular aterosclerótica | desconhecido |
+| Modificadores de Risco | Lp (a) aumentada | desconhecido |
+| Modificadores de Risco | Rigidez Arterial aumentada | desconhecido |
+| Modificadores de Risco | PCR alta sensibilidade elevada | desconhecido |
+| Modificadores de Risco | Doença Inflamatória Crónica | desconhecido |
+| Modificadores de Risco | Infecção HIV | desconhecido |
+| Modificadores de Risco | Sindrome Apneia Obstrutiva do Sono | desconhecido |
+| Modificadores de Risco | Esteatose Hepática Não Alcoólica | desconhecido |
+| Modificadores de Risco | Disfunção erétil | desconhecido |
+| Modificadores de Risco | Menopausa precoce | não aplicável |
+| Modificadores de Risco | Antecedentes de Gravidez com complicações (Pre-eclampsia, Hipertensão arterial ou diabetes) | não aplicável |
+| Modificadores de Risco | Doença pulmonar obstrutiva crónica (DPOC) | desconhecido |
+| Modificadores de Risco | Cancro | desconhecido |
+
+
+6) json file
+
+json_file ={
+"Risco": {"SCORE2 Aplicável": "Não", "Exceção": "Diabetes Mellitus", "Categoria": "Alto", "SCORE2": "não aplicável", "confiança": "Alta"},
+"Fatores de risco": {
+"Idade": "59 anos",
+"Género": "Masculino",
+"Tabagismo": "Ex-Fumador",
+"Hipertensão Arterial": "Sim",
+"Pressão Arterial Sistólica": "134 mmHg",
+"Pressão Arterial Diastólica": "82 mmHg",
+"Dislipidemia": "Sim",
+"Colesterol Total": "187 mg/dL",
+"Colesterol HDL": "45 mg/dL",
+"Triglicéridos": "178 mg/dL",
+"Colesterol LDL": "106 mg/dL",
+"Colesterol não HDL (se necessário calcular)": "142 mg/dL",
+"Diabetes Mellitus": "Sim"
+},
+"Modificadores de risco": {
+"Pode selecionar mais do que um": "Outro (especificar): Excesso de peso (IMC 29,8 kg/m2); Trabalho por turnos/Sono não reparador",
+"Score de Cálcio elevado": "desconhecido",
+"Score de Cálcio = 0": "desconhecido",
+"Placas Carótidas": "desconhecido",
+"Obesidade": "Não",
+"Pre-Diabetes": "Não",
+"História Familiar de doença cardiovascular aterosclerótica": "desconhecido",
+"Lp (a) aumentada": "desconhecido",
+"Rigidez Arterial aumentada": "desconhecido",
+"PCR alta sensibilidade elevada": "desconhecido",
+"Doença Inflamatória Crónica": "desconhecido",
+"Infecção HIV": "desconhecido",
+"Sindrome Apneia Obstrutiva do Sono": "desconhecido",
+"Esteatose Hepática Não Alcoólica": "desconhecido",
+"Disfunção erétil": "desconhecido",
+"Menopausa precoce": "não aplicável",
+"Antecedentes de Gravidez com complicações (Pre-eclampsia, Hipertensão arterial ou diabetes)": "não aplicável",
+"Doença pulmonar obstrutiva crónica (DPOC)": "desconhecido",
+"Cancro": "desconhecido"
+}
+}
+
+###Vinheta 25. 
+1. Extração estruturada dos fatores de risco
+
+| Fator de Risco                              | Valor | Unidade |
+|---------------------------------------------|-------|---------|
+| Idade                                       | 65    | anos    |
+| Género                                      | Feminino |         |
+| Tabagismo                                   | desconhecido |         |
+| Pressão Arterial Sistólica                  | 138   | mmHg    |
+| Colesterol Total                            | 165   | mg/dL   |
+| Colesterol HDL                              | 51    | mg/dL   |
+| Colesterol não HDL (se necessário calcular) | 114   | mg/dL   |
+
+
+2. Estratificação de risco segundo recomendações ESC 2021
+
+| SCORE2 Aplicável | Exceção (se não  aplicável)                    | SCORE2 (%)     | Categoria Risco | Grau de Confiança |
+|------------------|--------------------------------------------------|----------------|------------------|-------------------|
+| Não              | Diabetes Mellitus; Doença Renal Crónica         | não aplicável  | Muito-Alto       | Muito-Alta        |
+
+
+3. Breve explicação clínica
+
+SCORE2 não é aplicável por diabetes tipo 2 e doença renal crónica. A presença de microalbuminúria (103 mg/g) configura dano de órgão-alvo, o que coloca a doente na categoria de risco Muito-Alto pelas recomendações ESC 2021. Outros contributos: idade 65 anos, hipertensão conhecida (PA 138/75 mmHg), dislipidemia (LDL 79 mg/dL, não-HDL 114 mg/dL) e sedentarismo com excesso de peso (IMC 28,8). Remodelagem concêntrica do VE e dilatação auricular esquerda sugerem repercussão cardíaca da HTA. Em prevenção, impõe-se otimização intensiva de fatores de risco, com metas lipídicas e tensional mais estritas e promoção de atividade física adaptada à dor articular.
+
+
+4. Extracção estruturada dos fatores de risco
+
+| Categoria           | Variável                               | Valor                                   |
+|--------------------|-----------------------------------------|-----------------------------------------|
+| Fatores de Risco   | Idade                                   | 65 anos                                 |
+| Fatores de Risco   | Género                                  | Feminino                                |
+| Fatores de Risco   | Tabagismo                               | desconhecido                            |
+| Fatores de Risco   | Hipertensão Arterial                    | Sim                                     |
+| Fatores de Risco   | Pressão Arterial Sistólica              | 138 mmHg                                |
+| Fatores de Risco   | Pressão Arterial Diastólica             | 75 mmHg                                 |
+| Fatores de Risco   | Dislipidemia                            | Sim                                     |
+| Fatores de Risco   | Colesterol Total                        | 165 mg/dL                               |
+| Fatores de Risco   | Colesterol HDL                          | 51 mg/dL                                |
+| Fatores de Risco   | Triglicéridos                           | 173 mg/dL                               |
+| Fatores de Risco   | Colesterol LDL                          | 79 mg/dL                                |
+| Fatores de Risco   | Colesterol não HDL (se necessário calcular) | 114 mg/dL                           |
+| Fatores de Risco   | Diabetes Mellitus                       | Sim                                     |
+| Modificadores de Risco | Pode selecionar mais do que um          | Outro (especificar): Excesso de peso (IMC 28,8); Sedentarismo (<5.000 passos/dia); Microalbuminúria 103 mg/g; Doença Renal Crónica (TFG 57 mL/min/1,73 m2); Remodelagem concêntrica do VE; Dilatação ligeira da aurícula esquerda; Baixa capacidade funcional |
+
+
+6. json file
+
+```json
+{
+  "Risco": {
+    "SCORE2 Aplicável": "Não",
+    "Exceção": "Diabetes Mellitus; Doença Renal Crónica",
+    "Categoria": "Muito-Alto",
+    "SCORE2": "não aplicável",
+    "confiança": "Muito-Alta"
+  },
+  "Fatores de risco": {
+    "Idade": "65 anos",
+    "Género": "Feminino",
+    "Tabagismo": "desconhecido",
+    "Hipertensão Arterial": "Sim",
+    "Pressão Arterial Sistólica": "138 mmHg",
+    "Pressão Arterial Diastólica": "75 mmHg",
+    "Dislipidemia": "Sim",
+    "Colesterol Total": "165 mg/dL",
+    "Colesterol HDL": "51 mg/dL",
+    "Triglicéridos": "173 mg/dL",
+    "Colesterol LDL": "79 mg/dL",
+    "Colesterol não HDL (se necessário calcular)": "114 mg/dL",
+    "Diabetes Mellitus": "Sim"
+  },
+  "Modificadores de risco": {
+    "Outro (especificar)": "Excesso de peso (IMC 28,8); Sedentarismo (<5.000 passos/dia); Microalbuminúria 103 mg/g; Doença Renal Crónica (TFG 57 mL/min/1,73 m2); Remodelagem concêntrica do VE; Dilatação ligeira da aurícula esquerda; Baixa capacidade funcional"
+  }
+}
+```
+
+###Vinheta 26. 
+1. Extração estruturada dos fatores de risco
+
+| Fator de Risco                           | Valor | Unidade |
+|------------------------------------------|-------|---------|
+| Idade                                    | 36    | anos    |
+| Género                                   | Masculino | -       |
+| Tabagismo                                | Não fumador | -       |
+| Pressão Arterial Sistólica               | 134   | mmHg    |
+| Colesterol Total                         | 336   | mg/dL   |
+| Colesterol HDL                           | 45    | mg/dL   |
+| Colesterol não HDL (se necessário calcular) | 291   | mg/dL   |
+
+
+2. Estratificação de risco segundo ESC 2021
+
+| SCORE2 Aplicável | Exceção (se não  aplicável) | SCORE2 (%) | Categoria Risco | Grau de Confiança |
+|------------------|------------------------------|------------|-----------------|-------------------|
+| Não              | Dislipidemia Familiar (heterozigótica, mutação LDLR) | desconhecido | Alto            | Muito-Alta        |
+
+
+3. Breve explicação clínica
+
+Homem de 36 anos com hipercolesterolémia familiar heterozigótica confirmada (LDL 258 mg/dL; CT 336 mg/dL) e forte história familiar de doença cardiovascular prematura. Apesar de não fumar e não ter diabetes, apresenta excesso ponderal (IMC 27,7), triglicéridos elevados e sedentarismo. A pressão arterial é limítrofe (134/87 mmHg), sem diagnóstico de hipertensão. De acordo com as ESC 2021, a presença de dislipidemia familiar constitui exceção ao uso do SCORE2 e classifica o doente, na ausência de ASCVD/DM/DRC, como de risco Alto, independentemente do risco a 10 anos. O LDL muito elevado e a história familiar são os principais determinantes desta classificação.
+
+
+4. Extracção estruturada dos fatores de risco
+
+| Categoria             | Variável                                 | Valor                                   | Unidade |
+|----------------------|-------------------------------------------|-----------------------------------------|---------|
+| Fatores de Risco     | Idade                                     | 36                                      | anos    |
+| Fatores de Risco     | Género                                    | Masculino                               | -       |
+| Fatores de Risco     | Tabagismo                                 | Não fumador                             | -       |
+| Fatores de Risco     | Hipertensão Arterial                      | Não                                     | -       |
+| Fatores de Risco     | Pressão Arterial Sistólica                | 134                                     | mmHg    |
+| Fatores de Risco     | Pressão Arterial Diastólica               | 87                                      | mmHg    |
+| Fatores de Risco     | Dislipidemia                              | Sim                                     | -       |
+| Fatores de Risco     | Colesterol Total                          | 336                                     | mg/dL   |
+| Fatores de Risco     | Colesterol HDL                            | 45                                      | mg/dL   |
+| Fatores de Risco     | Triglicéridos                             | 164                                     | mg/dL   |
+| Fatores de Risco     | Colesterol LDL                            | 258                                     | mg/dL   |
+| Fatores de Risco     | Colesterol não HDL (se necessário calcular) | 291                                     | mg/dL   |
+| Fatores de Risco     | Diabetes Mellitus                         | Não                                     | -       |
+| Modificadores de Risco | Pode selecionar mais do que um            | História Familiar de doença cardiovascular aterosclerótica; Outro (especificar): Sedentarismo; Outro (especificar): Excesso ponderal (IMC 27,7); Outro (especificar): Sono insuficiente (6 h/noite) | -       |
+
+
+6. Criação de um json file
+
+```json
+{
+  "Risco": {
+    "SCORE2 Aplicável": "Não",
+    "Exceção": "Dislipidemia Familiar (heterozigótica, mutação LDLR)",
+    "Categoria": "Alto",
+    "SCORE2": "desconhecido",
+    "confiança": "Muito-Alta"
+  },
+  "Fatores de risco": {
+    "Idade": "36 anos",
+    "Género": "Masculino",
+    "Tabagismo": "Não fumador",
+    "Hipertensão Arterial": "Não",
+    "Pressão Arterial Sistólica": "134 mmHg",
+    "Pressão Arterial Diastólica": "87 mmHg",
+    "Dislipidemia": "Sim",
+    "Colesterol Total": "336 mg/dL",
+    "Colesterol HDL": "45 mg/dL",
+    "Triglicéridos": "164 mg/dL",
+    "Colesterol LDL": "258 mg/dL",
+    "Colesterol não HDL": "291 mg/dL",
+    "Diabetes Mellitus": "Não"
+  },
+  "Modificadores de Risco": {
+    "FactorM1": "História Familiar de doença cardiovascular aterosclerótica",
+    "FactorM2": "Outro (especificar): Sedentarismo; Excesso ponderal (IMC 27,7); Sono insuficiente (6 h/noite)"
+  }
+}
+```
+
+###Vinheta 27. 
+1) Extração estruturada dos fatores de risco
+
+| Fator de Risco | Valor | Unidade |
+|---|---:|---|
+| Idade | 61 | anos |
+| Género | Feminino | — |
+| Tabagismo | desconhecido | — |
+| Pressão Arterial Sistólica | 124 | mmHg |
+| Colesterol Total | 199 | mg/dL |
+| Colesterol HDL | 54 | mg/dL |
+| Colesterol não HDL (se necessário calcular) | 145 | mg/dL |
+
+
+2) Estratificação de risco segundo recomendações ESC 2021
+
+| SCORE2 Aplicável | Exceção (se não  aplicável) | SCORE2 (%) | Categoria Risco | Grau de Confiança |
+|---|---|---|---|---|
+| Não | Doença Cardiovascular Aterosclerótica | desconhecido | Muito-Alto | Muito-Alta |
+
+
+3) Breve explicação clínica
+
+A presença de doença coronária aterosclerótica documentada na angioTC (oclusão da coronária direita média e placas não obstrutivas noutras artérias) coloca a doente em prevenção secundária e, pelas ESC 2021, na categoria de risco muito-alto, independentemente do SCORE2. O score de cálcio 186 (>P75) reforça risco aterosclerótico aumentado. Pressão arterial está controlada (124/75 mmHg) e não há diabetes. O LDL é 87 mg/dL, acima da meta recomendada em prevenção secundária (<55 mg/dL e redução ≥50%), constituindo alvo terapêutico prioritário. Tabagismo atual é incerto, mas história de 10 UMA sugere exposição relevante. 
+
+4) Extracção estruturada dos fatores de risco
+
+| Categoria | Variável | Valor | Unidade |
+|---|---|---|---|
+| Fatores de Risco | Idade | 61 | anos |
+| Fatores de Risco | Género | Feminino | — |
+| Fatores de Risco | Tabagismo | desconhecido | — |
+| Fatores de Risco | Hipertensão Arterial | Não | — |
+| Fatores de Risco | Pressão Arterial Sistólica | 124 | mmHg |
+| Fatores de Risco | Pressão Arterial Diastólica | 75 | mmHg |
+| Fatores de Risco | Dislipidemia | desconhecido | — |
+| Fatores de Risco | Colesterol Total | 199 | mg/dL |
+| Fatores de Risco | Colesterol HDL | 54 | mg/dL |
+| Fatores de Risco | Triglicéridos | 87 | mg/dL |
+| Fatores de Risco | Colesterol LDL | 87 | mg/dL |
+| Fatores de Risco | Colesterol não HDL (se necessário calcular) | 145 | mg/dL |
+| Fatores de Risco | Diabetes Mellitus | Não | — |
+| Modificadores de Risco | Modificadores de Risco | Score de Cálcio elevado; Outro (especificar): Doença coronária aterosclerótica documentada na angioTC (oclusão da coronária direita média; placas não obstrutivas) | — |
+
+
+json_file = {
+"Risco": {"SCORE2 Aplicável": "Não", "Exceção": "Doença Cardiovascular Aterosclerótica", "Categoria": "Muito-Alto", "SCORE2": "desconhecido", "confiança": "Muito-Alta"},
+"Fatores de risco": {"Idade": "61 anos", "Género": "Feminino", "Tabagismo": "desconhecido", "Pressão Arterial Sistólica": "124 mmHg", "Colesterol Total": "199 mg/dL", "Colesterol HDL": "54 mg/dL", "Colesterol não HDL": "145 mg/dL"},
+"Modificadores de risco": {"Score de Cálcio elevado": "sim", "Outro (especificar)": "Doença coronária aterosclerótica documentada na angioTC (oclusão CD média; placas <50%)"}
+}
+
+###Vinheta 28. 
+1. Extração estruturada dos fatores de risco
+
+| Fator de Risco | Valor | Unidade |
+|---|---:|:---|
+| Idade | 51 | anos |
+| Género | Masculino |  |
+| Tabagismo | Ex-Fumador |  |
+| Pressão Arterial Sistólica | 118 | mmHg |
+| Colesterol Total | 136 | mg/dL |
+| Colesterol HDL | 46 | mg/dL |
+| Colesterol não HDL (se necessário calcular) | 90 | mg/dL |
+
+
+2. Estratificação de risco segundo recomendações da sociedade europeia de cardiologia 2021 (2021 ESC Guidelines on cardiovascular disease prevention in clinical practice)
+
+| SCORE2 Aplicável | Exceção (se não  aplicável) | SCORE2 (%) | Categoria Risco | Grau de Confiança |
+|---|---|---|---|---|
+| Não | Doença Cardiovascular Aterosclerótica | não aplicável | Muito-Alto | Muito-Alta |
+
+
+3. Breve explicação clínica
+
+O SCORE2 não se aplica porque há doença cardiovascular aterosclerótica estabelecida (enfarte do miocárdio aos 49 anos), o que coloca automaticamente o doente em risco muito‑alto. Apesar de PA controlada e ausência de sintomas, persistem fatores relevantes: sexo masculino, ex‑tabagismo pesado (40 UMAs), sedentarismo e dislipidemia. O LDL-C é 70 mg/dL, acima da meta para risco muito‑alto (<55 mg/dL e redução ≥50%). Recomenda-se otimização terapêutica hipolipemiante e reforço de estilo de vida (atividade física regular, cessação sustentada do tabaco, dieta cardioprotetora). Provas funcionais recentes são tranquilizadoras, mas não alteram a estratificação de risco secundário.
+
+
+4. Extracção estruturada dos fatores de risco
+
+| Categoria | Variável | Valor | Unidade |
+|---|---|---|:---|
+| Fatores de Risco | Idade | 51 | anos |
+| Fatores de Risco | Género | Masculino |  |
+| Fatores de Risco | Tabagismo | Ex-Fumador |  |
+| Fatores de Risco | Hipertensão Arterial | Não |  |
+| Fatores de Risco | Pressão Arterial Sistólica | 118 | mmHg |
+| Fatores de Risco | Pressão Arterial Diastólica | 67 | mmHg |
+| Fatores de Risco | Dislipidemia | Sim |  |
+| Fatores de Risco | Colesterol Total | 136 | mg/dL |
+| Fatores de Risco | Colesterol HDL | 46 | mg/dL |
+| Fatores de Risco | Triglicéridos | 99 | mg/dL |
+| Fatores de Risco | Colesterol LDL | 70 | mg/dL |
+| Fatores de Risco | Colesterol não HDL (se necessário calcular) | 90 | mg/dL |
+| Fatores de Risco | Diabetes Mellitus | Não |  |
+| Modificadores de Risco | Pode selecionar mais do que um | desconhecido |  |
+
+
+6. Criação de um json file
+
+json_file ={
+"Risco":{"SCORE2 Aplicável":"Não","Exceção":"Doença Cardiovascular Aterosclerótica","Categoria":"Muito-Alto","SCORE2":"não aplicável","confiança":"Muito-Alta"},
+"Fatores de risco":{"Idade":"51 anos","Género":"Masculino","Tabagismo":"Ex-Fumador","Hipertensão Arterial":"Não","Pressão Arterial Sistólica":"118 mmHg","Pressão Arterial Diastólica":"67 mmHg","Dislipidemia":"Sim","Colesterol Total":"136 mg/dL","Colesterol HDL":"46 mg/dL","Triglicéridos":"99 mg/dL","Colesterol LDL":"70 mg/dL","Colesterol não HDL":"90 mg/dL","Diabetes Mellitus":"Não"},
+"Modificadores de risco":{"Selecionados":"desconhecido"}
+}
+
+###Vinheta 29. 
+1. Extração estruturada dos fatores de risco
+
+| Fator de Risco | Valor | Unidade |
+|---|---:|---|
+| Idade | 63 | anos |
+| Género | Feminino | — |
+| Tabagismo | Ex-Fumador | — |
+| Pressão Arterial Sistólica | 114 | mmHg |
+| Colesterol Total | 149 | mg/dL |
+| Colesterol HDL | 53 | mg/dL |
+| Colesterol não HDL (se necessário calcular) | 96 | mg/dL |
+
+
+2. Estratificação de risco segundo recomendações da sociedade europeia de cardiologia 2021 (2021 ESC Guidelines on cardiovascular disease prevention in clinical practice)
+
+| SCORE2 Aplicável | Exceção (se não aplicável) | SCORE2 (%) | Categoria Risco | Grau de Confiança |
+|---|---|---:|---|---|
+| Não | Doença Cardiovascular Aterosclerótica (status pós-angioplastia coronária) | não aplicável | Muito-Alto | Muito-Alta |
+
+
+3. Breve explicação clínica
+
+A presença de doença coronária estabelecida (angioplastia na circunflexa) coloca a doente em prevenção secundária e, pelas ESC 2021, em risco cardiovascular muito-alto, tornando o SCORE2 não aplicável. Fatores favoráveis atuais incluem pressão arterial normal (114/66 mmHg), cessação tabágica há 2 anos e perfil lipídico controlado com terapêutica (LDL 80 mg/dL). Apesar de bom controlo, na prevenção secundária a meta habitual de LDL é mais estrita (<55 mg/dL, e redução ≥50%), justificando manutenção/otimização da terapêutica. Ausência de diabetes e triglicéridos normais também reduzem risco residual.
+
+
+4. Extracção estruturada dos fatores de risco
+
+| Categoria | Variável | Valor | Unidade |
+|---|---|---|---|
+| Fatores de Risco | Idade | 63 | anos |
+| Fatores de Risco | Género | Feminino | — |
+| Fatores de Risco | Tabagismo | Ex-Fumador | — |
+| Fatores de Risco | Hipertensão Arterial | desconhecido | — |
+| Fatores de Risco | Pressão Arterial Sistólica | 114 | mmHg |
+| Fatores de Risco | Pressão Arterial Diastólica | 66 | mmHg |
+| Fatores de Risco | Dislipidemia | desconhecido | — |
+| Fatores de Risco | Colesterol Total | 149 | mg/dL |
+| Fatores de Risco | Colesterol HDL | 53 | mg/dL |
+| Fatores de Risco | Triglicéridos | 82 | mg/dL |
+| Fatores de Risco | Colesterol LDL | 80 | mg/dL |
+| Fatores de Risco | Colesterol não HDL (se necessário calcular) | 96 | mg/dL |
+| Fatores de Risco | Diabetes Mellitus | Não | — |
+| Modificadores de Risco | Pode selecionar mais do que um | desconhecido | — |
+
+
+6. Criação de um json file
+
+```json
+{
+  "Risco": {
+    "SCORE2 Aplicável": "Não",
+    "Exceção": "Doença Cardiovascular Aterosclerótica",
+    "Categoria": "Muito-Alto",
+    "SCORE2": "não aplicável",
+    "confiança": "Muito-Alta"
+  },
+  "Fatores de risco": {
+    "Idade": "63 anos",
+    "Género": "Feminino",
+    "Tabagismo": "Ex-Fumador",
+    "Hipertensão Arterial": "desconhecido",
+    "Pressão Arterial Sistólica": "114 mmHg",
+    "Pressão Arterial Diastólica": "66 mmHg",
+    "Dislipidemia": "desconhecido",
+    "Colesterol Total": "149 mg/dL",
+    "Colesterol HDL": "53 mg/dL",
+    "Triglicéridos": "82 mg/dL",
+    "Colesterol LDL": "80 mg/dL",
+    "Colesterol não HDL (se necessário calcular)": "96 mg/dL",
+    "Diabetes Mellitus": "Não"
+  },
+  "Modificadores de risco": {
+    "Pode selecionar mais do que um": "desconhecido"
+  }
+}
+```
+
+###Vinheta 30. 
+1. Extração estruturada dos fatores de risco
+
+| Fator de Risco                                      | Valor | Unidade |
+|-----------------------------------------------------|-------|---------|
+| Idade                                               | 64    | anos    |
+| Género                                              | Masculino | —       |
+| Tabagismo                                           | Ex-Fumador | —       |
+| Pressão Arterial Sistólica                          | 138   | mmHg    |
+| Colesterol Total                                    | 165   | mg/dL   |
+| Colesterol HDL                                      | 52    | mg/dL   |
+| Colesterol não HDL (se necessário calcular)         | 113   | mg/dL   |
+
+
+2. Estratificação de risco segundo ESC 2021
+
+| SCORE2 Aplicável | Exceção (se não  aplicável)                         | SCORE2 (%)    | Categoria Risco | Grau de Confiança |
+|------------------|------------------------------------------------------|---------------|-----------------|-------------------|
+| Não              | Doença Cardiovascular Aterosclerótica (AVC isquémico prévio) | não aplicável | Muito-Alto      | Muito-Alta        |
+
+
+3. Breve explicação clínica
+
+SCORE2 não é aplicável por existir doença cardiovascular aterosclerótica estabelecida (AVC isquémico há 3 meses), o que coloca o doente em risco muito-alto. Fatores adicionais que agravam o risco: sexo masculino, 64 anos, hipertensão arterial (PAS 138 mmHg), dislipidemia (TG 209 mg/dL; ApoB 83 mg/dL; LDL 71 mg/dL acima da meta para muito-alto risco), excesso de peso (IMC 28,7), sedentarismo e pré-diabetes (HbA1c 6,4%; glicémia 112 mg/dL). Remodelação concêntrica do VE e dilatação grave da AE sugerem lesão de órgão-alvo da HTA, reforçando o risco.
+
+
+4. Extracção estruturada dos fatores de risco
+
+| Categoria            | Variável                                    | Valor                                   | Unidade |
+|---------------------|---------------------------------------------|-----------------------------------------|---------|
+| Fatores de Risco    | Idade                                       | 64                                      | anos    |
+| Fatores de Risco    | Género                                      | Masculino                               | —       |
+| Fatores de Risco    | Tabagismo                                   | Ex-Fumador                              | —       |
+| Fatores de Risco    | Hipertensão Arterial                        | Sim                                     | —       |
+| Fatores de Risco    | Pressão Arterial Sistólica                  | 138                                     | mmHg    |
+| Fatores de Risco    | Pressão Arterial Diastólica                 | 81                                      | mmHg    |
+| Fatores de Risco    | Dislipidemia                                | Sim                                     | —       |
+| Fatores de Risco    | Colesterol Total                            | 165                                     | mg/dL   |
+| Fatores de Risco    | Colesterol HDL                              | 52                                      | mg/dL   |
+| Fatores de Risco    | Triglicéridos                               | 209                                     | mg/dL   |
+| Fatores de Risco    | Colesterol LDL                              | 71                                      | mg/dL   |
+| Fatores de Risco    | Colesterol não HDL (se necessário calcular) | 113                                     | mg/dL   |
+| Fatores de Risco    | Diabetes Mellitus                           | Não                                     | —       |
+| Modificadores de Risco | Pode selecionar mais do que um           | Pre-Diabetes; Outro (especificar): Sedentarismo; Excesso de peso (IMC 28,7); Remodelling concêntrico do ventrículo esquerdo; Dilatação grave da aurícula esquerda; Triglicéridos elevados (209 mg/dL); ApoB 83 mg/dL | —       |
+
+
+6. Criação de um json file
+
+json_file ={
+"Risco":{"SCORE2 Aplicável":"Não","Exceção":"Doença Cardiovascular Aterosclerótica (AVC isquémico prévio)","Categoria":"Muito-Alto","SCORE2":"não aplicável","confiança":"Muito-Alta"},
+"Fatores de risco":{"Idade":"64","Género":"Masculino","Tabagismo":"Ex-Fumador","Hipertensão Arterial":"Sim","Pressão Arterial Sistólica":"138","Pressão Arterial Diastólica":"81","Dislipidemia":"Sim","Colesterol Total":"165","Colesterol HDL":"52","Triglicéridos":"209","Colesterol LDL":"71","Colesterol não HDL (se necessário calcular)":"113","Diabetes Mellitus":"Não"},
+"Modificadores de risco":{"Pre-Diabetes":"Sim","Outro (especificar)":"Sedentarismo; Excesso de peso (IMC 28,7); Remodelling concêntrico do ventrículo esquerdo; Dilatação grave da aurícula esquerda; Triglicéridos elevados (209 mg/dL); ApoB 83 mg/dL"}
+}
+

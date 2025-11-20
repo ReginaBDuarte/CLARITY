@@ -1,0 +1,841 @@
+{
+  "Vinheta 1": {
+    "Risk": {
+      "SCORE2 Applicable": "Yes",
+      "Exception": "Not Applicable",
+      "Category": "Low-to-Moderate",
+      "SCORE2": "1%",
+      "Confidence Level": "Very High"
+    },
+    "Risk Factors": {
+      "Age": "44 years",
+      "Gender": "Male",
+      "Smoking": "Non-smoker",
+      "Arterial Hypertension": "No",
+      "Systolic Blood Pressure": "114 mmHg",
+      "Diastolic Blood Pressure": "72 mmHg",
+      "Dyslipidemia": "No",
+      "Total Cholesterol": "183 mg/dL",
+      "HDL-Cholesterol": "55 mg/dL",
+      "Triglycerides": "88 mg/dL",
+      "LDL-Cholesterol": "110 mg/dL",
+      "non-HDL Cholesterol": "128 mg/dL",
+      "Diabetes Mellitus": "No"
+    },
+    "Risk Modifiers": {
+      "More than one can be selected": "Other (specify): Predominantly sedentary"
+    }
+  },
+  "Vinheta 2": {
+    "Risk": {
+      "SCORE2 Applicable": "Yes",
+      "Exception": "Not applicable",
+      "Category": "Low-to-Moderate",
+      "SCORE2": "1,1",
+      "Confidence Level": "High"
+    },
+    "Risk Factors": {
+      "Age": "40 years",
+      "Gender": "Female",
+      "Smoking": "Smoker",
+      "Arterial Hypertension": "No",
+      "Systolic Blood Pressure": "124 mmHg",
+      "Diastolic Blood Pressure": "75 mmHg",
+      "Dyslipidemia": "No",
+      "Total Cholesterol": "190 mg/dL",
+      "HDL-Cholesterol": "67 mg/dL",
+      "Triglycerides": "90 mg/dL",
+      "LDL-Cholesterol": "105 mg/dL",
+      "non-HDL Cholesterol": "123 mg/dL",
+      "Diabetes Mellitus": "No"
+    },
+    "Risk Modifiers": {
+      "More than one can be selected": "unknown"
+    }
+  },
+  "Vinheta 3": {
+    "Risk": {
+      "SCORE2 Applicable": "No",
+      "Exception": "Chronic Kidney Disease (eGFR < 60 mL/min/1,73m²)",
+      "Category": "High",
+      "SCORE2": "Not Applicable",
+      "Confidence Level": "Very High"
+    },
+    "Risk Factors": {
+      "Age": "58 years",
+      "Gender": "Female",
+      "Smoking": "Non-smoker",
+      "Arterial Hypertension": "No",
+      "Systolic Blood Pressure": "122 mmHg",
+      "Diastolic Blood Pressure": "77 mmHg",
+      "Dyslipidemia": "No",
+      "Total Cholesterol": "164 mg/dL",
+      "HDL-Cholesterol": "47 mg/dL",
+      "Triglycerides": "62 mg/dL",
+      "LDL-Cholesterol": "105 mg/dL",
+      "non-HDL Cholesterol": "117 mg/dL",
+      "Diabetes Mellitus": "No"
+    },
+    "Risk Modifiers": {
+      "Modifiers": "Calcium Score = 0; Obesity"
+    }
+  },
+  "Vinheta 4": {
+    "Risk": {
+      "SCORE2 Applicable": "Yes",
+      "Exception": "Not applicable",
+      "Category": "Low-to-Moderate",
+      "SCORE2": "3%",
+      "Confidence Level": "High"
+    },
+    "Risk Factors": {
+      "Age": "54 years",
+      "Gender": "Male",
+      "Smoking": "Non-smoker",
+      "Arterial Hypertension": "No",
+      "Systolic Blood Pressure": "118 mmHg",
+      "Diastolic Blood Pressure": "60 mmHg",
+      "Dyslipidemia": "No",
+      "Total Cholesterol": "183 mg/dL",
+      "HDL-Cholesterol": "55 mg/dL",
+      "Triglycerides": "88 mg/dL",
+      "LDL-Cholesterol": "110 mg/dL",
+      "non-HDL Cholesterol": "128 mg/dL",
+      "Diabetes Mellitus": "No"
+    },
+    "Risk Modifiers": {
+      "More than one can be selected": "Family History of atherosclerotic cardiovascular disease (ASCVD); Other (Sedentary lifestyle)"
+    }
+  },
+  "Vinheta 5": {
+    "Risk": {
+      "SCORE2 Applicable": "Yes",
+      "Exception": "Not Applicable",
+      "Category": "Low-to-Moderate",
+      "SCORE2": "3,5",
+      "Confidence Level": "High"
+    },
+    "Risk Factors": {
+      "Age": "63",
+      "Gender": "Female",
+      "Smoking": "Non-smoker",
+      "Arterial Hypertension": "No",
+      "Systolic Blood Pressure": "107",
+      "Diastolic Blood Pressure": "58",
+      "Dyslipidemia": "Yes",
+      "Total Cholesterol": "214",
+      "HDL-Cholesterol": "67",
+      "Triglycerides": "124",
+      "LDL-Cholesterol": "122",
+      "non-HDL Cholesterol": "147",
+      "Diabetes Mellitus": "No"
+    },
+    "Risk Modifiers": {
+      "Other": "Atrial Fibrillation; Mild Left Atrial Enlargement"
+    }
+  },
+  "Vinheta 6": {
+    "Risk": {
+      "SCORE2 Applicable": "Yes",
+      "Exception": "Not applicable",
+      "Category": "High",
+      "SCORE2": "4",
+      "Confidence Level": "High"
+    },
+    "Risk Factors": {
+      "Age": "41 years",
+      "Gender": "Female",
+      "Smoking": "Smoker",
+      "Arterial Hypertension": "Yes",
+      "Systolic Blood Pressure": "146 mmHg",
+      "Diastolic Blood Pressure": "85 mmHg",
+      "Dyslipidemia": "Yes",
+      "Total Cholesterol": "270 mg/dL",
+      "HDL-Cholesterol": "53 mg/dL",
+      "Triglycerides": "142 mg/dL",
+      "LDL-Cholesterol": "189 mg/dL",
+      "non-HDL Cholesterol": "217 mg/dL",
+      "Diabetes Mellitus": "No"
+    },
+    "Risk Modifiers": {
+      "Pre-Diabetes": "Yes",
+      "Other": "Concentric left ventricular remodeling; Mild left atrial dilation"
+    }
+  },
+  "Vinheta 7": {
+    "Risk": {
+      "SCORE2 Applicable": "Yes",
+      "Exception": "N/A",
+      "Category": "High",
+      "SCORE2": "6,6%",
+      "Confidence Level": "High"
+    },
+    "Risk Factors": {
+      "Age": "48 years",
+      "Gender": "Male",
+      "Smoking": "Non-smoker",
+      "Arterial Hypertension": "Yes",
+      "Systolic Blood Pressure": "161 mmHg",
+      "Diastolic Blood Pressure": "102 mmHg",
+      "Dyslipidemia": "Yes",
+      "Total Cholesterol": "231 mg/dL",
+      "HDL-Cholesterol": "43 mg/dL",
+      "Triglycerides": "197 mg/dL",
+      "LDL-Cholesterol": "149 mg/dL",
+      "non-HDL Cholesterol": "188 mg/dL",
+      "Diabetes Mellitus": "No"
+    },
+    "Risk Modifiers": {
+      "Modifiers": "Pre-Diabetes; Increased Arterial Stiffness; Obstructive Sleep Apnea (OSA); Other (Borderline Chronic Kidney Disease (eGFR=60); Hyperuricemia)"
+    }
+  },
+  "Vinheta 8": {
+    "Risk": {
+      "SCORE2 Applicable": "Yes",
+      "Exception": "N/A",
+      "Category": "High",
+      "SCORE2": "5%",
+      "Confidence Level": "High"
+    },
+    "Risk Factors": {
+      "Age": "57 years",
+      "Gender": "Female",
+      "Smoking": "Smoker",
+      "Arterial Hypertension": "No",
+      "Systolic Blood Pressure": "120 mmHg",
+      "Diastolic Blood Pressure": "63 mmHg",
+      "Dyslipidemia": "Yes",
+      "Total Cholesterol": "197 mg/dL",
+      "HDL-Cholesterol": "57 mg/dL",
+      "Triglycerides": "124 mg/dL",
+      "LDL-Cholesterol": "119 mg/dL",
+      "non-HDL Cholesterol": "140 mg/dL",
+      "Diabetes Mellitus": "No"
+    },
+    "Risk Modifiers": {
+      "Other": "ApoB 94 mg/dL"
+    }
+  },
+  "Vinheta 9": {
+    "Risk": {
+      "SCORE2 Applicable": "No",
+      "Exception": "Atherosclerotic Cardiovascular Disease",
+      "Category": "Very High",
+      "SCORE2": "Not Applicable",
+      "Confidence Level": "Very High"
+    },
+    "Risk Factors": {
+      "Age": "52 years",
+      "Gender": "Male",
+      "Smoking": "Smoker",
+      "Arterial Hypertension": "Yes",
+      "Systolic Blood Pressure": "130 mmHg",
+      "Diastolic Blood Pressure": "89 mmHg",
+      "Dyslipidemia": "Yes",
+      "Total Cholesterol": "224 mg/dL",
+      "HDL-Cholesterol": "37 mg/dL",
+      "Triglycerides": "98 mg/dL",
+      "LDL-Cholesterol": "167 mg/dL",
+      "non-HDL Cholesterol": "187 mg/dL",
+      "Diabetes Mellitus": "No"
+    },
+    "Risk Modifiers": {
+      "More than one can be selected": "Elevated Coronary Calcium Score; Pre-Diabetes"
+    }
+  },
+  "Vinheta 10": {
+    "Risk": {
+      "SCORE2 Applicable": "No",
+      "Exception": "Established cardiovascular disease (Moderate aortic stenosis)",
+      "Category": "Very High",
+      "SCORE2": "Not Applicable",
+      "Confidence Level": "High"
+    },
+    "Risk Factors": {
+      "Age": "67 years",
+      "Gender": "Female",
+      "Smoking": "unknown",
+      "Arterial Hypertension": "Yes",
+      "Systolic Blood Pressure": "131 mmHg",
+      "Diastolic Blood Pressure": "63 mmHg",
+      "Dyslipidemia": "Yes",
+      "Total Cholesterol": "137 mg/dL",
+      "HDL-Cholesterol": "58 mg/dL",
+      "Triglycerides": "85 mg/dL",
+      "LDL-Cholesterol": "62 mg/dL",
+      "non-HDL Cholesterol": "79 mg/dL",
+      "Diabetes Mellitus": "No"
+    },
+    "Risk Modifiers": {
+      "Selected": "Pre-Diabetes; Other (specify): Elevated NT-proBNP (985 pg/mL), Concentric LV remodeling, Moderate left atrial enlargement"
+    }
+  },
+  "Vinheta 11": {
+    "Risk": {
+      "SCORE2 Applicable": "Yes",
+      "Exception": "Not applicable",
+      "Category": "Low-to-Moderate",
+      "SCORE2": "7,0",
+      "Confidence Level": "High"
+    },
+    "Risk Factors": {
+      "Age": "62 years",
+      "Gender": "Male",
+      "Smoking": "Former Smoker",
+      "Arterial Hypertension": "Yes",
+      "Systolic Blood Pressure": "129 mmHg",
+      "Diastolic Blood Pressure": "66 mmHg",
+      "Dyslipidemia": "Yes",
+      "Total Cholesterol": "187 mg/dL",
+      "HDL-Cholesterol": "51 mg/dL",
+      "Triglycerides": "134 mg/dL",
+      "LDL-Cholesterol": "109 mg/dL",
+      "non-HDL Cholesterol": "136 mg/dL",
+      "Diabetes Mellitus": "No"
+    },
+    "Risk Modifiers": {
+      "Modifiers": "Pre-Diabetes; Cancer"
+    }
+  },
+  "Vinheta 12": {
+    "Risk": {
+      "SCORE2 Applicable": "No",
+      "Exception": "Grade 3 Hypertension (Systolic Blood Pressure ≥180 mmHg)",
+      "Category": "High",
+      "SCORE2": "Not applicable",
+      "Confidence Level": "Very High"
+    },
+    "Risk Factors": {
+      "Age": "47",
+      "Gender": "Female",
+      "Smoking": "Smoker",
+      "Arterial Hypertension": "Yes",
+      "Systolic Blood Pressure": "189 mmHg",
+      "Diastolic Blood Pressure": "103 mmHg",
+      "Dyslipidemia": "Yes",
+      "Total Cholesterol": "263 mg/dL",
+      "HDL-Cholesterol": "54 mg/dL",
+      "Triglycerides": "125 mg/dL",
+      "LDL-Cholesterol": "184 mg/dL",
+      "non-HDL Cholesterol": "209 mg/dL",
+      "Diabetes Mellitus": "No"
+    },
+    "Risk Modifiers": {
+      "Risk Modifiers": "Pre-Diabetes; Chronic Obstructive Pulmonary Disease (COPD)"
+    }
+  },
+  "Vinheta 13": {
+    "Risk": {
+      "SCORE2 Applicable": "Yes",
+      "Exception": "Not applicable",
+      "Category": "High",
+      "SCORE2": "4,6%",
+      "Confidence Level": "High"
+    },
+    "Risk Factors": {
+      "Age": "41 years",
+      "Gender": "Male",
+      "Smoking": "Smoker",
+      "Arterial Hypertension": "Yes",
+      "Systolic Blood Pressure": "155 mmHg",
+      "Diastolic Blood Pressure": "107 mmHg",
+      "Dyslipidemia": "Yes",
+      "Total Cholesterol": "241 mg/dL",
+      "HDL-Cholesterol": "33 mg/dL",
+      "Triglycerides": "98 mg/dL",
+      "LDL-Cholesterol": "188 mg/dL",
+      "non-HDL Cholesterol": "208 mg/dL",
+      "Diabetes Mellitus": "No"
+    },
+    "Risk Modifiers": {
+      "Pre-Diabetes": "Yes",
+      "Other": "Nonspecific ST-T wave abnormalities on ECG; Hypertensive response to exertion"
+    }
+  },
+  "Vinheta 14": {
+    "Risk": {
+      "SCORE2 Applicable": "No",
+      "Exception": "Chronic Kidney Disease",
+      "Category": "High",
+      "SCORE2": "Not applicable",
+      "Confidence Level": "Very High"
+    },
+    "Risk Factors": {
+      "Age": 56,
+      "Gender": "Female",
+      "Smoking": "Smoker",
+      "Arterial Hypertension": "Yes",
+      "Systolic Blood Pressure": 163,
+      "Diastolic Blood Pressure": 91,
+      "Dyslipidemia": "Yes",
+      "Total Cholesterol": 224,
+      "HDL-Cholesterol": 45,
+      "Triglycerides": 196,
+      "LDL-Cholesterol": 140,
+      "non-HDL Cholesterol": 179,
+      "Diabetes Mellitus": "No"
+    },
+    "Risk Modifiers": {
+      "Obesity": "BMI 31,3 kg/m²",
+      "Pre-Diabetes": "HbA1c 6,3%",
+      "Chronic Inflammatory Disease": "Degenerative osteoarticular disease",
+      "Other": "Heart Failure with Preserved Ejection Fraction; Chronic Kidney Disease (Stage 3a)"
+    }
+  },
+  "Vinheta 15": {
+    "Risk": {
+      "SCORE2 Applicable": "Yes",
+      "Exception": "Not applicable",
+      "Category": "High",
+      "SCORE2": "7",
+      "Confidence Level": "High"
+    },
+    "Risk Factors": {
+      "Age": "51 years",
+      "Gender": "Male",
+      "Smoking": "Smoker",
+      "Arterial Hypertension": "Yes",
+      "Systolic Blood Pressure": "149 mmHg",
+      "Diastolic Blood Pressure": "98 mmHg",
+      "Dyslipidemia": "Yes",
+      "Total Cholesterol": "197 mg/dL",
+      "HDL-Cholesterol": "32 mg/dL",
+      "Triglycerides": "98 mg/dL",
+      "LDL-Cholesterol": "148 mg/dL",
+      "non-HDL Cholesterol": "165 mg/dL",
+      "Diabetes Mellitus": "No"
+    },
+    "Risk Modifiers": {
+      "Modifiers": "Elevated Coronary Calcium Score; Pre-Diabetes; Family History of atherosclerotic cardiovascular disease (ASCVD); Elevated Lp(a)"
+    }
+  },
+  "Vinheta 16": {
+    "Risk": {
+      "SCORE2 Applicable": "Yes",
+      "Exception": "Not applicable",
+      "Category": "High",
+      "SCORE2": "8%",
+      "Confidence Level": "High"
+    },
+    "Risk Factors": {
+      "Age": "64 years",
+      "Gender": "Female",
+      "Smoking": "Smoker",
+      "Arterial Hypertension": "Yes",
+      "Systolic Blood Pressure": "143 mmHg",
+      "Diastolic Blood Pressure": "84 mmHg",
+      "Dyslipidemia": "No",
+      "Total Cholesterol": "169 mg/dL",
+      "HDL-Cholesterol": "48 mg/dL",
+      "Triglycerides": "107 mg/dL",
+      "LDL-Cholesterol": "100 mg/dL",
+      "non-HDL Cholesterol": "121 mg/dL",
+      "Diabetes Mellitus": "No"
+    },
+    "Risk Modifiers": {
+      "Pre-Diabetes": "Yes",
+      "Cancer": "Yes",
+      "Other (specify)": "Elevated NT-proBNP (288 pg/mL); Echocardiographic evidence of subclinical target organ damage (concentric remodeling, moderate left atrial dilation)"
+    }
+  },
+  "Vinheta 17": {
+    "Risk": {
+      "SCORE2 Applicable": "Yes",
+      "Exception": "N/A",
+      "Category": "High",
+      "SCORE2": "11",
+      "Confidence Level": "High"
+    },
+    "Risk Factors": {
+      "Age": "65 years",
+      "Gender": "Male",
+      "Smoking": "Former Smoker",
+      "Arterial Hypertension": "Yes",
+      "Systolic Blood Pressure": "147 mmHg",
+      "Diastolic Blood Pressure": "68 mmHg",
+      "Dyslipidemia": "Yes",
+      "Total Cholesterol": "129 mg/dL",
+      "HDL-Cholesterol": "33 mg/dL",
+      "Triglycerides": "237 mg/dL",
+      "LDL-Cholesterol": "49 mg/dL",
+      "non-HDL Cholesterol": "96 mg/dL",
+      "Diabetes Mellitus": "No"
+    },
+    "Risk Modifiers": {
+      "Pre-Diabetes": "Yes",
+      "Obstructive Sleep Apnea (OSA)": "Yes",
+      "Other": "Target organ damage on echocardiogram; Sedentary lifestyle; Hyperuricemia"
+    }
+  },
+  "Vinheta 18": {
+    "Risk": {
+      "SCORE2 Applicable": "Yes",
+      "Exception": "None",
+      "Category": "Low-to-Moderate",
+      "SCORE2": "2,0%",
+      "Confidence Level": "Moderate"
+    },
+    "Risk Factors": {
+      "Age": "44",
+      "Gender": "Male",
+      "Smoking": "Non-smoker",
+      "Arterial Hypertension": "Yes",
+      "Systolic Blood Pressure": "130 mmHg",
+      "Diastolic Blood Pressure": "86 mmHg",
+      "Dyslipidemia": "Yes",
+      "Total Cholesterol": "229 mg/dL",
+      "HDL-Cholesterol": "37 mg/dL",
+      "Triglycerides": "137 mg/dL",
+      "LDL-Cholesterol": "165 mg/dL",
+      "non-HDL Cholesterol": "192 mg/dL",
+      "Diabetes Mellitus": "No"
+    },
+    "Risk Modifiers": {
+      "Modifiers": "Family History of atherosclerotic cardiovascular disease (ASCVD); Elevated Lp(a); Other (Elevated ApoB)"
+    }
+  },
+  "Vinheta 19": {
+    "Risk": {
+      "SCORE2 Applicable": "No",
+      "Exception": "Atherosclerotic Cardiovascular Disease",
+      "Category": "Very High",
+      "SCORE2": "N/A",
+      "Confidence Level": "Very High"
+    },
+    "Risk Factors": {
+      "Age": "54 years",
+      "Gender": "Female",
+      "Smoking": "Smoker",
+      "Arterial Hypertension": "No",
+      "Systolic Blood Pressure": "132 mmHg",
+      "Diastolic Blood Pressure": "84 mmHg",
+      "Dyslipidemia": "Yes",
+      "Total Cholesterol": "211 mg/dL",
+      "HDL-Cholesterol": "52 mg/dL",
+      "Triglycerides": "128 mg/dL",
+      "LDL-Cholesterol": "133 mg/dL",
+      "non-HDL Cholesterol": "159 mg/dL",
+      "Diabetes Mellitus": "No"
+    },
+    "Risk Modifiers": {
+      "Modifiers": "Elevated Coronary Calcium Score; Elevated High-sensitivity CRP; Chronic Inflammatory Disease"
+    }
+  },
+  "Vinheta 20": {
+    "Risk": {
+      "SCORE2 Applicable": "Yes",
+      "Exception": "N/A",
+      "Category": "Very High",
+      "SCORE2": "10",
+      "Confidence Level": "Very High"
+    },
+    "Risk Factors": {
+      "Age": "61",
+      "Gender": "Male",
+      "Smoking": "Non-smoker",
+      "Arterial Hypertension": "Yes",
+      "Systolic Blood Pressure": "151 mmHg",
+      "Diastolic Blood Pressure": "94 mmHg",
+      "Dyslipidemia": "Yes",
+      "Total Cholesterol": "217 mg/dL",
+      "HDL-Cholesterol": "48 mg/dL",
+      "Triglycerides": "256 mg/dL",
+      "LDL-Cholesterol": "118 mg/dL",
+      "non-HDL Cholesterol": "169 mg/dL",
+      "Diabetes Mellitus": "No"
+    },
+    "Risk Modifiers": {
+      "Modifiers": "Elevated Coronary Calcium Score; Obesity; Pre-Diabetes; Obstructive Sleep Apnea (OSA); Other (Atrial Fibrillation; Concentric left ventricular remodeling; Moderate left atrial dilation)"
+    }
+  },
+  "Vinheta 21": {
+    "Risk": {
+      "SCORE2 Applicable": "No",
+      "Exception": "Chronic Kidney Disease (eGFR 30-59 mL/min/1.73 m2)",
+      "Category": "High",
+      "SCORE2": "N/A",
+      "Confidence Level": "Very High"
+    },
+    "Risk Factors": {
+      "Age": 51,
+      "Gender": "Female",
+      "Smoking": "Non-smoker",
+      "Arterial Hypertension": "Yes",
+      "Systolic Blood Pressure": 127,
+      "Diastolic Blood Pressure": 79,
+      "Dyslipidemia": "Yes",
+      "Total Cholesterol": 162,
+      "HDL-Cholesterol": 38,
+      "Triglycerides": 199,
+      "LDL-Cholesterol": 84,
+      "non-HDL Cholesterol": 124,
+      "Diabetes Mellitus": "No"
+    },
+    "Risk Modifiers": {
+      "Other": "Chronic Kidney Disease (eGFR 42 mL/min/1.73 m2)"
+    }
+  },
+  "Vinheta 22": {
+    "Risk": {
+      "SCORE2 Applicable": "No",
+      "Exception": "Chronic Kidney Disease (eGFR <60 mL/min/1.73 m²)",
+      "Category": "Very High",
+      "SCORE2": "Not Applicable",
+      "Confidence Level": "Very High"
+    },
+    "Risk Factors": {
+      "Age": "61 years",
+      "Gender": "Male",
+      "Smoking": "unknown",
+      "Arterial Hypertension": "Yes",
+      "Systolic Blood Pressure": "131 mmHg",
+      "Diastolic Blood Pressure": "78 mmHg",
+      "Dyslipidemia": "Yes",
+      "Total Cholesterol": "136 mg/dL",
+      "HDL-Cholesterol": "38 mg/dL",
+      "Triglycerides": "164 mg/dL",
+      "LDL-Cholesterol": "65 mg/dL",
+      "non-HDL Cholesterol": "98 mg/dL",
+      "Diabetes Mellitus": "No"
+    },
+    "Risk Modifiers": {
+      "More than one can be selected": "Other (Chronic Kidney Disease with eGFR 42 mL/min/1.73 m² and microalbuminuria 100 mg/g; Anxiety; Bicuspid aortic valve with moderate regurgitation)"
+    }
+  },
+  "Vinheta 23": {
+    "Risk": {
+      "SCORE2 Applicable": "No",
+      "Exception": "Diabetes Mellitus",
+      "Category": "High",
+      "SCORE2": "N/A",
+      "Confidence Level": "Very High"
+    },
+    "Risk Factors": {
+      "Age": "59 years",
+      "Gender": "Female",
+      "Smoking": "unknown",
+      "Arterial Hypertension": "No",
+      "Systolic Blood Pressure": "124 mmHg",
+      "Diastolic Blood Pressure": "74 mmHg",
+      "Dyslipidemia": "Yes",
+      "Total Cholesterol": "176 mg/dL",
+      "HDL-Cholesterol": "43 mg/dL",
+      "Triglycerides": "166 mg/dL",
+      "LDL-Cholesterol": "100 mg/dL",
+      "non-HDL Cholesterol": "133 mg/dL",
+      "Diabetes Mellitus": "Yes"
+    },
+    "Risk Modifiers": {
+      "Chronic Inflammatory Disease": "Yes (degenerative osteoarticular disease)",
+      "Other": "Concentric LV remodeling; Mild left atrial dilation"
+    }
+  },
+  "Vinheta 24": {
+    "Risk": {
+      "SCORE2 Applicable": "No",
+      "Exception": "Diabetes Mellitus with multiple risk factors",
+      "Category": "Very High",
+      "SCORE2": "Not Applicable",
+      "Confidence Level": "Very High"
+    },
+    "Risk Factors": {
+      "Age": "59",
+      "Gender": "Male",
+      "Smoking": "Former Smoker",
+      "Arterial Hypertension": "Yes",
+      "Systolic Blood Pressure": "134 mmHg",
+      "Diastolic Blood Pressure": "82 mmHg",
+      "Dyslipidemia": "Yes",
+      "Total Cholesterol": "187 mg/dL",
+      "HDL-Cholesterol": "45 mg/dL",
+      "Triglycerides": "178 mg/dL",
+      "LDL-Cholesterol": "106 mg/dL",
+      "non-HDL Cholesterol": "142 mg/dL",
+      "Diabetes Mellitus": "Yes"
+    },
+    "Risk Modifiers": {
+      "Other": "Mild left atrial enlargement; Psychosocial stress (shift work, poor sleep)"
+    }
+  },
+  "Vinheta 25": {
+    "Risk": {
+      "SCORE2 Applicable": "No",
+      "Exception": "Diabetes Mellitus with Target Organ Damage",
+      "Category": "Very High",
+      "SCORE2": "N/A",
+      "Confidence Level": "Very High"
+    },
+    "Risk Factors": {
+      "Age": "65 years",
+      "Gender": "Female",
+      "Smoking": "unknown",
+      "Arterial Hypertension": "Yes",
+      "Systolic Blood Pressure": "138 mmHg",
+      "Diastolic Blood Pressure": "75 mmHg",
+      "Dyslipidemia": "Yes",
+      "Total Cholesterol": "165 mg/dL",
+      "HDL-Cholesterol": "51 mg/dL",
+      "Triglycerides": "173 mg/dL",
+      "LDL-Cholesterol": "79 mg/dL",
+      "non-HDL Cholesterol": "114 mg/dL",
+      "Diabetes Mellitus": "Yes"
+    },
+    "Risk Modifiers": {
+      "Modifiers": "Chronic Inflammatory Disease (osteoarthritis); Other (Chronic Kidney Disease (eGFR 57 mL/min/1.73 m², albuminuria 103 mg/g); Left ventricular concentric remodeling; Left atrial dilation; Low functional capacity)"
+    }
+  },
+  "Vinheta 26": {
+    "Risk": {
+      "SCORE2 Applicable": "No",
+      "Exception": "Familial Dyslipidemia (Familial Hypercholesterolemia)",
+      "Category": "Very High",
+      "SCORE2": "Not applicable",
+      "Confidence Level": "Very High"
+    },
+    "Risk Factors": {
+      "Age": "36 years",
+      "Gender": "Male",
+      "Smoking": "Non-smoker",
+      "Arterial Hypertension": "No",
+      "Systolic Blood Pressure": "134 mmHg",
+      "Diastolic Blood Pressure": "87 mmHg",
+      "Dyslipidemia": "Yes",
+      "Total Cholesterol": "336 mg/dL",
+      "HDL-Cholesterol": "45 mg/dL",
+      "Triglycerides": "164 mg/dL",
+      "LDL-Cholesterol": "258 mg/dL",
+      "non-HDL Cholesterol": "291 mg/dL",
+      "Diabetes Mellitus": "No"
+    },
+    "Risk Modifiers": {
+      "Family History of atherosclerotic cardiovascular disease (ASCVD)": "Yes"
+    }
+  },
+  "Vinheta 27": {
+    "Risk": {
+      "SCORE2 Applicable": "No",
+      "Exception": "Atherosclerotic Cardiovascular Disease",
+      "Category": "Very High",
+      "SCORE2": "Not Applicable",
+      "Confidence Level": "Very High"
+    },
+    "Risk Factors": {
+      "Age": "61 years",
+      "Gender": "Female",
+      "Smoking": "Smoker",
+      "Arterial Hypertension": "No",
+      "Systolic Blood Pressure": "124 mmHg",
+      "Diastolic Blood Pressure": "75 mmHg",
+      "Dyslipidemia": "No",
+      "Total Cholesterol": "199 mg/dL",
+      "HDL-Cholesterol": "54 mg/dL",
+      "Triglycerides": "87 mg/dL",
+      "LDL-Cholesterol": "87 mg/dL",
+      "non-HDL Cholesterol": "145 mg/dL",
+      "Diabetes Mellitus": "No"
+    },
+    "Risk Modifiers": {
+      "Modifiers": "Elevated Coronary Calcium Score; Other (Anxiety)"
+    }
+  },
+  "Vinheta 28": {
+    "Risk": {
+      "SCORE2 Applicable": "No",
+      "Exception": "Atherosclerotic Cardiovascular Disease",
+      "Category": "Very High",
+      "SCORE2": "N/A",
+      "Confidence Level": "Very High"
+    },
+    "Risk Factors": {
+      "Age": "51",
+      "Gender": "Male",
+      "Smoking": "Former Smoker",
+      "Arterial Hypertension": "No",
+      "Systolic Blood Pressure": "118",
+      "Diastolic Blood Pressure": "67",
+      "Dyslipidemia": "Yes",
+      "Total Cholesterol": "136",
+      "HDL-Cholesterol": "46",
+      "Triglycerides": "99",
+      "LDL-Cholesterol": "70",
+      "non-HDL Cholesterol": "90",
+      "Diabetes Mellitus": "No"
+    },
+    "Risk Modifiers": {
+      "Elevated Coronary Calcium Score": "unknown",
+      "Calcium Score = 0": "unknown",
+      "Carotid Plaques": "unknown",
+      "Obesity": "No",
+      "Pre-Diabetes": "No",
+      "Family History of atherosclerotic cardiovascular disease (ASCVD)": "unknown",
+      "Elevated Lp(a)": "unknown",
+      "Increased Arterial Stiffness": "unknown",
+      "Elevated High-sensitivity CRP": "unknown",
+      "Chronic Inflammatory Disease": "unknown",
+      "HIV Infection": "unknown",
+      "Migraine with Aura": "unknown",
+      "Obstructive Sleep Apnea (OSA)": "unknown",
+      "Non-Alcoholic Fatty Liver Disease": "unknown",
+      "Erectile Dysfunction": "unknown",
+      "Premature Menopause": "N/A",
+      "Past history of Pregnancy Complications (Preeclampsia, Hypertension, or Diabetes)": "N/A",
+      "Chronic Obstructive Pulmonary Disease (COPD)": "unknown",
+      "Cancer": "unknown",
+      "Other": "unknown"
+    }
+  },
+  "Vinheta 29": {
+    "Risk": {
+      "SCORE2 Applicable": "No",
+      "Exception": "Atherosclerotic Cardiovascular Disease",
+      "Category": "Very High",
+      "SCORE2": "N/A",
+      "Confidence Level": "Very High"
+    },
+    "Risk Factors": {
+      "Age": "63",
+      "Gender": "Female",
+      "Smoking": "Former Smoker",
+      "Arterial Hypertension": "No",
+      "Systolic Blood Pressure": "114",
+      "Diastolic Blood Pressure": "66",
+      "Dyslipidemia": "Yes",
+      "Total Cholesterol": "149",
+      "HDL-Cholesterol": "53",
+      "Triglycerides": "82",
+      "LDL-Cholesterol": "80",
+      "non-HDL Cholesterol": "96",
+      "Diabetes Mellitus": "No"
+    },
+    "Risk Modifiers": {
+      "More than one can be selected": "Other (specify): Anxiety"
+    }
+  },
+  "Vinheta 30": {
+    "Risk": {
+      "SCORE2 Applicable": "No",
+      "Exception": "Atherosclerotic Cardiovascular Disease (ischemic stroke)",
+      "Category": "Very High",
+      "SCORE2": "Not Applicable",
+      "Confidence Level": "Very High"
+    },
+    "Risk Factors": {
+      "Age": "64",
+      "Gender": "Male",
+      "Smoking": "Former Smoker",
+      "Arterial Hypertension": "Yes",
+      "Systolic Blood Pressure": "138 mmHg",
+      "Diastolic Blood Pressure": "81 mmHg",
+      "Dyslipidemia": "Yes",
+      "Total Cholesterol": "165 mg/dL",
+      "HDL-Cholesterol": "52 mg/dL",
+      "Triglycerides": "209 mg/dL",
+      "LDL-Cholesterol": "71 mg/dL",
+      "non-HDL Cholesterol": "113 mg/dL",
+      "Diabetes Mellitus": "No"
+    },
+    "Risk Modifiers": {
+      "Selected Modifiers": "Pre-Diabetes; Chronic Obstructive Pulmonary Disease (COPD); Other (Concentric left ventricular remodeling; Severe left atrial enlargement)"
+    }
+  }
+}

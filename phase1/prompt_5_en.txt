@@ -45,7 +45,9 @@ Risk Modifiers -> Values; More than one can be selected -> Elevated Coronary Cal
 7. Json File Creation
 - In the end, create a json file that sumarizes the details with the following structure:
 json_file ={
-"Risk:{' SCORE2 Applicable': '..', ' Exception': '..',‘Category: '..', 'SCORE2': '..', ‘Confidence Level: ’..’ },"
-"Risk Factors:{'Factor1':'value1','Factor2':'value2', …}
-"Risk Modifiers: {FactorM1: 'ValueM1', FactorM2: 'valueM2', ...}}."
+"Risk":{'SCORE2 Applicable': '..', 'Exception': '..','Category': '..', 'SCORE2': '..', 'Confidence Level': '..' },
+"Risk Factors":{'Factor1':'value1','Factor2':'value2', ...},
+"Risk Modifiers": {'FactorM1': 'ValueM1', 'FactorM2': 'valueM2', ...}
+}
+
 

@@ -1,0 +1,3066 @@
+
+VINHETA 1
+==================================================
+## Análise do Risco Cardiovascular - ESC 2021
+
+### 1. Extração dos Fatores de Risco
+
+**Fatores para cálculo SCORE2:**
+- **Idade:** 44 anos
+- **Género:** Masculino
+- **Tabagismo:** Não fumador
+- **PA Sistólica:** 114 mmHg
+- **Colesterol não-HDL:** 128 mg/dL (183 - 55 = 128 mg/dL ou 3.3 mmol/L)
+
+### 2. Cálculo SCORE2
+
+Para indivíduos **<50 anos**, aplica-se o **SCORE2-OP** (Older Persons não aplicável).
+Com os dados fornecidos e considerando Portugal como país de **risco moderado**:
+
+**SCORE2 estimado: <2.5%** (risco a 10 anos de evento CV fatal ou não-fatal)
+
+### 3. Categoria de Risco
+
+**BAIXO A MODERADO RISCO** (<2.5% para idade <50 anos)
+
+### 4. Tabela de Resultados
+
+| Parâmetro | Valor | Classificação |
+|-----------|--------|--------------|
+| **SCORE2** | <2.5% | Baixo risco |
+| **Idade** | 44 anos | Fator protetor (<50) |
+| **PA** | 114/72 mmHg | Ótima |
+| **Col-LDL** | 110 mg/dL | Ligeiramente elevado |
+| **Col não-HDL** | 128 mg/dL | Aceitável |
+| **HDL** | 55 mg/dL | Adequado |
+| **IMC** | 23 kg/m² | Normal |
+| **Glicemia** | 80 mg/dL | Normal |
+
+### 5. Explicação Clínica
+
+Este paciente apresenta um **perfil de baixo risco cardiovascular**. As palpitações relacionam-se com extrassístoles ventriculares benignas (<1% do traçado, sem cardiopatia estrutural). 
+
+**Pontos positivos:**
+- Não fumador
+- PA ótima
+- Peso normal
+- Sem diabetes
+- HDL adequado
+
+**Áreas de melhoria:**
+- Sedentarismo (modificador de risco importante)
+- LDL ligeiramente acima do ideal para prevenção primária
+
+**Recomendações:**
+1. **Estilo de vida:** Iniciar atividade física regular (150 min/semana moderada)
+2. **Dieta:** Padrão mediterrânico
+3. **Monitorização:** Reavaliação anual dos FRCV
+4. **Extrassístoles:** Tranquilização, evitar estimulantes (café em excesso)
+
+### 6. JSON Output
+
+```json
+{
+  "risco_cardiovascular": {
+    "score2": "<2.5%",
+    "categoria": "Baixo risco",
+    "tempo_avaliacao": "10 anos"
+  },
+  "fatores_risco": {
+    "principais": {
+      "idade": 44,
+      "genero": "masculino",
+      "tabagismo": false,
+      "pa_sistolica": 114,
+      "colesterol_nao_hdl": 128,
+      "ldl": 110
+    },
+    "adicionais": {
+      "imc": 23,
+      "glicemia": 80,
+      "hdl": 55,
+      "triglicerideos": 88
+    }
+  },
+  "modificadores": {
+    "protetores": [
+      "Não fumador",
+      "PA ótima",
+      "Peso normal",
+      "Sem diabetes"
+    ],
+    "agravantes": [
+      "Sedentarismo",
+      "LDL ligeiramente elevado"
+    ],
+    "neutros": [
+      "Sem história familiar CV",
+      "Extrassístoles benignas"
+    ]
+  }
+}
+```
+
+
+VINHETA 2
+==================================================
+## Análise do Risco Cardiovascular - ESC 2021
+
+### 1. Extração dos Fatores de Risco
+
+**Fatores para cálculo SCORE2:**
+- **Idade:** 40 anos
+- **Género:** Feminino
+- **Tabagismo:** Sim (fumadora ativa)
+- **PA Sistólica:** 124 mmHg (consulta) / 113 mmHg (MAPA 24h)
+- **Colesterol Total:** 190 mg/dL (4.9 mmol/L)
+- **HDL-Colesterol:** 67 mg/dL (1.7 mmol/L)
+- **Colesterol não-HDL:** 123 mg/dL (3.2 mmol/L)
+
+### 2. Cálculo SCORE2
+
+Para mulher de 40 anos em Portugal (região de risco baixo-moderado), utilizando:
+- Fumadora
+- PA sistólica: 124 mmHg
+- Colesterol não-HDL: 3.2 mmol/L
+
+**SCORE2 estimado: <2.5%** (risco a 10 anos de evento CV fatal e não-fatal)
+
+### 3. Categoria de Risco
+
+**BAIXO RISCO** (<2.5% aos 10 anos para idade <50 anos)
+
+### 4. Tabela de Resultados
+
+| Parâmetro | Valor | Interpretação |
+|-----------|--------|--------------|
+| **SCORE2** | <2.5% | Baixo risco |
+| **Idade** | 40 anos | Fator protetor (jovem) |
+| **Tabagismo** | Ativo | Principal fator modificável |
+| **PA Sistólica** | 124 mmHg | Normal-alta |
+| **Colesterol não-HDL** | 123 mg/dL | Aceitável |
+| **HDL-C** | 67 mg/dL | Protetor (elevado) |
+| **LDL-C** | 105 mg/dL | Dentro do alvo para baixo risco |
+| **VOP** | 6.8 m/s | Normal para a idade |
+
+### 5. Explicação Clínica
+
+Esta paciente de 40 anos apresenta um **risco cardiovascular baixo** segundo o SCORE2-ESC 2021. Apesar do tabagismo ativo (principal fator de risco modificável), apresenta vários fatores protetores:
+
+**Pontos Positivos:**
+- Idade jovem
+- HDL-colesterol elevado (protetor)
+- Pressão arterial controlada
+- Ausência de diabetes
+- IMC normal
+- Iniciou exercício físico regular
+- Velocidade de onda de pulso normal
+
+**Recomendações:**
+1. **Prioridade máxima:** Cessação tabágica (já agendada)
+2. Manter exercício físico regular
+3. Manter peso adequado
+4. Vigilância anual dos fatores de risco
+5. Objetivo LDL-C <116 mg/dL (já atingido)
+
+A cessação tabágica reduzirá significativamente o risco cardiovascular desta paciente.
+
+### 6. JSON com Estrutura de Dados
+
+```json
+{
+  "risco": {
+    "score2": "<2.5%",
+    "categoria": "Baixo Risco",
+    "tempo_avaliacao": "10 anos",
+    "regiao": "Portugal (baixo-moderado risco)"
+  },
+  "fatores_de_risco": {
+    "nao_modificaveis": {
+      "idade": 40,
+      "genero": "feminino"
+    },
+    "modificaveis": {
+      "tabagismo": {
+        "status": "ativo",
+        "acao": "cessacao_agendada"
+      },
+      "pressao_arterial": {
+        "sistolica": 124,
+        "diastolica": 75,
+        "classificacao": "normal-alta"
+      },
+      "lipidos": {
+        "colesterol_total": 190,
+        "hdl": 67,
+        "ldl": 105,
+        "nao_hdl": 123,
+        "trigliceridos": 90
+      },
+      "imc": 23.8,
+      "exercicio_fisico": "3x/semana moderada-alta intensidade",
+      "glicemia_jejum": 82
+    }
+  },
+  "modificadores": {
+    "protetores": [
+      "HDL elevado (>60 mg/dL)",
+      "Exercício físico regular",
+      "IMC normal",
+      "Ausência de diabetes"
+    ],
+    "agravantes": [
+      "Tabagismo ativo"
+    ],
+    "neutros": [
+      "VOP 6.8 m/s (normal para idade)",
+      "ECG com alterações inespecíficas"
+    ]
+  }
+}
+```
+
+
+VINHETA 3
+==================================================
+## Análise do Risco Cardiovascular - ESC 2021
+
+### 1. Extração dos Fatores de Risco
+
+**Fatores para cálculo SCORE2:**
+- **Idade:** 58 anos
+- **Sexo:** Feminino
+- **Tabagismo:** Não fumadora
+- **PA Sistólica:** 122 mmHg
+- **Colesterol não-HDL:** 117 mg/dL (164 - 47)
+
+### 2. Cálculo SCORE2
+
+Para mulher de 58 anos em Portugal (região de risco moderado segundo ESC 2021):
+- Utilizando as tabelas SCORE2 para população 40-69 anos
+- Risco estimado: **2-3%** (risco a 10 anos de evento CV fatal e não-fatal)
+
+### 3. Categoria de Risco
+
+**BAIXO A MODERADO RISCO**
+
+### 4. Tabela de Resultados
+
+| **Parâmetro** | **Valor** | **Classificação** |
+|---------------|-----------|-------------------|
+| SCORE2 | 2-3% | Baixo a Moderado |
+| PA | 122/77 mmHg | Normal-alta |
+| Col-LDL | 105 mg/dL | Acima do alvo para o risco |
+| Col não-HDL | 117 mg/dL | Adequado |
+| HDL | 47 mg/dL | Limítrofe baixo |
+| IMC | 29.9 kg/m² | Excesso de peso |
+| Score Cálcio | 0 | Excelente (modificador) |
+
+### 5. Explicação Clínica
+
+Esta paciente de 58 anos apresenta um **risco cardiovascular baixo a moderado** segundo o SCORE2. 
+
+**Pontos positivos:**
+- Score de cálcio coronário = 0 (forte modificador de risco para baixo)
+- Não fumadora
+- Pressão arterial controlada
+- Atividade física regular
+- Colesterol não-HDL adequado
+
+**Pontos de atenção:**
+- HDL limítrofe baixo (< 48 mg/dL em mulheres)
+- Excesso de peso (IMC 29.9)
+- LDL acima do alvo recomendado para o seu risco (alvo < 100 mg/dL)
+
+**Recomendações:**
+1. Manter estilo de vida saudável
+2. Considerar otimização do peso
+3. Reforçar dieta mediterrânica
+4. Manter atividade física regular
+5. Reavaliação anual dos fatores de risco
+
+O score de cálcio = 0 é um importante modificador que reclassifica o risco para baixo, permitindo uma abordagem menos intensiva.
+
+### 6. JSON com Estrutura de Dados
+
+```json
+{
+  "risco_cardiovascular": {
+    "score2_percentagem": "2-3%",
+    "categoria": "Baixo a Moderado",
+    "reclassificacao_score_calcio": "Baixo"
+  },
+  "fatores_risco": {
+    "idade": 58,
+    "sexo": "feminino",
+    "tabagismo": false,
+    "pa_sistolica": 122,
+    "colesterol_total": 164,
+    "colesterol_hdl": 47,
+    "colesterol_nao_hdl": 117,
+    "colesterol_ldl": 105,
+    "imc": 29.9
+  },
+  "modificadores": {
+    "score_calcio_coronario": {
+      "valor": 0,
+      "impacto": "Reclassifica para categoria inferior de risco"
+    },
+    "atividade_fisica": {
+      "presente": true,
+      "descricao": "Caminhadas diárias 30 minutos"
+    },
+    "excesso_peso": {
+      "presente": true,
+      "imc": 29.9
+    },
+    "hdl_baixo": {
+      "presente": true,
+      "valor": 47
+    }
+  }
+}
+```
+
+
+VINHETA 4
+==================================================
+## Análise do Risco Cardiovascular - ESC 2021
+
+### 1. Extração dos Fatores de Risco
+
+**Fatores para cálculo SCORE2:**
+- **Idade:** 54 anos
+- **Género:** Masculino
+- **Tabagismo:** Não fumador
+- **PA Sistólica:** 118 mmHg
+- **Colesterol não-HDL:** 128 mg/dL (183 - 55 = 128)
+
+### 2. Cálculo SCORE2
+
+Para Portugal (país de risco moderado na ESC 2021), homem de 54 anos:
+- **SCORE2 estimado: 2-3%** (risco a 10 anos de eventos CV fatais e não-fatais)
+
+### 3. Categoria de Risco
+
+**RISCO BAIXO A MODERADO** segundo ESC 2021
+
+### 4. Tabela de Resultados
+
+| **Parâmetro** | **Valor** | **Alvo ESC 2021** | **Interpretação** |
+|---------------|-----------|-------------------|-------------------|
+| SCORE2 | 2-3% | <2.5% (baixo) | Baixo a moderado |
+| PA Sistólica | 118 mmHg | <130 mmHg | Ótima |
+| Colesterol LDL | 110 mg/dL | <116 mg/dL* | Adequado |
+| Colesterol não-HDL | 128 mg/dL | <146 mg/dL* | Adequado |
+| IMC | 23 kg/m² | <25 kg/m² | Normal |
+| Glicemia jejum | 80 mg/dL | <100 mg/dL | Normal |
+
+*Para risco baixo a moderado
+
+### 5. Explicação Clínica
+
+Este paciente de 54 anos apresenta um **perfil de risco cardiovascular favorável** com SCORE2 baixo a moderado (2-3%). Os fatores protetores incluem:
+- Ausência de tabagismo
+- Pressão arterial ótima
+- Perfil lipídico adequado
+- Peso normal
+- Glicemia normal
+
+**Pontos de atenção:**
+- **História familiar positiva** (pai com doença coronária, mortes súbitas na família) - importante modificador de risco
+- **Sedentarismo** - fator de risco modificável
+
+**Recomendações ESC 2021:**
+1. **Estilo de vida:** Iniciar atividade física regular (150 min/semana moderada)
+2. **Alvo LDL:** Manter <116 mg/dL (atual: 110 mg/dL - adequado)
+3. **Vigilância:** Reavaliação anual dado histórico familiar
+4. **Considerar:** Avaliação adicional com score de cálcio coronário ou prova de esforço dado o histórico familiar significativo
+
+### 6. JSON Output
+
+```json
+{
+  "risco": {
+    "score2": "2-3%",
+    "categoria": "Baixo a Moderado",
+    "risco_10_anos": "2-3% de eventos CV fatais e não-fatais"
+  },
+  "fatores_risco": {
+    "presentes": [
+      "Sexo masculino",
+      "Idade 54 anos",
+      "Sedentarismo",
+      "História familiar positiva"
+    ],
+    "ausentes": [
+      "Tabagismo",
+      "Hipertensão",
+      "Diabetes",
+      "Dislipidemia significativa",
+      "Obesidade"
+    ]
+  },
+  "modificadores": {
+    "aumentam_risco": [
+      "História familiar de doença CV prematura",
+      "Sedentarismo"
+    ],
+    "diminuem_risco": [
+      "Não fumador",
+      "PA ótima",
+      "IMC normal"
+    ],
+    "neutros": [
+      "Creatinina normal",
+      "ECG e Eco normais"
+    ]
+  }
+}
+```
+
+
+VINHETA 5
+==================================================
+## Análise do Risco Cardiovascular - ESC 2021
+
+### 1. Extração dos Fatores de Risco
+
+**Fatores para cálculo SCORE2:**
+- **Idade:** 63 anos
+- **Género:** Feminino
+- **Tabagismo:** Não fumadora
+- **PA Sistólica:** 107 mmHg
+- **Colesterol Total:** 214 mg/dL (5.53 mmol/L)
+- **HDL-C:** 67 mg/dL (1.73 mmol/L)
+- **Colesterol não-HDL:** 147 mg/dL (3.80 mmol/L)
+
+### 2. Cálculo SCORE2
+
+Para mulher de 63 anos em Portugal (região de risco moderado segundo ESC 2021):
+- **SCORE2 estimado: 3-4%** (risco a 10 anos de eventos CV fatais e não-fatais)
+
+### 3. Categoria de Risco
+
+**RISCO BAIXO A MODERADO** (<7% para idade 50-69 anos)
+
+### 4. Tabela de Resultados
+
+| **Parâmetro** | **Valor** | **Classificação** |
+|---------------|-----------|-------------------|
+| SCORE2 | 3-4% | Baixo a Moderado |
+| PA | 107/58 mmHg | Ótima |
+| Col-LDL | 122 mg/dL | Acima do alvo* |
+| Col não-HDL | 147 mg/dL | Aceitável |
+| HDL-C | 67 mg/dL | Protetor |
+| IMC | 20.5 kg/m² | Normal |
+| Glicemia | 74 mg/dL | Normal |
+
+*Alvo LDL-C <100 mg/dL para risco baixo-moderado
+
+### 5. Explicação Clínica
+
+Esta paciente apresenta um **perfil de risco cardiovascular favorável** com SCORE2 baixo-moderado. Fatores protetores incluem:
+- Ausência de tabagismo
+- PA bem controlada
+- HDL-C elevado (protetor)
+- IMC normal
+- Glicemia normal
+
+**Pontos de atenção:**
+- História de FA paroxística (modificador de risco)
+- LDL-C ligeiramente acima do alvo recomendado
+- Dilatação ligeira da aurícula esquerda
+
+**Recomendações:**
+1. Manter anticoagulação (já em curso com apixabano)
+2. Considerar estatina de baixa intensidade para otimizar LDL-C <100 mg/dL
+3. Manter estilo de vida saudável
+4. Vigilância regular da FA
+
+### 6. JSON Output
+
+```json
+{
+  "risco_cardiovascular": {
+    "score2": "3-4%",
+    "categoria": "Baixo a Moderado",
+    "risco_10_anos": "3-4%"
+  },
+  "fatores_risco": {
+    "idade": 63,
+    "genero": "feminino",
+    "tabagismo": false,
+    "pa_sistolica": 107,
+    "colesterol_total_mg": 214,
+    "hdl_mg": 67,
+    "ldl_mg": 122,
+    "colesterol_nao_hdl": 147,
+    "diabetes": false,
+    "imc": 20.5
+  },
+  "modificadores_risco": {
+    "fibrilhacao_auricular": true,
+    "dilatacao_auricular": true,
+    "doenca_valvular": "IM ligeira",
+    "hipotiroidismo": true,
+    "historia_familiar": "não referida",
+    "doenca_renal_cronica": false,
+    "score_cha2ds2_vasc": 2
+  }
+}
+```
+
+
+VINHETA 6
+==================================================
+## Análise do Risco Cardiovascular - ESC 2021
+
+### 1. Extração dos Fatores de Risco
+
+**Fatores para cálculo SCORE2:**
+- **Idade:** 41 anos
+- **Sexo:** Feminino
+- **Tabagismo:** Ativo (25 UMA)
+- **PA Sistólica:** 146 mmHg
+- **Colesterol Total:** 270 mg/dL (7.0 mmol/L)
+- **HDL-Colesterol:** 53 mg/dL (1.4 mmol/L)
+- **Colesterol não-HDL:** 217 mg/dL (5.6 mmol/L)
+
+### 2. Cálculo SCORE2
+
+Para idade <50 anos, aplica-se o **SCORE2-OP** (Older Persons não aplicável).
+Com os valores apresentados e para Portugal (região de risco moderado na ESC):
+
+**Risco estimado a 10 anos: 2-3%** (Risco BAIXO a MODERADO)
+
+### 3. Categoria de Risco
+
+**RISCO MODERADO** - considerando:
+- SCORE2 calculado: 2-3%
+- Presença de modificadores de risco que elevam a categoria
+
+### 4. Tabela de Resultados
+
+| **Parâmetro** | **Valor** | **Alvo Terapêutico** |
+|---------------|-----------|----------------------|
+| **Categoria de Risco** | Moderado | - |
+| **SCORE2 (10 anos)** | 2-3% | <5% |
+| **LDL-Colesterol** | 189 mg/dL | <100 mg/dL |
+| **PA Sistólica/Diastólica** | 146/85 mmHg | <140/90 mmHg (idealmente <130/80) |
+| **HbA1c** | 6.3% | <7% |
+| **IMC** | 25.7 kg/m² | <25 kg/m² |
+
+### 5. Explicação Clínica
+
+Esta paciente de 41 anos apresenta **múltiplos fatores de risco cardiovascular** que elevam o seu perfil de risco:
+
+**Fatores Major:**
+- Hipertensão arterial não controlada (abandonou terapêutica)
+- Dislipidemia severa (LDL 189 mg/dL, CT 270 mg/dL)
+- Tabagismo ativo significativo (25 UMA)
+
+**Modificadores de Risco Presentes:**
+- Pré-diabetes (HbA1c 6.3%)
+- Lesão de órgão-alvo: remodeling concêntrico VE + dilatação AE
+- Excesso de peso (IMC 25.7)
+- Sedentarismo
+
+Embora o SCORE2 calculado seja relativamente baixo devido à idade jovem, a presença de **lesão de órgão-alvo cardíaca** e **pré-diabetes** reclassifica esta paciente para **risco moderado a alto**, necessitando de intervenção terapêutica intensiva.
+
+### 6. JSON Output
+
+```json
+{
+  "risco_cardiovascular": {
+    "score2_10anos": "2-3%",
+    "categoria": "Moderado",
+    "reclassificacao": "Moderado-Alto por modificadores"
+  },
+  "fatores_risco": {
+    "idade": 41,
+    "sexo": "feminino",
+    "tabagismo": {
+      "status": "ativo",
+      "carga": "25 UMA"
+    },
+    "pressao_arterial": {
+      "sistolica": 146,
+      "diastolica": 85,
+      "classificacao": "HTA grau 1"
+    },
+    "lipidos": {
+      "colesterol_total": 270,
+      "ldl": 189,
+      "hdl": 53,
+      "trigliceridos": 142,
+      "nao_hdl": 217
+    },
+    "imc": 25.7
+  },
+  "modificadores_risco": {
+    "pre_diabetes": {
+      "presente": true,
+      "hba1c": 6.3
+    },
+    "lesao_orgao_alvo": {
+      "presente": true,
+      "tipo": "remodeling VE + dilatação AE"
+    },
+    "sedentarismo": true,
+    "excesso_peso": true
+  },
+  "recomendacoes": {
+    "ldl_alvo": "<100 mg/dL",
+    "pressao_arterial_alvo": "<130/80 mmHg",
+    "cessacao_tabagica": "prioritária",
+    "estatina": "intensidade moderada-alta",
+    "anti_hipertensor": "reiniciar terapêutica"
+  }
+}
+```
+
+**Nota:** O episódio de lipotímia descrito requer investigação adicional, mas o perfil sugere síncope vasovagal. A intervenção sobre os fatores de risco cardiovascular é prioritária.
+
+
+VINHETA 7
+==================================================
+## Análise do Risco Cardiovascular - ESC 2021
+
+### 1. Extração dos Fatores de Risco
+
+**Fatores para cálculo SCORE2:**
+- **Idade:** 48 anos
+- **Género:** Masculino
+- **Tabagismo:** Não fumador
+- **PA Sistólica:** 161 mmHg (confirmada por MAPA)
+- **Colesterol não-HDL:** 188 mg/dL (231 - 43)
+
+### 2. Cálculo SCORE2
+
+Para um homem de 48 anos em Portugal (região de baixo risco CV), utilizando o SCORE2:
+- **Risco estimado a 10 anos:** ~5-7%
+
+### 3. Categoria de Risco
+
+**RISCO MODERADO A ALTO** (considerando modificadores de risco)
+
+### 4. Tabela de Resultados
+
+| **Parâmetro** | **Valor** | **Classificação** |
+|---------------|-----------|-------------------|
+| **SCORE2 base** | ~5-7% | Risco baixo-moderado |
+| **Pressão Arterial** | 161/102 mmHg | HTA Grau 2 |
+| **IMC** | 28.2 kg/m² | Excesso de peso |
+| **Colesterol LDL** | 149 mg/dL | Elevado |
+| **Colesterol HDL** | 43 mg/dL | Baixo |
+| **Triglicerídeos** | 197 mg/dL | Limítrofe alto |
+| **HbA1c** | 6.2% | Pré-diabetes |
+| **VOP** | 9.3 m/s | Rigidez arterial aumentada |
+| **Perfil MAPA** | Não-dipper | Desfavorável |
+
+### 5. Explicação Clínica
+
+Este paciente de 48 anos apresenta múltiplos fatores que elevam o seu risco cardiovascular:
+
+1. **HTA Grau 2** confirmada por MAPA com perfil não-dipper (pior prognóstico)
+2. **Síndrome metabólica** provável (obesidade central, HDL baixo, triglicerídeos elevados, pré-diabetes, HTA)
+3. **Lesão de órgão-alvo subclínica:** VOP elevada indicando rigidez arterial
+4. **Pré-diabetes** (HbA1c 6.2%)
+5. **Dislipidemia mista** com HDL baixo
+
+Embora o SCORE2 base sugira risco baixo-moderado pela idade jovem, a presença de múltiplos modificadores de risco, especialmente a rigidez arterial aumentada e síndrome metabólica, reclassifica o paciente para **risco moderado a alto**.
+
+**Recomendações:**
+- Iniciar anti-hipertensor (IECA/ARA-II preferencial)
+- Modificação intensiva do estilo de vida
+- Considerar estatina para objetivo LDL <100 mg/dL
+- Rastreio de apneia do sono
+- Reavaliação em 3-6 meses
+
+### 6. JSON File
+
+```json
+{
+  "Risco": {
+    "SCORE2_base": "5-7%",
+    "Categoria_final": "Moderado a Alto",
+    "Reclassificacao": "Sim - devido a modificadores de risco"
+  },
+  "Fatores_de_risco": {
+    "Idade": 48,
+    "Sexo": "Masculino",
+    "Tabagismo": "Não",
+    "HTA": {
+      "Presente": "Sim",
+      "Grau": 2,
+      "PA": "161/102 mmHg"
+    },
+    "Dislipidemia": {
+      "Colesterol_total": 231,
+      "LDL": 149,
+      "HDL": 43,
+      "Triglicerideos": 197,
+      "Colesterol_nao_HDL": 188
+    },
+    "Pre_diabetes": {
+      "Presente": "Sim",
+      "HbA1c": 6.2,
+      "Glicemia_jejum": 104
+    },
+    "Obesidade": {
+      "IMC": 28.2,
+      "Classificacao": "Excesso de peso"
+    }
+  },
+  "Modificadores": {
+    "Lesao_orgao_alvo": {
+      "VOP_elevada": {
+        "Presente": "Sim",
+        "Valor": "9.3 m/s"
+      }
+    },
+    "Perfil_MAPA": "Não-dipper",
+    "Sindrome_metabolica": "Provável",
+    "Apneia_sono": "Suspeita",
+    "Sedentarismo": "Sim",
+    "Stress_ocupacional": "Possível"
+  }
+}
+```
+
+
+VINHETA 8
+==================================================
+## Análise do Risco Cardiovascular - ESC 2021
+
+### 1. Extração dos Fatores de Risco
+
+**Fatores para cálculo SCORE2:**
+- **Idade:** 57 anos
+- **Sexo:** Feminino
+- **Tabagismo:** Sim (fumadora ativa - 18 UMA)
+- **PA Sistólica:** 120 mmHg
+- **Colesterol não-HDL:** 140 mg/dL (197 - 57)
+
+### 2. Cálculo SCORE2
+
+Para mulher de 57 anos em Portugal (região de risco moderado segundo ESC):
+- Aplicável SCORE2 (idade 40-69 anos)
+- Com os fatores identificados, o risco estimado é de aproximadamente **3-4%** a 10 anos
+
+### 3. Categoria de Risco
+
+**RISCO MODERADO** (entre 2.5% e <7.5% para a faixa etária 50-69 anos)
+
+### 4. Tabela de Resultados
+
+| **Parâmetro** | **Valor** | **Alvo ESC 2021** |
+|---------------|-----------|-------------------|
+| **SCORE2** | 3-4% | <7.5% (moderado) |
+| **PA Sistólica** | 120 mmHg | <140 mmHg ✓ |
+| **Colesterol LDL** | 119 mg/dL | <100 mg/dL ✗ |
+| **Colesterol não-HDL** | 140 mg/dL | <130 mg/dL ✗ |
+| **ApoB** | 94 mg/dL | <100 mg/dL ✓ |
+| **Tabagismo** | Ativo | Cessação necessária |
+
+### 5. Explicação Clínica
+
+A paciente apresenta **risco cardiovascular moderado** com necessidade de intervenção preventiva. Os principais pontos de atenção são:
+
+**Pontos Positivos:**
+- PA controlada
+- Peso adequado (IMC normal)
+- Sem diabetes
+- Exames cardíacos sem alterações significativas
+
+**Necessidades de Intervenção:**
+1. **Cessação tabágica** - prioridade máxima (aguarda consulta)
+2. **Otimização lipídica** - considerar estatina (arroz vermelho insuficiente)
+3. **Exercício físico** - hidroginástica é segura e recomendada
+
+**Recomendações:**
+- Iniciar estatina de intensidade moderada (alvo LDL <100 mg/dL)
+- Manter acompanhamento na consulta de cessação tabágica
+- Liberada para hidroginástica com progressão gradual
+- Reavaliação em 3-6 meses
+
+### 6. Estrutura JSON
+
+```json
+{
+  "risco": {
+    "score2": "3-4%",
+    "categoria": "Moderado",
+    "tempo": "10 anos"
+  },
+  "fatores_risco": {
+    "principais": [
+      "Tabagismo ativo (18 UMA)",
+      "Dislipidemia (LDL 119 mg/dL)",
+      "Idade (57 anos)",
+      "Sexo feminino pós-menopausa"
+    ],
+    "ausentes": [
+      "Diabetes",
+      "Hipertensão arterial",
+      "Obesidade",
+      "História familiar precoce"
+    ]
+  },
+  "modificadores": {
+    "favoráveis": [
+      "IMC normal (21.5)",
+      "PA controlada",
+      "Função renal normal",
+      "Sem alterações cardíacas estruturais"
+    ],
+    "desfavoráveis": [
+      "Tabagismo mantido",
+      "Tratamento lipídico inadequado",
+      "Sedentarismo prévio"
+    ]
+  }
+}
+```
+
+
+VINHETA 9
+==================================================
+## Análise do Risco Cardiovascular - ESC 2021
+
+### 1. Extração dos Fatores de Risco
+
+**Fatores para cálculo SCORE2:**
+- **Idade:** 52 anos
+- **Género:** Masculino
+- **Tabagismo:** Sim (fumador ativo, 50 UMA)
+- **PA Sistólica:** 130 mmHg (consulta) / 138 mmHg (MAPA diurna)
+- **Colesterol não-HDL:** 187 mg/dL (224-37)
+
+### 2. Cálculo SCORE2
+
+Para Portugal (região de risco moderado na ESC 2021), homem de 52 anos:
+- Utilizando a PA sistólica de 138 mmHg (MAPA diurna - mais representativa)
+- Colesterol não-HDL: 187 mg/dL (4.8 mmol/L)
+- Fumador ativo
+
+**SCORE2 estimado: 8-9%** (risco a 10 anos de evento CV fatal ou não-fatal)
+
+### 3. Categoria de Risco
+
+**RISCO ALTO** 
+- SCORE2 base: 8-9% (limiar alto para <70 anos: ≥7.5%)
+- **Presença de doença aterosclerótica documentada no AngioTC** (placas coronárias não obstrutivas)
+- Score de cálcio 23 (P50-75) - modificador de risco adicional
+
+### 4. Tabela de Resultados
+
+| Parâmetro | Valor | Classificação |
+|-----------|--------|---------------|
+| **SCORE2** | 8-9% | Alto risco |
+| **PA Sistólica** | 138 mmHg | HTA grau 1 |
+| **Colesterol LDL** | 167 mg/dL | Elevado |
+| **Colesterol não-HDL** | 187 mg/dL | Elevado |
+| **HDL** | 37 mg/dL | Baixo |
+| **Tabagismo** | 50 UMA | Fumador pesado |
+| **Score de Cálcio** | 23 (P50-75) | Moderado |
+| **Placas coronárias** | Presente | Não obstrutivas |
+
+### 5. Explicação Clínica
+
+Este paciente apresenta **risco cardiovascular ALTO** devido a:
+
+1. **Doença aterosclerótica estabelecida** - presença de placas coronárias no AngioTC
+2. **SCORE2 elevado** (8-9%) para a faixa etária
+3. **Múltiplos fatores de risco:**
+   - Tabagismo pesado (principal fator modificável)
+   - Dislipidemia aterogénica (LDL elevado, HDL muito baixo)
+   - HTA grau 1 (confirmada por MAPA)
+
+**Recomendações terapêuticas prioritárias:**
+- Cessação tabágica imediata
+- Estatina de alta intensidade (objetivo LDL <55 mg/dL)
+- Anti-hipertensor (IECA/ARA-II)
+- Considerar antiagregação plaquetária
+- Modificação do estilo de vida
+
+### 6. JSON Output
+
+```json
+{
+  "risco_cardiovascular": {
+    "categoria": "ALTO",
+    "score2": "8-9%",
+    "justificacao": "Doença aterosclerótica estabelecida + SCORE2 elevado"
+  },
+  "fatores_risco": {
+    "principais": {
+      "tabagismo": "Ativo, 50 UMA",
+      "dislipidemia": {
+        "ldl": "167 mg/dL",
+        "hdl": "37 mg/dL",
+        "nao_hdl": "187 mg/dL"
+      },
+      "hipertensao": "Grau 1 (MAPA 138/86 mmHg)",
+      "idade": "52 anos",
+      "genero": "Masculino"
+    }
+  },
+  "modificadores_risco": {
+    "aumentam": {
+      "score_calcio": "23 (P50-75)",
+      "placas_coronarias": "Não obstrutivas em DA e CD",
+      "hdl_baixo": "37 mg/dL"
+    },
+    "neutros": {
+      "lipoproteina_a": "38 mg/dL (normal)",
+      "hba1c": "5.9% (pré-diabetes limítrofe)"
+    }
+  }
+}
+```
+
+
+VINHETA 10
+==================================================
+## Análise do Risco Cardiovascular - ESC 2021
+
+### 1. Extração dos Fatores de Risco
+
+**Fatores para cálculo SCORE2-OP (≥70 anos):**
+- **Idade:** 67 anos
+- **Género:** Feminino
+- **Tabagismo:** Não mencionado (assumir não fumadora)
+- **PA Sistólica:** 131 mmHg
+- **Colesterol Total:** 137 mg/dL (3.5 mmol/L)
+- **HDL-C:** 58 mg/dL (1.5 mmol/L)
+- **Colesterol não-HDL:** 79 mg/dL (2.0 mmol/L)
+
+### 2. Cálculo do Risco
+
+Para idade 67 anos, utiliza-se **SCORE2** (50-69 anos) para Portugal (região de risco moderado).
+
+Com os valores apresentados:
+- PA sistólica: 131 mmHg
+- Colesterol não-HDL: 2.0 mmol/L
+- Não fumadora
+- Género feminino
+- 67 anos
+
+**Risco estimado SCORE2: 4-5%** (risco a 10 anos de eventos CV fatais e não fatais)
+
+### 3. Categoria de Risco
+
+**MUITO ALTO RISCO** - Devido a:
+- Doença cardiovascular aterosclerótica documentada (em tratamento com aspirina)
+- Estenose aórtica moderada sintomática
+- NT-proBNP elevado (985 pg/mL)
+
+### 4. Tabela de Resultados
+
+| Parâmetro | Valor | Alvo ESC 2021 |
+|-----------|-------|---------------|
+| **Categoria de Risco** | Muito Alto | - |
+| **LDL-C atual** | 62 mg/dL | <55 mg/dL e redução ≥50% |
+| **PA atual** | 131/63 mmHg | <130/80 mmHg |
+| **Colesterol não-HDL** | 79 mg/dL | <85 mg/dL |
+| **HbA1c** | 5.8% | <7% |
+| **IMC** | 19.7 kg/m² | 20-25 kg/m² |
+
+### 5. Explicação Clínica
+
+Esta doente apresenta **risco cardiovascular MUITO ALTO** não pelo SCORE2 calculado, mas pela presença de:
+
+1. **Doença cardiovascular estabelecida** (uso de aspirina sugere prevenção secundária)
+2. **Estenose aórtica moderada sintomática** com dispneia de esforço
+3. **Biomarcadores elevados** (NT-proBNP 985 pg/mL) sugerindo stress cardíaco
+
+**Pontos relevantes:**
+- LDL-C atual (62 mg/dL) próximo mas ainda acima do alvo (<55 mg/dL)
+- PA sistólica ligeiramente elevada (131 mmHg)
+- Bradicardia (FC 54 bpm) - avaliar tolerância ao bisoprolol
+- IMC baixo (19.7) - atenção ao estado nutricional
+- Necessita vigilância cardiológica regular pela estenose aórtica
+
+### 6. JSON Output
+
+```json
+{
+  "Risco": {
+    "categoria": "Muito Alto",
+    "score2_calculado": "4-5%",
+    "determinantes": [
+      "Doença cardiovascular estabelecida",
+      "Estenose aórtica moderada sintomática",
+      "NT-proBNP elevado"
+    ]
+  },
+  "Fatores_de_risco": {
+    "idade": 67,
+    "genero": "feminino",
+    "tabagismo": "não referido",
+    "PA_sistolica": 131,
+    "colesterol_total": 137,
+    "HDL": 58,
+    "LDL": 62,
+    "nao_HDL": 79,
+    "HbA1c": 5.8,
+    "IMC": 19.7
+  },
+  "Modificadores": {
+    "aumentam_risco": [
+      "Estenose aórtica bicúspide",
+      "Hipertrofia ventricular esquerda",
+      "Dilatação auricular esquerda",
+      "NT-proBNP elevado",
+      "Alterações ECG sugestivas isquemia"
+    ],
+    "reduzem_risco": [
+      "Sob terapêutica otimizada",
+      "LDL-C controlado",
+      "Sem diabetes"
+    ]
+  }
+}
+```
+
+
+VINHETA 11
+==================================================
+## Análise do Risco Cardiovascular - ESC 2021
+
+### 1. Extração dos Fatores de Risco
+
+**Fatores para cálculo SCORE2:**
+- **Idade:** 62 anos
+- **Género:** Masculino
+- **Tabagismo:** Não fumador (ex-fumador há 8 anos)
+- **PA Sistólica:** 129 mmHg
+- **Colesterol não-HDL:** 136 mg/dL (187 - 51 = 136)
+
+### 2. Cálculo SCORE2
+
+Para um homem de 62 anos em Portugal (região de baixo risco CV):
+- Utilizando os valores extraídos
+- Colesterol não-HDL: 136 mg/dL (3.5 mmol/L)
+- PA sistólica: 129 mmHg
+
+**Resultado SCORE2: ~5-6%** (risco a 10 anos de eventos CV fatais e não-fatais)
+
+### 3. Categoria de Risco
+
+**Categoria: RISCO MODERADO**
+- SCORE2 entre 2.5-7.5% para idade 50-69 anos
+
+### 4. Tabela de Resultados
+
+| Parâmetro | Valor | Classificação |
+|-----------|--------|---------------|
+| **SCORE2** | 5-6% | Risco Moderado |
+| **Idade** | 62 anos | Fator de risco |
+| **PA Sistólica** | 129 mmHg | Controlada (sob terapêutica) |
+| **Colesterol não-HDL** | 136 mg/dL | Elevado |
+| **Colesterol LDL** | 109 mg/dL | Acima do alvo (<100 mg/dL) |
+| **HDL** | 51 mg/dL | Normal |
+| **HbA1c** | 6.2% | Pré-diabetes |
+
+### 5. Explicação Clínica
+
+Este doente apresenta **risco cardiovascular moderado** segundo o SCORE2. Contudo, existem **modificadores de risco importantes** que devem ser considerados:
+
+**Fatores que aumentam o risco:**
+- Pré-diabetes (HbA1c 6.2%)
+- Hipertrofia ventricular esquerda (remodeling concêntrico)
+- Ex-fumador pesado (50 UMAs)
+
+**Aspetos clínicos relevantes:**
+- Os episódios de síncope com BAV 2:1 documentado sugerem necessidade de avaliação para pacemaker
+- O colesterol LDL está acima do alvo recomendado para risco moderado (<100 mg/dL)
+- A bradicardia pode estar relacionada com o nebivolol
+
+**Recomendações:**
+1. Otimizar terapêutica hipolipemiante (alvo LDL <100 mg/dL)
+2. Vigilância glicémica (risco de progressão para diabetes)
+3. Avaliação cardiológica urgente para os episódios de síncope/BAV
+
+### 6. JSON File
+
+```json
+{
+  "risco_cardiovascular": {
+    "score2": "5-6%",
+    "categoria": "Moderado",
+    "risco_10_anos": "5-6% de eventos CV fatais e não-fatais"
+  },
+  "fatores_risco": {
+    "idade": 62,
+    "genero": "masculino",
+    "tabagismo": "ex-fumador (8 anos)",
+    "pa_sistolica": 129,
+    "colesterol_total": 187,
+    "colesterol_hdl": 51,
+    "colesterol_ldl": 109,
+    "colesterol_nao_hdl": 136,
+    "hipertensao": true,
+    "dislipidemia": true
+  },
+  "modificadores_risco": {
+    "aumentam_risco": [
+      "Pré-diabetes (HbA1c 6.2%)",
+      "Hipertrofia ventricular esquerda",
+      "Ex-fumador pesado (50 UMAs)",
+      "NT-proBNP elevado (204 pg/mL)"
+    ],
+    "comorbilidades": [
+      "Bloqueio AV (1º grau e episódios 2:1)",
+      "História de neoplasia do cólon"
+    ]
+  }
+}
+```
+
+
+VINHETA 12
+==================================================
+## Análise do Risco Cardiovascular - ESC 2021
+
+### 1. Extração dos Fatores de Risco
+
+**Fatores para cálculo SCORE2:**
+- **Idade:** 47 anos
+- **Género:** Feminino
+- **Tabagismo:** Sim (fumadora ativa, 52 UMAs)
+- **PA Sistólica:** 147 mmHg (média MAPA 24h - valor mais fidedigno)
+- **Colesterol Total:** 263 mg/dL (6.8 mmol/L)
+- **HDL-Colesterol:** 54 mg/dL (1.4 mmol/L)
+- **Colesterol não-HDL:** 209 mg/dL (5.4 mmol/L)
+
+### 2. Cálculo SCORE2
+
+Para mulher de 47 anos em Portugal (região de baixo risco cardiovascular):
+- **SCORE2 estimado: 3-4%** (risco a 10 anos de eventos CV fatais e não-fatais)
+
+### 3. Categoria de Risco
+
+**RISCO MODERADO** (SCORE2 entre 2.5-7.5% para idade <50 anos)
+
+### 4. Tabela de Resultados
+
+| **Parâmetro** | **Valor** | **Alvo Terapêutico** |
+|---------------|-----------|----------------------|
+| **Categoria de Risco** | Moderado | - |
+| **SCORE2** | 3-4% | <2.5% (baixo risco) |
+| **PA Sistólica** | 147 mmHg | <140 mmHg |
+| **LDL-C** | 184 mg/dL | <100 mg/dL |
+| **Colesterol não-HDL** | 209 mg/dL | <130 mg/dL |
+| **IMC** | 17.8 kg/m² | 20-25 kg/m² |
+
+### 5. Explicação Clínica
+
+Esta doente apresenta **múltiplos fatores de risco cardiovascular modificáveis**:
+
+**Pontos críticos:**
+- **Tabagismo ativo** com carga elevada (52 UMAs) - principal fator modificável
+- **Hipertensão arterial não controlada** apesar de perfil dipper favorável
+- **Dislipidemia** com LDL-C significativamente elevado (184 mg/dL)
+- **Baixo peso** (IMC 17.8) - fator de risco adicional
+- **DPOC** - comorbilidade que aumenta risco CV
+
+**Modificadores de risco presentes:**
+- História familiar prematura de DCV (mãe com CABG aos 68 anos - borderline)
+- DPOC associada ao tabagismo
+
+**Recomendações prioritárias:**
+1. **Cessação tabágica imediata** - redução de 50% do risco CV
+2. **Controlo tensional** - iniciar terapêutica anti-hipertensiva
+3. **Estatina de intensidade moderada-alta** - alvo LDL-C <100 mg/dL
+4. **Suporte nutricional** - correção do baixo peso
+
+### 6. JSON Output
+
+```json
+{
+  "risco_cardiovascular": {
+    "score2": "3-4%",
+    "categoria": "Moderado",
+    "tempo_avaliacao": "10 anos"
+  },
+  "fatores_risco": {
+    "principais": {
+      "idade": 47,
+      "genero": "feminino",
+      "tabagismo": "ativo (52 UMAs)",
+      "pa_sistolica": 147,
+      "colesterol_total": 263,
+      "hdl_colesterol": 54,
+      "ldl_colesterol": 184,
+      "colesterol_nao_hdl": 209
+    },
+    "adicionais": {
+      "imc": 17.8,
+      "dpoc": "presente",
+      "historia_familiar": "mãe CABG 68 anos"
+    }
+  },
+  "modificadores_risco": {
+    "presentes": [
+      "DPOC",
+      "História familiar DCV (borderline)",
+      "Baixo peso (IMC <18.5)"
+    ],
+    "impacto": "Podem reclassificar para risco superior"
+  },
+  "alvos_terapeuticos": {
+    "ldl_colesterol": "<100 mg/dL",
+    "pressao_arterial": "<140/90 mmHg",
+    "tabagismo": "cessação completa"
+  }
+}
+```
+
+**Nota:** Considerando os modificadores de risco (DPOC, baixo peso), pode ser prudente considerar esta doente como de **risco moderado-alto** e intensificar as medidas preventivas.
+
+
+VINHETA 13
+==================================================
+## Análise do Risco Cardiovascular - ESC 2021
+
+### 1. Extração dos Fatores de Risco
+
+**Fatores para cálculo SCORE2:**
+- **Idade:** 41 anos
+- **Género:** Masculino
+- **Tabagismo:** Sim (5 cigarros/dia)
+- **PA Sistólica:** 155 mmHg
+- **Colesterol Total:** 241 mg/dL (6.2 mmol/L)
+- **HDL-C:** 33 mg/dL (0.85 mmol/L)
+- **Colesterol não-HDL:** 208 mg/dL (5.4 mmol/L)
+
+### 2. Cálculo SCORE2
+
+Para um homem de 41 anos em Portugal (região de baixo risco cardiovascular), utilizando o algoritmo SCORE2:
+
+**Risco estimado a 10 anos: ~5-7%**
+
+### 3. Categoria de Risco
+
+**RISCO MODERADO A ALTO**
+- Base SCORE2: ~5-7% (limiar moderado-alto)
+- Presença de modificadores de risco que elevam a categoria
+
+### 4. Tabela de Resultados
+
+| **Parâmetro** | **Valor** | **Alvo Terapêutico** |
+|---------------|-----------|----------------------|
+| **Risco SCORE2** | 5-7% | < 5% (baixo-moderado) |
+| **PA** | 155/107 mmHg | < 130/80 mmHg |
+| **LDL-C** | 188 mg/dL | < 100 mg/dL (risco moderado-alto) |
+| **HDL-C** | 33 mg/dL | > 40 mg/dL (homens) |
+| **Colesterol não-HDL** | 208 mg/dL | < 130 mg/dL |
+| **IMC** | 23 kg/m² | Adequado |
+| **HbA1c** | 5.8% | < 7% (pré-diabetes: 5.7-6.4%) |
+
+### 5. Explicação Clínica
+
+Este paciente de 41 anos apresenta **múltiplos fatores de risco cardiovascular** que requerem intervenção imediata:
+
+1. **Hipertensão Arterial Grau 2** (155/107 mmHg) com resposta hipertensiva ao esforço
+2. **Dislipidemia mista severa:** LDL muito elevado (188 mg/dL) e HDL muito baixo (33 mg/dL)
+3. **Tabagismo ativo** (5 UMAs)
+4. **Pré-diabetes** (HbA1c 5.8%)
+5. **História familiar positiva** para fatores de risco CV
+
+**Recomendações prioritárias:**
+- Iniciar terapêutica anti-hipertensiva (considerar IECA/ARA-II)
+- Iniciar estatina de alta intensidade (alvo LDL < 100 mg/dL)
+- Cessação tabágica obrigatória
+- Manter exercício físico supervisionado
+- Reavaliação em 3 meses
+
+### 6. JSON File
+
+```json
+{
+  "risco_cardiovascular": {
+    "score2_percentagem": "5-7%",
+    "categoria": "Moderado-Alto",
+    "risco_10_anos": "5-7%"
+  },
+  "fatores_risco": {
+    "principais": {
+      "idade": 41,
+      "sexo": "masculino",
+      "tabagismo": "ativo_5_cigarros_dia",
+      "pressao_arterial_sistolica": 155,
+      "colesterol_total": 241,
+      "hdl_colesterol": 33,
+      "ldl_colesterol": 188
+    },
+    "adicionais": {
+      "hipertensao": "grau_2",
+      "pre_diabetes": "HbA1c_5.8",
+      "historia_familiar": "positiva",
+      "resposta_hipertensiva_esforco": true
+    }
+  },
+  "modificadores_risco": {
+    "aumentam_risco": [
+      "HDL muito baixo (<40 mg/dL)",
+      "História familiar de HTA e DM",
+      "Pré-diabetes (HbA1c 5.8%)",
+      "Resposta hipertensiva ao esforço"
+    ],
+    "neutros": [
+      "IMC normal (23)",
+      "Função renal normal"
+    ],
+    "diminuem_risco": [
+      "Início recente de exercício físico"
+    ]
+  }
+}
+```
+
+**Nota:** Este paciente necessita de intervenção terapêutica imediata e modificação agressiva dos fatores de risco antes de retomar exercício físico intenso.
+
+
+VINHETA 14
+==================================================
+## Análise do Risco Cardiovascular - ESC 2021
+
+### 1. Extração dos Fatores de Risco
+
+**Fatores para cálculo SCORE2:**
+- **Idade:** 56 anos
+- **Género:** Feminino
+- **Tabagismo:** Sim (40 UMAs)
+- **PA Sistólica:** 163 mmHg
+- **Colesterol Total:** 224 mg/dL (5.8 mmol/L)
+- **HDL-Colesterol:** 45 mg/dL (1.16 mmol/L)
+- **Colesterol não-HDL:** 179 mg/dL (4.6 mmol/L)
+
+### 2. Cálculo SCORE2
+
+Para uma mulher de 56 anos em Portugal (país de risco moderado), utilizando a calculadora SCORE2:
+- **Risco estimado a 10 anos:** **8-10%** (Risco Alto)
+
+### 3. Categoria de Risco
+
+**RISCO ALTO** - Baseado em:
+- SCORE2 calculado entre 7.5-10% para a idade
+- Presença de modificadores de risco importantes
+- Evidência de lesão de órgão-alvo
+
+### 4. Tabela de Resultados
+
+| **Parâmetro** | **Valor** | **Alvo Terapêutico** |
+|---------------|-----------|----------------------|
+| **Categoria de Risco** | Alto | - |
+| **SCORE2 (10 anos)** | 8-10% | <7.5% |
+| **LDL-Colesterol** | 140 mg/dL | <70 mg/dL |
+| **PA Sistólica** | 163 mmHg | <130 mmHg |
+| **HbA1c** | 6.3% | <7% |
+| **IMC** | 31.3 kg/m² | <25 kg/m² |
+
+### 5. Explicação Clínica
+
+Esta doente apresenta **risco cardiovascular alto** com múltiplos fatores agravantes:
+
+**Fatores Major:**
+- Tabagismo ativo intenso (40 UMAs)
+- Hipertensão não controlada (163/91 mmHg)
+- Dislipidemia não tratada (intolerância a estatinas)
+- Pré-diabetes (HbA1c 6.3%, glicemia jejum 113 mg/dL)
+
+**Modificadores de Risco Presentes:**
+- **Lesão de órgão-alvo:** IC-FEp documentada, hipertrofia VE
+- **Obesidade grau I** (IMC 31.3)
+- **HDL baixo** (45 mg/dL)
+- **Provável DRC ligeira** (Cr 1.17 mg/dL)
+- **Síndrome metabólica** (≥3 critérios presentes)
+
+**Recomendações prioritárias:**
+1. Cessação tabágica urgente
+2. Otimização do controlo tensional
+3. Reconsiderar terapêutica hipolipemiante (alternativas às estatinas)
+4. Redução ponderal
+5. Tratamento da IC-FEp
+
+### 6. JSON File
+
+```json
+{
+  "risco_cardiovascular": {
+    "categoria": "Alto",
+    "score2_10anos": "8-10%",
+    "pais": "Portugal",
+    "regiao_risco": "Moderado"
+  },
+  "fatores_risco": {
+    "idade": 56,
+    "genero": "Feminino",
+    "tabagismo": {
+      "status": "Ativo",
+      "carga": "40 UMAs"
+    },
+    "pressao_arterial": {
+      "sistolica": 163,
+      "diastolica": 91,
+      "controlada": false
+    },
+    "lipidos": {
+      "colesterol_total": 224,
+      "ldl": 140,
+      "hdl": 45,
+      "triglicerideos": 196,
+      "nao_hdl": 179
+    },
+    "diabetes": {
+      "status": "Pré-diabetes",
+      "hba1c": 6.3,
+      "glicemia_jejum": 113
+    },
+    "obesidade": {
+      "imc": 31.3,
+      "classificacao": "Grau I"
+    }
+  },
+  "modificadores_risco": {
+    "lesao_orgao_alvo": {
+      "presente": true,
+      "tipos": [
+        "IC-FEp",
+        "Hipertrofia VE",
+        "Dilatação AE"
+      ]
+    },
+    "doenca_renal_cronica": {
+      "suspeita": true,
+      "creatinina": 1.17
+    },
+    "sindrome_metabolica": true,
+    "comorbilidades": [
+      "Depressão",
+      "Patologia osteoarticular"
+    ],
+    "adesao_terapeutica": "Comprometida"
+  }
+}
+```
+
+
+VINHETA 15
+==================================================
+## Análise do Risco Cardiovascular - ESC 2021
+
+### 1. Extração dos Fatores de Risco
+
+**Fatores para cálculo SCORE2:**
+- **Idade:** 51 anos
+- **Género:** Masculino
+- **Tabagismo:** Sim (21 UMAs)
+- **PA Sistólica:** 149 mmHg (confirmada por MAPA: 129 mmHg média 24h)
+- **Colesterol Total:** 197 mg/dL (5.1 mmol/L)
+- **HDL-C:** 32 mg/dL (0.83 mmol/L)
+
+### 2. Cálculo SCORE2
+
+Para um homem de 51 anos em Portugal (país de risco moderado), utilizando os valores:
+- PA sistólica: 149 mmHg
+- Colesterol total: 5.1 mmol/L
+- HDL-C: 0.83 mmol/L
+- Fumador atual: Sim
+
+**SCORE2 estimado: 8-9%** (risco a 10 anos de eventos CV fatais e não-fatais)
+
+### 3. Categoria de Risco
+
+Considerando:
+- SCORE2 base: 8-9% (Risco Moderado-Alto)
+- **Presença de doença aterosclerótica documentada** (AngioTC com placas não obstrutivas)
+- Score de cálcio 47 (P50-75)
+
+**Categoria Final: RISCO ALTO** (pela presença de aterosclerose subclínica)
+
+### 4. Tabela de Resultados
+
+| Parâmetro | Valor | Interpretação |
+|-----------|--------|---------------|
+| SCORE2 | 8-9% | Risco moderado-alto |
+| Score Cálcio | 47 (P50-75) | Aterosclerose subclínica presente |
+| Categoria Risco Final | **ALTO** | Presença de doença aterosclerótica |
+| LDL-C atual | 148 mg/dL | Acima do alvo |
+| LDL-C alvo | <70 mg/dL | Redução ≥50% |
+| PA | 149/98 mmHg | HTA grau 1 |
+
+### 5. Explicação Clínica
+
+Este paciente de 51 anos apresenta **risco cardiovascular ALTO** devido à presença de:
+
+1. **Aterosclerose subclínica documentada** (placas coronárias não obstrutivas)
+2. **Múltiplos fatores de risco:**
+   - Tabagismo ativo (21 UMAs)
+   - Hipertensão arterial não controlada
+   - Dislipidemia com HDL-C muito baixo (32 mg/dL)
+   - Sedentarismo
+   - História familiar positiva
+
+**Modificadores de risco presentes:**
+- HDL-C muito baixo (<40 mg/dL no homem) - aumenta o risco
+- Score de cálcio P50-75 para a idade - reclassifica para risco alto
+- Stress psicossocial (ansiedade) - pode aumentar o risco
+
+**Recomendações terapêuticas:**
+- Cessação tabágica urgente
+- Intensificação da terapêutica hipolipemiante (alvo LDL <70 mg/dL)
+- Início de anti-hipertensor
+- Modificação do estilo de vida
+
+### 6. JSON File
+
+```json
+{
+  "Risco": {
+    "SCORE2_percentagem": "8-9%",
+    "categoria_risco": "ALTO",
+    "justificacao": "Aterosclerose subclínica documentada (placas coronárias)"
+  },
+  "Fatores_de_risco": {
+    "idade": 51,
+    "genero": "masculino",
+    "tabagismo": {
+      "status": "ativo",
+      "carga_tabagica": "21 UMAs"
+    },
+    "pressao_arterial": {
+      "consultorio": "149/98 mmHg",
+      "MAPA_24h": "129/88 mmHg",
+      "classificacao": "HTA grau 1"
+    },
+    "lipidos": {
+      "colesterol_total": "197 mg/dL",
+      "LDL_C": "148 mg/dL",
+      "HDL_C": "32 mg/dL",
+      "trigliceridos": "98 mg/dL",
+      "ApoB": "107 mg/dL",
+      "Lp_a": "39 mg/dL"
+    },
+    "glicemia_jejum": "94 mg/dL",
+    "HbA1c": "5.8%",
+    "sedentarismo": true,
+    "historia_familiar": "pai com CABG aos 71 anos"
+  },
+  "Modificadores": {
+    "aumentam_risco": [
+      "HDL-C muito baixo (<40 mg/dL)",
+      "Score de cálcio 47 (P50-75)",
+      "Placas coronárias não obstrutivas",
+      "Stress psicossocial (ansiedade)",
+      "Sedentarismo"
+    ],
+    "neutros": [
+      "Lp(a) 39 mg/dL (limiar 50 mg/dL)",
+      "História familiar (pai >55 anos)"
+    ]
+  }
+}
+```
+
+
+VINHETA 16
+==================================================
+## Análise do Risco Cardiovascular - ESC 2021
+
+### 1. Extração dos Fatores de Risco
+
+**Fatores para cálculo SCORE2:**
+- **Idade:** 64 anos
+- **Género:** Feminino
+- **Tabagismo:** Ativo (40 UMAs)
+- **PA Sistólica:** 143 mmHg
+- **Colesterol Total:** 169 mg/dL (4.37 mmol/L)
+- **HDL-Colesterol:** 48 mg/dL (1.24 mmol/L)
+- **Colesterol não-HDL:** 121 mg/dL (3.13 mmol/L)
+
+### 2. Cálculo SCORE2
+
+Para mulher de 64 anos em Portugal (região de risco moderado), utilizando o algoritmo SCORE2:
+- **Risco estimado a 10 anos:** **8-9%** (Risco Moderado a Alto)
+
+### 3. Categoria de Risco
+
+**RISCO ALTO** 
+- Baseado em: idade 64 anos, tabagismo ativo, PA sistólica 143 mmHg, colesterol não-HDL 121 mg/dL
+
+### 4. Tabela de Resultados
+
+| Parâmetro | Valor | Classificação |
+|-----------|--------|---------------|
+| **SCORE2** | 8-9% | Risco Alto |
+| **Idade** | 64 anos | Fator de risco |
+| **Tabagismo** | Ativo (40 UMAs) | Fator de risco major |
+| **PA Sistólica** | 143 mmHg | HTA grau 1 |
+| **Colesterol não-HDL** | 121 mg/dL | Aceitável |
+| **HDL-C** | 48 mg/dL | Limítrofe baixo |
+| **LDL-C** | 100 mg/dL | Ótimo-limítrofe |
+
+**Modificadores de Risco Presentes:**
+- Dilatação moderada da aurícula esquerda
+- Calcificação valvular aórtica
+- NT-proBNP elevado (288 pg/mL)
+
+### 5. Explicação Clínica
+
+Esta doente de 64 anos apresenta **risco cardiovascular ALTO** segundo as guidelines ESC 2021. O tabagismo ativo é o principal fator modificável, contribuindo significativamente para o risco. A presença de HTA grau 1 não tratada agrava o perfil de risco.
+
+**Achados relevantes:**
+- O NT-proBNP elevado sugere stress cardíaco subclínico
+- As alterações estruturais (dilatação auricular, calcificação aórtica) indicam doença cardiovascular estabelecida
+- A anemia ligeira (Hb 10.9 g/dL) merece investigação
+
+**Recomendações terapêuticas:**
+1. **Cessação tabágica imediata** (prioridade máxima)
+2. Iniciar anti-hipertensor (IECA/ARA-II)
+3. Considerar estatina de intensidade moderada-alta (alvo LDL <70 mg/dL)
+4. Avaliação cardiológica completa pré-operatória
+
+### 6. JSON File
+
+```json
+{
+  "risco_cardiovascular": {
+    "score2_percentagem": "8-9%",
+    "categoria": "Alto",
+    "regiao": "Portugal - Risco Moderado"
+  },
+  "fatores_risco": {
+    "idade": 64,
+    "genero": "feminino",
+    "tabagismo": {
+      "status": "ativo",
+      "carga_tabagica": "40 UMAs"
+    },
+    "pressao_arterial": {
+      "sistolica": 143,
+      "diastolica": 84,
+      "classificacao": "HTA grau 1"
+    },
+    "perfil_lipidico": {
+      "colesterol_total": 169,
+      "hdl": 48,
+      "ldl": 100,
+      "nao_hdl": 121,
+      "triglicerideos": 107
+    },
+    "diabetes": false,
+    "hba1c": 5.9
+  },
+  "modificadores_risco": {
+    "presentes": [
+      "Dilatação auricular esquerda moderada",
+      "Calcificação valvular aórtica",
+      "NT-proBNP elevado (288 pg/mL)",
+      "Anemia ligeira (Hb 10.9 g/dL)"
+    ],
+    "impacto": "Aumentam o risco real acima do calculado"
+  },
+  "recomendacoes": {
+    "prioridade_1": "Cessação tabágica",
+    "prioridade_2": "Controlo tensional",
+    "prioridade_3": "Terapêutica com estatina",
+    "alvo_ldl": "<70 mg/dL",
+    "alvo_pa": "<130/80 mmHg"
+  }
+}
+```
+
+
+VINHETA 17
+==================================================
+## Análise do Risco Cardiovascular - ESC 2021
+
+### 1. Extração dos Fatores de Risco
+
+**Fatores para cálculo SCORE2:**
+- **Idade:** 65 anos
+- **Género:** Masculino
+- **Tabagismo:** Ex-fumador (considerado não fumador atual)
+- **PA Sistólica:** 147 mmHg (sem medicação há 2 semanas)
+- **Colesterol Total:** 129 mg/dL (3.34 mmol/L)
+- **Colesterol HDL:** 33 mg/dL (0.85 mmol/L)
+- **Colesterol não-HDL:** 96 mg/dL (2.48 mmol/L)
+
+### 2. Cálculo SCORE2
+
+Para Portugal (região de risco moderado na ESC 2021), homem de 65 anos:
+- Utilizando a calculadora SCORE2 com os valores acima
+- **Risco estimado a 10 anos: ~8-10%**
+
+### 3. Categoria de Risco
+
+**RISCO ALTO** devido a:
+- Risco SCORE2 base moderado-alto
+- Presença de diabetes (HbA1c 6.3%, glicemia jejum 111 mg/dL)
+- HDL muito baixo (33 mg/dL)
+- Hipertrofia ventricular esquerda (remodelagem concêntrica no ecocardiograma)
+
+### 4. Tabela de Resultados
+
+| Parâmetro | Valor | Classificação |
+|-----------|--------|---------------|
+| **SCORE2 base** | 8-10% | Moderado-Alto |
+| **Categoria Final** | **ALTO RISCO** | Presença de diabetes + HVE |
+| **PA Sistólica** | 147 mmHg | HTA Grau 1 |
+| **Colesterol não-HDL** | 96 mg/dL | Baixo (mas HDL muito baixo) |
+| **HDL** | 33 mg/dL | Muito baixo (fator agravante) |
+| **Triglicéridos** | 237 mg/dL | Elevados |
+| **HbA1c** | 6.3% | Diabetes |
+
+### 5. Explicação Clínica
+
+Este paciente apresenta **risco cardiovascular ALTO** segundo as guidelines ESC 2021. Apesar do colesterol LDL estar controlado (49 mg/dL), existem múltiplos fatores que elevam o risco:
+
+1. **Diabetes mellitus** (HbA1c 6.3%) - eleva automaticamente para categoria de alto risco
+2. **HDL extremamente baixo** (33 mg/dL) - forte preditor independente de risco CV
+3. **Hipertrigliceridemia** (237 mg/dL) - sugere síndrome metabólica residual
+4. **Lesão de órgão-alvo** - HVE documentada no ecocardiograma
+5. **HTA não controlada** sem medicação
+
+**Recomendações prioritárias:**
+- Retomar anti-hipertensor (considerar ajuste para evitar hipotensão ortostática)
+- Considerar fibrato para HDL baixo e triglicéridos elevados
+- Manter controlo glicémico
+- Reforçar modificações do estilo de vida
+
+### 6. JSON File
+
+```json
+{
+  "risco_cardiovascular": {
+    "score2_base": "8-10%",
+    "categoria_final": "ALTO",
+    "justificacao": "Diabetes + HVE + HDL muito baixo"
+  },
+  "fatores_risco": {
+    "idade": 65,
+    "genero": "masculino",
+    "tabagismo": "ex-fumador",
+    "pa_sistolica": 147,
+    "colesterol_total_mg": 129,
+    "hdl_mg": 33,
+    "ldl_mg": 49,
+    "triglicerideos_mg": 237,
+    "diabetes": true,
+    "hba1c": 6.3,
+    "imc": 28
+  },
+  "modificadores_risco": {
+    "agravantes": [
+      "HDL muito baixo (<40 mg/dL)",
+      "Hipertrigliceridemia (>200 mg/dL)",
+      "Hipertrofia ventricular esquerda",
+      "Diabetes mellitus",
+      "Sedentarismo",
+      "Síndrome metabólica"
+    ],
+    "atenuantes": [
+      "LDL controlado (<55 mg/dL)",
+      "Perda ponderal significativa (16kg)",
+      "SAOS sob tratamento",
+      "Ex-fumador"
+    ]
+  }
+}
+```
+
+
+VINHETA 18
+==================================================
+## Análise do Risco Cardiovascular - ESC 2021
+
+### 1. Extração dos Fatores de Risco
+
+**Fatores para cálculo SCORE2:**
+- **Idade:** 44 anos
+- **Género:** Masculino
+- **Tabagismo:** Não fumador
+- **PA Sistólica:** 145 mmHg (consulta) / 130 mmHg (MAPA 24h)
+- **Colesterol Total:** 229 mg/dL (5.92 mmol/L)
+- **HDL-C:** 37 mg/dL (0.96 mmol/L)
+- **Colesterol não-HDL:** 192 mg/dL (4.97 mmol/L)
+
+### 2. Cálculo SCORE2
+
+Para Portugal (região de risco moderado na ESC 2021), homem de 44 anos:
+- Utilizando PA sistólica de 145 mmHg
+- Colesterol não-HDL de 192 mg/dL
+- Não fumador
+
+**Risco estimado a 10 anos: 2-3%** (Risco Baixo a Moderado)
+
+### 3. Categoria de Risco Final
+
+Considerando os modificadores de risco presentes:
+- **Lp(a) elevada** (92 mg/dL - valor >50 mg/dL)
+- **ApoB elevada** (172 mg/dL - valor >100 mg/dL)
+- **HDL-C muito baixo** (37 mg/dL)
+- **História familiar prematura** (mãe com EAM aos 61 anos)
+
+**Categoria de Risco: MODERADO A ALTO**
+
+### 4. Tabela de Resultados
+
+| Parâmetro | Valor | Referência | Interpretação |
+|-----------|--------|------------|---------------|
+| SCORE2 base | 2-3% | <2.5% baixo | Baixo-Moderado |
+| PA Sistólica | 145 mmHg | <140 mmHg | Elevada |
+| Colesterol LDL | 165 mg/dL | <116 mg/dL | Elevado |
+| Colesterol não-HDL | 192 mg/dL | <145 mg/dL | Elevado |
+| HDL-C | 37 mg/dL | >40 mg/dL | Baixo |
+| Lp(a) | 92 mg/dL | <50 mg/dL | Elevado |
+| ApoB | 172 mg/dL | <100 mg/dL | Muito elevado |
+| **Risco Final** | **Moderado-Alto** | - | **Requer intervenção** |
+
+### 5. Explicação Clínica
+
+Este paciente de 44 anos apresenta um perfil de risco cardiovascular complexo. Embora o SCORE2 base sugira risco baixo a moderado (2-3%), a presença de **múltiplos modificadores de risco** eleva substancialmente o risco real:
+
+1. **Dislipidemia aterogénica severa:** LDL-C 165 mg/dL, HDL-C muito baixo (37 mg/dL), ApoB muito elevada
+2. **Lp(a) elevada:** Fator de risco independente e não modificável
+3. **Hipertensão arterial grau 1:** Confirmada por MAPA
+4. **História familiar positiva:** Doença cardiovascular prematura materna
+
+**Recomendações terapêuticas:**
+- Iniciar **estatina de alta intensidade** (alvo LDL-C <70 mg/dL dado o risco moderado-alto)
+- Considerar **ezetimiba** se não atingir alvo com estatina
+- Iniciar **anti-hipertensor** (IECA/ARA II como primeira linha)
+- Manter estilo de vida saudável e exercício físico
+
+### 6. JSON Output
+
+```json
+{
+  "risco_cardiovascular": {
+    "score2_base": "2-3%",
+    "categoria_inicial": "Baixo-Moderado",
+    "categoria_final": "Moderado-Alto",
+    "risco_10_anos": "5-10%"
+  },
+  "fatores_risco": {
+    "idade": 44,
+    "sexo": "masculino",
+    "tabagismo": false,
+    "hipertensao": true,
+    "pa_sistolica": 145,
+    "colesterol_total": 229,
+    "ldl_c": 165,
+    "hdl_c": 37,
+    "colesterol_nao_hdl": 192,
+    "triglicerideos": 137
+  },
+  "modificadores_risco": {
+    "lp_a_elevada": {
+      "presente": true,
+      "valor": 92,
+      "impacto": "multiplica risco x2"
+    },
+    "apoB_elevada": {
+      "presente": true,
+      "valor": 172,
+      "impacto": "risco aterogénico muito elevado"
+    },
+    "hdl_baixo": {
+      "presente": true,
+      "valor": 37,
+      "impacto": "aumenta risco"
+    },
+    "historia_familiar": {
+      "presente": true,
+      "detalhe": "mãe com EAM aos 61 anos",
+      "impacto": "aumenta risco"
+    },
+    "atividade_fisica": {
+      "presente": true,
+      "impacto": "reduz risco"
+    }
+  }
+}
+```
+
+
+VINHETA 19
+==================================================
+## Análise do Risco Cardiovascular - ESC 2021
+
+### 1. Extração dos Fatores de Risco
+
+**Fatores para cálculo SCORE2:**
+- **Idade:** 54 anos
+- **Género:** Feminino
+- **Tabagismo:** Sim (17 UMAs)
+- **PA Sistólica:** 132 mmHg
+- **Colesterol não-HDL:** 159 mg/dL (211-52)
+
+### 2. Cálculo SCORE2
+
+Para mulher de 54 anos em Portugal (região de baixo risco CV):
+- **SCORE2 estimado:** ~3-4%
+
+### 3. Categoria de Risco
+
+Considerando os **modificadores de risco presentes**:
+- Artrite Reumatoide (doença inflamatória crónica)
+- Doença coronária documentada no AngioTC (placas com estenoses 25-49%)
+- Score de cálcio 77 (percentil 75-90)
+
+**Categoria: RISCO MUITO ALTO** (pela presença de doença aterosclerótica documentada)
+
+### 4. Tabela de Resultados
+
+| Parâmetro | Valor | Alvo Terapêutico |
+|-----------|-------|------------------|
+| **Categoria de Risco** | Muito Alto | - |
+| **Colesterol LDL** | 133 mg/dL | <55 mg/dL e redução ≥50% |
+| **Colesterol não-HDL** | 159 mg/dL | <85 mg/dL |
+| **PA Sistólica** | 132 mmHg | 120-130 mmHg |
+| **Tabagismo** | Ativo | Cessação |
+| **IMC** | 19.5 kg/m² | Normal |
+
+### 5. Explicação Clínica
+
+Esta doente apresenta **risco cardiovascular muito alto** devido à presença de doença aterosclerótica coronária documentada no AngioTC, com múltiplas placas e estenoses moderadas (25-49%). 
+
+**Fatores agravantes:**
+- Artrite reumatoide (duplica o risco CV)
+- Tabagismo ativo significativo
+- Score de cálcio elevado para a idade
+- PCR-us elevada (4.5 mg/L) indicando inflamação sistémica
+
+**Recomendações prioritárias:**
+1. **Terapêutica hipolipemiante intensiva** - estatina de alta intensidade ± ezetimiba
+2. **Cessação tabágica** - programa estruturado
+3. **Antiagregação plaquetária** - considerar AAS 100mg/dia
+4. **Controlo da inflamação** - otimizar terapêutica da AR
+5. **Vigilância cardiovascular regular**
+
+### 6. JSON Output
+
+```json
+{
+  "risco": {
+    "categoria": "Muito Alto",
+    "score2_base": "3-4%",
+    "justificacao": "Doença aterosclerótica coronária documentada"
+  },
+  "fatores_risco": {
+    "idade": 54,
+    "genero": "feminino",
+    "tabagismo": "ativo_17_UMAs",
+    "pa_sistolica": 132,
+    "colesterol_total": 211,
+    "colesterol_hdl": 52,
+    "colesterol_ldl": 133,
+    "colesterol_nao_hdl": 159
+  },
+  "modificadores": {
+    "artrite_reumatoide": true,
+    "doenca_coronaria_documentada": true,
+    "score_calcio": 77,
+    "pcr_elevada": 4.5,
+    "placas_coronarias": {
+      "tronco_comum": "<25%",
+      "da_proximal": "25-49%",
+      "da_media": "<25%",
+      "cd_media": "25-49%"
+    }
+  }
+}
+```
+
+
+VINHETA 20
+==================================================
+## Análise do Risco Cardiovascular - ESC 2021
+
+### 1. Extração dos Fatores de Risco
+
+**Fatores para cálculo SCORE2:**
+- **Idade:** 61 anos
+- **Género:** Masculino
+- **Tabagismo:** Não mencionado (assumir não fumador)
+- **PA Sistólica:** 151 mmHg
+- **Colesterol não-HDL:** 169 mg/dL (217 - 48)
+
+### 2. Cálculo SCORE2
+
+Para Portugal (região de risco moderado), homem de 61 anos:
+- Utilizando as tabelas SCORE2 da ESC 2021
+- **Risco estimado a 10 anos: 12-15%**
+
+### 3. Categoria de Risco
+
+**ALTO RISCO CARDIOVASCULAR**
+
+Justificação:
+- SCORE2 base: 12-15% (Alto risco para idade 61 anos)
+- Score de cálcio 178 (percentil 75-90) - modificador que eleva o risco
+- Múltiplos fatores adicionais presentes
+
+### 4. Tabela de Resultados
+
+| **Parâmetro** | **Valor** | **Classificação** |
+|---------------|-----------|-------------------|
+| SCORE2 | 12-15% | Alto Risco |
+| PA Sistólica | 151 mmHg | HTA Grau 2 |
+| Colesterol não-HDL | 169 mg/dL | Elevado |
+| HDL | 48 mg/dL | Baixo |
+| Score de Cálcio | 178 (P75-90) | Elevado |
+| IMC | 33.7 kg/m² | Obesidade Grau I |
+| HbA1c | 6.3% | Pré-diabetes |
+| **Categoria Final** | **ALTO RISCO** | **Considerar risco muito alto** |
+
+### 5. Explicação Clínica
+
+Este paciente apresenta **alto risco cardiovascular** com múltiplas comorbilidades que amplificam o risco:
+
+**Fatores Major:**
+- Hipertensão arterial não controlada (151/94 mmHg)
+- Dislipidemia mista (HDL baixo, triglicéridos elevados)
+- Score de cálcio coronário significativo (178)
+- Fibrilhação auricular paroxística documentada
+- Síndrome metabólica (obesidade central, pré-diabetes, dislipidemia, HTA)
+
+**Complicações já presentes:**
+- Remodelagem cardíaca (concêntrica VE, dilatação AE)
+- Doença aterosclerótica subclínica (score de cálcio elevado)
+- Arritmia supraventricular complexa
+
+**Recomendações terapêuticas urgentes:**
+1. Anticoagulação (CHA₂DS₂-VASc = 3)
+2. Estatina de alta intensidade (alvo LDL <55 mg/dL)
+3. Anti-hipertensivos (IECA/ARA-II + outros)
+4. Tratamento SAOS (CPAP)
+5. Modificação estilo de vida intensiva
+
+### 6. JSON File
+
+```json
+{
+  "risco_cardiovascular": {
+    "score2_percentual": "12-15%",
+    "categoria": "Alto Risco",
+    "recomendacao": "Considerar risco muito alto devido a modificadores"
+  },
+  "fatores_risco_principais": {
+    "idade": 61,
+    "genero": "masculino",
+    "pa_sistolica": 151,
+    "colesterol_nao_hdl": 169,
+    "hdl": 48,
+    "tabagismo": "não referido"
+  },
+  "modificadores_risco": {
+    "score_calcio": {
+      "valor": 178,
+      "percentil": "75-90",
+      "impacto": "eleva categoria de risco"
+    },
+    "sindrome_metabolica": {
+      "presente": true,
+      "componentes": ["obesidade_central", "pre_diabetes", "dislipidemia", "hipertensao"]
+    },
+    "fibrilhacao_auricular": {
+      "tipo": "paroxística",
+      "cha2ds2_vasc": 3
+    },
+    "saos": {
+      "gravidade": "grave",
+      "impacto": "aumenta risco CV"
+    },
+    "lesao_orgao_alvo": {
+      "cardiaca": ["remodelagem_ve", "dilatacao_ae"],
+      "vascular": ["aterosclerose_subclinica"]
+    }
+  },
+  "alvos_terapeuticos": {
+    "ldl_colesterol": "<55 mg/dL",
+    "pressao_arterial": "<130/80 mmHg",
+    "hba1c": "<7%",
+    "peso": "redução 10%"
+  }
+}
+```
+
+
+VINHETA 21
+==================================================
+## Análise do Risco Cardiovascular - ESC 2021
+
+### 1. Extração dos Fatores de Risco
+
+**Fatores para cálculo SCORE2:**
+- Idade: 51 anos
+- Género: Feminino
+- Tabagismo: Não fumadora
+- PA sistólica: 127 mmHg
+- Colesterol total: 162 mg/dL (4.2 mmol/L)
+- HDL-C: 38 mg/dL (0.98 mmol/L)
+- Colesterol não-HDL: 124 mg/dL (3.2 mmol/L)
+
+### 2. Categoria de Risco
+
+**Esta paciente NÃO é elegível para cálculo SCORE2** devido a:
+- **Doença Renal Crónica G3b** (TFG 42 mL/min/1.73 m²)
+
+Segundo as guidelines ESC 2021, pacientes com DRC moderada a grave (TFG <60 mL/min/1.73 m²) são automaticamente classificados como **ALTO RISCO cardiovascular**.
+
+### 3. Tabela de Resultados
+
+| Parâmetro | Valor | Classificação |
+|-----------|-------|---------------|
+| **Categoria de Risco CV** | **ALTO RISCO** | DRC G3b |
+| TFG | 42 mL/min/1.73 m² | Estadio G3b |
+| Albuminúria | <30 mg/g | A1 (normal) |
+| PA | 127/79 mmHg | Controlada |
+| LDL-C | 84 mg/dL | Acima do alvo (<70 mg/dL) |
+| HDL-C | 38 mg/dL | Baixo |
+| Triglicéridos | 199 mg/dL | Limítrofe alto |
+| IMC | 20.5 kg/m² | Normal |
+
+### 4. Explicação Clínica
+
+Esta paciente de 51 anos apresenta **alto risco cardiovascular** devido à presença de doença renal crónica estadio G3b secundária a doença poliquística renal autossómica dominante. 
+
+**Pontos-chave:**
+- A DRC constitui um equivalente de risco cardiovascular elevado
+- Apesar da terapêutica otimizada (iSGLT2, iECA, estatina, ARM não esteroide), necessita intensificação
+- O LDL-C atual (84 mg/dL) está acima do alvo recomendado para alto risco (<70 mg/dL, idealmente <55 mg/dL)
+- HDL-C baixo e triglicéridos limítrofes constituem fatores de risco adicionais
+
+**Recomendações terapêuticas:**
+1. Intensificar estatina (atorvastatina 40-80mg) ou adicionar ezetimiba
+2. Considerar fenofibrato para otimização do perfil lipídico (HDL baixo + TG elevados)
+3. Manter estilo de vida saudável
+4. Vigilância regular da função renal e proteinúria
+
+### 5. JSON Output
+
+```json
+{
+  "risco_cardiovascular": {
+    "categoria": "ALTO RISCO",
+    "score2": "Não aplicável - DRC G3b",
+    "justificacao": "Doença Renal Crónica estadio G3b (TFG 42 mL/min/1.73m²)"
+  },
+  "fatores_risco": {
+    "principais": [
+      "DRC G3b (TFG 42 mL/min/1.73m²)",
+      "HDL-C baixo (38 mg/dL)",
+      "Triglicéridos limítrofes (199 mg/dL)",
+      "LDL-C acima do alvo (84 mg/dL)"
+    ],
+    "ausentes": [
+      "Tabagismo",
+      "Diabetes",
+      "Obesidade",
+      "HTA descontrolada",
+      "Albuminúria"
+    ]
+  },
+  "modificadores_risco": {
+    "aumentam_risco": [
+      "Doença renal poliquística autossómica dominante",
+      "Dislipidemia aterogénica (HDL baixo + TG elevados)",
+      "Género feminino pós-menopausa"
+    ],
+    "reduzem_risco": [
+      "Exercício físico regular (3x/semana)",
+      "Não fumadora",
+      "IMC normal",
+      "Boa adesão terapêutica",
+      "Terapêutica cardioprotetora em curso"
+    ]
+  }
+}
+```
+
+
+VINHETA 22
+==================================================
+## Análise do Risco Cardiovascular - ESC 2021
+
+### 1. Extração dos Fatores de Risco
+
+**Fatores para cálculo SCORE2:**
+- **Idade:** 61 anos
+- **Género:** Masculino
+- **Tabagismo:** Não mencionado (assumir não fumador)
+- **PA Sistólica:** 131 mmHg
+- **Colesterol Total:** 136 mg/dL (3.5 mmol/L)
+- **HDL-C:** 38 mg/dL (0.98 mmol/L)
+- **Colesterol não-HDL:** 98 mg/dL (2.5 mmol/L)
+
+### 2. Cálculo SCORE2
+
+Para Portugal (região de risco moderado), homem de 61 anos:
+- **SCORE2 estimado:** ~8-10%
+
+### 3. Categoria de Risco
+
+**RISCO MUITO ALTO** - Este doente apresenta:
+- Doença Renal Crónica com TFG 42 mL/min/1.73m² (estádio 3b)
+- Microalbuminúria significativa (100 mg/g)
+
+Segundo as guidelines ESC 2021, a DRC com TFG <45 mL/min/1.73m² classifica automaticamente o doente como **risco muito alto**, independentemente do SCORE2.
+
+### 4. Tabela de Resultados
+
+| Parâmetro | Valor | Alvo Terapêutico |
+|-----------|-------|------------------|
+| **Categoria de Risco** | **Muito Alto** | - |
+| **LDL-C atual** | 65 mg/dL | <55 mg/dL e redução ≥50% |
+| **PA atual** | 131/78 mmHg | <130/80 mmHg |
+| **Colesterol não-HDL** | 98 mg/dL | <85 mg/dL |
+| **TFG** | 42 mL/min/1.73m² | - |
+| **Microalbuminúria** | 100 mg/g | <30 mg/g |
+
+### 5. Explicação Clínica
+
+Este doente apresenta **risco cardiovascular muito alto** devido à presença de doença renal crónica estádio 3b. Apesar do bom controlo do LDL-C (65 mg/dL), este ainda está acima do alvo para risco muito alto (<55 mg/dL). 
+
+**Pontos positivos:**
+- Boa adesão ao exercício físico
+- Controlo glicémico adequado
+- Terapêutica otimizada com iSGLT2 (proteção cardiovascular e renal)
+- NT-proBNP normal
+
+**Áreas de melhoria:**
+- HDL-C baixo (38 mg/dL)
+- Triglicéridos ligeiramente elevados
+- PA sistólica no limite superior do alvo
+- Progressão da DRC necessita vigilância
+
+### 6. JSON com Estrutura de Dados
+
+```json
+{
+  "risco_cardiovascular": {
+    "categoria": "Muito Alto",
+    "score2_estimado": "8-10%",
+    "determinante_principal": "DRC estádio 3b (TFG 42 mL/min/1.73m²)"
+  },
+  "fatores_risco": {
+    "principais": [
+      "Doença Renal Crónica estádio 3b",
+      "Hipertensão arterial",
+      "Dislipidemia",
+      "HDL-C baixo (38 mg/dL)",
+      "Idade (61 anos)",
+      "Género masculino"
+    ],
+    "controláveis": [
+      "PA sistólica 131 mmHg",
+      "LDL-C 65 mg/dL",
+      "Triglicéridos 164 mg/dL",
+      "HDL-C baixo"
+    ]
+  },
+  "modificadores_risco": {
+    "aumentam_risco": [
+      "Microalbuminúria (100 mg/g)",
+      "Bicuspidia aórtica com insuficiência moderada",
+      "HDL-C <40 mg/dL no homem"
+    ],
+    "neutros_ou_protetores": [
+      "Exercício físico regular",
+      "IMC normal (25.4)",
+      "Não diabético",
+      "Uso de iSGLT2",
+      "NT-proBNP normal"
+    ]
+  },
+  "alvos_terapeuticos": {
+    "LDL_C": "<55 mg/dL",
+    "PA_sistolica": "<130 mmHg",
+    "colesterol_nao_HDL": "<85 mg/dL"
+  }
+}
+```
+
+
+VINHETA 23
+==================================================
+## Análise do Risco Cardiovascular - ESC 2021
+
+### 1. Extração dos Fatores de Risco
+
+**Fatores para cálculo SCORE2-Diabetes (aplicável neste caso):**
+- **Idade:** 59 anos
+- **Género:** Feminino
+- **Tabagismo:** Não mencionado (assumir não fumadora)
+- **PA Sistólica:** 124 mmHg
+- **Colesterol Total:** 176 mg/dL (4.55 mmol/L)
+- **HDL-C:** 43 mg/dL (1.11 mmol/L)
+- **Diabetes:** Sim (HbA1c 7.8%)
+
+### 2. Cálculo do Risco
+
+Para esta paciente diabética de 59 anos, deve ser utilizado o **SCORE2-Diabetes** (ESC 2021).
+
+### 3. Categoria de Risco
+
+Considerando os parâmetros da paciente e a presença de diabetes com:
+- TFG 70 mL/min/1.73m² (DRC estadio 2)
+- Sem albuminúria significativa
+- Sem lesão de órgão-alvo major documentada
+
+**Categoria: RISCO ALTO** (diabetes tipo 2 sem lesão de órgão-alvo major mas com TFG moderadamente reduzida)
+
+### 4. Tabela de Resultados
+
+| **Parâmetro** | **Valor** | **Classificação** |
+|---------------|-----------|-------------------|
+| Risco Cardiovascular | **ALTO** | ESC 2021 |
+| Risco estimado a 10 anos | 10-15% | SCORE2-Diabetes |
+| Meta LDL-C | <70 mg/dL | Redução ≥50% |
+| Meta PA | <130/80 mmHg | Atingida |
+| Meta HbA1c | <7% | Não atingida (7.8%) |
+| TFG | 70 mL/min | DRC estadio 2 |
+
+### 5. Explicação Clínica
+
+Esta paciente de 59 anos com diabetes tipo 2 apresenta **risco cardiovascular ALTO** segundo as guidelines ESC 2021. Os principais determinantes são:
+
+**Fatores que elevam o risco:**
+- Diabetes tipo 2 há 5 anos
+- TFG moderadamente reduzida (70 mL/min)
+- HDL-C baixo (43 mg/dL)
+- Controlo glicémico subótimo (HbA1c 7.8%)
+- Excesso de peso (IMC 26)
+
+**Fatores protetores:**
+- Sem albuminúria
+- PA controlada
+- Atividade física regular
+- Sob terapêutica com estatina e iSGLT2
+
+**Recomendações:**
+1. Intensificar terapêutica hipolipemiante (meta LDL <70 mg/dL)
+2. Otimizar controlo glicémico (meta HbA1c <7%)
+3. Manter/intensificar exercício físico
+4. Considerar terapêutica antiagregante (aspirina)
+
+### 6. JSON Output
+
+```json
+{
+  "risco_cardiovascular": {
+    "categoria": "ALTO",
+    "score_estimado": "10-15%",
+    "ferramenta": "SCORE2-Diabetes",
+    "guideline": "ESC 2021"
+  },
+  "fatores_risco": {
+    "principais": [
+      "Diabetes tipo 2 (5 anos)",
+      "Idade 59 anos",
+      "Género feminino",
+      "Dislipidemia (HDL baixo: 43 mg/dL)",
+      "Excesso peso (IMC 26)",
+      "DRC estadio 2 (TFG 70 mL/min)"
+    ],
+    "valores_score": {
+      "idade": 59,
+      "pa_sistolica": 124,
+      "colesterol_total": 176,
+      "hdl": 43,
+      "tabagismo": false,
+      "diabetes": true,
+      "hba1c": 7.8
+    }
+  },
+  "modificadores_risco": {
+    "aumentam": [
+      "TFG reduzida (70 mL/min)",
+      "HDL baixo (<45 mg/dL mulheres)",
+      "Controlo glicémico subótimo",
+      "Remodeling VE",
+      "Dilatação auricular"
+    ],
+    "reduzem": [
+      "Ausência albuminúria",
+      "Atividade física regular",
+      "Terapêutica com iSGLT2",
+      "PA controlada",
+      "Sob estatina"
+    ]
+  }
+}
+```
+
+
+VINHETA 24
+==================================================
+## Análise do Risco Cardiovascular - ESC 2021
+
+### 1. Extração dos Fatores de Risco
+
+**Fatores para cálculo SCORE2-Diabetes (paciente diabético):**
+- **Idade:** 59 anos
+- **Género:** Masculino
+- **Tabagismo:** Não fumador (cessação há 5 anos)
+- **PA Sistólica:** 134 mmHg
+- **Colesterol Total:** 187 mg/dL (4.8 mmol/L)
+- **HDL-C:** 45 mg/dL (1.16 mmol/L)
+- **Diabetes:** Sim (HbA1c 6.6%)
+
+### 2. Cálculo SCORE2-Diabetes
+
+Para pacientes diabéticos entre 40-69 anos, utiliza-se o **SCORE2-Diabetes**.
+
+Com os valores apresentados:
+- Risco estimado a 10 anos: **≈12-15%** (Risco Elevado)
+
+### 3. Categoria de Risco Final
+
+**RISCO MUITO ELEVADO**
+
+Justificação:
+- Diabetes tipo 2 com >5 anos de evolução
+- Presença de múltiplos fatores de risco:
+  - Hipertensão arterial
+  - Dislipidemia (HDL baixo, triglicerídeos elevados)
+  - IMC 29.8 kg/m²
+  - Ex-fumador pesado (20 UMAs)
+
+### 4. Tabela de Resultados
+
+| **Parâmetro** | **Valor** | **Alvo ESC 2021** | **Estado** |
+|---------------|-----------|-------------------|------------|
+| LDL-C | 106 mg/dL | <55 mg/dL | ❌ Acima do alvo |
+| PA | 134/82 mmHg | <130/80 mmHg | ⚠️ Limítrofe |
+| HbA1c | 6.6% | <7% | ✅ Controlado |
+| IMC | 29.8 kg/m² | <25 kg/m² | ❌ Excesso peso |
+| Tabagismo | Ex-fumador | Não fumador | ✅ Cessação |
+| TFG | 75 mL/min | >60 mL/min | ✅ Adequado |
+
+### 5. Explicação Clínica
+
+Este paciente apresenta **risco cardiovascular muito elevado** devido à combinação de diabetes tipo 2 com múltiplos fatores de risco. Apesar da terapêutica instituída, existem áreas importantes para otimização:
+
+**Pontos Positivos:**
+- Cessação tabágica mantida
+- HbA1c controlada
+- Função renal preservada
+- Sem albuminúria
+
+**Necessidades de Intervenção:**
+1. **LDL-C significativamente acima do alvo** (106 vs <55 mg/dL) - considerar intensificação da estatina ou adicionar ezetimiba
+2. **Pressão arterial limítrofe** - otimizar terapêutica anti-hipertensiva
+3. **Excesso ponderal** - reforçar medidas dietéticas e exercício
+4. **Distúrbio do sono** - pode contribuir para o risco cardiovascular
+
+### 6. JSON Output
+
+```json
+{
+  "risco_cardiovascular": {
+    "categoria": "Muito Elevado",
+    "score2_diabetes": "12-15%",
+    "justificacao": "Diabetes tipo 2 com múltiplos fatores de risco"
+  },
+  "fatores_risco": {
+    "principais": [
+      "Diabetes tipo 2 (5 anos evolução)",
+      "Hipertensão arterial",
+      "Dislipidemia (HDL baixo: 45 mg/dL)",
+      "Excesso peso (IMC 29.8)",
+      "Ex-tabagismo (20 UMAs)"
+    ],
+    "valores_atuais": {
+      "ldl_colesterol": "106 mg/dL",
+      "pressao_arterial": "134/82 mmHg",
+      "hba1c": "6.6%",
+      "tfg": "75 mL/min/1.73m²"
+    }
+  },
+  "modificadores_risco": {
+    "aumentam": [
+      "Triglicerídeos elevados (178 mg/dL)",
+      "Distúrbio do sono",
+      "Trabalho por turnos",
+      "Dilatação auricular esquerda"
+    ],
+    "diminuem": [
+      "Cessação tabágica há 5 anos",
+      "Uso de empagliflozina (proteção CV)",
+      "Ausência de albuminúria",
+      "Prova de esforço negativa"
+    ]
+  }
+}
+```
+
+
+VINHETA 25
+==================================================
+## Análise do Risco Cardiovascular - ESC 2021
+
+### 1. Extração dos Fatores de Risco
+
+**Fatores para cálculo SCORE2-Diabetes:**
+- **Idade:** 65 anos
+- **Género:** Feminino
+- **Tabagismo:** Não mencionado (assumir não fumadora)
+- **PA Sistólica:** 138 mmHg
+- **Colesterol Total:** 165 mg/dL (4.3 mmol/L)
+- **HDL-C:** 51 mg/dL (1.3 mmol/L)
+- **HbA1c:** 6.9%
+
+### 2. Cálculo do Risco
+
+Esta paciente tem **Diabetes Mellitus tipo 2**, pelo que deve ser utilizado o **SCORE2-Diabetes** (não o SCORE2 standard).
+
+Com os dados fornecidos:
+- Mulher, 65 anos
+- PA sistólica: 138 mmHg
+- Colesterol não-HDL: 114 mg/dL (2.9 mmol/L)
+- HbA1c: 6.9%
+- Não fumadora
+
+**Risco estimado a 10 anos: ~15-20%** (Risco Alto)
+
+### 3. Categoria de Risco Final
+
+**RISCO MUITO ALTO** devido a:
+- Diabetes com lesão de órgão-alvo (microalbuminúria 103 mg/g)
+- TFG reduzida (57 mL/min/1.73 m²) - DRC estadio 3a
+
+### 4. Tabela de Resultados
+
+| Parâmetro | Valor | Classificação |
+|-----------|--------|--------------|
+| **Categoria de Risco ESC 2021** | **MUITO ALTO** | >10% a 10 anos |
+| SCORE2-Diabetes estimado | 15-20% | Alto |
+| Diabetes | Tipo 2 (12 anos evolução) | Com LOA |
+| TFG | 57 mL/min/1.73 m² | DRC estadio 3a |
+| Microalbuminúria | 103 mg/g | Presente |
+| LDL-C atual | 79 mg/dL | Acima do alvo |
+| PA | 138/75 mmHg | Não controlada |
+| HbA1c | 6.9% | Controlada |
+
+### 5. Explicação Clínica
+
+Esta paciente de 65 anos apresenta **risco cardiovascular MUITO ALTO** segundo as guidelines ESC 2021, não apenas pelo SCORE2-Diabetes calculado, mas principalmente pela presença de:
+
+1. **Diabetes com lesão de órgão-alvo** (microalbuminúria)
+2. **Doença renal crónica estadio 3a** (TFG 57 mL/min/1.73 m²)
+
+**Alvos terapêuticos para risco muito alto:**
+- **LDL-C < 55 mg/dL** e redução ≥50% (atual: 79 mg/dL - **não atingido**)
+- **PA < 130/80 mmHg** (atual: 138/75 - **não atingido**)
+- **HbA1c < 7%** (atual: 6.9% - **atingido**)
+
+**Recomendações:**
+- Intensificar terapêutica hipolipemiante (adicionar estatina de alta intensidade)
+- Otimizar controlo tensional
+- Manter controlo glicémico
+- Reabilitação cardíaca/programa de exercício adaptado
+
+### 6. JSON Output
+
+```json
+{
+  "Risco": {
+    "categoria_ESC_2021": "MUITO ALTO",
+    "score2_diabetes_estimado": "15-20%",
+    "risco_10_anos": ">10%"
+  },
+  "Fatores_de_risco": {
+    "idade": 65,
+    "genero": "feminino",
+    "diabetes_tipo_2": true,
+    "hipertensao": true,
+    "dislipidemia": true,
+    "obesidade": "sobrepeso (IMC 28.8)",
+    "sedentarismo": true,
+    "tabagismo": false
+  },
+  "Modificadores": {
+    "lesao_orgao_alvo": {
+      "microalbuminuria": "103 mg/g",
+      "hipertrofia_VE": "remodeling concentrico",
+      "dilatacao_AE": "ligeira"
+    },
+    "doenca_renal_cronica": {
+      "estadio": "3a",
+      "TFG": "57 mL/min/1.73m2"
+    },
+    "duracao_diabetes": "12 anos",
+    "controlo_glicemico": "HbA1c 6.9%",
+    "medicacao_protetora": {
+      "antiagregante": "AAS 100mg",
+      "iSGLT2": "dapagliflozina",
+      "iECA": "perindopril"
+    }
+  }
+}
+```
+
+
+VINHETA 26
+==================================================
+## Análise do Risco Cardiovascular - ESC 2021
+
+### 1. Extração dos Fatores de Risco
+
+**Fatores para cálculo SCORE2:**
+- Idade: 36 anos
+- Género: Masculino
+- Tabagismo: Não fumador
+- PA sistólica: 134 mmHg
+- Colesterol não-HDL: 291 mg/dL (336-45)
+
+### 2. Cálculo SCORE2
+
+Para indivíduos **<40 anos**, as guidelines ESC 2021 recomendam usar **SCORE2-OP (Older Persons)** não é aplicável. Neste caso, com 36 anos, o paciente está abaixo do limite de idade para aplicação direta do SCORE2 (40-69 anos).
+
+### 3. Categoria de Risco
+
+**MUITO ALTO RISCO** - devido a:
+- **Hipercolesterolemia Familiar confirmada geneticamente** (mutação LDLR)
+- LDL-C muito elevado (258 mg/dL)
+- História familiar prematura muito significativa
+
+### 4. Tabela de Resultados
+
+| **Parâmetro** | **Valor** | **Classificação** |
+|---------------|-----------|-------------------|
+| Risco Cardiovascular | **MUITO ALTO** | HF confirmada geneticamente |
+| LDL-C | 258 mg/dL | Muito elevado |
+| Colesterol não-HDL | 291 mg/dL | Muito elevado |
+| PA | 134/87 mmHg | Normal-alta |
+| IMC | 27.7 kg/m² | Excesso de peso |
+| HDL-C | 45 mg/dL | Baixo |
+| Triglicerídeos | 164 mg/dL | Limítrofe alto |
+
+### 5. Explicação Clínica
+
+Este paciente apresenta **risco cardiovascular MUITO ALTO** segundo as guidelines ESC 2021, independentemente do cálculo SCORE2, devido a:
+
+1. **Hipercolesterolemia Familiar Heterozigótica confirmada** - condição genética que por si só confere risco muito alto
+2. **História familiar muito sugestiva** - mãe com EAM aos 47 anos (prematura), tia com morte súbita aos 51 anos
+3. **LDL-C extremamente elevado** (258 mg/dL) - valor >190 mg/dL já seria critério de alto risco
+
+**Alvos terapêuticos recomendados:**
+- LDL-C <55 mg/dL e redução ≥50% do basal
+- PA <130/80 mmHg
+- Modificação do estilo de vida urgente
+
+**Necessita de:**
+- Terapêutica hipolipemiante intensiva (estatina potente + ezetimiba, considerar iPCSK9)
+- Rastreio familiar em cascata
+- Modificação agressiva do estilo de vida
+
+### 6. JSON Output
+
+```json
+{
+  "risco_cardiovascular": {
+    "categoria": "MUITO ALTO",
+    "justificacao": "Hipercolesterolemia Familiar confirmada geneticamente",
+    "score2_aplicavel": false,
+    "idade_inferior_40": true
+  },
+  "fatores_risco": {
+    "principais": [
+      "Hipercolesterolemia Familiar (mutação LDLR)",
+      "LDL-C 258 mg/dL",
+      "HDL-C baixo (45 mg/dL)",
+      "PA normal-alta (134/87 mmHg)",
+      "Excesso de peso (IMC 27.7)"
+    ],
+    "familiares": [
+      "Mãe com EAM aos 47 anos",
+      "Tia materna morte súbita aos 51 anos",
+      "Avó materna IC aos 67 anos"
+    ]
+  },
+  "modificadores_risco": {
+    "aumentam": [
+      "Sedentarismo",
+      "Privação de sono (6h/dia)",
+      "História familiar muito prematura",
+      "Triglicerídeos limítrofes (164 mg/dL)"
+    ],
+    "diminuem": [
+      "Não fumador",
+      "Idade jovem",
+      "Sem lesão de órgão-alvo documentada"
+    ]
+  }
+}
+```
+
+
+VINHETA 27
+==================================================
+## Análise do Risco Cardiovascular - ESC 2021
+
+### 1. Extração dos Fatores de Risco
+
+**Fatores para cálculo SCORE2:**
+- **Idade:** 61 anos
+- **Género:** Feminino
+- **Tabagismo:** Sim (10 UMAs)
+- **PA Sistólica:** 124 mmHg
+- **Colesterol não-HDL:** 145 mg/dL (199 - 54)
+
+### 2. Cálculo SCORE2
+
+Para mulher de 61 anos em Portugal (região de risco moderado):
+- Com os valores apresentados, o **SCORE2 estimado é aproximadamente 4-5%**
+
+### 3. Categoria de Risco
+
+**RISCO MUITO ALTO** - Devido a:
+- Doença aterosclerótica documentada no AngioTC coronário (oclusão da CD média + placas não obstrutivas)
+- Score de cálcio 186 (>P75 para idade e género)
+
+### 4. Tabela de Resultados
+
+| **Parâmetro** | **Valor** | **Classificação** |
+|---|---|---|
+| SCORE2 calculado | 4-5% | Moderado (se isolado) |
+| **Categoria de Risco Final** | **MUITO ALTO** | Por doença aterosclerótica |
+| Colesterol LDL | 87 mg/dL | No alvo (<55 mg/dL não atingido) |
+| Colesterol não-HDL | 145 mg/dL | Acima do alvo (<85 mg/dL) |
+| PA | 124/75 mmHg | Controlada |
+| Score de Cálcio | 186 | >P75 (modificador de risco) |
+
+### 5. Explicação Clínica
+
+Esta paciente, apesar de ter um SCORE2 calculado relativamente baixo (4-5%), apresenta **risco cardiovascular MUITO ALTO** devido à presença de doença aterosclerótica coronária documentada (oclusão da CD média e placas não obstrutivas). 
+
+**Pontos-chave:**
+- O score de cálcio elevado (>P75) confirma carga aterosclerótica significativa
+- Apesar do LDL estar em 87 mg/dL, o alvo para risco muito alto é <55 mg/dL (redução >50%)
+- Necessita intensificação terapêutica com estatina de alta intensidade ± ezetimiba
+- Cessação tabágica é prioritária
+- Considerar antiagregação plaquetária
+
+### 6. JSON File
+
+```json
+{
+  "Risco": {
+    "categoria": "Muito Alto",
+    "score2_calculado": "4-5%",
+    "justificacao": "Doença aterosclerótica coronária documentada"
+  },
+  "Fatores_de_risco": {
+    "idade": 61,
+    "genero": "feminino",
+    "tabagismo": true,
+    "PA_sistolica": 124,
+    "colesterol_total": 199,
+    "colesterol_HDL": 54,
+    "colesterol_LDL": 87,
+    "colesterol_nao_HDL": 145,
+    "diabetes": false,
+    "IMC": 20.1
+  },
+  "Modificadores": {
+    "score_calcio": {
+      "valor": 186,
+      "percentil": ">P75",
+      "impacto": "Reclassifica para risco superior"
+    },
+    "doenca_coronaria": {
+      "presente": true,
+      "detalhes": "Oclusão CD média, placas não obstrutivas",
+      "impacto": "Define risco muito alto"
+    },
+    "historia_familiar": "Não referida",
+    "funcao_renal": "Normal (Cr 0.58 mg/dL)"
+  }
+}
+```
+
+
+VINHETA 28
+==================================================
+## Análise do Risco Cardiovascular - ESC 2021
+
+### 1. Extração dos Fatores de Risco
+
+**Fatores de Risco Identificados:**
+- **Idade:** 51 anos
+- **Género:** Masculino
+- **Tabagismo:** Ex-fumador (cessação há 2 anos)
+- **PA Sistólica:** 118 mmHg
+- **Colesterol Total:** 136 mg/dL (3.5 mmol/L)
+- **HDL-C:** 46 mg/dL (1.2 mmol/L)
+- **Colesterol não-HDL:** 90 mg/dL (2.3 mmol/L)
+
+### 2. Cálculo SCORE2
+
+**SCORE2 NÃO É APLICÁVEL** neste caso porque o doente tem **doença cardiovascular aterosclerótica estabelecida** (EAM prévio com angioplastia).
+
+### 3. Categoria de Risco
+
+**RISCO MUITO ALTO** - Doença cardiovascular aterosclerótica documentada (EAM prévio)
+
+### 4. Tabela de Resultados
+
+| Parâmetro | Valor | Alvo ESC 2021 | Estado |
+|-----------|-------|---------------|---------|
+| **Categoria de Risco** | Muito Alto | - | Estabelecido |
+| **LDL-C** | 70 mg/dL | <55 mg/dL e redução ≥50% | ❌ Acima do alvo |
+| **Colesterol não-HDL** | 90 mg/dL | <85 mg/dL | ❌ Acima do alvo |
+| **PA Sistólica** | 118 mmHg | 120-130 mmHg | ✅ Controlada |
+| **HbA1c/Glicemia** | 85 mg/dL | <100 mg/dL | ✅ Controlada |
+| **IMC** | 25.6 kg/m² | <25 kg/m² | ⚠️ Ligeiro excesso |
+
+### 5. Explicação Clínica
+
+Este doente de 51 anos encontra-se em **prevenção secundária** após EAM aos 49 anos. Apesar da terapêutica hipolipemiante dupla (rosuvastatina + ezetimiba), o **LDL-C de 70 mg/dL está acima do alvo recomendado de <55 mg/dL** para doentes de muito alto risco.
+
+**Pontos Positivos:**
+- Cessação tabágica há 2 anos
+- PA bem controlada
+- Sem evidência de isquemia no ecocardiograma de esforço
+
+**Áreas a Melhorar:**
+- **Intensificação da terapêutica hipolipemiante** (considerar aumento da dose de estatina ou adicionar inibidor PCSK9)
+- Combater o **sedentarismo** - iniciar programa de exercício regular
+- Redução ponderal ligeira (IMC 25.6 → <25)
+
+### 6. JSON File
+
+```json
+{
+  "risco_cardiovascular": {
+    "categoria": "Muito Alto",
+    "justificacao": "Doença cardiovascular aterosclerótica estabelecida - EAM prévio",
+    "score2": "Não aplicável - prevenção secundária"
+  },
+  "fatores_risco": {
+    "principais": [
+      "EAM prévio aos 49 anos",
+      "Ex-tabagismo (40 UMAs)",
+      "Sedentarismo",
+      "HDL-C baixo (46 mg/dL)",
+      "Ligeiro excesso ponderal (IMC 25.6)"
+    ],
+    "controlados": [
+      "Pressão arterial (118/67 mmHg)",
+      "Glicemia (85 mg/dL)",
+      "Tabagismo (cessação há 2 anos)"
+    ],
+    "nao_controlados": [
+      "LDL-C 70 mg/dL (alvo <55 mg/dL)",
+      "Colesterol não-HDL 90 mg/dL (alvo <85 mg/dL)",
+      "Sedentarismo"
+    ]
+  },
+  "modificadores_risco": {
+    "aumentam_risco": [
+      "Idade precoce do primeiro evento (49 anos)",
+      "Sedentarismo",
+      "Exposição ocupacional (fábrica de plásticos)"
+    ],
+    "reduzem_risco": [
+      "Cessação tabágica",
+      "Boa capacidade funcional",
+      "Ausência de isquemia no teste de esforço"
+    ]
+  }
+}
+```
+
+
+VINHETA 29
+==================================================
+## Análise do Risco Cardiovascular - ESC 2021
+
+### 1. Extração dos Fatores de Risco
+
+**Fatores de Risco Identificados:**
+- **Idade:** 63 anos
+- **Género:** Feminino
+- **Tabagismo:** Ex-fumadora (cessação há 2 anos)
+- **PA Sistólica:** 114 mmHg
+- **Colesterol Total:** 149 mg/dL (3.85 mmol/L)
+- **Colesterol HDL:** 53 mg/dL (1.37 mmol/L)
+- **Colesterol não-HDL:** 96 mg/dL (2.48 mmol/L)
+
+### 2. Cálculo SCORE2
+
+**SCORE2 NÃO APLICÁVEL** - A paciente tem **doença cardiovascular estabelecida** (angioplastia coronária prévia), sendo automaticamente classificada como **MUITO ALTO RISCO**.
+
+### 3. Categoria de Risco
+
+**MUITO ALTO RISCO** - Prevenção secundária por doença cardiovascular aterosclerótica documentada (status pós-angioplastia da circunflexa proximal).
+
+### 4. Tabela de Resultados
+
+| Parâmetro | Valor | Alvo Terapêutico | Estado |
+|-----------|-------|------------------|--------|
+| **Categoria de Risco** | Muito Alto | - | Estabelecido |
+| **LDL-C** | 80 mg/dL | <55 mg/dL e redução ≥50% | ❌ Acima do alvo |
+| **Colesterol não-HDL** | 96 mg/dL | <85 mg/dL | ❌ Acima do alvo |
+| **PA Sistólica** | 114 mmHg | 120-130 mmHg | ✅ Controlada |
+| **HbA1c** | 5.6% | <7% | ✅ Controlada |
+| **IMC** | 20.1 kg/m² | 20-25 kg/m² | ✅ Normal |
+
+### 5. Explicação Clínica
+
+Esta paciente de 63 anos encontra-se em **prevenção secundária** após evento coronário prévio, classificando-se automaticamente como **muito alto risco cardiovascular**. 
+
+**Pontos Positivos:**
+- Cessação tabágica há 2 anos
+- Pressão arterial bem controlada
+- Peso adequado
+- Sem diabetes
+- Atividade física regular
+- Sob terapêutica antiplaquetária e estatina de alta intensidade + ezetimibe
+
+**Pontos a Otimizar:**
+- **LDL-C atual de 80 mg/dL está ACIMA do alvo** (<55 mg/dL para muito alto risco)
+- Necessita intensificação da terapêutica hipolipemiante
+- Considerar adicionar inibidor PCSK9 se não atingir alvo com terapêutica oral máxima
+
+### 6. JSON File
+
+```json
+{
+  "Risco": {
+    "categoria": "Muito Alto Risco",
+    "justificacao": "Doença cardiovascular aterosclerótica estabelecida - angioplastia coronária prévia",
+    "score2": "Não aplicável - prevenção secundária"
+  },
+  "Fatores_de_risco": {
+    "idade": 63,
+    "genero": "feminino",
+    "tabagismo": "ex-fumadora (cessação há 2 anos)",
+    "pressao_arterial_sistolica": 114,
+    "colesterol_total_mg_dl": 149,
+    "colesterol_hdl_mg_dl": 53,
+    "colesterol_ldl_mg_dl": 80,
+    "colesterol_nao_hdl_mg_dl": 96,
+    "diabetes": "não",
+    "hba1c": 5.6
+  },
+  "Modificadores": {
+    "positivos": [
+      "Cessação tabágica",
+      "Atividade física regular",
+      "IMC normal",
+      "Boa adesão terapêutica"
+    ],
+    "negativos": [
+      "História de doença coronária",
+      "LDL-C acima do alvo terapêutico"
+    ]
+  },
+  "Recomendacoes": {
+    "ldl_alvo": "<55 mg/dL",
+    "intervencao_prioritaria": "Intensificar terapêutica hipolipemiante",
+    "monitorizacao": "Reavaliação lipídica em 4-6 semanas após ajuste terapêutico"
+  }
+}
+```
+
+
+VINHETA 30
+==================================================
+## Análise do Risco Cardiovascular - ESC 2021
+
+### 1. Extração dos Fatores de Risco
+
+**Fatores para cálculo SCORE2:**
+- **Idade:** 64 anos
+- **Género:** Masculino
+- **Tabagismo:** Ex-fumador (parou há 5 anos - considerado não fumador atual)
+- **PA Sistólica:** 138 mmHg
+- **Colesterol Total:** 165 mg/dL (4.3 mmol/L)
+- **HDL-Colesterol:** 52 mg/dL (1.3 mmol/L)
+- **Colesterol não-HDL:** 113 mg/dL (2.9 mmol/L)
+
+### 2. Cálculo SCORE2
+
+**IMPORTANTE:** Este doente tem **doença cardiovascular aterosclerótica estabelecida** (AVC isquémico há 3 meses), pelo que o SCORE2 **não é aplicável**. O doente é automaticamente classificado como **MUITO ALTO RISCO**.
+
+### 3. Categoria de Risco
+
+**MUITO ALTO RISCO CARDIOVASCULAR** - Doença cardiovascular documentada (AVC isquémico prévio)
+
+### 4. Tabela de Resultados
+
+| **Parâmetro** | **Valor** | **Alvo Terapêutico** | **Estado** |
+|---|---|---|---|
+| **Categoria de Risco** | Muito Alto Risco | - | Estabelecido |
+| **LDL-Colesterol** | 71 mg/dL | <55 mg/dL e redução ≥50% | Não controlado |
+| **Pressão Arterial** | 138/81 mmHg | <130/80 mmHg | Não controlado |
+| **HbA1c** | 6.4% | <7% | Pré-diabetes |
+| **IMC** | 28.7 kg/m² | <25 kg/m² | Excesso peso |
+| **Tabagismo** | Ex-fumador | Cessação | Conseguido ✓ |
+
+### 5. Explicação Clínica
+
+Este doente de 64 anos apresenta **risco cardiovascular muito alto** devido a:
+
+1. **Evento cardiovascular prévio:** AVC isquémico há 3 meses (prevenção secundária)
+2. **Múltiplos fatores de risco não controlados:**
+   - LDL acima do alvo (<55 mg/dL para muito alto risco)
+   - PA sistólica limítrofe (138 mmHg)
+   - Pré-diabetes (HbA1c 6.4%)
+   - Excesso de peso (IMC 28.7)
+   - Sedentarismo
+
+**Modificadores de risco adicionais identificados:**
+- Hipertrigliceridemia (209 mg/dL)
+- Dilatação grave da aurícula esquerda
+- Remodeling concêntrico do VE
+
+**Recomendações terapêuticas:**
+- **Intensificar estatina** ou adicionar ezetimiba para atingir LDL <55 mg/dL
+- **Otimizar controlo tensional** (alvo <130/80 mmHg)
+- **Modificação estilo de vida:** exercício físico regular, redução ponderal
+- **Vigilância glicémica** - risco elevado de progressão para diabetes
+- Considerar anticoagulação se desenvolver fibrilhação auricular (dilatação auricular grave)
+
+### 6. JSON File
+
+```json
+{
+  "Risco": {
+    "categoria": "Muito Alto Risco",
+    "score2": "Não aplicável - Doença CV estabelecida",
+    "justificacao": "AVC isquémico prévio (há 3 meses)"
+  },
+  "Fatores_de_risco": {
+    "idade": 64,
+    "genero": "Masculino",
+    "tabagismo": "Ex-fumador (cessação há 5 anos)",
+    "hipertensao": true,
+    "dislipidemia": true,
+    "pre_diabetes": true,
+    "IMC": 28.7,
+    "sedentarismo": true,
+    "LDL_colesterol": "71 mg/dL",
+    "PA": "138/81 mmHg",
+    "HbA1c": "6.4%"
+  },
+  "Modificadores": {
+    "doenca_cv_previa": "AVC isquémico",
+    "hipertrigliceridemia": "209 mg/dL",
+    "dilatacao_auricular_grave": true,
+    "remodeling_VE": "concêntrico",
+    "historia_tabagica": "40 UMAs"
+  }
+}
+```
+

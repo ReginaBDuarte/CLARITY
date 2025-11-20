@@ -44,6 +44,7 @@ Modificadores de Risco -> Valores; Pode selecionar mais do que um ->  Score de C
 6. Criação de um json file
 - No final, cria um json file que sumarize as informações, com a seguinte estrutura: 
 json_file ={
-"Risco':{'SCORE2 Aplicável': '..', 'Exceção': '..','Categoria': '..', 'SCORE2': '..', ‘confiança’: ’..’ },"
-"Fatores de risco':{'Fator1':'valor1','Fator2':'valor2', …},"
-"Modificadores de risco' : 'FactorM1:'valorM1', 'FactorM2': 'valorM2'}}."
+"Risco":{'SCORE2 Aplicável': '..', 'Exceção': '..','Categoria': '..', 'SCORE2': '..', 'confiança': '..' },
+"Fatores de risco":{'Fator1':'valor1','Fator2':'valor2', …},
+"Modificadores de risco" : {'FactorM1':'valorM1', 'FactorM2': 'valorM2'}
+}

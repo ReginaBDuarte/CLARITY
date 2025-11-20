@@ -1,0 +1,2323 @@
+###Vinheta 1. 
+1. Structured extraction of risk factors:
+
+| Risk Factor | Value |
+| :--- | :--- |
+| Age | 44 years |
+| Gender | Male |
+| Smoking | Non-smoker |
+| Systolic Blood Pressure | 114 mmHg |
+| Total Cholesterol | 183 mg/dL |
+| HDL-Cholesterol | 55 mg/dL |
+| non-HDL Cholesterol | 128 mg/dL |
+
+2. Risk stratification according to the 2021 ESC Guidelines on cardiovascular disease prevention in clinical practice
+
+| SCORE2 Applicable | Exception (if not applicable) | SCORE2 (%) | Risk Category | Confidence Level |
+| :--- | :--- | :--- | :--- | :--- |
+| Yes | Not Applicable | 1% | Low-to-Moderate | Very High |
+
+3. Brief Clinical Explanation
+
+The patient is a 44-year-old male with a 10-year risk of fatal and non-fatal cardiovascular events of 1%, classifying him as Low-to-Moderate risk. This favorable classification is primarily due to his young age, being a non-smoker, having optimal blood pressure (114/72 mmHg), and a well-controlled lipid profile (non-HDL cholesterol 128 mg/dL). Although he leads a sedentary lifestyle, the absence of major traditional risk factors such as hypertension, dyslipidemia, smoking, or diabetes results in a very low estimated risk according to the SCORE2 model. The presenting complaint of palpitations was investigated and attributed to benign extrasystoles, not impacting his cardiovascular risk assessment.
+
+4. Structured extraction of risk factors:
+
+| Category | Variable | Value |
+| :--- | :--- | :--- |
+| **Risk Factors** | Age | 44 years |
+| | Gender | Male |
+| | Smoking | Non-smoker |
+| | Arterial Hypertension | No |
+| | Systolic Blood Pressure | 114 mmHg |
+| | Diastolic Blood Pressure | 72 mmHg |
+| | Dyslipidemia | No |
+| | Total Cholesterol | 183 mg/dL |
+| | HDL-Cholesterol | 55 mg/dL |
+| | Triglycerides | 88 mg/dL |
+| | LDL-Cholesterol | 110 mg/dL |
+| | non-HDL Cholesterol | 128 mg/dL |
+| | Diabetes Mellitus | No |
+| **Risk Modifiers** | More than one can be selected | Other (specify): Predominantly sedentary |
+
+7. Json File Creation
+```json
+{
+  "Risk": {
+    "SCORE2 Applicable": "Yes",
+    "Exception": "Not Applicable",
+    "Category": "Low-to-Moderate",
+    "SCORE2": "1%",
+    "Confidence Level": "Very High"
+  },
+  "Risk Factors": {
+    "Age": "44 years",
+    "Gender": "Male",
+    "Smoking": "Non-smoker",
+    "Arterial Hypertension": "No",
+    "Systolic Blood Pressure": "114 mmHg",
+    "Diastolic Blood Pressure": "72 mmHg",
+    "Dyslipidemia": "No",
+    "Total Cholesterol": "183 mg/dL",
+    "HDL-Cholesterol": "55 mg/dL",
+    "Triglycerides": "88 mg/dL",
+    "LDL-Cholesterol": "110 mg/dL",
+    "non-HDL Cholesterol": "128 mg/dL",
+    "Diabetes Mellitus": "No"
+  },
+  "Risk Modifiers": {
+    "More than one can be selected": "Other (specify): Predominantly sedentary"
+  }
+}
+```
+
+###Vinheta 2. 
+1. Structured extraction of risk factors:
+
+| Risk Factor | Values |
+| :--- | :--- |
+| Age | 40 years |
+| Gender | Female |
+| Smoking | Smoker |
+| Systolic Blood Pressure | 124 mmHg |
+| Total Cholesterol | 190 mg/dL |
+| HDL-Cholesterol | 67 mg/dL |
+| non-HDL Cholesterol | 123 mg/dL |
+
+2. Risk stratification according to the 2021 ESC Guidelines on cardiovascular disease prevention in clinical practice
+
+| SCORE2 Applicable | Exception (if not applicable) | SCORE2 (%) | Risk Category | Confidence Level |
+| :--- | :--- | :--- | :--- | :--- |
+| Yes | Not applicable | 1,1 | Low-to-Moderate | High |
+
+3. Brief Clinical Explanation
+The patient is classified as having a low-to-moderate 10-year risk of cardiovascular events. This classification is primarily driven by her young age (40 years), well-controlled blood pressure (confirmed by 24h-ABPM), and a favorable lipid profile, particularly a high HDL-cholesterol level.
+
+Her main modifiable risk factor is smoking, which significantly increases her risk compared to a non-smoker with the same profile. However, given her other protective factors, her calculated SCORE2 remains below the threshold for a higher risk category for her age group. The planned smoking cessation is a critical step to maintain and further reduce her future cardiovascular risk.
+
+4. Structured extraction of risk factors:
+
+| Category | Variable | Value |
+| :--- | :--- | :--- |
+| **Risk Factors** | Age | 40 years |
+| | Gender | Female |
+| | Smoking | Smoker |
+| | Arterial Hypertension | No |
+| | Systolic Blood Pressure | 124 mmHg |
+| | Diastolic Blood Pressure | 75 mmHg |
+| | Dyslipidemia | No |
+| | Total Cholesterol | 190 mg/dL |
+| | HDL-Cholesterol | 67 mg/dL |
+| | Triglycerides | 90 mg/dL |
+| | LDL-Cholesterol | 105 mg/dL |
+| | non-HDL Cholesterol | 123 mg/dL |
+| | Diabetes Mellitus | No |
+| **Risk Modifiers**| More than one can be selected | unknown |
+
+7. Json File Creation
+```json
+{
+  "Risk": {
+    "SCORE2 Applicable": "Yes",
+    "Exception": "Not applicable",
+    "Category": "Low-to-Moderate",
+    "SCORE2": "1,1",
+    "Confidence Level": "High"
+  },
+  "Risk Factors": {
+    "Age": "40 years",
+    "Gender": "Female",
+    "Smoking": "Smoker",
+    "Arterial Hypertension": "No",
+    "Systolic Blood Pressure": "124 mmHg",
+    "Diastolic Blood Pressure": "75 mmHg",
+    "Dyslipidemia": "No",
+    "Total Cholesterol": "190 mg/dL",
+    "HDL-Cholesterol": "67 mg/dL",
+    "Triglycerides": "90 mg/dL",
+    "LDL-Cholesterol": "105 mg/dL",
+    "non-HDL Cholesterol": "123 mg/dL",
+    "Diabetes Mellitus": "No"
+  },
+  "Risk Modifiers": {
+    "More than one can be selected": "unknown"
+  }
+}
+```
+
+###Vinheta 3. 
+### 1. Structured extraction of risk factors:
+
+| Risk Factor | Values |
+| :--- | :--- |
+| Age | 58 years |
+| Gender | Female |
+| Smoking | Non-smoker |
+| Systolic Blood Pressure | 122 mmHg |
+| Total Cholesterol | 164 mg/dL |
+| HDL-Cholesterol | 47 mg/dL |
+| non-HDL Cholesterol | 117 mg/dL |
+
+### 2. Risk stratification according to the 2021 ESC Guidelines on cardiovascular disease prevention in clinical practice
+
+| SCORE2 Applicable | Exception (if not applicable) | SCORE2 (%) | Risk Category | Confidence Level |
+| :--- | :--- | :--- | :--- | :--- |
+| No | Chronic Kidney Disease (eGFR < 60 mL/min/1,73m²) | Not Applicable | High | Very High |
+
+### 3. Brief Clinical Explanation
+
+The patient is classified as being at high cardiovascular risk. This classification is not based on the SCORE2 algorithm but on the presence of a high-risk condition, specifically moderate Chronic Kidney Disease (CKD). Her creatinine of 1,2 mg/dL, age, and gender result in an estimated glomerular filtration rate (eGFR) of approximately 49 mL/min/1,73m², which falls into the CKD Stage 3a category. According to the 2021 ESC guidelines, this automatically places her in the high-risk group.
+
+While most of her conventional risk factors are well-controlled (non-smoker, normal blood pressure, acceptable lipid profile), the presence of CKD is the dominant determinant of her risk. The coronary artery calcium score of zero is a favorable risk modifier that suggests a lower burden of atherosclerosis, but it does not override the high-risk classification conferred by CKD.
+
+### 4. Structured extraction of risk factors:
+
+| Category | Variable | Value |
+| :--- | :--- | :--- |
+| **Risk Factors** | Age | 58 years |
+| | Gender | Female |
+| | Smoking | Non-smoker |
+| | Arterial Hypertension | No |
+| | Systolic Blood Pressure | 122 mmHg |
+| | Diastolic Blood Pressure | 77 mmHg |
+| | Dyslipidemia | No |
+| | Total Cholesterol | 164 mg/dL |
+| | HDL-Cholesterol | 47 mg/dL |
+| | Triglycerides | 62 mg/dL |
+| | LDL-Cholesterol | 105 mg/dL |
+| | non-HDL Cholesterol | 117 mg/dL |
+| | Diabetes Mellitus | No |
+| **Risk Modifiers**| More than one can be selected | Calcium Score = 0; Obesity |
+
+### 7. Json File Creation
+```json
+{
+  "Risk": {
+    "SCORE2 Applicable": "No",
+    "Exception": "Chronic Kidney Disease (eGFR < 60 mL/min/1,73m²)",
+    "Category": "High",
+    "SCORE2": "Not Applicable",
+    "Confidence Level": "Very High"
+  },
+  "Risk Factors": {
+    "Age": "58 years",
+    "Gender": "Female",
+    "Smoking": "Non-smoker",
+    "Arterial Hypertension": "No",
+    "Systolic Blood Pressure": "122 mmHg",
+    "Diastolic Blood Pressure": "77 mmHg",
+    "Dyslipidemia": "No",
+    "Total Cholesterol": "164 mg/dL",
+    "HDL-Cholesterol": "47 mg/dL",
+    "Triglycerides": "62 mg/dL",
+    "LDL-Cholesterol": "105 mg/dL",
+    "non-HDL Cholesterol": "117 mg/dL",
+    "Diabetes Mellitus": "No"
+  },
+  "Risk Modifiers": {
+    "Modifiers": "Calcium Score = 0; Obesity"
+  }
+}
+```
+
+###Vinheta 4. 
+### 1. Structured extraction of risk factors:
+
+| Risk Factor | Values |
+| :--- | :--- |
+| Age | 54 years |
+| Gender | Male |
+| Smoking | Non-smoker |
+| Systolic Blood Pressure | 118 mmHg |
+| Total Cholesterol | 183 mg/dL |
+| HDL-Cholesterol | 55 mg/dL |
+| non-HDL Cholesterol | 128 mg/dL |
+
+### 2. Risk stratification according to the 2021 ESC Guidelines on cardiovascular disease prevention in clinical practice
+
+| SCORE2 Applicable | Exception (if not applicable) | SCORE2 (%) | Risk Category | Confidence Level |
+| :--- | :--- | :--- | :--- | :--- |
+| Yes | Not applicable | 3% | Low-to-Moderate | High |
+
+### 3. Brief Clinical Explanation
+
+This 54-year-old male presents a favorable cardiovascular risk profile for his age. His 10-year risk of a fatal or non-fatal cardiovascular event (SCORE2) is 3%, placing him in the Low-to-Moderate risk category. This is primarily due to being a non-smoker with optimal blood pressure (118/60 mmHg), a normal BMI (23 kg/m²), and a well-controlled lipid profile (LDL 110 mg/dL, non-HDL 128 mg/dL). Although the calculated short-term risk is low, his sedentary lifestyle and notable family history of cardiovascular disease, particularly the paternal grandfather's early sudden death, are important risk modifiers. These factors warrant a comprehensive discussion about lifestyle interventions, such as increasing physical activity, to mitigate his long-term cardiovascular risk.
+
+### 4. Structured extraction of risk factors:
+
+| Category | Variable | Value |
+| :--- | :--- | :--- |
+| **Risk Factors** | Age | 54 years |
+| | Gender | Male |
+| | Smoking | Non-smoker |
+| | Arterial Hypertension | No |
+| | Systolic Blood Pressure | 118 mmHg |
+| | Diastolic Blood Pressure | 60 mmHg |
+| | Dyslipidemia | No |
+| | Total Cholesterol | 183 mg/dL |
+| | HDL-Cholesterol | 55 mg/dL |
+| | Triglycerides | 88 mg/dL |
+| | LDL-Cholesterol | 110 mg/dL |
+| | non-HDL Cholesterol | 128 mg/dL |
+| | Diabetes Mellitus | No |
+| **Risk Modifiers**| More than one can be selected | Family History of atherosclerotic cardiovascular disease (ASCVD); Other (Sedentary lifestyle) |
+
+### 7. Json File Creation
+```json
+{
+  "Risk": {
+    "SCORE2 Applicable": "Yes",
+    "Exception": "Not applicable",
+    "Category": "Low-to-Moderate",
+    "SCORE2": "3%",
+    "Confidence Level": "High"
+  },
+  "Risk Factors": {
+    "Age": "54 years",
+    "Gender": "Male",
+    "Smoking": "Non-smoker",
+    "Arterial Hypertension": "No",
+    "Systolic Blood Pressure": "118 mmHg",
+    "Diastolic Blood Pressure": "60 mmHg",
+    "Dyslipidemia": "No",
+    "Total Cholesterol": "183 mg/dL",
+    "HDL-Cholesterol": "55 mg/dL",
+    "Triglycerides": "88 mg/dL",
+    "LDL-Cholesterol": "110 mg/dL",
+    "non-HDL Cholesterol": "128 mg/dL",
+    "Diabetes Mellitus": "No"
+  },
+  "Risk Modifiers": {
+    "More than one can be selected": "Family History of atherosclerotic cardiovascular disease (ASCVD); Other (Sedentary lifestyle)"
+  }
+}
+```
+
+###Vinheta 5. 
+### 1. Structured extraction of risk factors:
+
+| Risk Factor | Values |
+| :--- | :--- |
+| Age | 63 years |
+| Gender | Female |
+| Smoking | Non-smoker |
+| Systolic Blood Pressure | 107 mmHg |
+| Total Cholesterol | 214 mg/dL |
+| HDL-Cholesterol | 67 mg/dL |
+| non-HDL Cholesterol | 147 mg/dL |
+
+### 2. Risk stratification according to the 2021 ESC Guidelines on cardiovascular disease prevention in clinical practice
+
+| SCORE2 Applicable | Exception (if not applicable) | SCORE2 (%) | Risk Category | Confidence Level |
+| :--- | :--- | :--- | :--- | :--- |
+| Yes | Not Applicable | 3,5 | Low-to-Moderate | High |
+
+### 3. Brief Clinical Explanation
+
+The patient is classified as having a **Low-to-Moderate risk** for a 10-year fatal and non-fatal cardiovascular event, with a calculated **SCORE2 of 3,5%**.
+
+This classification is primarily determined by her age (63 years) and moderately elevated cholesterol levels (Total Cholesterol 214 mg/dL, LDL 122 mg/dL). However, several protective factors prevent her risk from being higher: she is a non-smoker, has excellent blood pressure control (107/58 mmHg), a high HDL-cholesterol level (67 mg/dL), and no diabetes.
+
+While she has a history of atrial fibrillation, this condition is currently controlled and anticoagulated, and for the purpose of primary atherosclerotic cardiovascular disease risk prediction using SCORE2, she is considered apparently healthy. Therefore, her risk is not high enough to place her in a higher risk category based on current guidelines.
+
+### 4. Structured extraction of risk factors:
+
+| Category | Variable | Value |
+| :--- | :--- | :--- |
+| **Risk Factors** | Age | 63 years |
+| | Gender | Female |
+| | Smoking | Non-smoker |
+| | Arterial Hypertension | No |
+| | Systolic Blood Pressure | 107 mmHg |
+| | Diastolic Blood Pressure | 58 mmHg |
+| | Dyslipidemia | Yes |
+| | Total Cholesterol | 214 mg/dL |
+| | HDL-Cholesterol | 67 mg/dL |
+| | Triglycerides | 124 mg/dL |
+| | LDL-Cholesterol | 122 mg/dL |
+| | non-HDL Cholesterol | 147 mg/dL |
+| | Diabetes Mellitus | No |
+| **Risk Modifiers** | Elevated Coronary Calcium Score | unknown |
+| | Calcium Score = 0 | unknown |
+| | Carotid Plaques | unknown |
+| | Obesity | No |
+| | Pre-Diabetes | No |
+| | Family History of ASCVD | unknown |
+| | Elevated Lp(a) | unknown |
+| | Increased Arterial Stiffness | unknown |
+| | Elevated High-sensitivity CRP | unknown |
+| | Chronic Inflammatory Disease | No |
+| | HIV Infection | No |
+| | Migraine with Aura | unknown |
+| | Obstructive Sleep Apnea (OSA) | unknown |
+| | Non-Alcoholic Fatty Liver Disease | unknown |
+| | Erectile Dysfunction | Not Applicable |
+| | Premature Menopause | unknown |
+| | Past history of Pregnancy Complications | unknown |
+| | Chronic Obstructive Pulmonary Disease (COPD) | No |
+| | Cancer | No |
+| | Other (specify) | Atrial Fibrillation; Mild Left Atrial Enlargement |
+
+### 7. Json File Creation
+```json
+{
+  "Risk": {
+    "SCORE2 Applicable": "Yes",
+    "Exception": "Not Applicable",
+    "Category": "Low-to-Moderate",
+    "SCORE2": "3,5",
+    "Confidence Level": "High"
+  },
+  "Risk Factors": {
+    "Age": "63",
+    "Gender": "Female",
+    "Smoking": "Non-smoker",
+    "Arterial Hypertension": "No",
+    "Systolic Blood Pressure": "107",
+    "Diastolic Blood Pressure": "58",
+    "Dyslipidemia": "Yes",
+    "Total Cholesterol": "214",
+    "HDL-Cholesterol": "67",
+    "Triglycerides": "124",
+    "LDL-Cholesterol": "122",
+    "non-HDL Cholesterol": "147",
+    "Diabetes Mellitus": "No"
+  },
+  "Risk Modifiers": {
+    "Other": "Atrial Fibrillation; Mild Left Atrial Enlargement"
+  }
+}
+```
+
+###Vinheta 6. 
+### 1. Structured extraction of risk factors:
+
+| Risk Factor | Values |
+| :--- | :--- |
+| Age | 41 years |
+| Gender | Female |
+| Smoking | Smoker |
+| Systolic Blood Pressure | 146 mmHg |
+| Total Cholesterol | 270 mg/dL |
+| HDL-Cholesterol | 53 mg/dL |
+| non-HDL Cholesterol | 217 mg/dL |
+
+### 2. Risk stratification according to the 2021 ESC Guidelines on cardiovascular disease prevention in clinical practice
+
+| SCORE2 Applicable | Exception (if not applicable) | SCORE2 (%) | Risk Category | Confidence Level |
+| :--- | :--- | :--- | :--- | :--- |
+| Yes | Not applicable | 4 | High | High |
+
+### 3. Brief Clinical Explanation
+
+The patient is classified as having a **High** 10-year cardiovascular risk. Although she is young (41 years), her SCORE2 of 4% exceeds the high-risk threshold of ≥2,5% for her age group. This classification is primarily driven by the combination of major, uncontrolled modifiable risk factors: active smoking with a significant history (25 pack-years), uncontrolled stage 1 hypertension (146/85 mmHg), and severe dyslipidemia with markedly elevated total cholesterol (270 mg/dL) and LDL-cholesterol (189 mg/dL).
+
+Furthermore, the presence of risk modifiers reinforces this classification. These include pre-diabetes (HbA1c of 6,3%) and, critically, imaging evidence of hypertension-mediated target organ damage (concentric left ventricular remodeling and mild left atrial dilation on echocardiogram), which independently increase her cardiovascular risk beyond the calculated score.
+
+### 4. Structured extraction of risk factors:
+
+| Category | Variable | Value |
+| :--- | :--- | :--- |
+| **Risk Factors** | Age | 41 years |
+| | Gender | Female |
+| | Smoking | Smoker |
+| | Arterial Hypertension | Yes |
+| | Systolic Blood Pressure | 146 mmHg |
+| | Diastolic Blood Pressure | 85 mmHg |
+| | Dyslipidemia | Yes |
+| | Total Cholesterol | 270 mg/dL |
+| | HDL-Cholesterol | 53 mg/dL |
+| | Triglycerides | 142 mg/dL |
+| | LDL-Cholesterol | 189 mg/dL |
+| | non-HDL Cholesterol | 217 mg/dL |
+| | Diabetes Mellitus | No |
+| **Risk Modifiers** | Pre-Diabetes | Yes |
+| | Other | Concentric left ventricular remodeling; Mild left atrial dilation |
+
+### 7. Json File Creation
+
+```json
+{
+  "Risk": {
+    "SCORE2 Applicable": "Yes",
+    "Exception": "Not applicable",
+    "Category": "High",
+    "SCORE2": "4",
+    "Confidence Level": "High"
+  },
+  "Risk Factors": {
+    "Age": "41 years",
+    "Gender": "Female",
+    "Smoking": "Smoker",
+    "Arterial Hypertension": "Yes",
+    "Systolic Blood Pressure": "146 mmHg",
+    "Diastolic Blood Pressure": "85 mmHg",
+    "Dyslipidemia": "Yes",
+    "Total Cholesterol": "270 mg/dL",
+    "HDL-Cholesterol": "53 mg/dL",
+    "Triglycerides": "142 mg/dL",
+    "LDL-Cholesterol": "189 mg/dL",
+    "non-HDL Cholesterol": "217 mg/dL",
+    "Diabetes Mellitus": "No"
+  },
+  "Risk Modifiers": {
+    "Pre-Diabetes": "Yes",
+    "Other": "Concentric left ventricular remodeling; Mild left atrial dilation"
+  }
+}
+```
+
+###Vinheta 7. 
+### 1. Structured extraction of risk factors:
+
+| Risk Factor | Values |
+| :--- | :--- |
+| Age | 48 years |
+| Gender | Male |
+| Smoking | Non-smoker |
+| Systolic Blood Pressure | 161 mmHg |
+| Total Cholesterol | 231 mg/dL |
+| HDL-Cholesterol | 43 mg/dL |
+| non-HDL Cholesterol | 188 mg/dL |
+
+### 2. Risk stratification according to the 2021 ESC Guidelines on cardiovascular disease prevention in clinical practice
+
+| SCORE2 Applicable | Exception (if not applicable) | SCORE2 (%) | Risk Category | Confidence Level |
+| :--- | :--- | :--- | :--- | :--- |
+| Yes | N/A | 6,6% | High | High |
+
+### 3. Brief Clinical Explanation
+
+The patient is classified as being at **High Risk** for a cardiovascular event in the next 10 years, with a calculated SCORE2 of 6,6%. This classification is primarily driven by the presence of uncontrolled Grade 2 hypertension (systolic blood pressure of 161 mmHg) and significant dyslipidemia (non-HDL cholesterol of 188 mg/dL), which are key components of the SCORE2 algorithm.
+
+His risk is further amplified by several risk modifiers, including pre-diabetes (HbA1c 6,2%), borderline renal function (eGFR ≈ 60 mL/min/1.73m²), increased arterial stiffness, hyperuricemia, and symptoms suggestive of obstructive sleep apnea. Although not part of the score, these factors contribute to his overall and lifetime cardiovascular risk, reinforcing the need for intensive lifestyle interventions and pharmacological treatment.
+
+### 4. Structured extraction of risk factors:
+
+| Category | Variable | Value |
+| :--- | :--- | :--- |
+| **Risk Factors** | Age | 48 years |
+| | Gender | Male |
+| | Smoking | Non-smoker |
+| | Arterial Hypertension | Yes |
+| | Systolic Blood Pressure | 161 mmHg |
+| | Diastolic Blood Pressure | 102 mmHg |
+| | Dyslipidemia | Yes |
+| | Total Cholesterol | 231 mg/dL |
+| | HDL-Cholesterol | 43 mg/dL |
+| | Triglycerides | 197 mg/dL |
+| | LDL-Cholesterol | 149 mg/dL |
+| | non-HDL Cholesterol | 188 mg/dL |
+| | Diabetes Mellitus | No |
+| **Risk Modifiers** | More than one can be selected | Pre-Diabetes; Increased Arterial Stiffness; Obstructive Sleep Apnea (OSA); Other (Borderline Chronic Kidney Disease (eGFR=60); Hyperuricemia) |
+
+### 7. Json File Creation
+
+```json
+{
+  "Risk": {
+    "SCORE2 Applicable": "Yes",
+    "Exception": "N/A",
+    "Category": "High",
+    "SCORE2": "6,6%",
+    "Confidence Level": "High"
+  },
+  "Risk Factors": {
+    "Age": "48 years",
+    "Gender": "Male",
+    "Smoking": "Non-smoker",
+    "Arterial Hypertension": "Yes",
+    "Systolic Blood Pressure": "161 mmHg",
+    "Diastolic Blood Pressure": "102 mmHg",
+    "Dyslipidemia": "Yes",
+    "Total Cholesterol": "231 mg/dL",
+    "HDL-Cholesterol": "43 mg/dL",
+    "Triglycerides": "197 mg/dL",
+    "LDL-Cholesterol": "149 mg/dL",
+    "non-HDL Cholesterol": "188 mg/dL",
+    "Diabetes Mellitus": "No"
+  },
+  "Risk Modifiers": {
+    "Modifiers": "Pre-Diabetes; Increased Arterial Stiffness; Obstructive Sleep Apnea (OSA); Other (Borderline Chronic Kidney Disease (eGFR=60); Hyperuricemia)"
+  }
+}
+```
+
+###Vinheta 8. 
+### 1. Structured extraction of risk factors:
+
+| Risk Factor | Values |
+| :--- | :--- |
+| Age | 57 years |
+| Gender | Female |
+| Smoking | Smoker |
+| Systolic Blood Pressure | 120 mmHg |
+| Total Cholesterol | 197 mg/dL |
+| HDL-Cholesterol | 57 mg/dL |
+| non-HDL Cholesterol | 140 mg/dL |
+
+### 2. Risk stratification according to the 2021 ESC Guidelines on cardiovascular disease prevention in clinical practice
+
+| SCORE2 Applicable | Exception (if not applicable) | SCORE2 (%) | Risk Category | Confidence Level |
+| :--- | :--- | :--- | :--- | :--- |
+| Yes | N/A | 5% | High | High |
+
+### 3. Brief Clinical Explanation
+
+The patient is classified as having a **High** 10-year risk of cardiovascular events (5%). This classification is primarily driven by her **age (57 years)** and her status as an **active smoker**. Although her blood pressure is well-controlled and her BMI is within the normal range, her lipid profile (non-HDL cholesterol of 140 mg/dL and LDL of 119 mg/dL) contributes to the overall risk. The combination of these factors, especially persistent smoking, elevates her risk profile significantly despite the absence of other overt conditions like diabetes or severe hypertension. Addressing smoking cessation is the most critical intervention to reduce her future cardiovascular risk.
+
+### 4. Structured extraction of risk factors:
+
+| Category | Variable | Value |
+| :--- | :--- | :--- |
+| **Risk Factors** | Age | 57 years |
+| | Gender | Female |
+| | Smoking | Smoker |
+| | Arterial Hypertension | No |
+| | Systolic Blood Pressure | 120 mmHg |
+| | Diastolic Blood Pressure | 63 mmHg |
+| | Dyslipidemia | Yes |
+| | Total Cholesterol | 197 mg/dL |
+| | HDL-Cholesterol | 57 mg/dL |
+| | Triglycerides | 124 mg/dL |
+| | LDL-Cholesterol | 119 mg/dL |
+| | non-HDL Cholesterol | 140 mg/dL |
+| | Diabetes Mellitus | No |
+| **Risk Modifiers** | More than one can be selected | Other (ApoB 94 mg/dL) |
+
+### 7. Json File Creation
+
+```json
+{
+  "Risk": {
+    "SCORE2 Applicable": "Yes",
+    "Exception": "N/A",
+    "Category": "High",
+    "SCORE2": "5%",
+    "Confidence Level": "High"
+  },
+  "Risk Factors": {
+    "Age": "57 years",
+    "Gender": "Female",
+    "Smoking": "Smoker",
+    "Arterial Hypertension": "No",
+    "Systolic Blood Pressure": "120 mmHg",
+    "Diastolic Blood Pressure": "63 mmHg",
+    "Dyslipidemia": "Yes",
+    "Total Cholesterol": "197 mg/dL",
+    "HDL-Cholesterol": "57 mg/dL",
+    "Triglycerides": "124 mg/dL",
+    "LDL-Cholesterol": "119 mg/dL",
+    "non-HDL Cholesterol": "140 mg/dL",
+    "Diabetes Mellitus": "No"
+  },
+  "Risk Modifiers": {
+    "Other": "ApoB 94 mg/dL"
+  }
+}
+```
+
+###Vinheta 9. 
+### 1. Structured extraction of risk factors:
+
+| Risk Factor | Values |
+| :--- | :--- |
+| Age | 52 years |
+| Gender | Male |
+| Smoking | Smoker |
+| Systolic Blood Pressure | 130 mmHg |
+| Total Cholesterol | 224 mg/dL |
+| HDL-Cholesterol | 37 mg/dL |
+| non-HDL Cholesterol | 187 mg/dL |
+
+### 2. Risk stratification according to the 2021 ESC Guidelines on cardiovascular disease prevention in clinical practice
+
+| SCORE2 Applicable | Exception (if not applicable) | SCORE2 (%) | Risk Category | Confidence Level |
+| :--- | :--- | :--- | :--- | :--- |
+| No | Atherosclerotic Cardiovascular Disease | Not Applicable | Very High | Very High |
+
+### 3. Brief Clinical Explanation
+
+This 52-year-old male is classified as being at **Very High** cardiovascular risk. Although his SCORE2 risk score is not applicable for formal calculation, the presence of non-obstructive coronary plaques on cardiac CT angiography constitutes documented atherosclerotic cardiovascular disease (ASCVD). According to the 2021 ESC guidelines, any individual with documented ASCVD is automatically placed in the very high-risk category, overriding risk score calculations.
+
+His risk is further compounded by multiple contributing factors, including a very significant smoking history (50 pack-years), dyslipidemia (elevated total and LDL cholesterol, low HDL), and masked hypertension, evidenced by elevated daytime ambulatory blood pressure despite a normal office reading. The presence of pre-diabetes (HbA1c 5,9%) also acts as a risk modifier.
+
+### 4. Structured extraction of risk factors:
+
+| Category | Variable | Value |
+| :--- | :--- | :--- |
+| **Risk Factors** | Age | 52 years |
+| | Gender | Male |
+| | Smoking | Smoker |
+| | Arterial Hypertension | Yes |
+| | Systolic Blood Pressure | 130 mmHg |
+| | Diastolic Blood Pressure | 89 mmHg |
+| | Dyslipidemia | Yes |
+| | Total Cholesterol | 224 mg/dL |
+| | HDL-Cholesterol | 37 mg/dL |
+| | Triglycerides | 98 mg/dL |
+| | LDL-Cholesterol | 167 mg/dL |
+| | non-HDL Cholesterol | 187 mg/dL |
+| | Diabetes Mellitus | No |
+| **Risk Modifiers**| More than one can be selected | Elevated Coronary Calcium Score; Pre-Diabetes |
+
+### 7. Json File Creation
+
+```json
+{
+  "Risk": {
+    "SCORE2 Applicable": "No",
+    "Exception": "Atherosclerotic Cardiovascular Disease",
+    "Category": "Very High",
+    "SCORE2": "Not Applicable",
+    "Confidence Level": "Very High"
+  },
+  "Risk Factors": {
+    "Age": "52 years",
+    "Gender": "Male",
+    "Smoking": "Smoker",
+    "Arterial Hypertension": "Yes",
+    "Systolic Blood Pressure": "130 mmHg",
+    "Diastolic Blood Pressure": "89 mmHg",
+    "Dyslipidemia": "Yes",
+    "Total Cholesterol": "224 mg/dL",
+    "HDL-Cholesterol": "37 mg/dL",
+    "Triglycerides": "98 mg/dL",
+    "LDL-Cholesterol": "167 mg/dL",
+    "non-HDL Cholesterol": "187 mg/dL",
+    "Diabetes Mellitus": "No"
+  },
+  "Risk Modifiers": {
+    "More than one can be selected": "Elevated Coronary Calcium Score; Pre-Diabetes"
+  }
+}
+```
+
+###Vinheta 10. 
+1. Structured extraction of risk factors:
+
+| Risk Factor | Value |
+| :--- | :--- |
+| Age | 67 years |
+| Gender | Female |
+| Smoking | unknown |
+| Systolic Blood Pressure | 131 mmHg |
+| Total Cholesterol | 137 mg/dL |
+| HDL-Cholesterol | 58 mg/dL |
+| non-HDL Cholesterol | 79 mg/dL |
+
+2. Risk stratification according to the 2021 ESC Guidelines on cardiovascular disease prevention in clinical practice
+
+| SCORE2 Applicable | Exception (if not applicable) | SCORE2 (%) | Risk Category | Confidence Level |
+| :--- | :--- | :--- | :--- | :--- |
+| No | Established cardiovascular disease (Moderate aortic stenosis) | Not Applicable | Very High | High |
+
+3. Brief Clinical Explanation
+
+The patient is classified as being at **Very High Risk** for cardiovascular events. This classification is not based on the SCORE2 calculation, which is intended for apparently healthy individuals. Instead, it is based on the definitive diagnosis of established cardiovascular disease, specifically moderate calcific aortic stenosis, confirmed by echocardiography.
+
+According to the 2021 ESC guidelines, any patient with established atherosclerotic cardiovascular disease (ASCVD), either clinical or unequivocal on imaging, is automatically placed in the highest risk category. The presence of symptomatic, moderate valvular heart disease overrides risk score estimation. The patient's symptoms of fatigue on exertion are consistent with the hemodynamic significance of the stenosis. The elevated NT-proBNP and concentric left ventricular remodeling further support a high-risk profile due to chronic pressure overload.
+
+4. Structured extraction of risk factors:
+
+| Category | Variable | Value |
+| :--- | :--- | :--- |
+| **Risk Factors** | Age | 67 years |
+| | Gender | Female |
+| | Smoking | unknown |
+| | Arterial Hypertension | Yes |
+| | Systolic Blood Pressure | 131 mmHg |
+| | Diastolic Blood Pressure | 63 mmHg |
+| | Dyslipidemia | Yes |
+| | Total Cholesterol | 137 mg/dL |
+| | HDL-Cholesterol | 58 mg/dL |
+| | Triglycerides | 85 mg/dL |
+| | LDL-Cholesterol | 62 mg/dL |
+| | non-HDL Cholesterol | 79 mg/dL |
+| | Diabetes Mellitus | No |
+| **Risk Modifiers** | More than one can be selected | Pre-Diabetes; Other (specify): Elevated NT-proBNP (985 pg/mL), Concentric LV remodeling, Moderate left atrial enlargement |
+
+7. Json File Creation
+
+```json
+{
+  "Risk": {
+    "SCORE2 Applicable": "No",
+    "Exception": "Established cardiovascular disease (Moderate aortic stenosis)",
+    "Category": "Very High",
+    "SCORE2": "Not Applicable",
+    "Confidence Level": "High"
+  },
+  "Risk Factors": {
+    "Age": "67 years",
+    "Gender": "Female",
+    "Smoking": "unknown",
+    "Arterial Hypertension": "Yes",
+    "Systolic Blood Pressure": "131 mmHg",
+    "Diastolic Blood Pressure": "63 mmHg",
+    "Dyslipidemia": "Yes",
+    "Total Cholesterol": "137 mg/dL",
+    "HDL-Cholesterol": "58 mg/dL",
+    "Triglycerides": "85 mg/dL",
+    "LDL-Cholesterol": "62 mg/dL",
+    "non-HDL Cholesterol": "79 mg/dL",
+    "Diabetes Mellitus": "No"
+  },
+  "Risk Modifiers": {
+    "Selected": "Pre-Diabetes; Other (specify): Elevated NT-proBNP (985 pg/mL), Concentric LV remodeling, Moderate left atrial enlargement"
+  }
+}
+```
+
+###Vinheta 11. 
+### 1. Structured extraction of risk factors:
+
+| Risk Factor | Value |
+| :--- | :--- |
+| Age | 62 years |
+| Gender | Male |
+| Smoking | Former Smoker |
+| Systolic Blood Pressure | 129 mmHg |
+| Total Cholesterol | 187 mg/dL |
+| HDL-Cholesterol | 51 mg/dL |
+| non-HDL Cholesterol | 136 mg/dL |
+
+---
+### 2. Risk stratification according to the 2021 ESC Guidelines on cardiovascular disease prevention in clinical practice
+
+| SCORE2 Applicable | Exception (if not applicable) | SCORE2 (%) | Risk Category | Confidence Level |
+| :--- | :--- | :--- | :--- | :--- |
+| Yes | Not applicable | 7,0 | Low-to-Moderate | High |
+
+---
+### 3. Brief Clinical Explanation
+
+The patient's 10-year risk of fatal and non-fatal cardiovascular events is 7,0%, placing him in the low-to-moderate risk category for his age. This calculation is primarily based on his age (62 years), male gender, and history of hypertension and dyslipidemia, although currently treated. His significant past smoking history (50 pack-years) is a crucial lifelong risk factor, even though he is now considered a non-smoker for calculation purposes. The presence of risk modifiers, specifically pre-diabetes (HbA1c 6,2%) and a history of cancer, suggests his true risk may be higher than the calculated score. These factors warrant consideration for more intensive preventive strategies, despite the SCORE2 result.
+
+---
+### 4. Structured extraction of risk factors:
+
+| Category | Variable | Value |
+| :--- | :--- | :--- |
+| **Risk Factors** | **Age** | 62 years |
+| | **Gender** | Male |
+| | **Smoking** | Former Smoker |
+| | **Arterial Hypertension** | Yes |
+| | **Systolic Blood Pressure** | 129 mmHg |
+| | **Diastolic Blood Pressure** | 66 mmHg |
+| | **Dyslipidemia** | Yes |
+| | **Total Cholesterol** | 187 mg/dL |
+| | **HDL-Cholesterol** | 51 mg/dL |
+| | **Triglycerides** | 134 mg/dL |
+| | **LDL-Cholesterol** | 109 mg/dL |
+| | **non-HDL Cholesterol** | 136 mg/dL |
+| | **Diabetes Mellitus** | No |
+| **Risk Modifiers**| **More than one can be selected**| Pre-Diabetes; Cancer |
+
+---
+### 7. Json File Creation
+```json
+{
+  "Risk": {
+    "SCORE2 Applicable": "Yes",
+    "Exception": "Not applicable",
+    "Category": "Low-to-Moderate",
+    "SCORE2": "7,0",
+    "Confidence Level": "High"
+  },
+  "Risk Factors": {
+    "Age": "62 years",
+    "Gender": "Male",
+    "Smoking": "Former Smoker",
+    "Arterial Hypertension": "Yes",
+    "Systolic Blood Pressure": "129 mmHg",
+    "Diastolic Blood Pressure": "66 mmHg",
+    "Dyslipidemia": "Yes",
+    "Total Cholesterol": "187 mg/dL",
+    "HDL-Cholesterol": "51 mg/dL",
+    "Triglycerides": "134 mg/dL",
+    "LDL-Cholesterol": "109 mg/dL",
+    "non-HDL Cholesterol": "136 mg/dL",
+    "Diabetes Mellitus": "No"
+  },
+  "Risk Modifiers": {
+    "Modifiers": "Pre-Diabetes; Cancer"
+  }
+}
+```
+
+###Vinheta 12. 
+### 1. Structured extraction of risk factors:
+
+| Risk Factor | Values |
+| :--- | :--- |
+| Age | 47 years |
+| Gender | Female |
+| Smoking | Smoker |
+| Systolic Blood Pressure | 189 mmHg |
+| Total Cholesterol | 263 mg/dL |
+| HDL-Cholesterol | 54 mg/dL |
+| non-HDL Cholesterol | 209 mg/dL |
+
+### 2. Risk stratification according to the 2021 ESC Guidelines on cardiovascular disease prevention in clinical practice
+
+| SCORE2 Applicable | Exception (if not applicable) | SCORE2 (%) | Risk Category | Confidence Level |
+| :--- | :--- | :--- | :--- | :--- |
+| No | Grade 3 Hypertension (Systolic Blood Pressure ≥180 mmHg) | Not applicable | High | Very High |
+
+### 3. Brief Clinical Explanation
+
+This 47-year-old female is classified as being at **High Risk** for cardiovascular events. The primary determinant for this classification is the presence of grade 3 hypertension (office blood pressure of 189/103 mmHg), which, according to the 2021 ESC Guidelines, automatically places an individual in the high-risk category, irrespective of the SCORE2 calculation. Her risk profile is further aggravated by a substantial smoking history (52 pack-years), severe dyslipidemia with markedly elevated total and LDL cholesterol (184 mg/dL), and the presence of risk modifiers such as Chronic Obstructive Pulmonary Disease (COPD) and pre-diabetes (HbA1c 5,8%). These factors collectively underscore the need for intensive risk factor management.
+
+### 4. Structured extraction of risk factors:
+
+| Category | Variable | Value |
+| :--- | :--- | :--- |
+| **Risk Factors** | **Age** | 47 |
+| | **Gender** | Female |
+| | **Smoking** | Smoker |
+| | **Arterial Hypertension** | Yes |
+| | **Systolic Blood Pressure** | 189 mmHg |
+| | **Diastolic Blood Pressure** | 103 mmHg |
+| | **Dyslipidemia** | Yes |
+| | **Total Cholesterol** | 263 mg/dL |
+| | **HDL-Cholesterol** | 54 mg/dL |
+| | **Triglycerides** | 125 mg/dL |
+| | **LDL-Cholesterol** | 184 mg/dL |
+| | **non-HDL Cholesterol** | 209 mg/dL |
+| | **Diabetes Mellitus** | No |
+| **Risk Modifiers** | **More than one can be selected** | Pre-Diabetes; Chronic Obstructive Pulmonary Disease (COPD) |
+
+### 7. Json File Creation
+
+```json
+{
+  "Risk": {
+    "SCORE2 Applicable": "No",
+    "Exception": "Grade 3 Hypertension (Systolic Blood Pressure ≥180 mmHg)",
+    "Category": "High",
+    "SCORE2": "Not applicable",
+    "Confidence Level": "Very High"
+  },
+  "Risk Factors": {
+    "Age": "47",
+    "Gender": "Female",
+    "Smoking": "Smoker",
+    "Arterial Hypertension": "Yes",
+    "Systolic Blood Pressure": "189 mmHg",
+    "Diastolic Blood Pressure": "103 mmHg",
+    "Dyslipidemia": "Yes",
+    "Total Cholesterol": "263 mg/dL",
+    "HDL-Cholesterol": "54 mg/dL",
+    "Triglycerides": "125 mg/dL",
+    "LDL-Cholesterol": "184 mg/dL",
+    "non-HDL Cholesterol": "209 mg/dL",
+    "Diabetes Mellitus": "No"
+  },
+  "Risk Modifiers": {
+    "Risk Modifiers": "Pre-Diabetes; Chronic Obstructive Pulmonary Disease (COPD)"
+  }
+}
+```
+
+###Vinheta 13. 
+1. Structured extraction of risk factors:
+
+| Risk Factor | Values |
+| :--- | :--- |
+| Age | 41 years |
+| Gender | Male |
+| Smoking | Smoker |
+| Systolic Blood Pressure | 155 mmHg |
+| Total Cholesterol | 241 mg/dL |
+| HDL-Cholesterol | 33 mg/dL |
+| non-HDL Cholesterol | 208 mg/dL |
+
+2. Risk stratification according to the 2021 ESC Guidelines on cardiovascular disease prevention in clinical practice
+
+| SCORE2 Applicable | Exception (if not applicable) | SCORE2 (%) | Risk Category | Confidence Level |
+| :--- | :--- | :--- | :--- | :--- |
+| Yes | Not applicable | 4,6 | High | High |
+
+3. Brief Clinical Explanation
+
+The patient is classified as high-risk despite his age (41 years). This is due to the synergistic effect of multiple uncontrolled, major cardiovascular risk factors. His 10-year risk of fatal and non-fatal cardiovascular events (SCORE2) is 4,6%, which falls into the high-risk category for individuals under 50 years old (threshold ≥2,5%).
+
+The main drivers for this classification are grade 2 hypertension (155/107 mmHg), severe dyslipidemia with very high LDL-cholesterol (188 mg/dL) and non-HDL cholesterol (208 mg/dL), and active smoking. The presence of pre-diabetes (HbA1c 5,8%) further modulates and increases his overall risk profile. These factors require intensive management to reduce his future cardiovascular event burden.
+
+4. Structured extraction of risk factors:
+
+| Category | Variable | Values |
+| :--- | :--- | :--- |
+| **Risk Factors** | Age | 41 years |
+| | Gender | Male |
+| | Smoking | Smoker |
+| | Arterial Hypertension | Yes |
+| | Systolic Blood Pressure | 155 mmHg |
+| | Diastolic Blood Pressure | 107 mmHg |
+| | Dyslipidemia | Yes |
+| | Total Cholesterol | 241 mg/dL |
+| | HDL-Cholesterol | 33 mg/dL |
+| | Triglycerides | 98 mg/dL |
+| | LDL-Cholesterol | 188 mg/dL |
+| | non-HDL Cholesterol | 208 mg/dL |
+| | Diabetes Mellitus | No |
+| **Risk Modifiers** | More than one can be selected | Pre-Diabetes; Other (specify): Nonspecific ST-T wave abnormalities on ECG, Hypertensive response to exertion |
+
+7. Json File Creation
+
+```json
+{
+  "Risk": {
+    "SCORE2 Applicable": "Yes",
+    "Exception": "Not applicable",
+    "Category": "High",
+    "SCORE2": "4,6%",
+    "Confidence Level": "High"
+  },
+  "Risk Factors": {
+    "Age": "41 years",
+    "Gender": "Male",
+    "Smoking": "Smoker",
+    "Arterial Hypertension": "Yes",
+    "Systolic Blood Pressure": "155 mmHg",
+    "Diastolic Blood Pressure": "107 mmHg",
+    "Dyslipidemia": "Yes",
+    "Total Cholesterol": "241 mg/dL",
+    "HDL-Cholesterol": "33 mg/dL",
+    "Triglycerides": "98 mg/dL",
+    "LDL-Cholesterol": "188 mg/dL",
+    "non-HDL Cholesterol": "208 mg/dL",
+    "Diabetes Mellitus": "No"
+  },
+  "Risk Modifiers": {
+    "Pre-Diabetes": "Yes",
+    "Other": "Nonspecific ST-T wave abnormalities on ECG; Hypertensive response to exertion"
+  }
+}
+```
+
+###Vinheta 14. 
+1. Structured extraction of risk factors:
+
+| Risk Factor | Values |
+| :--- | :--- |
+| Age | 56 years |
+| Gender | Female |
+| Smoking | Smoker |
+| Systolic Blood Pressure | 163 mmHg |
+| Total Cholesterol | 224 mg/dL |
+| HDL-Cholesterol | 45 mg/dL |
+| non-HDL Cholesterol | 179 mg/dL |
+
+2. Risk stratification according to the 2021 ESC Guidelines on cardiovascular disease prevention in clinical practice
+
+| SCORE2 Applicable | Exception (if not applicable) | SCORE2 (%) | Risk Category | Confidence Level |
+| :--- | :--- | :--- | :--- | :--- |
+| No | Chronic Kidney Disease (eGFR 30-59 ml/min/1.73m²) | Not applicable | High | Very High |
+
+3. Brief Clinical Explanation
+
+The patient is classified in the High Risk category. This classification is not based on the SCORE2 calculation but on the presence of a superseding high-risk condition: moderate Chronic Kidney Disease (CKD), with an estimated glomerular filtration rate (eGFR) between 30-59 ml/min/1.73m², as per the 2021 ESC Guidelines. This risk is further amplified by numerous uncontrolled factors, including severe hypertension (163/91 mmHg) despite medication, active smoking with a significant history, and dyslipidemia (non-HDL 179 mg/dL). Additional risk modifiers such as obesity (BMI 31,3) and pre-diabetes (HbA1c 6,3%) contribute to her profile. The diagnosis of heart failure with preserved ejection fraction represents significant target organ damage, underscoring the severity of her condition.
+
+4. Structured extraction of risk factors:
+
+| Category | Variable | Value |
+| :--- | :--- | :--- |
+| **Risk Factors** | Age | 56 |
+| | Gender | Female |
+| | Smoking | Smoker |
+| | Arterial Hypertension | Yes |
+| | Systolic Blood Pressure | 163 mmHg |
+| | Diastolic Blood Pressure | 91 mmHg |
+| | Dyslipidemia | Yes |
+| | Total Cholesterol | 224 mg/dL |
+| | HDL-Cholesterol | 45 mg/dL |
+| | Triglycerides | 196 mg/dL |
+| | LDL-Cholesterol | 140 mg/dL |
+| | non-HDL Cholesterol | 179 mg/dL |
+| | Diabetes Mellitus | No |
+| **Risk Modifiers** | Obesity | BMI 31,3 kg/m² |
+| | Pre-Diabetes | HbA1c 6,3% |
+| | Chronic Inflammatory Disease | Degenerative osteoarticular disease |
+| | Other | Heart Failure with Preserved Ejection Fraction; Chronic Kidney Disease (Stage 3a) |
+
+7. Json File Creation
+
+```json
+{
+  "Risk": {
+    "SCORE2 Applicable": "No",
+    "Exception": "Chronic Kidney Disease",
+    "Category": "High",
+    "SCORE2": "Not applicable",
+    "Confidence Level": "Very High"
+  },
+  "Risk Factors": {
+    "Age": 56,
+    "Gender": "Female",
+    "Smoking": "Smoker",
+    "Arterial Hypertension": "Yes",
+    "Systolic Blood Pressure": 163,
+    "Diastolic Blood Pressure": 91,
+    "Dyslipidemia": "Yes",
+    "Total Cholesterol": 224,
+    "HDL-Cholesterol": 45,
+    "Triglycerides": 196,
+    "LDL-Cholesterol": 140,
+    "non-HDL Cholesterol": 179,
+    "Diabetes Mellitus": "No"
+  },
+  "Risk Modifiers": {
+    "Obesity": "BMI 31,3 kg/m²",
+    "Pre-Diabetes": "HbA1c 6,3%",
+    "Chronic Inflammatory Disease": "Degenerative osteoarticular disease",
+    "Other": "Heart Failure with Preserved Ejection Fraction; Chronic Kidney Disease (Stage 3a)"
+  }
+}
+```
+
+###Vinheta 15. 
+1. Structured extraction of risk factors:
+
+| Risk Factor | Values |
+| :--- | :--- |
+| Age | 51 |
+| Gender | Male |
+| Smoking | Smoker |
+| Systolic Blood Pressure | 149 mmHg |
+| Total Cholesterol | 197 mg/dL |
+| HDL-Cholesterol | 32 mg/dL |
+| non-HDL Cholesterol | 165 mg/dL |
+
+2. Risk stratification according to the 2021 ESC Guidelines on cardiovascular disease prevention in clinical practice
+
+| SCORE2 Applicable | Exception (if not applicable) | SCORE2 (%) | Risk Category | Confidence Level |
+| :--- | :--- | :--- | :--- | :--- |
+| Yes | Not applicable | 7 | High | High |
+
+3. Brief Clinical Explanation
+
+This is a 51-year-old male smoker with uncontrolled hypertension and dyslipidemia despite statin therapy. His calculated 10-year cardiovascular risk using SCORE2 is 7%, which falls into the low-to-moderate risk category for his age. However, the presence of significant subclinical atherosclerosis, evidenced by non-obstructive plaques in three coronary arteries and a calcium score of 47 on coronary CT angiography, automatically up-classifies his risk. According to the 2021 ESC Guidelines, individuals with documented atherosclerotic plaque are considered to be at high cardiovascular risk, irrespective of their calculated SCORE2. Additional contributing factors include his elevated non-HDL cholesterol (165 mg/dL), LDL-cholesterol (148 mg/dL), pre-diabetes (HbA1c 5,8%), and elevated lipoprotein(a).
+
+4. Structured extraction of risk factors:
+
+| Category | Variable | Value |
+| :--- | :--- | :--- |
+| **Risk Factors** | Age | 51 years |
+| | Gender | Male |
+| | Smoking | Smoker |
+| | Arterial Hypertension | Yes |
+| | Systolic Blood Pressure | 149 mmHg |
+| | Diastolic Blood Pressure | 98 mmHg |
+| | Dyslipidemia | Yes |
+| | Total Cholesterol | 197 mg/dL |
+| | HDL-Cholesterol | 32 mg/dL |
+| | Triglycerides | 98 mg/dL |
+| | LDL-Cholesterol | 148 mg/dL |
+| | non-HDL Cholesterol | 165 mg/dL |
+| | Diabetes Mellitus | No |
+| **Risk Modifiers** | More than one can be selected | Elevated Coronary Calcium Score; Pre-Diabetes; Family History of atherosclerotic cardiovascular disease (ASCVD); Elevated Lp(a) |
+
+6. General Formatting
+- The response adheres to the requested Markdown formatting.
+
+7. Json File Creation
+
+```json
+{
+  "Risk": {
+    "SCORE2 Applicable": "Yes",
+    "Exception": "Not applicable",
+    "Category": "High",
+    "SCORE2": "7",
+    "Confidence Level": "High"
+  },
+  "Risk Factors": {
+    "Age": "51 years",
+    "Gender": "Male",
+    "Smoking": "Smoker",
+    "Arterial Hypertension": "Yes",
+    "Systolic Blood Pressure": "149 mmHg",
+    "Diastolic Blood Pressure": "98 mmHg",
+    "Dyslipidemia": "Yes",
+    "Total Cholesterol": "197 mg/dL",
+    "HDL-Cholesterol": "32 mg/dL",
+    "Triglycerides": "98 mg/dL",
+    "LDL-Cholesterol": "148 mg/dL",
+    "non-HDL Cholesterol": "165 mg/dL",
+    "Diabetes Mellitus": "No"
+  },
+  "Risk Modifiers": {
+    "Modifiers": "Elevated Coronary Calcium Score; Pre-Diabetes; Family History of atherosclerotic cardiovascular disease (ASCVD); Elevated Lp(a)"
+  }
+}
+```
+
+###Vinheta 16. 
+### 1. Structured extraction of risk factors:
+
+| Risk Factor | Values |
+| :--- | :--- |
+| Age | 64 years |
+| Gender | Female |
+| Smoking | Smoker |
+| Systolic Blood Pressure | 143 mmHg |
+| Total Cholesterol | 169 mg/dL |
+| HDL-Cholesterol | 48 mg/dL |
+| non-HDL Cholesterol | 121 mg/dL |
+
+### 2. Risk stratification according to the 2021 ESC Guidelines on cardiovascular disease prevention in clinical practice
+
+| SCORE2 Applicable | Exception (if not applicable) | SCORE2 (%) | Risk Category | Confidence Level |
+| :--- | :--- | :--- | :--- | :--- |
+| Yes | Not applicable | 8% | High | High |
+
+### 3. Brief Clinical Explanation
+
+The patient is classified as having a high 10-year risk of cardiovascular events, with a calculated SCORE2 of 8%. This classification is primarily driven by her age (64 years), active smoking status with a significant 40 pack-year history, and elevated systolic blood pressure (143 mmHg, Stage 1 Hypertension).
+
+This risk level is further reinforced by the presence of several risk modifiers. These include pre-diabetes (HbA1c 5,9%), a current diagnosis of cancer, and evidence of subclinical cardiac damage, such as left ventricular concentric remodeling, left atrial dilation, and an elevated NT-proBNP level. These factors collectively indicate a higher cardiovascular risk than suggested by the SCORE2 value alone and underscore the need for intensive risk factor management.
+
+### 4. Structured extraction of risk factors:
+
+| Category | Variable | Value |
+| :--- | :--- | :--- |
+| **Risk Factors** | Age | 64 years |
+| | Gender | Female |
+| | Smoking | Smoker |
+| | Arterial Hypertension | Yes |
+| | Systolic Blood Pressure | 143 mmHg |
+| | Diastolic Blood Pressure | 84 mmHg |
+| | Dyslipidemia | No |
+| | Total Cholesterol | 169 mg/dL |
+| | HDL-Cholesterol | 48 mg/dL |
+| | Triglycerides | 107 mg/dL |
+| | LDL-Cholesterol | 100 mg/dL |
+| | non-HDL Cholesterol | 121 mg/dL |
+| | Diabetes Mellitus | No |
+| **Risk Modifiers**| Pre-Diabetes | Yes |
+| | Cancer | Yes |
+| | Other (specify) | Elevated NT-proBNP (288 pg/mL); Echocardiographic evidence of subclinical target organ damage (concentric remodeling, moderate left atrial dilation) |
+
+### 7. Json File Creation
+
+```json
+{
+  "Risk": {
+    "SCORE2 Applicable": "Yes",
+    "Exception": "Not applicable",
+    "Category": "High",
+    "SCORE2": "8%",
+    "Confidence Level": "High"
+  },
+  "Risk Factors": {
+    "Age": "64 years",
+    "Gender": "Female",
+    "Smoking": "Smoker",
+    "Arterial Hypertension": "Yes",
+    "Systolic Blood Pressure": "143 mmHg",
+    "Diastolic Blood Pressure": "84 mmHg",
+    "Dyslipidemia": "No",
+    "Total Cholesterol": "169 mg/dL",
+    "HDL-Cholesterol": "48 mg/dL",
+    "Triglycerides": "107 mg/dL",
+    "LDL-Cholesterol": "100 mg/dL",
+    "non-HDL Cholesterol": "121 mg/dL",
+    "Diabetes Mellitus": "No"
+  },
+  "Risk Modifiers": {
+    "Pre-Diabetes": "Yes",
+    "Cancer": "Yes",
+    "Other (specify)": "Elevated NT-proBNP (288 pg/mL); Echocardiographic evidence of subclinical target organ damage (concentric remodeling, moderate left atrial dilation)"
+  }
+}
+```
+
+###Vinheta 17. 
+### 1. Structured extraction of risk factors:
+
+| Risk Factor | Values |
+| :--- | :--- |
+| Age | 65 years |
+| Gender | Male |
+| Smoking | Former Smoker |
+| Systolic Blood Pressure | 147 mmHg |
+| Total Cholesterol | 129 mg/dL |
+| HDL-Cholesterol | 33 mg/dL |
+| non-HDL Cholesterol | 96 mg/dL |
+
+### 2. Risk stratification according to the 2021 ESC Guidelines on cardiovascular disease prevention in clinical practice
+
+| SCORE2 Applicable | Exception (if not applicable) | SCORE2 (%) | Risk Category | Confidence Level |
+| :--- | :--- | :--- | :--- | :--- |
+| Yes | N/A | 11 | High | High |
+
+### 3. Brief Clinical Explanation
+
+The patient is classified as **High Risk** for cardiovascular events in the next 10 years. This classification is primarily driven by his age (65 years) and uncontrolled systolic blood pressure (147 mmHg) off medication. Although his LDL-cholesterol is low, the atherogenic dyslipidemia profile, characterized by low HDL-cholesterol (33 mg/dL) and high triglycerides (237 mg/dL), contributes to the risk. Furthermore, several risk modifiers are present, including pre-diabetes (HbA1c 6,3%), obstructive sleep apnea, and a sedentary lifestyle. Crucially, the echocardiogram reveals evidence of target organ damage (concentric left ventricular remodeling and left atrial enlargement), which significantly elevates his baseline risk profile, confirming the high-risk classification despite some controlled risk factors.
+
+### 4. Structured extraction of risk factors:
+
+| Category | Variable | Value |
+| :--- | :--- | :--- |
+| **Risk Factors** | Age | 65 years |
+| | Gender | Male |
+| | Smoking | Former Smoker |
+| | Arterial Hypertension | Yes |
+| | Systolic Blood Pressure | 147 mmHg |
+| | Diastolic Blood Pressure | 68 mmHg |
+| | Dyslipidemia | Yes |
+| | Total Cholesterol | 129 mg/dL |
+| | HDL-Cholesterol | 33 mg/dL |
+| | Triglycerides | 237 mg/dL |
+| | LDL-Cholesterol | 49 mg/dL |
+| | non-HDL Cholesterol | 96 mg/dL |
+| | Diabetes Mellitus | No |
+| **Risk Modifiers**| More than one can be selected | Pre-Diabetes; Obstructive Sleep Apnea (OSA); Other (Target organ damage on echocardiogram; Sedentary lifestyle; Hyperuricemia) |
+
+### 7. Json File Creation
+
+```json
+{
+  "Risk": {
+    "SCORE2 Applicable": "Yes",
+    "Exception": "N/A",
+    "Category": "High",
+    "SCORE2": "11",
+    "Confidence Level": "High"
+  },
+  "Risk Factors": {
+    "Age": "65 years",
+    "Gender": "Male",
+    "Smoking": "Former Smoker",
+    "Arterial Hypertension": "Yes",
+    "Systolic Blood Pressure": "147 mmHg",
+    "Diastolic Blood Pressure": "68 mmHg",
+    "Dyslipidemia": "Yes",
+    "Total Cholesterol": "129 mg/dL",
+    "HDL-Cholesterol": "33 mg/dL",
+    "Triglycerides": "237 mg/dL",
+    "LDL-Cholesterol": "49 mg/dL",
+    "non-HDL Cholesterol": "96 mg/dL",
+    "Diabetes Mellitus": "No"
+  },
+  "Risk Modifiers": {
+    "Pre-Diabetes": "Yes",
+    "Obstructive Sleep Apnea (OSA)": "Yes",
+    "Other": "Target organ damage on echocardiogram; Sedentary lifestyle; Hyperuricemia"
+  }
+}
+```
+
+###Vinheta 18. 
+1. Structured extraction of risk factors:
+
+| Risk Factor | Values |
+| :--- | :--- |
+| Age | 44 years |
+| Gender | Male |
+| Smoking | Non-smoker |
+| Systolic Blood Pressure | 130 mmHg |
+| Total Cholesterol | 229 mg/dL |
+| HDL-Cholesterol | 37 mg/dL |
+| non-HDL Cholesterol | 192 mg/dL |
+
+2. Risk stratification according to the 2021 ESC Guidelines on cardiovascular disease prevention in clinical practice
+
+| SCORE2 Applicable | Exception (if not applicable) | SCORE2 (%) | Risk Category | Confidence Level |
+| :--- | :--- | :--- | :--- | :--- |
+| Yes | None | 2,0% | Low-to-Moderate | Moderate |
+
+3. Brief Clinical Explanation
+
+This is a 44-year-old male whose 10-year risk of fatal and non-fatal cardiovascular events is 2,0%, classifying him as low-to-moderate risk according to the SCORE2 model. The main contributing factors are Grade 1 hypertension, confirmed by 24-hour ABPM, and significant dyslipidemia with elevated total cholesterol, LDL-C, and non-HDL-C.
+
+However, the SCORE2 calculation likely underestimates his true lifetime risk. He has several important risk modifiers that should be considered to re-stratify his risk upwards: a family history of premature cardiovascular disease (mother with MI at 61), a very high Lipoprotein(a) level (92 mg/dL), and a significantly elevated ApoB (172 mg/dL). These factors indicate a strong underlying atherogenic potential, warranting a more intensive preventive strategy than what might be suggested by the SCORE2 value alone.
+
+4. Structured extraction of risk factors:
+
+| Category | Variable | Value |
+| :--- | :--- | :--- |
+| **Risk Factors** | Age | 44 |
+| | Gender | Male |
+| | Smoking | Non-smoker |
+| | Arterial Hypertension | Yes |
+| | Systolic Blood Pressure | 130 mmHg |
+| | Diastolic Blood Pressure | 86 mmHg |
+| | Dyslipidemia | Yes |
+| | Total Cholesterol | 229 mg/dL |
+| | HDL-Cholesterol | 37 mg/dL |
+| | Triglycerides | 137 mg/dL |
+| | LDL-Cholesterol | 165 mg/dL |
+| | non-HDL Cholesterol | 192 mg/dL |
+| | Diabetes Mellitus | No |
+| **Risk Modifiers** | More than one can be selected | Family History of atherosclerotic cardiovascular disease (ASCVD); Elevated Lp(a); Other (Elevated ApoB) |
+
+7. Json File Creation
+
+```json
+{
+  "Risk": {
+    "SCORE2 Applicable": "Yes",
+    "Exception": "None",
+    "Category": "Low-to-Moderate",
+    "SCORE2": "2,0%",
+    "Confidence Level": "Moderate"
+  },
+  "Risk Factors": {
+    "Age": "44",
+    "Gender": "Male",
+    "Smoking": "Non-smoker",
+    "Arterial Hypertension": "Yes",
+    "Systolic Blood Pressure": "130 mmHg",
+    "Diastolic Blood Pressure": "86 mmHg",
+    "Dyslipidemia": "Yes",
+    "Total Cholesterol": "229 mg/dL",
+    "HDL-Cholesterol": "37 mg/dL",
+    "Triglycerides": "137 mg/dL",
+    "LDL-Cholesterol": "165 mg/dL",
+    "non-HDL Cholesterol": "192 mg/dL",
+    "Diabetes Mellitus": "No"
+  },
+  "Risk Modifiers": {
+    "Modifiers": "Family History of atherosclerotic cardiovascular disease (ASCVD); Elevated Lp(a); Other (Elevated ApoB)"
+  }
+}
+```
+
+###Vinheta 19. 
+**1. Structured extraction of risk factors:**
+
+| Risk Factor | Values |
+| :--- | :--- |
+| Age | 54 years |
+| Gender | Female |
+| Smoking | Smoker |
+| Systolic Blood Pressure | 132 mmHg |
+| Total Cholesterol | 211 mg/dL |
+| HDL-Cholesterol | 52 mg/dL |
+| non-HDL Cholesterol | 159 mg/dL |
+
+**2. Risk stratification according to the 2021 ESC Guidelines on cardiovascular disease prevention in clinical practice**
+
+| SCORE2 Applicable | Exception (if not applicable) | SCORE2 (%) | Risk Category | Confidence Level |
+| :--- | :--- | :--- | :--- | :--- |
+| No | Atherosclerotic Cardiovascular Disease | N/A | Very High | Very High |
+
+**3. Brief Clinical Explanation**
+
+This patient is classified as being at **Very High Risk** for cardiovascular events. This classification is not based on a risk score but on the definitive presence of atherosclerotic cardiovascular disease, unequivocally demonstrated by coronary CT angiography, which revealed multiple coronary plaques. This finding automatically places the patient in the highest risk category, regardless of her other risk factors. Her risk is further amplified by significant modifiers, including an active smoking history, a chronic inflammatory condition (rheumatoid arthritis), and elevated high-sensitivity C-reactive protein (hs-CRP), which contribute to the atherosclerotic process.
+
+**4. Structured extraction of risk factors:**
+
+| Risk Factors | Values |
+| :--- | :--- |
+| Age | 54 years |
+| Gender | Female |
+| Smoking | Smoker |
+| Arterial Hypertension | No |
+| Systolic Blood Pressure | 132 mmHg |
+| Diastolic Blood Pressure | 84 mmHg |
+| Dyslipidemia | Yes |
+| Total Cholesterol | 211 mg/dL |
+| HDL-Cholesterol | 52 mg/dL |
+| Triglycerides | 128 mg/dL |
+| LDL-Cholesterol | 133 mg/dL |
+| non-HDL Cholesterol | 159 mg/dL |
+| Diabetes Mellitus | No |
+| **Risk Modifiers** | **Values** |
+| More than one can be selected | Elevated Coronary Calcium Score; Elevated High-sensitivity CRP; Chronic Inflammatory Disease |
+
+**7. Json File Creation**
+
+```json
+{
+  "Risk": {
+    "SCORE2 Applicable": "No",
+    "Exception": "Atherosclerotic Cardiovascular Disease",
+    "Category": "Very High",
+    "SCORE2": "N/A",
+    "Confidence Level": "Very High"
+  },
+  "Risk Factors": {
+    "Age": "54 years",
+    "Gender": "Female",
+    "Smoking": "Smoker",
+    "Arterial Hypertension": "No",
+    "Systolic Blood Pressure": "132 mmHg",
+    "Diastolic Blood Pressure": "84 mmHg",
+    "Dyslipidemia": "Yes",
+    "Total Cholesterol": "211 mg/dL",
+    "HDL-Cholesterol": "52 mg/dL",
+    "Triglycerides": "128 mg/dL",
+    "LDL-Cholesterol": "133 mg/dL",
+    "non-HDL Cholesterol": "159 mg/dL",
+    "Diabetes Mellitus": "No"
+  },
+  "Risk Modifiers": {
+    "Modifiers": "Elevated Coronary Calcium Score; Elevated High-sensitivity CRP; Chronic Inflammatory Disease"
+  }
+}
+```
+
+###Vinheta 20. 
+### 1. Structured extraction of risk factors:
+
+| Risk Factor | Value |
+| :--- | :--- |
+| Age | 61 years |
+| Gender | Male |
+| Smoking | Non-smoker |
+| Systolic Blood Pressure | 151 mmHg |
+| Total Cholesterol | 217 mg/dL |
+| HDL-Cholesterol | 48 mg/dL |
+| non-HDL Cholesterol | 169 mg/dL |
+
+### 2. Risk stratification according to the 2021 ESC Guidelines on cardiovascular disease prevention in clinical practice
+
+| SCORE2 Applicable | Exception (if not applicable) | SCORE2 (%) | Risk Category | Confidence Level |
+| :--- | :--- | :--- | :--- | :--- |
+| Yes | N/A | 10 | Very High | Very High |
+
+### 3. Brief Clinical Explanation
+
+This 61-year-old male is classified as being at **Very High** cardiovascular risk. His 10-year risk of fatal and non-fatal cardiovascular events is 10% according to the SCORE2 algorithm. This calculation is driven primarily by his age, uncontrolled stage 1 hypertension (151/94 mmHg), and elevated non-HDL cholesterol (169 mg/dL).
+
+The confidence in this classification is very high, as it is strongly reinforced by the presence of multiple significant risk modifiers and target organ damage. These include central obesity, pre-diabetes (HbA1c 6,3%), severe obstructive sleep apnea, paroxysmal atrial fibrillation, and evidence of subclinical atherosclerosis, confirmed by a coronary artery calcium score of 178. These factors collectively place him in a higher risk category than his traditional risk factors alone might suggest, mandating intensive risk factor management.
+
+### 4. Structured extraction of risk factors:
+
+| Category | Variable | Value |
+| :--- | :--- | :--- |
+| **Risk Factors** | Age | 61 |
+| | Gender | Male |
+| | Smoking | Non-smoker |
+| | Arterial Hypertension | Yes |
+| | Systolic Blood Pressure | 151 mmHg |
+| | Diastolic Blood Pressure | 94 mmHg |
+| | Dyslipidemia | Yes |
+| | Total Cholesterol | 217 mg/dL |
+| | HDL-Cholesterol | 48 mg/dL |
+| | Triglycerides | 256 mg/dL |
+| | LDL-Cholesterol | 118 mg/dL |
+| | non-HDL Cholesterol | 169 mg/dL |
+| | Diabetes Mellitus | No |
+| **Risk Modifiers** | More than one can be selected | Elevated Coronary Calcium Score; Obesity; Pre-Diabetes; Obstructive Sleep Apnea (OSA); Other (Atrial Fibrillation; Concentric left ventricular remodeling; Moderate left atrial dilation) |
+
+### 7. Json File Creation
+
+```json
+{
+  "Risk": {
+    "SCORE2 Applicable": "Yes",
+    "Exception": "N/A",
+    "Category": "Very High",
+    "SCORE2": "10",
+    "Confidence Level": "Very High"
+  },
+  "Risk Factors": {
+    "Age": "61",
+    "Gender": "Male",
+    "Smoking": "Non-smoker",
+    "Arterial Hypertension": "Yes",
+    "Systolic Blood Pressure": "151 mmHg",
+    "Diastolic Blood Pressure": "94 mmHg",
+    "Dyslipidemia": "Yes",
+    "Total Cholesterol": "217 mg/dL",
+    "HDL-Cholesterol": "48 mg/dL",
+    "Triglycerides": "256 mg/dL",
+    "LDL-Cholesterol": "118 mg/dL",
+    "non-HDL Cholesterol": "169 mg/dL",
+    "Diabetes Mellitus": "No"
+  },
+  "Risk Modifiers": {
+    "Modifiers": "Elevated Coronary Calcium Score; Obesity; Pre-Diabetes; Obstructive Sleep Apnea (OSA); Other (Atrial Fibrillation; Concentric left ventricular remodeling; Moderate left atrial dilation)"
+  }
+}
+```
+
+###Vinheta 21. 
+1. Structured extraction of risk factors:
+
+| Risk Factor | Values |
+| :--- | :--- |
+| Age | 51 years |
+| Gender | Female |
+| Smoking | Non-smoker |
+| Systolic Blood Pressure | 127 mmHg |
+| Total Cholesterol | 162 mg/dL |
+| HDL-Cholesterol | 38 mg/dL |
+| non-HDL Cholesterol | 124 mg/dL |
+
+2. Risk stratification according to the 2021 ESC Guidelines on cardiovascular disease prevention in clinical practice
+
+| SCORE2 Applicable | Exception (if not applicable) | SCORE2 (%) | Risk Category | Confidence Level |
+| :--- | :--- | :--- | :--- | :--- |
+| No | Chronic Kidney Disease (eGFR 30-59 mL/min/1.73 m2) | N/A | High | Very High |
+
+3. Brief Clinical Explanation
+This patient's cardiovascular risk is classified as high, not based on a calculated score, but due to the presence of moderate chronic kidney disease (CKD), with an estimated glomerular filtration rate (eGFR) of 42 mL/min/1.73 m2. According to the 2021 ESC guidelines, individuals with an eGFR between 30 and 59 mL/min/1.73 m2 are automatically considered at high risk for cardiovascular events, irrespective of other risk factors. Although her blood pressure and cholesterol levels are controlled with medication, the underlying CKD is the primary driver of her elevated long-term cardiovascular risk.
+
+4. Structured extraction of risk factors:
+
+| | |
+| :--- | :--- |
+| **Risk Factors** | |
+| Age | 51 |
+| Gender | Female |
+| Smoking | Non-smoker |
+| Arterial Hypertension | Yes |
+| Systolic Blood Pressure | 127 |
+| Diastolic Blood Pressure | 79 |
+| Dyslipidemia | Yes |
+| Total Cholesterol | 162 |
+| HDL-Cholesterol | 38 |
+| Triglycerides | 199 |
+| LDL-Cholesterol | 84 |
+| non-HDL Cholesterol | 124 |
+| Diabetes Mellitus | No |
+| **Risk Modifiers** | |
+| Other (specify) | Chronic Kidney Disease (eGFR 42 mL/min/1.73 m2) |
+
+7. Json File Creation
+```json
+{
+  "Risk": {
+    "SCORE2 Applicable": "No",
+    "Exception": "Chronic Kidney Disease (eGFR 30-59 mL/min/1.73 m2)",
+    "Category": "High",
+    "SCORE2": "N/A",
+    "Confidence Level": "Very High"
+  },
+  "Risk Factors": {
+    "Age": 51,
+    "Gender": "Female",
+    "Smoking": "Non-smoker",
+    "Arterial Hypertension": "Yes",
+    "Systolic Blood Pressure": 127,
+    "Diastolic Blood Pressure": 79,
+    "Dyslipidemia": "Yes",
+    "Total Cholesterol": 162,
+    "HDL-Cholesterol": 38,
+    "Triglycerides": 199,
+    "LDL-Cholesterol": 84,
+    "non-HDL Cholesterol": 124,
+    "Diabetes Mellitus": "No"
+  },
+  "Risk Modifiers": {
+    "Other": "Chronic Kidney Disease (eGFR 42 mL/min/1.73 m2)"
+  }
+}
+```
+
+###Vinheta 22. 
+### 1. Structured extraction of risk factors:
+
+| Risk Factor | Values |
+| :--- | :--- |
+| Age | 61 years |
+| Gender | Male |
+| Smoking | unknown |
+| Systolic Blood Pressure | 131 mmHg |
+| Total Cholesterol | 136 mg/dL |
+| HDL-Cholesterol | 38 mg/dL |
+| non-HDL Cholesterol | 98 mg/dL |
+
+### 2. Risk stratification according to the 2021 ESC Guidelines on cardiovascular disease prevention in clinical practice
+
+| SCORE2 Applicable | Exception (if not applicable) | SCORE2 (%) | Risk Category | Confidence Level |
+| :--- | :--- | :--- | :--- | :--- |
+| No | Chronic Kidney Disease (eGFR <60 mL/min/1.73 m²) | Not Applicable | Very High | Very High |
+
+### 3. Brief Clinical Explanation
+The patient is classified as being at Very High Cardiovascular Risk. This classification is primarily determined by the presence of established Chronic Kidney Disease (CKD) with an eGFR of 42 mL/min/1.73 m² and significant microalbuminuria (100 mg/g), which automatically places him in this category according to the 2021 ESC Guidelines. Although his blood pressure (131/78 mmHg) and LDL cholesterol (65 mg/dL) are well-controlled with medication, other contributing factors include his age (61 years), male gender, and histories of hypertension and dyslipidemia. The presence of severe CKD is a major risk-enhancing condition that supersedes the standard SCORE2 risk calculation, which is not applicable in this case.
+
+### 4. Structured extraction of risk factors:
+
+| Category | Variable | Value |
+| :--- | :--- | :--- |
+| **Risk Factors** | Age | 61 years |
+| | Gender | Male |
+| | Smoking | unknown |
+| | Arterial Hypertension | Yes |
+| | Systolic Blood Pressure | 131 mmHg |
+| | Diastolic Blood Pressure | 78 mmHg |
+| | Dyslipidemia | Yes |
+| | Total Cholesterol | 136 mg/dL |
+| | HDL-Cholesterol | 38 mg/dL |
+| | Triglycerides | 164 mg/dL |
+| | LDL-Cholesterol | 65 mg/dL |
+| | non-HDL Cholesterol | 98 mg/dL |
+| | Diabetes Mellitus | No |
+| **Risk Modifiers** | More than one can be selected | Other (Chronic Kidney Disease with eGFR 42 mL/min/1.73 m² and microalbuminuria 100 mg/g; Anxiety; Bicuspid aortic valve with moderate regurgitation) |
+
+### 7. Json File Creation
+```json
+{
+  "Risk": {
+    "SCORE2 Applicable": "No",
+    "Exception": "Chronic Kidney Disease (eGFR <60 mL/min/1.73 m²)",
+    "Category": "Very High",
+    "SCORE2": "Not Applicable",
+    "Confidence Level": "Very High"
+  },
+  "Risk Factors": {
+    "Age": "61 years",
+    "Gender": "Male",
+    "Smoking": "unknown",
+    "Arterial Hypertension": "Yes",
+    "Systolic Blood Pressure": "131 mmHg",
+    "Diastolic Blood Pressure": "78 mmHg",
+    "Dyslipidemia": "Yes",
+    "Total Cholesterol": "136 mg/dL",
+    "HDL-Cholesterol": "38 mg/dL",
+    "Triglycerides": "164 mg/dL",
+    "LDL-Cholesterol": "65 mg/dL",
+    "non-HDL Cholesterol": "98 mg/dL",
+    "Diabetes Mellitus": "No"
+  },
+  "Risk Modifiers": {
+    "More than one can be selected": "Other (Chronic Kidney Disease with eGFR 42 mL/min/1.73 m² and microalbuminuria 100 mg/g; Anxiety; Bicuspid aortic valve with moderate regurgitation)"
+  }
+}
+```
+
+###Vinheta 23. 
+1. Structured extraction of risk factors:
+
+| Risk Factor | Values |
+| :--- | :--- |
+| Age | 59 years |
+| Gender | Female |
+| Smoking | unknown |
+| Systolic Blood Pressure | 124 mmHg |
+| Total Cholesterol | 176 mg/dL |
+| HDL-Cholesterol | 43 mg/dL |
+| non-HDL Cholesterol | 133 mg/dL |
+
+2. Risk stratification according to the 2021 ESC Guidelines on cardiovascular disease prevention in clinical practice
+
+| SCORE2 Applicable | Exception (if not applicable) | SCORE2 (%) | Risk Category | Confidence Level |
+| :--- | :--- | :--- | :--- | :--- |
+| No | Diabetes Mellitus | N/A | High | Very High |
+
+3. Brief Clinical Explanation
+
+This 59-year-old woman with type 2 diabetes has her cardiovascular risk stratified according to specific ESC 2021 criteria for patients with diabetes, making the SCORE2 algorithm not applicable. She is classified as being at High Risk. This classification is primarily due to the presence of diabetes mellitus in a patient over 50 years of age, co-existing with other major cardiovascular risk factors, including dyslipidemia (under treatment) and suboptimal glycemic control (HbA1c of 7,8%). Although her blood pressure is currently controlled without medication, the combination of these factors places her in the high-risk category. The presence of concentric left ventricular remodeling on the echocardiogram further reinforces this risk level. She does not meet the criteria for very high risk as she has no established atherosclerotic cardiovascular disease or severe target organ damage.
+
+4. Structured extraction of risk factors:
+
+| Category | Variable | Value |
+| :--- | :--- | :--- |
+| **Risk Factors** | Age | 59 years |
+| | Gender | Female |
+| | Smoking | unknown |
+| | Arterial Hypertension | No |
+| | Systolic Blood Pressure | 124 mmHg |
+| | Diastolic Blood Pressure | 74 mmHg |
+| | Dyslipidemia | Yes |
+| | Total Cholesterol | 176 mg/dL |
+| | HDL-Cholesterol | 43 mg/dL |
+| | Triglycerides | 166 mg/dL |
+| | LDL-Cholesterol | 100 mg/dL |
+| | non-HDL Cholesterol | 133 mg/dL |
+| | Diabetes Mellitus | Yes |
+| **Risk Modifiers** | Chronic Inflammatory Disease | Yes (degenerative osteoarticular disease) |
+| | Other (specify) | Concentric LV remodeling; Mild left atrial dilation |
+
+7. Json File Creation
+
+```json
+{
+  "Risk": {
+    "SCORE2 Applicable": "No",
+    "Exception": "Diabetes Mellitus",
+    "Category": "High",
+    "SCORE2": "N/A",
+    "Confidence Level": "Very High"
+  },
+  "Risk Factors": {
+    "Age": "59 years",
+    "Gender": "Female",
+    "Smoking": "unknown",
+    "Arterial Hypertension": "No",
+    "Systolic Blood Pressure": "124 mmHg",
+    "Diastolic Blood Pressure": "74 mmHg",
+    "Dyslipidemia": "Yes",
+    "Total Cholesterol": "176 mg/dL",
+    "HDL-Cholesterol": "43 mg/dL",
+    "Triglycerides": "166 mg/dL",
+    "LDL-Cholesterol": "100 mg/dL",
+    "non-HDL Cholesterol": "133 mg/dL",
+    "Diabetes Mellitus": "Yes"
+  },
+  "Risk Modifiers": {
+    "Chronic Inflammatory Disease": "Yes (degenerative osteoarticular disease)",
+    "Other": "Concentric LV remodeling; Mild left atrial dilation"
+  }
+}
+```
+
+###Vinheta 24. 
+### 1. Structured extraction of risk factors:
+
+| Risk Factor | Values |
+| :--- | :--- |
+| Age | 59 |
+| Gender | Male |
+| Smoking | Former Smoker |
+| Systolic Blood Pressure | 134 |
+| Total Cholesterol | 187 |
+| HDL-Cholesterol | 45 |
+| non-HDL Cholesterol | 142 |
+
+### 2. Risk stratification according to the 2021 ESC Guidelines on cardiovascular disease prevention in clinical practice
+
+| SCORE2 Applicable | Exception (if not applicable) | SCORE2 (%) | Risk Category | Confidence Level |
+| :--- | :--- | :--- | :--- | :--- |
+| No | Diabetes Mellitus with multiple risk factors | Not Applicable | Very High | Very High |
+
+### 3. Brief Clinical Explanation
+
+This 59-year-old patient is classified as being at **Very High** cardiovascular risk. Although his blood pressure and glycemic control are close to targets, the presence of type 2 diabetes mellitus coexisting with multiple other major risk factors—hypertension, dyslipidemia, a significant 20 pack-year smoking history, and overweight (BMI 29,8 kg/m²)—automatically places him in this category according to the 2021 ESC Guidelines.
+
+In such cases, risk is considered high enough that a risk score calculation like SCORE2 is not necessary for initial stratification. The synergistic effect of these co-morbidities significantly increases his 10-year risk of fatal and non-fatal cardiovascular events, warranting the most intensive preventive strategies.
+
+### 4. Structured extraction of risk factors:
+
+| Category | Variable | Value |
+| :--- | :--- | :--- |
+| **Risk Factors** | Age | 59 |
+| | Gender | Male |
+| | Smoking | Former Smoker |
+| | Arterial Hypertension | Yes |
+| | Systolic Blood Pressure | 134 mmHg |
+| | Diastolic Blood Pressure | 82 mmHg |
+| | Dyslipidemia | Yes |
+| | Total Cholesterol | 187 mg/dL |
+| | HDL-Cholesterol | 45 mg/dL |
+| | Triglycerides | 178 mg/dL |
+| | LDL-Cholesterol | 106 mg/dL |
+| | non-HDL Cholesterol | 142 mg/dL |
+| | Diabetes Mellitus | Yes |
+| **Risk Modifiers** | More than one can be selected | Other (specify) -> Mild left atrial enlargement; Psychosocial stress (shift work, poor sleep) |
+
+### 7. Json File Creation
+
+```json
+{
+  "Risk": {
+    "SCORE2 Applicable": "No",
+    "Exception": "Diabetes Mellitus with multiple risk factors",
+    "Category": "Very High",
+    "SCORE2": "Not Applicable",
+    "Confidence Level": "Very High"
+  },
+  "Risk Factors": {
+    "Age": "59",
+    "Gender": "Male",
+    "Smoking": "Former Smoker",
+    "Arterial Hypertension": "Yes",
+    "Systolic Blood Pressure": "134 mmHg",
+    "Diastolic Blood Pressure": "82 mmHg",
+    "Dyslipidemia": "Yes",
+    "Total Cholesterol": "187 mg/dL",
+    "HDL-Cholesterol": "45 mg/dL",
+    "Triglycerides": "178 mg/dL",
+    "LDL-Cholesterol": "106 mg/dL",
+    "non-HDL Cholesterol": "142 mg/dL",
+    "Diabetes Mellitus": "Yes"
+  },
+  "Risk Modifiers": {
+    "Other": "Mild left atrial enlargement; Psychosocial stress (shift work, poor sleep)"
+  }
+}
+```
+
+###Vinheta 25. 
+1. Structured extraction of risk factors:
+
+| Risk Factor | Values |
+| :--- | :--- |
+| Age | 65 years |
+| Gender | Female |
+| Smoking | unknown |
+| Systolic Blood Pressure | 138 mmHg |
+| Total Cholesterol | 165 mg/dL |
+| HDL-Cholesterol | 51 mg/dL |
+| non-HDL Cholesterol | 114 mg/dL |
+
+2. Risk stratification according to the 2021 ESC Guidelines on cardiovascular disease prevention in clinical practice
+
+| SCORE2 Applicable | Exception (if not applicable) | SCORE2 (%) | Risk Category | Confidence Level |
+| :--- | :--- | :--- | :--- | :--- |
+| No | Diabetes Mellitus with Target Organ Damage | N/A | Very High | Very High |
+
+3. Brief Clinical Explanation
+
+This is a 65-year-old woman with a 12-year history of type 2 diabetes mellitus. The SCORE2 model is not applicable for her risk calculation. According to the 2021 ESC Guidelines, patients with diabetes are automatically classified as high or very high risk. She falls into the **Very High Risk** category due to the documented presence of Target Organ Damage. This is evidenced by chronic kidney disease (eGFR 57 mL/min/1.73m²) with significant albuminuria (103 mg/g), and cardiac structural changes including left ventricular concentric remodeling and mild left atrial dilation seen on the echocardiogram. Other contributing factors include her age, hypertension, and dyslipidemia.
+
+4. Structured extraction of risk factors:
+
+| Category | Variable | Value |
+| :--- | :--- | :--- |
+| **Risk Factors** | Age | 65 years |
+| | Gender | Female |
+| | Smoking | unknown |
+| | Arterial Hypertension | Yes |
+| | Systolic Blood Pressure | 138 mmHg |
+| | Diastolic Blood Pressure | 75 mmHg |
+| | Dyslipidemia | Yes |
+| | Total Cholesterol | 165 mg/dL |
+| | HDL-Cholesterol | 51 mg/dL |
+| | Triglycerides | 173 mg/dL |
+| | LDL-Cholesterol | 79 mg/dL |
+| | non-HDL Cholesterol | 114 mg/dL |
+| | Diabetes Mellitus | Yes |
+| **Risk Modifiers** | More than one can be selected | Chronic Inflammatory Disease (osteoarthritis); Other (Chronic Kidney Disease (eGFR 57 mL/min/1.73 m², albuminuria 103 mg/g); Left ventricular concentric remodeling; Left atrial dilation; Low functional capacity) |
+
+7. Json File Creation
+
+```json
+{
+  "Risk": {
+    "SCORE2 Applicable": "No",
+    "Exception": "Diabetes Mellitus with Target Organ Damage",
+    "Category": "Very High",
+    "SCORE2": "N/A",
+    "Confidence Level": "Very High"
+  },
+  "Risk Factors": {
+    "Age": "65 years",
+    "Gender": "Female",
+    "Smoking": "unknown",
+    "Arterial Hypertension": "Yes",
+    "Systolic Blood Pressure": "138 mmHg",
+    "Diastolic Blood Pressure": "75 mmHg",
+    "Dyslipidemia": "Yes",
+    "Total Cholesterol": "165 mg/dL",
+    "HDL-Cholesterol": "51 mg/dL",
+    "Triglycerides": "173 mg/dL",
+    "LDL-Cholesterol": "79 mg/dL",
+    "non-HDL Cholesterol": "114 mg/dL",
+    "Diabetes Mellitus": "Yes"
+  },
+  "Risk Modifiers": {
+    "Modifiers": "Chronic Inflammatory Disease (osteoarthritis); Other (Chronic Kidney Disease (eGFR 57 mL/min/1.73 m², albuminuria 103 mg/g); Left ventricular concentric remodeling; Left atrial dilation; Low functional capacity)"
+  }
+}
+```
+
+###Vinheta 26. 
+### 1. Structured extraction of risk factors:
+
+| Risk Factor | Values |
+| :--- | :--- |
+| Age | 36 years |
+| Gender | Male |
+| Smoking | Non-smoker |
+| Systolic Blood Pressure | 134 mmHg |
+| Total Cholesterol | 336 mg/dL |
+| HDL-Cholesterol | 45 mg/dL |
+| non-HDL Cholesterol | 291 mg/dL |
+
+### 2. Risk stratification according to the 2021 ESC Guidelines on cardiovascular disease prevention in clinical practice
+
+| SCORE2 Applicable | Exception (if not applicable) | SCORE2 (%) | Risk Category | Confidence Level |
+| :--- | :--- | :--- | :--- | :--- |
+| No | Familial Dyslipidemia (Familial Hypercholesterolemia) | Not applicable | Very High | Very High |
+
+### 3. Brief Clinical Explanation
+
+The patient is classified as being at very high cardiovascular risk. This classification is not based on the SCORE2 calculation, which is not applicable in this case. The primary determinant is the confirmed genetic diagnosis of Familial Hypercholesterolemia (FH), a condition that intrinsically confers a high to very high risk. The classification is elevated to "very high" due to the presence of markedly elevated LDL cholesterol (258 mg/dL) combined with a significant risk modifier: a strong family history of premature atherosclerotic cardiovascular disease (mother with myocardial infarction at 47 years and maternal aunt with sudden cardiac death at 51 years).
+
+### 4. Structured extraction of risk factors:
+
+| Category | Variable | Value |
+| :--- | :--- | :--- |
+| **Risk Factors** | **Age** | 36 years |
+| | **Gender** | Male |
+| | **Smoking** | Non-smoker |
+| | **Arterial Hypertension** | No |
+| | **Systolic Blood Pressure** | 134 mmHg |
+| | **Diastolic Blood Pressure** | 87 mmHg |
+| | **Dyslipidemia** | Yes |
+| | **Total Cholesterol** | 336 mg/dL |
+| | **HDL-Cholesterol** | 45 mg/dL |
+| | **Triglycerides** | 164 mg/dL |
+| | **LDL-Cholesterol** | 258 mg/dL |
+| | **non-HDL Cholesterol** | 291 mg/dL |
+| | **Diabetes Mellitus** | No |
+| **Risk Modifiers** | **Family History of atherosclerotic cardiovascular disease (ASCVD)** | Yes |
+
+### 7. Json File Creation
+
+```json
+{
+  "Risk": {
+    "SCORE2 Applicable": "No",
+    "Exception": "Familial Dyslipidemia (Familial Hypercholesterolemia)",
+    "Category": "Very High",
+    "SCORE2": "Not applicable",
+    "Confidence Level": "Very High"
+  },
+  "Risk Factors": {
+    "Age": "36 years",
+    "Gender": "Male",
+    "Smoking": "Non-smoker",
+    "Arterial Hypertension": "No",
+    "Systolic Blood Pressure": "134 mmHg",
+    "Diastolic Blood Pressure": "87 mmHg",
+    "Dyslipidemia": "Yes",
+    "Total Cholesterol": "336 mg/dL",
+    "HDL-Cholesterol": "45 mg/dL",
+    "Triglycerides": "164 mg/dL",
+    "LDL-Cholesterol": "258 mg/dL",
+    "non-HDL Cholesterol": "291 mg/dL",
+    "Diabetes Mellitus": "No"
+  },
+  "Risk Modifiers": {
+    "Family History of atherosclerotic cardiovascular disease (ASCVD)": "Yes"
+  }
+}
+```
+
+###Vinheta 27. 
+### 1. Structured extraction of risk factors:
+
+| Risk Factor | Values |
+| :--- | :--- |
+| Age | 61 years |
+| Gender | Female |
+| Smoking | Smoker |
+| Systolic Blood Pressure | 124 mmHg |
+| Total Cholesterol | 199 mg/dL |
+| HDL-Cholesterol | 54 mg/dL |
+| non-HDL Cholesterol | 145 mg/dL |
+
+### 2. Risk stratification according to the 2021 ESC Guidelines on cardiovascular disease prevention in clinical practice
+
+| SCORE2 Applicable | Exception (if not applicable) | SCORE2 (%) | Risk Category | Confidence Level |
+| :--- | :--- | :--- | :--- | :--- |
+| No | Atherosclerotic Cardiovascular Disease | Not Applicable | Very High | Very High |
+
+### 3. Brief Clinical Explanation
+
+The patient is classified as being at **Very High Risk** for cardiovascular events. This classification is not based on a risk score but on the definitive finding of atherosclerotic cardiovascular disease (ASCVD) documented by coronary CT angiography. The imaging revealed an occlusion of the mid right coronary artery and multiple other plaques. According to the 2021 ESC guidelines, any individual with documented ASC, either clinical or unequivocal on imaging, is automatically placed in the very high-risk category, overriding the need for SCORE2 calculation. Her smoking history and the significantly elevated coronary artery calcium score (186) further reinforce this high-risk profile, indicating a substantial plaque burden.
+
+### 4. Structured extraction of risk factors:
+
+| Category | Variable | Value |
+| :--- | :--- | :--- |
+| **Risk Factors** | **Age** | 61 years |
+| | **Gender** | Female |
+| | **Smoking** | Smoker |
+| | **Arterial Hypertension** | No |
+| | **Systolic Blood Pressure** | 124 mmHg |
+| | **Diastolic Blood Pressure** | 75 mmHg |
+| | **Dyslipidemia** | No |
+| | **Total Cholesterol** | 199 mg/dL |
+| | **HDL-Cholesterol** | 54 mg/dL |
+| | **Triglycerides** | 87 mg/dL |
+| | **LDL-Cholesterol** | 87 mg/dL |
+| | **non-HDL Cholesterol** | 145 mg/dL |
+| | **Diabetes Mellitus** | No |
+| **Risk Modifiers**| **More than one can be selected** | Elevated Coronary Calcium Score; Other (Anxiety) |
+
+### 7. Json File Creation
+
+```json
+{
+  "Risk": {
+    "SCORE2 Applicable": "No",
+    "Exception": "Atherosclerotic Cardiovascular Disease",
+    "Category": "Very High",
+    "SCORE2": "Not Applicable",
+    "Confidence Level": "Very High"
+  },
+  "Risk Factors": {
+    "Age": "61 years",
+    "Gender": "Female",
+    "Smoking": "Smoker",
+    "Arterial Hypertension": "No",
+    "Systolic Blood Pressure": "124 mmHg",
+    "Diastolic Blood Pressure": "75 mmHg",
+    "Dyslipidemia": "No",
+    "Total Cholesterol": "199 mg/dL",
+    "HDL-Cholesterol": "54 mg/dL",
+    "Triglycerides": "87 mg/dL",
+    "LDL-Cholesterol": "87 mg/dL",
+    "non-HDL Cholesterol": "145 mg/dL",
+    "Diabetes Mellitus": "No"
+  },
+  "Risk Modifiers": {
+    "Modifiers": "Elevated Coronary Calcium Score; Other (Anxiety)"
+  }
+}
+```
+
+###Vinheta 28. 
+### 1. Structured extraction of risk factors:
+
+| Risk Factor | Values |
+| :--- | :--- |
+| Age | 51 years |
+| Gender | Male |
+| Smoking | Former Smoker |
+| Systolic Blood Pressure | 118 mmHg |
+| Total Cholesterol | 136 mg/dL |
+| HDL-Cholesterol | 46 mg/dL |
+| non-HDL Cholesterol | 90 mg/dL |
+
+### 2. Risk stratification according to the 2021 ESC Guidelines on cardiovascular disease prevention in clinical practice
+
+| SCORE2 Applicable | Exception (if not applicable) | SCORE2 (%) | Risk Category | Confidence Level |
+| :--- | :--- | :--- | :--- | :--- |
+| No | Atherosclerotic Cardiovascular Disease | N/A | Very High | Very High |
+
+### 3. Brief Clinical Explanation
+
+The patient is classified as being at **Very High Risk** for future cardiovascular events. This classification is not based on a risk score but on the presence of established atherosclerotic cardiovascular disease (ASCVD), specifically a history of myocardial infarction at age 49. According to the 2021 ESC Guidelines, any individual with documented ASCV is automatically placed in the highest risk category for secondary prevention purposes. While his current risk factors, such as blood pressure (118/67 mmHg) and LDL-cholesterol (70 mg/dL), are well-controlled with medication, this does not change his underlying risk status. Other contributing factors to his initial event include a significant smoking history (40 pack-years) and a sedentary lifestyle.
+
+### 4. Structured extraction of risk factors:
+
+| Category | Variable | Value |
+| :--- | :--- | :--- |
+| **Risk Factors** | Age | 51 years |
+| | Gender | Male |
+| | Smoking | Former Smoker |
+| | Arterial Hypertension | No |
+| | Systolic Blood Pressure | 118 mmHg |
+| | Diastolic Blood Pressure | 67 mmHg |
+| | Dyslipidemia | Yes |
+| | Total Cholesterol | 136 mg/dL |
+| | HDL-Cholesterol | 46 mg/dL |
+| | Triglycerides | 99 mg/dL |
+| | LDL-Cholesterol | 70 mg/dL |
+| | non-HDL Cholesterol | 90 mg/dL |
+| | Diabetes Mellitus | No |
+| **Risk Modifiers** | Elevated Coronary Calcium Score | unknown |
+| | Calcium Score = 0 | unknown |
+| | Carotid Plaques | unknown |
+| | Obesity | No |
+| | Pre-Diabetes | No |
+| | Family History of ASCVD | unknown |
+| | Elevated Lp(a) | unknown |
+| | Increased Arterial Stiffness | unknown |
+| | Elevated High-sensitivity CRP | unknown |
+| | Chronic Inflammatory Disease | unknown |
+| | HIV Infection | unknown |
+| | Migraine with Aura | unknown |
+| | Obstructive Sleep Apnea (OSA) | unknown |
+| | Non-Alcoholic Fatty Liver Disease | unknown |
+| | Erectile Dysfunction | unknown |
+| | Premature Menopause | N/A |
+| | Past history of Pregnancy Complications | N/A |
+| | Chronic Obstructive Pulmonary Disease (COPD) | unknown |
+| | Cancer | unknown |
+| | Other | unknown |
+
+### 7. Json File Creation
+
+```json
+{
+  "Risk": {
+    "SCORE2 Applicable": "No",
+    "Exception": "Atherosclerotic Cardiovascular Disease",
+    "Category": "Very High",
+    "SCORE2": "N/A",
+    "Confidence Level": "Very High"
+  },
+  "Risk Factors": {
+    "Age": "51",
+    "Gender": "Male",
+    "Smoking": "Former Smoker",
+    "Arterial Hypertension": "No",
+    "Systolic Blood Pressure": "118",
+    "Diastolic Blood Pressure": "67",
+    "Dyslipidemia": "Yes",
+    "Total Cholesterol": "136",
+    "HDL-Cholesterol": "46",
+    "Triglycerides": "99",
+    "LDL-Cholesterol": "70",
+    "non-HDL Cholesterol": "90",
+    "Diabetes Mellitus": "No"
+  },
+  "Risk Modifiers": {
+    "Elevated Coronary Calcium Score": "unknown",
+    "Calcium Score = 0": "unknown",
+    "Carotid Plaques": "unknown",
+    "Obesity": "No",
+    "Pre-Diabetes": "No",
+    "Family History of atherosclerotic cardiovascular disease (ASCVD)": "unknown",
+    "Elevated Lp(a)": "unknown",
+    "Increased Arterial Stiffness": "unknown",
+    "Elevated High-sensitivity CRP": "unknown",
+    "Chronic Inflammatory Disease": "unknown",
+    "HIV Infection": "unknown",
+    "Migraine with Aura": "unknown",
+    "Obstructive Sleep Apnea (OSA)": "unknown",
+    "Non-Alcoholic Fatty Liver Disease": "unknown",
+    "Erectile Dysfunction": "unknown",
+    "Premature Menopause": "N/A",
+    "Past history of Pregnancy Complications (Preeclampsia, Hypertension, or Diabetes)": "N/A",
+    "Chronic Obstructive Pulmonary Disease (COPD)": "unknown",
+    "Cancer": "unknown",
+    "Other": "unknown"
+  }
+}
+```
+
+###Vinheta 29. 
+### 1. Structured extraction of risk factors:
+
+| Risk Factor | Values |
+| :--- | :--- |
+| Age | 63 years |
+| Gender | Female |
+| Smoking | Former Smoker |
+| Systolic Blood Pressure | 114 mmHg |
+| Total Cholesterol | 149 mg/dL |
+| HDL-Cholesterol | 53 mg/dL |
+| non-HDL Cholesterol | 96 mg/dL |
+
+### 2. Risk stratification according to the 2021 ESC Guidelines on cardiovascular disease prevention in clinical practice
+
+| SCORE2 Applicable | Exception (if not applicable) | SCORE2 (%) | Risk Category | Confidence Level |
+| :--- | :--- | :--- | :--- | :--- |
+| No | Atherosclerotic Cardiovascular Disease | N/A | Very High | Very High |
+
+### 3. Brief Clinical Explanation
+
+The patient is classified as being at **Very High Risk** for future cardiovascular events. This classification is not based on a risk score but on her clinical history of documented atherosclerotic cardiovascular disease (ASCVD), specifically the coronary angioplasty performed two years ago.
+
+According to the 2021 ESC Guidelines, any individual with established ASCVD is automatically placed in the highest risk category, mandating intensive secondary prevention strategies. Although her current risk factors, such as blood pressure (114/66 mmHg) and LDL-cholesterol (80 mg/dL), are well-controlled with medication and lifestyle changes, and she has stopped smoking, her established disease remains the primary determinant of her risk.
+
+### 4. Structured extraction of risk factors:
+
+| Category | Variable | Value |
+| :--- | :--- | :--- |
+| **Risk Factors** | Age | 63 years |
+| | Gender | Female |
+| | Smoking | Former Smoker |
+| | Arterial Hypertension | No |
+| | Systolic Blood Pressure | 114 mmHg |
+| | Diastolic Blood Pressure | 66 mmHg |
+| | Dyslipidemia | Yes |
+| | Total Cholesterol | 149 mg/dL |
+| | HDL-Cholesterol | 53 mg/dL |
+| | Triglycerides | 82 mg/dL |
+| | LDL-Cholesterol | 80 mg/dL |
+| | non-HDL Cholesterol | 96 mg/dL |
+| | Diabetes Mellitus | No |
+| **Risk Modifiers**| More than one can be selected | Other (specify): Anxiety |
+
+### 7. Json File Creation
+
+```json
+{
+  "Risk": {
+    "SCORE2 Applicable": "No",
+    "Exception": "Atherosclerotic Cardiovascular Disease",
+    "Category": "Very High",
+    "SCORE2": "N/A",
+    "Confidence Level": "Very High"
+  },
+  "Risk Factors": {
+    "Age": "63",
+    "Gender": "Female",
+    "Smoking": "Former Smoker",
+    "Arterial Hypertension": "No",
+    "Systolic Blood Pressure": "114",
+    "Diastolic Blood Pressure": "66",
+    "Dyslipidemia": "Yes",
+    "Total Cholesterol": "149",
+    "HDL-Cholesterol": "53",
+    "Triglycerides": "82",
+    "LDL-Cholesterol": "80",
+    "non-HDL Cholesterol": "96",
+    "Diabetes Mellitus": "No"
+  },
+  "Risk Modifiers": {
+    "More than one can be selected": "Other (specify): Anxiety"
+  }
+}
+```
+
+###Vinheta 30. 
+1. Structured extraction of risk factors:
+
+| Risk Factor | Values |
+| :--- | :--- |
+| Age | 64 |
+| Gender | Male |
+| Smoking | Former Smoker |
+| Systolic Blood Pressure | 138 |
+| Total Cholesterol | 165 |
+| HDL-Cholesterol | 52 |
+| non-HDL Cholesterol | 113 |
+
+2. Risk stratification according to the 2021 ESC Guidelines on cardiovascular disease prevention in clinical practice
+
+| SCORE2 Applicable | Exception (if not applicable) | SCORE2 (%) | Risk Category | Confidence Level |
+| :--- | :--- | :--- | :--- | :--- |
+| No | Atherosclerotic Cardiovascular Disease (ischemic stroke) | Not Applicable | Very High | Very High |
+
+3. Brief Clinical Explanation
+
+This patient is classified as being at **Very High** cardiovascular risk due to a documented history of atherosclerotic cardiovascular disease, specifically a recent ischemic stroke. The ESC 2021 guidelines automatically place individuals with established ASCVD in the highest risk category, without the need for SCORE2 calculation.
+
+This classification is further supported by the presence of multiple uncontrolled or poorly controlled risk factors and modifiers. These include diagnosed hypertension (despite triple therapy), dyslipidemia, a significant 40 pack-year smoking history, overweight status (BMI 28,7), a sedentary lifestyle, and laboratory evidence of pre-diabetes (HbA1c 6,4%). The echocardiographic findings of concentric left ventricular remodeling and severe left atrial enlargement also contribute to this elevated risk profile, indicating target organ damage secondary to chronic hypertension.
+
+4. Structured extraction of risk factors:
+
+| Category | Variable | Value |
+| :--- | :--- | :--- |
+| **Risk Factors** | Age | 64 |
+| | Gender | Male |
+| | Smoking | Former Smoker |
+| | Arterial Hypertension | Yes |
+| | Systolic Blood Pressure | 138 mmHg |
+| | Diastolic Blood Pressure | 81 mmHg |
+| | Dyslipidemia | Yes |
+| | Total Cholesterol | 165 mg/dL |
+| | HDL-Cholesterol | 52 mg/dL |
+| | Triglycerides | 209 mg/dL |
+| | LDL-Cholesterol | 71 mg/dL |
+| | non-HDL Cholesterol | 113 mg/dL |
+| | Diabetes Mellitus | No |
+| **Risk Modifiers** | More than one can be selected | Pre-Diabetes; Chronic Obstructive Pulmonary Disease (COPD); Other (Concentric left ventricular remodeling; Severe left atrial enlargement) |
+
+7. Json File Creation
+
+```json
+{
+  "Risk": {
+    "SCORE2 Applicable": "No",
+    "Exception": "Atherosclerotic Cardiovascular Disease (ischemic stroke)",
+    "Category": "Very High",
+    "SCORE2": "Not Applicable",
+    "Confidence Level": "Very High"
+  },
+  "Risk Factors": {
+    "Age": "64",
+    "Gender": "Male",
+    "Smoking": "Former Smoker",
+    "Arterial Hypertension": "Yes",
+    "Systolic Blood Pressure": "138 mmHg",
+    "Diastolic Blood Pressure": "81 mmHg",
+    "Dyslipidemia": "Yes",
+    "Total Cholesterol": "165 mg/dL",
+    "HDL-Cholesterol": "52 mg/dL",
+    "Triglycerides": "209 mg/dL",
+    "LDL-Cholesterol": "71 mg/dL",
+    "non-HDL Cholesterol": "113 mg/dL",
+    "Diabetes Mellitus": "No"
+  },
+  "Risk Modifiers": {
+    "Selected Modifiers": "Pre-Diabetes; Chronic Obstructive Pulmonary Disease (COPD); Other (Concentric left ventricular remodeling; Severe left atrial enlargement)"
+  }
+}
+```
+

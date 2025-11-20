@@ -1,0 +1,921 @@
+{
+  "Vinheta 1": {
+    "Risco": {
+      "SCORE2 Aplicável": "Sim",
+      "Exceção": "N/A",
+      "Categoria": "Baixo-a-Moderado",
+      "SCORE2": "1,1%",
+      "confiança": "Alta"
+    },
+    "Fatores de risco": {
+      "Idade": "44",
+      "Género": "Masculino",
+      "Tabagismo": "Não fumador",
+      "Pressão Arterial Sistólica": "114",
+      "Colesterol Total": "183",
+      "Colesterol HDL": "55",
+      "Colesterol não HDL": "128"
+    },
+    "Modificadores de risco": {
+      "Score de Cálcio elevado": "desconhecido",
+      "Score de Cálcio = 0": "desconhecido",
+      "Placas Carótidas": "desconhecido",
+      "Obesidade": "Não",
+      "Pre-Diabetes": "Não",
+      "História Familiar de doença cardiovascular aterosclerótica": "Não",
+      "Lp (a) aumentada": "desconhecido",
+      "Rigidez Arterial aumentada": "desconhecido",
+      "PCR alta sensibilidade elevada": "desconhecido",
+      "Doença Inflamatória Crónica": "desconhecido",
+      "Infecção HIV": "desconhecido",
+      "Sindrome Apneia Obstrutiva do Sono": "desconhecido",
+      "Esteatose Hepática Não Alcoólica": "desconhecido",
+      "Disfunção erétil": "desconhecido",
+      "Menopausa precoce": "N/A",
+      "Antecedentes de Gravidez com complicações (Pre-eclampsia, Hipertensão arterial ou diabetes)": "N/A",
+      "Doença pulmonar obstrutiva crónica (DPOC)": "desconhecido",
+      "Cancro": "desconhecido",
+      "Outro (especificar)": "Nenhum"
+    }
+  },
+  "Vinheta 2": {
+    "Risco": {
+      "SCORE2 Aplicável": "Sim",
+      "Exceção": "N/A",
+      "Categoria": "Baixo-a-Moderado",
+      "SCORE2": "1,0",
+      "confiança": "Intermédia"
+    },
+    "Fatores de risco": {
+      "Idade": "40",
+      "Género": "Feminino",
+      "Tabagismo": "Fumador",
+      "Hipertensão Arterial": "Não",
+      "Pressão Arterial Sistólica": "124",
+      "Pressão Arterial Diastólica": "75",
+      "Dislipidemia": "Não",
+      "Colesterol Total": "190",
+      "Colesterol HDL": "67",
+      "Triglicéridos": "90",
+      "Colesterol LDL": "105",
+      "Colesterol não HDL": "123",
+      "Diabetes Mellitus": "Não"
+    },
+    "Modificadores de risco": {
+      "Rigidez Arterial aumentada": "6,8 m/s"
+    }
+  },
+  "Vinheta 3": {
+    "Risco": {
+      "SCORE2 Aplicável": "Sim",
+      "Exceção": "N/A",
+      "Categoria": "Baixo-a-Moderado",
+      "SCORE2": "1,0",
+      "confiança": "Intermédia"
+    },
+    "Fatores de risco": {
+      "Idade": "58",
+      "Género": "Feminino",
+      "Tabagismo": "Não fumador",
+      "Hipertensão Arterial": "Não",
+      "Pressão Arterial Sistólica": "122",
+      "Pressão Arterial Diastólica": "77",
+      "Dislipidemia": "Não",
+      "Colesterol Total": "164",
+      "Colesterol HDL": "47",
+      "Triglicéridos": "62",
+      "Colesterol LDL": "105",
+      "Diabetes Mellitus": "Não"
+    },
+    "Modificadores de risco": {
+      "Score de Cálcio": "Valor Total de 0",
+      "Obesidade": "IMC 29,9"
+    }
+  },
+  "Vinheta 4": {
+    "Risco": {
+      "SCORE2 Aplicável": "Sim",
+      "Exceção": "N/A",
+      "Categoria": "Baixo-a-Moderado",
+      "SCORE2": "1,0 %",
+      "confiança": "Alta"
+    },
+    "Fatores de risco": {
+      "Idade": "54",
+      "Género": "Masculino",
+      "Tabagismo": "Não fumador",
+      "Hipertensão Arterial": "Não",
+      "Pressão Arterial Sistólica": "118",
+      "Pressão Arterial Diastólica": "60",
+      "Dislipidemia": "Não",
+      "Colesterol Total": "183",
+      "Colesterol HDL": "55",
+      "Triglicéridos": "88",
+      "Colesterol LDL": "110",
+      "Diabetes Mellitus": "Não"
+    },
+    "Modificadores de risco": {
+      "História Familiar de doença cardiovascular aterosclerótica": "Sim",
+      "Obesidade": "Não"
+    }
+  },
+  "Vinheta 5": {
+    "Risco": {
+      "SCORE2 Aplicável": "Sim",
+      "Exceção": "N/A",
+      "Categoria": "Baixo-Moderado",
+      "SCORE2": "2,0%",
+      "confiança": "Alta"
+    },
+    "Fatores de risco": {
+      "Idade": "63",
+      "Género": "Feminino",
+      "Tabagismo": "Não fumador",
+      "Hipertensão Arterial": "Não",
+      "Pressão Arterial Sistólica": "107",
+      "Pressão Arterial Diastólica": "58",
+      "Dislipidemia": "Sim",
+      "Colesterol Total": "214",
+      "Colesterol HDL": "67",
+      "Triglicéridos": "124",
+      "Colesterol LDL": "122",
+      "Diabetes Mellitus": "Não"
+    },
+    "Modificadores de risco": {
+      "História Familiar de doença cardiovascular aterosclerótica": "desconhecido"
+    }
+  },
+  "Vinheta 6": {
+    "Risco": {
+      "SCORE2 Aplicável": "Sim",
+      "Exceção": "N/A",
+      "Categoria": "Alto",
+      "SCORE2": "5,1%",
+      "confiança": "Intermédia"
+    },
+    "Fatores de risco": {
+      "Idade": "41",
+      "Género": "Feminino",
+      "Tabagismo": "Fumador",
+      "Hipertensão Arterial": "Sim",
+      "Pressão Arterial Sistólica": "146",
+      "Pressão Arterial Diastólica": "85",
+      "Dislipidemia": "Sim",
+      "Colesterol Total": "270",
+      "Colesterol HDL": "53",
+      "Triglicéridos": "142",
+      "Colesterol LDL": "189",
+      "Colesterol não HDL": "217",
+      "Diabetes Mellitus": "Não"
+    },
+    "Modificadores de risco": {
+      "Obesidade": "IMC 25,7",
+      "Pre-Diabetes": "HbA1c 6,3%",
+      "Remodeling concêntrico do VE": "Sim"
+    }
+  },
+  "Vinheta 7": {
+    "Risco": {
+      "SCORE2 Aplicável": "Sim",
+      "Exceção": "N/A",
+      "Categoria": "Alto",
+      "SCORE2": "3%",
+      "confiança": "Intermédia"
+    },
+    "Fatores de risco": {
+      "Idade": "48",
+      "Género": "Masculino",
+      "Tabagismo": "Não fumador",
+      "Hipertensão Arterial": "Sim",
+      "Pressão Arterial Sistólica": "161",
+      "Pressão Arterial Diastólica": "102",
+      "Dislipidemia": "Sim",
+      "Colesterol Total": "231",
+      "Colesterol HDL": "43",
+      "Triglicéridos": "197",
+      "Colesterol LDL": "149",
+      "Diabetes Mellitus": "Não"
+    },
+    "Modificadores de risco": {
+      "Obesidade": "Sim (IMC 28,2)",
+      "Pre-Diabetes": "Sim (HbA1c 6,2%)",
+      "Lp (a) aumentada": "29",
+      "Rigidez Arterial aumentada": "Sim (VOP 9,3 m/s)",
+      "Sindrome Apneia Obstrutiva do Sono": "Desconhecido"
+    }
+  },
+  "Vinheta 8": {
+    "Risco": {
+      "SCORE2 Aplicável": "Sim",
+      "Exceção": "N/A",
+      "Categoria": "Baixo-a-Moderado",
+      "SCORE2": "2,3",
+      "confiança": "Intermédia"
+    },
+    "Fatores de risco": {
+      "Idade": "57",
+      "Género": "Feminino",
+      "Tabagismo": "Fumador",
+      "Hipertensão Arterial": "Não",
+      "Pressão Arterial Sistólica": "120",
+      "Pressão Arterial Diastólica": "63",
+      "Dislipidemia": "Sim",
+      "Colesterol Total": "197",
+      "Colesterol HDL": "57",
+      "Triglicéridos": "124",
+      "Colesterol LDL": "119",
+      "Colesterol não HDL": "140",
+      "Diabetes Mellitus": "Não"
+    },
+    "Modificadores de risco": {
+      "Score de Cálcio elevado": "desconhecido",
+      "Score de Cálcio = 0": "desconhecido",
+      "Placas Carótidas": "desconhecido",
+      "Obesidade": "Não",
+      "Pre-Diabetes": "Não",
+      "História Familiar de doença cardiovascular aterosclerótica": "desconhecido",
+      "Lp (a) aumentada": "desconhecido",
+      "Rigidez Arterial aumentada": "desconhecido",
+      "PCR alta sensibilidade elevada": "desconhecido",
+      "Doença Inflamatória Crónica": "Não",
+      "Infecção HIV": "Não",
+      "Sindrome Apneia Obstrutiva do Sono": "desconhecido",
+      "Esteatose Hepática Não Alcoólica": "desconhecido",
+      "Disfunção erétil": "Não se aplica",
+      "Menopausa precoce": "Não",
+      "Antecedentes de Gravidez com complicações (Pre-eclampsia, Hipertensão arterial ou diabetes)": "Não se aplica",
+      "Doença pulmonar obstrutiva crónica (DPOC)": "Não",
+      "Cancro": "Não",
+      "Outro (especificar)": "Nenhum"
+    }
+  },
+  "Vinheta 9": {
+    "Risco": {
+      "SCORE2 Aplicável": "Sim",
+      "Exceção": "N/A",
+      "Categoria": "Alto",
+      "SCORE2": "5,1%",
+      "confiança": "Intermédia"
+    },
+    "Fatores de risco": {
+      "Idade": "52",
+      "Género": "Masculino",
+      "Tabagismo": "Fumador",
+      "Hipertensão Arterial": "Sim",
+      "Pressão Arterial Sistólica": "138",
+      "Pressão Arterial Diastólica": "86",
+      "Dislipidemia": "Sim",
+      "Colesterol Total": "224",
+      "Colesterol HDL": "37",
+      "Triglicéridos": "98",
+      "Colesterol LDL": "167",
+      "Colesterol não HDL": "187",
+      "Diabetes Mellitus": "Não"
+    },
+    "Modificadores de risco": {
+      "Score de Cálcio elevado": "Sim; Score de Cálcio = 23",
+      "História Familiar de doença cardiovascular aterosclerótica": "Não",
+      "Lp (a) aumentada": "Sim; 38 mg/dL",
+      "Pre-Diabetes": "Sim"
+    }
+  },
+  "Vinheta 10": {
+    "Risco": {
+      "SCORE2 Aplicável": "Não",
+      "Exceção": "Doença Cardiovascular Aterosclerótica",
+      "Categoria": "Muito-Alto",
+      "SCORE2": "N.A.",
+      "confiança": "Alta"
+    },
+    "Fatores de risco": {
+      "Idade": "67",
+      "Género": "Feminino",
+      "Tabagismo": "Não fumador",
+      "Hipertensão Arterial": "Sim",
+      "Pressão Arterial Sistólica": "131",
+      "Pressão Arterial Diastólica": "63",
+      "Dislipidemia": "Sim",
+      "Colesterol Total": "137",
+      "Colesterol HDL": "58",
+      "Triglicéridos": "85",
+      "Colesterol LDL": "62",
+      "Diabetes Mellitus": "Não"
+    },
+    "Modificadores de risco": {
+      "História Familiar de doença cardiovascular aterosclerótica": "Desconhecido",
+      "Menopausa precoce": "Desconhecido"
+    }
+  },
+  "Vinheta 11": {
+    "Risco": {
+      "SCORE2 Aplicável": "Sim",
+      "Exceção": "N/A",
+      "Categoria": "Baixo-a-Moderado",
+      "SCORE2": "2,5",
+      "confiança": "Intermédia"
+    },
+    "Fatores de risco": {
+      "Idade": "62",
+      "Género": "Masculino",
+      "Tabagismo": "Ex-Fumador",
+      "Hipertensão Arterial": "Sim",
+      "Pressão Arterial Sistólica": "129",
+      "Pressão Arterial Diastólica": "66",
+      "Dislipidemia": "Sim",
+      "Colesterol Total": "187",
+      "Colesterol HDL": "51",
+      "Triglicéridos": "134",
+      "Colesterol LDL": "109",
+      "Colesterol não HDL": "136",
+      "Diabetes Mellitus": "Não"
+    },
+    "Modificadores de risco": {
+      "Obesidade": "Sim",
+      "Pre-Diabetes": "Sim",
+      "Cancro": "Sim"
+    }
+  },
+  "Vinheta 12": {
+    "Risco": {
+      "SCORE2 Aplicável": "Sim",
+      "Exceção": "N/A",
+      "Categoria": "Alto",
+      "SCORE2": "5,4%",
+      "confiança": "Alta"
+    },
+    "Fatores de risco": {
+      "Idade": "47",
+      "Género": "Feminino",
+      "Tabagismo": "Fumador",
+      "Hipertensão Arterial": "Sim",
+      "Pressão Arterial Sistólica": "189",
+      "Pressão Arterial Diastólica": "103",
+      "Dislipidemia": "Sim",
+      "Colesterol Total": "263",
+      "Colesterol HDL": "54",
+      "Triglicéridos": "125",
+      "Colesterol LDL": "184",
+      "Diabetes Mellitus": "Não"
+    },
+    "Modificadores de risco": {
+      "História Familiar de doença cardiovascular aterosclerótica": "Sim",
+      "Doença pulmonar obstrutiva crónica (DPOC)": "Sim"
+    }
+  },
+  "Vinheta 13": {
+    "Risco": {
+      "SCORE2 Aplicável": "Sim",
+      "Exceção": "N/A",
+      "Categoria": "Alto",
+      "SCORE2": "5%",
+      "confiança": "Alta"
+    },
+    "Fatores de risco": {
+      "Idade": "41",
+      "Género": "Masculino",
+      "Tabagismo": "Fumador",
+      "Hipertensão Arterial": "Sim",
+      "Pressão Arterial Sistólica": "155",
+      "Pressão Arterial Diastólica": "107",
+      "Dislipidemia": "Sim",
+      "Colesterol Total": "241",
+      "Colesterol HDL": "33",
+      "Triglicéridos": "98",
+      "Colesterol LDL": "188",
+      "Diabetes Mellitus": "Não"
+    },
+    "Modificadores de risco": {
+      "Score de Cálcio elevado": "desconhecido",
+      "Score de Cálcio = 0": "desconhecido",
+      "Placas Carótidas": "desconhecido",
+      "Obesidade": "Não",
+      "Pre-Diabetes": "Sim",
+      "História Familiar de doença cardiovascular aterosclerótica": "Sim",
+      "Lp (a) aumentada": "desconhecido",
+      "Rigidez Arterial aumentada": "desconhecido",
+      "PCR alta sensibilidade elevada": "desconhecido",
+      "Doença Inflamatória Crónica": "desconhecido",
+      "Infecção HIV": "desconhecido",
+      "Sindrome Apneia Obstrutiva do Sono": "desconhecido",
+      "Esteatose Hepática Não Alcoólica": "desconhecido",
+      "Disfunção erétil": "desconhecido",
+      "Menopausa precoce": "N/A",
+      "Antecedentes de Gravidez com complicações": "N/A",
+      "Doença pulmonar obstrutiva crónica (DPOC)": "desconhecido",
+      "Cancro": "Não",
+      "Outro (especificar)": "Ácido Úrico 6,3 mg/dL; Alterações inespecíficas da repolarização ventricular"
+    }
+  },
+  "Vinheta 14": {
+    "Risco": {
+      "SCORE2 Aplicável": "Sim",
+      "Exceção": "N/A",
+      "Categoria": "Alto",
+      "SCORE2": "5,2%",
+      "confiança": "Intermédia"
+    },
+    "Fatores de risco": {
+      "Idade": "56",
+      "Género": "Feminino",
+      "Tabagismo": "Fumador",
+      "Hipertensão Arterial": "Sim",
+      "Pressão Arterial Sistólica": "163",
+      "Pressão Arterial Diastólica": "91",
+      "Dislipidemia": "Sim",
+      "Colesterol Total": "224",
+      "Colesterol HDL": "45",
+      "Triglicéridos": "196",
+      "Colesterol LDL": "140",
+      "Diabetes Mellitus": "Não"
+    },
+    "Modificadores de risco": {
+      "Obesidade": "Sim",
+      "Pre-Diabetes": "Sim",
+      "Menopausa precoce": "Não"
+    }
+  },
+  "Vinheta 15": {
+    "Risco": {
+      "SCORE2 Aplicável": "Sim",
+      "Exceção": "N/A",
+      "Categoria": "Alto",
+      "SCORE2": "5,2",
+      "confiança": "Alta"
+    },
+    "Fatores de risco": {
+      "Idade": "51",
+      "Género": "Masculino",
+      "Tabagismo": "Fumador",
+      "Hipertensão Arterial": "Sim",
+      "Pressão Arterial Sistólica": "149",
+      "Pressão Arterial Diastólica": "98",
+      "Dislipidemia": "Sim",
+      "Colesterol Total": "197",
+      "Colesterol HDL": "32",
+      "Triglicéridos": "98",
+      "Colesterol LDL": "148",
+      "Colesterol não HDL": "165",
+      "Diabetes Mellitus": "Não"
+    },
+    "Modificadores de risco": {
+      "História Familiar de doença cardiovascular aterosclerótica": "Sim",
+      "Score de Cálcio elevado": "Sim",
+      "Lp (a) aumentada": "39",
+      "Pre-Diabetes": "Sim",
+      "Outro": "Sedentarismo; Ansiedade"
+    }
+  },
+  "Vinheta 16": {
+    "Risco": {
+      "SCORE2 Aplicável": "Sim",
+      "Exceção": "N/A",
+      "Categoria": "Alto",
+      "SCORE2": "5,0",
+      "confiança": "Alta"
+    },
+    "Fatores de risco": {
+      "Idade": "64",
+      "Género": "Feminino",
+      "Tabagismo": "Fumador",
+      "Hipertensão Arterial": "Não",
+      "Pressão Arterial Sistólica": "143",
+      "Pressão Arterial Diastólica": "84",
+      "Dislipidemia": "Não",
+      "Colesterol Total": "169",
+      "Colesterol HDL": "48",
+      "Triglicéridos": "107",
+      "Colesterol LDL": "100",
+      "Diabetes Mellitus": "Não"
+    },
+    "Modificadores de risco": {
+      "Obesidade": "Não",
+      "Pre-Diabetes": "Sim",
+      "História Familiar de doença cardiovascular aterosclerótica": "Desconhecido",
+      "Lp (a) aumentada": "Desconhecido",
+      "Rigidez Arterial aumentada": "Desconhecido",
+      "PCR alta sensibilidade elevada": "Desconhecido",
+      "Doença Inflamatória Crónica": "Desconhecido",
+      "Infecção HIV": "Desconhecido",
+      "Sindrome Apneia Obstrutiva do Sono": "Desconhecido",
+      "Esteatose Hepática Não Alcoólica": "Desconhecido",
+      "Disfunção erétil": "Desconhecido",
+      "Menopausa precoce": "Desconhecido",
+      "Antecedentes de Gravidez com complicações (Pre-eclampsia, Hipertensão arterial ou diabetes)": "Desconhecido",
+      "Doença pulmonar obstrutiva crónica (DPOC)": "Desconhecido",
+      "Cancro": "Sim; Carcinoma papilar da tiróide",
+      "Score de Cálcio elevado": "Desconhecido",
+      "Score de Cálcio = 0": "Desconhecido",
+      "Placas Carótidas": "Desconhecido",
+      "Outro (especificar)": "Remodelação concêntrica do VE; Dilatação moderada da aurícula esquerda; Válvula aórtica tricúspide calcificada sem compromisso funcional; NT-proBNP 288pg/mL; Anemia (Hb 10.9g/dL)"
+    }
+  },
+  "Vinheta 17": {
+    "Risco": {
+      "SCORE2 Aplicável": "Sim",
+      "Exceção": "N/A",
+      "Categoria": "Alto",
+      "SCORE2": "5,9",
+      "confiança": "Alta"
+    },
+    "Fatores de risco": {
+      "Idade": "65",
+      "Género": "Masculino",
+      "Tabagismo": "Ex-Fumador",
+      "Hipertensão Arterial": "Sim",
+      "Pressão Arterial Sistólica": "147",
+      "Pressão Arterial Diastólica": "68",
+      "Dislipidemia": "Sim",
+      "Colesterol Total": "129",
+      "Colesterol HDL": "33",
+      "Triglicéridos": "237",
+      "Colesterol LDL": "49",
+      "Colesterol não HDL": "96",
+      "Diabetes Mellitus": "Não"
+    },
+    "Modificadores de risco": {
+      "Obesidade": "Sim",
+      "Pre-Diabetes": "Sim",
+      "Síndrome Apneia Obstrutiva do Sono": "Sim",
+      "Lp (a) aumentada": "Não"
+    }
+  },
+  "Vinheta 18": {
+    "Risco": {
+      "SCORE2 Aplicável": "Sim",
+      "Exceção": "N/A",
+      "Categoria": "Baixo-a-Moderado",
+      "SCORE2": "2,1",
+      "confiança": "Intermédia"
+    },
+    "Fatores de risco": {
+      "Idade": "44",
+      "Género": "Masculino",
+      "Tabagismo": "Não fumador",
+      "Hipertensão Arterial": "Sim",
+      "Pressão Arterial Sistólica": "145",
+      "Pressão Arterial Diastólica": "94",
+      "Dislipidemia": "Sim",
+      "Colesterol Total": "229",
+      "Colesterol HDL": "37",
+      "Triglicéridos": "137",
+      "Colesterol LDL": "165",
+      "Diabetes Mellitus": "Não"
+    },
+    "Modificadores de risco": {
+      "História Familiar de doença cardiovascular aterosclerótica": "Sim",
+      "Lp (a) aumentada": "92 mg/dL"
+    }
+  },
+  "Vinheta 19": {
+    "Risco": {
+      "SCORE2 Aplicável": "Não",
+      "Exceção": "Doença Inflamatória Crónica",
+      "Categoria": "Alto",
+      "SCORE2": " ",
+      "confiança": "Intermédia"
+    },
+    "Fatores de risco": {
+      "Idade": "54",
+      "Género": "Feminino",
+      "Tabagismo": "Fumador",
+      "Hipertensão Arterial": "Não",
+      "Pressão Arterial Sistólica": "132",
+      "Pressão Arterial Diastólica": "84",
+      "Dislipidemia": "Sim",
+      "Colesterol Total": "211",
+      "Colesterol HDL": "52",
+      "Triglicéridos": "128",
+      "Colesterol LDL": "133",
+      "Diabetes Mellitus": "Não"
+    },
+    "Modificadores de risco": {
+      "Score de Cálcio elevado": "Sim (77)",
+      "PCR alta sensibilidade elevada": "Sim (4,5)",
+      "Doença Inflamatória Crónica": "Artrite Reumatoide"
+    }
+  },
+  "Vinheta 20": {
+    "Risco": {
+      "SCORE2 Aplicável": "Sim",
+      "Exceção": "N/A",
+      "Categoria": "Alto",
+      "SCORE2": "5,1",
+      "confiança": "Alta"
+    },
+    "Fatores de risco": {
+      "Idade": "61",
+      "Género": "Masculino",
+      "Tabagismo": "Não fumador",
+      "Hipertensão Arterial": "Sim",
+      "Pressão Arterial Sistólica": "151",
+      "Pressão Arterial Diastólica": "94",
+      "Dislipidemia": "Sim",
+      "Colesterol Total": "217",
+      "Colesterol HDL": "48",
+      "Triglicéridos": "256",
+      "Colesterol LDL": "118",
+      "Colesterol não HDL": "169",
+      "Diabetes Mellitus": "Não"
+    },
+    "Modificadores de risco": {
+      "Obesidade": "Sim",
+      "Pre-Diabetes": "Sim",
+      "Score de Cálcio elevado": "Sim",
+      "Sindrome Apneia Obstrutiva do Sono": "Sim"
+    }
+  },
+  "Vinheta 21": {
+    "Risco": {
+      "SCORE2 Aplicável": "Não",
+      "Exceção": "Doença Renal Crónica",
+      "Categoria": "Alto",
+      "SCORE2": "N.A.",
+      "confiança": "Intermédia"
+    },
+    "Fatores de risco": {
+      "Idade": "51",
+      "Género": "Feminino",
+      "Tabagismo": "Não fumador",
+      "Hipertensão Arterial": "Sim",
+      "Pressão Arterial Sistólica": "127",
+      "Pressão Arterial Diastólica": "79",
+      "Dislipidemia": "Sim",
+      "Colesterol Total": "162",
+      "Colesterol HDL": "38",
+      "Triglicéridos": "199",
+      "Colesterol LDL": "84",
+      "Diabetes Mellitus": "Não"
+    },
+    "Modificadores de risco": {
+      "História Familiar de doença cardiovascular aterosclerótica": "desconhecido",
+      "Doença Inflamatória Crónica": "Doença Renal Poliquística",
+      "Menopausa precoce": "desconhecido",
+      "Antecedentes de Gravidez com complicações (Pre-eclampsia, Hipertensão arterial ou diabetes)": "desconhecido",
+      "Score de Cálcio elevado; Score de Cálcio = 0; Placas Carótidas; Obesidade; Pre-Diabetes; Lp (a) aumentada; Rigidez Arterial aumentada; PCR alta sensibilidade elevada; Infecção HIV; Sindrome Apneia Obstrutiva do Sono; Esteatose Hepática Não Alcoólica; Disfunção erétil; Doença pulmonar obstrutiva crónica (DPOC); Cancro; Outro (especificar)": "desconhecido"
+    }
+  },
+  "Vinheta 22": {
+    "Risco": {
+      "SCORE2 Aplicável": "Não",
+      "Exceção": "Doença Renal Crónica",
+      "Categoria": "Muito Alto",
+      "SCORE2": "Não aplicável",
+      "confiança": "Alta"
+    },
+    "Fatores de risco": {
+      "Idade": "61",
+      "Género": "Masculino",
+      "Tabagismo": "Não fumador",
+      "Hipertensão Arterial": "Sim",
+      "Pressão Arterial Sistólica": "131",
+      "Pressão Arterial Diastólica": "78",
+      "Dislipidemia": "Sim",
+      "Colesterol Total": "136",
+      "Colesterol HDL": "38",
+      "Triglicéridos": "164",
+      "Colesterol LDL": "65",
+      "Diabetes Mellitus": "Não"
+    },
+    "Modificadores de risco": {
+      "Doença Renal Crónica": "TFG 42mL/min/1.73 m2; Microalbuminúria 100mg/g"
+    }
+  },
+  "Vinheta 23": {
+    "Risco": {
+      "SCORE2 Aplicável": "Não",
+      "Exceção": "Diabetes Mellitus",
+      "Categoria": "Muito-Alto",
+      "SCORE2": "-",
+      "confiança": "Alta"
+    },
+    "Fatores de risco": {
+      "Idade": "59",
+      "Género": "Feminino",
+      "Tabagismo": "Não fumador",
+      "Hipertensão Arterial": "Não",
+      "Pressão Arterial Sistólica": "124",
+      "Pressão Arterial Diastólica": "74",
+      "Dislipidemia": "Sim",
+      "Colesterol Total": "176",
+      "Colesterol HDL": "43",
+      "Triglicéridos": "166",
+      "Colesterol LDL": "100",
+      "Diabetes Mellitus": "Sim"
+    },
+    "Modificadores de risco": {
+      "Obesidade": "Sim"
+    }
+  },
+  "Vinheta 24": {
+    "Risco": {
+      "SCORE2 Aplicável": "Não",
+      "Exceção": "Diabetes Mellitus",
+      "Categoria": "Muito-Alto",
+      "SCORE2": "Não aplicável",
+      "confiança": "Alta"
+    },
+    "Fatores de risco": {
+      "Idade": "59",
+      "Género": "Masculino",
+      "Tabagismo": "Ex-Fumador",
+      "Hipertensão Arterial": "Sim",
+      "Pressão Arterial Sistólica": "134",
+      "Pressão Arterial Diastólica": "82",
+      "Dislipidemia": "Sim",
+      "Colesterol Total": "187",
+      "Colesterol HDL": "45",
+      "Triglicéridos": "178",
+      "Colesterol LDL": "106",
+      "Diabetes Mellitus": "Sim"
+    },
+    "Modificadores de risco": {
+      "Obesidade": "Sim",
+      "Sindrome Apneia Obstrutiva do Sono": "desconhecido",
+      "História Familiar de doença cardiovascular aterosclerótica": "desconhecido",
+      "Lp (a) aumentada": "desconhecido",
+      "Rigidez Arterial aumentada": "desconhecido",
+      "PCR alta sensibilidade elevada": "desconhecido",
+      "Doença Inflamatória Crónica": "desconhecido",
+      "Infecção HIV": "desconhecido",
+      "Esteatose Hepática Não Alcoólica": "desconhecido",
+      "Disfunção erétil": "desconhecido",
+      "Menopausa precoce": "desconhecido",
+      "Antecedentes de Gravidez com complicações (Pre-eclampsia, Hipertensão arterial ou diabetes)": "desconhecido",
+      "Doença pulmonar obstrutiva crónica (DPOC)": "desconhecido",
+      "Cancro": "desconhecido",
+      "Outro (especificar)": "Trabalho por turnos; sono de má qualidade"
+    }
+  },
+  "Vinheta 25": {
+    "Risco": {
+      "SCORE2 Aplicável": "Não",
+      "Exceção": "Diabetes Mellitus",
+      "Categoria": "Muito Alto",
+      "SCORE2": "Não aplicável",
+      "confiança": "Alta"
+    },
+    "Fatores de risco": {
+      "Idade": "65",
+      "Género": "Feminino",
+      "Tabagismo": "Não fumador",
+      "Hipertensão Arterial": "Sim",
+      "Pressão Arterial Sistólica": "138",
+      "Pressão Arterial Diastólica": "75",
+      "Dislipidemia": "Sim",
+      "Colesterol Total": "165",
+      "Colesterol HDL": "51",
+      "Triglicéridos": "173",
+      "Colesterol LDL": "79",
+      "Diabetes Mellitus": "Sim"
+    },
+    "Modificadores de risco": {
+      "Obesidade": "IMC 28,8",
+      "Pre-Diabetes": "Glicemia jejum 128mg/dL",
+      "Microalbuminúria": "103mg/g"
+    }
+  },
+  "Vinheta 26": {
+    "Risco": {
+      "SCORE2 Aplicável": "Não",
+      "Exceção": "Dislipidemia Familiar",
+      "Categoria": "Alto",
+      "SCORE2": "desconhecido",
+      "confiança": "Intermédia"
+    },
+    "Fatores de risco": {
+      "Idade": "36",
+      "Género": "Masculino",
+      "Tabagismo": "Não fumador",
+      "Hipertensão Arterial": "Não",
+      "Pressão Arterial Sistólica": "134",
+      "Pressão Arterial Diastólica": "87",
+      "Dislipidemia": "Sim",
+      "Colesterol Total": "336",
+      "Colesterol HDL": "45",
+      "Triglicéridos": "164",
+      "Colesterol LDL": "258",
+      "Diabetes Mellitus": "Não"
+    },
+    "Modificadores de risco": {
+      "Obesidade": "Sim (IMC 27,7)",
+      "História Familiar de doença cardiovascular aterosclerótica": "Sim"
+    }
+  },
+  "Vinheta 27": {
+    "Risco": {
+      "SCORE2 Aplicável": "Sim",
+      "Exceção": null,
+      "Categoria": "Alto",
+      "SCORE2": "5,0",
+      "confiança": "Intermédia"
+    },
+    "Fatores de risco": {
+      "Idade": "61",
+      "Género": "Feminino",
+      "Tabagismo": "Fumador",
+      "Hipertensão Arterial": "Não",
+      "Pressão Arterial Sistólica": "124",
+      "Pressão Arterial Diastólica": "75",
+      "Dislipidemia": "Não",
+      "Colesterol Total": "199",
+      "Colesterol HDL": "54",
+      "Triglicéridos": "87",
+      "Colesterol LDL": "87",
+      "Diabetes Mellitus": "Não"
+    },
+    "Modificadores de risco": {
+      "Score de Cálcio elevado": "Sim",
+      "História Familiar de doença cardiovascular aterosclerótica": "desconhecido",
+      "Menopausa precoce": "desconhecido",
+      "Antecedentes de Gravidez com complicações (Pré-eclâmpsia, Hipertensão arterial ou diabetes)": "desconhecido"
+    }
+  },
+  "Vinheta 28": {
+    "Risco": {
+      "SCORE2 Aplicável": "Não",
+      "Exceção": "Doença Cardiovascular Aterosclerótica",
+      "Categoria": "Muito Alto",
+      "SCORE2": "N/A",
+      "confiança": "Muito-Alta"
+    },
+    "Fatores de risco": {
+      "Idade": "51",
+      "Género": "Masculino",
+      "Tabagismo": "Ex-Fumador",
+      "Hipertensão Arterial": "Não",
+      "Pressão Arterial Sistólica": "118",
+      "Pressão Arterial Diastólica": "67",
+      "Dislipidemia": "Sim",
+      "Colesterol Total": "136",
+      "Colesterol HDL": "46",
+      "Triglicéridos": "99",
+      "Colesterol LDL": "70",
+      "Diabetes Mellitus": "Não"
+    },
+    "Modificadores de risco": {
+      "História Familiar de doença cardiovascular aterosclerótica": "desconhecido",
+      "Obesidade": "Sim; IMC 25,6"
+    }
+  },
+  "Vinheta 29": {
+    "Risco": {
+      "SCORE2 Aplicável": "Não",
+      "Exceção": "Doença Cardiovascular Aterosclerótica",
+      "Categoria": "Muito-Alto",
+      "SCORE2": "N/A",
+      "confiança": "Alta"
+    },
+    "Fatores de risco": {
+      "Idade": "63",
+      "Género": "Feminino",
+      "Tabagismo": "Ex-Fumador",
+      "Hipertensão Arterial": "Não",
+      "Pressão Arterial Sistólica": "114",
+      "Pressão Arterial Diastólica": "66",
+      "Dislipidemia": "Sim",
+      "Colesterol Total": "149",
+      "Colesterol HDL": "53",
+      "Triglicéridos": "82",
+      "Colesterol LDL": "80",
+      "Colesterol não HDL": "96",
+      "Diabetes Mellitus": "Não"
+    },
+    "Modificadores de risco": {
+      "História Familiar de doença cardiovascular aterosclerótica": "desconhecido",
+      "Menopausa precoce": "desconhecido",
+      "Outro (especificar)": "Ansiedade"
+    }
+  },
+  "Vinheta 30": {
+    "Risco": {
+      "SCORE2 Aplicável": "Não",
+      "Exceção": "Doença Cardiovascular Aterosclerótica",
+      "Categoria": "Muito Alto",
+      "SCORE2": "N/A",
+      "confiança": "Muito-Alta"
+    },
+    "Fatores de risco": {
+      "Idade": "64",
+      "Género": "Masculino",
+      "Tabagismo": "Ex-Fumador",
+      "Hipertensão Arterial": "Sim",
+      "Pressão Arterial Sistólica": "138",
+      "Pressão Arterial Diastólica": "81",
+      "Dislipidemia": "Sim",
+      "Colesterol Total": "165",
+      "Colesterol HDL": "52",
+      "Triglicéridos": "209",
+      "Colesterol LDL": "71",
+      "Colesterol não HDL": "113",
+      "Diabetes Mellitus": "Não"
+    },
+    "Modificadores de risco": {
+      "Obesidade": "Sim",
+      "Pre-Diabetes": "Sim",
+      "Remodelamento concêntrico do ventrículo esquerdo": "Sim",
+      "dilatação grave da aurícula esquerda": "Sim",
+      "fração de ejecção": "59%",
+      "E/e’": "9"
+    }
+  }
+}

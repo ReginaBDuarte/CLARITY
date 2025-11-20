@@ -1,0 +1,2767 @@
+
+============================================================
+VIGNETTE #1
+============================================================
+## Cardiovascular Risk Analysis - 2021 ESC Guidelines
+
+### 1. Risk Factors Extraction
+
+| Risk Factor | Value | Notes |
+|-------------|-------|-------|
+| Age | 44 years | Within SCORE2 range (40-69 years) |
+| Gender | Male | - |
+| Smoking | No | Non-smoker |
+| Systolic BP | 114 mmHg | Optimal blood pressure |
+| Total Cholesterol | 183 mg/dL (4.7 mmol/L) | Normal range |
+| HDL Cholesterol | 55 mg/dL (1.4 mmol/L) | Normal range |
+
+### 2. SCORE2 Calculation
+
+**SCORE2 is applicable** - Patient is 44 years old (within 40-69 age range) with no established cardiovascular disease.
+
+| Parameter | Value |
+|-----------|-------|
+| Age | 44 years |
+| Gender | Male |
+| Smoking | No |
+| Systolic BP | 114 mmHg |
+| Total Cholesterol | 4.7 mmol/L |
+| HDL Cholesterol | 1.4 mmol/L |
+| Country Risk | Moderate (Portugal) |
+
+**Estimated SCORE2: ~2-3%** (10-year risk of fatal and non-fatal CVD)
+
+### 3. Risk Category
+
+| Risk Category | 10-year Risk | Patient Status |
+|---------------|--------------|----------------|
+| **Low Risk** | <5% | ✓ **CURRENT CATEGORY** |
+| Moderate Risk | 5% to <10% | - |
+| High Risk | 10% to <15% | - |
+| Very High Risk | ≥15% | - |
+
+### 4. Risk Modifiers Assessment
+
+| Risk Modifier | Present | Impact |
+|---------------|---------|--------|
+| Family history of premature CVD | No | Neutral |
+| Sedentary lifestyle | Yes | May increase risk |
+| BMI | 23 kg/m² (normal) | Neutral |
+| Diabetes | No | Neutral |
+| CKD | No (creatinine 0.8 mg/dL) | Neutral |
+
+### 5. Clinical Explanation
+
+This 44-year-old male presents with **low cardiovascular risk** according to SCORE2. His favorable risk profile includes:
+- Young age (44 years)
+- Non-smoker status
+- Optimal blood pressure (114/72 mmHg)
+- Normal lipid profile
+- Normal BMI
+- No diabetes or kidney disease
+
+The only modifiable risk factor identified is **sedentary lifestyle**, which could potentially increase his risk over time. His palpitations appear benign (isolated PVCs <1%) and are not related to cardiovascular risk stratification.
+
+**Recommendations:**
+- Continue current healthy lifestyle
+- Increase physical activity (≥150 min/week moderate exercise)
+- Reassess cardiovascular risk in 5 years
+- No pharmacological intervention needed currently
+
+### 6. JSON Summary
+
+```json
+{
+  "Risk": {
+    "SCORE2": "2-3%",
+    "Risk_Category": "Low Risk",
+    "10_Year_CVD_Risk": "<5%",
+    "Reassessment_Interval": "5 years"
+  },
+  "Risk_Factors": {
+    "Age": "44 years",
+    "Gender": "Male",
+    "Smoking": "No",
+    "Systolic_BP": "114 mmHg",
+    "Total_Cholesterol": "183 mg/dL",
+    "HDL_Cholesterol": "55 mg/dL",
+    "LDL_Cholesterol": "110 mg/dL"
+  },
+  "Risk_Modifiers": {
+    "Family_History_CVD": "No",
+    "Physical_Activity": "Sedentary (negative modifier)",
+    "BMI": "23 kg/m² (normal)",
+    "Diabetes": "No",
+    "Chronic_Kidney_Disease": "No"
+  }
+}
+```
+
+
+============================================================
+VIGNETTE #2
+============================================================
+## Cardiovascular Risk Analysis - 2021 ESC Guidelines
+
+### 1. Risk Factors Extraction
+
+| Parameter | Value | Unit |
+|-----------|-------|------|
+| Age | 40 | years |
+| Gender | Female | - |
+| Smoking status | Current smoker | - |
+| Systolic BP | 124 | mmHg |
+| Total cholesterol | 190 | mg/dL (4.9 mmol/L) |
+| HDL cholesterol | 67 | mg/dL (1.7 mmol/L) |
+
+### 2. SCORE2 Calculation
+
+**SCORE2 is NOT applicable** for this patient because:
+- Patient age: 40 years
+- SCORE2 age range: 40-69 years for moderate-risk countries
+- **However, SCORE2 requires age ≥50 years for women in moderate-risk countries**
+
+### 3. Risk Category Assessment
+
+According to 2021 ESC Guidelines:
+
+| Risk Category | Classification |
+|---------------|----------------|
+| **Low Risk** | ✓ Confirmed |
+| Moderate Risk | - |
+| High Risk | - |
+| Very High Risk | - |
+
+**Rationale**: 
+- Age <50 years (female)
+- No diabetes mellitus
+- No established cardiovascular disease
+- No severe risk factors present
+- Normal kidney function (creatinine 0.7 mg/dL)
+
+### 4. Additional Risk Assessment
+
+| Parameter | Value | Interpretation |
+|-----------|-------|----------------|
+| BMI | 23.8 kg/m² | Normal weight |
+| 24h BP average | 113/73 mmHg | Optimal |
+| Pulse wave velocity | 6.8 m/s | Normal (<10 m/s) |
+| Fasting glucose | 82 mg/dL | Normal |
+| LDL cholesterol | 105 mg/dL | Acceptable for low risk |
+
+### 5. Clinical Explanation
+
+This 40-year-old female patient is classified as **low cardiovascular risk** according to 2021 ESC Guidelines. Despite being a current smoker (the main modifiable risk factor), her young age, female gender, excellent metabolic profile, and normal blood pressure place her in the low-risk category.
+
+**Key positive aspects**:
+- Proactive approach to lifestyle modification
+- Regular exercise routine
+- Scheduled smoking cessation
+- Excellent lipid profile (high HDL, acceptable LDL)
+- Normal arterial stiffness and ambulatory BP
+
+**Primary recommendation**: Focus on smoking cessation as the most impactful intervention for cardiovascular risk reduction.
+
+### 6. JSON Summary
+
+```json
+{
+  "Risk": {
+    "category": "Low Risk",
+    "score_system": "ESC 2021 Guidelines",
+    "score_value": "Not applicable (age <50 for women)",
+    "country_risk": "Moderate-risk country (Portugal)"
+  },
+  "Risk_Factors": {
+    "non_modifiable": {
+      "age": 40,
+      "gender": "Female"
+    },
+    "modifiable": {
+      "smoking": "Current smoker",
+      "systolic_bp": 124,
+      "total_cholesterol": 190,
+      "hdl_cholesterol": 67,
+      "ldl_cholesterol": 105
+    }
+  },
+  "Risk_Modifiers": {
+    "protective_factors": [
+      "Regular exercise",
+      "Normal BMI (23.8)",
+      "High HDL cholesterol (67 mg/dL)",
+      "Normal arterial stiffness (PWV 6.8 m/s)",
+      "Optimal ambulatory BP"
+    ],
+    "risk_enhancing_factors": [
+      "Current smoking"
+    ],
+    "recommendations": [
+      "Smoking cessation (priority)",
+      "Continue regular exercise",
+      "Maintain healthy weight"
+    ]
+  }
+}
+```
+
+
+============================================================
+VIGNETTE #3
+============================================================
+## Cardiovascular Risk Analysis - 2021 ESC Guidelines
+
+### 1. Risk Factors Extraction
+
+| Parameter | Value | Risk Factor Status |
+|-----------|-------|-------------------|
+| Age | 58 years | ✓ (≥50 years for women) |
+| Gender | Female | Baseline risk |
+| Smoking | Non-smoker | ✗ |
+| Systolic BP | 122 mmHg | Normal-high |
+| Total Cholesterol | 164 mg/dL (4.2 mmol/L) | Borderline |
+| HDL Cholesterol | 47 mg/dL (1.2 mmol/L) | Low-normal |
+
+### 2. SCORE2 Calculation
+
+**SCORE2 Parameters:**
+- Age: 58 years
+- Gender: Female
+- Smoking: No
+- Systolic BP: 122 mmHg
+- Total Cholesterol: 4.2 mmol/L
+- HDL Cholesterol: 1.2 mmol/L
+- Country: Portugal (moderate-risk)
+
+**SCORE2 Result: ~2-3%** (10-year fatal and non-fatal CVD risk)
+
+### 3. Risk Category Classification
+
+| Risk Category | SCORE2 Threshold | Patient Status |
+|---------------|------------------|----------------|
+| Low Risk | <5% | ✓ **CURRENT** |
+| Moderate Risk | 5-10% | ✗ |
+| High Risk | 10-15% | ✗ |
+| Very High Risk | >15% | ✗ |
+
+### 4. Risk Modifiers Assessment
+
+| Modifier | Present | Impact |
+|----------|---------|--------|
+| BMI 29.9 (overweight) | ✓ | Increases risk |
+| Physical activity (daily walks) | ✓ | Decreases risk |
+| CAC score = 0 | ✓ | **Significantly decreases risk** |
+| LDL 105 mg/dL | ✓ | Mild increase |
+
+### 5. Clinical Interpretation
+
+This 58-year-old woman has **LOW cardiovascular risk** despite her age. Key protective factors include:
+- **Coronary calcium score of 0** (strong negative predictor)
+- Non-smoking status
+- Regular physical activity
+- Normal blood pressure
+- Acceptable lipid profile
+
+The overweight status (BMI 29.9) is the main modifiable risk factor requiring attention.
+
+### 6. JSON Summary
+
+```json
+{
+  "Risk": {
+    "SCORE2": "2-3%",
+    "Category": "Low Risk",
+    "10_year_CVD_risk": "<5%"
+  },
+  "Risk_Factors": {
+    "Age": "58 years (risk factor)",
+    "Gender": "Female",
+    "Smoking": "Non-smoker",
+    "Systolic_BP": "122 mmHg (normal-high)",
+    "Total_Cholesterol": "164 mg/dL (borderline)",
+    "HDL_Cholesterol": "47 mg/dL (low-normal)",
+    "LDL_Cholesterol": "105 mg/dL (above optimal)"
+  },
+  "Risk_Modifiers": {
+    "BMI": "29.9 (overweight) - increases risk",
+    "Physical_Activity": "Daily walks - decreases risk",
+    "CAC_Score": "0 - significantly decreases risk",
+    "Overall_Modifier_Effect": "Risk reduction due to CAC=0"
+  }
+}
+```
+
+**Recommendation:** Continue current lifestyle, focus on weight management, and reassess in 5 years or if risk factors change.
+
+
+============================================================
+VIGNETTE #4
+============================================================
+I'll analyze this clinical vignette according to the 2021 ESC Guidelines for cardiovascular risk assessment in Portugal (moderate-risk country).
+
+## 1. Risk Factors Extraction
+
+| Parameter | Value | Units |
+|-----------|-------|-------|
+| Age | 54 | years |
+| Gender | Male | - |
+| Smoking | No | - |
+| Systolic BP | 118 | mmHg |
+| Total Cholesterol | 183 | mg/dL (4.7 mmol/L) |
+| HDL Cholesterol | 55 | mg/dL (1.4 mmol/L) |
+
+## 2. SCORE2 Calculation
+
+For a 54-year-old male in a moderate-risk country (Portugal):
+
+| Risk Factor | Value | Score Points |
+|-------------|-------|--------------|
+| Age | 54 years | Base calculation |
+| Gender | Male | Higher baseline risk |
+| Smoking | Non-smoker | 0 points |
+| Systolic BP | 118 mmHg | Low risk contribution |
+| Total Cholesterol | 4.7 mmol/L | Moderate contribution |
+| HDL Cholesterol | 1.4 mmol/L | Protective factor |
+
+**SCORE2 Result: ~2-3%** (10-year risk of fatal and non-fatal CVD events)
+
+## 3. Risk Category Classification
+
+| Risk Category | SCORE2 Range | Patient Status |
+|---------------|---------------|----------------|
+| Low Risk | <5% | ✓ **CURRENT** |
+| Moderate Risk | 5-10% | - |
+| High Risk | 10-15% | - |
+| Very High Risk | >15% | - |
+
+## 4. Risk Modifiers Assessment
+
+| Modifier | Present | Impact |
+|----------|---------|--------|
+| Family History | Yes | ⬆️ Increases risk |
+| Sedentary Lifestyle | Yes | ⬆️ Increases risk |
+| BMI | 23 kg/m² | Neutral (normal) |
+| Diabetes | No | Neutral |
+| CKD | No | Neutral |
+
+## 5. Clinical Explanation
+
+This 54-year-old male presents with a **low calculated cardiovascular risk** based on SCORE2 (~2-3%). However, several important considerations modify this assessment:
+
+**Favorable factors:**
+- Non-smoker
+- Normal blood pressure (118/60 mmHg)
+- Normal BMI (23 kg/m²)
+- Acceptable lipid profile
+- Normal glucose metabolism
+
+**Risk-enhancing factors:**
+- **Significant family history**: Paternal grandfather with sudden cardiac death at 58 (premature CVD), father with CABG at 69, paternal aunt with MI at 75
+- **Sedentary lifestyle**: Important modifiable risk factor
+
+The strong family history of premature cardiovascular disease (grandfather at age 58) suggests potential genetic predisposition and may reclassify this patient to a **moderate risk category** despite the low SCORE2 calculation.
+
+## 6. JSON File Structure
+
+```json
+{
+  "patient_assessment": {
+    "risk": {
+      "score2_percentage": "2-3%",
+      "calculated_category": "Low Risk",
+      "modified_category": "Moderate Risk",
+      "rationale": "Family history of premature CVD reclassifies risk upward"
+    },
+    "risk_factors": {
+      "age": 54,
+      "gender": "Male",
+      "smoking": false,
+      "systolic_bp": 118,
+      "total_cholesterol": 183,
+      "hdl_cholesterol": 55,
+      "ldl_cholesterol": 110
+    },
+    "risk_modifiers": {
+      "family_history_premature_cvd": true,
+      "sedentary_lifestyle": true,
+      "normal_bmi": true,
+      "diabetes": false,
+      "chronic_kidney_disease": false,
+      "final_risk_modification": "upward_reclassification"
+    }
+  }
+}
+```
+
+**Recommendation**: Despite low SCORE2, consider moderate-risk management approach given strong family history of premature CVD and sedentary lifestyle. Lifestyle interventions (exercise program) are priority, with consideration for more intensive lipid targets if lifestyle modifications are insufficient.
+
+
+============================================================
+VIGNETTE #5
+============================================================
+## Cardiovascular Risk Analysis - 2021 ESC Guidelines
+
+### 1. Risk Factor Extraction
+
+| Risk Factor | Value | Notes |
+|-------------|-------|-------|
+| Age | 63 years | ✓ |
+| Gender | Female | ✓ |
+| Smoking | No | Non-smoker |
+| Systolic BP | 107 mmHg | ✓ |
+| Total Cholesterol | 214 mg/dL (5.5 mmol/L) | ✓ |
+| HDL Cholesterol | 67 mg/dL (1.7 mmol/L) | ✓ |
+
+### 2. SCORE2 Calculation
+
+**SCORE2 Parameters:**
+- Female, 63 years old
+- Non-smoker
+- Systolic BP: 107 mmHg
+- Total cholesterol: 5.5 mmol/L
+- HDL cholesterol: 1.7 mmol/L
+- Country: Portugal (moderate-risk)
+
+**SCORE2 Result: ~2-3%** (10-year fatal and non-fatal CVD risk)
+
+### 3. Risk Category Classification
+
+| Risk Category | 10-year Risk | Patient Status |
+|---------------|--------------|----------------|
+| Low Risk | <5% | ✓ **CURRENT** |
+| Moderate Risk | 5-10% | |
+| High Risk | 10-20% | |
+| Very High Risk | >20% or established CVD | |
+
+### 4. Risk Modifiers Present
+
+| Risk Modifier | Status | Impact |
+|---------------|--------|--------|
+| Atrial Fibrillation (history) | Present | Increases risk |
+| Hypothyroidism | Present | Potential risk modifier |
+| First-degree AV block | Present | Minimal impact |
+| Mild LA enlargement | Present | Structural heart change |
+| Mild mitral regurgitation | Present | Structural heart change |
+
+### 5. Clinical Interpretation
+
+This 63-year-old female teacher presents with **LOW cardiovascular risk** based on SCORE2 calculation (~2-3%). However, several important considerations modify this assessment:
+
+**Favorable factors:**
+- Non-smoker
+- Normal BMI (20.5)
+- Well-controlled blood pressure
+- Good HDL cholesterol levels
+- No diabetes
+
+**Risk-enhancing factors:**
+- History of paroxysmal atrial fibrillation (appropriately anticoagulated)
+- Mild structural heart changes (LA enlargement, mitral regurgitation)
+- Age >60 years
+
+**Clinical Management:**
+- Continue current anticoagulation with apixaban
+- Monitor thyroid function (TSH slightly elevated)
+- Lifestyle maintenance
+- Consider statin therapy discussion given age and structural heart disease
+
+### 6. JSON Summary
+
+```json
+{
+  "Risk": {
+    "SCORE2": "2-3%",
+    "Category": "Low Risk",
+    "Country": "Portugal (moderate-risk)"
+  },
+  "Risk_Factors": {
+    "Age": "63 years",
+    "Gender": "Female",
+    "Smoking": "No",
+    "Systolic_BP": "107 mmHg",
+    "Total_Cholesterol": "214 mg/dL (5.5 mmol/L)",
+    "HDL_Cholesterol": "67 mg/dL (1.7 mmol/L)"
+  },
+  "Risk_Modifiers": {
+    "Atrial_Fibrillation_History": "Present - increases risk",
+    "Hypothyroidism": "Present - potential modifier",
+    "Structural_Heart_Changes": "Mild LA enlargement, mild MR",
+    "First_Degree_AV_Block": "Present - minimal impact"
+  }
+}
+```
+
+
+============================================================
+VIGNETTE #6
+============================================================
+## Cardiovascular Risk Assessment - 2021 ESC Guidelines (Portugal)
+
+### 1. Risk Factors Extraction
+
+| Parameter | Value | Unit |
+|-----------|-------|------|
+| Age | 41 | years |
+| Gender | Female | - |
+| Smoking | Yes | Active smoker (25 pack-years) |
+| Systolic BP | 146 | mmHg |
+| Total Cholesterol | 270 | mg/dL (6.98 mmol/L) |
+| HDL Cholesterol | 53 | mg/dL (1.37 mmol/L) |
+
+### 2. SCORE2 Calculation
+
+**SCORE2 is NOT applicable** for this patient because:
+- Patient age is 41 years
+- SCORE2 is validated for patients aged **40-69 years**
+- At age 41, the patient is at the lower boundary where SCORE2 may underestimate risk
+
+### 3. Risk Category Assessment
+
+Given the limitations of SCORE2 at this age and the presence of multiple risk factors, risk assessment should focus on:
+
+**High-Risk Features Present:**
+- Hypertension (BP 146/85 mmHg, history of antihypertensive treatment)
+- Active smoking (25 pack-years - significant exposure)
+- Dyslipidemia (LDL 189 mg/dL, Total cholesterol 270 mg/dL)
+- Prediabetes (HbA1c 6.3%)
+- Overweight (BMI 25.7)
+- Sedentary lifestyle
+- Structural heart changes (LV remodeling, LA dilation)
+
+### 4. Results Summary
+
+| Assessment | Result |
+|------------|--------|
+| **Primary Risk Tool** | SCORE2 not optimal (age 41) |
+| **Risk Category** | **HIGH RISK** |
+| **Rationale** | Multiple cardiovascular risk factors with target organ damage |
+| **LDL Target** | <70 mg/dL |
+| **BP Target** | <140/90 mmHg |
+
+### 5. Clinical Explanation
+
+This 41-year-old female presents with multiple cardiovascular risk factors that collectively place her at **high cardiovascular risk**. While SCORE2 is technically applicable starting at age 40, it may underestimate risk in younger patients with multiple risk factors.
+
+**Key considerations:**
+- **Hypertension with target organ damage** (LV remodeling, LA dilation)
+- **Significant smoking history** (25 pack-years)
+- **Dyslipidemia** requiring treatment (LDL 189 mg/dL)
+- **Prediabetes** (HbA1c 6.3%)
+- **Lifestyle factors** (overweight, sedentary)
+
+The presence of structural heart changes (concentric LV remodeling and mild LA dilation) indicates target organ damage, which elevates her risk category regardless of risk score calculations.
+
+### 6. JSON File Structure
+
+```json
+{
+  "Risk": {
+    "category": "HIGH RISK",
+    "score_system": "Clinical assessment (SCORE2 suboptimal at age 41)",
+    "rationale": "Multiple risk factors with target organ damage",
+    "ldl_target": "<70 mg/dL",
+    "bp_target": "<140/90 mmHg"
+  },
+  "Risk_Factors": {
+    "age": 41,
+    "gender": "Female",
+    "smoking": "Active (25 pack-years)",
+    "systolic_bp": 146,
+    "total_cholesterol": 270,
+    "hdl_cholesterol": 53,
+    "ldl_cholesterol": 189,
+    "hba1c": 6.3,
+    "bmi": 25.7
+  },
+  "Risk_Modifiers": {
+    "target_organ_damage": "Present (LV remodeling, LA dilation)",
+    "physical_activity": "Sedentary",
+    "diabetes_status": "Prediabetes",
+    "weight_status": "Overweight",
+    "medication_adherence": "Poor (discontinued antihypertensive)"
+  }
+}
+```
+
+**Recommendations:**
+1. Resume antihypertensive therapy
+2. Initiate high-intensity statin therapy
+3. Smoking cessation program
+4. Lifestyle modifications (diet, exercise)
+5. Diabetes prevention strategies
+6. Regular cardiovascular monitoring
+
+
+============================================================
+VIGNETTE #7
+============================================================
+## Cardiovascular Risk Analysis - 2021 ESC Guidelines
+
+### 1. Risk Factors Extraction
+
+**SCORE2 Parameters:**
+- **Age:** 48 years
+- **Gender:** Male
+- **Smoking:** No
+- **Systolic BP:** 161 mmHg
+- **Total Cholesterol:** 231 mg/dL (5.98 mmol/L)
+- **HDL Cholesterol:** 43 mg/dL (1.11 mmol/L)
+
+### 2. SCORE2 Calculation
+
+For a **moderate-risk country (Portugal)**, male, age 48:
+
+| Parameter | Value | Points |
+|-----------|-------|--------|
+| Age | 48 years | Base calculation |
+| Male gender | Yes | Applied |
+| Smoking | No | 0 |
+| Systolic BP | 161 mmHg | High contribution |
+| Total Cholesterol | 5.98 mmol/L | Moderate contribution |
+| HDL Cholesterol | 1.11 mmol/L | Low HDL penalty |
+
+**SCORE2 10-year risk: ~8-10%**
+
+### 3. Risk Category Classification
+
+| Risk Level | SCORE2 Range (Age 40-69) | Patient Status |
+|------------|---------------------------|----------------|
+| Low | <2.5% | ❌ |
+| Moderate | 2.5% to <7.5% | ❌ |
+| **High** | **7.5% to <15%** | **✅** |
+| Very High | ≥15% | ❌ |
+
+### 4. Risk Modifiers Analysis
+
+| Risk Modifier | Present | Impact |
+|---------------|---------|--------|
+| **Hypertension Grade 2** | ✅ (161/102 mmHg) | ⬆️ Increases risk |
+| **Prediabetes** | ✅ (HbA1c 6.2%) | ⬆️ Increases risk |
+| **Overweight** | ✅ (BMI 28.2) | ⬆️ Increases risk |
+| **Low HDL** | ✅ (43 mg/dL) | ⬆️ Increases risk |
+| **High Triglycerides** | ✅ (197 mg/dL) | ⬆️ Increases risk |
+| **Arterial Stiffness** | ✅ (PWV 9.3 m/s) | ⬆️ Increases risk |
+| **Non-dipper Pattern** | ✅ | ⬆️ Increases risk |
+| **Hyperuricemia** | ✅ (7.5 mg/dL) | ⬆️ Increases risk |
+| **Sleep Apnea Symptoms** | ✅ | ⬆️ Increases risk |
+
+### 5. Clinical Interpretation
+
+This 48-year-old male presents with **HIGH cardiovascular risk** based on SCORE2 calculation (~8-10%). However, the presence of multiple risk modifiers significantly amplifies his risk profile:
+
+**Key Concerns:**
+- **Grade 2 Hypertension** with non-dipper pattern
+- **Prediabetes** (HbA1c 6.2%)
+- **Multiple metabolic abnormalities** (low HDL, high triglycerides, hyperuricemia)
+- **Arterial stiffness** (PWV >10 m/s threshold approached)
+- **Suspected sleep apnea**
+
+**Clinical Action:** Given the constellation of risk factors, this patient may warrant consideration for **very high-risk** management approach, including aggressive BP control (<130/80 mmHg), statin therapy (LDL target <70 mg/dL), and comprehensive lifestyle intervention.
+
+### 6. JSON Summary
+
+```json
+{
+  "Risk": {
+    "SCORE2_10year": "8-10%",
+    "Risk_Category": "High",
+    "Recommended_Category": "Consider Very High due to multiple modifiers"
+  },
+  "Risk_Factors": {
+    "Age": 48,
+    "Gender": "Male",
+    "Smoking": "No",
+    "Systolic_BP_mmHg": 161,
+    "Total_Cholesterol_mgdL": 231,
+    "HDL_Cholesterol_mgdL": 43
+  },
+  "Risk_Modifiers": {
+    "Hypertension_Grade2": true,
+    "Prediabetes_HbA1c": 6.2,
+    "BMI": 28.2,
+    "Triglycerides_mgdL": 197,
+    "Arterial_Stiffness_PWV": 9.3,
+    "Non_Dipper_Pattern": true,
+    "Hyperuricemia": true,
+    "Sleep_Apnea_Symptoms": true
+  }
+}
+```
+
+**Recommendation:** Intensive risk factor modification with consideration for very high-risk treatment targets given the multiple adverse risk modifiers present.
+
+
+============================================================
+VIGNETTE #8
+============================================================
+## Cardiovascular Risk Assessment - 2021 ESC Guidelines
+
+### 1. Risk Factors Extraction
+
+| Risk Factor | Value | Notes |
+|-------------|-------|-------|
+| **Age** | 57 years | ✓ |
+| **Gender** | Female | ✓ |
+| **Smoking** | Yes | Current smoker (0.5 pack/day) |
+| **Systolic BP** | 120 mmHg | Normal range |
+| **Total Cholesterol** | 197 mg/dL (5.1 mmol/L) | ✓ |
+| **HDL Cholesterol** | 57 mg/dL (1.5 mmol/L) | ✓ |
+
+### 2. SCORE2 Calculation
+
+**SCORE2 Parameters:**
+- Female, 57 years
+- Current smoker
+- SBP: 120 mmHg
+- Total cholesterol: 5.1 mmol/L
+- HDL cholesterol: 1.5 mmol/L
+- Country: Portugal (moderate-risk)
+
+**SCORE2 Result: ~4-5%** (10-year risk of fatal and non-fatal CVD)
+
+### 3. Risk Category Classification
+
+| Risk Category | SCORE2 Threshold (Age 50-69) | Patient Result |
+|---------------|------------------------------|----------------|
+| **Low Risk** | <5% | ✓ **CURRENT CATEGORY** |
+| **Moderate Risk** | 5% to <10% | |
+| **High Risk** | 10% to <15% | |
+| **Very High Risk** | ≥15% | |
+
+### 4. Risk Modifiers Assessment
+
+| Risk Modifier | Present | Impact |
+|---------------|---------|--------|
+| **Family History of Premature CVD** | Not reported | - |
+| **Chronic Kidney Disease** | No (Cr 0.63 mg/dL) | - |
+| **Diabetes** | No (FG 90 mg/dL) | - |
+| **Obesity** | No (BMI 21.5) | - |
+| **ApoB Elevation** | Mild (94 mg/dL) | Minor ↑ |
+| **Sedentary Lifestyle** | Yes (newly retired) | Minor ↑ |
+
+### 5. Clinical Interpretation
+
+**Final Risk Assessment: LOW RISK**
+
+This 57-year-old female presents with **low cardiovascular risk** despite being a current smoker. Key findings:
+
+- **Favorable factors:** Normal BMI, optimal blood pressure, acceptable lipid profile, normal glucose
+- **Main concern:** Active smoking (primary modifiable risk factor)
+- **Exercise safety:** Low risk profile supports safe initiation of water aerobics
+- **Priority intervention:** Smoking cessation (already planned) would significantly reduce her risk
+
+**Recommendations:**
+1. ✅ Safe to begin water aerobics and regular exercise
+2. 🚭 Prioritize smoking cessation consultation
+3. 💊 Consider statin therapy given dyslipidemia history and LDL 119 mg/dL
+4. 📅 Reassess risk after smoking cessation
+
+### 6. JSON Summary
+
+```json
+{
+  "Risk": {
+    "score2_percentage": "4-5%",
+    "risk_category": "Low Risk",
+    "country_risk_region": "Moderate-risk (Portugal)",
+    "exercise_clearance": "Safe to initiate"
+  },
+  "Risk_Factors": {
+    "age": 57,
+    "gender": "Female",
+    "smoking": "Current (0.5 pack/day)",
+    "systolic_bp": 120,
+    "total_cholesterol_mmol": 5.1,
+    "hdl_cholesterol_mmol": 1.5,
+    "ldl_cholesterol_mg_dl": 119
+  },
+  "Risk_Modifiers": {
+    "apoB_elevation": "Mild (94 mg/dL)",
+    "sedentary_lifestyle": "Present",
+    "bmi": "Normal (21.5)",
+    "diabetes": "Absent",
+    "ckd": "Absent",
+    "family_history": "Not reported"
+  }
+}
+```
+
+
+============================================================
+VIGNETTE #9
+============================================================
+## Cardiovascular Risk Analysis - 2021 ESC Guidelines
+
+### 1. Risk Factors Extraction
+
+| Parameter | Value | Status |
+|-----------|-------|---------|
+| Age | 52 years | Risk factor |
+| Gender | Male | Risk factor |
+| Smoking | Active smoker (50 pack-years) | Risk factor |
+| Systolic BP | 130 mmHg (office) / 138 mmHg (daytime ABPM) | Elevated |
+| Total Cholesterol | 224 mg/dL (5.8 mmol/L) | Elevated |
+| HDL Cholesterol | 37 mg/dL (0.96 mmol/L) | Low |
+
+### 2. SCORE2 Calculation
+
+**SCORE2 Parameters:**
+- Age: 52 years
+- Gender: Male
+- Smoking: Yes
+- Systolic BP: 138 mmHg (daytime ABPM - more accurate)
+- Total Cholesterol: 224 mg/dL (5.8 mmol/L)
+- HDL Cholesterol: 37 mg/dL (0.96 mmol/L)
+- Country risk: Portugal (moderate-risk)
+
+**Estimated SCORE2: ~8-10%** (10-year fatal and non-fatal CVD risk)
+
+### 3. Risk Category Classification
+
+| Risk Level | SCORE2 Range | Patient Status |
+|------------|--------------|----------------|
+| Low Risk | <2.5% | ❌ |
+| Moderate Risk | 2.5-7.5% | ❌ |
+| **High Risk** | **7.5-20%** | **✅** |
+| Very High Risk | >20% | ❌ |
+
+### 4. Risk Modifiers Assessment
+
+| Modifier | Present | Impact |
+|----------|---------|---------|
+| CAC Score 23 (50th-75th percentile) | ✅ | Confirms/maintains high risk |
+| Non-obstructive coronary plaques | ✅ | Confirms subclinical atherosclerosis |
+| Low HDL (<40 mg/dL) | ✅ | Additional risk factor |
+| Lipoprotein(a) 38 mg/dL | ✅ | Borderline elevated |
+| Physically demanding job | ✅ | Protective factor |
+
+### 5. Clinical Explanation
+
+This 52-year-old male fisherman is classified as **HIGH CARDIOVASCULAR RISK** based on:
+
+- **SCORE2 calculation** placing him in the 8-10% range for 10-year CVD risk
+- **Multiple risk factors**: active smoking (50 pack-years), elevated BP, dyslipidemia with low HDL
+- **Subclinical atherosclerosis**: CAC score of 23 and non-obstructive coronary plaques confirm the presence of coronary artery disease
+- **Risk modifiers** support the high-risk classification
+
+The coronary CT findings are particularly significant as they demonstrate established atherosclerotic disease, which validates the calculated risk and supports aggressive risk factor modification.
+
+### 6. JSON Summary
+
+```json
+{
+  "Risk": {
+    "SCORE2_percentage": "8-10%",
+    "risk_category": "High Risk",
+    "country_risk_region": "Portugal (moderate-risk)"
+  },
+  "Risk_Factors": {
+    "age": 52,
+    "gender": "Male",
+    "smoking": "Active (50 pack-years)",
+    "systolic_BP_mmHg": 138,
+    "total_cholesterol_mg_dL": 224,
+    "HDL_cholesterol_mg_dL": 37
+  },
+  "Risk_Modifiers": {
+    "CAC_score": 23,
+    "coronary_plaques": "Non-obstructive (<50%)",
+    "lipoprotein_a_mg_dL": 38,
+    "physical_activity": "Physically demanding work",
+    "subclinical_atherosclerosis": "Present"
+  }
+}
+```
+
+**Recommendation**: Intensive risk factor modification including smoking cessation, statin therapy (target LDL <70 mg/dL), and blood pressure management is indicated for this high-risk patient.
+
+
+============================================================
+VIGNETTE #10
+============================================================
+## Cardiovascular Risk Analysis - 2021 ESC Guidelines
+
+### 1. Risk Factor Extraction
+
+| Risk Factor | Value | Notes |
+|-------------|-------|-------|
+| Age | 67 years | ≥65 years |
+| Gender | Female | - |
+| Smoking | Not mentioned | Assumed non-smoker |
+| Systolic BP | 131 mmHg | On antihypertensive treatment |
+| Total Cholesterol | 137 mg/dL (3.5 mmol/L) | On statin therapy |
+| HDL Cholesterol | 58 mg/dL (1.5 mmol/L) | - |
+
+### 2. SCORE2 Calculation
+
+**SCORE2 is NOT applicable** for this patient because:
+- Age 67 years (SCORE2 applies to ages 40-69)
+- **Established cardiovascular disease present** (moderate aortic stenosis)
+
+### 3. Risk Category Classification
+
+| Risk Category | **VERY HIGH RISK** |
+|---------------|-------------------|
+| Primary Reason | Established cardiovascular disease (moderate aortic stenosis) |
+| Secondary Factors | Age ≥65 years, hypertension, dyslipidemia |
+
+### 4. Risk Modifiers Present
+
+| Risk Enhancers | Status |
+|----------------|--------|
+| Aortic stenosis | ✓ Moderate (primary reason for very high risk) |
+| Hypertension | ✓ Present, on treatment |
+| LV remodeling | ✓ Concentric remodeling |
+| Left atrial enlargement | ✓ Moderate |
+| Elevated NT-proBNP | ✓ 985 pg/mL (elevated) |
+
+### 5. Clinical Explanation
+
+This 67-year-old woman is classified as **very high cardiovascular risk** primarily due to established cardiovascular disease (moderate aortic stenosis with bicuspid valve). The SCORE2 risk calculator is not applicable as she already has established CVD, which automatically places her in the highest risk category according to 2021 ESC Guidelines.
+
+Additional risk enhancers include her age (≥65), treated hypertension, and structural cardiac abnormalities (LV remodeling, LA enlargement). The elevated NT-proBNP suggests hemodynamic consequences of the aortic stenosis.
+
+Current lipid management appears adequate with LDL-C at 62 mg/dL, though very high-risk patients may benefit from LDL-C <55 mg/dL target.
+
+### 6. JSON Summary
+
+```json
+{
+  "Risk": {
+    "category": "Very High Risk",
+    "score2_applicable": false,
+    "score2_value": "N/A - Established CVD",
+    "primary_reason": "Moderate aortic stenosis (established CVD)"
+  },
+  "Risk_Factors": {
+    "age": 67,
+    "gender": "Female",
+    "smoking": "Not specified",
+    "systolic_bp": 131,
+    "total_cholesterol_mgdl": 137,
+    "hdl_cholesterol_mgdl": 58,
+    "ldl_cholesterol_mgdl": 62
+  },
+  "Risk_Modifiers": {
+    "established_cvd": "Moderate aortic stenosis",
+    "hypertension": "Present, treated",
+    "lv_remodeling": "Concentric",
+    "left_atrial_enlargement": "Moderate",
+    "elevated_natriuretic_peptides": "NT-proBNP 985 pg/mL",
+    "target_ldl": "<55 mg/dL for very high risk"
+  }
+}
+```
+
+
+============================================================
+VIGNETTE #11
+============================================================
+## Cardiovascular Risk Analysis - 2021 ESC Guidelines
+
+### 1. Risk Factor Extraction
+
+| Risk Factor | Value | Notes |
+|-------------|-------|-------|
+| Age | 62 years | ✓ |
+| Gender | Male | ✓ |
+| Smoking Status | Former smoker (quit 8 years ago) | Non-smoker for SCORE2 |
+| Systolic BP | 129 mmHg | ✓ |
+| Total Cholesterol | 187 mg/dL (4.8 mmol/L) | ✓ |
+| HDL Cholesterol | 51 mg/dL (1.3 mmol/L) | ✓ |
+
+### 2. SCORE2 Calculation
+
+**SCORE2 Parameters for Portugal (Moderate-Risk Country):**
+- 62-year-old male
+- Non-smoker (quit >1 year ago)
+- SBP: 129 mmHg
+- Total cholesterol: 4.8 mmol/L
+- HDL cholesterol: 1.3 mmol/L
+
+**Estimated SCORE2: ~8-10%** (10-year fatal and non-fatal CVD risk)
+
+### 3. Risk Category Classification
+
+| Risk Category | SCORE2 Range | Patient Status |
+|---------------|--------------|----------------|
+| Low Risk | <5% | ❌ |
+| Moderate Risk | 5% to <10% | ❌ |
+| High Risk | 10% to <15% | ✅ **LIKELY** |
+| Very High Risk | ≥15% or qualifying conditions | ✅ **YES** |
+
+### 4. Risk Modifiers Present
+
+| Risk Modifier | Status | Impact |
+|---------------|--------|--------|
+| Diabetes (HbA1c 6.2%) | Present | Upgrades to Very High Risk |
+| Chronic Kidney Disease | Absent (Cr 1.07 mg/dL) | None |
+| Family History | Not reported | Unknown |
+| Premature CAD | Not reported | None |
+| Cardiac Arrhythmias | Present (AV block) | Additional risk |
+| LV Dysfunction | Concentric remodeling | Moderate risk modifier |
+
+### 5. Clinical Explanation
+
+This 62-year-old male patient falls into the **VERY HIGH RISK** category based on:
+
+1. **Primary qualifier**: Diabetes mellitus (HbA1c 6.2% indicates diabetes)
+2. **Secondary considerations**: 
+   - SCORE2 likely in high-risk range (8-10%)
+   - Multiple cardiovascular risk factors (age, male gender, hypertension, dyslipidemia, former heavy smoker)
+   - Cardiac structural abnormalities (concentric LV remodeling, atrial dilation)
+   - Conduction system disease (AV block)
+
+**Key Clinical Points:**
+- The syncope episodes with documented 2:1 AV block require immediate cardiac evaluation and likely pacemaker consideration
+- Diabetes diagnosis (HbA1c 6.2%) automatically places patient in very high-risk category
+- Current lipid management may need intensification given very high-risk status
+
+### 6. JSON Summary
+
+```json
+{
+  "Risk": {
+    "category": "Very High Risk",
+    "score2_estimate": "8-10%",
+    "primary_qualifier": "Diabetes mellitus (HbA1c 6.2%)",
+    "country_risk_level": "Moderate-risk country (Portugal)"
+  },
+  "Risk_Factors": {
+    "age": 62,
+    "gender": "Male",
+    "smoking": "Former smoker (quit 8 years ago)",
+    "systolic_bp": 129,
+    "total_cholesterol_mmol": 4.8,
+    "hdl_cholesterol_mmol": 1.3,
+    "diabetes": "Yes (HbA1c 6.2%)"
+  },
+  "Risk_Modifiers": {
+    "diabetes_mellitus": "Present - upgrades to very high risk",
+    "cardiac_arrhythmia": "2:1 AV block",
+    "lv_structural_changes": "Concentric remodeling",
+    "atrial_dilation": "Moderate",
+    "ckd": "Absent",
+    "additional_notes": "Syncope with documented AV block requires urgent cardiac intervention"
+  }
+}
+```
+
+**Recommendation**: Intensive risk factor modification with LDL target <55 mg/dL (<1.4 mmol/L) and urgent cardiology referral for pacemaker evaluation.
+
+
+============================================================
+VIGNETTE #12
+============================================================
+## Cardiovascular Risk Assessment - 2021 ESC Guidelines
+
+### 1. Risk Factors Extraction
+
+| Parameter | Value | Unit |
+|-----------|-------|------|
+| Age | 47 | years |
+| Gender | Female | - |
+| Smoking status | Current smoker | - |
+| Systolic BP | 189 | mmHg |
+| Total cholesterol | 263 | mg/dL |
+| HDL cholesterol | 54 | mg/dL |
+
+### 2. SCORE2 Calculation
+
+**SCORE2 is NOT applicable** for this patient because:
+- Patient has established hypertension (BP 189/103 mmHg, confirmed by 24h-ABPM)
+- According to 2021 ESC Guidelines, SCORE2 is only used for apparently healthy individuals without established cardiovascular disease or major risk factors
+
+### 3. Risk Category Classification
+
+| Risk Category | **HIGH RISK** |
+|---------------|---------------|
+| Justification | Established hypertension (Grade 2: SBP ≥160 mmHg) |
+| Guidelines Reference | 2021 ESC Prevention Guidelines |
+
+### 4. Risk Modifiers Present
+
+| Risk Modifier | Status | Impact |
+|---------------|--------|---------|
+| COPD | Present | Additional risk factor |
+| Heavy smoking history | 52 pack-years | Significant risk amplifier |
+| Family history of CAD | Mother with CABG at 68 | Moderate additional risk |
+
+### 5. Clinical Explanation
+
+This 47-year-old female patient is classified as **HIGH RISK** based on the presence of established Grade 2 hypertension (189/103 mmHg). The 2021 ESC Guidelines clearly state that patients with established hypertension, particularly Grade 2 (≥160/100 mmHg), are automatically categorized as high cardiovascular risk, regardless of SCORE2 calculation.
+
+Additional concerning factors include active smoking with a significant 52 pack-year history, COPD, and elevated LDL cholesterol (184 mg/dL). These factors further amplify her already high baseline risk.
+
+**Clinical Priorities:**
+- Immediate antihypertensive therapy initiation
+- Smoking cessation counseling and support
+- Statin therapy consideration (LDL >180 mg/dL)
+- COPD optimization in coordination with pulmonology
+
+### 6. JSON Summary
+
+```json
+{
+  "Risk": {
+    "category": "HIGH RISK",
+    "score_method": "Not applicable - established hypertension",
+    "justification": "Grade 2 hypertension (SBP 189 mmHg)"
+  },
+  "Risk_Factors": {
+    "age": 47,
+    "gender": "Female",
+    "smoking": "Current smoker",
+    "systolic_bp": 189,
+    "total_cholesterol": 263,
+    "hdl_cholesterol": 54,
+    "ldl_cholesterol": 184
+  },
+  "Risk_Modifiers": {
+    "copd": "Present",
+    "smoking_history": "52 pack-years",
+    "family_history": "Maternal CAD (CABG at 68)",
+    "additional_notes": "Underweight BMI 17.8"
+  }
+}
+```
+
+
+============================================================
+VIGNETTE #13
+============================================================
+## Cardiovascular Risk Analysis - 2021 ESC Guidelines
+
+### 1. Risk Factor Extraction
+
+| Parameter | Value | Notes |
+|-----------|-------|-------|
+| Age | 41 years | |
+| Gender | Male | |
+| Smoking | Yes | Current smoker (5 cigarettes/day) |
+| Systolic BP | 155 mmHg | Hypertensive |
+| Total Cholesterol | 241 mg/dL (6.24 mmol/L) | Elevated |
+| HDL Cholesterol | 33 mg/dL (0.85 mmol/L) | Low |
+
+### 2. SCORE2 Calculation
+
+**SCORE2 is NOT applicable** - Patient is 41 years old, and SCORE2 is validated for ages 40-69 years. However, given he's very close to 40, we can provide an estimated calculation for reference.
+
+**Estimated SCORE2 (if applied at age 40):**
+- Male, moderate-risk country (Portugal)
+- Non-smoker equivalent after cessation
+- SBP 155 mmHg
+- Total cholesterol 6.24 mmol/L
+- HDL 0.85 mmol/L
+
+*Estimated 10-year CVD risk: ~8-12% (would place in moderate-high risk category)*
+
+### 3. Risk Category Assessment
+
+| Risk Level | Criteria | Patient Status |
+|------------|----------|----------------|
+| **MODERATE-HIGH RISK** | Multiple risk factors present | ✓ **CURRENT CATEGORY** |
+| High Risk | SCORE2 ≥7.5% or high-risk conditions | Not applicable |
+| Very High Risk | Established CVD or very high-risk conditions | Not present |
+
+### 4. Risk Factor Summary Table
+
+| Risk Factor | Present | Impact |
+|-------------|---------|---------|
+| Male gender | ✓ | Increased risk |
+| Age 41 | ✓ | Approaching higher risk age |
+| Current smoking | ✓ | Major modifiable risk factor |
+| Hypertension (155/107) | ✓ | Stage 2 hypertension |
+| Dyslipidemia | ✓ | High LDL (188), Low HDL (33) |
+| Family history | ✓ | Maternal HTN/DM |
+| Diabetes | ✗ | HbA1c 5.8% (prediabetic range) |
+
+### 5. Clinical Explanation
+
+This 41-year-old male presents with **moderate-high cardiovascular risk** due to multiple concurrent risk factors:
+
+**Primary Concerns:**
+- Stage 2 hypertension (155/107 mmHg) with hypertensive response to exercise
+- Significant dyslipidemia (LDL 188 mg/dL, HDL 33 mg/dL)
+- Active tobacco use
+- Prediabetic HbA1c (5.8%)
+
+**Risk Modifiers:**
+- Family history of cardiovascular risk factors
+- ECG abnormalities (nonspecific ST-T changes)
+
+While SCORE2 cannot be formally applied due to age, the constellation of risk factors places him in a category requiring aggressive risk factor modification before sports participation.
+
+### 6. JSON Summary
+
+```json
+{
+  "Risk": {
+    "category": "Moderate-High Risk",
+    "score_system": "Clinical Assessment (SCORE2 not applicable <40 years)",
+    "estimated_10_year_risk": "8-12% (estimated)",
+    "recommendation": "Aggressive risk factor modification required"
+  },
+  "Risk_Factors": {
+    "age": 41,
+    "gender": "Male",
+    "smoking": "Current (5 cigarettes/day)",
+    "systolic_bp": 155,
+    "total_cholesterol": 241,
+    "hdl_cholesterol": 33,
+    "ldl_cholesterol": 188,
+    "diabetes": "No (prediabetic HbA1c 5.8%)"
+  },
+  "Risk_Modifiers": {
+    "family_history": "Maternal hypertension and diabetes",
+    "ecg_abnormalities": "Nonspecific ST-T wave changes",
+    "exercise_response": "Hypertensive response to exertion",
+    "bmi": 23,
+    "additional_factors": "Prediabetic range HbA1c"
+  }
+}
+```
+
+**Clinical Recommendation:** Risk factor optimization (smoking cessation, antihypertensive therapy, statin therapy) should be initiated before sports clearance, with reassessment in 3-6 months.
+
+
+============================================================
+VIGNETTE #14
+============================================================
+## Cardiovascular Risk Analysis - 2021 ESC Guidelines
+
+### 1. Risk Factors Extraction
+
+| Parameter | Value | Notes |
+|-----------|--------|-------|
+| Age | 56 years | |
+| Gender | Female | |
+| Smoking status | Current smoker | 40 pack-years history |
+| Systolic BP | 163 mmHg | Uncontrolled despite triple therapy |
+| Total cholesterol | 224 mg/dL (5.8 mmol/L) | |
+| HDL cholesterol | 45 mg/dL (1.16 mmol/L) | |
+
+### 2. SCORE2 Calculation
+
+**SCORE2 is NOT applicable** for this patient because she has established cardiovascular disease equivalent conditions:
+- **Heart failure with preserved ejection fraction (HFpEF)** - confirmed by echocardiogram and stress testing
+- **Diabetes mellitus** - HbA1c 6.3% indicates diabetes
+
+### 3. Risk Category Classification
+
+| Risk Category | **VERY HIGH RISK** |
+|---------------|-------------------|
+| Primary reason | Established heart failure (HFpEF) |
+| Secondary reason | Diabetes mellitus (HbA1c 6.3%) |
+
+### 4. Risk Modifiers Present
+
+| Risk Enhancing Factors | Present |
+|------------------------|---------|
+| Obesity | Yes (BMI 31.3) |
+| Chronic kidney disease | Mild (Cr 1.17 mg/dL) |
+| Hypertriglyceridemia | Yes (196 mg/dL) |
+| Uncontrolled hypertension | Yes (163/91 mmHg) |
+| Medication non-adherence | Suspected |
+
+### 5. Clinical Explanation
+
+This 56-year-old female patient is classified as **very high cardiovascular risk** due to:
+
+1. **Established HFpEF**: Confirmed by echocardiographic findings (concentric remodeling, E/e' ratio 13) and stress testing showing increased filling pressures
+2. **Diabetes mellitus**: HbA1c 6.3% meets diagnostic criteria
+3. **Multiple risk enhancing factors**: Obesity, uncontrolled hypertension, smoking, and suspected medication non-adherence
+
+The patient requires intensive risk factor modification with LDL targets <55 mg/dL (<1.4 mmol/L) and consideration for SGLT2 inhibitors given the HFpEF diagnosis.
+
+### 6. JSON Summary
+
+```json
+{
+  "Risk": {
+    "category": "Very High Risk",
+    "score_method": "Not applicable - established CVD equivalent",
+    "ldl_target": "<55 mg/dL (<1.4 mmol/L)",
+    "current_ldl": "140 mg/dL"
+  },
+  "Risk_Factors": {
+    "age": 56,
+    "gender": "Female",
+    "smoking": "Current smoker (40 pack-years)",
+    "systolic_bp": "163 mmHg",
+    "total_cholesterol": "224 mg/dL",
+    "hdl_cholesterol": "45 mg/dL"
+  },
+  "Risk_Modifiers": {
+    "established_conditions": ["Heart failure with preserved EF", "Diabetes mellitus"],
+    "risk_enhancers": ["Obesity (BMI 31.3)", "Uncontrolled hypertension", "Hypertriglyceridemia", "CKD stage 2", "Medication non-adherence"]
+  }
+}
+```
+
+
+============================================================
+VIGNETTE #15
+============================================================
+## Cardiovascular Risk Analysis - 2021 ESC Guidelines
+
+### 1. Risk Factors Extraction
+
+| Parameter | Value | Unit |
+|-----------|-------|------|
+| Age | 51 | years |
+| Gender | Male | - |
+| Smoking | Yes | Current smoker |
+| Systolic BP | 149 | mmHg |
+| Total Cholesterol | 197 | mg/dL (5.1 mmol/L) |
+| HDL Cholesterol | 32 | mg/dL (0.83 mmol/L) |
+
+### 2. SCORE2 Calculation
+
+**SCORE2 for moderate-risk countries (Portugal):**
+- Age: 51 years
+- Male, smoker
+- SBP: 149 mmHg
+- Total cholesterol: 5.1 mmol/L
+- HDL cholesterol: 0.83 mmol/L
+
+**Estimated SCORE2: ~8-10%** (10-year risk of fatal and non-fatal CVD)
+
+### 3. Risk Category Classification
+
+| Risk Category | SCORE2 Range | Patient Status |
+|---------------|--------------|----------------|
+| Low risk | <2.5% | ❌ |
+| Moderate risk | 2.5% to <7.5% | ❌ |
+| **High risk** | **7.5% to <15%** | **✅** |
+| Very high risk | ≥15% | ❌ |
+
+### 4. Risk Modifiers
+
+| Modifier | Present | Impact |
+|----------|---------|---------|
+| Family history of premature CAD | ❌ (father CABG at 71) | Neutral |
+| Sedentary lifestyle | ✅ | Increases risk |
+| CAC score 47 (P50-75) | ✅ | Moderate increase |
+| Non-obstructive CAD | ✅ | Significant increase |
+| Low HDL (<40 mg/dL) | ✅ | Increases risk |
+| Elevated ApoB (107 mg/dL) | ✅ | Increases risk |
+
+### 5. Clinical Explanation
+
+This 51-year-old male presents with **HIGH cardiovascular risk** based on SCORE2 calculation (~8-10%). Multiple risk modifiers further elevate his risk profile:
+
+- **Confirmed subclinical atherosclerosis** (CAC score 47, non-obstructive plaques in all three vessels)
+- **Multiple traditional risk factors**: smoking (21 pack-years), hypertension, dyslipidemia with low HDL
+- **Lifestyle factors**: sedentary behavior
+- **Metabolic markers**: elevated ApoB suggesting increased atherogenic particle burden
+
+The presence of non-obstructive coronary disease significantly modifies his risk upward, potentially placing him in the **very high-risk category** despite the calculated SCORE2.
+
+### 6. JSON Summary
+
+```json
+{
+  "Risk": {
+    "SCORE2_percentage": "8-10%",
+    "risk_category": "High risk",
+    "modified_risk_category": "Very high risk (due to subclinical atherosclerosis)"
+  },
+  "Risk_Factors": {
+    "age": 51,
+    "gender": "Male",
+    "smoking": "Yes (21 pack-years)",
+    "systolic_BP": 149,
+    "total_cholesterol": 197,
+    "HDL_cholesterol": 32,
+    "hypertension": "Yes",
+    "dyslipidemia": "Yes"
+  },
+  "Risk_Modifiers": {
+    "CAC_score": "47 (P50-75)",
+    "coronary_atherosclerosis": "Non-obstructive disease in all three vessels",
+    "sedentary_lifestyle": "Yes",
+    "low_HDL": "Yes (<40 mg/dL)",
+    "elevated_ApoB": "Yes (107 mg/dL)",
+    "family_history_premature_CAD": "No"
+  }
+}
+```
+
+**Recommendation**: Intensive risk factor modification with statin optimization, antihypertensive therapy, smoking cessation, and lifestyle interventions are warranted given the high-risk profile and presence of subclinical atherosclerosis.
+
+
+============================================================
+VIGNETTE #16
+============================================================
+## Cardiovascular Risk Assessment - 2021 ESC Guidelines
+
+### 1. Risk Factors Extraction
+
+| Parameter | Value | Unit |
+|-----------|-------|------|
+| Age | 64 | years |
+| Gender | Female | - |
+| Smoking status | Active smoker | - |
+| Systolic BP | 143 | mmHg |
+| Total cholesterol | 169 | mg/dL (4.37 mmol/L) |
+| HDL cholesterol | 48 | mg/dL (1.24 mmol/L) |
+
+### 2. SCORE2 Calculation
+
+**SCORE2 is applicable** - Patient is 64 years old (40-69 age range) without established cardiovascular disease or diabetes.
+
+| Risk Factor | Value | Points |
+|-------------|-------|--------|
+| Age | 64 years | - |
+| Female gender | Yes | - |
+| Smoking | Active | - |
+| Systolic BP | 143 mmHg | - |
+| Total cholesterol | 4.37 mmol/L | - |
+| HDL cholesterol | 1.24 mmol/L | - |
+
+**SCORE2 Result: ~8-9%** (10-year risk of fatal and non-fatal CVD events)
+
+### 3. Risk Category Classification
+
+| Risk Category | SCORE2 Range | Patient Status |
+|---------------|---------------|----------------|
+| Low risk | <5% | ❌ |
+| Moderate risk | 5% to <10% | ✅ **CURRENT** |
+| High risk | 10% to <15% | ❌ |
+| Very high risk | ≥15% | ❌ |
+
+**Final Risk Category: MODERATE RISK**
+
+### 4. Risk Modifiers Assessment
+
+| Risk Modifier | Present | Impact |
+|---------------|---------|--------|
+| Family history of premature CVD | Not reported | - |
+| Chronic kidney disease | No (Cr 0.76 mg/dL) | - |
+| Diabetes mellitus | No (HbA1c 5.9%) | - |
+| Atrial fibrillation | No | - |
+| Heart failure | No | - |
+| Inflammatory conditions | Not reported | - |
+| Severe mental illness | No | - |
+| HIV infection | Not reported | - |
+| Erectile dysfunction | N/A (female) | - |
+| Premature menopause | Not reported | - |
+| Pregnancy complications | Not reported | - |
+
+### 5. Clinical Explanation
+
+This 64-year-old female patient presents with **moderate cardiovascular risk** (SCORE2 ~8-9%). The primary risk factors contributing to this classification are:
+
+- **Advanced age** (64 years)
+- **Active smoking** with significant exposure (40 pack-years)
+- **Stage 1 hypertension** (143/84 mmHg)
+
+Despite having acceptable lipid levels and no diabetes, the combination of age, smoking, and elevated blood pressure places her in the moderate risk category. The cardiac murmur and echocardiographic findings (concentric remodeling, moderate LA dilation) may reflect early cardiovascular changes secondary to hypertension.
+
+**Recommendations:**
+- Smoking cessation (highest priority)
+- Blood pressure management (target <140/90 mmHg for moderate risk)
+- Consider statin therapy if LDL remains >100 mg/dL after lifestyle modifications
+- Lifestyle counseling (diet, physical activity)
+- Regular cardiovascular risk reassessment
+
+### 6. JSON Summary
+
+```json
+{
+  "Risk": {
+    "score2_percentage": "8-9%",
+    "risk_category": "Moderate risk",
+    "10_year_cvd_risk": "5-10%"
+  },
+  "Risk_Factors": {
+    "age": 64,
+    "gender": "Female",
+    "smoking": "Active smoker (40 pack-years)",
+    "systolic_bp": 143,
+    "total_cholesterol": 169,
+    "hdl_cholesterol": 48,
+    "diabetes": "No",
+    "family_history": "Not reported"
+  },
+  "Risk_Modifiers": {
+    "chronic_kidney_disease": "No",
+    "heart_failure": "No",
+    "atrial_fibrillation": "No",
+    "inflammatory_conditions": "Not reported",
+    "additional_findings": "Cardiac murmur, concentric LV remodeling, moderate LA dilation"
+  }
+}
+```
+
+
+============================================================
+VIGNETTE #17
+============================================================
+## Cardiovascular Risk Analysis - 2021 ESC Guidelines
+
+### 1. Risk Factors Extraction
+
+| Risk Factor | Value | Notes |
+|-------------|-------|-------|
+| Age | 65 years | ≥65 years |
+| Gender | Male | |
+| Smoking | Former smoker | |
+| Systolic BP | 147 mmHg | Current off-medication BP |
+| Total Cholesterol | 129 mg/dL (3.3 mmol/L) | |
+| HDL Cholesterol | 33 mg/dL (0.85 mmol/L) | |
+
+### 2. SCORE2 Calculation
+
+**SCORE2 is NOT applicable** for this patient because:
+- Patient is 65 years old (≥65 years)
+- SCORE2 is designed for patients aged 40-69 years
+- For patients ≥70 years, SCORE2-OP should be used
+- This patient falls in the transition zone (65-69 years)
+
+### 3. Risk Category Assessment
+
+| Assessment Method | Result | Rationale |
+|------------------|--------|-----------|
+| **Age-based Risk** | **HIGH RISK** | Male ≥65 years automatically qualifies as high cardiovascular risk |
+| **Risk Modifiers Present** | Multiple | Prediabetes (HbA1c 6.3%), low HDL (33 mg/dL), hypertriglyceridemia (237 mg/dL), obesity (BMI 28) |
+
+### 4. Risk Modifiers Analysis
+
+| Risk Modifier | Present | Value/Status |
+|---------------|---------|--------------|
+| Diabetes/Prediabetes | ✓ | HbA1c 6.3%, Fasting glucose 111 mg/dL |
+| Chronic Kidney Disease | ✗ | Creatinine 0.96 mg/dL (normal) |
+| Familial Hypercholesterolemia | ✗ | Not indicated |
+| Low HDL-C | ✓ | 33 mg/dL (<40 mg/dL in men) |
+| High Triglycerides | ✓ | 237 mg/dL (>150 mg/dL) |
+| Obesity | ✓ | BMI 28 kg/m² |
+| Atrial Fibrillation | ✗ | Sinus rhythm on ECG |
+
+### 5. Clinical Explanation
+
+This 65-year-old male patient is classified as **HIGH cardiovascular risk** primarily due to his age (≥65 years), which automatically places him in this category according to 2021 ESC Guidelines. Additional risk modifiers further support this classification:
+
+- **Metabolic factors**: Prediabetes (HbA1c 6.3%), low HDL cholesterol (33 mg/dL), and hypertriglyceridemia (237 mg/dL)
+- **Cardiovascular findings**: Hypertension, concentric LV remodeling, and aortic valve sclerosis
+- **Historical factors**: Former smoking status and dyslipidemia
+
+The patient's LDL cholesterol is already well-controlled (49 mg/dL), likely due to statin therapy, but given his high-risk status, the target should be <55 mg/dL with >50% reduction from baseline.
+
+### 6. JSON Summary
+
+```json
+{
+  "Risk": {
+    "Category": "HIGH RISK",
+    "Method": "Age-based classification (≥65 years)",
+    "SCORE2_Applicable": false,
+    "SCORE2_Value": "N/A - Age ≥65 years",
+    "Target_LDL": "<55 mg/dL and >50% reduction"
+  },
+  "Risk_Factors": {
+    "Age": "65 years",
+    "Gender": "Male",
+    "Smoking": "Former smoker",
+    "Systolic_BP": "147 mmHg",
+    "Total_Cholesterol": "129 mg/dL",
+    "HDL_Cholesterol": "33 mg/dL"
+  },
+  "Risk_Modifiers": {
+    "Prediabetes": "HbA1c 6.3%",
+    "Low_HDL": "33 mg/dL",
+    "Hypertriglyceridemia": "237 mg/dL",
+    "Obesity": "BMI 28 kg/m²",
+    "Hypertension": "147/68 mmHg",
+    "Cardiac_Abnormalities": "Concentric LV remodeling, aortic sclerosis"
+  }
+}
+```
+
+
+============================================================
+VIGNETTE #18
+============================================================
+## Cardiovascular Risk Analysis - 2021 ESC Guidelines
+
+### 1. Risk Factors Extraction
+
+| Parameter | Value | Status |
+|-----------|-------|---------|
+| Age | 44 years | Risk factor |
+| Gender | Male | Risk factor |
+| Smoking | No | Protective |
+| Systolic BP | 145 mmHg | Elevated |
+| Total Cholesterol | 229 mg/dL (5.9 mmol/L) | Elevated |
+| HDL Cholesterol | 37 mg/dL (0.96 mmol/L) | Low |
+
+### 2. SCORE2 Calculation
+
+**SCORE2 Parameters:**
+- Male, 44 years, non-smoker
+- Systolic BP: 145 mmHg
+- Total cholesterol: 5.9 mmol/L
+- HDL cholesterol: 0.96 mmol/L
+- Country risk: Portugal (moderate-risk)
+
+**SCORE2 Result: ~4-5%** (10-year risk of fatal and non-fatal CVD)
+
+### 3. Risk Category Classification
+
+| Risk Category | SCORE2 Range (Age 40-49) | Patient Status |
+|---------------|---------------------------|----------------|
+| Low Risk | <2.5% | ❌ |
+| Moderate Risk | 2.5% to <7.5% | ✅ **CURRENT** |
+| High Risk | ≥7.5% | ❌ |
+| Very High Risk | Established CVD/DM/CKD | ❌ |
+
+### 4. Risk Modifiers Analysis
+
+| Risk Modifier | Value | Impact |
+|---------------|-------|---------|
+| **Family History** | Mother MI at 61 years | ⬆️ Increases risk |
+| **LDL Cholesterol** | 165 mg/dL | ⬆️ Significantly elevated |
+| **Lipoprotein(a)** | 92 mg/dL | ⬆️ Very high (>50 mg/dL) |
+| **ApoB** | 172 mg/dL | ⬆️ Elevated |
+| **Physical Activity** | Regular exercise | ⬇️ Protective |
+| **BMI** | 22.5 kg/m² | ⬇️ Normal |
+
+### 5. Clinical Interpretation
+
+This 44-year-old male presents with **moderate cardiovascular risk** based on SCORE2 calculation. However, several important risk modifiers suggest his actual risk may be higher:
+
+**Key Concerns:**
+- **Hypertension**: Confirmed by office BP (145/94) and 24h-ABPM (130/86)
+- **Dyslipidemia**: Elevated LDL (165 mg/dL), low HDL (37 mg/dL)
+- **Very high Lp(a)**: 92 mg/dL represents significant genetic risk
+- **Family history**: Maternal MI at relatively young age (61 years)
+
+**Protective Factors:**
+- Non-smoker
+- Regular physical activity
+- Normal BMI
+- No diabetes or metabolic syndrome
+
+**Clinical Recommendation**: Despite moderate SCORE2 risk, the combination of multiple risk modifiers (especially very high Lp(a) and strong family history) may warrant consideration for more intensive risk factor modification approaching high-risk management strategies.
+
+### 6. JSON Summary
+
+```json
+{
+  "Risk": {
+    "SCORE2": "4-5%",
+    "Category": "Moderate Risk",
+    "Age_Group": "40-49 years",
+    "Country_Risk": "Portugal (moderate-risk)"
+  },
+  "Risk_Factors": {
+    "Age": "44 years",
+    "Gender": "Male",
+    "Smoking": "No",
+    "Systolic_BP": "145 mmHg",
+    "Total_Cholesterol": "229 mg/dL (5.9 mmol/L)",
+    "HDL_Cholesterol": "37 mg/dL (0.96 mmol/L)"
+  },
+  "Risk_Modifiers": {
+    "Family_History": "Maternal MI at 61 years - increases risk",
+    "LDL_Cholesterol": "165 mg/dL - significantly elevated",
+    "Lipoprotein_a": "92 mg/dL - very high risk modifier",
+    "ApoB": "172 mg/dL - elevated",
+    "Physical_Activity": "Regular - protective",
+    "BMI": "22.5 - normal",
+    "Overall_Impact": "Multiple modifiers suggest higher than calculated risk"
+  }
+}
+```
+
+
+============================================================
+VIGNETTE #19
+============================================================
+## Cardiovascular Risk Analysis - 2021 ESC Guidelines
+
+### 1. Risk Factors Extraction
+
+| Parameter | Value | Risk Classification |
+|-----------|-------|-------------------|
+| Age | 54 years | Moderate risk age group (50-69 years) |
+| Gender | Female | - |
+| Smoking | 17 pack-years | Current/recent smoker |
+| Systolic BP | 132 mmHg | Grade 1 hypertension |
+| Total Cholesterol | 211 mg/dL (5.46 mmol/L) | Borderline high |
+| HDL Cholesterol | 52 mg/dL (1.35 mmol/L) | Normal for women |
+
+### 2. SCORE2 Calculation
+
+**SCORE2 Parameters for Portugal (Moderate-risk country):**
+- Age: 54 years
+- Female, non-smoker status: No (smoker)
+- Systolic BP: 132 mmHg
+- Total cholesterol: 5.46 mmol/L
+- HDL cholesterol: 1.35 mmol/L
+
+**Estimated SCORE2: ~4-5%** (10-year risk of fatal and non-fatal CVD)
+
+### 3. Risk Category Assessment
+
+| Risk Assessment Tool | Result | Category |
+|---------------------|--------|----------|
+| SCORE2 | ~4-5% | **MODERATE RISK** |
+| Risk Modifiers | Present | Upgrade consideration |
+
+### 4. Risk Modifiers Analysis
+
+| Risk Modifier | Present | Impact |
+|---------------|---------|--------|
+| Rheumatoid Arthritis | Yes | Major modifier - increases risk |
+| Coronary Calcium Score | 77 (75th-90th percentile) | Significant modifier |
+| hs-CRP | 4.5 mg/L (elevated) | Inflammatory marker elevation |
+| Coronary Plaques | Multiple vessels, up to 25-49% stenosis | Subclinical atherosclerosis |
+
+### 5. Final Risk Classification
+
+**MODERATE-TO-HIGH RISK** (upgraded from moderate due to multiple risk modifiers)
+
+### 6. Clinical Explanation
+
+This 54-year-old female presents with moderate baseline cardiovascular risk based on SCORE2 calculation. However, several important risk modifiers warrant risk category upgrade:
+
+- **Rheumatoid arthritis** significantly increases cardiovascular risk (1.5-2x relative risk increase)
+- **Coronary calcium score of 77** places her in 75th-90th percentile for age/gender
+- **Subclinical coronary atherosclerosis** with multiple vessel involvement and moderate stenosis
+- **Elevated hs-CRP** suggesting systemic inflammation
+
+The combination of these factors, particularly the imaging evidence of coronary atherosclerosis, justifies upgrading her risk category and considering more intensive preventive interventions.
+
+### 7. JSON Summary
+
+```json
+{
+  "Risk": {
+    "SCORE2_percentage": "4-5%",
+    "baseline_category": "Moderate Risk",
+    "final_category": "Moderate-to-High Risk",
+    "upgrade_rationale": "Multiple significant risk modifiers"
+  },
+  "Risk_Factors": {
+    "age": 54,
+    "gender": "Female",
+    "smoking": "Yes (17 pack-years)",
+    "systolic_BP": "132 mmHg",
+    "total_cholesterol": "211 mg/dL",
+    "HDL_cholesterol": "52 mg/dL"
+  },
+  "Risk_Modifiers": {
+    "rheumatoid_arthritis": "Present - major modifier",
+    "coronary_calcium_score": "77 (75th-90th percentile)",
+    "hs_CRP": "4.5 mg/L (elevated)",
+    "coronary_atherosclerosis": "Multiple vessels with 25-49% stenosis",
+    "recommendation": "Risk category upgrade warranted"
+  }
+}
+```
+
+**Recommendation:** Consider intensive lifestyle modifications and potentially statin therapy given the upgraded risk profile and evidence of subclinical atherosclerosis.
+
+
+============================================================
+VIGNETTE #20
+============================================================
+## Cardiovascular Risk Analysis - 2021 ESC Guidelines (Portugal)
+
+### 1. Risk Factors Extraction
+
+| Parameter | Value | Status |
+|-----------|-------|--------|
+| Age | 61 years | ✓ |
+| Gender | Male | ✓ |
+| Smoking | Not mentioned | Assumed non-smoker |
+| Systolic BP | 151 mmHg | Hypertension Stage 1 |
+| Total Cholesterol | 217 mg/dL (5.6 mmol/L) | ✓ |
+| HDL Cholesterol | 48 mg/dL (1.2 mmol/L) | Low |
+
+### 2. SCORE2 Calculation
+
+**SCORE2 Parameters:**
+- Male, 61 years
+- Non-smoker (assumed)
+- SBP: 151 mmHg
+- Total cholesterol: 5.6 mmol/L
+- HDL cholesterol: 1.2 mmol/L
+- Country: Portugal (moderate-risk)
+
+**Estimated SCORE2: ~8-10%** (10-year fatal and non-fatal CVD risk)
+
+### 3. Risk Category Classification
+
+| Risk Level | SCORE2 Range | Patient Status |
+|------------|--------------|----------------|
+| Low | <2.5% | ❌ |
+| Moderate | 2.5-7.5% | ❌ |
+| **High** | **7.5-20%** | **✓ Current** |
+| Very High | >20% or high-risk conditions | **✓ See modifiers** |
+
+### 4. Risk Modifiers Analysis
+
+| Modifier | Present | Impact |
+|----------|---------|--------|
+| **Atrial Fibrillation** | ✓ | **Reclassifies to VERY HIGH** |
+| Diabetes (HbA1c 6.3%) | ✓ | **Reclassifies to VERY HIGH** |
+| Obesity (BMI 33.7) | ✓ | Risk enhancer |
+| Coronary calcium score 178 | ✓ | Risk enhancer (75th-90th percentile) |
+| Sleep apnea (severe) | ✓ | Risk enhancer |
+| Hypertension | ✓ | Already in SCORE2 |
+
+### 5. Final Risk Assessment
+
+**FINAL RISK CATEGORY: VERY HIGH RISK**
+
+**Rationale:**
+- Patient has documented atrial fibrillation (very high-risk condition)
+- Diabetes mellitus (HbA1c 6.3% = prediabetes/diabetes)
+- Multiple additional risk enhancers
+
+### 6. Clinical Explanation
+
+This 61-year-old male merchant presents with **very high cardiovascular risk** due to:
+
+1. **Primary reclassifying conditions:**
+   - Documented atrial fibrillation episodes
+   - Diabetes/prediabetes (HbA1c 6.3%)
+
+2. **Additional risk enhancers:**
+   - Severe obesity (BMI 33.7)
+   - Elevated coronary calcium score (178)
+   - Severe obstructive sleep apnea
+   - Hypertension
+
+**Clinical Implications:**
+- LDL target: <55 mg/dL (currently 118 mg/dL)
+- Requires intensive lifestyle modification
+- Consider high-intensity statin therapy
+- Anticoagulation evaluation for AF
+- Sleep apnea treatment
+- Blood pressure optimization
+
+### 7. JSON Summary
+
+```json
+{
+  "Risk": {
+    "SCORE2_estimated": "8-10%",
+    "initial_category": "High Risk",
+    "final_category": "Very High Risk",
+    "LDL_target": "<55 mg/dL",
+    "current_LDL": "118 mg/dL"
+  },
+  "Risk_Factors": {
+    "age": 61,
+    "gender": "Male",
+    "smoking": "Not mentioned (assumed non-smoker)",
+    "systolic_BP": "151 mmHg",
+    "total_cholesterol": "217 mg/dL (5.6 mmol/L)",
+    "HDL_cholesterol": "48 mg/dL (1.2 mmol/L)"
+  },
+  "Risk_Modifiers": {
+    "reclassifying_conditions": [
+      "Atrial fibrillation (documented)",
+      "Diabetes mellitus (HbA1c 6.3%)"
+    ],
+    "risk_enhancers": [
+      "Severe obesity (BMI 33.7)",
+      "Coronary calcium score 178 (75th-90th percentile)",
+      "Severe obstructive sleep apnea",
+      "Hypertension Stage 1"
+    ]
+  }
+}
+```
+
+
+============================================================
+VIGNETTE #21
+============================================================
+## Cardiovascular Risk Assessment - 2021 ESC Guidelines
+
+### 1. Risk Factors Extraction
+
+| Parameter | Value | Notes |
+|-----------|-------|-------|
+| Age | 51 years | ✓ |
+| Gender | Female | ✓ |
+| Smoking | No | Non-smoker |
+| Systolic BP | 127 mmHg | ✓ |
+| Total Cholesterol | 162 mg/dL (4.2 mmol/L) | ✓ |
+| HDL Cholesterol | 38 mg/dL (1.0 mmol/L) | ✓ |
+
+### 2. SCORE2 Calculation
+
+**SCORE2 is NOT applicable** in this case due to the presence of chronic kidney disease (CKD).
+
+| SCORE2 Assessment | Result |
+|-------------------|--------|
+| Age range | 40-69 years ✓ |
+| Exclusion criteria | CKD Stage 3b (eGFR 42 mL/min/1.73m²) |
+| Applicability | **Not applicable** |
+
+### 3. Risk Category Classification
+
+| Risk Category | **VERY HIGH RISK** |
+|---------------|-------------------|
+| Primary reason | CKD Stage 3b (eGFR 30-44 mL/min/1.73m²) |
+| ESC Classification | Established CKD |
+
+### 4. Risk Modifiers and Additional Factors
+
+| Risk Modifiers | Present | Impact |
+|----------------|---------|--------|
+| CKD Stage 3b | Yes | Automatic very high risk |
+| Triglycerides >150 mg/dL | Yes (199 mg/dL) | Additional risk factor |
+| Low HDL (<40 mg/dL women) | Yes (38 mg/dL) | Additional risk factor |
+| Polycystic kidney disease | Yes | Underlying nephropathy |
+| Physical activity | Regular exercise | Protective factor |
+| BMI | 20.5 kg/m² | Normal weight |
+
+### 5. Clinical Explanation
+
+This 51-year-old female patient is classified as **very high cardiovascular risk** according to 2021 ESC Guidelines due to chronic kidney disease Stage 3b (eGFR 42 mL/min/1.73m²). SCORE2 calculation is not applicable in patients with established CKD, as they automatically qualify for very high risk category.
+
+Additional cardiovascular risk factors include elevated triglycerides (199 mg/dL) and low HDL cholesterol (38 mg/dL). Positive aspects include regular physical activity, normal BMI, non-smoking status, and well-controlled blood pressure and LDL cholesterol on current therapy.
+
+The patient is appropriately managed with cardio-renal protective medications including ACE inhibitor, SGLT2 inhibitor, statin, and finerenone.
+
+### 6. JSON Summary
+
+```json
+{
+  "Risk": {
+    "category": "Very High Risk",
+    "score2_applicable": false,
+    "score2_value": "N/A",
+    "primary_reason": "CKD Stage 3b (eGFR 42 mL/min/1.73m²)"
+  },
+  "Risk_Factors": {
+    "age": 51,
+    "gender": "Female",
+    "smoking": false,
+    "systolic_bp": 127,
+    "total_cholesterol_mmol": 4.2,
+    "hdl_cholesterol_mmol": 1.0,
+    "triglycerides_mg_dl": 199,
+    "ldl_cholesterol_mg_dl": 84
+  },
+  "Risk_Modifiers": {
+    "ckd_stage": "3b",
+    "egfr": 42,
+    "polycystic_kidney_disease": true,
+    "regular_exercise": true,
+    "bmi": 20.5,
+    "low_hdl": true,
+    "elevated_triglycerides": true
+  }
+}
+```
+
+
+============================================================
+VIGNETTE #22
+============================================================
+## Cardiovascular Risk Analysis - 2021 ESC Guidelines
+
+### 1. Risk Factor Extraction
+
+| Risk Factor | Value | Notes |
+|-------------|-------|-------|
+| Age | 61 years | ✓ |
+| Gender | Male | ✓ |
+| Smoking | Not mentioned | Assumed non-smoker |
+| Systolic BP | 131 mmHg | ✓ |
+| Total Cholesterol | 136 mg/dL (3.5 mmol/L) | ✓ |
+| HDL Cholesterol | 38 mg/dL (1.0 mmol/L) | ✓ |
+
+### 2. SCORE2 Calculation
+
+**SCORE2 is NOT applicable** in this case due to the presence of established chronic kidney disease (CKD).
+
+| Parameter | Value |
+|-----------|-------|
+| eGFR | 42 mL/min/1.73 m² |
+| CKD Stage | 3b (moderate to severe) |
+| Microalbuminuria | 100 mg/g (significant) |
+
+### 3. Risk Category Classification
+
+| Risk Category | **VERY HIGH RISK** |
+|---------------|-------------------|
+| Primary Reason | Chronic Kidney Disease Stage 3b |
+| Supporting Factors | Microalbuminuria >30 mg/g |
+
+### 4. Risk Modifiers and Additional Conditions
+
+| Condition | Status | Impact |
+|-----------|--------|--------|
+| CKD Stage 3b | Present | Automatic very high risk |
+| Microalbuminuria | 100 mg/g | Confirms high CV risk |
+| Bicuspid Aortic Valve | Moderate regurgitation | Structural heart disease |
+| Hypertension | Controlled (131/78) | On optimal therapy |
+| Dyslipidemia | Well controlled | LDL 65 mg/dL on statin |
+
+### 5. Clinical Explanation
+
+This 61-year-old male is classified as **very high cardiovascular risk** according to 2021 ESC Guidelines, primarily due to:
+
+- **Chronic Kidney Disease Stage 3b** (eGFR 42 mL/min/1.73 m²)
+- **Significant microalbuminuria** (100 mg/g)
+
+The presence of CKD Stage 3b automatically places him in the very high-risk category, making SCORE2 calculation unnecessary. His cardiovascular risk management appears appropriate with:
+- Well-controlled blood pressure on ACE inhibitor
+- LDL cholesterol at target (<70 mg/dL) on statin therapy
+- SGLT2 inhibitor for cardio-renal protection
+
+### 6. JSON Summary
+
+```json
+{
+  "Risk": {
+    "category": "Very High Risk",
+    "score_system": "Not applicable (CKD present)",
+    "primary_reason": "Chronic Kidney Disease Stage 3b"
+  },
+  "Risk_Factors": {
+    "age": 61,
+    "gender": "Male",
+    "smoking": "Not specified",
+    "systolic_bp": 131,
+    "total_cholesterol_mmol": 3.5,
+    "hdl_cholesterol_mmol": 1.0,
+    "egfr": 42,
+    "microalbuminuria": 100
+  },
+  "Risk_Modifiers": {
+    "chronic_kidney_disease": "Stage 3b",
+    "structural_heart_disease": "Bicuspid aortic valve with moderate regurgitation",
+    "hypertension": "Present, controlled",
+    "current_treatment": "Optimal medical therapy"
+  }
+}
+```
+
+**Recommendation**: Continue current cardio-protective therapy and monitor renal function progression. Consider cardio-nephrology consultation for comprehensive management.
+
+
+============================================================
+VIGNETTE #23
+============================================================
+## Cardiovascular Risk Analysis - 2021 ESC Guidelines
+
+### 1. Risk Factor Extraction
+
+| Risk Factor | Value | Notes |
+|-------------|-------|-------|
+| Age | 59 years | |
+| Gender | Female | |
+| Smoking | Not mentioned | Assumed non-smoker |
+| Systolic BP | 124 mmHg | |
+| Total Cholesterol | 176 mg/dL (4.6 mmol/L) | |
+| HDL Cholesterol | 43 mg/dL (1.1 mmol/L) | |
+
+### 2. SCORE2 Calculation
+
+**SCORE2 is NOT applicable** in this case because the patient has established diabetes mellitus.
+
+### 3. Risk Category Classification
+
+| Risk Category | **VERY HIGH RISK** |
+|---------------|-------------------|
+| Primary Reason | Type 2 diabetes with target organ damage |
+| Supporting Evidence | • Diabetes duration >5 years<br>• eGFR 70 mL/min/1.73m² (CKD stage 2)<br>• Concentric LV remodeling<br>• Mild left atrial dilation |
+
+### 4. Risk Assessment Summary
+
+| Parameter | Finding | Risk Impact |
+|-----------|---------|-------------|
+| **Primary Risk Determinant** | Type 2 diabetes | Very High Risk |
+| **Target Organ Damage** | Present | Confirms Very High Risk |
+| **Additional Risk Factors** | Dyslipidemia, overweight | Additive risk |
+| **Protective Factors** | Regular exercise, non-smoker | Risk mitigation |
+
+### 5. Clinical Explanation
+
+This 59-year-old woman is classified as **very high cardiovascular risk** according to 2021 ESC Guidelines. The primary determinant is her established type 2 diabetes mellitus with evidence of target organ damage, specifically:
+
+- Reduced eGFR (70 mL/min/1.73m²) indicating early chronic kidney disease
+- Cardiac structural changes (concentric LV remodeling and mild LA dilation)
+- Suboptimal glycemic control (HbA1c 7.8%)
+
+The SCORE2 risk calculator is not used in patients with established diabetes, as they are automatically classified as high or very high risk based on the presence of target organ damage or additional risk factors.
+
+Her current LDL cholesterol of 100 mg/dL exceeds the very high-risk target of <55 mg/dL (<1.4 mmol/L), indicating need for intensified lipid management.
+
+### 6. JSON Risk Assessment
+
+```json
+{
+  "Risk": {
+    "category": "Very High Risk",
+    "score_system": "ESC 2021 Guidelines",
+    "score_value": "Not applicable (established diabetes)",
+    "country_risk": "Moderate risk country (Portugal)"
+  },
+  "Risk_Factors": {
+    "age": 59,
+    "gender": "Female",
+    "smoking": "Non-smoker (assumed)",
+    "systolic_bp": 124,
+    "total_cholesterol_mgdl": 176,
+    "hdl_cholesterol_mgdl": 43,
+    "diabetes": "Type 2, >5 years duration",
+    "bmi": 26,
+    "hba1c": 7.8
+  },
+  "Risk_Modifiers": {
+    "target_organ_damage": [
+      "eGFR 70 mL/min/1.73m²",
+      "Concentric LV remodeling",
+      "Mild left atrial dilation"
+    ],
+    "protective_factors": [
+      "Regular exercise (walking 3x/week)",
+      "Non-smoker"
+    ],
+    "additional_risk_factors": [
+      "Dyslipidemia",
+      "Overweight (BMI 26)",
+      "Suboptimal glycemic control"
+    ]
+  }
+}
+```
+
+**Recommendation**: Intensify lipid therapy to achieve LDL <55 mg/dL and optimize diabetes management to reach HbA1c <7%.
+
+
+============================================================
+VIGNETTE #24
+============================================================
+## Cardiovascular Risk Analysis - 2021 ESC Guidelines
+
+### 1. Risk Factors Extraction
+
+| Parameter | Value | Unit |
+|-----------|-------|------|
+| Age | 59 | years |
+| Gender | Male | - |
+| Smoking status | Former smoker (quit 5 years ago) | - |
+| Systolic BP | 134 | mmHg |
+| Total cholesterol | 187 | mg/dL (4.8 mmol/L) |
+| HDL cholesterol | 45 | mg/dL (1.2 mmol/L) |
+
+### 2. SCORE2 Calculation
+
+**SCORE2 is NOT applicable** in this case because the patient has established diabetes mellitus type 2.
+
+### 3. Risk Category Classification
+
+According to 2021 ESC Guidelines, this patient is classified as **VERY HIGH RISK** due to:
+- Type 2 diabetes mellitus with additional cardiovascular risk factors:
+  - Age >50 years (59 years)
+  - Hypertension
+  - Dyslipidemia
+  - Former smoking history (20 pack-years)
+
+### 4. Risk Assessment Summary
+
+| Risk Category | Very High Risk |
+|---------------|----------------|
+| Primary Tool | Clinical criteria (diabetes + risk factors) |
+| SCORE2 | Not applicable |
+| LDL Target | <55 mg/dL (<1.4 mmol/L) |
+| Current LDL | 106 mg/dL (2.7 mmol/L) |
+| Target Achievement | **NOT ACHIEVED** |
+
+### 5. Risk Modifiers
+
+| Modifier | Status | Impact |
+|----------|--------|--------|
+| Mild CKD (eGFR 75) | Present | Increases risk |
+| Overweight (BMI 29.8) | Present | Increases risk |
+| Shift work/poor sleep | Present | Potential risk enhancer |
+| Exercise capacity | Normal | Favorable |
+
+### 6. Clinical Explanation
+
+This 59-year-old male is classified as **very high cardiovascular risk** primarily due to type 2 diabetes with multiple additional risk factors. The 2021 ESC Guidelines classify diabetic patients >50 years with additional risk factors (hypertension, dyslipidemia, smoking history) as very high risk, regardless of SCORE2 calculation.
+
+**Key findings:**
+- LDL cholesterol (106 mg/dL) is significantly above target (<55 mg/dL)
+- Blood pressure (134/82 mmHg) could be better controlled
+- Diabetes control is adequate (HbA1c 6.6%)
+- No evidence of target organ damage or established CVD
+
+**Recommendations:**
+- Intensify statin therapy or add ezetimibe to achieve LDL <55 mg/dL
+- Optimize blood pressure control (target <130/80 mmHg)
+- Continue current diabetes management
+- Address lifestyle factors (weight reduction, sleep hygiene)
+
+### 7. JSON Summary
+
+```json
+{
+  "Risk": {
+    "category": "Very High Risk",
+    "tool_used": "Clinical criteria (ESC 2021)",
+    "score2_applicable": false,
+    "rationale": "Type 2 diabetes + age >50 + multiple CV risk factors"
+  },
+  "Risk_Factors": {
+    "age": 59,
+    "gender": "Male",
+    "smoking": "Former smoker (quit 5 years ago)",
+    "systolic_bp": 134,
+    "total_cholesterol": 187,
+    "hdl_cholesterol": 45,
+    "diabetes": "Type 2 (5 years duration)",
+    "hypertension": "Present",
+    "dyslipidemia": "Present"
+  },
+  "Risk_Modifiers": {
+    "mild_ckd": "eGFR 75 mL/min/1.73m²",
+    "overweight": "BMI 29.8",
+    "shift_work": "Poor sleep quality",
+    "exercise_capacity": "Normal stress test"
+  }
+}
+```
+
+
+============================================================
+VIGNETTE #25
+============================================================
+## Cardiovascular Risk Analysis - 2021 ESC Guidelines
+
+### 1. Risk Factor Extraction
+
+| Risk Factor | Value | Notes |
+|-------------|-------|-------|
+| Age | 65 years | ✓ |
+| Gender | Female | ✓ |
+| Smoking | Not mentioned | Assumed non-smoker |
+| Systolic BP | 138 mmHg | ✓ |
+| Total Cholesterol | 165 mg/dL (4.3 mmol/L) | ✓ |
+| HDL Cholesterol | 51 mg/dL (1.3 mmol/L) | ✓ |
+
+### 2. SCORE2 Calculation
+
+**SCORE2 is NOT applicable** - Patient has established diabetes with target organ damage, placing her in very high cardiovascular risk category regardless of SCORE2.
+
+### 3. Risk Category Classification
+
+| Risk Category | Criteria Met |
+|---------------|--------------|
+| **VERY HIGH RISK** | ✓ Type 2 diabetes with target organ damage |
+| High Risk | - |
+| Moderate Risk | - |
+| Low Risk | - |
+
+**Target Organ Damage Evidence:**
+- Microalbuminuria (103 mg/g)
+- eGFR 57 mL/min/1.73 m² (CKD stage 3a)
+- Concentric LV remodeling
+
+### 4. Risk Modifiers
+
+| Risk Enhancing Factors | Present |
+|------------------------|---------|
+| CKD (eGFR 57) | ✓ |
+| Microalbuminuria | ✓ |
+| Overweight (BMI 28.8) | ✓ |
+| Physical inactivity | ✓ |
+| Suboptimal BP control | ✓ |
+| LV structural changes | ✓ |
+
+### 5. Clinical Summary
+
+This 65-year-old woman with type 2 diabetes is classified as **VERY HIGH cardiovascular risk** due to the presence of target organ damage (microalbuminuria and reduced eGFR). SCORE2 calculation is not needed as she already meets criteria for the highest risk category. Her 10-year cardiovascular risk is estimated at >20%.
+
+**Key management priorities:**
+- LDL target: <55 mg/dL (currently 79 mg/dL - needs intensification)
+- BP target: <130/80 mmHg (currently suboptimal)
+- Lifestyle interventions for weight management and physical activity
+
+### 6. JSON Output
+
+```json
+{
+  "Risk": {
+    "category": "Very High Risk",
+    "estimated_10_year_risk": ">20%",
+    "score2_applicable": false,
+    "score2_value": "N/A",
+    "rationale": "Type 2 diabetes with target organ damage"
+  },
+  "Risk_Factors": {
+    "age": 65,
+    "gender": "Female",
+    "smoking": "Not specified",
+    "systolic_bp_mmhg": 138,
+    "total_cholesterol_mmol_l": 4.3,
+    "hdl_cholesterol_mmol_l": 1.3,
+    "diabetes": "Type 2, diagnosed age 53"
+  },
+  "Risk_Modifiers": {
+    "target_organ_damage": [
+      "Microalbuminuria (103 mg/g)",
+      "CKD stage 3a (eGFR 57)",
+      "LV concentric remodeling"
+    ],
+    "additional_factors": [
+      "Overweight (BMI 28.8)",
+      "Physical inactivity",
+      "Suboptimal BP control",
+      "Hypertension",
+      "Dyslipidemia"
+    ]
+  }
+}
+```
+
+
+============================================================
+VIGNETTE #26
+============================================================
+## Cardiovascular Risk Analysis - 2021 ESC Guidelines
+
+### 1. Risk Factors Extraction
+
+| Parameter | Value | Unit |
+|-----------|-------|------|
+| Age | 36 | years |
+| Gender | Male | - |
+| Smoking | No | - |
+| Systolic BP | 134 | mmHg |
+| Total Cholesterol | 336 | mg/dL (8.7 mmol/L) |
+| HDL Cholesterol | 45 | mg/dL (1.16 mmol/L) |
+
+### 2. SCORE2 Calculation
+
+**SCORE2 is NOT applicable** in this case because:
+- Patient has **confirmed familial hypercholesterolemia** (FH) with positive genetic testing (LDLR mutation)
+- FH is considered a **high-risk condition** that supersedes risk calculators
+
+### 3. Risk Category Classification
+
+| Risk Category | **HIGH RISK** |
+|---------------|---------------|
+| Primary Reason | Familial Hypercholesterolemia (genetically confirmed) |
+| LDL Target | <70 mg/dL (<1.8 mmol/L) |
+
+### 4. Risk Modifiers Present
+
+| Risk Enhancers | Present |
+|----------------|---------|
+| Family History of Premature CVD | ✓ Yes (Mother MI at 47, Aunt SCD at 51) |
+| Overweight (BMI 27.7) | ✓ Yes |
+| High-normal BP (134/87) | ✓ Yes |
+| Sedentary Lifestyle | ✓ Yes |
+| Sleep Deprivation | ✓ Yes |
+
+### 5. Clinical Explanation
+
+This 36-year-old male is classified as **HIGH CARDIOVASCULAR RISK** due to genetically confirmed heterozygous familial hypercholesterolemia. The 2021 ESC Guidelines clearly state that patients with FH are automatically considered high-risk regardless of age or other factors.
+
+Key clinical points:
+- **LDL cholesterol of 258 mg/dL** is severely elevated and requires immediate intensive statin therapy
+- **Strong family history** of premature cardiovascular events supports the genetic diagnosis
+- Multiple **risk enhancers** (obesity, sedentary lifestyle, high-normal BP) further increase risk
+- **Target LDL <70 mg/dL** - current level represents >3.5-fold elevation above target
+
+### 6. JSON Summary
+
+```json
+{
+  "Risk": {
+    "category": "HIGH RISK",
+    "score_method": "Not applicable (Familial Hypercholesterolemia)",
+    "ldl_target": "<70 mg/dL (<1.8 mmol/L)",
+    "current_ldl": "258 mg/dL (6.7 mmol/L)"
+  },
+  "Risk_Factors": {
+    "age": 36,
+    "gender": "Male",
+    "smoking": false,
+    "systolic_bp": 134,
+    "total_cholesterol": 336,
+    "hdl_cholesterol": 45,
+    "familial_hypercholesterolemia": true,
+    "genetic_mutation": "LDLR heterozygous"
+  },
+  "Risk_Modifiers": {
+    "family_history_premature_cvd": true,
+    "bmi": 27.7,
+    "sedentary_lifestyle": true,
+    "sleep_deprivation": true,
+    "high_normal_bp": true
+  }
+}
+```
+
+**Recommendation**: Immediate initiation of high-intensity statin therapy with lifestyle modifications and consideration of additional lipid-lowering therapy if LDL target not achieved.
+
+
+============================================================
+VIGNETTE #27
+============================================================
+## Cardiovascular Risk Analysis - 2021 ESC Guidelines
+
+### 1. Risk Factors Extraction
+
+| Parameter | Value | Unit |
+|-----------|-------|------|
+| Age | 61 | years |
+| Gender | Female | - |
+| Smoking | Yes | Current/recent |
+| Systolic BP | 124 | mmHg |
+| Total Cholesterol | 199 | mg/dL (5.15 mmol/L) |
+| HDL Cholesterol | 54 | mg/dL (1.40 mmol/L) |
+
+### 2. SCORE2 Calculation
+
+**SCORE2 Parameters for Portugal (Moderate-risk country):**
+
+| Risk Factor | Value | Points/Category |
+|-------------|-------|-----------------|
+| Age | 61 years | Age category 60-64 |
+| Gender | Female | Female risk equations |
+| Smoking | Yes | Current smoker |
+| Systolic BP | 124 mmHg | Normal-high range |
+| Total Cholesterol | 5.15 mmol/L | Moderate level |
+| HDL Cholesterol | 1.40 mmol/L | Normal level |
+
+**Estimated SCORE2 Risk: ~8-10%** (10-year fatal and non-fatal CVD risk)
+
+### 3. Risk Category Classification
+
+| Initial Risk Category | SCORE2 Result | Final Risk Category | Rationale |
+|----------------------|---------------|-------------------|-----------|
+| Moderate-High Risk | 8-10% | **VERY HIGH RISK** | Coronary CT shows significant CAD with RCA occlusion |
+
+### 4. Risk Modifiers Present
+
+| Risk Modifier | Status | Impact |
+|---------------|--------|---------|
+| Coronary Calcium Score | 186 (>75th percentile) | ↑↑ Risk reclassification |
+| Coronary CT Angiography | RCA occlusion + non-obstructive plaques | ↑↑↑ Reclassifies to very high risk |
+| HbA1c | 5.6% (prediabetes range) | ↑ Mild risk enhancement |
+
+### 5. Clinical Explanation
+
+This 61-year-old female nurse initially presents with a **moderate-high cardiovascular risk** based on SCORE2 calculation (~8-10%). However, the coronary CT angiography findings are **game-changing**:
+
+- **RCA occlusion** indicates established coronary artery disease
+- **Calcium score of 186** (>75th percentile) confirms significant atherosclerotic burden
+- **Non-obstructive plaques** in LAD and LCX indicate widespread coronary disease
+
+According to 2021 ESC Guidelines, **any patient with established coronary artery disease automatically qualifies as VERY HIGH RISK**, regardless of risk score calculations. The RCA occlusion represents significant coronary pathology requiring intensive risk factor modification and likely revascularization consideration.
+
+### 6. JSON Output
+
+```json
+{
+  "Risk": {
+    "SCORE2_percentage": "8-10%",
+    "initial_risk_category": "moderate-high",
+    "final_risk_category": "very_high",
+    "country_risk_level": "moderate",
+    "reclassification_reason": "established_coronary_artery_disease"
+  },
+  "Risk_Factors": {
+    "age": 61,
+    "gender": "female",
+    "smoking": "yes",
+    "systolic_bp": 124,
+    "total_cholesterol_mmol": 5.15,
+    "hdl_cholesterol_mmol": 1.40,
+    "diabetes": "no",
+    "family_history": "not_reported"
+  },
+  "Risk_Modifiers": {
+    "coronary_calcium_score": {
+      "value": 186,
+      "percentile": ">75th",
+      "impact": "high_risk_reclassification"
+    },
+    "coronary_ct_angiography": {
+      "findings": "RCA_occlusion_with_nonobstructive_plaques",
+      "impact": "very_high_risk_reclassification"
+    },
+    "hba1c": {
+      "value": 5.6,
+      "category": "prediabetes",
+      "impact": "mild_risk_enhancement"
+    },
+    "bmi": {
+      "value": 20.1,
+      "category": "normal",
+      "impact": "neutral"
+    }
+  }
+}
+```
+
+**Clinical Priority:** This patient requires immediate cardiology referral for coronary artery disease management, intensive statin therapy, and consideration for revascularization of the occluded RCA.
+
+
+============================================================
+VIGNETTE #28
+============================================================
+## Cardiovascular Risk Analysis - 2021 ESC Guidelines
+
+### 1. Risk Factor Extraction
+
+| Risk Factor | Value | Notes |
+|-------------|-------|-------|
+| Age | 51 years | |
+| Gender | Male | |
+| Smoking | Former smoker | Quit 2 years ago (40 pack-years) |
+| Systolic BP | 118 mmHg | Well controlled |
+| Total Cholesterol | 136 mg/dL | On statin therapy |
+| HDL Cholesterol | 46 mg/dL | |
+
+### 2. SCORE2 Calculation
+
+**SCORE2 is NOT applicable** - Patient has established coronary artery disease (history of NSTEMI and PCI).
+
+### 3. Risk Category Classification
+
+| Risk Category | **VERY HIGH RISK** |
+|---------------|-------------------|
+| Justification | Established coronary artery disease (NSTEMI + PCI at age 49) |
+| ESC Class | I recommendation |
+
+### 4. Risk Assessment Summary
+
+| Parameter | Status | Target/Goal |
+|-----------|--------|-------------|
+| **Primary Risk** | Very High Risk | Secondary prevention |
+| **LDL Cholesterol** | 70 mg/dL | ✅ At target (<70 mg/dL) |
+| **Blood Pressure** | 118/67 mmHg | ✅ Well controlled |
+| **Smoking** | Former smoker | ✅ Cessation maintained |
+| **Lifestyle** | Sedentary | ⚠️ Needs improvement |
+
+### 5. Clinical Explanation
+
+This 51-year-old male is classified as **very high cardiovascular risk** due to his history of coronary artery disease (NSTEMI with PCI). The SCORE2 risk calculator is not used in patients with established cardiovascular disease, as they automatically qualify for the highest risk category requiring intensive secondary prevention measures.
+
+**Positive aspects:**
+- Excellent lipid control (LDL 70 mg/dL at target)
+- Well-controlled blood pressure
+- Successful smoking cessation
+- Recent stress test showing good functional capacity
+
+**Areas for improvement:**
+- Sedentary lifestyle requires intervention with structured exercise program
+- Continue optimal medical therapy and lifestyle modifications
+
+### 6. JSON Output
+
+```json
+{
+  "Risk": {
+    "category": "Very High Risk",
+    "score_method": "Not applicable - established CAD",
+    "justification": "History of NSTEMI and PCI (secondary prevention)"
+  },
+  "Risk_Factors": {
+    "age": 51,
+    "gender": "Male",
+    "smoking": "Former smoker (quit 2 years ago)",
+    "systolic_bp": 118,
+    "total_cholesterol": 136,
+    "hdl_cholesterol": 46,
+    "ldl_cholesterol": 70
+  },
+  "Risk_Modifiers": {
+    "established_cvd": "Yes - NSTEMI with PCI",
+    "family_history": "Not reported",
+    "sedentary_lifestyle": "Yes",
+    "bmi": 25.6,
+    "current_medications": "Optimal secondary prevention therapy",
+    "recent_stress_test": "Normal - good functional capacity"
+  }
+}
+```
+
+**Recommendation:** Continue current optimal medical therapy and focus on lifestyle intervention, particularly increasing physical activity levels while maintaining excellent risk factor control.
+
+
+============================================================
+VIGNETTE #29
+============================================================
+## Cardiovascular Risk Analysis - 2021 ESC Guidelines
+
+### 1. Risk Factor Extraction
+
+| Parameter | Value | Unit |
+|-----------|-------|------|
+| Age | 63 | years |
+| Gender | Female | - |
+| Smoking status | Former smoker (quit 2 years ago) | - |
+| Systolic BP | 114 | mmHg |
+| Total cholesterol | 149 | mg/dL (3.9 mmol/L) |
+| HDL cholesterol | 53 | mg/dL (1.4 mmol/L) |
+
+### 2. SCORE2 Calculation
+
+**SCORE2 is NOT applicable** in this case because the patient has established coronary artery disease (CAD) - status post angioplasty with stent placement 2 years ago.
+
+### 3. Risk Category Classification
+
+According to 2021 ESC Guidelines, this patient is classified as:
+
+| Risk Category | **VERY HIGH RISK** |
+|---------------|-------------------|
+| Rationale | Established coronary artery disease (previous PCI) |
+| Target LDL-C | <55 mg/dL (1.4 mmol/L) |
+| Current LDL-C | 80 mg/dL (2.1 mmol/L) |
+| Target Achievement | **NOT ACHIEVED** |
+
+### 4. Risk Assessment Summary
+
+| Component | Status |
+|-----------|--------|
+| **Primary Classification** | Very High Risk (established CAD) |
+| **SCORE2 Application** | Not applicable |
+| **LDL-C Goal** | <55 mg/dL |
+| **Current LDL-C** | 80 mg/dL |
+| **Gap to target** | 25 mg/dL above target |
+
+### 5. Clinical Explanation
+
+This 63-year-old woman is automatically classified as **very high cardiovascular risk** due to her established coronary artery disease (previous angioplasty). The 2021 ESC Guidelines do not require SCORE2 calculation for patients with established atherosclerotic cardiovascular disease, as they are already in the highest risk category.
+
+**Key Clinical Points:**
+- Despite optimal medical therapy and lifestyle modifications, LDL-C remains 25 mg/dL above the recommended target of <55 mg/dL
+- Consider intensifying lipid-lowering therapy (higher statin dose, additional agents like PCSK9 inhibitors)
+- Positive factors: smoking cessation, regular exercise, well-controlled BP, normal glucose metabolism
+- Continue current preventive medications and lifestyle interventions
+
+### 6. JSON Summary
+
+```json
+{
+  "Risk": {
+    "category": "Very High Risk",
+    "rationale": "Established coronary artery disease (previous PCI)",
+    "score2_applicable": false,
+    "score2_value": "N/A",
+    "ldl_target": "<55 mg/dL",
+    "ldl_current": "80 mg/dL",
+    "target_achieved": false
+  },
+  "Risk_Factors": {
+    "age": 63,
+    "gender": "Female",
+    "smoking": "Former smoker (quit 2 years ago)",
+    "systolic_bp": 114,
+    "total_cholesterol": 149,
+    "hdl_cholesterol": 53,
+    "established_cad": true
+  },
+  "Risk_Modifiers": {
+    "positive_factors": [
+      "Smoking cessation 2 years ago",
+      "Regular physical activity",
+      "Normal BMI (20.1)",
+      "Well-controlled blood pressure",
+      "Normal glucose metabolism"
+    ],
+    "areas_for_improvement": [
+      "LDL-C above target (80 vs <55 mg/dL)",
+      "Consider lipid therapy intensification"
+    ]
+  }
+}
+```
+
+
+============================================================
+VIGNETTE #30
+============================================================
+## Cardiovascular Risk Analysis - 2021 ESC Guidelines
+
+### 1. Risk Factor Extraction
+
+| Parameter | Value | Notes |
+|-----------|-------|-------|
+| Age | 64 years | |
+| Gender | Male | |
+| Smoking status | Former smoker (quit 5 years ago) | 40 pack-years history |
+| Systolic BP | 138 mmHg | On antihypertensive treatment |
+| Total cholesterol | 165 mg/dL (4.3 mmol/L) | On statin therapy |
+| HDL cholesterol | 52 mg/dL (1.3 mmol/L) | |
+
+### 2. SCORE2 Calculation
+
+**SCORE2 is NOT applicable** - Patient has established cardiovascular disease (ischemic stroke 3 months ago)
+
+### 3. Risk Category Classification
+
+| Risk Category | **VERY HIGH RISK** |
+|---------------|-------------------|
+| Justification | Established cardiovascular disease (ischemic stroke) |
+| ESC Guideline Reference | Class I recommendation |
+
+### 4. Risk Modifiers Present
+
+| Risk Modifier | Status | Impact |
+|---------------|--------|--------|
+| Pre-diabetes | Present (HbA1c 6.4%) | Increases risk |
+| Obesity | Present (BMI 28.7) | Increases risk |
+| Hypertriglyceridemia | Present (TG 209 mg/dL) | Increases risk |
+| Sedentary lifestyle | Present | Increases risk |
+| LV remodeling | Present (concentric remodeling) | Increases risk |
+| Left atrial enlargement | Present (severe) | Increases risk |
+
+### 5. Clinical Explanation
+
+This 64-year-old male is classified as **very high cardiovascular risk** due to established cardiovascular disease (recent ischemic stroke). According to 2021 ESC Guidelines, patients with established CVD automatically qualify for very high risk category, making SCORE2 calculation unnecessary.
+
+Multiple additional risk modifiers are present, including pre-diabetes, overweight, hypertriglyceridemia, and structural cardiac abnormalities, which further support intensive risk factor modification.
+
+Current LDL cholesterol (71 mg/dL) is above the recommended target of <55 mg/dL for very high-risk patients, indicating need for lipid therapy optimization.
+
+### 6. JSON Summary
+
+```json
+{
+  "Risk": {
+    "category": "Very High Risk",
+    "score2_applicable": false,
+    "score2_value": "N/A - Established CVD",
+    "justification": "Established cardiovascular disease (ischemic stroke)"
+  },
+  "Risk_Factors": {
+    "age": 64,
+    "gender": "Male",
+    "smoking": "Former smoker (quit 5 years ago)",
+    "systolic_bp": 138,
+    "total_cholesterol_mgdl": 165,
+    "hdl_cholesterol_mgdl": 52,
+    "established_cvd": "Ischemic stroke (3 months ago)"
+  },
+  "Risk_Modifiers": {
+    "prediabetes": "Present (HbA1c 6.4%)",
+    "overweight": "Present (BMI 28.7)",
+    "hypertriglyceridemia": "Present (TG 209 mg/dL)",
+    "sedentary_lifestyle": "Present",
+    "lv_remodeling": "Present (concentric)",
+    "left_atrial_enlargement": "Present (severe)",
+    "ldl_above_target": "Present (71 mg/dL, target <55 mg/dL)"
+  }
+}
+```
+
+**Recommendation**: Intensive risk factor modification with LDL target <55 mg/dL, blood pressure <130/80 mmHg, lifestyle interventions, and diabetes prevention strategies.
+

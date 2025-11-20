@@ -1,0 +1,819 @@
+{
+  "Vinheta 1": {
+    "Risco": {
+      "categoria": "Muito Alto",
+      "score2_calculado": "4-5%",
+      "determinantes": [
+        "Doença cardiovascular estabelecida",
+        "Estenose aórtica moderada sintomática",
+        "NT-proBNP elevado"
+      ]
+    },
+    "Fatores_de_risco": {
+      "idade": 67,
+      "genero": "feminino",
+      "tabagismo": "não referido",
+      "PA_sistolica": 131,
+      "colesterol_total": 137,
+      "HDL": 58,
+      "LDL": 62,
+      "nao_HDL": 79,
+      "HbA1c": 5.8,
+      "IMC": 19.7
+    },
+    "Modificadores": {
+      "aumentam_risco": [
+        "Estenose aórtica bicúspide",
+        "Hipertrofia ventricular esquerda",
+        "Dilatação auricular esquerda",
+        "NT-proBNP elevado",
+        "Alterações ECG sugestivas isquemia"
+      ],
+      "reduzem_risco": [
+        "Sob terapêutica otimizada",
+        "LDL-C controlado",
+        "Sem diabetes"
+      ]
+    }
+  },
+  "Vinheta 2": {
+    "risco_cardiovascular": {
+      "score2": "5-6%",
+      "categoria": "Moderado",
+      "risco_10_anos": "5-6% de eventos CV fatais e não-fatais"
+    },
+    "fatores_risco": {
+      "idade": 62,
+      "genero": "masculino",
+      "tabagismo": "ex-fumador (8 anos)",
+      "pa_sistolica": 129,
+      "colesterol_total": 187,
+      "colesterol_hdl": 51,
+      "colesterol_ldl": 109,
+      "colesterol_nao_hdl": 136,
+      "hipertensao": true,
+      "dislipidemia": true
+    },
+    "modificadores_risco": {
+      "aumentam_risco": [
+        "Pré-diabetes (HbA1c 6.2%)",
+        "Hipertrofia ventricular esquerda",
+        "Ex-fumador pesado (50 UMAs)",
+        "NT-proBNP elevado (204 pg/mL)"
+      ],
+      "comorbilidades": [
+        "Bloqueio AV (1º grau e episódios 2:1)",
+        "História de neoplasia do cólon"
+      ]
+    }
+  },
+  "Vinheta 3": {
+    "risco_cardiovascular": {
+      "score2": "3-4%",
+      "categoria": "Moderado",
+      "tempo_avaliacao": "10 anos"
+    },
+    "fatores_risco": {
+      "principais": {
+        "idade": 47,
+        "genero": "feminino",
+        "tabagismo": "ativo (52 UMAs)",
+        "pa_sistolica": 147,
+        "colesterol_total": 263,
+        "hdl_colesterol": 54,
+        "ldl_colesterol": 184,
+        "colesterol_nao_hdl": 209
+      },
+      "adicionais": {
+        "imc": 17.8,
+        "dpoc": "presente",
+        "historia_familiar": "mãe CABG 68 anos"
+      }
+    },
+    "modificadores_risco": {
+      "presentes": [
+        "DPOC",
+        "História familiar DCV (borderline)",
+        "Baixo peso (IMC <18.5)"
+      ],
+      "impacto": "Podem reclassificar para risco superior"
+    },
+    "alvos_terapeuticos": {
+      "ldl_colesterol": "<100 mg/dL",
+      "pressao_arterial": "<140/90 mmHg",
+      "tabagismo": "cessação completa"
+    }
+  },
+  "Vinheta 4": {
+    "risco_cardiovascular": {
+      "score2_percentagem": "5-7%",
+      "categoria": "Moderado-Alto",
+      "risco_10_anos": "5-7%"
+    },
+    "fatores_risco": {
+      "principais": {
+        "idade": 41,
+        "sexo": "masculino",
+        "tabagismo": "ativo_5_cigarros_dia",
+        "pressao_arterial_sistolica": 155,
+        "colesterol_total": 241,
+        "hdl_colesterol": 33,
+        "ldl_colesterol": 188
+      },
+      "adicionais": {
+        "hipertensao": "grau_2",
+        "pre_diabetes": "HbA1c_5.8",
+        "historia_familiar": "positiva",
+        "resposta_hipertensiva_esforco": true
+      }
+    },
+    "modificadores_risco": {
+      "aumentam_risco": [
+        "HDL muito baixo (<40 mg/dL)",
+        "História familiar de HTA e DM",
+        "Pré-diabetes (HbA1c 5.8%)",
+        "Resposta hipertensiva ao esforço"
+      ],
+      "neutros": [
+        "IMC normal (23)",
+        "Função renal normal"
+      ],
+      "diminuem_risco": [
+        "Início recente de exercício físico"
+      ]
+    }
+  },
+  "Vinheta 5": {
+    "risco_cardiovascular": {
+      "categoria": "Alto",
+      "score2_10anos": "8-10%",
+      "pais": "Portugal",
+      "regiao_risco": "Moderado"
+    },
+    "fatores_risco": {
+      "idade": 56,
+      "genero": "Feminino",
+      "tabagismo": {
+        "status": "Ativo",
+        "carga": "40 UMAs"
+      },
+      "pressao_arterial": {
+        "sistolica": 163,
+        "diastolica": 91,
+        "controlada": false
+      },
+      "lipidos": {
+        "colesterol_total": 224,
+        "ldl": 140,
+        "hdl": 45,
+        "triglicerideos": 196,
+        "nao_hdl": 179
+      },
+      "diabetes": {
+        "status": "Pré-diabetes",
+        "hba1c": 6.3,
+        "glicemia_jejum": 113
+      },
+      "obesidade": {
+        "imc": 31.3,
+        "classificacao": "Grau I"
+      }
+    },
+    "modificadores_risco": {
+      "lesao_orgao_alvo": {
+        "presente": true,
+        "tipos": [
+          "IC-FEp",
+          "Hipertrofia VE",
+          "Dilatação AE"
+        ]
+      },
+      "doenca_renal_cronica": {
+        "suspeita": true,
+        "creatinina": 1.17
+      },
+      "sindrome_metabolica": true,
+      "comorbilidades": [
+        "Depressão",
+        "Patologia osteoarticular"
+      ],
+      "adesao_terapeutica": "Comprometida"
+    }
+  },
+  "Vinheta 6": {
+    "Risco": {
+      "SCORE2_percentagem": "8-9%",
+      "categoria_risco": "ALTO",
+      "justificacao": "Aterosclerose subclínica documentada (placas coronárias)"
+    },
+    "Fatores_de_risco": {
+      "idade": 51,
+      "genero": "masculino",
+      "tabagismo": {
+        "status": "ativo",
+        "carga_tabagica": "21 UMAs"
+      },
+      "pressao_arterial": {
+        "consultorio": "149/98 mmHg",
+        "MAPA_24h": "129/88 mmHg",
+        "classificacao": "HTA grau 1"
+      },
+      "lipidos": {
+        "colesterol_total": "197 mg/dL",
+        "LDL_C": "148 mg/dL",
+        "HDL_C": "32 mg/dL",
+        "trigliceridos": "98 mg/dL",
+        "ApoB": "107 mg/dL",
+        "Lp_a": "39 mg/dL"
+      },
+      "glicemia_jejum": "94 mg/dL",
+      "HbA1c": "5.8%",
+      "sedentarismo": true,
+      "historia_familiar": "pai com CABG aos 71 anos"
+    },
+    "Modificadores": {
+      "aumentam_risco": [
+        "HDL-C muito baixo (<40 mg/dL)",
+        "Score de cálcio 47 (P50-75)",
+        "Placas coronárias não obstrutivas",
+        "Stress psicossocial (ansiedade)",
+        "Sedentarismo"
+      ],
+      "neutros": [
+        "Lp(a) 39 mg/dL (limiar 50 mg/dL)",
+        "História familiar (pai >55 anos)"
+      ]
+    }
+  },
+  "Vinheta 7": {
+    "risco_cardiovascular": {
+      "score2_percentagem": "8-9%",
+      "categoria": "Alto",
+      "regiao": "Portugal - Risco Moderado"
+    },
+    "fatores_risco": {
+      "idade": 64,
+      "genero": "feminino",
+      "tabagismo": {
+        "status": "ativo",
+        "carga_tabagica": "40 UMAs"
+      },
+      "pressao_arterial": {
+        "sistolica": 143,
+        "diastolica": 84,
+        "classificacao": "HTA grau 1"
+      },
+      "perfil_lipidico": {
+        "colesterol_total": 169,
+        "hdl": 48,
+        "ldl": 100,
+        "nao_hdl": 121,
+        "triglicerideos": 107
+      },
+      "diabetes": false,
+      "hba1c": 5.9
+    },
+    "modificadores_risco": {
+      "presentes": [
+        "Dilatação auricular esquerda moderada",
+        "Calcificação valvular aórtica",
+        "NT-proBNP elevado (288 pg/mL)",
+        "Anemia ligeira (Hb 10.9 g/dL)"
+      ],
+      "impacto": "Aumentam o risco real acima do calculado"
+    },
+    "recomendacoes": {
+      "prioridade_1": "Cessação tabágica",
+      "prioridade_2": "Controlo tensional",
+      "prioridade_3": "Terapêutica com estatina",
+      "alvo_ldl": "<70 mg/dL",
+      "alvo_pa": "<130/80 mmHg"
+    }
+  },
+  "Vinheta 8": {
+    "risco_cardiovascular": {
+      "score2_base": "8-10%",
+      "categoria_final": "ALTO",
+      "justificacao": "Diabetes + HVE + HDL muito baixo"
+    },
+    "fatores_risco": {
+      "idade": 65,
+      "genero": "masculino",
+      "tabagismo": "ex-fumador",
+      "pa_sistolica": 147,
+      "colesterol_total_mg": 129,
+      "hdl_mg": 33,
+      "ldl_mg": 49,
+      "triglicerideos_mg": 237,
+      "diabetes": true,
+      "hba1c": 6.3,
+      "imc": 28
+    },
+    "modificadores_risco": {
+      "agravantes": [
+        "HDL muito baixo (<40 mg/dL)",
+        "Hipertrigliceridemia (>200 mg/dL)",
+        "Hipertrofia ventricular esquerda",
+        "Diabetes mellitus",
+        "Sedentarismo",
+        "Síndrome metabólica"
+      ],
+      "atenuantes": [
+        "LDL controlado (<55 mg/dL)",
+        "Perda ponderal significativa (16kg)",
+        "SAOS sob tratamento",
+        "Ex-fumador"
+      ]
+    }
+  },
+  "Vinheta 9": {
+    "risco_cardiovascular": {
+      "score2_base": "2-3%",
+      "categoria_inicial": "Baixo-Moderado",
+      "categoria_final": "Moderado-Alto",
+      "risco_10_anos": "5-10%"
+    },
+    "fatores_risco": {
+      "idade": 44,
+      "sexo": "masculino",
+      "tabagismo": false,
+      "hipertensao": true,
+      "pa_sistolica": 145,
+      "colesterol_total": 229,
+      "ldl_c": 165,
+      "hdl_c": 37,
+      "colesterol_nao_hdl": 192,
+      "triglicerideos": 137
+    },
+    "modificadores_risco": {
+      "lp_a_elevada": {
+        "presente": true,
+        "valor": 92,
+        "impacto": "multiplica risco x2"
+      },
+      "apoB_elevada": {
+        "presente": true,
+        "valor": 172,
+        "impacto": "risco aterogénico muito elevado"
+      },
+      "hdl_baixo": {
+        "presente": true,
+        "valor": 37,
+        "impacto": "aumenta risco"
+      },
+      "historia_familiar": {
+        "presente": true,
+        "detalhe": "mãe com EAM aos 61 anos",
+        "impacto": "aumenta risco"
+      },
+      "atividade_fisica": {
+        "presente": true,
+        "impacto": "reduz risco"
+      }
+    }
+  },
+  "Vinheta 10": {
+    "risco": {
+      "categoria": "Muito Alto",
+      "score2_base": "3-4%",
+      "justificacao": "Doença aterosclerótica coronária documentada"
+    },
+    "fatores_risco": {
+      "idade": 54,
+      "genero": "feminino",
+      "tabagismo": "ativo_17_UMAs",
+      "pa_sistolica": 132,
+      "colesterol_total": 211,
+      "colesterol_hdl": 52,
+      "colesterol_ldl": 133,
+      "colesterol_nao_hdl": 159
+    },
+    "modificadores": {
+      "artrite_reumatoide": true,
+      "doenca_coronaria_documentada": true,
+      "score_calcio": 77,
+      "pcr_elevada": 4.5,
+      "placas_coronarias": {
+        "tronco_comum": "<25%",
+        "da_proximal": "25-49%",
+        "da_media": "<25%",
+        "cd_media": "25-49%"
+      }
+    }
+  },
+  "Vinheta 11": {
+    "risco_cardiovascular": {
+      "score2_percentual": "12-15%",
+      "categoria": "Alto Risco",
+      "recomendacao": "Considerar risco muito alto devido a modificadores"
+    },
+    "fatores_risco_principais": {
+      "idade": 61,
+      "genero": "masculino",
+      "pa_sistolica": 151,
+      "colesterol_nao_hdl": 169,
+      "hdl": 48,
+      "tabagismo": "não referido"
+    },
+    "modificadores_risco": {
+      "score_calcio": {
+        "valor": 178,
+        "percentil": "75-90",
+        "impacto": "eleva categoria de risco"
+      },
+      "sindrome_metabolica": {
+        "presente": true,
+        "componentes": [
+          "obesidade_central",
+          "pre_diabetes",
+          "dislipidemia",
+          "hipertensao"
+        ]
+      },
+      "fibrilhacao_auricular": {
+        "tipo": "paroxística",
+        "cha2ds2_vasc": 3
+      },
+      "saos": {
+        "gravidade": "grave",
+        "impacto": "aumenta risco CV"
+      },
+      "lesao_orgao_alvo": {
+        "cardiaca": [
+          "remodelagem_ve",
+          "dilatacao_ae"
+        ],
+        "vascular": [
+          "aterosclerose_subclinica"
+        ]
+      }
+    },
+    "alvos_terapeuticos": {
+      "ldl_colesterol": "<55 mg/dL",
+      "pressao_arterial": "<130/80 mmHg",
+      "hba1c": "<7%",
+      "peso": "redução 10%"
+    }
+  },
+  "Vinheta 12": {
+    "risco_cardiovascular": {
+      "categoria": "ALTO RISCO",
+      "score2": "Não aplicável - DRC G3b",
+      "justificacao": "Doença Renal Crónica estadio G3b (TFG 42 mL/min/1.73m²)"
+    },
+    "fatores_risco": {
+      "principais": [
+        "DRC G3b (TFG 42 mL/min/1.73m²)",
+        "HDL-C baixo (38 mg/dL)",
+        "Triglicéridos limítrofes (199 mg/dL)",
+        "LDL-C acima do alvo (84 mg/dL)"
+      ],
+      "ausentes": [
+        "Tabagismo",
+        "Diabetes",
+        "Obesidade",
+        "HTA descontrolada",
+        "Albuminúria"
+      ]
+    },
+    "modificadores_risco": {
+      "aumentam_risco": [
+        "Doença renal poliquística autossómica dominante",
+        "Dislipidemia aterogénica (HDL baixo + TG elevados)",
+        "Género feminino pós-menopausa"
+      ],
+      "reduzem_risco": [
+        "Exercício físico regular (3x/semana)",
+        "Não fumadora",
+        "IMC normal",
+        "Boa adesão terapêutica",
+        "Terapêutica cardioprotetora em curso"
+      ]
+    }
+  },
+  "Vinheta 13": {
+    "risco_cardiovascular": {
+      "categoria": "Muito Alto",
+      "score2_estimado": "8-10%",
+      "determinante_principal": "DRC estádio 3b (TFG 42 mL/min/1.73m²)"
+    },
+    "fatores_risco": {
+      "principais": [
+        "Doença Renal Crónica estádio 3b",
+        "Hipertensão arterial",
+        "Dislipidemia",
+        "HDL-C baixo (38 mg/dL)",
+        "Idade (61 anos)",
+        "Género masculino"
+      ],
+      "controláveis": [
+        "PA sistólica 131 mmHg",
+        "LDL-C 65 mg/dL",
+        "Triglicéridos 164 mg/dL",
+        "HDL-C baixo"
+      ]
+    },
+    "modificadores_risco": {
+      "aumentam_risco": [
+        "Microalbuminúria (100 mg/g)",
+        "Bicuspidia aórtica com insuficiência moderada",
+        "HDL-C <40 mg/dL no homem"
+      ],
+      "neutros_ou_protetores": [
+        "Exercício físico regular",
+        "IMC normal (25.4)",
+        "Não diabético",
+        "Uso de iSGLT2",
+        "NT-proBNP normal"
+      ]
+    },
+    "alvos_terapeuticos": {
+      "LDL_C": "<55 mg/dL",
+      "PA_sistolica": "<130 mmHg",
+      "colesterol_nao_HDL": "<85 mg/dL"
+    }
+  },
+  "Vinheta 14": {
+    "risco_cardiovascular": {
+      "categoria": "ALTO",
+      "score_estimado": "10-15%",
+      "ferramenta": "SCORE2-Diabetes",
+      "guideline": "ESC 2021"
+    },
+    "fatores_risco": {
+      "principais": [
+        "Diabetes tipo 2 (5 anos)",
+        "Idade 59 anos",
+        "Género feminino",
+        "Dislipidemia (HDL baixo: 43 mg/dL)",
+        "Excesso peso (IMC 26)",
+        "DRC estadio 2 (TFG 70 mL/min)"
+      ],
+      "valores_score": {
+        "idade": 59,
+        "pa_sistolica": 124,
+        "colesterol_total": 176,
+        "hdl": 43,
+        "tabagismo": false,
+        "diabetes": true,
+        "hba1c": 7.8
+      }
+    },
+    "modificadores_risco": {
+      "aumentam": [
+        "TFG reduzida (70 mL/min)",
+        "HDL baixo (<45 mg/dL mulheres)",
+        "Controlo glicémico subótimo",
+        "Remodeling VE",
+        "Dilatação auricular"
+      ],
+      "reduzem": [
+        "Ausência albuminúria",
+        "Atividade física regular",
+        "Terapêutica com iSGLT2",
+        "PA controlada",
+        "Sob estatina"
+      ]
+    }
+  },
+  "Vinheta 15": {
+    "risco_cardiovascular": {
+      "categoria": "Muito Elevado",
+      "score2_diabetes": "12-15%",
+      "justificacao": "Diabetes tipo 2 com múltiplos fatores de risco"
+    },
+    "fatores_risco": {
+      "principais": [
+        "Diabetes tipo 2 (5 anos evolução)",
+        "Hipertensão arterial",
+        "Dislipidemia (HDL baixo: 45 mg/dL)",
+        "Excesso peso (IMC 29.8)",
+        "Ex-tabagismo (20 UMAs)"
+      ],
+      "valores_atuais": {
+        "ldl_colesterol": "106 mg/dL",
+        "pressao_arterial": "134/82 mmHg",
+        "hba1c": "6.6%",
+        "tfg": "75 mL/min/1.73m²"
+      }
+    },
+    "modificadores_risco": {
+      "aumentam": [
+        "Triglicerídeos elevados (178 mg/dL)",
+        "Distúrbio do sono",
+        "Trabalho por turnos",
+        "Dilatação auricular esquerda"
+      ],
+      "diminuem": [
+        "Cessação tabágica há 5 anos",
+        "Uso de empagliflozina (proteção CV)",
+        "Ausência de albuminúria",
+        "Prova de esforço negativa"
+      ]
+    }
+  },
+  "Vinheta 16": {
+    "Risco": {
+      "categoria_ESC_2021": "MUITO ALTO",
+      "score2_diabetes_estimado": "15-20%",
+      "risco_10_anos": ">10%"
+    },
+    "Fatores_de_risco": {
+      "idade": 65,
+      "genero": "feminino",
+      "diabetes_tipo_2": true,
+      "hipertensao": true,
+      "dislipidemia": true,
+      "obesidade": "sobrepeso (IMC 28.8)",
+      "sedentarismo": true,
+      "tabagismo": false
+    },
+    "Modificadores": {
+      "lesao_orgao_alvo": {
+        "microalbuminuria": "103 mg/g",
+        "hipertrofia_VE": "remodeling concentrico",
+        "dilatacao_AE": "ligeira"
+      },
+      "doenca_renal_cronica": {
+        "estadio": "3a",
+        "TFG": "57 mL/min/1.73m2"
+      },
+      "duracao_diabetes": "12 anos",
+      "controlo_glicemico": "HbA1c 6.9%",
+      "medicacao_protetora": {
+        "antiagregante": "AAS 100mg",
+        "iSGLT2": "dapagliflozina",
+        "iECA": "perindopril"
+      }
+    }
+  },
+  "Vinheta 17": {
+    "risco_cardiovascular": {
+      "categoria": "MUITO ALTO",
+      "justificacao": "Hipercolesterolemia Familiar confirmada geneticamente",
+      "score2_aplicavel": false,
+      "idade_inferior_40": true
+    },
+    "fatores_risco": {
+      "principais": [
+        "Hipercolesterolemia Familiar (mutação LDLR)",
+        "LDL-C 258 mg/dL",
+        "HDL-C baixo (45 mg/dL)",
+        "PA normal-alta (134/87 mmHg)",
+        "Excesso de peso (IMC 27.7)"
+      ],
+      "familiares": [
+        "Mãe com EAM aos 47 anos",
+        "Tia materna morte súbita aos 51 anos",
+        "Avó materna IC aos 67 anos"
+      ]
+    },
+    "modificadores_risco": {
+      "aumentam": [
+        "Sedentarismo",
+        "Privação de sono (6h/dia)",
+        "História familiar muito prematura",
+        "Triglicerídeos limítrofes (164 mg/dL)"
+      ],
+      "diminuem": [
+        "Não fumador",
+        "Idade jovem",
+        "Sem lesão de órgão-alvo documentada"
+      ]
+    }
+  },
+  "Vinheta 18": {
+    "Risco": {
+      "categoria": "Muito Alto",
+      "score2_calculado": "4-5%",
+      "justificacao": "Doença aterosclerótica coronária documentada"
+    },
+    "Fatores_de_risco": {
+      "idade": 61,
+      "genero": "feminino",
+      "tabagismo": true,
+      "PA_sistolica": 124,
+      "colesterol_total": 199,
+      "colesterol_HDL": 54,
+      "colesterol_LDL": 87,
+      "colesterol_nao_HDL": 145,
+      "diabetes": false,
+      "IMC": 20.1
+    },
+    "Modificadores": {
+      "score_calcio": {
+        "valor": 186,
+        "percentil": ">P75",
+        "impacto": "Reclassifica para risco superior"
+      },
+      "doenca_coronaria": {
+        "presente": true,
+        "detalhes": "Oclusão CD média, placas não obstrutivas",
+        "impacto": "Define risco muito alto"
+      },
+      "historia_familiar": "Não referida",
+      "funcao_renal": "Normal (Cr 0.58 mg/dL)"
+    }
+  },
+  "Vinheta 19": {
+    "risco_cardiovascular": {
+      "categoria": "Muito Alto",
+      "justificacao": "Doença cardiovascular aterosclerótica estabelecida - EAM prévio",
+      "score2": "Não aplicável - prevenção secundária"
+    },
+    "fatores_risco": {
+      "principais": [
+        "EAM prévio aos 49 anos",
+        "Ex-tabagismo (40 UMAs)",
+        "Sedentarismo",
+        "HDL-C baixo (46 mg/dL)",
+        "Ligeiro excesso ponderal (IMC 25.6)"
+      ],
+      "controlados": [
+        "Pressão arterial (118/67 mmHg)",
+        "Glicemia (85 mg/dL)",
+        "Tabagismo (cessação há 2 anos)"
+      ],
+      "nao_controlados": [
+        "LDL-C 70 mg/dL (alvo <55 mg/dL)",
+        "Colesterol não-HDL 90 mg/dL (alvo <85 mg/dL)",
+        "Sedentarismo"
+      ]
+    },
+    "modificadores_risco": {
+      "aumentam_risco": [
+        "Idade precoce do primeiro evento (49 anos)",
+        "Sedentarismo",
+        "Exposição ocupacional (fábrica de plásticos)"
+      ],
+      "reduzem_risco": [
+        "Cessação tabágica",
+        "Boa capacidade funcional",
+        "Ausência de isquemia no teste de esforço"
+      ]
+    }
+  },
+  "Vinheta 20": {
+    "Risco": {
+      "categoria": "Muito Alto Risco",
+      "justificacao": "Doença cardiovascular aterosclerótica estabelecida - angioplastia coronária prévia",
+      "score2": "Não aplicável - prevenção secundária"
+    },
+    "Fatores_de_risco": {
+      "idade": 63,
+      "genero": "feminino",
+      "tabagismo": "ex-fumadora (cessação há 2 anos)",
+      "pressao_arterial_sistolica": 114,
+      "colesterol_total_mg_dl": 149,
+      "colesterol_hdl_mg_dl": 53,
+      "colesterol_ldl_mg_dl": 80,
+      "colesterol_nao_hdl_mg_dl": 96,
+      "diabetes": "não",
+      "hba1c": 5.6
+    },
+    "Modificadores": {
+      "positivos": [
+        "Cessação tabágica",
+        "Atividade física regular",
+        "IMC normal",
+        "Boa adesão terapêutica"
+      ],
+      "negativos": [
+        "História de doença coronária",
+        "LDL-C acima do alvo terapêutico"
+      ]
+    },
+    "Recomendacoes": {
+      "ldl_alvo": "<55 mg/dL",
+      "intervencao_prioritaria": "Intensificar terapêutica hipolipemiante",
+      "monitorizacao": "Reavaliação lipídica em 4-6 semanas após ajuste terapêutico"
+    }
+  },
+  "Vinheta 21": {
+    "Risco": {
+      "categoria": "Muito Alto Risco",
+      "score2": "Não aplicável - Doença CV estabelecida",
+      "justificacao": "AVC isquémico prévio (há 3 meses)"
+    },
+    "Fatores_de_risco": {
+      "idade": 64,
+      "genero": "Masculino",
+      "tabagismo": "Ex-fumador (cessação há 5 anos)",
+      "hipertensao": true,
+      "dislipidemia": true,
+      "pre_diabetes": true,
+      "IMC": 28.7,
+      "sedentarismo": true,
+      "LDL_colesterol": "71 mg/dL",
+      "PA": "138/81 mmHg",
+      "HbA1c": "6.4%"
+    },
+    "Modificadores": {
+      "doenca_cv_previa": "AVC isquémico",
+      "hipertrigliceridemia": "209 mg/dL",
+      "dilatacao_auricular_grave": true,
+      "remodeling_VE": "concêntrico",
+      "historia_tabagica": "40 UMAs"
+    }
+  }
+}

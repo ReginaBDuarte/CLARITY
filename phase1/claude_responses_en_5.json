@@ -1,0 +1,800 @@
+{
+  "Vinheta 1": {
+    "Risk": {
+      "SCORE2": "2-3%",
+      "Risk_Category": "Low Risk",
+      "10_Year_CVD_Risk": "<5%",
+      "Reassessment_Interval": "5 years"
+    },
+    "Risk_Factors": {
+      "Age": "44 years",
+      "Gender": "Male",
+      "Smoking": "No",
+      "Systolic_BP": "114 mmHg",
+      "Total_Cholesterol": "183 mg/dL",
+      "HDL_Cholesterol": "55 mg/dL",
+      "LDL_Cholesterol": "110 mg/dL"
+    },
+    "Risk_Modifiers": {
+      "Family_History_CVD": "No",
+      "Physical_Activity": "Sedentary (negative modifier)",
+      "BMI": "23 kg/m² (normal)",
+      "Diabetes": "No",
+      "Chronic_Kidney_Disease": "No"
+    }
+  },
+  "Vinheta 2": {
+    "Risk": {
+      "category": "Low Risk",
+      "score_system": "ESC 2021 Guidelines",
+      "score_value": "Not applicable (age <50 for women)",
+      "country_risk": "Moderate-risk country (Portugal)"
+    },
+    "Risk_Factors": {
+      "non_modifiable": {
+        "age": 40,
+        "gender": "Female"
+      },
+      "modifiable": {
+        "smoking": "Current smoker",
+        "systolic_bp": 124,
+        "total_cholesterol": 190,
+        "hdl_cholesterol": 67,
+        "ldl_cholesterol": 105
+      }
+    },
+    "Risk_Modifiers": {
+      "protective_factors": [
+        "Regular exercise",
+        "Normal BMI (23.8)",
+        "High HDL cholesterol (67 mg/dL)",
+        "Normal arterial stiffness (PWV 6.8 m/s)",
+        "Optimal ambulatory BP"
+      ],
+      "risk_enhancing_factors": [
+        "Current smoking"
+      ],
+      "recommendations": [
+        "Smoking cessation (priority)",
+        "Continue regular exercise",
+        "Maintain healthy weight"
+      ]
+    }
+  },
+  "Vinheta 3": {
+    "Risk": {
+      "SCORE2": "2-3%",
+      "Category": "Low Risk",
+      "10_year_CVD_risk": "<5%"
+    },
+    "Risk_Factors": {
+      "Age": "58 years (risk factor)",
+      "Gender": "Female",
+      "Smoking": "Non-smoker",
+      "Systolic_BP": "122 mmHg (normal-high)",
+      "Total_Cholesterol": "164 mg/dL (borderline)",
+      "HDL_Cholesterol": "47 mg/dL (low-normal)",
+      "LDL_Cholesterol": "105 mg/dL (above optimal)"
+    },
+    "Risk_Modifiers": {
+      "BMI": "29.9 (overweight) - increases risk",
+      "Physical_Activity": "Daily walks - decreases risk",
+      "CAC_Score": "0 - significantly decreases risk",
+      "Overall_Modifier_Effect": "Risk reduction due to CAC=0"
+    }
+  },
+  "Vinheta 4": {
+    "patient_assessment": {
+      "risk": {
+        "score2_percentage": "2-3%",
+        "calculated_category": "Low Risk",
+        "modified_category": "Moderate Risk",
+        "rationale": "Family history of premature CVD reclassifies risk upward"
+      },
+      "risk_factors": {
+        "age": 54,
+        "gender": "Male",
+        "smoking": false,
+        "systolic_bp": 118,
+        "total_cholesterol": 183,
+        "hdl_cholesterol": 55,
+        "ldl_cholesterol": 110
+      },
+      "risk_modifiers": {
+        "family_history_premature_cvd": true,
+        "sedentary_lifestyle": true,
+        "normal_bmi": true,
+        "diabetes": false,
+        "chronic_kidney_disease": false,
+        "final_risk_modification": "upward_reclassification"
+      }
+    }
+  },
+  "Vinheta 5": {
+    "Risk": {
+      "SCORE2": "2-3%",
+      "Category": "Low Risk",
+      "Country": "Portugal (moderate-risk)"
+    },
+    "Risk_Factors": {
+      "Age": "63 years",
+      "Gender": "Female",
+      "Smoking": "No",
+      "Systolic_BP": "107 mmHg",
+      "Total_Cholesterol": "214 mg/dL (5.5 mmol/L)",
+      "HDL_Cholesterol": "67 mg/dL (1.7 mmol/L)"
+    },
+    "Risk_Modifiers": {
+      "Atrial_Fibrillation_History": "Present - increases risk",
+      "Hypothyroidism": "Present - potential modifier",
+      "Structural_Heart_Changes": "Mild LA enlargement, mild MR",
+      "First_Degree_AV_Block": "Present - minimal impact"
+    }
+  },
+  "Vinheta 6": {
+    "Risk": {
+      "category": "HIGH RISK",
+      "score_system": "Clinical assessment (SCORE2 suboptimal at age 41)",
+      "rationale": "Multiple risk factors with target organ damage",
+      "ldl_target": "<70 mg/dL",
+      "bp_target": "<140/90 mmHg"
+    },
+    "Risk_Factors": {
+      "age": 41,
+      "gender": "Female",
+      "smoking": "Active (25 pack-years)",
+      "systolic_bp": 146,
+      "total_cholesterol": 270,
+      "hdl_cholesterol": 53,
+      "ldl_cholesterol": 189,
+      "hba1c": 6.3,
+      "bmi": 25.7
+    },
+    "Risk_Modifiers": {
+      "target_organ_damage": "Present (LV remodeling, LA dilation)",
+      "physical_activity": "Sedentary",
+      "diabetes_status": "Prediabetes",
+      "weight_status": "Overweight",
+      "medication_adherence": "Poor (discontinued antihypertensive)"
+    }
+  },
+  "Vinheta 7": {
+    "Risk": {
+      "SCORE2_10year": "8-10%",
+      "Risk_Category": "High",
+      "Recommended_Category": "Consider Very High due to multiple modifiers"
+    },
+    "Risk_Factors": {
+      "Age": 48,
+      "Gender": "Male",
+      "Smoking": "No",
+      "Systolic_BP_mmHg": 161,
+      "Total_Cholesterol_mgdL": 231,
+      "HDL_Cholesterol_mgdL": 43
+    },
+    "Risk_Modifiers": {
+      "Hypertension_Grade2": true,
+      "Prediabetes_HbA1c": 6.2,
+      "BMI": 28.2,
+      "Triglycerides_mgdL": 197,
+      "Arterial_Stiffness_PWV": 9.3,
+      "Non_Dipper_Pattern": true,
+      "Hyperuricemia": true,
+      "Sleep_Apnea_Symptoms": true
+    }
+  },
+  "Vinheta 8": {
+    "Risk": {
+      "score2_percentage": "4-5%",
+      "risk_category": "Low Risk",
+      "country_risk_region": "Moderate-risk (Portugal)",
+      "exercise_clearance": "Safe to initiate"
+    },
+    "Risk_Factors": {
+      "age": 57,
+      "gender": "Female",
+      "smoking": "Current (0.5 pack/day)",
+      "systolic_bp": 120,
+      "total_cholesterol_mmol": 5.1,
+      "hdl_cholesterol_mmol": 1.5,
+      "ldl_cholesterol_mg_dl": 119
+    },
+    "Risk_Modifiers": {
+      "apoB_elevation": "Mild (94 mg/dL)",
+      "sedentary_lifestyle": "Present",
+      "bmi": "Normal (21.5)",
+      "diabetes": "Absent",
+      "ckd": "Absent",
+      "family_history": "Not reported"
+    }
+  },
+  "Vinheta 9": {
+    "Risk": {
+      "SCORE2_percentage": "8-10%",
+      "risk_category": "High Risk",
+      "country_risk_region": "Portugal (moderate-risk)"
+    },
+    "Risk_Factors": {
+      "age": 52,
+      "gender": "Male",
+      "smoking": "Active (50 pack-years)",
+      "systolic_BP_mmHg": 138,
+      "total_cholesterol_mg_dL": 224,
+      "HDL_cholesterol_mg_dL": 37
+    },
+    "Risk_Modifiers": {
+      "CAC_score": 23,
+      "coronary_plaques": "Non-obstructive (<50%)",
+      "lipoprotein_a_mg_dL": 38,
+      "physical_activity": "Physically demanding work",
+      "subclinical_atherosclerosis": "Present"
+    }
+  },
+  "Vinheta 10": {
+    "Risk": {
+      "category": "Very High Risk",
+      "score2_applicable": false,
+      "score2_value": "N/A - Established CVD",
+      "primary_reason": "Moderate aortic stenosis (established CVD)"
+    },
+    "Risk_Factors": {
+      "age": 67,
+      "gender": "Female",
+      "smoking": "Not specified",
+      "systolic_bp": 131,
+      "total_cholesterol_mgdl": 137,
+      "hdl_cholesterol_mgdl": 58,
+      "ldl_cholesterol_mgdl": 62
+    },
+    "Risk_Modifiers": {
+      "established_cvd": "Moderate aortic stenosis",
+      "hypertension": "Present, treated",
+      "lv_remodeling": "Concentric",
+      "left_atrial_enlargement": "Moderate",
+      "elevated_natriuretic_peptides": "NT-proBNP 985 pg/mL",
+      "target_ldl": "<55 mg/dL for very high risk"
+    }
+  },
+  "Vinheta 11": {
+    "Risk": {
+      "category": "Very High Risk",
+      "score2_estimate": "8-10%",
+      "primary_qualifier": "Diabetes mellitus (HbA1c 6.2%)",
+      "country_risk_level": "Moderate-risk country (Portugal)"
+    },
+    "Risk_Factors": {
+      "age": 62,
+      "gender": "Male",
+      "smoking": "Former smoker (quit 8 years ago)",
+      "systolic_bp": 129,
+      "total_cholesterol_mmol": 4.8,
+      "hdl_cholesterol_mmol": 1.3,
+      "diabetes": "Yes (HbA1c 6.2%)"
+    },
+    "Risk_Modifiers": {
+      "diabetes_mellitus": "Present - upgrades to very high risk",
+      "cardiac_arrhythmia": "2:1 AV block",
+      "lv_structural_changes": "Concentric remodeling",
+      "atrial_dilation": "Moderate",
+      "ckd": "Absent",
+      "additional_notes": "Syncope with documented AV block requires urgent cardiac intervention"
+    }
+  },
+  "Vinheta 12": {
+    "Risk": {
+      "category": "HIGH RISK",
+      "score_method": "Not applicable - established hypertension",
+      "justification": "Grade 2 hypertension (SBP 189 mmHg)"
+    },
+    "Risk_Factors": {
+      "age": 47,
+      "gender": "Female",
+      "smoking": "Current smoker",
+      "systolic_bp": 189,
+      "total_cholesterol": 263,
+      "hdl_cholesterol": 54,
+      "ldl_cholesterol": 184
+    },
+    "Risk_Modifiers": {
+      "copd": "Present",
+      "smoking_history": "52 pack-years",
+      "family_history": "Maternal CAD (CABG at 68)",
+      "additional_notes": "Underweight BMI 17.8"
+    }
+  },
+  "Vinheta 13": {
+    "Risk": {
+      "category": "Moderate-High Risk",
+      "score_system": "Clinical Assessment (SCORE2 not applicable <40 years)",
+      "estimated_10_year_risk": "8-12% (estimated)",
+      "recommendation": "Aggressive risk factor modification required"
+    },
+    "Risk_Factors": {
+      "age": 41,
+      "gender": "Male",
+      "smoking": "Current (5 cigarettes/day)",
+      "systolic_bp": 155,
+      "total_cholesterol": 241,
+      "hdl_cholesterol": 33,
+      "ldl_cholesterol": 188,
+      "diabetes": "No (prediabetic HbA1c 5.8%)"
+    },
+    "Risk_Modifiers": {
+      "family_history": "Maternal hypertension and diabetes",
+      "ecg_abnormalities": "Nonspecific ST-T wave changes",
+      "exercise_response": "Hypertensive response to exertion",
+      "bmi": 23,
+      "additional_factors": "Prediabetic range HbA1c"
+    }
+  },
+  "Vinheta 14": {
+    "Risk": {
+      "category": "Very High Risk",
+      "score_method": "Not applicable - established CVD equivalent",
+      "ldl_target": "<55 mg/dL (<1.4 mmol/L)",
+      "current_ldl": "140 mg/dL"
+    },
+    "Risk_Factors": {
+      "age": 56,
+      "gender": "Female",
+      "smoking": "Current smoker (40 pack-years)",
+      "systolic_bp": "163 mmHg",
+      "total_cholesterol": "224 mg/dL",
+      "hdl_cholesterol": "45 mg/dL"
+    },
+    "Risk_Modifiers": {
+      "established_conditions": [
+        "Heart failure with preserved EF",
+        "Diabetes mellitus"
+      ],
+      "risk_enhancers": [
+        "Obesity (BMI 31.3)",
+        "Uncontrolled hypertension",
+        "Hypertriglyceridemia",
+        "CKD stage 2",
+        "Medication non-adherence"
+      ]
+    }
+  },
+  "Vinheta 15": {
+    "Risk": {
+      "SCORE2_percentage": "8-10%",
+      "risk_category": "High risk",
+      "modified_risk_category": "Very high risk (due to subclinical atherosclerosis)"
+    },
+    "Risk_Factors": {
+      "age": 51,
+      "gender": "Male",
+      "smoking": "Yes (21 pack-years)",
+      "systolic_BP": 149,
+      "total_cholesterol": 197,
+      "HDL_cholesterol": 32,
+      "hypertension": "Yes",
+      "dyslipidemia": "Yes"
+    },
+    "Risk_Modifiers": {
+      "CAC_score": "47 (P50-75)",
+      "coronary_atherosclerosis": "Non-obstructive disease in all three vessels",
+      "sedentary_lifestyle": "Yes",
+      "low_HDL": "Yes (<40 mg/dL)",
+      "elevated_ApoB": "Yes (107 mg/dL)",
+      "family_history_premature_CAD": "No"
+    }
+  },
+  "Vinheta 16": {
+    "Risk": {
+      "score2_percentage": "8-9%",
+      "risk_category": "Moderate risk",
+      "10_year_cvd_risk": "5-10%"
+    },
+    "Risk_Factors": {
+      "age": 64,
+      "gender": "Female",
+      "smoking": "Active smoker (40 pack-years)",
+      "systolic_bp": 143,
+      "total_cholesterol": 169,
+      "hdl_cholesterol": 48,
+      "diabetes": "No",
+      "family_history": "Not reported"
+    },
+    "Risk_Modifiers": {
+      "chronic_kidney_disease": "No",
+      "heart_failure": "No",
+      "atrial_fibrillation": "No",
+      "inflammatory_conditions": "Not reported",
+      "additional_findings": "Cardiac murmur, concentric LV remodeling, moderate LA dilation"
+    }
+  },
+  "Vinheta 17": {
+    "Risk": {
+      "Category": "HIGH RISK",
+      "Method": "Age-based classification (≥65 years)",
+      "SCORE2_Applicable": false,
+      "SCORE2_Value": "N/A - Age ≥65 years",
+      "Target_LDL": "<55 mg/dL and >50% reduction"
+    },
+    "Risk_Factors": {
+      "Age": "65 years",
+      "Gender": "Male",
+      "Smoking": "Former smoker",
+      "Systolic_BP": "147 mmHg",
+      "Total_Cholesterol": "129 mg/dL",
+      "HDL_Cholesterol": "33 mg/dL"
+    },
+    "Risk_Modifiers": {
+      "Prediabetes": "HbA1c 6.3%",
+      "Low_HDL": "33 mg/dL",
+      "Hypertriglyceridemia": "237 mg/dL",
+      "Obesity": "BMI 28 kg/m²",
+      "Hypertension": "147/68 mmHg",
+      "Cardiac_Abnormalities": "Concentric LV remodeling, aortic sclerosis"
+    }
+  },
+  "Vinheta 18": {
+    "Risk": {
+      "SCORE2": "4-5%",
+      "Category": "Moderate Risk",
+      "Age_Group": "40-49 years",
+      "Country_Risk": "Portugal (moderate-risk)"
+    },
+    "Risk_Factors": {
+      "Age": "44 years",
+      "Gender": "Male",
+      "Smoking": "No",
+      "Systolic_BP": "145 mmHg",
+      "Total_Cholesterol": "229 mg/dL (5.9 mmol/L)",
+      "HDL_Cholesterol": "37 mg/dL (0.96 mmol/L)"
+    },
+    "Risk_Modifiers": {
+      "Family_History": "Maternal MI at 61 years - increases risk",
+      "LDL_Cholesterol": "165 mg/dL - significantly elevated",
+      "Lipoprotein_a": "92 mg/dL - very high risk modifier",
+      "ApoB": "172 mg/dL - elevated",
+      "Physical_Activity": "Regular - protective",
+      "BMI": "22.5 - normal",
+      "Overall_Impact": "Multiple modifiers suggest higher than calculated risk"
+    }
+  },
+  "Vinheta 19": {
+    "Risk": {
+      "SCORE2_percentage": "4-5%",
+      "baseline_category": "Moderate Risk",
+      "final_category": "Moderate-to-High Risk",
+      "upgrade_rationale": "Multiple significant risk modifiers"
+    },
+    "Risk_Factors": {
+      "age": 54,
+      "gender": "Female",
+      "smoking": "Yes (17 pack-years)",
+      "systolic_BP": "132 mmHg",
+      "total_cholesterol": "211 mg/dL",
+      "HDL_cholesterol": "52 mg/dL"
+    },
+    "Risk_Modifiers": {
+      "rheumatoid_arthritis": "Present - major modifier",
+      "coronary_calcium_score": "77 (75th-90th percentile)",
+      "hs_CRP": "4.5 mg/L (elevated)",
+      "coronary_atherosclerosis": "Multiple vessels with 25-49% stenosis",
+      "recommendation": "Risk category upgrade warranted"
+    }
+  },
+  "Vinheta 20": {
+    "Risk": {
+      "SCORE2_estimated": "8-10%",
+      "initial_category": "High Risk",
+      "final_category": "Very High Risk",
+      "LDL_target": "<55 mg/dL",
+      "current_LDL": "118 mg/dL"
+    },
+    "Risk_Factors": {
+      "age": 61,
+      "gender": "Male",
+      "smoking": "Not mentioned (assumed non-smoker)",
+      "systolic_BP": "151 mmHg",
+      "total_cholesterol": "217 mg/dL (5.6 mmol/L)",
+      "HDL_cholesterol": "48 mg/dL (1.2 mmol/L)"
+    },
+    "Risk_Modifiers": {
+      "reclassifying_conditions": [
+        "Atrial fibrillation (documented)",
+        "Diabetes mellitus (HbA1c 6.3%)"
+      ],
+      "risk_enhancers": [
+        "Severe obesity (BMI 33.7)",
+        "Coronary calcium score 178 (75th-90th percentile)",
+        "Severe obstructive sleep apnea",
+        "Hypertension Stage 1"
+      ]
+    }
+  },
+  "Vinheta 21": {
+    "Risk": {
+      "category": "Very High Risk",
+      "score2_applicable": false,
+      "score2_value": "N/A",
+      "primary_reason": "CKD Stage 3b (eGFR 42 mL/min/1.73m²)"
+    },
+    "Risk_Factors": {
+      "age": 51,
+      "gender": "Female",
+      "smoking": false,
+      "systolic_bp": 127,
+      "total_cholesterol_mmol": 4.2,
+      "hdl_cholesterol_mmol": 1.0,
+      "triglycerides_mg_dl": 199,
+      "ldl_cholesterol_mg_dl": 84
+    },
+    "Risk_Modifiers": {
+      "ckd_stage": "3b",
+      "egfr": 42,
+      "polycystic_kidney_disease": true,
+      "regular_exercise": true,
+      "bmi": 20.5,
+      "low_hdl": true,
+      "elevated_triglycerides": true
+    }
+  },
+  "Vinheta 22": {
+    "Risk": {
+      "category": "Very High Risk",
+      "score_system": "Not applicable (CKD present)",
+      "primary_reason": "Chronic Kidney Disease Stage 3b"
+    },
+    "Risk_Factors": {
+      "age": 61,
+      "gender": "Male",
+      "smoking": "Not specified",
+      "systolic_bp": 131,
+      "total_cholesterol_mmol": 3.5,
+      "hdl_cholesterol_mmol": 1.0,
+      "egfr": 42,
+      "microalbuminuria": 100
+    },
+    "Risk_Modifiers": {
+      "chronic_kidney_disease": "Stage 3b",
+      "structural_heart_disease": "Bicuspid aortic valve with moderate regurgitation",
+      "hypertension": "Present, controlled",
+      "current_treatment": "Optimal medical therapy"
+    }
+  },
+  "Vinheta 23": {
+    "Risk": {
+      "category": "Very High Risk",
+      "score_system": "ESC 2021 Guidelines",
+      "score_value": "Not applicable (established diabetes)",
+      "country_risk": "Moderate risk country (Portugal)"
+    },
+    "Risk_Factors": {
+      "age": 59,
+      "gender": "Female",
+      "smoking": "Non-smoker (assumed)",
+      "systolic_bp": 124,
+      "total_cholesterol_mgdl": 176,
+      "hdl_cholesterol_mgdl": 43,
+      "diabetes": "Type 2, >5 years duration",
+      "bmi": 26,
+      "hba1c": 7.8
+    },
+    "Risk_Modifiers": {
+      "target_organ_damage": [
+        "eGFR 70 mL/min/1.73m²",
+        "Concentric LV remodeling",
+        "Mild left atrial dilation"
+      ],
+      "protective_factors": [
+        "Regular exercise (walking 3x/week)",
+        "Non-smoker"
+      ],
+      "additional_risk_factors": [
+        "Dyslipidemia",
+        "Overweight (BMI 26)",
+        "Suboptimal glycemic control"
+      ]
+    }
+  },
+  "Vinheta 24": {
+    "Risk": {
+      "category": "Very High Risk",
+      "tool_used": "Clinical criteria (ESC 2021)",
+      "score2_applicable": false,
+      "rationale": "Type 2 diabetes + age >50 + multiple CV risk factors"
+    },
+    "Risk_Factors": {
+      "age": 59,
+      "gender": "Male",
+      "smoking": "Former smoker (quit 5 years ago)",
+      "systolic_bp": 134,
+      "total_cholesterol": 187,
+      "hdl_cholesterol": 45,
+      "diabetes": "Type 2 (5 years duration)",
+      "hypertension": "Present",
+      "dyslipidemia": "Present"
+    },
+    "Risk_Modifiers": {
+      "mild_ckd": "eGFR 75 mL/min/1.73m²",
+      "overweight": "BMI 29.8",
+      "shift_work": "Poor sleep quality",
+      "exercise_capacity": "Normal stress test"
+    }
+  },
+  "Vinheta 25": {
+    "Risk": {
+      "category": "Very High Risk",
+      "estimated_10_year_risk": ">20%",
+      "score2_applicable": false,
+      "score2_value": "N/A",
+      "rationale": "Type 2 diabetes with target organ damage"
+    },
+    "Risk_Factors": {
+      "age": 65,
+      "gender": "Female",
+      "smoking": "Not specified",
+      "systolic_bp_mmhg": 138,
+      "total_cholesterol_mmol_l": 4.3,
+      "hdl_cholesterol_mmol_l": 1.3,
+      "diabetes": "Type 2, diagnosed age 53"
+    },
+    "Risk_Modifiers": {
+      "target_organ_damage": [
+        "Microalbuminuria (103 mg/g)",
+        "CKD stage 3a (eGFR 57)",
+        "LV concentric remodeling"
+      ],
+      "additional_factors": [
+        "Overweight (BMI 28.8)",
+        "Physical inactivity",
+        "Suboptimal BP control",
+        "Hypertension",
+        "Dyslipidemia"
+      ]
+    }
+  },
+  "Vinheta 26": {
+    "Risk": {
+      "category": "HIGH RISK",
+      "score_method": "Not applicable (Familial Hypercholesterolemia)",
+      "ldl_target": "<70 mg/dL (<1.8 mmol/L)",
+      "current_ldl": "258 mg/dL (6.7 mmol/L)"
+    },
+    "Risk_Factors": {
+      "age": 36,
+      "gender": "Male",
+      "smoking": false,
+      "systolic_bp": 134,
+      "total_cholesterol": 336,
+      "hdl_cholesterol": 45,
+      "familial_hypercholesterolemia": true,
+      "genetic_mutation": "LDLR heterozygous"
+    },
+    "Risk_Modifiers": {
+      "family_history_premature_cvd": true,
+      "bmi": 27.7,
+      "sedentary_lifestyle": true,
+      "sleep_deprivation": true,
+      "high_normal_bp": true
+    }
+  },
+  "Vinheta 27": {
+    "Risk": {
+      "SCORE2_percentage": "8-10%",
+      "initial_risk_category": "moderate-high",
+      "final_risk_category": "very_high",
+      "country_risk_level": "moderate",
+      "reclassification_reason": "established_coronary_artery_disease"
+    },
+    "Risk_Factors": {
+      "age": 61,
+      "gender": "female",
+      "smoking": "yes",
+      "systolic_bp": 124,
+      "total_cholesterol_mmol": 5.15,
+      "hdl_cholesterol_mmol": 1.4,
+      "diabetes": "no",
+      "family_history": "not_reported"
+    },
+    "Risk_Modifiers": {
+      "coronary_calcium_score": {
+        "value": 186,
+        "percentile": ">75th",
+        "impact": "high_risk_reclassification"
+      },
+      "coronary_ct_angiography": {
+        "findings": "RCA_occlusion_with_nonobstructive_plaques",
+        "impact": "very_high_risk_reclassification"
+      },
+      "hba1c": {
+        "value": 5.6,
+        "category": "prediabetes",
+        "impact": "mild_risk_enhancement"
+      },
+      "bmi": {
+        "value": 20.1,
+        "category": "normal",
+        "impact": "neutral"
+      }
+    }
+  },
+  "Vinheta 28": {
+    "Risk": {
+      "category": "Very High Risk",
+      "score_method": "Not applicable - established CAD",
+      "justification": "History of NSTEMI and PCI (secondary prevention)"
+    },
+    "Risk_Factors": {
+      "age": 51,
+      "gender": "Male",
+      "smoking": "Former smoker (quit 2 years ago)",
+      "systolic_bp": 118,
+      "total_cholesterol": 136,
+      "hdl_cholesterol": 46,
+      "ldl_cholesterol": 70
+    },
+    "Risk_Modifiers": {
+      "established_cvd": "Yes - NSTEMI with PCI",
+      "family_history": "Not reported",
+      "sedentary_lifestyle": "Yes",
+      "bmi": 25.6,
+      "current_medications": "Optimal secondary prevention therapy",
+      "recent_stress_test": "Normal - good functional capacity"
+    }
+  },
+  "Vinheta 29": {
+    "Risk": {
+      "category": "Very High Risk",
+      "rationale": "Established coronary artery disease (previous PCI)",
+      "score2_applicable": false,
+      "score2_value": "N/A",
+      "ldl_target": "<55 mg/dL",
+      "ldl_current": "80 mg/dL",
+      "target_achieved": false
+    },
+    "Risk_Factors": {
+      "age": 63,
+      "gender": "Female",
+      "smoking": "Former smoker (quit 2 years ago)",
+      "systolic_bp": 114,
+      "total_cholesterol": 149,
+      "hdl_cholesterol": 53,
+      "established_cad": true
+    },
+    "Risk_Modifiers": {
+      "positive_factors": [
+        "Smoking cessation 2 years ago",
+        "Regular physical activity",
+        "Normal BMI (20.1)",
+        "Well-controlled blood pressure",
+        "Normal glucose metabolism"
+      ],
+      "areas_for_improvement": [
+        "LDL-C above target (80 vs <55 mg/dL)",
+        "Consider lipid therapy intensification"
+      ]
+    }
+  },
+  "Vinheta 30": {
+    "Risk": {
+      "category": "Very High Risk",
+      "score2_applicable": false,
+      "score2_value": "N/A - Established CVD",
+      "justification": "Established cardiovascular disease (ischemic stroke)"
+    },
+    "Risk_Factors": {
+      "age": 64,
+      "gender": "Male",
+      "smoking": "Former smoker (quit 5 years ago)",
+      "systolic_bp": 138,
+      "total_cholesterol_mgdl": 165,
+      "hdl_cholesterol_mgdl": 52,
+      "established_cvd": "Ischemic stroke (3 months ago)"
+    },
+    "Risk_Modifiers": {
+      "prediabetes": "Present (HbA1c 6.4%)",
+      "overweight": "Present (BMI 28.7)",
+      "hypertriglyceridemia": "Present (TG 209 mg/dL)",
+      "sedentary_lifestyle": "Present",
+      "lv_remodeling": "Present (concentric)",
+      "left_atrial_enlargement": "Present (severe)",
+      "ldl_above_target": "Present (71 mg/dL, target <55 mg/dL)"
+    }
+  }
+}

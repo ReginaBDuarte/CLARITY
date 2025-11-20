@@ -1,0 +1,1010 @@
+{
+  "Vinheta 1": {
+    "Risk": {
+      "SCORE2 Applicable": "Yes",
+      "Exception": "none",
+      "Category": "Low-to-Moderate",
+      "SCORE2": "0.5",
+      "Confidence Level": "Moderate"
+    },
+    "Risk Factors": {
+      "Age": "44",
+      "Gender": "Male",
+      "Smoking": "Non-smoker",
+      "Arterial Hypertension": "No",
+      "Systolic Blood Pressure": "114",
+      "Diastolic Blood Pressure": "72? (not provided in initial risk factors, commonly not used in SCORE2)",
+      "Total Cholesterol": "183",
+      "HDL-Cholesterol": "55",
+      "Triglcerides": "88",
+      "LDL-Cholesterol": "110",
+      "non-HDL Cholesterol": "128",
+      "Diabetes Mellitus": "No"
+    },
+    "Risk Modifiers": {
+      "Elevated Coronary Calcium Score": "unknown",
+      "Calcium Score = 0": "unknown",
+      "Carotid Plaques": "unknown",
+      "Obesity": "No",
+      "Pre-Diabetes": "No",
+      "Family History of ASCVD": "unknown",
+      "Elevated Lp(a)": "unknown",
+      "Increased Arterial Stiffness": "unknown",
+      "Elevated hs-CRP": "unknown",
+      "Chronic Inflammatory Disease": "No",
+      "HIV Infection": "No",
+      "Migraine with Aura": "unknown",
+      "Obstructive Sleep Apnea (OSA)": "unknown",
+      "Non-Alcoholic Fatty Liver Disease": "unknown",
+      "Erectile Dysfunction": "unknown",
+      "Premature Menopause": "unknown",
+      "Past history of Pregnancy Complications": "N/A",
+      "COPD": "No",
+      "Cancer": "unknown",
+      "Other": "unknown"
+    }
+  },
+  "Vinheta 2": {
+    "Risk": {
+      "SCORE2 Applicable": "Yes",
+      "Exception": "none",
+      "Category": "Low-to-Moderate",
+      "SCORE2": "1,2%",
+      "Confidence Level": "Moderate"
+    },
+    "Risk Factors": {
+      "Factor1": "Age=40",
+      "Factor2": "Gender=Female",
+      "Factor3": "Smoking=Smoker",
+      "Factor4": "Systolic Blood Pressure=124",
+      "Factor5": "Total Cholesterol=190",
+      "Factor6": "HDL-Cholesterol=67",
+      "Factor7": "non-HDL Cholesterol=123"
+    },
+    "Risk Modifiers": {
+      "FactorM1": "Increased Arterial Stiffness=6,8 m/s"
+    }
+  },
+  "Vinheta 3": {
+    "Risk": {
+      "SCORE2 Applicable": "Yes",
+      "Exception": "none",
+      "Category": "Low-to-Moderate",
+      "SCORE2": "unknown",
+      "Confidence Level": "Moderate"
+    },
+    "Risk Factors": {
+      "Age": "58",
+      "Gender": "Female",
+      "Smoking": "Non-smoker",
+      "Systolic Blood Pressure": "122 mmHg",
+      "Total Cholesterol": "164 mg/dL",
+      "HDL-Cholesterol": "47 mg/dL",
+      "non-HDL Cholesterol": "117 mg/dL"
+    },
+    "Risk Modifiers": {
+      "Calcium Score": "0"
+    }
+  },
+  "Vinheta 4": {
+    "Risk": {
+      "SCORE2 Applicable": "Yes",
+      "Exception": "none",
+      "Category": "Low-to-Moderate",
+      "SCORE2": "2,5",
+      "Confidence Level": "Moderate"
+    },
+    "Risk Factors": {
+      "Age": "54",
+      "Gender": "Male",
+      "Smoking": "Non-smoker",
+      "Systolic Blood Pressure": "118",
+      "Total Cholesterol": "183",
+      "HDL-Cholesterol": "55",
+      "non-HDL-Cholesterol": "128"
+    },
+    "Risk Modifiers": {
+      "Family History of ASCVD": "Yes",
+      "Elevated Coronary Calcium Score": "unknown",
+      "Calcium Score = 0": "unknown",
+      "Carotid Plaques": "unknown",
+      "Obesity": "No",
+      "Pre-Diabetes": "No",
+      "Elevated Lp(a)": "unknown",
+      "Increased Arterial Stiffness": "unknown",
+      "Elevated hs-CRP": "unknown",
+      "Chronic Inflammatory Disease": "No",
+      "HIV Infection": "No",
+      "Migraine with Aura": "unknown",
+      "Obstructive Sleep Apnea": "unknown",
+      "NAFLD": "unknown",
+      "Erectile Dysfunction": "unknown",
+      "Premature Menopause": "unknown",
+      "Past history of Pregnancy Complications": "unknown",
+      "COPD": "No",
+      "Cancer": "unknown",
+      "Other (specify)": "unknown"
+    }
+  },
+  "Vinheta 5": {
+    "Risk": {
+      "SCORE2 Applicable": "Yes",
+      "Exception": "none",
+      "Category": "Low-to-Moderate",
+      "SCORE2": "2,0",
+      "Confidence Level": "High"
+    },
+    "Risk Factors": {
+      "Age": "63",
+      "Gender": "Female",
+      "Smoking": "Non-smoker",
+      "Arterial Hypertension": "No",
+      "Systolic Blood Pressure": "107",
+      "Diastolic Blood Pressure": "58",
+      "Dyslipidemia": "Yes",
+      "Total Cholesterol": "214",
+      "HDL-Cholesterol": "67",
+      "Triglycerides": "124",
+      "LDL-Cholesterol": "122",
+      "non-HDL Cholesterol": "147",
+      "Diabetes Mellitus": "No"
+    },
+    "Risk Modifiers": {
+      "Elevated Coronary Calcium Score": "unknown",
+      "Calcium Score = 0": "unknown",
+      "Carotid Plaques": "unknown",
+      "Obesity": "No",
+      "Pre-Diabetes": "No",
+      "Family History of ASCVD": "unknown",
+      "Elevated Lp(a)": "unknown",
+      "Increased Arterial Stiffness": "unknown",
+      "Elevated hs-CRP": "unknown",
+      "Chronic Inflammatory Disease": "No",
+      "HIV Infection": "No",
+      "Migraine with Aura": "unknown",
+      "OSA": "unknown",
+      "Non-Alcoholic Fatty Liver Disease": "unknown",
+      "Erectile Dysfunction": "not applicable",
+      "Premature Menopause": "unknown",
+      "Past history of Pregnancy Complications": "unknown",
+      "COPD": "No",
+      "Cancer": "unknown",
+      "Other (specify)": "unknown"
+    }
+  },
+  "Vinheta 6": {
+    "Risk": {
+      "SCORE2 Applicable": "Yes",
+      "Exception": "none",
+      "Category": "Low-to-Moderate",
+      "SCORE2": "3,2%",
+      "Confidence Level": "Moderate"
+    },
+    "Risk Factors": {
+      "Age": "41",
+      "Gender": "Female",
+      "Smoking": "Smoker",
+      "Arterial Hypertension": "Yes",
+      "Systolic Blood Pressure": "146",
+      "Diastolic Blood Pressure": "85",
+      "Dyslipidemia": "Yes",
+      "Total Cholesterol": "270",
+      "HDL-Cholesterol": "53",
+      "Triglycerides": "142",
+      "LDL-Cholesterol": "189",
+      "non-HDL Cholesterol": "217",
+      "Diabetes Mellitus": "No"
+    },
+    "Risk Modifiers": {
+      "Pre-Diabetes": "Yes",
+      "Obesity": "No",
+      "Family History of ASCVD": "unknown",
+      "Elevated Coronary Calcium Score": "unknown",
+      "Carotid Plaques": "unknown",
+      "Elevated Lp(a)": "unknown",
+      "Increased Arterial Stiffness": "unknown",
+      "Elevated High-sensitivity CRP": "unknown",
+      "Chronic Inflammatory Disease": "unknown",
+      "HIV Infection": "unknown",
+      "Migraine with Aura": "unknown",
+      "OSA": "unknown",
+      "Non-Alcoholic Fatty Liver Disease": "unknown",
+      "Erectile Dysfunction": "unknown",
+      "Premature Menopause": "unknown",
+      "Past history of Pregnancy Complications": "unknown",
+      "COPD": "unknown",
+      "Cancer": "unknown",
+      "Other": "unknown"
+    }
+  },
+  "Vinheta 7": {
+    "Risk": {
+      "SCORE2 Applicable": "Yes",
+      "Exception": "none",
+      "Category": "Low-to-Moderate",
+      "SCORE2": "3.2",
+      "Confidence Level": "Moderate"
+    },
+    "Risk Factors": {
+      "Age": 48,
+      "Gender": "Male",
+      "Smoking": "Non-smoker",
+      "Arterial Hypertension": "Yes",
+      "Systolic Blood Pressure": 161,
+      "Diastolic Blood Pressure": 102,
+      "Dyslipidemia": "Yes",
+      "Total Cholesterol": 231,
+      "HDL-Cholesterol": 43,
+      "Triglycerides": 197,
+      "LDL-Cholesterol": 149,
+      "non-HDL-Cholesterol": 188,
+      "Diabetes Mellitus": "No"
+    },
+    "Risk Modifiers": {
+      "Pre-Diabetes": "Yes (HbA1c 6,2%)",
+      "Elevated Lp(a)": "29 mg/dL",
+      "Increased Arterial Stiffness": "PWV 9,3 m/s",
+      "OSA": "Yes (snoring; daytime sleepiness)"
+    }
+  },
+  "Vinheta 8": {
+    "Risk": {
+      "SCORE2 Applicable": "Yes",
+      "Exception": "none",
+      "Category": "Low-to-Moderate",
+      "SCORE2": "4,0%",
+      "Confidence Level": "Moderate"
+    },
+    "Risk Factors": {
+      "Age": "57",
+      "Gender": "Female",
+      "Smoking": "Smoker",
+      "Arterial Hypertension": "No",
+      "Systolic Blood Pressure": "120",
+      "Diastolic Blood Pressure": "63",
+      "Dyslipidemia": "Yes",
+      "Total Cholesterol": "197",
+      "HDL-Cholesterol": "57",
+      "Triglycerides": "124",
+      "LDL-Cholesterol": "119",
+      "non-HDL Cholesterol": "140",
+      "Diabetes Mellitus": "No"
+    },
+    "Risk Modifiers": {
+      "Elevated Coronary Calcium Score": "unknown",
+      "Calcium Score = 0": "unknown",
+      "Carotid Plaques": "unknown",
+      "Obesity": "No",
+      "Pre-Diabetes": "No",
+      "Family History of ASCVD": "unknown",
+      "Elevated Lp(a)": "unknown",
+      "Increased Arterial Stiffness": "unknown",
+      "Elevated High-sensitivity CRP": "unknown",
+      "Chronic Inflammatory Disease": "unknown",
+      "HIV Infection": "unknown",
+      "Migraine with Aura": "unknown",
+      "Obstructive Sleep Apnea (OSA)": "unknown",
+      "Non-Alcoholic Fatty Liver Disease": "unknown",
+      "Erectile Dysfunction": "unknown",
+      "Premature Menopause": "unknown",
+      "Past history of Pregnancy Complications (Preeclampsia, Hypertension, or Diabetes)": "unknown",
+      "COPD": "unknown",
+      "Cancer": "unknown",
+      "Other (specify)": "unknown"
+    }
+  },
+  "Vinheta 9": {
+    "Risk": {
+      "SCORE2 Applicable": "Yes",
+      "Exception": "none",
+      "Category": "Low-to-Moderate",
+      "SCORE2": "6,8",
+      "Confidence Level": "Moderate"
+    },
+    "Risk Factors": {
+      "Age": "52 years",
+      "Gender": "Male",
+      "Smoking": "Smoker",
+      "Systolic Blood Pressure": "138 mmHg",
+      "Total Cholesterol": "224 mg/dL",
+      "HDL-Cholesterol": "37 mg/dL",
+      "non-HDL-Cholesterol": "187 mg/dL"
+    },
+    "Risk Modifiers": {
+      "Elevated Coronary Calcium Score": "Yes",
+      "Calcium Score = 0": "No",
+      "Carotid Plaques": "unknown",
+      "Obesity": "No",
+      "Pre-Diabetes": "Yes",
+      "Family History of ASCVD": "unknown",
+      "Elevated Lp(a)": "Yes",
+      "Increased Arterial Stiffness": "unknown",
+      "Elevated hs-CRP": "unknown",
+      "Chronic Inflammatory Disease": "No",
+      "HIV Infection": "No",
+      "Migraine with Aura": "No",
+      "Obstructive Sleep Apnea": "unknown",
+      "NAFLD": "unknown",
+      "Erectile Dysfunction": "unknown",
+      "Premature Menopause": "Not Applicable",
+      "Past history of Pregnancy Complications": "Not Applicable",
+      "COPD": "No",
+      "Cancer": "No",
+      "Other (specify)": "unknown"
+    }
+  },
+  "Vinheta 10": {
+    "Risk": {
+      "SCORE2 Applicable": "Yes",
+      "Exception": "None",
+      "Category": "Moderate",
+      "SCORE2": "5,2",
+      "Confidence Level": "Moderate"
+    },
+    "Risk Factors": {
+      "Age": "67",
+      "Gender": "Female",
+      "Smoking": "Non-smoker",
+      "Systolic Blood Pressure": "131",
+      "Total Cholesterol": "137",
+      "HDL-Cholesterol": "58",
+      "non-HDL-Cholesterol": "79"
+    },
+    "Risk Modifiers": {
+      "Pre-Diabetes": "Prediabetes (HbA1c 5,8%)"
+    }
+  },
+  "Vinheta 11": {
+    "Risk": {
+      "SCORE2 Applicable": "Yes",
+      "Exception": "none",
+      "Category": "Low-to-Moderate",
+      "SCORE2": 4.0,
+      "Confidence Level": "Moderate"
+    },
+    "Risk Factors": {
+      "Age": 62,
+      "Gender": "Male",
+      "Smoking": "Former Smoker",
+      "Arterial Hypertension": "Yes",
+      "Systolic Blood Pressure": 129,
+      "Diastolic Blood Pressure": 66,
+      "Dyslipidemia": "Yes",
+      "Total Cholesterol": 187,
+      "HDL-Cholesterol": 51,
+      "Triglycerides": 134,
+      "LDL-Cholesterol": 109,
+      "non-HDL-Cholesterol": 136,
+      "Diabetes Mellitus": "No"
+    },
+    "Risk Modifiers": {
+      "Cancer": "Past history of colon cancer 8 years ago (left hemicolectomy)"
+    }
+  },
+  "Vinheta 12": {
+    "Risk": {
+      "SCORE2 Applicable": "Yes",
+      "Exception": "None",
+      "Category": "High",
+      "SCORE2": "6.5",
+      "Confidence Level": "Moderate"
+    },
+    "Risk Factors": {
+      "Age": "47",
+      "Gender": "Female",
+      "Smoking": "Smoker",
+      "Arterial Hypertension": "Yes",
+      "Systolic Blood Pressure": "147",
+      "Diastolic Blood Pressure": "87",
+      "Dyslipidemia": "Yes",
+      "Total Cholesterol": "263",
+      "HDL-Cholesterol": "54",
+      "Triglycerides": "125",
+      "LDL-Cholesterol": "184",
+      "non-HDL Cholesterol": "209",
+      "Diabetes Mellitus": "No"
+    },
+    "Risk Modifiers": {
+      "COPD": "Present",
+      "Pre-Diabetes": "Present",
+      "Family History of ASCVD": "Present"
+    }
+  },
+  "Vinheta 13": {
+    "Risk": {
+      "SCORE2 Applicable": "Yes",
+      "Exception": "none",
+      "Category": "High",
+      "SCORE2": "6,0%",
+      "Confidence Level": "Moderate"
+    },
+    "Risk Factors": {
+      "Age": "41",
+      "Gender": "Male",
+      "Smoking": "Smoker",
+      "Systolic Blood Pressure": "155",
+      "Total Cholesterol": "241",
+      "HDL-Cholesterol": "33",
+      "non-HDL Cholesterol": "208"
+    },
+    "Risk Modifiers": {
+      "Pre-Diabetes": "Yes (HbA1c 5,8%)"
+    }
+  },
+  "Vinheta 14": {
+    "Risk": {
+      "SCORE2 Applicable": "Yes",
+      "Exception": "None",
+      "Category": "High",
+      "SCORE2": "6,5",
+      "Confidence Level": "Moderate"
+    },
+    "Risk Factors": {
+      "Age": "56",
+      "Gender": "Female",
+      "Smoking": "Smoker",
+      "Arterial Hypertension": "Yes",
+      "Systolic Blood Pressure": "163",
+      "Diastolic Blood Pressure": "91",
+      "Dyslipidemia": "Yes",
+      "Total Cholesterol": "224",
+      "HDL-Cholesterol": "45",
+      "Triglycerides": "196",
+      "LDL-Cholesterol": "140",
+      "non-HDL-Cholesterol": "179",
+      "Diabetes Mellitus": "No"
+    },
+    "Risk Modifiers": {
+      "Pre-Diabetes": "HbA1c 6,3%",
+      "Obesity": "BMI 31,3"
+    }
+  },
+  "Vinheta 15": {
+    "Risk": {
+      "SCORE2 Applicable": "Yes",
+      "Exception": "none",
+      "Category": "Low-to-Moderate",
+      "SCORE2": "unknown",
+      "Confidence Level": "Moderate"
+    },
+    "Risk Factors": {
+      "Age": "51",
+      "Gender": "Male",
+      "Smoking": "Smoker",
+      "Systolic Blood Pressure": "149",
+      "Diastolic Blood Pressure": "98",
+      "Dyslipidemia": "Yes",
+      "Total Cholesterol": "197",
+      "HDL-Cholesterol": "32",
+      "Triglycerides": "98",
+      "LDL-Cholesterol": "148",
+      "non-HDL Cholesterol": "165",
+      "Diabetes Mellitus": "No"
+    },
+    "Risk Modifiers": {
+      "Elevated Coronary Calcium Score": "Calcium Score = 47 (P50-75)",
+      "Carotid Plaques": "unknown",
+      "Obesity": "unknown",
+      "Pre-Diabetes": "HbA1c 5.8%",
+      "Family History of ASCVD": "unknown",
+      "Elevated Lp(a)": "Lp(a) 39 mg/dL",
+      "Increased Arterial Stiffness": "unknown",
+      "Elevated High-sensitivity CRP": "unknown",
+      "Chronic Inflammatory Disease": "unknown",
+      "HIV Infection": "unknown",
+      "Migraine with Aura": "unknown",
+      "OSA": "unknown",
+      "Non-Alcoholic Fatty Liver Disease": "unknown",
+      "Erectile Dysfunction": "unknown",
+      "Premature Menopause": "unknown",
+      "Past history of Pregnancy Complications": "unknown",
+      "COPD": "unknown",
+      "Cancer": "unknown",
+      "Other (specify)": "unknown"
+    }
+  },
+  "Vinheta 16": {
+    "Risk": {
+      "SCORE2 Applicable": "Yes",
+      "Exception": "none",
+      "Category": "Low-to-Moderate",
+      "SCORE2": "6,0",
+      "Confidence Level": "Moderate"
+    },
+    "Risk Factors": {
+      "Age": 64,
+      "Gender": "Female",
+      "Smoking": "Smoker",
+      "Systolic Blood Pressure": 143,
+      "Diastolic Blood Pressure": 84,
+      "Dyslipidemia": "No",
+      "Total Cholesterol": 169,
+      "HDL-Cholesterol": 48,
+      "Triglycerides": 107,
+      "LDL-Cholesterol": 100,
+      "non-HDL Cholesterol": 121,
+      "Diabetes Mellitus": "No"
+    },
+    "Risk Modifiers": {
+      "Pre-Diabetes": "Yes"
+    }
+  },
+  "Vinheta 17": {
+    "Risk": {
+      "SCORE2 Applicable": "Yes",
+      "Exception": "none",
+      "Category": "Low-to-Moderate",
+      "SCORE2": "6,5",
+      "Confidence Level": "Moderate"
+    },
+    "Risk Factors": {
+      "Age": "65 years",
+      "Gender": "Male",
+      "Smoking": "Former Smoker",
+      "Arterial Hypertension": "Yes",
+      "Systolic Blood Pressure": "103 mmHg",
+      "Diastolic Blood Pressure": "61 mmHg",
+      "Dyslipidemia": "Yes",
+      "Total Cholesterol": "129 mg/dL",
+      "HDL-Cholesterol": "33 mg/dL",
+      "Triglycerides": "237 mg/dL",
+      "LDL-Cholesterol": "49 mg/dL",
+      "non-HDL Cholesterol": "96 mg/dL",
+      "Diabetes Mellitus": "No"
+    },
+    "Risk Modifiers": {
+      "Obstructive Sleep Apnea (OSA)": "On CPAP",
+      "Pre-Diabetes": "Yes",
+      "Obesity": "unknown",
+      "Family History of ASCVD": "unknown",
+      "Elevated Lp(a)": "No",
+      "Increased Arterial Stiffness": "unknown",
+      "Elevated hsCRP": "unknown",
+      "Chronic Inflammatory Disease": "unknown",
+      "HIV Infection": "No",
+      "Migraine with Aura": "unknown",
+      "Non-Alcoholic Fatty Liver Disease": "unknown",
+      "Erectile Dysfunction": "unknown",
+      "Premature Menopause": "N/A",
+      "Past history of Pregnancy Complications (Preeclampsia, Hypertension, or Diabetes)": "N/A",
+      "COPD": "No",
+      "Cancer": "unknown",
+      "Other (specify)": "unknown"
+    }
+  },
+  "Vinheta 18": {
+    "Risk": {
+      "SCORE2 Applicable": "Yes",
+      "Exception": "none",
+      "Category": "Low-to-Moderate",
+      "SCORE2": "3,8%",
+      "Confidence Level": "Moderate"
+    },
+    "Risk Factors": {
+      "Age": "44",
+      "Gender": "Male",
+      "Smoking": "Non-smoker",
+      "Arterial Hypertension": "Yes",
+      "Systolic Blood Pressure": "145",
+      "Diastolic Blood Pressure": "94",
+      "Dyslipidemia": "Yes",
+      "Total Cholesterol": "229",
+      "HDL-Cholesterol": "37",
+      "Triglycerides": "137",
+      "LDL-Cholesterol": "165",
+      "non-HDL Cholesterol": "192",
+      "Diabetes Mellitus": "No"
+    },
+    "Risk Modifiers": {
+      "Family History of ASCVD": "Yes (Mother MI at 61)",
+      "Elevated Lp(a)": "92 mg/dL",
+      "Increased Arterial Stiffness": "unknown",
+      "Elevated High-sensitivity CRP": "unknown",
+      "Pre-Diabetes": "unknown",
+      "OSA": "unknown",
+      "Carotid Plaques": "unknown",
+      "Obesity": "unknown",
+      "Chronic Inflammatory Disease": "unknown",
+      "HIV Infection": "unknown",
+      "Migraine with Aura": "unknown",
+      "Non-Alcoholic Fatty Liver Disease": "unknown",
+      "Past history of Pregnancy Complications": "unknown",
+      "COPD": "unknown",
+      "Cancer": "unknown",
+      "Other (specify)": "unknown"
+    }
+  },
+  "Vinheta 19": {
+    "Risk": {
+      "SCORE2 Applicable": "Yes",
+      "Exception": "None",
+      "Category": "Low-to-Moderate",
+      "SCORE2": "3,2",
+      "Confidence Level": "Moderate"
+    },
+    "Risk Factors": {
+      "Age": 54,
+      "Gender": "Female",
+      "Smoking": "Smoker",
+      "Arterial Hypertension": "No",
+      "Systolic Blood Pressure": 132,
+      "Diastolic Blood Pressure": 84,
+      "Dyslipidemia": "Yes",
+      "Total Cholesterol": 211,
+      "HDL-Cholesterol": 52,
+      "Triglycerides": 128,
+      "LDL-Chol cholesterol": 133,
+      "non-HDL Cholesterol (calculate if necessary)": "159",
+      "Diabetes Mellitus": "No"
+    },
+    "Risk Modifiers": {
+      "Elevated Coronary Calcium Score": "CAC 77",
+      "Chronic Inflammatory Disease": "Rheumatoid arthritis",
+      "Elevated High-sensitivity CRP": "4,5 mg/L"
+    }
+  },
+  "Vinheta 20": {
+    "Risk": {
+      "SCORE2 Applicable": "Yes",
+      "Exception": "none",
+      "Category": "Unknown",
+      "SCORE2": "unknown",
+      "Confidence Level": "Low"
+    },
+    "Risk Factors": {
+      "Age": "61 years",
+      "Gender": "Male",
+      "Smoking": "unknown",
+      "Arterial Hypertension": "Yes",
+      "Systolic Blood Pressure": "151 mmHg",
+      "Diastolic Blood Pressure": "94 mmHg",
+      "Dyslipidemia": "Yes",
+      "Total Cholesterol": "217 mg/dL",
+      "HDL-Cholesterol": "48 mg/dL",
+      "Triglycerides": "256 mg/dL",
+      "LDL-Cholesterol": "118 mg/dL",
+      "non-HDL Cholesterol": "169 mg/dL",
+      "Diabetes Mellitus": "No"
+    },
+    "Risk Modifiers": {
+      "Obstructive Sleep Apnea": "Severe",
+      "Obesity": "Yes",
+      "Pre-Diabetes": "Yes",
+      "Elevated Coronary Calcium Score": "178"
+    }
+  },
+  "Vinheta 21": {
+    "Risk": {
+      "SCORE2 Applicable": "No",
+      "Exception": "Chronic Kidney Disease",
+      "Category": "High",
+      "SCORE2": "unknown",
+      "Confidence Level": "High"
+    },
+    "Risk Factors": {
+      "Age": "51",
+      "Gender": "Female",
+      "Smoking": "Non-smoker",
+      "Systolic Blood Pressure": "127",
+      "Total Cholesterol": "162",
+      "HDL-Cholesterol": "38",
+      "non-HDL Cholesterol": "124"
+    },
+    "Risk Modifiers": {
+      "Other (specify)": "Chronic Kidney Disease (eGFR 42)"
+    }
+  },
+  "Vinheta 22": {
+    "Risk": {
+      "SCORE2 Applicable": "No",
+      "Exception": "Chronic Kidney Disease",
+      "Category": "Very High",
+      "SCORE2": "unknown",
+      "Confidence Level": "High"
+    },
+    "Risk Factors": {
+      "Age": 61,
+      "Gender": "Male",
+      "Systolic Blood Pressure": 131,
+      "Diastolic Blood Pressure": 78,
+      "Smoking": "Non-smoker",
+      "Dyslipidemia": "Yes",
+      "Total Cholesterol": 136,
+      "HDL-Cholesterol": 38,
+      "non-HDL Cholesterol": 98,
+      "Triglycerides": 164,
+      "LDL-Cholesterol": 65,
+      "Diabetes Mellitus": "No"
+    },
+    "Risk Modifiers": {
+      "Elevated Coronary Calcium Score": "unknown",
+      "Calcium Score = 0": "unknown",
+      "Carotid Plaques": "unknown",
+      "Obesity": "unknown",
+      "Pre-Diabetes": "unknown",
+      "Family History of ASCVD": "unknown",
+      "Elevated Lp(a)": "unknown",
+      "Increased Arterial Stiffness": "unknown",
+      "Elevated High-sensitivity CRP": "unknown",
+      "Chronic Inflammatory Disease": "unknown",
+      "HIV Infection": "unknown",
+      "Migraine with Aura": "unknown",
+      "Obstructive Sleep Apnea (OSA)": "unknown",
+      "Non-Alcoholic Fatty Liver Disease": "unknown",
+      "Erectile Dysfunction": "unknown",
+      "Premature Menopause": "unknown",
+      "Past history of Pregnancy Complications": "unknown",
+      "COPD": "unknown",
+      "Cancer": "unknown",
+      "Other (specify)": "unknown"
+    }
+  },
+  "Vinheta 23": {
+    "Risk": {
+      "SCORE2 Applicable": "No",
+      "Exception": "Diabetes Mellitus",
+      "Category": "High",
+      "SCORE2": "unknown",
+      "Confidence Level": "Moderate"
+    },
+    "Risk Factors": {
+      "Age": "59",
+      "Gender": "Female",
+      "Smoking": "Non-smoker",
+      "Systolic Blood Pressure": "124",
+      "Total Cholesterol": "176",
+      "HDL-Cholesterol": "43",
+      "non-HDL Cholesterol": "133",
+      "Diabetes Mellitus": "Yes"
+    },
+    "Risk Modifiers": {
+      "Risk Modifiers": "none"
+    }
+  },
+  "Vinheta 24": {
+    "Risk": {
+      "SCORE2 Applicable": "No",
+      "Exception": "Diabetes Mellitus",
+      "Category": "High",
+      "SCORE2": "unknown",
+      "Confidence Level": "Moderate"
+    },
+    "Risk Factors": {
+      "Age": "59",
+      "Gender": "Male",
+      "Smoking": "Former Smoker",
+      "Arterial Hypertension": "Yes",
+      "Systolic Blood Pressure": "134",
+      "Diastolic Blood Pressure": "82",
+      "Dyslipidemia": "Yes",
+      "Total Cholesterol": "187",
+      "HDL-Cholesterol": "45",
+      "Triglycerides": "178",
+      "LDL-Cholesterol": "106",
+      "non-HDL-Cholesterol": "142",
+      "Diabetes Mellitus": "Yes"
+    },
+    "Risk Modifiers": {
+      "Elevated Coronary Calcium Score": "unknown",
+      "Carotid Plaques": "unknown",
+      "Obesity": "No",
+      "Pre-Diabetes": "No",
+      "Family History of ASCVD": "unknown",
+      "Elevated Lp(a)": "unknown",
+      "Increased Arterial Stiffness": "unknown",
+      "Elevated High-sensitivity CRP": "unknown",
+      "Chronic Inflammatory Disease": "unknown",
+      "HIV Infection": "unknown",
+      "Migraine with Aura": "unknown",
+      "Obstructive Sleep Apnea (OSA)": "unknown",
+      "Non-Alcoholic Fatty Liver Disease": "unknown",
+      "Erectile Dysfunction": "unknown",
+      "Premature Menopause": "N/A",
+      "Past history of Pregnancy Complications": "N/A",
+      "COPD": "unknown",
+      "Cancer": "unknown",
+      "Other": "unknown"
+    }
+  },
+  "Vinheta 25": {
+    "Risk": {
+      "SCORE2 Applicable": "No",
+      "Exception": "Diabetes Mellitus; Chronic Kidney Disease",
+      "Category": "Very High",
+      "SCORE2": "unknown",
+      "Confidence Level": "Very High"
+    },
+    "Risk Factors": {
+      "Age": "65",
+      "Gender": "Female",
+      "Smoking": "Non-smoker",
+      "Arterial Hypertension": "Yes",
+      "Systolic Blood Pressure": "138 mmHg",
+      "Diastolic Blood Pressure": "75 mmHg",
+      "Dyslipidemia": "Yes",
+      "Total Cholesterol": "165 mg/dL",
+      "HDL-Cholesterol": "51 mg/dL",
+      "Triglycerides": "173 mg/dL",
+      "LDL-Cholesterol": "79 mg/dL",
+      "non-HDL-Cholesterol": "114 mg/dL",
+      "Diabetes Mellitus": "Yes"
+    },
+    "Risk Modifiers": {}
+  },
+  "Vinheta 26": {
+    "Risk": {
+      "SCORE2 Applicable": "No",
+      "Exception": "Familial Dyslipidemia",
+      "Category": "Very High",
+      "SCORE2": "unknown",
+      "Confidence Level": "Very High"
+    },
+    "Risk Factors": {
+      "Age": "36",
+      "Gender": "Male",
+      "Smoking": "Non-smoker",
+      "Systolic Blood Pressure": "134 mmHg",
+      "Total Cholesterol": "336 mg/dL",
+      "HDL-Cholesterol": "45 mg/dL",
+      "non-HDL Cholesterol (calculate if necessary)": "291 mg/dL"
+    },
+    "Risk Modifiers": {
+      "Family History of ASCVD": "Yes"
+    }
+  },
+  "Vinheta 27": {
+    "Risk": {
+      "SCORE2 Applicable": "No",
+      "Exception": "Atherosclerotic Cardiovascular Disease",
+      "Category": "Very High",
+      "SCORE2": "Not applicable",
+      "Confidence Level": "Very High"
+    },
+    "Risk Factors": {
+      "Age": 61,
+      "Gender": "Female",
+      "Smoking": "Smoker",
+      "Systolic Blood Pressure": 124,
+      "Diastolic Blood Pressure": 75,
+      "Arterial Hypertension": "No",
+      "Total Cholesterol": 199,
+      "HDL-Cholesterol": 54,
+      "Triglycerides": 87,
+      "LDL-Cholesterol": 87,
+      "non-HDL Cholesterol": 145,
+      "Dyslipidemia": "Yes",
+      "Diabetes Mellitus": "No"
+    },
+    "Risk Modifiers": {
+      "Elevated Coronary Calcium Score": 186,
+      "Carotid Plaques": "unknown",
+      "Obesity": "No",
+      "Pre-Diabetes": "No",
+      "Family History of ASCVD": "unknown",
+      "Elevated Lp(a)": "unknown",
+      "Increased Arterial Stiffness": "unknown",
+      "Elevated High-sensitivity CRP": "unknown",
+      "Chronic Inflammatory Disease": "unknown",
+      "HIV Infection": "unknown",
+      "Migraine with Aura": "unknown",
+      "Obstructive Sleep Apnea": "unknown",
+      "Non-Alcoholic Fatty Liver Disease": "unknown",
+      "Erectile Dysfunction": "unknown",
+      "Premature Menopause": "unknown",
+      "Past history of Pregnancy Complications": "unknown",
+      "COPD": "unknown",
+      "Cancer": "unknown",
+      "Other (specify)": "unknown"
+    }
+  },
+  "Vinheta 28": {
+    "Risk": {
+      "SCORE2 Applicable": "No",
+      "Exception": "Atherosclerotic Cardiovascular Disease",
+      "Category": "Very High",
+      "SCORE2": "unknown",
+      "Confidence Level": "Very High"
+    },
+    "Risk Factors": {
+      "Age": "51",
+      "Gender": "Male",
+      " Smoking": "Former Smoker",
+      " Arterial Hypertension": "No",
+      " Systolic Blood Pressure": "118",
+      " Diastolic Blood Pressure": "67",
+      " Dyslipidemia": "Yes",
+      " Total Cholesterol": "136",
+      " HDL-Cholesterol": "46",
+      " Triglycerides": "99",
+      " LDL-Cholesterol": "70",
+      " non-HDL Cholesterol": "90",
+      " Diabetes Mellitus": "No"
+    },
+    "Risk Modifiers": {
+      "Elevated Coronary Calcium Score": "unknown",
+      "Carotid Plaques": "unknown",
+      "Obesity": "unknown",
+      "Pre-Diabetes": "unknown",
+      "Family History of ASCVD": "unknown",
+      "Elevated Lp(a)": "unknown",
+      "Increased Arterial Stiffness": "unknown",
+      "Elevated High-sensitivity CRP": "unknown",
+      "Chronic Inflammatory Disease": "unknown",
+      "HIV Infection": "unknown",
+      "Migraine with Aura": "unknown",
+      "Obstructive Sleep Apnea (OSA)": "unknown",
+      "Non-Alcoholic Fatty Liver Disease": "unknown",
+      "Erectile Dysfunction": "unknown",
+      "Premature Menopause": "unknown",
+      "Past history of Pregnancy Complications": "unknown",
+      "COPD": "unknown",
+      "Cancer": "unknown",
+      "Other": "unknown"
+    }
+  },
+  "Vinheta 29": {
+    "Risk": {
+      "SCORE2 Applicable": "No",
+      "Exception": "Atherosclerotic Cardiovascular Disease",
+      "Category": "Very High",
+      "SCORE2": "unknown",
+      "Confidence Level": "Very High"
+    },
+    "Risk Factors": {
+      "Age": 63,
+      "Gender": "Female",
+      "Smoking": "Former Smoker",
+      "Arterial Hypertension": "No",
+      "Systolic Blood Pressure": 114,
+      "Diastolic Blood Pressure": 66,
+      "Dyslipidemia": "Yes",
+      "Total Cholesterol": 149,
+      "HDL-Cholesterol": 53,
+      "Triglycerides": 82,
+      "LDL-Cholesterol": 80,
+      "non-HDL Cholesterol": 96,
+      "Diabetes Mellitus": "No"
+    },
+    "Risk Modifiers": "None"
+  },
+  "Vinheta 30": {
+    "Risk": {
+      "SCORE2 Applicable": "No",
+      "Exception": "ASCVD",
+      "Category": "Very High",
+      "SCORE2": "unknown",
+      "Confidence Level": "High"
+    },
+    "Risk Factors": {
+      "Age": "64",
+      "Gender": "Male",
+      "Smoking": "Former Smoker",
+      "Systolic Blood Pressure": "138",
+      "Total Cholesterol": "165",
+      "HDL-Cholesterol": "52",
+      "non-HDL Cholesterol": "113"
+    },
+    "Risk Modifiers": {
+      "Elevated Coronary Calcium Score": "unknown",
+      "Calcium Score = 0": "unknown",
+      "Carotid Plaques": "unknown",
+      "Obesity": "No",
+      "Pre-Diabetes": "Yes",
+      "Family History of ASCVD": "unknown",
+      "Elevated Lp(a)": "unknown",
+      "Increased Arterial Stiffness": "unknown",
+      "Elevated High-sensitivity CRP": "unknown",
+      "Chronic Inflammatory Disease": "unknown",
+      "HIV Infection": "unknown",
+      "Migraine with Aura": "unknown",
+      "Obstructive Sleep Apnea (OSA)": "unknown",
+      "Non-Alcoholic Fatty Liver Disease": "unknown",
+      "Erectile Dysfunction": "unknown",
+      "Premature Menopause": "unknown",
+      "Past history of Pregnancy Complications": "unknown",
+      "COPD": "unknown",
+      "Cancer": "unknown",
+      "Other (specify)": "unknown"
+    }
+  }
+}
