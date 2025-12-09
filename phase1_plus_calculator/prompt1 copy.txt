@@ -21,7 +21,7 @@ Objetivo: Analisar a vinheta clínica abaixo, extrair de forma estruturada todos
 2. Verificação de apicabilidade do SCORE2 (2021 ESC Guidelines on cardiovascular disease prevention in clinical practice)
 
 - Verifica se o SCORE2 é aplicável (Sim / Não).
-- Se o SCORE2 não for aplicável, indica razão segundo as recomendações ESC 2021.
+- Se existir algum critério de exceção que impeça a aplicação do SCORE2, indica-o e classifica o doente de acordo com os grupos de risco definidos nas recomendações ESC 2021 (exceções possíveis: Diabetes Mellitus, Dislipidemia Familiar, Doença Renal Crónica, Doença Cardiovascular Aterosclerótica).
 - Apresenta as saídas numa tabela Markdown: | SCORE2 Aplicável | Exceção (se não  aplicável)
 
 

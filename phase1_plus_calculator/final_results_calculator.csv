@@ -1,0 +1,591 @@
+Vinheta_Index,vinheta,model,Score2,AplicabilidadeScore2,ExcecaoScore2,Categoria de Risco,Confiança Categoria de Risco,Modificadores de Risco,Idade,Género,Tabagismo,Hipertensão Arterial,Pressão Arterial Sistólica,Pressão Arterial Diastólica,Dislipidemia,Colesterol Total,Colesterol HDL,Triglicéridos,Colesterol LDL,Colesterol não HDL,Diabetes Mellitus
+1,"Homem, 44 anos, gestor de empresa. Recorre à consulta por palpitações. São sobretudo ao deitar, durando  apenas uns segundos. Não têm relação com o esforço, não se associam a síncope ou dor torácica, não tem sensação de taquicardia mantida. Sem outra sintomatologia. 
+
+É maioritariamente sedentário. Sem antecedentes cardiovasculares pessoais ou familiares. Nega tabagismo ou ingestão de bebidas alcoólicas. Não faz qualquer medicação. 
+
+Exame objectivo: peso 74Kg (IMC 23); pressão arterial 114-72mmHg, frequência cardíaca 72bpm. Analiticamente, apresenta uma creatinina 0.8mg/dL, glicémia em jejum 80mg/dL, triglicerideos 88mg/dL, colesterol total 183mg/dL, colesterol HDL 55mg/dL, colesterol LDL 110mg/dL.
+
+Realizou um electrocardiograma e um ecocardiograma, sem alterações valorizáveis. O Holter revelou ritmo sinusal com extrassistolia ventricular isolada (menos de 1% do traçado) com relação com os sintomas do doente. ",gpt-4o,1.67,Sim,Não aplicável,Baixo-a-Moderado,Alta,"{'História Familiar': 'Ausente', 'Obesidade': 'Não', 'Sedentarismo': 'Sim'}",44 anos,Masculino,Não fumador,Não,114 mmHg,72 mmHg,Não,183 mg/dL,55 mg/dL,88 mg/dL,110 mg/dL,128 mg/dL,Não
+2,"Mulher de 40 anos. Vem à consulta porque tem interesse em melhorar o seu estilo de vida. Começou a praticar exercício físico (moderada / alta intensidade) 3 vezes por semana. É fumadora mas tem consulta de cessação tabágica agendada para dentro de 1 semana. Nega queixas cardiovasculares (durante o exercício ou em repouso). 
+
+À observação: peso 65Kg (IMC 23.8); pressão arterial 124-75mmHg, frequência cardíaca 76bpm. 
+
+Analiticamente, apresenta uma creatinina 0.7mg/dL, glicémia em jejum 82mg/dL, triglicerideos 90mg/dL, colesterol total 190mg/dL, colesterol HDL 67mg/dL, colesterol LDL 105mg/dL.
+
+Realizou exames complementares de diagnóstico, nomeadamente electrocardiograma (ritmo sinusal com alterações inespecíficas da repolarização ventricular), MAPA (pressão arterial média 24h de 113/73mmHg) e rigidez anterial (velocidade da onda de pulso de 6.8m/s).",gpt-4o,1.58,Sim,,Baixo-a-Moderado,Alta,{'Rigidez Arterial aumentada': 'Não'},40,Feminino,Fumador,Não,124,75,Não,190,67,90,105,123,Não
+3,"Sexo feminino, 58 anos. Regressou à consulta 8 anos depois para uma avaliação geral do seu estado de saúde. Sem comorbilidades de relevo. Está assintomática e faz caminhadas diárias de cerca de 30 minutos. Não fumadora.
+
+Ao exame objectivo, destaca-se: peso 90Kg (IMC 29.9); pressão arterial 122-77mmHg, frequência cardíaca 69bpm. 
+
+Analiticamente, apresenta uma creatinina 1.2mg/dL, triglicerideos 62mg/dL, colesterol total 164mg/dL, colesterol HDL 47mg/dL, colesterol LDL 105mg/dL, potássio 3.7mmol/L.
+
+Realizou um electrocardiograma que demonstrou ritmo sinusal, sem alterações patológicas e um score de cálcio com valor total de 0 (zero). ",gpt-4o,3.1,Sim,-,Baixo-a-Moderado,Alta,"{'Score de Cálcio igual a 0': 'Sim', 'Obesidade': 'Peso 90kg; IMC 29,9'}",58,Feminino,Não fumadora,Não,122,77,Sim,164,47,62,105,117,Não
+4,"Homem, 54 anos, engenheiro civil. Consulta de rotina para vigilância cardiovascular. Está preocupado porque os familiares tem antecedentes familiares de doença cardiovascular (pai com status pós-CABG aos 69 anos, que morreu aos 80 anos com neoplasia do cólon com metastização hepática; tia paterna com morte súbita aos 75 anos – por enfarte agudo do miocárdio; avô paterno com morte súbita aos 58 anos, causa desconhecida). Sem doenças prévias conhecidas, sem alergias, não faz medicação habitual. Não tem queixas cardiovasculares (nomeadamente dor torácica, palpitações, síncope, ou cansaço). Não fuma. É sedentário. 
+
+Exame objectivo: peso 74Kg (IMC 23); pressão arterial 118-60mmHg, frequência cardíaca 63bpm. 
+
+Analiticamente, apresenta uma creatinina 0.8mg/dL, glicémia em jejum 80mg/dL, triglicerideos 88mg/dL, colesterol total 183mg/dL, colesterol HDL 55mg/dL, colesterol LDL 110mg/dL.
+
+Realizou um electrocardiograma e um ecocardiograma, sem alterações valorizáveis.",gpt-4o,3.44,Sim,,Baixo-a-Moderado,Alta,"{'História Familiar de doença cardiovascular aterosclerótica': 'Sim', 'Sedentarismo': 'Outro (especificar)'}",54 anos,Masculino,Não fumador,Não,118 mmHg,60 mmHg,Não,183 mg/dL,55 mg/dL,88 mg/dL,110 mg/dL,128 mg/dL,Não
+5,"Mulher 63 anos, professora do ensino básico. Tem mantido seguimento em consulta de Cardiologia após episódio de fibrilhação auricular paroxística há 3 anos, resolvido com cardioversão eléctrica. Como outros antecedentes, detaca-se hipotiroidismo e doença de refluxo gastroesofágico. Sem outros antecedentes relevantes. Sem hábitos tabágicos ou etanólicos. Boa higiene do sono. 
+Não teve novos episódios de arritmia. Sem palpitações no dia-a-dia. Sem outras queixas de relevo. 
+
+Encontra-se medicada com pantoprazol 20mg, bisoprolol 2.5mg e apixabano 5mg 12/12h, levotiroxina 75mcg.
+
+À observação: peso 59Kg (IMC 20.5); pressão arterial 107/58mmHg, frequência cardíaca 61bpm. Auscultação cardíaca regular e sem sopros. 
+
+Analiticamente, destaca-se: hemoglobina 12,1g/dL, creatinina 0.6mg/dL, glicémia em jejum 74mg/dL, triglicerideos 124mg/dL, colesterol total 214mg/dL, colesterol HDL 67mg/dL, colesterol LDL 122mg/dL, TSH 3.67mIU/L, fT4 1ng/dL.
+
+Realizou um electrocardiograma (ritmo sinusal, bloqueio auriculo-ventricular de 1º grau, alterações inespecíficas da repolarização ventricular), um ecocardiograma (dilatação ligera da aurícula esquerda, insuficiência mitral ligeira) e um Holter (ritmo sinusal durante todo o registo, extrassistolia suprventricular pouco frequente). ",gpt-4o,SCORE2 not applicable,Não,Uso de anticoagulante,Baixo-a-Moderado,Intermédia,{'Outro': 'Hipotiroidismo'},63,Feminino,Não fumador,Não,107,58,Sim,214,67,124,122,147,Não
+6,"Sexo feminino, 41 anos, professora de português do ensino secundário. Vem à consulta por episódio de lipotímia, que ocorreu após um jantar com amigos. Foi precedida de pródromos (visão turva, palidez, sudorese) e recuperou em cerca de 5-10 minutos. Sem traumatismo cranio-encefálico, sem movimentos tónico-clónicos, sem incontinência de esfíncteres. 
+
+Antecedentes pessoais: hipertensão arterial (fazia edarclor 40+12.5mg mas deixou a medicação após o episódio), tabagismo activo (25 UMA). Neste momento encontra-se apenas a fazer ebastina. Não faz desporto.
+
+Observação: peso 78Kg (IMC 25.7); pressão arterial 146-85mmHg, frequência cardíaca 69bpm. Análises: creatinina 0.9mg/dL, HbA1c 6.3%, triglicerideos 142mg/dL, colesterol total 270mg/dL, colesterol HDL 53mg/dL, colesterol LDL 189mg/dL.
+
+Electrocardiograma em ritmo sinusal com alterações inespecíficas da repolarizaçãoventricular; ecocardiograma com remodeling concêntrico do ventrículo esquerdo e dilatação ligira da aurícula esquerda.",gpt-4o,4.03,Sim,-,Baixo-a-Moderado,Alta,{'Pre-Diabetes': 'Sim'},41,Feminino,Fumador,Sim,146 mmHg,85 mmHg,Sim,270 mg/dL,53 mg/dL,142 mg/dL,189 mg/dL,217 mg/dL,Não
+7,"Homem 48, anos, guarda prisional. Veio encaminhado da consulta do médico de família por hipertensão arterial.
+
+Sem dor torácica, síncope, palpitações ou cansaço. Quando interrogado, refere roncopatia e sonolência diurna (embora esposa não note apneias). 
+Sem antecedentes cardiovasculares pessoais ou familiares. Nega tabagismo. Consumo ocasional de bebidas alcoólicas. Não faz qualquer medicação. Refere que o seu posto de trabalho envolve alguma actividade física, mas não faz activamente desporto. 
+
+Exame objectivo: peso 94Kg (IMC 28.2); pressão arterial 161/102mmHg, frequência cardíaca 81bpm. 
+
+Analiticamente, apresenta uma creatinina 1.4mg/dL, glicémia em jejum 104mg/dL, HbA1c 6.2%, triglicerideos 197mg/dL, colesterol total 231mg/dL, colesterol HDL 43mg/dL, colesterol LDL 149mg/dL, lipoproteína (a) 29mg/dL, ácido úrico 7.5mg/dL.
+
+Realizou um electrocardiograma e um ecocardiograma, sem alterações valorizáveis. MAPA confirmou HTA (média 24h 138-86mmHg) com perfil não-Dipper. Rigidez arterial com VOP 9.3m/s.",gpt-4o,6.06,Sim,-,Alto,Intermédia,"{'Pre-Diabetes': 'Sim', 'Rigidez Arterial aumentada': 'Sim', 'Sindrome Apneia Obstrutiva do Sono': 'Sim', 'Obesidade': 'IMC 28.2'}",48 anos,Masculino,Não fumador,Sim,161 mmHg,102 mmHg,Sim,231 mg/dL,43 mg/dL,197 mg/dL,149 mg/dL,188 mg/dL,Não
+8,"Sexo feminino, 57 anos. Recentemente reformada (assistente social). Consulta para avaliação cardiovascular – quer saber se é seguro inscrever-se na hidroginástica e começar a praticar exercício agora que tem tempo.
+Sem queixas relevantes (palpitações ocasionais que valoriza pouco).
+ 
+Antecedentes pessoais: dislipidemia (diagnosticada há vários anos), tabagismo (1/2 maço por dia – 18UMA; aguarda consulta de cessação tabágica).
+
+Medicação habitual: arroz vermelho, suplementos de magnésio e vitamina C.
+
+Ao exame objectivo: peso 60Kg (IMC 21.5); pressão arterial 120-63mmHg, frequência cardíaca 83bpm. Analiticamente, apresenta uma creatinina 0.63mg/dL, glicemia em jejum 90mg/dL, triglicerideos 124mg/dL, colesterol total 197mg/dL, colesterol HDL 57mg/dL, colesterol LDL 119mg/dL, ApoB 94mg/dL, magnésio 2mmol/L.
+
+Exames complementares de diagnóstico: electrocardiograma e ecocardiograma sem alterações importantes. Prova de esforço não sugestiva de isquémia.",gpt-4o,5.0,Sim,,Baixo-a-Moderado,Alta,"{'Antecedentes de Gravidez com complicações': 'Desconhecido', 'Menopausa precoce': 'Desconhecido', 'Outro': 'Palpitações ocasionais'}",57,Feminino,Fumador,Não,120 mmHg,63 mmHg,Sim,197 mg/dL,57 mg/dL,124 mg/dL,119 mg/dL,140 mg/dL,Não
+9,"Homem 52 anos, pescador. Recorre à consulta por dor torácica atípica (tipo facada, pode chegar a durar várias horas, sem relação com o esforço). Sem outros sintomas, nomeadamente palpitações, síncope ou cansaço. 
+
+Sem antecedentes cardiovasculares pessoais ou familiares. Fumador activo desde os 16 anos (50 UMA). O trabalho é exigente do ponto de vista físico, mas não faz outro tipo de actividade física. Consumo ocasional de bebidas alcoólicas. Não faz qualquer medicação. 
+
+Exame objectivo: peso 78Kg (IMC 23); pressão arterial 130-89mmHg, frequência cardíaca 81bpm. 
+
+Análises: Hb 15.8/dL, creatinina 1.1mg/dL, glicémia em jejum 95mg/dL, HbA1c 5.9%, triglicerideos 98mg/dL, colesterol total 224mg/dL, colesterol HDL 37mg/dL, colesterol LDL 167mg/dL, lipoproteína (a) 38mg/dL, ácido úrico 5.5mg/dL.
+
+Exames complementares de diagnóstico: electrocardiograma e ecocardiograma sem alterações valorizáveis; MAPA com média 24h normal (128-79mmHg) embora com HTA diurna (média 138-86mmHg). AngioTC cardíaca com score de cálcio de 23 (P50-75) com placas não obstrutivas (<50%) na descendente anterior proximal e coronária direita média e distal. ",gpt-4o,8.92,Sim,,Alto,Alta,"{'Score de Cálcio elevado': 'Elevado (23, P50-75)', 'Pre-Diabetes': 'Sim', 'Lp (a) aumentada': 'desconhecido'}",52,Masculino,Fumador,Sim,130,89,Sim,224,37,98,167,187,Não
+10,"Mulher de 67 anos. Vem à consulta por queixas de cansaço para pequenos-médios esforços (lida da casa), sem ortopneia, dispneia paroxística nocturna ou edemas dos membros inferiores. Sem síncope ou dor torácica.
+
+Antecedentes pessoais: hipertensão arterial, dislipidemia, hipotiroidismo.
+
+Medicação habitual: perindopril+indapamida 5+1.25mg, bisoprolol 2.5mg, aspirina 100mg, sinvastatina 20mg, levotiroxina 75mcg. 
+
+Ao exame objectivo: peso 57Kg (IMC 19.7); pressão arterial 131-63mmHg, frequência cardíaca 54bpm. Auscultação cardíaca com sopro sistólico grau III em crescendo-decrescendo no bordo esquerdo do esterno. Auscultação pulmonar sem estase. Sem edemas dos membros inferiores.
+
+Analiticamente, apresenta uma creatinina 0.58mg/dL, glicemia em jejum 80mg/dL, HbA1c 5.8%, triglicerideos 85mg/dL, colesterol total 137mg/dL, colesterol HDL 58mg/dL, colesterol LDL 62mg/dL, NT-proBNP 985pg/mL.
+
+Exames complementares de diagnóstico: electrocardiograma com bradicardia sinusal 52bpm, com alterações da repolarização ventricular sugestivas de sobrecarga / isquémia. Ecocardiograma com remodeling concêntrico do ventrículo esquerdo, dilatação moderada da aurícula esquerda; válvula aorta bicúspide, com calcificação das cúspides e limitação da sua abertura, a condicionar estenose moderada (velocidade máxima 3.3m/s, gradiente médio 30mmHg).",gpt-4o,SCORE2 not applicable,Não,Doença cardíaca preexistente / não aplicável devido a alterações estruturais cardíacas,Alto,Alta,{'Outro': 'Estenose aórtica moderada; Remodelamento do ventrículo esquerdo'},67,Feminino,Não fumador,Sim,131,63,Sim,137,58,85,62,79,Não
+11,"Homem de 62 anos. 2 episódios de síncope no último mês (sem pródromos, recuperação rápida; uma das vezes estava no supermercado, na outra em casa sentado a ver televisão). Sem outras queixas, nomeadamente palpitações, dor torácica ou cansaço.
+
+Antecedentes pessoais: hipertensão arterial, dislipidemia, ex-tabagismo (parou há 8 anos, 50 UMAs), hiperplasia benigna da próstata; status pós-neoplasia do cólon há 8 anos (hemicolectomia esquerda).
+
+Medicação habitual: candesartan+amlodipina 8+5mg, nebivolol 5mg, rosuvastatina 10mg, tansulosina+dutasteride 0.4+0.5mg.
+
+Ao exame objectivo: peso 77Kg (IMC 26.4); pressão arterial 129-66mmHg, frequência cardíaca 51bpm. Auscultação cardíaca e pulmonar sem alterações. Sem edemas dos membros inferiores.
+
+Analiticamente, apresenta uma creatinina 1.07mg/dL, glicemia em jejum 105mg/dL, HbA1c 6.2%, triglicerideos 134mg/dL, colesterol total 187mg/dL, colesterol HDL 51mg/dL, colesterol LDL 109mg/dL, NT-proBNP 204pg/mL.
+
+Exames complementares de diagnóstico: electrocardiograma com bradicardia sinusal 49bpm, bloqueio auriculo-ventricular de 1º grau, alterações inespecíficas da repolarização ventricular. Ecocardiograma com remodeling concêntrico do ventrículo esquerdo, dilatação moderada da aurícula esquerda e insuficiência mitral e aórtica ligeiras. Realizou detetor de eventos de 7 dias, com período de bloqueio auriculo-ventricular 2:1 diurno, sem correlação sintomática.",gpt-4o,SCORE2 not applicable,Não,Doença cardiovascular existente,Alto,Alta,"{'Pre-Diabetes': 'Sim', 'Cancro': 'Sim (status pós-neoplasia do cólon)'}",62 anos,Masculino,Ex-Fumador,Sim,129 mmHg,66 mmHg,Sim,187 mg/dL,51 mg/dL,134 mg/dL,109 mg/dL,136 mg/dL,Não
+12,"Mulher de 47 anos. Encaminhada da consulta de pneumologia (onde é seguida por doença pulmonar obstrutiva crónica) por hipertensão arterial não controlada. 
+Queixas de cansaço para médios esforços, associados a pieira. Sem dor torácica, palpitações, síncope ou edemas dos membros inferiores.
+
+Antecedentes pessoais: tabagismo (anda a tentar reduzir mas ainda mantem, carga tabágica de 52 UMAs). Mãe com CABG aos 68 anos. Sem alergias conhecidas. 
+
+Medicação habitual: brometo de umeclidínio + vilanterol 55+22 µg.
+
+Ao exame objectivo: peso 52Kg (IMC 17.8); pressão arterial 189-103mmHg, frequência cardíaca 93bpm. Auscultação cardíaca sem alterações. Auscultação pulmonar com crepitações dispersas por ambos os hemitóraxes.
+
+Analiticamente, apresenta uma creatinina 0.58mg/dL, glicemia em jejum 80mg/dL, HbA1c 5.8%, triglicerideos 125mg/dL, colesterol total 263mg/dL, colesterol HDL 54mg/dL, colesterol LDL 184mg/dL, NT proBNP 95ng/mL.
+
+Exames complementares de diagnóstico: electrocardiograma com ritmo sinusal 95/min, bloqueio incompleto de ramo direito; ecocardiograma sem alterações significativas; MAPA com hipertensão arterial (média 24h 147-87mmHg), perfil Dipper.",gpt-4o,SCORE2 not applicable,Não,HAS não controlada,Alto,Alta,"{'História Familiar de doença cardiovascular aterosclerótica': 'Sim', 'Doença pulmonar obstrutiva crónica (DPOC)': 'Sim'}",47 anos,Feminino,Fumador,Sim,189 mmHg,103 mmHg,Sim,263 mg/dL,54 mg/dL,125 mg/dL,184 mg/dL,209 mg/dL,Não
+13,"Homem de 41 anos, vereador da câmara municipal. Vem à consulta porque quer continuar a praticar desporto, mas no ginásio foi aconselhado a vir à consulta de Cardiologia antes de retomar a prática pelos valores de tensão arterial. 
+Começou a fazer exercício há cerca de 2 meses, sem sintomas durante a prática ou fora dela. 
+
+Antecedentes pessoais: tabagismo (5 cigarros por dia - 5UMAs). Mãe com hipertensão e diabetes; pai com neoplasia do cólon aos 57 anos. Sem alergias conhecidas. 
+
+Sem medicação habitual.
+
+Ao exame objectivo: peso 77Kg (IMC 23); pressão arterial 155-107mmHg, frequência cardíaca 71bpm. Auscultação cardíaca e pulmonar sem alterações.
+
+Analiticamente, apresenta uma creatinina 0.96mg/dL, glicemia em jejum 96mg/dL, HbA1c 5.8%, triglicerideos 98mg/dL, colesterol total 241mg/dL, colesterol HDL 33mg/dL, colesterol LDL 188mg/dL, ácido úrico 6.3mg/dL
+
+Exames complementares de diagnóstico: electrocardiograma com ritmo sinusal 75/min, alterações inespecíficas da repolarização ventricular; ecocardiograma sem alterações significativas; prova de esforço com resposta hipertensiva ao esforço, não sugestiva de isquémia.",gpt-4o,9.41,Sim,,Alto,Alta,{'Modificadores de Risco': 'Pre-Diabetes; História Familiar de doença cardiovascular aterosclerótica'},41 anos,Masculino,Fumador,Sim,155 mmHg,107 mmHg,Sim,241 mg/dL,33 mg/dL,98 mg/dL,188 mg/dL,208 mg/dL,Não
+14,"Mulher de 56 anos, doméstica. Recorre à consulta por cansaço para médios esforços com agravamento progressivo desde o último ano. Edemas vespertinos bimaleolares. Sem ortopneia ou dispneia paroxística nocturna. Sem síncope ou dor torácica.
+
+Antecedentes pessoais: obesidade, hipertensão arterial, dislipidemia, tabagismo (40 UMAs), patologia osteoarticular degenerativa dos joelhos e coluna, síndrome depressivo.
+
+Medicação habitual (dúvidas acerca do cumprimento da medicação): perindopril+indapamida+amlodipina 10/2.5/5mg, tramadol+paracetamol 37.5+325mg, voltaren 75mg (cerca de 3-4 tomas por semana), pantoprazol 20mg, mirtazapina 30mg, fluoxetina 20mg, alprazolam 0.5mg 2id; refere intolerância as estatinas (dores articulares?).
+
+Ao exame objectivo: peso 93Kg (IMC 31.3); pressão arterial 163-91mmHg (incumpridora terapêutica?), frequência cardíaca 95bpm. Auscultação cardíaca com sopro sistólico grau II no bordo esquerdo do esterno. Auscultação pulmonar sem estase. Sem edemas dos membros inferiores.
+
+Analiticamente, apresenta uma creatinina 1.17mg/dL, glicemia em jejum 113mg/dL, HbA1c 6.3%, triglicerideos 196mg/dL, colesterol total 224mg/dL, colesterol HDL 45mg/dL, colesterol LDL 140mg/dL, NT proBNP 745pg/mL.
+
+Exames complementares de diagnóstico: Electrocardiograma em ritmo sinusal 49bpm, alterações inespecíficas da repolarização ventricular; Ecocardiograma com remodeling concêntrico do ventrículo esquerdo, dilatação moderada da aurícula esquerda, fracção de ejecção 62% e E/e’ 13; Ecocardiograma de esforço com aumento das pressões de enchimento com o esforço, sugerindo o diagnóstico de insuficiência cardíca com fracção de ejecção preservada.",gpt-4o,SCORE2 not applicable,Não,Paciente com insuficiência cardíaca,Alto,Intermédia,"{'Obesidade': 'Sim', 'Pre-Diabetes': 'Sim', 'Doença Inflamatória Crónica': 'Sim', 'Outro': 'Sim'}",56,Feminino,Fumador,Sim,163,91,Sim,224,45,196,140,179,Não
+15,"Homem 51 anos, advogado. Recorre à consulta por dor torácica atípica – tipo aperto, sobretudo relacionada com ansiedade, sem relação com o esforço, que chega a durar várias horas. Mais cansado nos últimos meses (acorda cansado). Sem síncope ou palpitações.
+ 
+Antecedentes pessoais: dislipidémia, tabagismo (21 UMAs), perturbação de ansiedade. Antecedentes familiares: pai com CABG aos 71 anos, mãe com hipertensão arterial e diabetes tipo 2. Estilo de vida sedentário.
+
+Medicação habitual: sinvastatina 20mg, escitalopram 10mg.
+
+Ao exame objectivo: peso 73Kg (IMC 22.5); pressão arterial 149-98mmHg, frequência cardíaca 76bpm. Auscultação cardíaca e pulmonar sem alterações.
+Analiticamente, apresenta uma creatinina 0.87mg/dL, glicemia em jejum 94mg/dL, HbA1c 5.8%, triglicerideos 98mg/dL, colesterol total 197mg/dL, colesterol HDL 32mg/dL, colesterol LDL 148mg/dL, lipoproteína (a) 39mg/dL, ApoB 107mg/dL, ácido úrico 5.8mg/dL, NT pro BNP 33pg/mL.
+
+Exames complementares de diagnóstico: electrocardiograma com ritmo sinusal 75/min, alterações inespecíficas da repolarização ventricular; ecocardiograma sem alterações significativas; MAPA confirmou presença de hipertensão arterial (média 24h 129-88mmHg – perfil tensional Dipper). AngioTC coronária com score de cálcio de 47 (P50-75) com placas não obstrutivas (<50%) nos 3 vasos sem envolvimento do tronco comum.  ",gpt-4o,10.83,Sim,,Alto,Alta,"{'História Familiar de doença cardiovascular aterosclerótica': 'Sim', 'Pré-Diabetes': 'Sim (HbA1c 5,8%)', 'Lp (a) aumentada': 'Sim (39mg/dL)', 'Score de Cálcio elevado': 'Sim (Score de Cálcio de 47)'}",51,Masculino,Fumador,Sim,149,98,Sim,197,32,98,148,165,Não
+16,"Mulher 64 anos. Encaminhada da consulta de anestesia (pré-operatório cirurgia à tiróide – carcinoma papilar da tiróide) por sopro cardíaco não avaliado. 
+Sem queixas de cansaço, dor torácica, síncope ou palpitações. Tem sido saudável até à data, estado apenas medicada com alprazolam 0,5mg à noite. Tabagismo activo (40 UMAs). 
+
+Ao exame objectivo: peso 52Kg (IMC 21.8); pressão arterial 143-84mmHg, frequência cardíaca 79bpm. Auscultação cardíaca com sopro sistólico grau II no bordo esquerdo do esterno; auscultação pulmonar sem alterações.
+
+Analiticamente: Hb 10.9g/dL, creatinina 0.76mg/dL, glicemia em jejum 97mg/dL, HbA1c 5.9%, triglicerideos 107mg/dL, colesterol total 169mg/dL, colesterol HDL 48mg/dL, colesterol LDL 100mg/dL, TSH 4.06 mIU/L, NT-proBNP 288pg/mL
+
+Exames complementares de diagnóstico: electrocardiograma com ritmo sinusal 75/min, alterações inespecíficas da repolarização ventricular; ecocardiograma com remodeling concêntrico do ventrículo esquerdo, dilatação moderada da aurícula esquerda e válvula aorta tricúspide, com cúspides calcificadas mas sem compromisso funcional.",gpt-4o,SCORE2 not applicable,Não,Doença oncológica ativa,Alto,Intermédia,"{'Pre-Diabetes': 'Sim', 'Cancro': 'Carcinoma papilar da tiróide', 'Outro': 'Sopro cardíaco; Remodelling cardíaco'}",64 anos,Feminino,Fumador,Sim,143 mmHg,84 mmHg,Não,169 mg/dL,48 mg/dL,107 mg/dL,100 mg/dL,121 mg/dL,Não
+17,"Homem 65 anos, bom estado geral. Vem à consulta pedir uma segunda opinião acerca da medicação que lhe foi prescrita para a hipertensão arterial (a qual suspendeu há 2 semanas por iniciativa própria). 
+Tem tido lipotímias (hipotensão sintomática) após início de medicação anti-hipertensora, sobretudo de manhã, quando está muito tempo em pé. Sem outras queixas. Perdeu 16Kg nos últimos 2 anos (dieta e análogo da GLP1).
+
+Outros antecedentes pessoais: ex-tabagismo, dislipidemia, hiperuricémia, SAOS sob CPAP, nódulo na supra-renal direita, patologia coluna lombar (já intervencionado). Maioritariamene sedentário; álcool refeição (1-2 copos ao almoço).
+
+Medicação habitual: tromalyt, ozempic 1mg, alopurinol 300mg, pantoprazol 40mg, quetiapina 25mg.
+
+Ao exame objectivo: peso 76Kg (IMC 28); pressão arterial 147-68mmHg, frequência cardíaca 59bpm. Auscultação cardíaca com sopro sistólico grau I no bordo esquerdo do esterno; auscultação pulmonar sem alterações.
+
+Analiticamente: Hb 11.9g/dL, creatinina 0.96mg/dL, glicemia em jejum 111mg/dL, HbA1c 6.3%, triglicerideos 237mg/dL, colesterol total 129mg/dL, colesterol HDL 33mg/dL, colesterol LDL 49mg/dL, lipoproteína (a) 20mg/dL.
+Exames complementares de diagnóstico: electrocardiograma com ritmo sinusal 54/min, sinais de baixa voltagem nas derivações dos membros, alterações inespecíficas da repolarização ventricular; ecocardiograma com remodeling concêntrica do ventrículo esquerdo, dilatação moderada da aurícula esquerda; esclerose da válvula aórtica, insuficiência mitral e aórtica ligeiras. MAPA (com medicação) com pressão arterial média 24h 103-61mmHg. ",gpt-4o,SCORE2 not applicable,Não,Sintomas de hipotensão,Alto,Intermédia,"{'Pre-Diabetes': 'Valor de HbA1c 6,3%', 'Sindrome Apneia Obstrutiva do Sono': 'Sim', 'Obesidade': 'IMC 28', 'Outro': 'Hipotensão Sintomática, Remodelação Cardíaca'}",65 anos,Masculino,Ex-Fumador,Sim,147 mmHg,68 mmHg,Sim,129 mg/dL,33 mg/dL,237 mg/dL,49 mg/dL,96 mg/dL,Não
+18,"Homem 44 anos, director comercial de fábrica de papel. Vem à consulta encaminhado do médico da medicina do trabalho, por hipertensão arterial. Nega sintomatologia cardiovascular relevante (apenas cansaço ocasional, que associa a períodos de menos descanso). Mantem actividade física regular (ginásio 3xsemana, joga futebol com amigos 1xsemana).
+
+Antecedentes pessoais: irrelevantes. Nega tabagismo ou consumo regular de álcool ou substâncias recreativas.
+Antecedentes familiares: mãe com enfarte agudo do miocárdio aos 61 anos, hipertensão e dislipidemia; pai com hipertensão arterial e neoplasia da próstata. 
+
+Ao exame objectivo: peso 76Kg (IMC 22.5); pressão arterial 145-94mmHg, frequência cardíaca 56bpm. Auscultação cardíaca sem alterações; auscultação pulmonar sem alterações.
+
+Analiticamente: Hb 15.9g/dL, creatinina 0.97mg/dL, glicemia em jejum 89mg/dL, triglicerideos 137mg/dL, colesterol total 229mg/dL, colesterol HDL 37mg/dL, colesterol LDL 165mg/dL, lipoproteína (a) 92mg/dL, ApoB 172mg/dL.
+
+Exames complementares de diagnóstico: electrocardiograma e ecocardiograma sem alterações significativas. MAPA com pressão arterial média 24h 130-86mmHg. Prova de esforço não sugestiva de isquémia. ",gpt-4o,4.19,Sim,,Alto,Intermédia,"{'História Familiar de doença cardiovascular aterosclerótica': 'Sim', 'Lp(a) aumentada': 'Sim (92 mg/dL)'}",44,Masculino,Não fumador,Sim,145,94,Sim,229,37,137,165,192,Não
+19,"Mulher de 54 anos, dona de loja de pronto a vestir. Recorre à consulta por dor torácica atípica (tipo facada, maioritariamente em repouso com duração de cerca de 5-10 minutos). Refere cansaço para médios esforços (sobretudo fadiga matinal), sem ortopneia ou dispneia paroxística nocturna. Sem palpitações ou síncope.
+
+Antecedentes pessoais: tabagismo (17 UMAs), artrite reumatóide (com diagnóstico aos 40 anos, seguida em consulta de reumatologia), ansiedade.
+
+Medicação habitual: metotrexato 20mg/semana, ácido fólico 5mg, tramadol+paracetamol 37.5+325mg, naproxeno SOS (3xsemana), sertralina 50mg. Neste momento sem corticoterapia.  
+
+Ao exame objectivo: peso 51Kg (IMC 19.5); pressão arterial 132-84mmHg, frequência cardíaca 88bpm. Auscultação cardíaca e pulmonar sem alterações. Sem edemas dos membros inferiores.
+
+Analiticamente, apresenta uma Hb 11.8g/dL, creatinina 0.87mg/dL, glicemia em jejum 83mg/dL, triglicerideos 128mg/dL, colesterol total 211mg/dL, colesterol HDL 52mg/dL, colesterol LDL 133mg/dL, NT proBNP 75pg/mL, ANA 1/160, PCR-us 4.5mg/L.
+
+Exames complementares de diagnóstico: electrocardiograma em ritmo sinusal 79bpm, alterações inespecíficas da repolarização ventricular. Ecocardiograma sem alterações. Prova de esforço não sugestiva de isquémia. AngioTC coronário com score de cálcio de  77 (percentil 75-90), com placas envolvendo o tronco comum (<25%), descendente anterior proximal (25-49%), descendente anterior média (<25%) e coronária direita média (25-49%).",gpt-4o,5.61,Sim,-,Alto,Intermédia,"{'Score de Cálcio elevado': 'Sim', 'PCR alta sensibilidade elevada': 'Sim', 'Doença Inflamatória Crónica': 'Sim (Artrite Reumatóide)'}",54,Feminino,Fumador,Sim,132,84,Sim,211,52,128,133,159,Não
+20,"Homem 61 anos, comerciante. Recorre à consulta por palpitações (3 episódios no último mês, sensação de taquicardia mantida com batimentos irregulares – SmartWatch fez tira de ritmo com QRS irregulares a 140bpm, que me parece fibrilhação auricular). Nesses episódios, sensação de aperto precordial. Refere roncopatia e “sobressaltos” à noite que deixam a esposa preocupada. 
+
+Antecedentes pessoais: obesidade; hábitos alcoólicos moderados. 
+
+Ao exame objectivo: peso 105Kg (IMC 33.7), perímetro abdominal 108cm; pressão arterial 151-94mmHg, frequência cardíaca 91bpm. 
+Analiticamente, apresenta uma Hb 14.8g/dL, creatinina 1.1 mg/dL, glicemia em jejum 113mg/dL, HbA1c 6.3%, triglicerideos 256mg/dL, colesterol total 217mg/dL, colesterol HDL 48mg/dL, colesterol LDL 118mg/dL, NT proBNP <75pg/mL.
+
+Exames complementares de diagnóstico: electrocardiograma em ritmo sinusal 79bpm, sinais de baixa voltagem nas derivações dos membros, alterações inespecíficas da repolarização ventricular. Ecocardiograma com remodeling concêntrico do ventrículo esquerdo, dilatação moderada da aurícula esquerda. Detector de eventos de 7 dias com extrassistolia supraventricular muito frequente e curto período de fibrilhação auricular de 2 minutos, 160/min. Score de cálcio de 178 (percentil 75-90). Polissonografia confirmou SAOS grave.",gpt-4o,9.24,Sim,,Alto,Alta,{'Modificadores de Risco': 'Score de Cálcio elevado; Obesidade; Pre-Diabetes; Síndrome Apneia Obstrutiva do Sono'},61 anos,Masculino,Desconhecido,Sim,151 mmHg,94 mmHg,Sim,217 mg/dL,48 mg/dL,256 mg/dL,118 mg/dL,169 mg/dL,Não
+21,"Mulher de 51 anos, motorista autocarros. Seguida na nefrologia por doença renal poliquística. Vem para otimização dos fatores de risco cardiovasculares. Assintomática. Apesar da profissão sedentária, faz ginásio e pilates 3xsemana. Nega tabagismo ou consumo de bebidas alcoólicas. Boa higiene do sono. 
+
+Antecedentes pessoais: doença renal poliquística autossómica dominante (mutação PKD1)
+
+Medicação habitual: ramipril 2.5mg, empagliflozina 10mg, atorvastatina 10mg, finerenona 10mg
+Ao exame objectivo: peso 55Kg (IMC 20.5); pressão arterial 127-79mmHg, frequência cardíaca 79bpm. Auscultação cardíaca e pulmonar sem alterações. Sem edemas dos membros inferiores.
+
+Analiticamente, apresenta uma Hb 12.8g/dL, creatinina 1.49mg/dL (TFG 42mL/min/1.73 m2), microalbuminúria <30mg/g, glicemia em jejum 88mg/dL, triglicerideos 199mg/dL, colesterol total 162mg/dL, colesterol HDL 38mg/dL, colesterol LDL 84mg/dL, K+ 4.0mmol/L.
+
+Exames complementares de diagnóstico: electrocardiograma em ritmo sinusal 79bpm, alterações inespecíficas da repolarização ventricular. Ecocardiograma sem alterações. Prova de esforço não sugestiva de isquémia. ",gpt-4o,SCORE2 not applicable,Não,Doença renal crónica (TFG < 60mL/min/1.73 m²),Alto,Alta,"{'Outro (especificar)': 'Doença renal poliquística autossómica dominante', 'História Familiar de doença cardiovascular aterosclerótica': 'Desconhecido'}",51 anos,Feminino,Não fumador,Não,127 mmHg,79 mmHg,Sim,162 mg/dL,38 mg/dL,199 mg/dL,84 mg/dL,124 mg/dL,Não
+22,"Homem de 61 anos, reserva (Marinha). Seguimento habitual por bicuspidia aórtica com insuficiência moderada. Mantem-se sem cançaso (sem queixas desde que passou à reserva). Tem dormido melhor (7-8h) e feito caminhadas (5000-7000 passos/dia). 
+
+Outros antecedentes pessoais: hipertensão arterial, dislipidemia, doença renal crónica, ansiedade
+
+Medicação habitual: ramipril 10mg, dapagliflozina 10mg, rosuvastatina 10mg
+
+Ao exame objectivo: peso 77Kg (IMC 25.4); pressão arterial 131-78mmHg, frequência cardíaca 77bpm. Auscultação cardíaca e pulmonar sem alterações. Sem edemas dos membros inferiores.
+
+Analiticamente, apresenta uma Hb 13.3g/dL, creatinina 1.6mg/dL (TFG 42mL/min/1.73 m2), microalbuminúria 100mg/g, glicemia em jejum 91mg/dL, triglicerideos 164mg/dL, colesterol total 136mg/dL, colesterol HDL 38mg/dL, colesterol LDL 65mg/dL, K+ 4.6mmol/L, NT-proBNP <75pg/mL.
+
+Exames complementares de diagnóstico: electrocardiograma em ritmo sinusal 79bpm, alterações inespecíficas da repolarização ventricular. Ecocardiograma insuficiência moderada com FEVE 61% (dimensão tele-diastólica VE 43mm), insuficiência mitral ligeira e baixa probabilidade de hipertensão pulmonar. Prova de esforço não sugestiva de isquémia. ",gpt-4o,SCORE2 not applicable,Não,Condições clínicas graves,Alto,Alta,"{'Doença Inflamatória Crónica': 'Doença renal crónica', 'Ansiedade': 'Presente'}",61 anos,Masculino,Desconhecido,Sim,131 mmHg,78 mmHg,Sim,136 mg/dL,38 mg/dL,164 mg/dL,65 mg/dL,98 mg/dL,Não
+23,"Mulher de 59 anos, bancária. É seguida desde há 5 anos em consulta de Cardiologia para optimização do risco cardiovascular, altura em que lhe foi feito o diagnóstico de diabetes. Desde então está assintomática. Tem feito caminhadas (3 vezes por semana, cerca de 30 minutos e tenta manter uma meta diária de 7000 passos). 
+
+Antecedentes pessoais: diabetes tipo 2, excesso de peso, dislipidemia, patologia osteoarticular degenerativa dos joelhos e coluna. 
+
+Medicação habitual: metformina+dapagliflozina 850+10mg 2id, atorvastatina 20mg, lorazepam 1mg.
+
+Ao exame objectivo: peso 76Kg (IMC 26); pressão arterial 124-74mmHg, frequência cardíaca 85bpm. Sem outros achados de relevo.
+
+Nas análises: Hb 13.2g/dL, creatinina 0.94mg/dL (TFG 70mL/min/1.73 m2), glicemia em jejum 138mg/dL, HbA1c 7.8%, triglicerideos 166mg/dL, colesterol total 176mg/dL, colesterol HDL 43mg/dL, colesterol LDL 100mg/dL, NT proBNP 79pg/mL, microalbuminúria <30mg/g.
+
+Exames complementares de diagnóstico: electrocardiograma em ritmo sinusal 81bpm, alterações inespecíficas da repolarização ventricular. Ecocardiograma com remodeling concêntrico do ventrículo esquerdo, dilatação ligeira da aurícula esquerda, fracção de ejecção 59% e E/e’ 9. Ecocardiograma de esforço com normalização das pressões de enchimento com o esforço e sem alterações da contractilidade segmentar sugestivas de isquémia.",gpt-4o,SCORE2 not applicable,Não,Diabetes,Alto,Alta,{'Modificadores de Risco': 'Obesidade; Patologia osteoarticular degenerativa'},59,Feminino,desconhecido,Não,124,74,Sim,176 mg/dL,43 mg/dL,166 mg/dL,100 mg/dL,133 mg/dL,Sim
+24,"Homem de 59 anos, trabalhador fabril. Seguimento semestral em consulta de cardiologia para otimização do risco cardiovascular. Assintomático do ponto de vista cardiovascular. Dorme mal (trabalha por turnos e tem dificuldade em descansar de manhã) – nessas alturas mais cansado. 
+
+Antecedentes pessoais: diabetes tipo 2 (diagnóstico há 5 anos), hipertensão arterial, excesso de peso, dislipidemia, ex-tabagismo (20 UMAs, parou há 5 anos).
+
+Medicação habitual: metformina+sitagliptina 850+50mg 2id, empagliflozina 10mg, enalapril+lercanidipina 10+10mg id, rosuvastatina 10mg
+
+Ao exame objectivo: peso 95Kg (IMC 29.8); pressão arterial 134-82mmHg, frequência cardíaca 71bpm. Sem achados de relevo.
+
+Nas análises: Hb 13.2g/dL, creatinina 1.13mg/dL (TFG 75mL/min/1.73 m2), glicemia em jejum 111mg/dL, HbA1c 6.6%, triglicerideos 178mg/dL, colesterol total 187mg/dL, colesterol HDL 45mg/dL, colesterol LDL 106mg/dL, microalbuminúria <30mg/g.
+
+Exames complementares de diagnóstico: electrocardiograma sem alterações; ecocardiograma com dilatação ligeira da aurícula esquerda e insuficiência mitral ligeira. Prova de esforço não sugestiva de isquémia.",gpt-4o,6.31,Sim,,Alto,Alta,"{'Sindrome Apneia Obstrutiva do Sono': 'Dorme mal, cansaço (turnos)', 'Outro': 'Obesidade (IMC 29,8)'}",59 anos,Masculino,Ex-Fumador,Sim,134 mmHg,82 mmHg,Sim,187 mg/dL,45 mg/dL,178 mg/dL,106 mg/dL,142 mg/dL,Sim
+25,"Mulher de 65 anos, bancária. Encaminhada da consulta de diabetologia para controlo do risco cardiovascular. Sem dor torácica, síncope ou palpitações. Aumentou de peso e nos últimos tempos tem feito menos caminhadas – faz menos de 5000 passos/dia, sobretudo por dor mecânica nos joelhos embora também refira cansaço. 
+
+Outros antecedentes pessoais: diabetes tipo 2 (diagnóstico aos 53 anos), excesso de peso, dislipidemia, hipertensão arterial, patologia osteoarticular degenerativa dos joelhos e coluna.
+
+Medicação habitual: pantoprazol 20mg, ácido acetlsalicílico 100mg, nebivolol 2,5mg, metformina+dapagliflozina 1000+10mg 2id, gliclazina 30mg, perindopril+indapamida+amlodipina 5+1.25+5mg, naproxeno 75mg, glucosamina 500mg 2id.
+
+Ao exame objectivo: peso 84Kg (IMC 28.8); pressão arterial 138-75mmHg, frequência cardíaca 89bpm. Sem achados de relevo.
+
+Nás análises: Hb 13.2g/dL, creatinina 1.08mg/dL (TFG 57mL/min/1.73 m2), glicemia em jejum 128mg/dL, HbA1c 6.9%, triglicerideos 173mg/dL, colesterol total 165mg/dL, colesterol HDL 51mg/dL, colesterol LDL 79mg/dL, NT proBNP 66pg/mL, microalbuminúria 103mg/g.
+
+Exames complementares de diagnóstico: electrocardiograma em ritmo sinusal 81bpm, alterações inespecíficas da repolarização ventricular. Ecocardiograma com remodeling concêntrico do ventrículo esquerdo, dilatação ligeira da aurícula esquerda, fracção de ejecção 59% e E/e’ 9. Prova de esforço com baixa capacidade funcional, sem atingir 85% da FCMP. ",gpt-4o,6.03,Sim,,Alto,Alta,"{'Obesidade': 'IMC 28,8 kg/m²', 'Doença Osteoarticular': 'Patologia osteoarticular degenerativa dos joelhos e coluna'}",65 anos,Feminino,Não fumador,Sim,138 mmHg,75 mmHg,Sim,165 mg/dL,51 mg/dL,173 mg/dL,79 mg/dL,114 mg/dL,Sim
+26,"Homem 36 anos, informático. Consulta de seguimento para otimização do risco cardiovascular (suspeita de hipercolesterolémia familiar). Sem sintomas. Estilo de vida maioritariamente sedentário.  Não fuma. Bebe socialmente ao fim-de-semana. Dorme cerca de 6h por dia (dificuldade em adormecer cedo).
+
+Antecedentes familiares: mãe com enfarte agudo do miocárdio aos 47 anos (enfarte inferior); tia materna com morte súbita aos 51 anos; avó materna faleceu com insuficiência cardíaca aos 67 anos. 
+
+Exame objectivo: peso 91Kg (IMC 27.7); pressão arterial 134-87mmHg, frequência cardíaca 76bpm. Auscultação cardíaca e pulmonar sem alterações. Sem outros achados.
+
+Analiticamente, apresenta uma creatinina 1.0 mg/dL, glicémia em jejum 95mg/dL, triglicerideos 164mg/dL, colesterol total 336mg/dL, colesterol HDL 45mg/dL, colesterol LDL 258mg/dL. Teste genético com mutação do gene LDLR (hipercolesterolémia familiar heterozigótica).
+
+Realizou um electrocardiograma e um ecocardiograma, sem alterações valorizáveis. Prova de esforço não sugestiva de isquémia.",gpt-4o,SCORE2 not applicable,Não,Hipercolesterolémia Familiar,Muito-Alto,Alta,"{'História Familiar de doença cardiovascular aterosclerótica': 'Sim', 'Outro': 'Hipercolesterolémia Familiar (mutação do gene LDLR)'}",36 anos,Masculino,Não fumador,Não,134 mmHg,87 mmHg,Sim,336 mg/dL,45 mg/dL,164 mg/dL,258 mg/dL,291 mg/dL,Não
+27,"Mulher de 61 anos, enfermeira. Queixas de dor torácica atípica (tipo aperto, com duração de 5-10 minutos mas sem relação com o esforço – associa sobretudo a momentos de maior ansiedade). Sem palpitações, síncope ou queixas de cansaço.
+
+Antecedentes pessoais: tabagismo (10 UMAs), ansiedade.
+
+Medicação habitual: sertralina 25mg, lorazepam 1mg.
+
+Ao exame objectivo: peso 53Kg (IMC 20.1); pressão arterial 124-75mmHg, frequência cardíaca 69bpm. Auscultação cardíaca sem alterações.
+Análises: Hb 13.2g/dL, creatinina 0.58mg/dL, glicemia em jejum 78mg/dL, HbA1c 5.6%, triglicerideos 87mg/dL, colesterol total 199mg/dL, colesterol HDL 54mg/dL, colesterol LDL 87mg/dL, NT proBNP <75pg/mL.
+
+Exames complementares de diagnóstico: electrocardiograma e ecocardiograma sem alterações significativas. AngioTC coronária com score de cálcio 186 (> P75) com oclusão da coronária direita média e com placas não obstrutivas (<50%) na circunflexa proximal e descendente anterior média. ",gpt-4o,SCORE2 not applicable,Não,Score de cálcio acima do percentil 75,Alto,Alta,"{'Score de Cálcio elevado': 'Sim', 'Outro': 'Oclusão da coronária direita média; Placas não obstrutivas nas coronárias'}",61,Feminino,Fumador,Não,124,75,Não,199,54,87,87,145,Não
+28,"Homem 51 anos, engenheiro químico em fábrica de plásticos. Consulta de vigilância cardiovascular (cardiopatia isquémica). Sem dor torácica ou outros sintomas cardiovasculares. 
+
+Antecedentes pessoais: enfarte agudo do miocárdio sem supra-ST aos 49 anos com angioplastia da descendente anterior proximal; ex-tabagismo (40 UMAs), parou há 2 anos. Estilo de vida maioritariamente sedentário. 
+
+Medicação habitual: clopidogrel 75mg, bisoprolol 2.5mg, rosuvastatina+eztimibe 20+10mg
+
+Exame objectivo: peso 71Kg (IMC 25.6), pressão arterial 118-67mmHg, frequência cardíaca 58bpm. Restante exame sem alterações.
+
+Nas análises:  Hb 14.1g/dL, plaquetas 236.000, creatinina 0.87mg/dL, glicémia em jejum 85mg/dL, triglicerideos 99mg/dL, colesterol total 136mg/dL, colesterol HDL 46mg/dL, colesterol LDL 70mg/dL. 
+
+Realizou um electrocardiograma em ritmo sinusal, sem alterações significativas. Ecocardiograma de esforço com boa capacidade funcional, sem dor torácica e sem alterações da contractilidade segmentar e/ou electrocardiográficas no pico de esforço. ",gpt-4o,SCORE2 not applicable,Não,História de doença cardiovascular,Muito-Alto,Alta,"{'História Familiar de doença cardiovascular aterosclerótica': 'Desconhecido', 'Outro': 'Enfarte agudo do miocárdio prévio'}",51 anos,Masculino,Ex-Fumador,Não,118 mmHg,67 mmHg,Sim,136 mg/dL,46 mg/dL,99 mg/dL,70 mg/dL,90 mg/dL,Não
+29,"Mulher de 63 anos, técnica de análises. Status pós-angioplastia electiva (circunflexa proximal) em contexto de dor torácica atípica há 2 anos. Neste momento assintomática. Tem feito caminhadas.
+
+Antecedentes pessoais: ex-tabagismo (10 UMAs, parou há 2 anos), ansiedade. 
+
+Medicação habitual: ácido acetilsalicílico 100mg, atorvastatina +ezetimibe 20+10mg, sertralina 25mg, alprazolam 0.25mg.
+
+Ao exame objectivo: peso 53Kg (IMC 20.1); pressão arterial 114-66mmHg, frequência cardíaca 63bpm. Auscultação cardíaca sem alterações.
+
+Análises: Hb 13.1g/dL, creatinina 0.63mg/dL, glicemia em jejum 80mg/dL, HbA1c 5.6%, triglicerideos 82mg/dL, colesterol total 149mg/dL, colesterol HDL 53mg/dL, colesterol LDL 80mg/dL, NT proBNP <75pg/mL.
+
+Exames complementares de diagnóstico: electrocardiograma e ecocardiograma de esforço sem alterações significativas",gpt-4o,SCORE2 not applicable,Não,Doença cardiovascular prévia,Muito-Alto,Alta,{'Outro': 'Pós-angioplastia; Exercício'},63,Feminino,Ex-Fumador,Não,114 mmHg,66 mmHg,Sim,149 mg/dL,53 mg/dL,82 mg/dL,80 mg/dL,96 mg/dL,Não
+30,"Homem 64 anos, bombeiro. Encaminhado da consulta de Neurologia no contexto pós-AVC isquémico, para despiste de fonte cardio-embólica. 
+
+Antecedentes pessoais: AVC isquémico há 3 meses (fez trombólise, ficou sem sequelas); hipertensão arterial, dislipidémia, excesso de peso, ex-tabagismo (40 UMAs), parou há 5 anos. Estilo de vida maioritariamente sedentário. Hábitos alcoólicos moderados.
+
+Medicação habitual: ácido acetilsalicílico, atorvastatina 40mg, perindopril+indapamida+amlodipina 10+2.5+5mg.
+
+Exame objectivo: peso 88Kg (IMC 28.7), pressão arterial 138-81mmHg, frequência cardíaca 77bpm. Auscultação cardíaca sem alterações. Auscultação pulmonar com roncos dispersos bilateralmente. Sem edemas dos membros inferiores.
+
+Nas análises:  Hb 14.1g/dL, plaquetas 236.000, creatinina 0.87mg/dL, glicémia em jejum 112mg/dL, HbA1c 6.4%, triglicerideos 209mg/dL, colesterol total 165mg/dL, colesterol HDL 52mg/dL, colesterol LDL 71mg/dL, ApoB 83mg/dL. 
+
+Exames complementares de diagnóstico: electrocardiograma em ritmo sinusal 81bpm, alterações inespecíficas da repolarização ventricular. Ecocardiograma com remodeling concêntrico do ventrículo esquerdo, dilatação grave da aurícula esquerda, fracção de ejecção 59% e E/e’ 9. Ecocardiograma transesofágico sem evidência de fontes cardio-embólicas. ",gpt-4o,SCORE2 not applicable,Não,História de AVC prévio,Alto,Alta,"{'Pre-Diabetes': 'Sim', 'Obesidade': 'Sim', 'Doença pulmonar obstrutiva crónica (DPOC)': 'Sim'}",64 anos,Masculino,Ex-Fumador,Sim,138 mmHg,81 mmHg,Sim,165 mg/dL,52 mg/dL,209 mg/dL,71 mg/dL,113 mg/dL,Não
+1,"Homem, 44 anos, gestor de empresa. Recorre à consulta por palpitações. São sobretudo ao deitar, durando  apenas uns segundos. Não têm relação com o esforço, não se associam a síncope ou dor torácica, não tem sensação de taquicardia mantida. Sem outra sintomatologia. 
+
+É maioritariamente sedentário. Sem antecedentes cardiovasculares pessoais ou familiares. Nega tabagismo ou ingestão de bebidas alcoólicas. Não faz qualquer medicação. 
+
+Exame objectivo: peso 74Kg (IMC 23); pressão arterial 114-72mmHg, frequência cardíaca 72bpm. Analiticamente, apresenta uma creatinina 0.8mg/dL, glicémia em jejum 80mg/dL, triglicerideos 88mg/dL, colesterol total 183mg/dL, colesterol HDL 55mg/dL, colesterol LDL 110mg/dL.
+
+Realizou um electrocardiograma e um ecocardiograma, sem alterações valorizáveis. O Holter revelou ritmo sinusal com extrassistolia ventricular isolada (menos de 1% do traçado) com relação com os sintomas do doente. ",gpt-4o,1.67,Sim,Não aplicável,Baixo-a-Moderado,Alta,"{'História Familiar': 'Ausente', 'Obesidade': 'Não', 'Sedentarismo': 'Sim'}",44 anos,Masculino,Não fumador,Não,114 mmHg,72 mmHg,Não,183 mg/dL,55 mg/dL,88 mg/dL,110 mg/dL,128 mg/dL,Não
+2,"Mulher de 40 anos. Vem à consulta porque tem interesse em melhorar o seu estilo de vida. Começou a praticar exercício físico (moderada / alta intensidade) 3 vezes por semana. É fumadora mas tem consulta de cessação tabágica agendada para dentro de 1 semana. Nega queixas cardiovasculares (durante o exercício ou em repouso). 
+
+À observação: peso 65Kg (IMC 23.8); pressão arterial 124-75mmHg, frequência cardíaca 76bpm. 
+
+Analiticamente, apresenta uma creatinina 0.7mg/dL, glicémia em jejum 82mg/dL, triglicerideos 90mg/dL, colesterol total 190mg/dL, colesterol HDL 67mg/dL, colesterol LDL 105mg/dL.
+
+Realizou exames complementares de diagnóstico, nomeadamente electrocardiograma (ritmo sinusal com alterações inespecíficas da repolarização ventricular), MAPA (pressão arterial média 24h de 113/73mmHg) e rigidez anterial (velocidade da onda de pulso de 6.8m/s).",gpt-4o,1.58,Sim,,Baixo-a-Moderado,Alta,{'Rigidez Arterial aumentada': 'Não'},40,Feminino,Fumador,Não,124,75,Não,190,67,90,105,123,Não
+3,"Sexo feminino, 58 anos. Regressou à consulta 8 anos depois para uma avaliação geral do seu estado de saúde. Sem comorbilidades de relevo. Está assintomática e faz caminhadas diárias de cerca de 30 minutos. Não fumadora.
+
+Ao exame objectivo, destaca-se: peso 90Kg (IMC 29.9); pressão arterial 122-77mmHg, frequência cardíaca 69bpm. 
+
+Analiticamente, apresenta uma creatinina 1.2mg/dL, triglicerideos 62mg/dL, colesterol total 164mg/dL, colesterol HDL 47mg/dL, colesterol LDL 105mg/dL, potássio 3.7mmol/L.
+
+Realizou um electrocardiograma que demonstrou ritmo sinusal, sem alterações patológicas e um score de cálcio com valor total de 0 (zero). ",gpt-4o,3.1,Sim,-,Baixo-a-Moderado,Alta,"{'Score de Cálcio igual a 0': 'Sim', 'Obesidade': 'Peso 90kg; IMC 29,9'}",58,Feminino,Não fumadora,Não,122,77,Sim,164,47,62,105,117,Não
+4,"Homem, 54 anos, engenheiro civil. Consulta de rotina para vigilância cardiovascular. Está preocupado porque os familiares tem antecedentes familiares de doença cardiovascular (pai com status pós-CABG aos 69 anos, que morreu aos 80 anos com neoplasia do cólon com metastização hepática; tia paterna com morte súbita aos 75 anos – por enfarte agudo do miocárdio; avô paterno com morte súbita aos 58 anos, causa desconhecida). Sem doenças prévias conhecidas, sem alergias, não faz medicação habitual. Não tem queixas cardiovasculares (nomeadamente dor torácica, palpitações, síncope, ou cansaço). Não fuma. É sedentário. 
+
+Exame objectivo: peso 74Kg (IMC 23); pressão arterial 118-60mmHg, frequência cardíaca 63bpm. 
+
+Analiticamente, apresenta uma creatinina 0.8mg/dL, glicémia em jejum 80mg/dL, triglicerideos 88mg/dL, colesterol total 183mg/dL, colesterol HDL 55mg/dL, colesterol LDL 110mg/dL.
+
+Realizou um electrocardiograma e um ecocardiograma, sem alterações valorizáveis.",gpt-4o,3.44,Sim,,Baixo-a-Moderado,Alta,"{'História Familiar de doença cardiovascular aterosclerótica': 'Sim', 'Sedentarismo': 'Outro (especificar)'}",54 anos,Masculino,Não fumador,Não,118 mmHg,60 mmHg,Não,183 mg/dL,55 mg/dL,88 mg/dL,110 mg/dL,128 mg/dL,Não
+5,"Mulher 63 anos, professora do ensino básico. Tem mantido seguimento em consulta de Cardiologia após episódio de fibrilhação auricular paroxística há 3 anos, resolvido com cardioversão eléctrica. Como outros antecedentes, detaca-se hipotiroidismo e doença de refluxo gastroesofágico. Sem outros antecedentes relevantes. Sem hábitos tabágicos ou etanólicos. Boa higiene do sono. 
+Não teve novos episódios de arritmia. Sem palpitações no dia-a-dia. Sem outras queixas de relevo. 
+
+Encontra-se medicada com pantoprazol 20mg, bisoprolol 2.5mg e apixabano 5mg 12/12h, levotiroxina 75mcg.
+
+À observação: peso 59Kg (IMC 20.5); pressão arterial 107/58mmHg, frequência cardíaca 61bpm. Auscultação cardíaca regular e sem sopros. 
+
+Analiticamente, destaca-se: hemoglobina 12,1g/dL, creatinina 0.6mg/dL, glicémia em jejum 74mg/dL, triglicerideos 124mg/dL, colesterol total 214mg/dL, colesterol HDL 67mg/dL, colesterol LDL 122mg/dL, TSH 3.67mIU/L, fT4 1ng/dL.
+
+Realizou um electrocardiograma (ritmo sinusal, bloqueio auriculo-ventricular de 1º grau, alterações inespecíficas da repolarização ventricular), um ecocardiograma (dilatação ligera da aurícula esquerda, insuficiência mitral ligeira) e um Holter (ritmo sinusal durante todo o registo, extrassistolia suprventricular pouco frequente). ",gpt-4o,SCORE2 not applicable,Não,Uso de anticoagulante,Baixo-a-Moderado,Intermédia,{'Outro': 'Hipotiroidismo'},63,Feminino,Não fumador,Não,107,58,Sim,214,67,124,122,147,Não
+6,"Sexo feminino, 41 anos, professora de português do ensino secundário. Vem à consulta por episódio de lipotímia, que ocorreu após um jantar com amigos. Foi precedida de pródromos (visão turva, palidez, sudorese) e recuperou em cerca de 5-10 minutos. Sem traumatismo cranio-encefálico, sem movimentos tónico-clónicos, sem incontinência de esfíncteres. 
+
+Antecedentes pessoais: hipertensão arterial (fazia edarclor 40+12.5mg mas deixou a medicação após o episódio), tabagismo activo (25 UMA). Neste momento encontra-se apenas a fazer ebastina. Não faz desporto.
+
+Observação: peso 78Kg (IMC 25.7); pressão arterial 146-85mmHg, frequência cardíaca 69bpm. Análises: creatinina 0.9mg/dL, HbA1c 6.3%, triglicerideos 142mg/dL, colesterol total 270mg/dL, colesterol HDL 53mg/dL, colesterol LDL 189mg/dL.
+
+Electrocardiograma em ritmo sinusal com alterações inespecíficas da repolarizaçãoventricular; ecocardiograma com remodeling concêntrico do ventrículo esquerdo e dilatação ligira da aurícula esquerda.",gpt-4o,4.03,Sim,-,Baixo-a-Moderado,Alta,{'Pre-Diabetes': 'Sim'},41,Feminino,Fumador,Sim,146 mmHg,85 mmHg,Sim,270 mg/dL,53 mg/dL,142 mg/dL,189 mg/dL,217 mg/dL,Não
+7,"Homem 48, anos, guarda prisional. Veio encaminhado da consulta do médico de família por hipertensão arterial.
+
+Sem dor torácica, síncope, palpitações ou cansaço. Quando interrogado, refere roncopatia e sonolência diurna (embora esposa não note apneias). 
+Sem antecedentes cardiovasculares pessoais ou familiares. Nega tabagismo. Consumo ocasional de bebidas alcoólicas. Não faz qualquer medicação. Refere que o seu posto de trabalho envolve alguma actividade física, mas não faz activamente desporto. 
+
+Exame objectivo: peso 94Kg (IMC 28.2); pressão arterial 161/102mmHg, frequência cardíaca 81bpm. 
+
+Analiticamente, apresenta uma creatinina 1.4mg/dL, glicémia em jejum 104mg/dL, HbA1c 6.2%, triglicerideos 197mg/dL, colesterol total 231mg/dL, colesterol HDL 43mg/dL, colesterol LDL 149mg/dL, lipoproteína (a) 29mg/dL, ácido úrico 7.5mg/dL.
+
+Realizou um electrocardiograma e um ecocardiograma, sem alterações valorizáveis. MAPA confirmou HTA (média 24h 138-86mmHg) com perfil não-Dipper. Rigidez arterial com VOP 9.3m/s.",gpt-4o,6.06,Sim,-,Alto,Intermédia,"{'Pre-Diabetes': 'Sim', 'Rigidez Arterial aumentada': 'Sim', 'Sindrome Apneia Obstrutiva do Sono': 'Sim', 'Obesidade': 'IMC 28.2'}",48 anos,Masculino,Não fumador,Sim,161 mmHg,102 mmHg,Sim,231 mg/dL,43 mg/dL,197 mg/dL,149 mg/dL,188 mg/dL,Não
+8,"Sexo feminino, 57 anos. Recentemente reformada (assistente social). Consulta para avaliação cardiovascular – quer saber se é seguro inscrever-se na hidroginástica e começar a praticar exercício agora que tem tempo.
+Sem queixas relevantes (palpitações ocasionais que valoriza pouco).
+ 
+Antecedentes pessoais: dislipidemia (diagnosticada há vários anos), tabagismo (1/2 maço por dia – 18UMA; aguarda consulta de cessação tabágica).
+
+Medicação habitual: arroz vermelho, suplementos de magnésio e vitamina C.
+
+Ao exame objectivo: peso 60Kg (IMC 21.5); pressão arterial 120-63mmHg, frequência cardíaca 83bpm. Analiticamente, apresenta uma creatinina 0.63mg/dL, glicemia em jejum 90mg/dL, triglicerideos 124mg/dL, colesterol total 197mg/dL, colesterol HDL 57mg/dL, colesterol LDL 119mg/dL, ApoB 94mg/dL, magnésio 2mmol/L.
+
+Exames complementares de diagnóstico: electrocardiograma e ecocardiograma sem alterações importantes. Prova de esforço não sugestiva de isquémia.",gpt-4o,5.0,Sim,,Baixo-a-Moderado,Alta,"{'Antecedentes de Gravidez com complicações': 'Desconhecido', 'Menopausa precoce': 'Desconhecido', 'Outro': 'Palpitações ocasionais'}",57,Feminino,Fumador,Não,120 mmHg,63 mmHg,Sim,197 mg/dL,57 mg/dL,124 mg/dL,119 mg/dL,140 mg/dL,Não
+9,"Homem 52 anos, pescador. Recorre à consulta por dor torácica atípica (tipo facada, pode chegar a durar várias horas, sem relação com o esforço). Sem outros sintomas, nomeadamente palpitações, síncope ou cansaço. 
+
+Sem antecedentes cardiovasculares pessoais ou familiares. Fumador activo desde os 16 anos (50 UMA). O trabalho é exigente do ponto de vista físico, mas não faz outro tipo de actividade física. Consumo ocasional de bebidas alcoólicas. Não faz qualquer medicação. 
+
+Exame objectivo: peso 78Kg (IMC 23); pressão arterial 130-89mmHg, frequência cardíaca 81bpm. 
+
+Análises: Hb 15.8/dL, creatinina 1.1mg/dL, glicémia em jejum 95mg/dL, HbA1c 5.9%, triglicerideos 98mg/dL, colesterol total 224mg/dL, colesterol HDL 37mg/dL, colesterol LDL 167mg/dL, lipoproteína (a) 38mg/dL, ácido úrico 5.5mg/dL.
+
+Exames complementares de diagnóstico: electrocardiograma e ecocardiograma sem alterações valorizáveis; MAPA com média 24h normal (128-79mmHg) embora com HTA diurna (média 138-86mmHg). AngioTC cardíaca com score de cálcio de 23 (P50-75) com placas não obstrutivas (<50%) na descendente anterior proximal e coronária direita média e distal. ",gpt-4o,8.92,Sim,,Alto,Alta,"{'Score de Cálcio elevado': 'Elevado (23, P50-75)', 'Pre-Diabetes': 'Sim', 'Lp (a) aumentada': 'desconhecido'}",52,Masculino,Fumador,Sim,130,89,Sim,224,37,98,167,187,Não
+10,"Mulher de 67 anos. Vem à consulta por queixas de cansaço para pequenos-médios esforços (lida da casa), sem ortopneia, dispneia paroxística nocturna ou edemas dos membros inferiores. Sem síncope ou dor torácica.
+
+Antecedentes pessoais: hipertensão arterial, dislipidemia, hipotiroidismo.
+
+Medicação habitual: perindopril+indapamida 5+1.25mg, bisoprolol 2.5mg, aspirina 100mg, sinvastatina 20mg, levotiroxina 75mcg. 
+
+Ao exame objectivo: peso 57Kg (IMC 19.7); pressão arterial 131-63mmHg, frequência cardíaca 54bpm. Auscultação cardíaca com sopro sistólico grau III em crescendo-decrescendo no bordo esquerdo do esterno. Auscultação pulmonar sem estase. Sem edemas dos membros inferiores.
+
+Analiticamente, apresenta uma creatinina 0.58mg/dL, glicemia em jejum 80mg/dL, HbA1c 5.8%, triglicerideos 85mg/dL, colesterol total 137mg/dL, colesterol HDL 58mg/dL, colesterol LDL 62mg/dL, NT-proBNP 985pg/mL.
+
+Exames complementares de diagnóstico: electrocardiograma com bradicardia sinusal 52bpm, com alterações da repolarização ventricular sugestivas de sobrecarga / isquémia. Ecocardiograma com remodeling concêntrico do ventrículo esquerdo, dilatação moderada da aurícula esquerda; válvula aorta bicúspide, com calcificação das cúspides e limitação da sua abertura, a condicionar estenose moderada (velocidade máxima 3.3m/s, gradiente médio 30mmHg).",gpt-4o,SCORE2 not applicable,Não,Doença cardíaca preexistente / não aplicável devido a alterações estruturais cardíacas,Alto,Alta,{'Outro': 'Estenose aórtica moderada; Remodelamento do ventrículo esquerdo'},67,Feminino,Não fumador,Sim,131,63,Sim,137,58,85,62,79,Não
+11,"Homem de 62 anos. 2 episódios de síncope no último mês (sem pródromos, recuperação rápida; uma das vezes estava no supermercado, na outra em casa sentado a ver televisão). Sem outras queixas, nomeadamente palpitações, dor torácica ou cansaço.
+
+Antecedentes pessoais: hipertensão arterial, dislipidemia, ex-tabagismo (parou há 8 anos, 50 UMAs), hiperplasia benigna da próstata; status pós-neoplasia do cólon há 8 anos (hemicolectomia esquerda).
+
+Medicação habitual: candesartan+amlodipina 8+5mg, nebivolol 5mg, rosuvastatina 10mg, tansulosina+dutasteride 0.4+0.5mg.
+
+Ao exame objectivo: peso 77Kg (IMC 26.4); pressão arterial 129-66mmHg, frequência cardíaca 51bpm. Auscultação cardíaca e pulmonar sem alterações. Sem edemas dos membros inferiores.
+
+Analiticamente, apresenta uma creatinina 1.07mg/dL, glicemia em jejum 105mg/dL, HbA1c 6.2%, triglicerideos 134mg/dL, colesterol total 187mg/dL, colesterol HDL 51mg/dL, colesterol LDL 109mg/dL, NT-proBNP 204pg/mL.
+
+Exames complementares de diagnóstico: electrocardiograma com bradicardia sinusal 49bpm, bloqueio auriculo-ventricular de 1º grau, alterações inespecíficas da repolarização ventricular. Ecocardiograma com remodeling concêntrico do ventrículo esquerdo, dilatação moderada da aurícula esquerda e insuficiência mitral e aórtica ligeiras. Realizou detetor de eventos de 7 dias, com período de bloqueio auriculo-ventricular 2:1 diurno, sem correlação sintomática.",gpt-4o,SCORE2 not applicable,Não,Doença cardiovascular existente,Alto,Alta,"{'Pre-Diabetes': 'Sim', 'Cancro': 'Sim (status pós-neoplasia do cólon)'}",62 anos,Masculino,Ex-Fumador,Sim,129 mmHg,66 mmHg,Sim,187 mg/dL,51 mg/dL,134 mg/dL,109 mg/dL,136 mg/dL,Não
+12,"Mulher de 47 anos. Encaminhada da consulta de pneumologia (onde é seguida por doença pulmonar obstrutiva crónica) por hipertensão arterial não controlada. 
+Queixas de cansaço para médios esforços, associados a pieira. Sem dor torácica, palpitações, síncope ou edemas dos membros inferiores.
+
+Antecedentes pessoais: tabagismo (anda a tentar reduzir mas ainda mantem, carga tabágica de 52 UMAs). Mãe com CABG aos 68 anos. Sem alergias conhecidas. 
+
+Medicação habitual: brometo de umeclidínio + vilanterol 55+22 µg.
+
+Ao exame objectivo: peso 52Kg (IMC 17.8); pressão arterial 189-103mmHg, frequência cardíaca 93bpm. Auscultação cardíaca sem alterações. Auscultação pulmonar com crepitações dispersas por ambos os hemitóraxes.
+
+Analiticamente, apresenta uma creatinina 0.58mg/dL, glicemia em jejum 80mg/dL, HbA1c 5.8%, triglicerideos 125mg/dL, colesterol total 263mg/dL, colesterol HDL 54mg/dL, colesterol LDL 184mg/dL, NT proBNP 95ng/mL.
+
+Exames complementares de diagnóstico: electrocardiograma com ritmo sinusal 95/min, bloqueio incompleto de ramo direito; ecocardiograma sem alterações significativas; MAPA com hipertensão arterial (média 24h 147-87mmHg), perfil Dipper.",gpt-4o,SCORE2 not applicable,Não,HAS não controlada,Alto,Alta,"{'História Familiar de doença cardiovascular aterosclerótica': 'Sim', 'Doença pulmonar obstrutiva crónica (DPOC)': 'Sim'}",47 anos,Feminino,Fumador,Sim,189 mmHg,103 mmHg,Sim,263 mg/dL,54 mg/dL,125 mg/dL,184 mg/dL,209 mg/dL,Não
+13,"Homem de 41 anos, vereador da câmara municipal. Vem à consulta porque quer continuar a praticar desporto, mas no ginásio foi aconselhado a vir à consulta de Cardiologia antes de retomar a prática pelos valores de tensão arterial. 
+Começou a fazer exercício há cerca de 2 meses, sem sintomas durante a prática ou fora dela. 
+
+Antecedentes pessoais: tabagismo (5 cigarros por dia - 5UMAs). Mãe com hipertensão e diabetes; pai com neoplasia do cólon aos 57 anos. Sem alergias conhecidas. 
+
+Sem medicação habitual.
+
+Ao exame objectivo: peso 77Kg (IMC 23); pressão arterial 155-107mmHg, frequência cardíaca 71bpm. Auscultação cardíaca e pulmonar sem alterações.
+
+Analiticamente, apresenta uma creatinina 0.96mg/dL, glicemia em jejum 96mg/dL, HbA1c 5.8%, triglicerideos 98mg/dL, colesterol total 241mg/dL, colesterol HDL 33mg/dL, colesterol LDL 188mg/dL, ácido úrico 6.3mg/dL
+
+Exames complementares de diagnóstico: electrocardiograma com ritmo sinusal 75/min, alterações inespecíficas da repolarização ventricular; ecocardiograma sem alterações significativas; prova de esforço com resposta hipertensiva ao esforço, não sugestiva de isquémia.",gpt-4o,9.41,Sim,,Alto,Alta,{'Modificadores de Risco': 'Pre-Diabetes; História Familiar de doença cardiovascular aterosclerótica'},41 anos,Masculino,Fumador,Sim,155 mmHg,107 mmHg,Sim,241 mg/dL,33 mg/dL,98 mg/dL,188 mg/dL,208 mg/dL,Não
+14,"Mulher de 56 anos, doméstica. Recorre à consulta por cansaço para médios esforços com agravamento progressivo desde o último ano. Edemas vespertinos bimaleolares. Sem ortopneia ou dispneia paroxística nocturna. Sem síncope ou dor torácica.
+
+Antecedentes pessoais: obesidade, hipertensão arterial, dislipidemia, tabagismo (40 UMAs), patologia osteoarticular degenerativa dos joelhos e coluna, síndrome depressivo.
+
+Medicação habitual (dúvidas acerca do cumprimento da medicação): perindopril+indapamida+amlodipina 10/2.5/5mg, tramadol+paracetamol 37.5+325mg, voltaren 75mg (cerca de 3-4 tomas por semana), pantoprazol 20mg, mirtazapina 30mg, fluoxetina 20mg, alprazolam 0.5mg 2id; refere intolerância as estatinas (dores articulares?).
+
+Ao exame objectivo: peso 93Kg (IMC 31.3); pressão arterial 163-91mmHg (incumpridora terapêutica?), frequência cardíaca 95bpm. Auscultação cardíaca com sopro sistólico grau II no bordo esquerdo do esterno. Auscultação pulmonar sem estase. Sem edemas dos membros inferiores.
+
+Analiticamente, apresenta uma creatinina 1.17mg/dL, glicemia em jejum 113mg/dL, HbA1c 6.3%, triglicerideos 196mg/dL, colesterol total 224mg/dL, colesterol HDL 45mg/dL, colesterol LDL 140mg/dL, NT proBNP 745pg/mL.
+
+Exames complementares de diagnóstico: Electrocardiograma em ritmo sinusal 49bpm, alterações inespecíficas da repolarização ventricular; Ecocardiograma com remodeling concêntrico do ventrículo esquerdo, dilatação moderada da aurícula esquerda, fracção de ejecção 62% e E/e’ 13; Ecocardiograma de esforço com aumento das pressões de enchimento com o esforço, sugerindo o diagnóstico de insuficiência cardíca com fracção de ejecção preservada.",gpt-4o,SCORE2 not applicable,Não,Paciente com insuficiência cardíaca,Alto,Intermédia,"{'Obesidade': 'Sim', 'Pre-Diabetes': 'Sim', 'Doença Inflamatória Crónica': 'Sim', 'Outro': 'Sim'}",56,Feminino,Fumador,Sim,163,91,Sim,224,45,196,140,179,Não
+15,"Homem 51 anos, advogado. Recorre à consulta por dor torácica atípica – tipo aperto, sobretudo relacionada com ansiedade, sem relação com o esforço, que chega a durar várias horas. Mais cansado nos últimos meses (acorda cansado). Sem síncope ou palpitações.
+ 
+Antecedentes pessoais: dislipidémia, tabagismo (21 UMAs), perturbação de ansiedade. Antecedentes familiares: pai com CABG aos 71 anos, mãe com hipertensão arterial e diabetes tipo 2. Estilo de vida sedentário.
+
+Medicação habitual: sinvastatina 20mg, escitalopram 10mg.
+
+Ao exame objectivo: peso 73Kg (IMC 22.5); pressão arterial 149-98mmHg, frequência cardíaca 76bpm. Auscultação cardíaca e pulmonar sem alterações.
+Analiticamente, apresenta uma creatinina 0.87mg/dL, glicemia em jejum 94mg/dL, HbA1c 5.8%, triglicerideos 98mg/dL, colesterol total 197mg/dL, colesterol HDL 32mg/dL, colesterol LDL 148mg/dL, lipoproteína (a) 39mg/dL, ApoB 107mg/dL, ácido úrico 5.8mg/dL, NT pro BNP 33pg/mL.
+
+Exames complementares de diagnóstico: electrocardiograma com ritmo sinusal 75/min, alterações inespecíficas da repolarização ventricular; ecocardiograma sem alterações significativas; MAPA confirmou presença de hipertensão arterial (média 24h 129-88mmHg – perfil tensional Dipper). AngioTC coronária com score de cálcio de 47 (P50-75) com placas não obstrutivas (<50%) nos 3 vasos sem envolvimento do tronco comum.  ",gpt-4o,10.83,Sim,,Alto,Alta,"{'História Familiar de doença cardiovascular aterosclerótica': 'Sim', 'Pré-Diabetes': 'Sim (HbA1c 5,8%)', 'Lp (a) aumentada': 'Sim (39mg/dL)', 'Score de Cálcio elevado': 'Sim (Score de Cálcio de 47)'}",51,Masculino,Fumador,Sim,149,98,Sim,197,32,98,148,165,Não
+16,"Mulher 64 anos. Encaminhada da consulta de anestesia (pré-operatório cirurgia à tiróide – carcinoma papilar da tiróide) por sopro cardíaco não avaliado. 
+Sem queixas de cansaço, dor torácica, síncope ou palpitações. Tem sido saudável até à data, estado apenas medicada com alprazolam 0,5mg à noite. Tabagismo activo (40 UMAs). 
+
+Ao exame objectivo: peso 52Kg (IMC 21.8); pressão arterial 143-84mmHg, frequência cardíaca 79bpm. Auscultação cardíaca com sopro sistólico grau II no bordo esquerdo do esterno; auscultação pulmonar sem alterações.
+
+Analiticamente: Hb 10.9g/dL, creatinina 0.76mg/dL, glicemia em jejum 97mg/dL, HbA1c 5.9%, triglicerideos 107mg/dL, colesterol total 169mg/dL, colesterol HDL 48mg/dL, colesterol LDL 100mg/dL, TSH 4.06 mIU/L, NT-proBNP 288pg/mL
+
+Exames complementares de diagnóstico: electrocardiograma com ritmo sinusal 75/min, alterações inespecíficas da repolarização ventricular; ecocardiograma com remodeling concêntrico do ventrículo esquerdo, dilatação moderada da aurícula esquerda e válvula aorta tricúspide, com cúspides calcificadas mas sem compromisso funcional.",gpt-4o,SCORE2 not applicable,Não,Doença oncológica ativa,Alto,Intermédia,"{'Pre-Diabetes': 'Sim', 'Cancro': 'Carcinoma papilar da tiróide', 'Outro': 'Sopro cardíaco; Remodelling cardíaco'}",64 anos,Feminino,Fumador,Sim,143 mmHg,84 mmHg,Não,169 mg/dL,48 mg/dL,107 mg/dL,100 mg/dL,121 mg/dL,Não
+17,"Homem 65 anos, bom estado geral. Vem à consulta pedir uma segunda opinião acerca da medicação que lhe foi prescrita para a hipertensão arterial (a qual suspendeu há 2 semanas por iniciativa própria). 
+Tem tido lipotímias (hipotensão sintomática) após início de medicação anti-hipertensora, sobretudo de manhã, quando está muito tempo em pé. Sem outras queixas. Perdeu 16Kg nos últimos 2 anos (dieta e análogo da GLP1).
+
+Outros antecedentes pessoais: ex-tabagismo, dislipidemia, hiperuricémia, SAOS sob CPAP, nódulo na supra-renal direita, patologia coluna lombar (já intervencionado). Maioritariamene sedentário; álcool refeição (1-2 copos ao almoço).
+
+Medicação habitual: tromalyt, ozempic 1mg, alopurinol 300mg, pantoprazol 40mg, quetiapina 25mg.
+
+Ao exame objectivo: peso 76Kg (IMC 28); pressão arterial 147-68mmHg, frequência cardíaca 59bpm. Auscultação cardíaca com sopro sistólico grau I no bordo esquerdo do esterno; auscultação pulmonar sem alterações.
+
+Analiticamente: Hb 11.9g/dL, creatinina 0.96mg/dL, glicemia em jejum 111mg/dL, HbA1c 6.3%, triglicerideos 237mg/dL, colesterol total 129mg/dL, colesterol HDL 33mg/dL, colesterol LDL 49mg/dL, lipoproteína (a) 20mg/dL.
+Exames complementares de diagnóstico: electrocardiograma com ritmo sinusal 54/min, sinais de baixa voltagem nas derivações dos membros, alterações inespecíficas da repolarização ventricular; ecocardiograma com remodeling concêntrica do ventrículo esquerdo, dilatação moderada da aurícula esquerda; esclerose da válvula aórtica, insuficiência mitral e aórtica ligeiras. MAPA (com medicação) com pressão arterial média 24h 103-61mmHg. ",gpt-4o,SCORE2 not applicable,Não,Sintomas de hipotensão,Alto,Intermédia,"{'Pre-Diabetes': 'Valor de HbA1c 6,3%', 'Sindrome Apneia Obstrutiva do Sono': 'Sim', 'Obesidade': 'IMC 28', 'Outro': 'Hipotensão Sintomática, Remodelação Cardíaca'}",65 anos,Masculino,Ex-Fumador,Sim,147 mmHg,68 mmHg,Sim,129 mg/dL,33 mg/dL,237 mg/dL,49 mg/dL,96 mg/dL,Não
+18,"Homem 44 anos, director comercial de fábrica de papel. Vem à consulta encaminhado do médico da medicina do trabalho, por hipertensão arterial. Nega sintomatologia cardiovascular relevante (apenas cansaço ocasional, que associa a períodos de menos descanso). Mantem actividade física regular (ginásio 3xsemana, joga futebol com amigos 1xsemana).
+
+Antecedentes pessoais: irrelevantes. Nega tabagismo ou consumo regular de álcool ou substâncias recreativas.
+Antecedentes familiares: mãe com enfarte agudo do miocárdio aos 61 anos, hipertensão e dislipidemia; pai com hipertensão arterial e neoplasia da próstata. 
+
+Ao exame objectivo: peso 76Kg (IMC 22.5); pressão arterial 145-94mmHg, frequência cardíaca 56bpm. Auscultação cardíaca sem alterações; auscultação pulmonar sem alterações.
+
+Analiticamente: Hb 15.9g/dL, creatinina 0.97mg/dL, glicemia em jejum 89mg/dL, triglicerideos 137mg/dL, colesterol total 229mg/dL, colesterol HDL 37mg/dL, colesterol LDL 165mg/dL, lipoproteína (a) 92mg/dL, ApoB 172mg/dL.
+
+Exames complementares de diagnóstico: electrocardiograma e ecocardiograma sem alterações significativas. MAPA com pressão arterial média 24h 130-86mmHg. Prova de esforço não sugestiva de isquémia. ",gpt-4o,4.19,Sim,,Alto,Intermédia,"{'História Familiar de doença cardiovascular aterosclerótica': 'Sim', 'Lp(a) aumentada': 'Sim (92 mg/dL)'}",44,Masculino,Não fumador,Sim,145,94,Sim,229,37,137,165,192,Não
+19,"Mulher de 54 anos, dona de loja de pronto a vestir. Recorre à consulta por dor torácica atípica (tipo facada, maioritariamente em repouso com duração de cerca de 5-10 minutos). Refere cansaço para médios esforços (sobretudo fadiga matinal), sem ortopneia ou dispneia paroxística nocturna. Sem palpitações ou síncope.
+
+Antecedentes pessoais: tabagismo (17 UMAs), artrite reumatóide (com diagnóstico aos 40 anos, seguida em consulta de reumatologia), ansiedade.
+
+Medicação habitual: metotrexato 20mg/semana, ácido fólico 5mg, tramadol+paracetamol 37.5+325mg, naproxeno SOS (3xsemana), sertralina 50mg. Neste momento sem corticoterapia.  
+
+Ao exame objectivo: peso 51Kg (IMC 19.5); pressão arterial 132-84mmHg, frequência cardíaca 88bpm. Auscultação cardíaca e pulmonar sem alterações. Sem edemas dos membros inferiores.
+
+Analiticamente, apresenta uma Hb 11.8g/dL, creatinina 0.87mg/dL, glicemia em jejum 83mg/dL, triglicerideos 128mg/dL, colesterol total 211mg/dL, colesterol HDL 52mg/dL, colesterol LDL 133mg/dL, NT proBNP 75pg/mL, ANA 1/160, PCR-us 4.5mg/L.
+
+Exames complementares de diagnóstico: electrocardiograma em ritmo sinusal 79bpm, alterações inespecíficas da repolarização ventricular. Ecocardiograma sem alterações. Prova de esforço não sugestiva de isquémia. AngioTC coronário com score de cálcio de  77 (percentil 75-90), com placas envolvendo o tronco comum (<25%), descendente anterior proximal (25-49%), descendente anterior média (<25%) e coronária direita média (25-49%).",gpt-4o,5.61,Sim,-,Alto,Intermédia,"{'Score de Cálcio elevado': 'Sim', 'PCR alta sensibilidade elevada': 'Sim', 'Doença Inflamatória Crónica': 'Sim (Artrite Reumatóide)'}",54,Feminino,Fumador,Sim,132,84,Sim,211,52,128,133,159,Não
+20,"Homem 61 anos, comerciante. Recorre à consulta por palpitações (3 episódios no último mês, sensação de taquicardia mantida com batimentos irregulares – SmartWatch fez tira de ritmo com QRS irregulares a 140bpm, que me parece fibrilhação auricular). Nesses episódios, sensação de aperto precordial. Refere roncopatia e “sobressaltos” à noite que deixam a esposa preocupada. 
+
+Antecedentes pessoais: obesidade; hábitos alcoólicos moderados. 
+
+Ao exame objectivo: peso 105Kg (IMC 33.7), perímetro abdominal 108cm; pressão arterial 151-94mmHg, frequência cardíaca 91bpm. 
+Analiticamente, apresenta uma Hb 14.8g/dL, creatinina 1.1 mg/dL, glicemia em jejum 113mg/dL, HbA1c 6.3%, triglicerideos 256mg/dL, colesterol total 217mg/dL, colesterol HDL 48mg/dL, colesterol LDL 118mg/dL, NT proBNP <75pg/mL.
+
+Exames complementares de diagnóstico: electrocardiograma em ritmo sinusal 79bpm, sinais de baixa voltagem nas derivações dos membros, alterações inespecíficas da repolarização ventricular. Ecocardiograma com remodeling concêntrico do ventrículo esquerdo, dilatação moderada da aurícula esquerda. Detector de eventos de 7 dias com extrassistolia supraventricular muito frequente e curto período de fibrilhação auricular de 2 minutos, 160/min. Score de cálcio de 178 (percentil 75-90). Polissonografia confirmou SAOS grave.",gpt-4o,9.24,Sim,,Alto,Alta,{'Modificadores de Risco': 'Score de Cálcio elevado; Obesidade; Pre-Diabetes; Síndrome Apneia Obstrutiva do Sono'},61 anos,Masculino,Desconhecido,Sim,151 mmHg,94 mmHg,Sim,217 mg/dL,48 mg/dL,256 mg/dL,118 mg/dL,169 mg/dL,Não
+21,"Mulher de 51 anos, motorista autocarros. Seguida na nefrologia por doença renal poliquística. Vem para otimização dos fatores de risco cardiovasculares. Assintomática. Apesar da profissão sedentária, faz ginásio e pilates 3xsemana. Nega tabagismo ou consumo de bebidas alcoólicas. Boa higiene do sono. 
+
+Antecedentes pessoais: doença renal poliquística autossómica dominante (mutação PKD1)
+
+Medicação habitual: ramipril 2.5mg, empagliflozina 10mg, atorvastatina 10mg, finerenona 10mg
+Ao exame objectivo: peso 55Kg (IMC 20.5); pressão arterial 127-79mmHg, frequência cardíaca 79bpm. Auscultação cardíaca e pulmonar sem alterações. Sem edemas dos membros inferiores.
+
+Analiticamente, apresenta uma Hb 12.8g/dL, creatinina 1.49mg/dL (TFG 42mL/min/1.73 m2), microalbuminúria <30mg/g, glicemia em jejum 88mg/dL, triglicerideos 199mg/dL, colesterol total 162mg/dL, colesterol HDL 38mg/dL, colesterol LDL 84mg/dL, K+ 4.0mmol/L.
+
+Exames complementares de diagnóstico: electrocardiograma em ritmo sinusal 79bpm, alterações inespecíficas da repolarização ventricular. Ecocardiograma sem alterações. Prova de esforço não sugestiva de isquémia. ",gpt-4o,SCORE2 not applicable,Não,Doença renal crónica (TFG < 60mL/min/1.73 m²),Alto,Alta,"{'Outro (especificar)': 'Doença renal poliquística autossómica dominante', 'História Familiar de doença cardiovascular aterosclerótica': 'Desconhecido'}",51 anos,Feminino,Não fumador,Não,127 mmHg,79 mmHg,Sim,162 mg/dL,38 mg/dL,199 mg/dL,84 mg/dL,124 mg/dL,Não
+22,"Homem de 61 anos, reserva (Marinha). Seguimento habitual por bicuspidia aórtica com insuficiência moderada. Mantem-se sem cançaso (sem queixas desde que passou à reserva). Tem dormido melhor (7-8h) e feito caminhadas (5000-7000 passos/dia). 
+
+Outros antecedentes pessoais: hipertensão arterial, dislipidemia, doença renal crónica, ansiedade
+
+Medicação habitual: ramipril 10mg, dapagliflozina 10mg, rosuvastatina 10mg
+
+Ao exame objectivo: peso 77Kg (IMC 25.4); pressão arterial 131-78mmHg, frequência cardíaca 77bpm. Auscultação cardíaca e pulmonar sem alterações. Sem edemas dos membros inferiores.
+
+Analiticamente, apresenta uma Hb 13.3g/dL, creatinina 1.6mg/dL (TFG 42mL/min/1.73 m2), microalbuminúria 100mg/g, glicemia em jejum 91mg/dL, triglicerideos 164mg/dL, colesterol total 136mg/dL, colesterol HDL 38mg/dL, colesterol LDL 65mg/dL, K+ 4.6mmol/L, NT-proBNP <75pg/mL.
+
+Exames complementares de diagnóstico: electrocardiograma em ritmo sinusal 79bpm, alterações inespecíficas da repolarização ventricular. Ecocardiograma insuficiência moderada com FEVE 61% (dimensão tele-diastólica VE 43mm), insuficiência mitral ligeira e baixa probabilidade de hipertensão pulmonar. Prova de esforço não sugestiva de isquémia. ",gpt-4o,SCORE2 not applicable,Não,Condições clínicas graves,Alto,Alta,"{'Doença Inflamatória Crónica': 'Doença renal crónica', 'Ansiedade': 'Presente'}",61 anos,Masculino,Desconhecido,Sim,131 mmHg,78 mmHg,Sim,136 mg/dL,38 mg/dL,164 mg/dL,65 mg/dL,98 mg/dL,Não
+23,"Mulher de 59 anos, bancária. É seguida desde há 5 anos em consulta de Cardiologia para optimização do risco cardiovascular, altura em que lhe foi feito o diagnóstico de diabetes. Desde então está assintomática. Tem feito caminhadas (3 vezes por semana, cerca de 30 minutos e tenta manter uma meta diária de 7000 passos). 
+
+Antecedentes pessoais: diabetes tipo 2, excesso de peso, dislipidemia, patologia osteoarticular degenerativa dos joelhos e coluna. 
+
+Medicação habitual: metformina+dapagliflozina 850+10mg 2id, atorvastatina 20mg, lorazepam 1mg.
+
+Ao exame objectivo: peso 76Kg (IMC 26); pressão arterial 124-74mmHg, frequência cardíaca 85bpm. Sem outros achados de relevo.
+
+Nas análises: Hb 13.2g/dL, creatinina 0.94mg/dL (TFG 70mL/min/1.73 m2), glicemia em jejum 138mg/dL, HbA1c 7.8%, triglicerideos 166mg/dL, colesterol total 176mg/dL, colesterol HDL 43mg/dL, colesterol LDL 100mg/dL, NT proBNP 79pg/mL, microalbuminúria <30mg/g.
+
+Exames complementares de diagnóstico: electrocardiograma em ritmo sinusal 81bpm, alterações inespecíficas da repolarização ventricular. Ecocardiograma com remodeling concêntrico do ventrículo esquerdo, dilatação ligeira da aurícula esquerda, fracção de ejecção 59% e E/e’ 9. Ecocardiograma de esforço com normalização das pressões de enchimento com o esforço e sem alterações da contractilidade segmentar sugestivas de isquémia.",gpt-4o,SCORE2 not applicable,Não,Diabetes,Alto,Alta,{'Modificadores de Risco': 'Obesidade; Patologia osteoarticular degenerativa'},59,Feminino,desconhecido,Não,124,74,Sim,176 mg/dL,43 mg/dL,166 mg/dL,100 mg/dL,133 mg/dL,Sim
+24,"Homem de 59 anos, trabalhador fabril. Seguimento semestral em consulta de cardiologia para otimização do risco cardiovascular. Assintomático do ponto de vista cardiovascular. Dorme mal (trabalha por turnos e tem dificuldade em descansar de manhã) – nessas alturas mais cansado. 
+
+Antecedentes pessoais: diabetes tipo 2 (diagnóstico há 5 anos), hipertensão arterial, excesso de peso, dislipidemia, ex-tabagismo (20 UMAs, parou há 5 anos).
+
+Medicação habitual: metformina+sitagliptina 850+50mg 2id, empagliflozina 10mg, enalapril+lercanidipina 10+10mg id, rosuvastatina 10mg
+
+Ao exame objectivo: peso 95Kg (IMC 29.8); pressão arterial 134-82mmHg, frequência cardíaca 71bpm. Sem achados de relevo.
+
+Nas análises: Hb 13.2g/dL, creatinina 1.13mg/dL (TFG 75mL/min/1.73 m2), glicemia em jejum 111mg/dL, HbA1c 6.6%, triglicerideos 178mg/dL, colesterol total 187mg/dL, colesterol HDL 45mg/dL, colesterol LDL 106mg/dL, microalbuminúria <30mg/g.
+
+Exames complementares de diagnóstico: electrocardiograma sem alterações; ecocardiograma com dilatação ligeira da aurícula esquerda e insuficiência mitral ligeira. Prova de esforço não sugestiva de isquémia.",gpt-4o,6.31,Sim,,Alto,Alta,"{'Sindrome Apneia Obstrutiva do Sono': 'Dorme mal, cansaço (turnos)', 'Outro': 'Obesidade (IMC 29,8)'}",59 anos,Masculino,Ex-Fumador,Sim,134 mmHg,82 mmHg,Sim,187 mg/dL,45 mg/dL,178 mg/dL,106 mg/dL,142 mg/dL,Sim
+25,"Mulher de 65 anos, bancária. Encaminhada da consulta de diabetologia para controlo do risco cardiovascular. Sem dor torácica, síncope ou palpitações. Aumentou de peso e nos últimos tempos tem feito menos caminhadas – faz menos de 5000 passos/dia, sobretudo por dor mecânica nos joelhos embora também refira cansaço. 
+
+Outros antecedentes pessoais: diabetes tipo 2 (diagnóstico aos 53 anos), excesso de peso, dislipidemia, hipertensão arterial, patologia osteoarticular degenerativa dos joelhos e coluna.
+
+Medicação habitual: pantoprazol 20mg, ácido acetlsalicílico 100mg, nebivolol 2,5mg, metformina+dapagliflozina 1000+10mg 2id, gliclazina 30mg, perindopril+indapamida+amlodipina 5+1.25+5mg, naproxeno 75mg, glucosamina 500mg 2id.
+
+Ao exame objectivo: peso 84Kg (IMC 28.8); pressão arterial 138-75mmHg, frequência cardíaca 89bpm. Sem achados de relevo.
+
+Nás análises: Hb 13.2g/dL, creatinina 1.08mg/dL (TFG 57mL/min/1.73 m2), glicemia em jejum 128mg/dL, HbA1c 6.9%, triglicerideos 173mg/dL, colesterol total 165mg/dL, colesterol HDL 51mg/dL, colesterol LDL 79mg/dL, NT proBNP 66pg/mL, microalbuminúria 103mg/g.
+
+Exames complementares de diagnóstico: electrocardiograma em ritmo sinusal 81bpm, alterações inespecíficas da repolarização ventricular. Ecocardiograma com remodeling concêntrico do ventrículo esquerdo, dilatação ligeira da aurícula esquerda, fracção de ejecção 59% e E/e’ 9. Prova de esforço com baixa capacidade funcional, sem atingir 85% da FCMP. ",gpt-4o,6.03,Sim,,Alto,Alta,"{'Obesidade': 'IMC 28,8 kg/m²', 'Doença Osteoarticular': 'Patologia osteoarticular degenerativa dos joelhos e coluna'}",65 anos,Feminino,Não fumador,Sim,138 mmHg,75 mmHg,Sim,165 mg/dL,51 mg/dL,173 mg/dL,79 mg/dL,114 mg/dL,Sim
+26,"Homem 36 anos, informático. Consulta de seguimento para otimização do risco cardiovascular (suspeita de hipercolesterolémia familiar). Sem sintomas. Estilo de vida maioritariamente sedentário.  Não fuma. Bebe socialmente ao fim-de-semana. Dorme cerca de 6h por dia (dificuldade em adormecer cedo).
+
+Antecedentes familiares: mãe com enfarte agudo do miocárdio aos 47 anos (enfarte inferior); tia materna com morte súbita aos 51 anos; avó materna faleceu com insuficiência cardíaca aos 67 anos. 
+
+Exame objectivo: peso 91Kg (IMC 27.7); pressão arterial 134-87mmHg, frequência cardíaca 76bpm. Auscultação cardíaca e pulmonar sem alterações. Sem outros achados.
+
+Analiticamente, apresenta uma creatinina 1.0 mg/dL, glicémia em jejum 95mg/dL, triglicerideos 164mg/dL, colesterol total 336mg/dL, colesterol HDL 45mg/dL, colesterol LDL 258mg/dL. Teste genético com mutação do gene LDLR (hipercolesterolémia familiar heterozigótica).
+
+Realizou um electrocardiograma e um ecocardiograma, sem alterações valorizáveis. Prova de esforço não sugestiva de isquémia.",gpt-4o,SCORE2 not applicable,Não,Hipercolesterolémia Familiar,Muito-Alto,Alta,"{'História Familiar de doença cardiovascular aterosclerótica': 'Sim', 'Outro': 'Hipercolesterolémia Familiar (mutação do gene LDLR)'}",36 anos,Masculino,Não fumador,Não,134 mmHg,87 mmHg,Sim,336 mg/dL,45 mg/dL,164 mg/dL,258 mg/dL,291 mg/dL,Não
+27,"Mulher de 61 anos, enfermeira. Queixas de dor torácica atípica (tipo aperto, com duração de 5-10 minutos mas sem relação com o esforço – associa sobretudo a momentos de maior ansiedade). Sem palpitações, síncope ou queixas de cansaço.
+
+Antecedentes pessoais: tabagismo (10 UMAs), ansiedade.
+
+Medicação habitual: sertralina 25mg, lorazepam 1mg.
+
+Ao exame objectivo: peso 53Kg (IMC 20.1); pressão arterial 124-75mmHg, frequência cardíaca 69bpm. Auscultação cardíaca sem alterações.
+Análises: Hb 13.2g/dL, creatinina 0.58mg/dL, glicemia em jejum 78mg/dL, HbA1c 5.6%, triglicerideos 87mg/dL, colesterol total 199mg/dL, colesterol HDL 54mg/dL, colesterol LDL 87mg/dL, NT proBNP <75pg/mL.
+
+Exames complementares de diagnóstico: electrocardiograma e ecocardiograma sem alterações significativas. AngioTC coronária com score de cálcio 186 (> P75) com oclusão da coronária direita média e com placas não obstrutivas (<50%) na circunflexa proximal e descendente anterior média. ",gpt-4o,SCORE2 not applicable,Não,Score de cálcio acima do percentil 75,Alto,Alta,"{'Score de Cálcio elevado': 'Sim', 'Outro': 'Oclusão da coronária direita média; Placas não obstrutivas nas coronárias'}",61,Feminino,Fumador,Não,124,75,Não,199,54,87,87,145,Não
+28,"Homem 51 anos, engenheiro químico em fábrica de plásticos. Consulta de vigilância cardiovascular (cardiopatia isquémica). Sem dor torácica ou outros sintomas cardiovasculares. 
+
+Antecedentes pessoais: enfarte agudo do miocárdio sem supra-ST aos 49 anos com angioplastia da descendente anterior proximal; ex-tabagismo (40 UMAs), parou há 2 anos. Estilo de vida maioritariamente sedentário. 
+
+Medicação habitual: clopidogrel 75mg, bisoprolol 2.5mg, rosuvastatina+eztimibe 20+10mg
+
+Exame objectivo: peso 71Kg (IMC 25.6), pressão arterial 118-67mmHg, frequência cardíaca 58bpm. Restante exame sem alterações.
+
+Nas análises:  Hb 14.1g/dL, plaquetas 236.000, creatinina 0.87mg/dL, glicémia em jejum 85mg/dL, triglicerideos 99mg/dL, colesterol total 136mg/dL, colesterol HDL 46mg/dL, colesterol LDL 70mg/dL. 
+
+Realizou um electrocardiograma em ritmo sinusal, sem alterações significativas. Ecocardiograma de esforço com boa capacidade funcional, sem dor torácica e sem alterações da contractilidade segmentar e/ou electrocardiográficas no pico de esforço. ",gpt-4o,SCORE2 not applicable,Não,História de doença cardiovascular,Muito-Alto,Alta,"{'História Familiar de doença cardiovascular aterosclerótica': 'Desconhecido', 'Outro': 'Enfarte agudo do miocárdio prévio'}",51 anos,Masculino,Ex-Fumador,Não,118 mmHg,67 mmHg,Sim,136 mg/dL,46 mg/dL,99 mg/dL,70 mg/dL,90 mg/dL,Não
+29,"Mulher de 63 anos, técnica de análises. Status pós-angioplastia electiva (circunflexa proximal) em contexto de dor torácica atípica há 2 anos. Neste momento assintomática. Tem feito caminhadas.
+
+Antecedentes pessoais: ex-tabagismo (10 UMAs, parou há 2 anos), ansiedade. 
+
+Medicação habitual: ácido acetilsalicílico 100mg, atorvastatina +ezetimibe 20+10mg, sertralina 25mg, alprazolam 0.25mg.
+
+Ao exame objectivo: peso 53Kg (IMC 20.1); pressão arterial 114-66mmHg, frequência cardíaca 63bpm. Auscultação cardíaca sem alterações.
+
+Análises: Hb 13.1g/dL, creatinina 0.63mg/dL, glicemia em jejum 80mg/dL, HbA1c 5.6%, triglicerideos 82mg/dL, colesterol total 149mg/dL, colesterol HDL 53mg/dL, colesterol LDL 80mg/dL, NT proBNP <75pg/mL.
+
+Exames complementares de diagnóstico: electrocardiograma e ecocardiograma de esforço sem alterações significativas",gpt-4o,SCORE2 not applicable,Não,Doença cardiovascular prévia,Muito-Alto,Alta,{'Outro': 'Pós-angioplastia; Exercício'},63,Feminino,Ex-Fumador,Não,114 mmHg,66 mmHg,Sim,149 mg/dL,53 mg/dL,82 mg/dL,80 mg/dL,96 mg/dL,Não
+30,"Homem 64 anos, bombeiro. Encaminhado da consulta de Neurologia no contexto pós-AVC isquémico, para despiste de fonte cardio-embólica. 
+
+Antecedentes pessoais: AVC isquémico há 3 meses (fez trombólise, ficou sem sequelas); hipertensão arterial, dislipidémia, excesso de peso, ex-tabagismo (40 UMAs), parou há 5 anos. Estilo de vida maioritariamente sedentário. Hábitos alcoólicos moderados.
+
+Medicação habitual: ácido acetilsalicílico, atorvastatina 40mg, perindopril+indapamida+amlodipina 10+2.5+5mg.
+
+Exame objectivo: peso 88Kg (IMC 28.7), pressão arterial 138-81mmHg, frequência cardíaca 77bpm. Auscultação cardíaca sem alterações. Auscultação pulmonar com roncos dispersos bilateralmente. Sem edemas dos membros inferiores.
+
+Nas análises:  Hb 14.1g/dL, plaquetas 236.000, creatinina 0.87mg/dL, glicémia em jejum 112mg/dL, HbA1c 6.4%, triglicerideos 209mg/dL, colesterol total 165mg/dL, colesterol HDL 52mg/dL, colesterol LDL 71mg/dL, ApoB 83mg/dL. 
+
+Exames complementares de diagnóstico: electrocardiograma em ritmo sinusal 81bpm, alterações inespecíficas da repolarização ventricular. Ecocardiograma com remodeling concêntrico do ventrículo esquerdo, dilatação grave da aurícula esquerda, fracção de ejecção 59% e E/e’ 9. Ecocardiograma transesofágico sem evidência de fontes cardio-embólicas. ",gpt-4o,SCORE2 not applicable,Não,História de AVC prévio,Alto,Alta,"{'Pre-Diabetes': 'Sim', 'Obesidade': 'Sim', 'Doença pulmonar obstrutiva crónica (DPOC)': 'Sim'}",64 anos,Masculino,Ex-Fumador,Sim,138 mmHg,81 mmHg,Sim,165 mg/dL,52 mg/dL,209 mg/dL,71 mg/dL,113 mg/dL,Não

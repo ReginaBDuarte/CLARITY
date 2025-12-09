@@ -1,0 +1,191 @@
+=== SYSTEM ===
+Função:  És um assistente virtual especializado em cardiologia preventiva que apoia a consulta médica.
+
+Formato geral
+- Usa Markdown; não incluas texto fora das secções acima
+- Quando um valor não se encontra nos dados, escreve “desconhecido”
+- Usa sempre “,” como separador decimal e “.” para milhares (padrão português)
+
+Objetivo: Analisar a vinheta clínica abaixo, extrair de forma estruturada todos os fatores relevantes para avaliar o risco cardiovascular.
+
+=== USER ===
+Homem de 62 anos. 2 episódios de síncope no último mês (sem pródromos, recuperação rápida; uma das vezes estava no supermercado, na outra em casa sentado a ver televisão). Sem outras queixas, nomeadamente palpitações, dor torácica ou cansaço.
+
+Antecedentes pessoais: hipertensão arterial, dislipidemia, ex-tabagismo (parou há 8 anos, 50 UMAs), hiperplasia benigna da próstata; status pós-neoplasia do cólon há 8 anos (hemicolectomia esquerda).
+
+Medicação habitual: candesartan+amlodipina 8+5mg, nebivolol 5mg, rosuvastatina 10mg, tansulosina+dutasteride 0.4+0.5mg.
+
+Ao exame objectivo: peso 77Kg (IMC 26.4); pressão arterial 129-66mmHg, frequência cardíaca 51bpm. Auscultação cardíaca e pulmonar sem alterações. Sem edemas dos membros inferiores.
+
+Analiticamente, apresenta uma creatinina 1.07mg/dL, glicemia em jejum 105mg/dL, HbA1c 6.2%, triglicerideos 134mg/dL, colesterol total 187mg/dL, colesterol HDL 51mg/dL, colesterol LDL 109mg/dL, NT-proBNP 204pg/mL.
+
+Exames complementares de diagnóstico: electrocardiograma com bradicardia sinusal 49bpm, bloqueio auriculo-ventricular de 1º grau, alterações inespecíficas da repolarização ventricular. Ecocardiograma com remodeling concêntrico do ventrículo esquerdo, dilatação moderada da aurícula esquerda e insuficiência mitral e aórtica ligeiras. Realizou detetor de eventos de 7 dias, com período de bloqueio auriculo-ventricular 2:1 diurno, sem correlação sintomática.
+
+=== USER ===
+1. Extração estruturada dos fatores de risco:
+- Preenche uma tabela em Markdown com os fatores de risco necessários ao cálculo do risco cardiovascular
+- Para cada fator: Valor (tal como aparece na vinheta ou indica “desconhecido”); Unidade se aplicável (mmHg, mg/dL, anos); 
+- Mantém exatamente o mesmo nome de cada variável indicado na lista-referência abaixo.
+- Lista-referência (não alterar nomes):
+[Fator de Risco -> Valores; Idade -> Numérico; Género->Masculino; Feminino; Tabagismo -> Não fumador; Ex-Fumador; Fumador; Pressão Arterial Sistólica -> Numérico; Colesterol Total -> Numérico, Colesterol HDL -> Numérico, Colesterol não HDL (se necessário calcular) -> Numérico.]
+
+
+2. Verificação de apicabilidade do SCORE2 (2021 ESC Guidelines on cardiovascular disease prevention in clinical practice)
+
+- Verifica se o SCORE2 é aplicável (Sim / Não).
+- Se o SCORE2 não for aplicável, indica razão segundo as recomendações ESC 2021.
+- Apresenta as saídas numa tabela Markdown: | SCORE2 Aplicável | Exceção (se não  aplicável)
+
+
+3. Criação de um json file
+- No final, cria um json file que sumarize as informações, com a seguinte estrutura: 
+
+```json
+{
+"Aplicabilidade":{'SCORE2 Aplicável': '..', 'Exceção': '..' },
+"Fatores de Risco":{'Fator1':'Valor1','Fator2':'Valor2', …}
+}
+```
+
+=== ASSISTANT ===
+1) Extração estruturada dos fatores de risco
+
+| Fator de Risco | Valor | Unidade |
+|---|---:|---|
+| Idade | 62 | anos |
+| Género | Masculino |  |
+| Tabagismo | Ex-Fumador |  |
+| Pressão Arterial Sistólica | 129 | mmHg |
+| Colesterol Total | 187 | mg/dL |
+| Colesterol HDL | 51 | mg/dL |
+| Colesterol não HDL (se necessário calcular) | 136 | mg/dL |
+
+
+2) Verificação de apicabilidade do SCORE2 (2021 ESC Guidelines on cardiovascular disease prevention in clinical practice)
+
+| SCORE2 Aplicável | Exceção (se não  aplicável) |
+|---|---|
+| Sim | — |
+
+
+3) Json file
+
+```json
+{
+  "Aplicabilidade": {
+    "SCORE2 Aplicável": "Sim",
+    "Exceção": "—"
+  },
+  "Fatores de Risco": {
+    "Idade": "62",
+    "Género": "Masculino",
+    "Tabagismo": "Ex-Fumador",
+    "Pressão Arterial Sistólica": "129",
+    "Colesterol Total": "187",
+    "Colesterol HDL": "51",
+    "Colesterol não HDL (se necessário calcular)": "136"
+  }
+}
+```
+
+=== USER ===
+Dado a tua extraçao dos fatores de risco inicial, eu calculei o SCORE2 (risco cardiovascular a 10 anos).
+O valor do SCORE2 é: 6.88%
+
+Com base na vinheta, na tua analise inicial e no valor do SCORE2 que te dei, continua a tua analise nos seguintes pontos.
+
+1. Estratificação de risco segundo recomendações da sociedade europeia de cardiologia 2021 (2021 ESC Guidelines on cardiovascular disease prevention in clinical practice)
+
+
+- De acordo com o resultado do SCORE2, identifica a categoria de risco, tendo em conta a idade (Baixo-a-Moderado; Alto; Muito-Alto)
+- Indica o grau de confiança da decisão sobre categoria de risco indicada no ponto anterior (Escolhe apenas uma categoria -> Baixa, Intermédia, Alta, Muito-Alta).
+- Apresenta as saídas numa tabela Markdown:  Categoria Risco | Grau de Confiança 
+
+
+2. Breve explicação clínica
+
+Máximo 150 palavras. Realça os fatores que mais contribuíram para a classificação de risco (p. ex. HTA mal controlada, tabagismo, LDL elevado, modificadores de risco, etc.). 
+
+3. Extracção estruturada dos fatores de risco:
+- Preenche uma tabela Markdown com as duas categorias fixas: “Fatores de Risco” e “Modificadores de Risco”.
+- Para cada variável apresenta o valor tal como aparece na vinheta ou “desconhecido”; inclui unidade se aplicável (mmHg, mg/dL, anos); 
+- Mantém exatamente o mesmo nome de cada variável indicado na lista-referência abaixo.
+- Quando mais do que uma opção é possível (p. ex. Modificadores de Risco), lista-as separadas por “;”.
+- Lista-referência (não alterar nomes):
+[Fator de Risco -> Valores; Idade -> Numérico; Género->Masculino; Feminino; Tabagismo -> Não fumador; Ex-Fumador; Fumador; Hipertensão Arterial -> Sim, Não; Pressão Arterial Sistólica -> Valor; Pressão Arterial Diastólica -> Valor; Dislipidemia -> Sim, Não; Colesterol Total -> Numérico; Colesterol HDL -> Numérico; Triglicéridos -> Numérico; Colesterol LDL -> Numérico; Colesterol não HDL (se necessário calcular) -> Numérico; Diabetes Mellitus-> Sim, Não
+Modificadores de Risco -> Valores; Pode selecionar mais do que um ->  Score de Cálcio elevado; Score de Cálcio = 0; Placas Carótidas; Obesidade; Pre-Diabetes; História Familiar de doença cardiovascular aterosclerótica; Lp (a) aumentada; Rigidez Arterial aumentada; PCR alta sensibilidade elevada; Doença Inflamatória Crónica; Infecção HIV; Sindrome Apneia Obstrutiva do Sono; Esteatose Hepática Não Alcoólica; Disfunção erétil; Menopausa precoce; Antecedentes de Gravidez com complicações (Pre-eclampsia, Hipertensão arterial ou diabetes); Doença pulmonar obstrutiva crónica (DPOC); Cancro; Outro (especificar)]  
+
+4. Criação de um json file
+- No final, cria um json file que sumarize as informações, com a seguinte estrutura: 
+
+```json
+{
+"Categoria de Risco":{'..'},
+"Confiança":{'..},
+"Fatores de Risco":{'Fator1':'Valor1','Fator2':'Valor2'},
+"Modificadores de Risco" : {'FactorM1':'valorM1', 'FactorM2': 'valorM2'}
+}
+```
+
+=== ASSISTANT ===
+1) Estratificação de risco (ESC 2021)
+
+| Categoria Risco | Grau de Confiança |
+|---|---|
+| Alto | Alta |
+
+
+2) Breve explicação clínica
+
+SCORE2 de 6,88% em homem de 62 anos enquadra-se em risco Alto para a faixa etária 50–69 anos. Contribuem sobretudo a idade e o sexo masculino, a presença de dislipidemia com LDL 109 mg/dL, e história de hipertensão (atualmente controlada, PAS 129 mmHg). O ex-tabagismo pesado (50 UMAs) não entra diretamente no SCORE2, mas reforça risco residual. A HbA1c de 6,2% sugere pré-diabetes, um modificador que pode reclassificar o risco para cima e justificar intensificação preventiva. Achados de remodelação concêntrica do VE e dilatação da AE sugerem lesão de órgão-alvo, apoiando estratégia preventiva mais intensiva.
+
+
+3) Extração estruturada dos fatores de risco
+
+| Categoria | Variável | Valor | Unidade |
+|---|---|---|---|
+| Fatores de Risco | Idade | 62 | anos |
+| Fatores de Risco | Género | Masculino |  |
+| Fatores de Risco | Tabagismo | Ex-Fumador |  |
+| Fatores de Risco | Hipertensão Arterial | Sim |  |
+| Fatores de Risco | Pressão Arterial Sistólica | 129 | mmHg |
+| Fatores de Risco | Pressão Arterial Diastólica | 66 | mmHg |
+| Fatores de Risco | Dislipidemia | Sim |  |
+| Fatores de Risco | Colesterol Total | 187 | mg/dL |
+| Fatores de Risco | Colesterol HDL | 51 | mg/dL |
+| Fatores de Risco | Triglicéridos | 134 | mg/dL |
+| Fatores de Risco | Colesterol LDL | 109 | mg/dL |
+| Fatores de Risco | Colesterol não HDL (se necessário calcular) | 136 | mg/dL |
+| Fatores de Risco | Diabetes Mellitus | Não |  |
+| Modificadores de Risco | Pode selecionar mais do que um | Pre-Diabetes; Cancro; Outro (especificar): Remodelação concêntrica do ventrículo esquerdo; Dilatação moderada da aurícula esquerda |  |
+
+
+4) Json file
+
+```json
+{
+  "Categoria de Risco": "Alto",
+  "Confiança": "Alta",
+  "Fatores de Risco": {
+    "Idade": "62",
+    "Género": "Masculino",
+    "Tabagismo": "Ex-Fumador",
+    "Hipertensão Arterial": "Sim",
+    "Pressão Arterial Sistólica": "129",
+    "Pressão Arterial Diastólica": "66",
+    "Dislipidemia": "Sim",
+    "Colesterol Total": "187",
+    "Colesterol HDL": "51",
+    "Triglicéridos": "134",
+    "Colesterol LDL": "109",
+    "Colesterol não HDL (se necessário calcular)": "136",
+    "Diabetes Mellitus": "Não"
+  },
+  "Modificadores de Risco": {
+    "Pre-Diabetes": "Sim (HbA1c 6,2%)",
+    "Cancro": "Neoplasia do cólon (hemicolectomia esquerda há 8 anos)",
+    "Outro (especificar)": "Remodelação concêntrica do ventrículo esquerdo; Dilatação moderada da aurícula esquerda"
+  }
+}
+```
+

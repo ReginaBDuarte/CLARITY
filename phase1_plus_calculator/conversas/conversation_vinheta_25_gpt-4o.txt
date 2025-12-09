@@ -1,0 +1,183 @@
+=== SYSTEM ===
+Função:  És um assistente virtual especializado em cardiologia preventiva que apoia a consulta médica.
+
+Formato geral
+- Usa Markdown; não incluas texto fora das secções acima
+- Quando um valor não se encontra nos dados, escreve “desconhecido”
+- Usa sempre “,” como separador decimal e “.” para milhares (padrão português)
+
+Objetivo: Analisar a vinheta clínica abaixo, extrair de forma estruturada todos os fatores relevantes para avaliar o risco cardiovascular.
+
+=== USER ===
+Mulher de 65 anos, bancária. Encaminhada da consulta de diabetologia para controlo do risco cardiovascular. Sem dor torácica, síncope ou palpitações. Aumentou de peso e nos últimos tempos tem feito menos caminhadas – faz menos de 5000 passos/dia, sobretudo por dor mecânica nos joelhos embora também refira cansaço. 
+
+Outros antecedentes pessoais: diabetes tipo 2 (diagnóstico aos 53 anos), excesso de peso, dislipidemia, hipertensão arterial, patologia osteoarticular degenerativa dos joelhos e coluna.
+
+Medicação habitual: pantoprazol 20mg, ácido acetlsalicílico 100mg, nebivolol 2,5mg, metformina+dapagliflozina 1000+10mg 2id, gliclazina 30mg, perindopril+indapamida+amlodipina 5+1.25+5mg, naproxeno 75mg, glucosamina 500mg 2id.
+
+Ao exame objectivo: peso 84Kg (IMC 28.8); pressão arterial 138-75mmHg, frequência cardíaca 89bpm. Sem achados de relevo.
+
+Nás análises: Hb 13.2g/dL, creatinina 1.08mg/dL (TFG 57mL/min/1.73 m2), glicemia em jejum 128mg/dL, HbA1c 6.9%, triglicerideos 173mg/dL, colesterol total 165mg/dL, colesterol HDL 51mg/dL, colesterol LDL 79mg/dL, NT proBNP 66pg/mL, microalbuminúria 103mg/g.
+
+Exames complementares de diagnóstico: electrocardiograma em ritmo sinusal 81bpm, alterações inespecíficas da repolarização ventricular. Ecocardiograma com remodeling concêntrico do ventrículo esquerdo, dilatação ligeira da aurícula esquerda, fracção de ejecção 59% e E/e’ 9. Prova de esforço com baixa capacidade funcional, sem atingir 85% da FCMP.
+
+=== USER ===
+1. Extração estruturada dos fatores de risco:
+- Preenche uma tabela em Markdown com os fatores de risco necessários ao cálculo do risco cardiovascular
+- Para cada fator: Valor (tal como aparece na vinheta ou indica “desconhecido”); Unidade se aplicável (mmHg, mg/dL, anos); 
+- Mantém exatamente o mesmo nome de cada variável indicado na lista-referência abaixo.
+- Lista-referência (não alterar nomes):
+[Fator de Risco -> Valores; Idade -> Numérico; Género->Masculino; Feminino; Tabagismo -> Não fumador; Ex-Fumador; Fumador; Pressão Arterial Sistólica -> Numérico; Colesterol Total -> Numérico, Colesterol HDL -> Numérico, Colesterol não HDL (se necessário calcular) -> Numérico.]
+
+
+2. Verificação de apicabilidade do SCORE2 (2021 ESC Guidelines on cardiovascular disease prevention in clinical practice)
+
+- Verifica se o SCORE2 é aplicável (Sim / Não).
+- Se o SCORE2 não for aplicável, indica razão segundo as recomendações ESC 2021.
+- Apresenta as saídas numa tabela Markdown: | SCORE2 Aplicável | Exceção (se não  aplicável)
+
+
+3. Criação de um json file
+- No final, cria um json file que sumarize as informações, com a seguinte estrutura: 
+
+```json
+{
+"Aplicabilidade":{'SCORE2 Aplicável': '..', 'Exceção': '..' },
+"Fatores de Risco":{'Fator1':'Valor1','Fator2':'Valor2', …}
+}
+```
+
+=== ASSISTANT ===
+```markdown
+| Fator de Risco                    | Valor       | Unidade |
+|-----------------------------------|-------------|---------|
+| Idade                             | 65          | anos    |
+| Género                            | Feminino    |         |
+| Tabagismo                         | Não fumador |         |
+| Pressão Arterial Sistólica        | 138         | mmHg    |
+| Colesterol Total                  | 165         | mg/dL   |
+| Colesterol HDL                    | 51          | mg/dL   |
+| Colesterol não HDL                | 114         | mg/dL   |
+```
+
+```markdown
+| SCORE2 Aplicável | Exceção        |
+|------------------|----------------|
+| Sim              |                |
+```
+
+```json
+{
+  "Aplicabilidade": {
+    "SCORE2 Aplicável": "Sim",
+    "Exceção": ""
+  },
+  "Fatores de Risco": {
+    "Idade": "65",
+    "Género": "Feminino",
+    "Tabagismo": "Não fumador",
+    "Pressão Arterial Sistólica": "138",
+    "Colesterol Total": "165",
+    "Colesterol HDL": "51",
+    "Colesterol não HDL": "114"
+  }
+}
+```
+
+=== USER ===
+Dado a tua extraçao dos fatores de risco inicial, eu calculei o SCORE2 (risco cardiovascular a 10 anos).
+O valor do SCORE2 é: 6.03%
+
+Com base na vinheta, na tua analise inicial e no valor do SCORE2 que te dei, continua a tua analise nos seguintes pontos.
+
+1. Estratificação de risco segundo recomendações da sociedade europeia de cardiologia 2021 (2021 ESC Guidelines on cardiovascular disease prevention in clinical practice)
+
+
+- De acordo com o resultado do SCORE2, identifica a categoria de risco, tendo em conta a idade (Baixo-a-Moderado; Alto; Muito-Alto)
+- Indica o grau de confiança da decisão sobre categoria de risco indicada no ponto anterior (Escolhe apenas uma categoria -> Baixa, Intermédia, Alta, Muito-Alta).
+- Apresenta as saídas numa tabela Markdown:  Categoria Risco | Grau de Confiança 
+
+
+2. Breve explicação clínica
+
+Máximo 150 palavras. Realça os fatores que mais contribuíram para a classificação de risco (p. ex. HTA mal controlada, tabagismo, LDL elevado, modificadores de risco, etc.). 
+
+3. Extracção estruturada dos fatores de risco:
+- Preenche uma tabela Markdown com as duas categorias fixas: “Fatores de Risco” e “Modificadores de Risco”.
+- Para cada variável apresenta o valor tal como aparece na vinheta ou “desconhecido”; inclui unidade se aplicável (mmHg, mg/dL, anos); 
+- Mantém exatamente o mesmo nome de cada variável indicado na lista-referência abaixo.
+- Quando mais do que uma opção é possível (p. ex. Modificadores de Risco), lista-as separadas por “;”.
+- Lista-referência (não alterar nomes):
+[Fator de Risco -> Valores; Idade -> Numérico; Género->Masculino; Feminino; Tabagismo -> Não fumador; Ex-Fumador; Fumador; Hipertensão Arterial -> Sim, Não; Pressão Arterial Sistólica -> Valor; Pressão Arterial Diastólica -> Valor; Dislipidemia -> Sim, Não; Colesterol Total -> Numérico; Colesterol HDL -> Numérico; Triglicéridos -> Numérico; Colesterol LDL -> Numérico; Colesterol não HDL (se necessário calcular) -> Numérico; Diabetes Mellitus-> Sim, Não
+Modificadores de Risco -> Valores; Pode selecionar mais do que um ->  Score de Cálcio elevado; Score de Cálcio = 0; Placas Carótidas; Obesidade; Pre-Diabetes; História Familiar de doença cardiovascular aterosclerótica; Lp (a) aumentada; Rigidez Arterial aumentada; PCR alta sensibilidade elevada; Doença Inflamatória Crónica; Infecção HIV; Sindrome Apneia Obstrutiva do Sono; Esteatose Hepática Não Alcoólica; Disfunção erétil; Menopausa precoce; Antecedentes de Gravidez com complicações (Pre-eclampsia, Hipertensão arterial ou diabetes); Doença pulmonar obstrutiva crónica (DPOC); Cancro; Outro (especificar)]  
+
+4. Criação de um json file
+- No final, cria um json file que sumarize as informações, com a seguinte estrutura: 
+
+```json
+{
+"Categoria de Risco":{'..'},
+"Confiança":{'..},
+"Fatores de Risco":{'Fator1':'Valor1','Fator2':'Valor2'},
+"Modificadores de Risco" : {'FactorM1':'valorM1', 'FactorM2': 'valorM2'}
+}
+```
+
+=== ASSISTANT ===
+```markdown
+| Categoria Risco | Grau de Confiança |
+|-----------------|-------------------|
+| Alto            | Alta              |
+```
+
+A paciente é classificada como de risco cardiovascular alto com um SCORE2 de 6,03%. Esta categorização é fortemente influenciada pela presença de múltiplos fatores de risco, incluindo hipertensão arterial, dislipidemia, diabetes mellitus tipo 2 e excesso de peso, além de uma idade avançada. Modificadores de risco incluem obesidade e doença osteoarticular, que podem impactar negativamente o nível de atividade física, exacerbando o risco cardiovascular. A pressão arterial e os níveis de triglicéridos, embora controlados, também desempenham um papel importante na determinação do risco. Estas condições requerem monitorização e gestão rigorosas para mitigar o risco de eventos cardiovasculares futuros.
+
+```markdown
+| Fatores de Risco                    | Valor       |
+|-------------------------------------|-------------|
+| Idade                               | 65 anos     |
+| Género                              | Feminino    |
+| Tabagismo                           | Não fumador |
+| Hipertensão Arterial                | Sim         |
+| Pressão Arterial Sistólica          | 138 mmHg    |
+| Pressão Arterial Diastólica         | 75 mmHg     |
+| Dislipidemia                        | Sim         |
+| Colesterol Total                    | 165 mg/dL   |
+| Colesterol HDL                      | 51 mg/dL    |
+| Triglicéridos                       | 173 mg/dL   |
+| Colesterol LDL                      | 79 mg/dL    |
+| Colesterol não HDL                  | 114 mg/dL   |
+| Diabetes Mellitus                   | Sim         |
+
+| Modificadores de Risco                            | Valor                                         |
+|---------------------------------------------------|-----------------------------------------------|
+| Obesidade                                         | IMC 28,8 kg/m²                                |
+| Doença Osteoarticular                             | Patologia osteoarticular degenerativa dos joelhos e coluna |
+```
+
+```json
+{
+  "Categoria de Risco": "Alto",
+  "Confiança": "Alta",
+  "Fatores de Risco": {
+    "Idade": "65 anos",
+    "Género": "Feminino",
+    "Tabagismo": "Não fumador",
+    "Hipertensão Arterial": "Sim",
+    "Pressão Arterial Sistólica": "138 mmHg",
+    "Pressão Arterial Diastólica": "75 mmHg",
+    "Dislipidemia": "Sim",
+    "Colesterol Total": "165 mg/dL",
+    "Colesterol HDL": "51 mg/dL",
+    "Triglicéridos": "173 mg/dL",
+    "Colesterol LDL": "79 mg/dL",
+    "Colesterol não HDL": "114 mg/dL",
+    "Diabetes Mellitus": "Sim"
+  },
+  "Modificadores de Risco": {
+    "Obesidade": "IMC 28,8 kg/m²",
+    "Doença Osteoarticular": "Patologia osteoarticular degenerativa dos joelhos e coluna"
+  }
+}
+```
+

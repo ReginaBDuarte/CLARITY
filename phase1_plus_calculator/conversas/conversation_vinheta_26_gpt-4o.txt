@@ -1,0 +1,189 @@
+=== SYSTEM ===
+Função:  És um assistente virtual especializado em cardiologia preventiva que apoia a consulta médica.
+
+Formato geral
+- Usa Markdown; não incluas texto fora das secções acima
+- Quando um valor não se encontra nos dados, escreve “desconhecido”
+- Usa sempre “,” como separador decimal e “.” para milhares (padrão português)
+
+Objetivo: Analisar a vinheta clínica abaixo, extrair de forma estruturada todos os fatores relevantes para avaliar o risco cardiovascular.
+
+=== USER ===
+Homem 36 anos, informático. Consulta de seguimento para otimização do risco cardiovascular (suspeita de hipercolesterolémia familiar). Sem sintomas. Estilo de vida maioritariamente sedentário.  Não fuma. Bebe socialmente ao fim-de-semana. Dorme cerca de 6h por dia (dificuldade em adormecer cedo).
+
+Antecedentes familiares: mãe com enfarte agudo do miocárdio aos 47 anos (enfarte inferior); tia materna com morte súbita aos 51 anos; avó materna faleceu com insuficiência cardíaca aos 67 anos. 
+
+Exame objectivo: peso 91Kg (IMC 27.7); pressão arterial 134-87mmHg, frequência cardíaca 76bpm. Auscultação cardíaca e pulmonar sem alterações. Sem outros achados.
+
+Analiticamente, apresenta uma creatinina 1.0 mg/dL, glicémia em jejum 95mg/dL, triglicerideos 164mg/dL, colesterol total 336mg/dL, colesterol HDL 45mg/dL, colesterol LDL 258mg/dL. Teste genético com mutação do gene LDLR (hipercolesterolémia familiar heterozigótica).
+
+Realizou um electrocardiograma e um ecocardiograma, sem alterações valorizáveis. Prova de esforço não sugestiva de isquémia.
+
+=== USER ===
+1. Extração estruturada dos fatores de risco:
+- Preenche uma tabela em Markdown com os fatores de risco necessários ao cálculo do risco cardiovascular
+- Para cada fator: Valor (tal como aparece na vinheta ou indica “desconhecido”); Unidade se aplicável (mmHg, mg/dL, anos); 
+- Mantém exatamente o mesmo nome de cada variável indicado na lista-referência abaixo.
+- Lista-referência (não alterar nomes):
+[Fator de Risco -> Valores; Idade -> Numérico; Género->Masculino; Feminino; Tabagismo -> Não fumador; Ex-Fumador; Fumador; Pressão Arterial Sistólica -> Numérico; Colesterol Total -> Numérico, Colesterol HDL -> Numérico, Colesterol não HDL (se necessário calcular) -> Numérico.]
+
+
+2. Verificação de apicabilidade do SCORE2 (2021 ESC Guidelines on cardiovascular disease prevention in clinical practice)
+
+- Verifica se o SCORE2 é aplicável (Sim / Não).
+- Se o SCORE2 não for aplicável, indica razão segundo as recomendações ESC 2021.
+- Apresenta as saídas numa tabela Markdown: | SCORE2 Aplicável | Exceção (se não  aplicável)
+
+
+3. Criação de um json file
+- No final, cria um json file que sumarize as informações, com a seguinte estrutura: 
+
+```json
+{
+"Aplicabilidade":{'SCORE2 Aplicável': '..', 'Exceção': '..' },
+"Fatores de Risco":{'Fator1':'Valor1','Fator2':'Valor2', …}
+}
+```
+
+=== ASSISTANT ===
+### 1. Tabela de Fatores de Risco
+
+| Fator de Risco              | Valor        | Unidade  |
+|-----------------------------|--------------|----------|
+| Idade                       | 36           | anos     |
+| Género                      | Masculino    |          |
+| Tabagismo                   | Não fumador  |          |
+| Pressão Arterial Sistólica  | 134          | mmHg     |
+| Colesterol Total            | 336          | mg/dL    |
+| Colesterol HDL              | 45           | mg/dL    |
+| Colesterol não HDL          | 291          | mg/dL    |
+
+### 2. Verificação de Aplicabilidade do SCORE2
+
+| SCORE2 Aplicável | Exceção                   |
+|------------------|---------------------------|
+| Não              | Hipercolesterolémia Familiar |
+
+### 3. JSON File
+
+```json
+{
+    "Aplicabilidade": {
+        "SCORE2 Aplicável": "Não",
+        "Exceção": "Hipercolesterolémia Familiar"
+    },
+    "Fatores de Risco": {
+        "Idade": "36",
+        "Género": "Masculino",
+        "Tabagismo": "Não fumador",
+        "Pressão Arterial Sistólica": "134",
+        "Colesterol Total": "336",
+        "Colesterol HDL": "45",
+        "Colesterol não HDL": "291"
+    }
+}
+```
+
+=== USER ===
+Dado a tua extraçao dos fatores de risco inicial e o facto do SCORE2 não ser aplicável, continua a tua analise nos seguintes pontos.
+
+
+1. Estratificação de risco segundo recomendações da sociedade europeia de cardiologia 2021 (2021 ESC Guidelines on cardiovascular disease prevention in clinical practice)
+
+
+- Identifica a categoria de risco, tendo em conta a idade (Baixo-a-Moderado; Alto; Muito-Alto)
+- Indica o grau de confiança da decisão sobre categoria de risco indicada no ponto anterior (Escolhe apenas uma categoria -> Baixa, Intermédia, Alta, Muito-Alta).
+- Apresenta as saídas numa tabela Markdown:  Categoria Risco | Grau de Confiança 
+
+
+2. Breve explicação clínica
+
+Máximo 150 palavras. Realça os fatores que mais contribuíram para a classificação de risco (p. ex. HTA mal controlada, tabagismo, LDL elevado, modificadores de risco, etc.). 
+
+3. Extracção estruturada dos fatores de risco:
+- Preenche uma tabela Markdown com as duas categorias fixas: “Fatores de Risco” e “Modificadores de Risco”.
+- Para cada variável apresenta o valor tal como aparece na vinheta ou “desconhecido”; inclui unidade se aplicável (mmHg, mg/dL, anos); 
+- Mantém exatamente o mesmo nome de cada variável indicado na lista-referência abaixo.
+- Quando mais do que uma opção é possível (p. ex. Modificadores de Risco), lista-as separadas por “;”.
+- Lista-referência (não alterar nomes):
+[Fator de Risco -> Valores; Idade -> Numérico; Género->Masculino; Feminino; Tabagismo -> Não fumador; Ex-Fumador; Fumador; Hipertensão Arterial -> Sim, Não; Pressão Arterial Sistólica -> Valor; Pressão Arterial Diastólica -> Valor; Dislipidemia -> Sim, Não; Colesterol Total -> Numérico; Colesterol HDL -> Numérico; Triglicéridos -> Numérico; Colesterol LDL -> Numérico; Colesterol não HDL (se necessário calcular) -> Numérico; Diabetes Mellitus-> Sim, Não
+Modificadores de Risco -> Valores; Pode selecionar mais do que um ->  Score de Cálcio elevado; Score de Cálcio = 0; Placas Carótidas; Obesidade; Pre-Diabetes; História Familiar de doença cardiovascular aterosclerótica; Lp (a) aumentada; Rigidez Arterial aumentada; PCR alta sensibilidade elevada; Doença Inflamatória Crónica; Infecção HIV; Sindrome Apneia Obstrutiva do Sono; Esteatose Hepática Não Alcoólica; Disfunção erétil; Menopausa precoce; Antecedentes de Gravidez com complicações (Pre-eclampsia, Hipertensão arterial ou diabetes); Doença pulmonar obstrutiva crónica (DPOC); Cancro; Outro (especificar)]  
+
+4. Criação de um json file
+- No final, cria um json file que sumarize as informações, com a seguinte estrutura: 
+
+```json
+{
+"Categoria de Risco":{'..'},
+"Confiança":{'..},
+"Fatores de Risco":{'Fator1':'Valor1','Fator2':'Valor2'},
+"Modificadores de Risco" : {'FactorM1':'valorM1', 'FactorM2': 'valorM2'}
+}
+```
+
+=== ASSISTANT ===
+## 1. Estratificação de risco
+
+| Categoria Risco | Grau de Confiança |
+|-----------------|-------------------|
+| Muito-Alto      | Alta              |
+
+## 2. Breve explicação clínica
+
+O paciente apresenta um risco cardiovascular muito alto devido à hipercolesterolémia familiar, evidenciada pela mutação do gene LDLR. A concentração extremamente elevada de colesterol LDL (258 mg/dL) configura um dos principais fatores de risco. A história familiar é também significativa, com múltiplos eventos cardiovasculares prematuros, incluindo enfarte agudo do miocárdio na mãe e morte súbita na tia. Outros fatores incluem um estilo de vida sedentário e um ligeiro excesso de peso (IMC 27,7). Apesar de a pressão arterial estar apenas marginalmente elevada e o paciente ser não fumador, a presença de hipercolesterolémia familiar e a genética adversa são determinantes cruciais para a sua classificação de risco.
+
+## 3. Extração estruturada dos fatores de risco
+
+### Fatores de Risco
+
+| Fator de Risco            | Valor       |
+|---------------------------|-------------|
+| Idade                     | 36 anos     |
+| Género                    | Masculino   |
+| Tabagismo                 | Não fumador |
+| Hipertensão Arterial      | Não         |
+| Pressão Arterial Sistólica| 134 mmHg    |
+| Pressão Arterial Diastólica| 87 mmHg    |
+| Dislipidemia              | Sim         |
+| Colesterol Total          | 336 mg/dL   |
+| Colesterol HDL            | 45 mg/dL    |
+| Triglicéridos             | 164 mg/dL   |
+| Colesterol LDL            | 258 mg/dL   |
+| Colesterol não HDL        | 291 mg/dL   |
+| Diabetes Mellitus         | Não         |
+
+### Modificadores de Risco
+
+| Modificadores de Risco                                     | Valor                                                                |
+|------------------------------------------------------------|----------------------------------------------------------------------|
+| História Familiar de doença cardiovascular aterosclerótica | Sim                                                                  |
+| Outro                                                      | Hipercolesterolémia Familiar (mutação do gene LDLR)                   |
+
+## 4. JSON File
+
+```json
+{
+    "Categoria de Risco": "Muito-Alto",
+    "Confiança": "Alta",
+    "Fatores de Risco": {
+        "Idade": "36 anos",
+        "Género": "Masculino",
+        "Tabagismo": "Não fumador",
+        "Hipertensão Arterial": "Não",
+        "Pressão Arterial Sistólica": "134 mmHg",
+        "Pressão Arterial Diastólica": "87 mmHg",
+        "Dislipidemia": "Sim",
+        "Colesterol Total": "336 mg/dL",
+        "Colesterol HDL": "45 mg/dL",
+        "Triglicéridos": "164 mg/dL",
+        "Colesterol LDL": "258 mg/dL",
+        "Colesterol não HDL": "291 mg/dL",
+        "Diabetes Mellitus": "Não"
+    },
+    "Modificadores de Risco": {
+        "História Familiar de doença cardiovascular aterosclerótica": "Sim",
+        "Outro": "Hipercolesterolémia Familiar (mutação do gene LDLR)"
+    }
+}
+```
+

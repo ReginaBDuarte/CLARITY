@@ -1,12 +1,10 @@
-Dado a tua extraçao dos fatores de risco inicial, eu calculei o SCORE2 (risco cardiovascular a 10 anos).
-O valor do SCORE2 é: score_valor
+Dado a tua extraçao dos fatores de risco inicial e o facto do SCORE2 não ser aplicável, continua a tua analise nos seguintes pontos.
 
-Com base na vinheta, na tua analise inicial e no valor do SCORE2 que te dei, continua a tua analise nos seguintes pontos.
 
 1. Estratificação de risco segundo recomendações da sociedade europeia de cardiologia 2021 (2021 ESC Guidelines on cardiovascular disease prevention in clinical practice)
 
 
-- De acordo com o resultado do SCORE2, identifica a categoria de risco, tendo em conta a idade (Baixo-a-Moderado; Alto; Muito-Alto)
+- Identifica a categoria de risco, tendo em conta a idade (Baixo-a-Moderado; Alto; Muito-Alto)
 - Indica o grau de confiança da decisão sobre categoria de risco indicada no ponto anterior (Escolhe apenas uma categoria -> Baixa, Intermédia, Alta, Muito-Alta).
 - Apresenta as saídas numa tabela Markdown:  Categoria Risco | Grau de Confiança 
 

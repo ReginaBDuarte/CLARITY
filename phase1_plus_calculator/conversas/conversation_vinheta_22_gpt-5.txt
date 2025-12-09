@@ -1,0 +1,220 @@
+=== SYSTEM ===
+Função:  És um assistente virtual especializado em cardiologia preventiva que apoia a consulta médica.
+
+Formato geral
+- Usa Markdown; não incluas texto fora das secções acima
+- Quando um valor não se encontra nos dados, escreve “desconhecido”
+- Usa sempre “,” como separador decimal e “.” para milhares (padrão português)
+
+Objetivo: Analisar a vinheta clínica abaixo, extrair de forma estruturada todos os fatores relevantes para avaliar o risco cardiovascular.
+
+=== USER ===
+Homem de 61 anos, reserva (Marinha). Seguimento habitual por bicuspidia aórtica com insuficiência moderada. Mantem-se sem cançaso (sem queixas desde que passou à reserva). Tem dormido melhor (7-8h) e feito caminhadas (5000-7000 passos/dia). 
+
+Outros antecedentes pessoais: hipertensão arterial, dislipidemia, doença renal crónica, ansiedade
+
+Medicação habitual: ramipril 10mg, dapagliflozina 10mg, rosuvastatina 10mg
+
+Ao exame objectivo: peso 77Kg (IMC 25.4); pressão arterial 131-78mmHg, frequência cardíaca 77bpm. Auscultação cardíaca e pulmonar sem alterações. Sem edemas dos membros inferiores.
+
+Analiticamente, apresenta uma Hb 13.3g/dL, creatinina 1.6mg/dL (TFG 42mL/min/1.73 m2), microalbuminúria 100mg/g, glicemia em jejum 91mg/dL, triglicerideos 164mg/dL, colesterol total 136mg/dL, colesterol HDL 38mg/dL, colesterol LDL 65mg/dL, K+ 4.6mmol/L, NT-proBNP <75pg/mL.
+
+Exames complementares de diagnóstico: electrocardiograma em ritmo sinusal 79bpm, alterações inespecíficas da repolarização ventricular. Ecocardiograma insuficiência moderada com FEVE 61% (dimensão tele-diastólica VE 43mm), insuficiência mitral ligeira e baixa probabilidade de hipertensão pulmonar. Prova de esforço não sugestiva de isquémia.
+
+=== USER ===
+1. Extração estruturada dos fatores de risco:
+- Preenche uma tabela em Markdown com os fatores de risco necessários ao cálculo do risco cardiovascular
+- Para cada fator: Valor (tal como aparece na vinheta ou indica “desconhecido”); Unidade se aplicável (mmHg, mg/dL, anos); 
+- Mantém exatamente o mesmo nome de cada variável indicado na lista-referência abaixo.
+- Lista-referência (não alterar nomes):
+[Fator de Risco -> Valores; Idade -> Numérico; Género->Masculino; Feminino; Tabagismo -> Não fumador; Ex-Fumador; Fumador; Pressão Arterial Sistólica -> Numérico; Colesterol Total -> Numérico, Colesterol HDL -> Numérico, Colesterol não HDL (se necessário calcular) -> Numérico.]
+
+
+2. Verificação de apicabilidade do SCORE2 (2021 ESC Guidelines on cardiovascular disease prevention in clinical practice)
+
+- Verifica se o SCORE2 é aplicável (Sim / Não).
+- Se o SCORE2 não for aplicável, indica razão segundo as recomendações ESC 2021.
+- Apresenta as saídas numa tabela Markdown: | SCORE2 Aplicável | Exceção (se não  aplicável)
+
+
+3. Criação de um json file
+- No final, cria um json file que sumarize as informações, com a seguinte estrutura: 
+
+```json
+{
+"Aplicabilidade":{'SCORE2 Aplicável': '..', 'Exceção': '..' },
+"Fatores de Risco":{'Fator1':'Valor1','Fator2':'Valor2', …}
+}
+```
+
+=== ASSISTANT ===
+1. Extração estruturada dos fatores de risco
+
+| Fator de Risco | Valor | Unidade |
+|---|---|---|
+| Idade | 61 | anos |
+| Género | Masculino |  |
+| Tabagismo | desconhecido |  |
+| Pressão Arterial Sistólica | 131 | mmHg |
+| Colesterol Total | 136 | mg/dL |
+| Colesterol HDL | 38 | mg/dL |
+| Colesterol não HDL (se necessário calcular) | 98 | mg/dL |
+
+2. Verificação de apicabilidade do SCORE2 (2021 ESC Guidelines on cardiovascular disease prevention in clinical practice)
+
+| SCORE2 Aplicável | Exceção (se não  aplicável) |
+|---|---|
+| Não | Doença renal crónica: TFG 42 mL/min/1,73 m2 e albuminúria 100 mg/g. Segundo ESC 2021, o SCORE2 não é recomendado em presença de DRC (TFG <60 mL/min/1,73 m2 e/ou albuminúria ≥30 mg/g). |
+
+3. Criação de um json file
+```json
+{
+  "Aplicabilidade": {
+    "SCORE2 Aplicável": "Não",
+    "Exceção": "Doença renal crónica: TFG 42 mL/min/1,73 m2 e albuminúria 100 mg/g. Segundo ESC 2021, o SCORE2 não é recomendado em presença de DRC (TFG <60 mL/min/1,73 m2 e/ou albuminúria ≥30 mg/g)."
+  },
+  "Fatores de Risco": {
+    "Idade": "61",
+    "Género": "Masculino",
+    "Tabagismo": "desconhecido",
+    "Pressão Arterial Sistólica": "131",
+    "Colesterol Total": "136",
+    "Colesterol HDL": "38",
+    "Colesterol não HDL (se necessário calcular)": "98"
+  }
+}
+```
+
+=== USER ===
+Dado a tua extraçao dos fatores de risco inicial e o facto do SCORE2 não ser aplicável, continua a tua analise nos seguintes pontos.
+
+
+1. Estratificação de risco segundo recomendações da sociedade europeia de cardiologia 2021 (2021 ESC Guidelines on cardiovascular disease prevention in clinical practice)
+
+
+- Identifica a categoria de risco, tendo em conta a idade (Baixo-a-Moderado; Alto; Muito-Alto)
+- Indica o grau de confiança da decisão sobre categoria de risco indicada no ponto anterior (Escolhe apenas uma categoria -> Baixa, Intermédia, Alta, Muito-Alta).
+- Apresenta as saídas numa tabela Markdown:  Categoria Risco | Grau de Confiança 
+
+
+2. Breve explicação clínica
+
+Máximo 150 palavras. Realça os fatores que mais contribuíram para a classificação de risco (p. ex. HTA mal controlada, tabagismo, LDL elevado, modificadores de risco, etc.). 
+
+3. Extracção estruturada dos fatores de risco:
+- Preenche uma tabela Markdown com as duas categorias fixas: “Fatores de Risco” e “Modificadores de Risco”.
+- Para cada variável apresenta o valor tal como aparece na vinheta ou “desconhecido”; inclui unidade se aplicável (mmHg, mg/dL, anos); 
+- Mantém exatamente o mesmo nome de cada variável indicado na lista-referência abaixo.
+- Quando mais do que uma opção é possível (p. ex. Modificadores de Risco), lista-as separadas por “;”.
+- Lista-referência (não alterar nomes):
+[Fator de Risco -> Valores; Idade -> Numérico; Género->Masculino; Feminino; Tabagismo -> Não fumador; Ex-Fumador; Fumador; Hipertensão Arterial -> Sim, Não; Pressão Arterial Sistólica -> Valor; Pressão Arterial Diastólica -> Valor; Dislipidemia -> Sim, Não; Colesterol Total -> Numérico; Colesterol HDL -> Numérico; Triglicéridos -> Numérico; Colesterol LDL -> Numérico; Colesterol não HDL (se necessário calcular) -> Numérico; Diabetes Mellitus-> Sim, Não
+Modificadores de Risco -> Valores; Pode selecionar mais do que um ->  Score de Cálcio elevado; Score de Cálcio = 0; Placas Carótidas; Obesidade; Pre-Diabetes; História Familiar de doença cardiovascular aterosclerótica; Lp (a) aumentada; Rigidez Arterial aumentada; PCR alta sensibilidade elevada; Doença Inflamatória Crónica; Infecção HIV; Sindrome Apneia Obstrutiva do Sono; Esteatose Hepática Não Alcoólica; Disfunção erétil; Menopausa precoce; Antecedentes de Gravidez com complicações (Pre-eclampsia, Hipertensão arterial ou diabetes); Doença pulmonar obstrutiva crónica (DPOC); Cancro; Outro (especificar)]  
+
+4. Criação de um json file
+- No final, cria um json file que sumarize as informações, com a seguinte estrutura: 
+
+```json
+{
+"Categoria de Risco":{'..'},
+"Confiança":{'..},
+"Fatores de Risco":{'Fator1':'Valor1','Fator2':'Valor2'},
+"Modificadores de Risco" : {'FactorM1':'valorM1', 'FactorM2': 'valorM2'}
+}
+```
+
+=== ASSISTANT ===
+1. Estratificação de risco (ESC 2021)
+
+| Categoria Risco | Grau de Confiança |
+|---|---|
+| Alto | Alta |
+
+2. Breve explicação clínica
+
+Risco Alto pela presença de doença renal crónica (G3b A2): TFG 42 mL/min/1,73 m2 e albuminúria 100 mg/g, condição que coloca o doente em risco elevado nas ESC 2021, não sendo aplicável o SCORE2. Fatores adicionais: idade 61 anos (masculino), hipertensão arterial (controlada: 131/78 mmHg) e dislipidemia com HDL baixo (38 mg/dL) e triglicéridos 164 mg/dL. LDL 65 mg/dL sob rosuvastatina é adequado para risco alto, podendo ponderar otimização conforme metas. Tabagismo desconhecido. Estilo de vida favorável (sono 7–8 h, 5.000–7.000 passos/dia). Valvulopatia aórtica moderada e restante avaliação cardiopulmonar estáveis não alteram a estratificação de risco aterosclerótico.
+
+3. Extração estruturada dos fatores de risco e modificadores
+
+| Categoria | Variável | Valor | Unidade |
+|---|---|---|---|
+| Fatores de Risco | Idade | 61 | anos |
+| Fatores de Risco | Género | Masculino |  |
+| Fatores de Risco | Tabagismo | desconhecido |  |
+| Fatores de Risco | Hipertensão Arterial | Sim |  |
+| Fatores de Risco | Pressão Arterial Sistólica | 131 | mmHg |
+| Fatores de Risco | Pressão Arterial Diastólica | 78 | mmHg |
+| Fatores de Risco | Dislipidemia | Sim |  |
+| Fatores de Risco | Colesterol Total | 136 | mg/dL |
+| Fatores de Risco | Colesterol HDL | 38 | mg/dL |
+| Fatores de Risco | Triglicéridos | 164 | mg/dL |
+| Fatores de Risco | Colesterol LDL | 65 | mg/dL |
+| Fatores de Risco | Colesterol não HDL (se necessário calcular) | 98 | mg/dL |
+| Fatores de Risco | Diabetes Mellitus | desconhecido |  |
+| Modificadores de Risco | Score de Cálcio elevado | desconhecido |  |
+| Modificadores de Risco | Score de Cálcio = 0 | desconhecido |  |
+| Modificadores de Risco | Placas Carótidas | desconhecido |  |
+| Modificadores de Risco | Obesidade | Não |  |
+| Modificadores de Risco | Pre-Diabetes | Não |  |
+| Modificadores de Risco | História Familiar de doença cardiovascular aterosclerótica | desconhecido |  |
+| Modificadores de Risco | Lp (a) aumentada | desconhecido |  |
+| Modificadores de Risco | Rigidez Arterial aumentada | desconhecido |  |
+| Modificadores de Risco | PCR alta sensibilidade elevada | desconhecido |  |
+| Modificadores de Risco | Doença Inflamatória Crónica | desconhecido |  |
+| Modificadores de Risco | Infecção HIV | desconhecido |  |
+| Modificadores de Risco | Sindrome Apneia Obstrutiva do Sono | desconhecido |  |
+| Modificadores de Risco | Esteatose Hepática Não Alcoólica | desconhecido |  |
+| Modificadores de Risco | Disfunção erétil | desconhecido |  |
+| Modificadores de Risco | Menopausa precoce | desconhecido |  |
+| Modificadores de Risco | Antecedentes de Gravidez com complicações (Pre-eclampsia, Hipertensão arterial ou diabetes) | desconhecido |  |
+| Modificadores de Risco | Doença pulmonar obstrutiva crónica (DPOC) | desconhecido |  |
+| Modificadores de Risco | Cancro | desconhecido |  |
+| Modificadores de Risco | Outro (especificar) | Doença renal crónica (TFG 42 mL/min/1,73 m2; albuminúria 100 mg/g) |  |
+
+4. Json file
+```json
+{
+  "Categoria de Risco": {
+    "Categoria": "Alto"
+  },
+  "Confiança": {
+    "Grau": "Alta"
+  },
+  "Fatores de Risco": {
+    "Idade": "61",
+    "Género": "Masculino",
+    "Tabagismo": "desconhecido",
+    "Hipertensão Arterial": "Sim",
+    "Pressão Arterial Sistólica": "131",
+    "Pressão Arterial Diastólica": "78",
+    "Dislipidemia": "Sim",
+    "Colesterol Total": "136",
+    "Colesterol HDL": "38",
+    "Triglicéridos": "164",
+    "Colesterol LDL": "65",
+    "Colesterol não HDL (se necessário calcular)": "98",
+    "Diabetes Mellitus": "desconhecido"
+  },
+  "Modificadores de Risco": {
+    "Score de Cálcio elevado": "desconhecido",
+    "Score de Cálcio = 0": "desconhecido",
+    "Placas Carótidas": "desconhecido",
+    "Obesidade": "Não",
+    "Pre-Diabetes": "Não",
+    "História Familiar de doença cardiovascular aterosclerótica": "desconhecido",
+    "Lp (a) aumentada": "desconhecido",
+    "Rigidez Arterial aumentada": "desconhecido",
+    "PCR alta sensibilidade elevada": "desconhecido",
+    "Doença Inflamatória Crónica": "desconhecido",
+    "Infecção HIV": "desconhecido",
+    "Sindrome Apneia Obstrutiva do Sono": "desconhecido",
+    "Esteatose Hepática Não Alcoólica": "desconhecido",
+    "Disfunção erétil": "desconhecido",
+    "Menopausa precoce": "desconhecido",
+    "Antecedentes de Gravidez com complicações (Pre-eclampsia, Hipertensão arterial ou diabetes)": "desconhecido",
+    "Doença pulmonar obstrutiva crónica (DPOC)": "desconhecido",
+    "Cancro": "desconhecido",
+    "Outro (especificar)": "Doença renal crónica (TFG 42 mL/min/1,73 m2; albuminúria 100 mg/g)"
+  }
+}
+```
+

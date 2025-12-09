@@ -1,0 +1,182 @@
+=== SYSTEM ===
+Função:  És um assistente virtual especializado em cardiologia preventiva que apoia a consulta médica.
+
+Formato geral
+- Usa Markdown; não incluas texto fora das secções acima
+- Quando um valor não se encontra nos dados, escreve “desconhecido”
+- Usa sempre “,” como separador decimal e “.” para milhares (padrão português)
+
+Objetivo: Analisar a vinheta clínica abaixo, extrair de forma estruturada todos os fatores relevantes para avaliar o risco cardiovascular.
+
+=== USER ===
+Mulher 63 anos, professora do ensino básico. Tem mantido seguimento em consulta de Cardiologia após episódio de fibrilhação auricular paroxística há 3 anos, resolvido com cardioversão eléctrica. Como outros antecedentes, detaca-se hipotiroidismo e doença de refluxo gastroesofágico. Sem outros antecedentes relevantes. Sem hábitos tabágicos ou etanólicos. Boa higiene do sono. 
+Não teve novos episódios de arritmia. Sem palpitações no dia-a-dia. Sem outras queixas de relevo. 
+
+Encontra-se medicada com pantoprazol 20mg, bisoprolol 2.5mg e apixabano 5mg 12/12h, levotiroxina 75mcg.
+
+À observação: peso 59Kg (IMC 20.5); pressão arterial 107/58mmHg, frequência cardíaca 61bpm. Auscultação cardíaca regular e sem sopros. 
+
+Analiticamente, destaca-se: hemoglobina 12,1g/dL, creatinina 0.6mg/dL, glicémia em jejum 74mg/dL, triglicerideos 124mg/dL, colesterol total 214mg/dL, colesterol HDL 67mg/dL, colesterol LDL 122mg/dL, TSH 3.67mIU/L, fT4 1ng/dL.
+
+Realizou um electrocardiograma (ritmo sinusal, bloqueio auriculo-ventricular de 1º grau, alterações inespecíficas da repolarização ventricular), um ecocardiograma (dilatação ligera da aurícula esquerda, insuficiência mitral ligeira) e um Holter (ritmo sinusal durante todo o registo, extrassistolia suprventricular pouco frequente).
+
+=== USER ===
+1. Extração estruturada dos fatores de risco:
+- Preenche uma tabela em Markdown com os fatores de risco necessários ao cálculo do risco cardiovascular
+- Para cada fator: Valor (tal como aparece na vinheta ou indica “desconhecido”); Unidade se aplicável (mmHg, mg/dL, anos); 
+- Mantém exatamente o mesmo nome de cada variável indicado na lista-referência abaixo.
+- Lista-referência (não alterar nomes):
+[Fator de Risco -> Valores; Idade -> Numérico; Género->Masculino; Feminino; Tabagismo -> Não fumador; Ex-Fumador; Fumador; Pressão Arterial Sistólica -> Numérico; Colesterol Total -> Numérico, Colesterol HDL -> Numérico, Colesterol não HDL (se necessário calcular) -> Numérico.]
+
+
+2. Verificação de apicabilidade do SCORE2 (2021 ESC Guidelines on cardiovascular disease prevention in clinical practice)
+
+- Verifica se o SCORE2 é aplicável (Sim / Não).
+- Se o SCORE2 não for aplicável, indica razão segundo as recomendações ESC 2021.
+- Apresenta as saídas numa tabela Markdown: | SCORE2 Aplicável | Exceção (se não  aplicável)
+
+
+3. Criação de um json file
+- No final, cria um json file que sumarize as informações, com a seguinte estrutura: 
+
+```json
+{
+"Aplicabilidade":{'SCORE2 Aplicável': '..', 'Exceção': '..' },
+"Fatores de Risco":{'Fator1':'Valor1','Fator2':'Valor2', …}
+}
+```
+
+=== ASSISTANT ===
+```markdown
+| Fator de Risco                  | Valor         | Unidade |
+|---------------------------------|---------------|---------|
+| Idade                           | 63            | anos    |
+| Género                          | Feminino      |         |
+| Tabagismo                       | Não fumador   |         |
+| Pressão Arterial Sistólica      | 107           | mmHg    |
+| Colesterol Total                | 214           | mg/dL   |
+| Colesterol HDL                  | 67            | mg/dL   |
+| Colesterol não HDL              | 147           | mg/dL   |
+```
+
+Cálculo do Colesterol não HDL:
+\[ \text{Colesterol não HDL} = \text{Colesterol Total} - \text{Colesterol HDL} \]
+\[ \text{Colesterol não HDL} = 214 - 67 = 147 \, \text{mg/dL} \]
+
+```markdown
+| SCORE2 Aplicável | Exceção                                       |
+|------------------|-----------------------------------------------|
+| Não              | Uso de anticoagulante                         |
+```
+
+```json
+{
+  "Aplicabilidade": {
+    "SCORE2 Aplicável": "Não",
+    "Exceção": "Uso de anticoagulante"
+  },
+  "Fatores de Risco": {
+    "Idade": "63",
+    "Género": "Feminino",
+    "Tabagismo": "Não fumador",
+    "Pressão Arterial Sistólica": "107",
+    "Colesterol Total": "214",
+    "Colesterol HDL": "67",
+    "Colesterol não HDL": "147"
+  }
+}
+```
+
+=== USER ===
+Dado a tua extraçao dos fatores de risco inicial e o facto do SCORE2 não ser aplicável, continua a tua analise nos seguintes pontos.
+
+
+1. Estratificação de risco segundo recomendações da sociedade europeia de cardiologia 2021 (2021 ESC Guidelines on cardiovascular disease prevention in clinical practice)
+
+
+- Identifica a categoria de risco, tendo em conta a idade (Baixo-a-Moderado; Alto; Muito-Alto)
+- Indica o grau de confiança da decisão sobre categoria de risco indicada no ponto anterior (Escolhe apenas uma categoria -> Baixa, Intermédia, Alta, Muito-Alta).
+- Apresenta as saídas numa tabela Markdown:  Categoria Risco | Grau de Confiança 
+
+
+2. Breve explicação clínica
+
+Máximo 150 palavras. Realça os fatores que mais contribuíram para a classificação de risco (p. ex. HTA mal controlada, tabagismo, LDL elevado, modificadores de risco, etc.). 
+
+3. Extracção estruturada dos fatores de risco:
+- Preenche uma tabela Markdown com as duas categorias fixas: “Fatores de Risco” e “Modificadores de Risco”.
+- Para cada variável apresenta o valor tal como aparece na vinheta ou “desconhecido”; inclui unidade se aplicável (mmHg, mg/dL, anos); 
+- Mantém exatamente o mesmo nome de cada variável indicado na lista-referência abaixo.
+- Quando mais do que uma opção é possível (p. ex. Modificadores de Risco), lista-as separadas por “;”.
+- Lista-referência (não alterar nomes):
+[Fator de Risco -> Valores; Idade -> Numérico; Género->Masculino; Feminino; Tabagismo -> Não fumador; Ex-Fumador; Fumador; Hipertensão Arterial -> Sim, Não; Pressão Arterial Sistólica -> Valor; Pressão Arterial Diastólica -> Valor; Dislipidemia -> Sim, Não; Colesterol Total -> Numérico; Colesterol HDL -> Numérico; Triglicéridos -> Numérico; Colesterol LDL -> Numérico; Colesterol não HDL (se necessário calcular) -> Numérico; Diabetes Mellitus-> Sim, Não
+Modificadores de Risco -> Valores; Pode selecionar mais do que um ->  Score de Cálcio elevado; Score de Cálcio = 0; Placas Carótidas; Obesidade; Pre-Diabetes; História Familiar de doença cardiovascular aterosclerótica; Lp (a) aumentada; Rigidez Arterial aumentada; PCR alta sensibilidade elevada; Doença Inflamatória Crónica; Infecção HIV; Sindrome Apneia Obstrutiva do Sono; Esteatose Hepática Não Alcoólica; Disfunção erétil; Menopausa precoce; Antecedentes de Gravidez com complicações (Pre-eclampsia, Hipertensão arterial ou diabetes); Doença pulmonar obstrutiva crónica (DPOC); Cancro; Outro (especificar)]  
+
+4. Criação de um json file
+- No final, cria um json file que sumarize as informações, com a seguinte estrutura: 
+
+```json
+{
+"Categoria de Risco":{'..'},
+"Confiança":{'..},
+"Fatores de Risco":{'Fator1':'Valor1','Fator2':'Valor2'},
+"Modificadores de Risco" : {'FactorM1':'valorM1', 'FactorM2': 'valorM2'}
+}
+```
+
+=== ASSISTANT ===
+```markdown
+| Categoria Risco    | Grau de Confiança |
+|--------------------|-------------------|
+| Baixo-a-Moderado   | Intermédia        |
+```
+
+A paciente apresenta um risco cardiovascular de baixo a moderado. A ausência de fatores de risco significativos, como hipertensão arterial, diabetes mellitus e tabagismo, contribui para essa classificação. Apesar do colesterol total acima do recomendado, o perfil lipídico mostra um valor de HDL protetor. Além disso, a paciente mantém uma pressão arterial sistólica baixa e um estilo de vida saudável, sem hábitos tabágicos ou etanólicos. A presença de fibrilhação auricular tratada é um fator a ser monitorado, mas não aumenta de forma significativa o risco cardiovascular segundo as diretrizes atuais, especialmente em pacientes sob anticoagulação. A decisão sobre a classificação de risco baseia-se na avaliação global destes fatores e na consideração das guidelines ESC 2021.
+
+```markdown
+| Fatores de Risco               | Valor           |
+|-------------------------------|-----------------|
+| Idade                         | 63              |
+| Género                        | Feminino        |
+| Tabagismo                     | Não fumador     |
+| Hipertensão Arterial          | Não             |
+| Pressão Arterial Sistólica    | 107             |
+| Pressão Arterial Diastólica   | 58              |
+| Dislipidemia                  | Sim             |
+| Colesterol Total              | 214             |
+| Colesterol HDL                | 67              |
+| Triglicéridos                 | 124             |
+| Colesterol LDL                | 122             |
+| Colesterol não HDL            | 147             |
+| Diabetes Mellitus             | Não             |
+
+| Modificadores de Risco        | Valor           |
+|-------------------------------|-----------------|
+| Outro                         | Hipotiroidismo  |
+```
+
+```json
+{
+  "Categoria de Risco": "Baixo-a-Moderado",
+  "Confiança": "Intermédia",
+  "Fatores de Risco": {
+    "Idade": "63",
+    "Género": "Feminino",
+    "Tabagismo": "Não fumador",
+    "Hipertensão Arterial": "Não",
+    "Pressão Arterial Sistólica": "107",
+    "Pressão Arterial Diastólica": "58",
+    "Dislipidemia": "Sim",
+    "Colesterol Total": "214",
+    "Colesterol HDL": "67",
+    "Triglicéridos": "124",
+    "Colesterol LDL": "122",
+    "Colesterol não HDL": "147",
+    "Diabetes Mellitus": "Não"
+  },
+  "Modificadores de Risco": {
+    "Outro": "Hipotiroidismo"
+  }
+}
+```
+

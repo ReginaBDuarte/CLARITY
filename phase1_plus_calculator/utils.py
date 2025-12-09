@@ -203,20 +203,41 @@ def score2(idade, sexo, tabagismo, PAS, CT, HDL):
 
 def aplica_score2(json_response):
     if json_response['Aplicabilidade']['SCORE2 Aplicável'] == 'Sim':
-        fatores = json_response['Fatores de risco']
-
-        idade = int(fatores.get('Idade', '0').replace(',', '.'))
+        fatores = json_response['Fatores de Risco']
+        if isinstance(fatores.get('Idade', None), int):
+            idade = fatores.get('Idade', 0)
+        else:
+            idade = int(fatores.get('Idade', '0').replace(',', '.'))
+        
         genero = fatores.get('Género', '').strip()
         tabagismo = fatores.get('Tabagismo', '').strip()
-        pas = int(fatores.get('Pressão Arterial Sistólica', '0').replace(',', '.'))
-        colesterol_total = int(fatores.get('Colesterol Total', '0').replace(',', '.'))
-        hdl = int(fatores.get('Colesterol HDL', '0').replace(',', '.'))
-        n_hdl = int(fatores.get('Colesterol não HDL', '0').replace(',', '.'))
         
-        if tabagismo == 'Não fumador':
-            tabagismo = False
+        if isinstance(fatores.get('Pressão Arterial Sistólica', None), int):
+            pas = fatores.get('Pressão Arterial Sistólica', None)
         else:
+            pas = int(fatores.get('Pressão Arterial Sistólica', '0').replace(',', '.'))
+
+        if isinstance(fatores.get('Colesterol Total', None), int):
+            colesterol_total = fatores.get('Colesterol Total', None)
+        else:
+            colesterol_total = int(fatores.get('Colesterol Total', '0').replace(',', '.'))
+
+        if isinstance(fatores.get('Colesterol HDL', None), int):
+            hdl = fatores.get('Colesterol HDL', None)
+        else:
+            hdl = int(fatores.get('Colesterol HDL', '0').replace(',', '.'))
+
+        if isinstance(fatores.get('Colesterol não HDL', None), int):
+            n_hdl = fatores.get('Colesterol não HDL', None)
+        else:
+            n_hdl = int(fatores.get('Colesterol não HDL', '0').replace(',', '.'))
+        
+        
+        
+        if tabagismo == 'Fumador' or tabagismo == 'Fumadora':  
             tabagismo = True
+        else:
+            tabagismo = False
 
         ct_mmol = round(colesterol_total * 0.02586,1)
         hdl_mmol = round(hdl * 0.02586,1)
@@ -229,4 +250,72 @@ def aplica_score2(json_response):
         return "SCORE2 not applicable"
     
 
+
+def LLM_Response(prompts, vinheta_idx, vinheta, model='gpt-4o'):
+    #DEFAULTS
+    system_prompt_pt = prompts[0]
+    user_prompt_pt = prompts[1]
+    prompt2 = prompts[2]
+    prompt2a = prompts[3]
+
+    dictionary_response= {}
+    dictionary_response['vinheta'] = vinheta
+    dictionary_response['model'] = model
+
+    conversation=[
+            {
+                "role": "system", 
+                "content": system_prompt_pt
+                },
+
+            {   "role": "user",
+                "content": vinheta
+                },
+
+            {   "role": "user",
+                "content": user_prompt_pt
+                }   
+        ]
+    
+    #FIRST LLM CALL
+    response_gpt = get_gpt_response(conversation, model)
+    
+    print(f"Response for vinheta {vinheta_idx}:\n{response_gpt}\n")
+
+    json_1= parse_response(response_gpt)  
+
+    #CALCULATE SCORE2
+    score= aplica_score2(json_1)
+
+    dictionary_response['Score2'] = score
+    dictionary_response['AplicabilidadeScore2'] = json_1['Aplicabilidade']['SCORE2 Aplicável']
+    dictionary_response['ExcecaoScore2'] = json_1['Aplicabilidade']['Exceção']
+
+    if isinstance(score, str):
+        second_prompt = prompt2a
+
+    else:
+        second_prompt= inserir_score2(prompt2, score)
+        
+
+    conversation.append({
+        "role": "user", "content": second_prompt
+    })  # add to the conversation as a new user message for the next
+
+    #SECOND LLM CALL
+    response_gpt = get_gpt_response(conversation, model)
+   
+
+    json_2= parse_response(response_gpt) 
+
+    dictionary_response['Categoria de Risco'] = json_2['Categoria de Risco']
+    dictionary_response['Confiança Categoria de Risco'] = json_2['Confiança']
+    dictionary_response['Fatores de Risco'] = json_2['Fatores de Risco']    
+    dictionary_response['Modificadores de Risco'] = json_2['Modificadores de Risco']
+
+    #SAVE CONVERSATION
+    filepath = f"conversas/conversation_vinheta_{vinheta_idx}_{model}.txt"
+    export_conversation_to_txt(conversation, filepath)  # Save
+    
+    return dictionary_response   
 

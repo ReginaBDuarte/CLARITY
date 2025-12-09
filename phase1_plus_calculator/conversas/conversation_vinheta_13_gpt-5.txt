@@ -1,0 +1,205 @@
+=== SYSTEM ===
+Função:  És um assistente virtual especializado em cardiologia preventiva que apoia a consulta médica.
+
+Formato geral
+- Usa Markdown; não incluas texto fora das secções acima
+- Quando um valor não se encontra nos dados, escreve “desconhecido”
+- Usa sempre “,” como separador decimal e “.” para milhares (padrão português)
+
+Objetivo: Analisar a vinheta clínica abaixo, extrair de forma estruturada todos os fatores relevantes para avaliar o risco cardiovascular.
+
+=== USER ===
+Homem de 41 anos, vereador da câmara municipal. Vem à consulta porque quer continuar a praticar desporto, mas no ginásio foi aconselhado a vir à consulta de Cardiologia antes de retomar a prática pelos valores de tensão arterial. 
+Começou a fazer exercício há cerca de 2 meses, sem sintomas durante a prática ou fora dela. 
+
+Antecedentes pessoais: tabagismo (5 cigarros por dia - 5UMAs). Mãe com hipertensão e diabetes; pai com neoplasia do cólon aos 57 anos. Sem alergias conhecidas. 
+
+Sem medicação habitual.
+
+Ao exame objectivo: peso 77Kg (IMC 23); pressão arterial 155-107mmHg, frequência cardíaca 71bpm. Auscultação cardíaca e pulmonar sem alterações.
+
+Analiticamente, apresenta uma creatinina 0.96mg/dL, glicemia em jejum 96mg/dL, HbA1c 5.8%, triglicerideos 98mg/dL, colesterol total 241mg/dL, colesterol HDL 33mg/dL, colesterol LDL 188mg/dL, ácido úrico 6.3mg/dL
+
+Exames complementares de diagnóstico: electrocardiograma com ritmo sinusal 75/min, alterações inespecíficas da repolarização ventricular; ecocardiograma sem alterações significativas; prova de esforço com resposta hipertensiva ao esforço, não sugestiva de isquémia.
+
+=== USER ===
+1. Extração estruturada dos fatores de risco:
+- Preenche uma tabela em Markdown com os fatores de risco necessários ao cálculo do risco cardiovascular
+- Para cada fator: Valor (tal como aparece na vinheta ou indica “desconhecido”); Unidade se aplicável (mmHg, mg/dL, anos); 
+- Mantém exatamente o mesmo nome de cada variável indicado na lista-referência abaixo.
+- Lista-referência (não alterar nomes):
+[Fator de Risco -> Valores; Idade -> Numérico; Género->Masculino; Feminino; Tabagismo -> Não fumador; Ex-Fumador; Fumador; Pressão Arterial Sistólica -> Numérico; Colesterol Total -> Numérico, Colesterol HDL -> Numérico, Colesterol não HDL (se necessário calcular) -> Numérico.]
+
+
+2. Verificação de apicabilidade do SCORE2 (2021 ESC Guidelines on cardiovascular disease prevention in clinical practice)
+
+- Verifica se o SCORE2 é aplicável (Sim / Não).
+- Se o SCORE2 não for aplicável, indica razão segundo as recomendações ESC 2021.
+- Apresenta as saídas numa tabela Markdown: | SCORE2 Aplicável | Exceção (se não  aplicável)
+
+
+3. Criação de um json file
+- No final, cria um json file que sumarize as informações, com a seguinte estrutura: 
+
+```json
+{
+"Aplicabilidade":{'SCORE2 Aplicável': '..', 'Exceção': '..' },
+"Fatores de Risco":{'Fator1':'Valor1','Fator2':'Valor2', …}
+}
+```
+
+=== ASSISTANT ===
+1) Extração estruturada dos fatores de risco
+
+| Fator de Risco | Valor | Unidade |
+|---|---|---|
+| Idade | 41 | anos |
+| Género | Masculino | desconhecido |
+| Tabagismo | Fumador | desconhecido |
+| Pressão Arterial Sistólica | 155 | mmHg |
+| Colesterol Total | 241 | mg/dL |
+| Colesterol HDL | 33 | mg/dL |
+| Colesterol não HDL (se necessário calcular) | 208 | mg/dL |
+
+2) Verificação de aplicabilidade do SCORE2 (2021 ESC Guidelines on cardiovascular disease prevention in clinical practice)
+
+| SCORE2 Aplicável | Exceção (se não aplicável) |
+|---|---|
+| Sim | não aplicável |
+
+3) JSON
+
+```json
+{
+  "Aplicabilidade": {
+    "SCORE2 Aplicável": "Sim",
+    "Exceção": "não aplicável"
+  },
+  "Fatores de Risco": {
+    "Idade": "41",
+    "Género": "Masculino",
+    "Tabagismo": "Fumador",
+    "Pressão Arterial Sistólica": "155",
+    "Colesterol Total": "241",
+    "Colesterol HDL": "33",
+    "Colesterol não HDL (se necessário calcular)": "208"
+  }
+}
+```
+
+=== USER ===
+Dado a tua extraçao dos fatores de risco inicial, eu calculei o SCORE2 (risco cardiovascular a 10 anos).
+O valor do SCORE2 é: 9.41%
+
+Com base na vinheta, na tua analise inicial e no valor do SCORE2 que te dei, continua a tua analise nos seguintes pontos.
+
+1. Estratificação de risco segundo recomendações da sociedade europeia de cardiologia 2021 (2021 ESC Guidelines on cardiovascular disease prevention in clinical practice)
+
+
+- De acordo com o resultado do SCORE2, identifica a categoria de risco, tendo em conta a idade (Baixo-a-Moderado; Alto; Muito-Alto)
+- Indica o grau de confiança da decisão sobre categoria de risco indicada no ponto anterior (Escolhe apenas uma categoria -> Baixa, Intermédia, Alta, Muito-Alta).
+- Apresenta as saídas numa tabela Markdown:  Categoria Risco | Grau de Confiança 
+
+
+2. Breve explicação clínica
+
+Máximo 150 palavras. Realça os fatores que mais contribuíram para a classificação de risco (p. ex. HTA mal controlada, tabagismo, LDL elevado, modificadores de risco, etc.). 
+
+3. Extracção estruturada dos fatores de risco:
+- Preenche uma tabela Markdown com as duas categorias fixas: “Fatores de Risco” e “Modificadores de Risco”.
+- Para cada variável apresenta o valor tal como aparece na vinheta ou “desconhecido”; inclui unidade se aplicável (mmHg, mg/dL, anos); 
+- Mantém exatamente o mesmo nome de cada variável indicado na lista-referência abaixo.
+- Quando mais do que uma opção é possível (p. ex. Modificadores de Risco), lista-as separadas por “;”.
+- Lista-referência (não alterar nomes):
+[Fator de Risco -> Valores; Idade -> Numérico; Género->Masculino; Feminino; Tabagismo -> Não fumador; Ex-Fumador; Fumador; Hipertensão Arterial -> Sim, Não; Pressão Arterial Sistólica -> Valor; Pressão Arterial Diastólica -> Valor; Dislipidemia -> Sim, Não; Colesterol Total -> Numérico; Colesterol HDL -> Numérico; Triglicéridos -> Numérico; Colesterol LDL -> Numérico; Colesterol não HDL (se necessário calcular) -> Numérico; Diabetes Mellitus-> Sim, Não
+Modificadores de Risco -> Valores; Pode selecionar mais do que um ->  Score de Cálcio elevado; Score de Cálcio = 0; Placas Carótidas; Obesidade; Pre-Diabetes; História Familiar de doença cardiovascular aterosclerótica; Lp (a) aumentada; Rigidez Arterial aumentada; PCR alta sensibilidade elevada; Doença Inflamatória Crónica; Infecção HIV; Sindrome Apneia Obstrutiva do Sono; Esteatose Hepática Não Alcoólica; Disfunção erétil; Menopausa precoce; Antecedentes de Gravidez com complicações (Pre-eclampsia, Hipertensão arterial ou diabetes); Doença pulmonar obstrutiva crónica (DPOC); Cancro; Outro (especificar)]  
+
+4. Criação de um json file
+- No final, cria um json file que sumarize as informações, com a seguinte estrutura: 
+
+```json
+{
+"Categoria de Risco":{'..'},
+"Confiança":{'..},
+"Fatores de Risco":{'Fator1':'Valor1','Fator2':'Valor2'},
+"Modificadores de Risco" : {'FactorM1':'valorM1', 'FactorM2': 'valorM2'}
+}
+```
+
+=== ASSISTANT ===
+1) Estratificação de risco (ESC 2021)
+
+| Categoria Risco | Grau de Confiança |
+|---|---|
+| Muito-Alto | Intermédia |
+
+2) Breve explicação clínica
+
+Para 41 anos em países de baixo risco, um SCORE2 de 9,41% classifica como risco muito-alto. Os principais determinantes são: hipertensão (PA 155/107 mmHg, com resposta hipertensiva ao esforço), tabagismo ativo, LDL muito elevado (188 mg/dL) e HDL baixo (33 mg/dL). Existe ainda pré-diabetes (HbA1c 5,8%). Esta combinação aumenta substancialmente o risco aterosclerótico precoce, justificando intervenção intensiva: cessação tabágica, controlo rigoroso da pressão arterial, estatina de alta intensidade (e eventual terapêutica adicional conforme metas LDL), e otimização do estilo de vida. Avaliações complementares podem refinar o risco (p.ex., CAC score) se necessário.
+
+3) Extração estruturada dos fatores de risco e modificadores
+
+| Categoria | Variável | Valor | Unidade |
+|---|---|---|---|
+| Fatores de Risco | Idade | 41 | anos |
+| Fatores de Risco | Género | Masculino | desconhecido |
+| Fatores de Risco | Tabagismo | Fumador | desconhecido |
+| Fatores de Risco | Hipertensão Arterial | desconhecido | desconhecido |
+| Fatores de Risco | Pressão Arterial Sistólica | 155 | mmHg |
+| Fatores de Risco | Pressão Arterial Diastólica | 107 | mmHg |
+| Fatores de Risco | Dislipidemia | Sim | desconhecido |
+| Fatores de Risco | Colesterol Total | 241 | mg/dL |
+| Fatores de Risco | Colesterol HDL | 33 | mg/dL |
+| Fatores de Risco | Triglicéridos | 98 | mg/dL |
+| Fatores de Risco | Colesterol LDL | 188 | mg/dL |
+| Fatores de Risco | Colesterol não HDL (se necessário calcular) | 208 | mg/dL |
+| Fatores de Risco | Diabetes Mellitus | Não | desconhecido |
+| Modificadores de Risco | Score de Cálcio elevado | desconhecido | desconhecido |
+| Modificadores de Risco | Score de Cálcio = 0 | desconhecido | desconhecido |
+| Modificadores de Risco | Placas Carótidas | desconhecido | desconhecido |
+| Modificadores de Risco | Obesidade | Não | desconhecido |
+| Modificadores de Risco | Pre-Diabetes | Sim (HbA1c 5,8%) | desconhecido |
+| Modificadores de Risco | História Familiar de doença cardiovascular aterosclerótica | desconhecido | desconhecido |
+| Modificadores de Risco | Lp (a) aumentada | desconhecido | desconhecido |
+| Modificadores de Risco | Rigidez Arterial aumentada | desconhecido | desconhecido |
+| Modificadores de Risco | PCR alta sensibilidade elevada | desconhecido | desconhecido |
+| Modificadores de Risco | Doença Inflamatória Crónica | desconhecido | desconhecido |
+| Modificadores de Risco | Infecção HIV | desconhecido | desconhecido |
+| Modificadores de Risco | Sindrome Apneia Obstrutiva do Sono | desconhecido | desconhecido |
+| Modificadores de Risco | Esteatose Hepática Não Alcoólica | desconhecido | desconhecido |
+| Modificadores de Risco | Disfunção erétil | desconhecido | desconhecido |
+| Modificadores de Risco | Menopausa precoce | desconhecido | desconhecido |
+| Modificadores de Risco | Antecedentes de Gravidez com complicações (Pre-eclampsia, Hipertensão arterial ou diabetes) | desconhecido | desconhecido |
+| Modificadores de Risco | Doença pulmonar obstrutiva crónica (DPOC) | desconhecido | desconhecido |
+| Modificadores de Risco | Cancro | desconhecido | desconhecido |
+| Modificadores de Risco | Outro (especificar) | Resposta hipertensiva ao esforço | desconhecido |
+
+4) JSON
+
+```json
+{
+  "Categoria de Risco": "Muito-Alto",
+  "Confiança": "Intermédia",
+  "Fatores de Risco": {
+    "Idade": "41",
+    "Género": "Masculino",
+    "Tabagismo": "Fumador",
+    "Hipertensão Arterial": "desconhecido",
+    "Pressão Arterial Sistólica": "155",
+    "Pressão Arterial Diastólica": "107",
+    "Dislipidemia": "Sim",
+    "Colesterol Total": "241",
+    "Colesterol HDL": "33",
+    "Triglicéridos": "98",
+    "Colesterol LDL": "188",
+    "Colesterol não HDL (se necessário calcular)": "208",
+    "Diabetes Mellitus": "Não"
+  },
+  "Modificadores de Risco": {
+    "Pre-Diabetes": "Sim",
+    "Obesidade": "Não",
+    "Outro (especificar)": "Resposta hipertensiva ao esforço"
+  }
+}
+```
+
